@@ -1,0 +1,234 @@
+GAS LISTING /tmp/ccvgPpIH.s 			page 1
+
+
+   1              		.file	"read.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text._read,"ax",@progbits
+  10              		.align	1
+  11              		.globl	_read
+  13              	_read:
+  14              	.LFB1:
+  15              		.file 1 "../../firmware/RISCV/stubs/read.c"
+   1:../../firmware/RISCV/stubs/read.c **** /* See LICENSE of license details. */
+   2:../../firmware/RISCV/stubs/read.c **** 
+   3:../../firmware/RISCV/stubs/read.c **** #include <stdint.h>
+   4:../../firmware/RISCV/stubs/read.c **** #include <errno.h>
+   5:../../firmware/RISCV/stubs/read.c **** #include <unistd.h>
+   6:../../firmware/RISCV/stubs/read.c **** #include <sys/types.h>
+   7:../../firmware/RISCV/stubs/read.c **** 
+   8:../../firmware/RISCV/stubs/read.c **** #include "stub.h"
+   9:../../firmware/RISCV/stubs/read.c **** 
+  10:../../firmware/RISCV/stubs/read.c **** ssize_t _read(int fd, void* ptr, size_t len)
+  11:../../firmware/RISCV/stubs/read.c **** {
+  16              		.loc 1 11 1
+  17              		.cfi_startproc
+  18              	.LVL0:
+  12:../../firmware/RISCV/stubs/read.c ****   return _stub(EBADF);
+  19              		.loc 1 12 3
+  20              		.file 2 "../../firmware/RISCV/stubs/stub.h"
+   1:../../firmware/RISCV/stubs/stub.h **** /* See LICENSE of license details. */
+   2:../../firmware/RISCV/stubs/stub.h **** #ifndef _NUCLEI_SYS_STUB_H
+   3:../../firmware/RISCV/stubs/stub.h **** #define _NUCLEI_SYS_STUB_H
+   4:../../firmware/RISCV/stubs/stub.h **** 
+   5:../../firmware/RISCV/stubs/stub.h **** #include <stdint.h>
+   6:../../firmware/RISCV/stubs/stub.h **** #if   defined (__GNUC__)
+   7:../../firmware/RISCV/stubs/stub.h **** #include <unistd.h>
+   8:../../firmware/RISCV/stubs/stub.h **** #endif
+   9:../../firmware/RISCV/stubs/stub.h **** 
+  10:../../firmware/RISCV/stubs/stub.h **** void write_hex(int fd, unsigned long int hex);
+  11:../../firmware/RISCV/stubs/stub.h **** 
+  12:../../firmware/RISCV/stubs/stub.h **** static inline int _stub(int err)
+  13:../../firmware/RISCV/stubs/stub.h **** {
+  14:../../firmware/RISCV/stubs/stub.h ****   return -1;
+  21              		.loc 2 14 3
+  13:../../firmware/RISCV/stubs/read.c **** }
+  22              		.loc 1 13 1 is_stmt 0
+  23 0000 7D55     		li	a0,-1
+  24              	.LVL1:
+  25 0002 8280     		ret
+  26              		.cfi_endproc
+  27              	.LFE1:
+  29              		.text
+  30              	.Letext0:
+  31              		.file 3 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/lib/gcc/riscv64-unknow
+  32              		.file 4 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+GAS LISTING /tmp/ccvgPpIH.s 			page 2
+
+
+  33              		.file 5 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+  34              		.file 6 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+  35              		.file 7 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+  36              		.file 8 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+  37              		.file 9 "/home/lintu/Documents/school/IK1332/toolchain-gd32v-linux/compiler/riscv64-unknown-elf/in
+GAS LISTING /tmp/ccvgPpIH.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 read.c
+     /tmp/ccvgPpIH.s:13     .text._read:0000000000000000 _read
+     /tmp/ccvgPpIH.s:17     .text._read:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:19     .text._read:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:21     .text._read:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:22     .text._read:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:23     .text._read:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:26     .text._read:0000000000000004 .L0 
+     /tmp/ccvgPpIH.s:29     .text._read:0000000000000004 .L0 
+                     .debug_frame:0000000000000000 .L0 
+     /tmp/ccvgPpIH.s:1569   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccvgPpIH.s:2258   .debug_str:0000000000000309 .LASF130
+     /tmp/ccvgPpIH.s:2116   .debug_str:000000000000000c .LASF131
+     /tmp/ccvgPpIH.s:2134   .debug_str:000000000000007c .LASF132
+     /tmp/ccvgPpIH.s:2106   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccvgPpIH.s:2112   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccvgPpIH.s:2152   .debug_str:0000000000000129 .LASF0
+     /tmp/ccvgPpIH.s:2272   .debug_str:00000000000003c2 .LASF1
+     /tmp/ccvgPpIH.s:2278   .debug_str:00000000000003de .LASF2
+     /tmp/ccvgPpIH.s:2222   .debug_str:0000000000000265 .LASF3
+     /tmp/ccvgPpIH.s:2168   .debug_str:000000000000016e .LASF4
+     /tmp/ccvgPpIH.s:2216   .debug_str:0000000000000246 .LASF5
+     /tmp/ccvgPpIH.s:2150   .debug_str:000000000000011b .LASF6
+     /tmp/ccvgPpIH.s:2136   .debug_str:00000000000000c4 .LASF7
+     /tmp/ccvgPpIH.s:2208   .debug_str:0000000000000222 .LASF8
+     /tmp/ccvgPpIH.s:2120   .debug_str:0000000000000034 .LASF10
+     /tmp/ccvgPpIH.s:2252   .debug_str:00000000000002ef .LASF9
+     /tmp/ccvgPpIH.s:2236   .debug_str:00000000000002b0 .LASF11
+     /tmp/ccvgPpIH.s:2266   .debug_str:000000000000039f .LASF12
+     /tmp/ccvgPpIH.s:2324   .debug_str:00000000000004b0 .LASF13
+     /tmp/ccvgPpIH.s:2358   .debug_str:0000000000000545 .LASF14
+     /tmp/ccvgPpIH.s:2232   .debug_str:00000000000002a2 .LASF15
+     /tmp/ccvgPpIH.s:2210   .debug_str:000000000000022f .LASF16
+     /tmp/ccvgPpIH.s:2316   .debug_str:000000000000048e .LASF17
+     /tmp/ccvgPpIH.s:2318   .debug_str:0000000000000496 .LASF18
+     /tmp/ccvgPpIH.s:2288   .debug_str:0000000000000406 .LASF19
+     /tmp/ccvgPpIH.s:2344   .debug_str:00000000000004fb .LASF20
+     /tmp/ccvgPpIH.s:2270   .debug_str:00000000000003b0 .LASF21
+     /tmp/ccvgPpIH.s:2194   .debug_str:00000000000001e5 .LASF22
+     /tmp/ccvgPpIH.s:2198   .debug_str:00000000000001f6 .LASF27
+     /tmp/ccvgPpIH.s:2336   .debug_str:00000000000004da .LASF23
+     /tmp/ccvgPpIH.s:2310   .debug_str:0000000000000479 .LASF24
+     /tmp/ccvgPpIH.s:2192   .debug_str:00000000000001df .LASF25
+     /tmp/ccvgPpIH.s:2352   .debug_str:0000000000000530 .LASF26
+     /tmp/ccvgPpIH.s:2206   .debug_str:000000000000021d .LASF28
+     /tmp/ccvgPpIH.s:2148   .debug_str:0000000000000112 .LASF29
+     /tmp/ccvgPpIH.s:2330   .debug_str:00000000000004c4 .LASF30
+     /tmp/ccvgPpIH.s:2158   .debug_str:0000000000000141 .LASF31
+     /tmp/ccvgPpIH.s:2382   .debug_str:00000000000005b0 .LASF32
+     /tmp/ccvgPpIH.s:2260   .debug_str:0000000000000383 .LASF33
+     /tmp/ccvgPpIH.s:2246   .debug_str:00000000000002d5 .LASF34
+     /tmp/ccvgPpIH.s:2354   .debug_str:0000000000000535 .LASF35
+     /tmp/ccvgPpIH.s:2280   .debug_str:00000000000003e8 .LASF36
+     /tmp/ccvgPpIH.s:2368   .debug_str:0000000000000570 .LASF37
+     /tmp/ccvgPpIH.s:2162   .debug_str:0000000000000150 .LASF38
+     /tmp/ccvgPpIH.s:2188   .debug_str:00000000000001d2 .LASF39
+GAS LISTING /tmp/ccvgPpIH.s 			page 4
+
+
+     /tmp/ccvgPpIH.s:2114   .debug_str:0000000000000000 .LASF40
+     /tmp/ccvgPpIH.s:2340   .debug_str:00000000000004ed .LASF41
+     /tmp/ccvgPpIH.s:2172   .debug_str:000000000000017e .LASF42
+     /tmp/ccvgPpIH.s:2262   .debug_str:000000000000038c .LASF43
+     /tmp/ccvgPpIH.s:2302   .debug_str:0000000000000449 .LASF44
+     /tmp/ccvgPpIH.s:2190   .debug_str:00000000000001da .LASF45
+     /tmp/ccvgPpIH.s:2282   .debug_str:00000000000003f2 .LASF46
+     /tmp/ccvgPpIH.s:2156   .debug_str:000000000000013b .LASF47
+     /tmp/ccvgPpIH.s:2118   .debug_str:000000000000002e .LASF48
+     /tmp/ccvgPpIH.s:2290   .debug_str:0000000000000411 .LASF49
+     /tmp/ccvgPpIH.s:2170   .debug_str:0000000000000177 .LASF50
+     /tmp/ccvgPpIH.s:2218   .debug_str:0000000000000258 .LASF51
+     /tmp/ccvgPpIH.s:2138   .debug_str:00000000000000db .LASF52
+     /tmp/ccvgPpIH.s:2164   .debug_str:000000000000015e .LASF53
+     /tmp/ccvgPpIH.s:2202   .debug_str:000000000000020d .LASF54
+     /tmp/ccvgPpIH.s:2244   .debug_str:00000000000002ce .LASF55
+     /tmp/ccvgPpIH.s:2320   .debug_str:000000000000049e .LASF56
+     /tmp/ccvgPpIH.s:2372   .debug_str:000000000000058a .LASF57
+     /tmp/ccvgPpIH.s:2154   .debug_str:0000000000000135 .LASF58
+     /tmp/ccvgPpIH.s:2364   .debug_str:0000000000000562 .LASF59
+     /tmp/ccvgPpIH.s:2176   .debug_str:000000000000018d .LASF60
+     /tmp/ccvgPpIH.s:2182   .debug_str:00000000000001ab .LASF61
+     /tmp/ccvgPpIH.s:2128   .debug_str:0000000000000056 .LASF62
+     /tmp/ccvgPpIH.s:2238   .debug_str:00000000000002b7 .LASF63
+     /tmp/ccvgPpIH.s:2294   .debug_str:0000000000000423 .LASF64
+     /tmp/ccvgPpIH.s:2240   .debug_str:00000000000002bd .LASF65
+     /tmp/ccvgPpIH.s:2312   .debug_str:0000000000000481 .LASF66
+     /tmp/ccvgPpIH.s:2326   .debug_str:00000000000004b8 .LASF67
+     /tmp/ccvgPpIH.s:2174   .debug_str:0000000000000186 .LASF68
+     /tmp/ccvgPpIH.s:2212   .debug_str:0000000000000236 .LASF69
+     /tmp/ccvgPpIH.s:2196   .debug_str:00000000000001ee .LASF70
+     /tmp/ccvgPpIH.s:2300   .debug_str:0000000000000444 .LASF71
+     /tmp/ccvgPpIH.s:2124   .debug_str:0000000000000043 .LASF72
+     /tmp/ccvgPpIH.s:2308   .debug_str:0000000000000460 .LASF73
+     /tmp/ccvgPpIH.s:2304   .debug_str:000000000000044e .LASF74
+     /tmp/ccvgPpIH.s:2264   .debug_str:0000000000000394 .LASF75
+     /tmp/ccvgPpIH.s:2306   .debug_str:0000000000000456 .LASF76
+     /tmp/ccvgPpIH.s:2230   .debug_str:000000000000029a .LASF77
+     /tmp/ccvgPpIH.s:2204   .debug_str:0000000000000213 .LASF78
+     /tmp/ccvgPpIH.s:2380   .debug_str:00000000000005ab .LASF79
+     /tmp/ccvgPpIH.s:2268   .debug_str:00000000000003a6 .LASF80
+     /tmp/ccvgPpIH.s:2214   .debug_str:000000000000023e .LASF81
+     /tmp/ccvgPpIH.s:2180   .debug_str:00000000000001a3 .LASF82
+     /tmp/ccvgPpIH.s:2274   .debug_str:00000000000003d0 .LASF83
+     /tmp/ccvgPpIH.s:2224   .debug_str:0000000000000278 .LASF84
+     /tmp/ccvgPpIH.s:2362   .debug_str:0000000000000558 .LASF85
+     /tmp/ccvgPpIH.s:2166   .debug_str:0000000000000166 .LASF86
+     /tmp/ccvgPpIH.s:2160   .debug_str:000000000000014b .LASF87
+     /tmp/ccvgPpIH.s:2328   .debug_str:00000000000004bf .LASF88
+     /tmp/ccvgPpIH.s:2286   .debug_str:00000000000003ff .LASF89
+     /tmp/ccvgPpIH.s:2356   .debug_str:000000000000053f .LASF90
+     /tmp/ccvgPpIH.s:2220   .debug_str:000000000000025e .LASF91
+     /tmp/ccvgPpIH.s:2284   .debug_str:00000000000003f9 .LASF92
+     /tmp/ccvgPpIH.s:2122   .debug_str:000000000000003b .LASF93
+     /tmp/ccvgPpIH.s:2314   .debug_str:0000000000000488 .LASF94
+     /tmp/ccvgPpIH.s:2334   .debug_str:00000000000004d4 .LASF95
+     /tmp/ccvgPpIH.s:2342   .debug_str:00000000000004f6 .LASF96
+GAS LISTING /tmp/ccvgPpIH.s 			page 5
+
+
+     /tmp/ccvgPpIH.s:2350   .debug_str:0000000000000523 .LASF97
+     /tmp/ccvgPpIH.s:2338   .debug_str:00000000000004e0 .LASF98
+     /tmp/ccvgPpIH.s:2228   .debug_str:000000000000028d .LASF99
+     /tmp/ccvgPpIH.s:2370   .debug_str:000000000000057b .LASF100
+     /tmp/ccvgPpIH.s:2200   .debug_str:00000000000001fe .LASF101
+     /tmp/ccvgPpIH.s:2296   .debug_str:000000000000042c .LASF102
+     /tmp/ccvgPpIH.s:2374   .debug_str:0000000000000591 .LASF103
+     /tmp/ccvgPpIH.s:2298   .debug_str:0000000000000437 .LASF104
+     /tmp/ccvgPpIH.s:2378   .debug_str:000000000000059d .LASF105
+     /tmp/ccvgPpIH.s:2146   .debug_str:0000000000000104 .LASF106
+     /tmp/ccvgPpIH.s:2360   .debug_str:000000000000054e .LASF107
+     /tmp/ccvgPpIH.s:2226   .debug_str:0000000000000281 .LASF108
+     /tmp/ccvgPpIH.s:2346   .debug_str:0000000000000503 .LASF109
+     /tmp/ccvgPpIH.s:2186   .debug_str:00000000000001c4 .LASF110
+     /tmp/ccvgPpIH.s:2144   .debug_str:00000000000000f5 .LASF111
+     /tmp/ccvgPpIH.s:2184   .debug_str:00000000000001b3 .LASF112
+     /tmp/ccvgPpIH.s:2130   .debug_str:000000000000005c .LASF113
+     /tmp/ccvgPpIH.s:2132   .debug_str:000000000000006b .LASF114
+     /tmp/ccvgPpIH.s:2276   .debug_str:00000000000003d5 .LASF115
+     /tmp/ccvgPpIH.s:2256   .debug_str:0000000000000302 .LASF116
+     /tmp/ccvgPpIH.s:2248   .debug_str:00000000000002df .LASF117
+     /tmp/ccvgPpIH.s:2366   .debug_str:0000000000000568 .LASF118
+     /tmp/ccvgPpIH.s:2140   .debug_str:00000000000000e4 .LASF133
+     /tmp/ccvgPpIH.s:2322   .debug_str:00000000000004a4 .LASF119
+     /tmp/ccvgPpIH.s:2348   .debug_str:0000000000000510 .LASF120
+     /tmp/ccvgPpIH.s:2178   .debug_str:0000000000000196 .LASF121
+     /tmp/ccvgPpIH.s:2292   .debug_str:0000000000000419 .LASF122
+     /tmp/ccvgPpIH.s:2126   .debug_str:000000000000004e .LASF123
+     /tmp/ccvgPpIH.s:2234   .debug_str:00000000000002a8 .LASF124
+     /tmp/ccvgPpIH.s:2250   .debug_str:00000000000002e8 .LASF125
+     /tmp/ccvgPpIH.s:2254   .debug_str:00000000000002fb .LASF126
+     /tmp/ccvgPpIH.s:2332   .debug_str:00000000000004cd .LASF127
+     /tmp/ccvgPpIH.s:2376   .debug_str:0000000000000596 .LASF128
+     /tmp/ccvgPpIH.s:2242   .debug_str:00000000000002c5 .LASF129
+     /tmp/ccvgPpIH.s:14     .text._read:0000000000000000 .LFB1
+     /tmp/ccvgPpIH.s:27     .text._read:0000000000000004 .LFE1
+     /tmp/ccvgPpIH.s:2079   .debug_loc:0000000000000000 .LLST0
+     /tmp/ccvgPpIH.s:2142   .debug_str:00000000000000ef .LASF134
+     /tmp/ccvgPpIH.s:18     .text._read:0000000000000000 .LVL0
+     /tmp/ccvgPpIH.s:24     .text._read:0000000000000002 .LVL1
+     /tmp/ccvgPpIH.s:39     .debug_info:0000000000000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS
