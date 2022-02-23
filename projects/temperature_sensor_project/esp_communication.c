@@ -1,5 +1,6 @@
 /**
  * @file        esp_communication.c
+ * @author      Jonathan Bergqvist 
  * @brief       Defines functions that can be use to communicate with an ESP8266 module via uart.
  * @version     1.0
  * @date        2022-02-23
@@ -52,27 +53,4 @@ int esp_at_send(char *at_command)
 
     putstr(at_command);
     return 0;
-}
-
-/**
- * @brief       Sends an AT command and subsequent data to the ESP8266 module through uart.
- * 
- * @param[in]   at_command: the AT command represented as a string.
- * @param[in]   data: the data represented as a string.
- * @return      0 is returned if the command was sucessfully sent and -1 is returned if the
- *              command were larger than 256 bytes.
- */
-int esp_at_send_dat(char *at_command, char *data)
-{
-    if(!_is_command_length_within_limits(at_command))
-    {
-        return -1;
-    }
-
-    #ifdef ESP_COMMUNICATION_LCD_LOGGING
-    LCD_ShowStr(8, 10, at_command, WHITE, OPAQUE);
-    #endif
-
-    putstr(at_command);
-    putstr(data);
 }
