@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccbAfrTf.s 			page 1
+GAS LISTING /tmp/cc2FGa8Y.s 			page 1
 
 
    1              		.file	"gd32vf103_usart.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  usart_periph: USARTx(x=0,1,2)/UARTx(x=3,4)
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[out] none
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \retval     none
-GAS LISTING /tmp/ccbAfrTf.s 			page 2
+GAS LISTING /tmp/cc2FGa8Y.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** */
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
   68:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     case UART4:
   69:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****         /* reset UART4 */
   70:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****         rcu_periph_reset_enable(RCU_UART4RST);
-GAS LISTING /tmp/ccbAfrTf.s 			page 3
+GAS LISTING /tmp/cc2FGa8Y.s 			page 3
 
 
   71:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****         rcu_periph_reset_disable(RCU_UART4RST);
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
   82 0068 17030000 		tail	rcu_periph_reset_disable
   82      67000300 
   83              	.LVL6:
-GAS LISTING /tmp/ccbAfrTf.s 			page 4
+GAS LISTING /tmp/cc2FGa8Y.s 			page 4
 
 
   84              	.L2:
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  126      67000300 
  127              	.LVL12:
  128              	.L1:
-GAS LISTING /tmp/ccbAfrTf.s 			page 5
+GAS LISTING /tmp/cc2FGa8Y.s 			page 5
 
 
  129              	.LCFI8:
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  169              		.loc 1 86 1 is_stmt 1
  170              		.cfi_startproc
  171              	.LVL16:
-GAS LISTING /tmp/ccbAfrTf.s 			page 6
+GAS LISTING /tmp/cc2FGa8Y.s 			page 6
 
 
   87:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     uint32_t uclk=0U, intdiv=0U, fradiv=0U, udiv=0U;
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
   98:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     case USART2:
   99:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****          /* get USART2 clock */
  100:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****          uclk=rcu_clock_freq_get(CK_APB1);
-GAS LISTING /tmp/ccbAfrTf.s 			page 7
+GAS LISTING /tmp/cc2FGa8Y.s 			page 7
 
 
  101:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****          break;
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  241 0050 8280     		jr	ra
  242              	.LVL23:
  243              	.L17:
-GAS LISTING /tmp/ccbAfrTf.s 			page 8
+GAS LISTING /tmp/cc2FGa8Y.s 			page 8
 
 
  244              	.LCFI14:
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  277 0000 5C45     		lw	a5,12(a0)
  278 0002 93F7F79F 		andi	a5,a5,-1537
  279 0006 5CC5     		sw	a5,12(a0)
-GAS LISTING /tmp/ccbAfrTf.s 			page 9
+GAS LISTING /tmp/cc2FGa8Y.s 			page 9
 
 
  135:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     /* configure USART parity mode */
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  315              		.cfi_endproc
  316              	.LFE5:
  318              		.section	.text.usart_stop_bit_set,"ax",@progbits
-GAS LISTING /tmp/ccbAfrTf.s 			page 10
+GAS LISTING /tmp/cc2FGa8Y.s 			page 10
 
 
  319              		.align	1
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  181:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \retval     none
  182:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** */
  183:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_enable(uint32_t usart_periph)
-GAS LISTING /tmp/ccbAfrTf.s 			page 11
+GAS LISTING /tmp/cc2FGa8Y.s 			page 11
 
 
  184:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  201:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  usart_periph: USARTx(x=0,1,2)/UARTx(x=3,4)
  202:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  txconfig: enable or disable USART transmitter
  203:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****                 only one parameter can be selected which is shown as below:
-GAS LISTING /tmp/ccbAfrTf.s 			page 12
+GAS LISTING /tmp/cc2FGa8Y.s 			page 12
 
 
  204:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****       \arg        USART_TRANSMIT_ENABLE: enable USART transmission
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  230:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_receive_config(uint32_t usart_periph, uint32_t rxconfig)
  231:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
  422              		.loc 1 231 1 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 13
+GAS LISTING /tmp/cc2FGa8Y.s 			page 13
 
 
  423              		.cfi_startproc
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  460 0004 4CC1     		sw	a1,4(a0)
  251:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** }
  461              		.loc 1 251 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 14
+GAS LISTING /tmp/cc2FGa8Y.s 			page 14
 
 
  462 0006 8280     		ret
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  497              		.loc 1 274 50
  498 0002 BD89     		andi	a1,a1,15
  499              	.LVL46:
-GAS LISTING /tmp/ccbAfrTf.s 			page 15
+GAS LISTING /tmp/cc2FGa8Y.s 			page 15
 
 
  273:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     USART_CTL1(usart_periph) &= ~(USART_CTL1_ADDR);
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  294:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_mute_mode_disable(uint32_t usart_periph)
  295:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
  538              		.loc 1 295 1 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 16
+GAS LISTING /tmp/cc2FGa8Y.s 			page 16
 
 
  539              		.cfi_startproc
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  578              		.section	.text.usart_lin_mode_enable,"ax",@progbits
  579              		.align	1
  580              		.globl	usart_lin_mode_enable
-GAS LISTING /tmp/ccbAfrTf.s 			page 17
+GAS LISTING /tmp/cc2FGa8Y.s 			page 17
 
 
  582              	usart_lin_mode_enable:
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  616              		.cfi_endproc
  617              	.LFE18:
  619              		.section	.text.usart_lin_break_detection_length_config,"ax",@progbits
-GAS LISTING /tmp/ccbAfrTf.s 			page 18
+GAS LISTING /tmp/cc2FGa8Y.s 			page 18
 
 
  620              		.align	1
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  359:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_send_break(uint32_t usart_periph)
  360:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
  653              		.loc 1 360 1 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 19
+GAS LISTING /tmp/cc2FGa8Y.s 			page 19
 
 
  654              		.cfi_startproc
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  382:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {  
  691              		.loc 1 382 1 is_stmt 1
  692              		.cfi_startproc
-GAS LISTING /tmp/ccbAfrTf.s 			page 20
+GAS LISTING /tmp/cc2FGa8Y.s 			page 20
 
 
  693              	.LVL57:
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  403:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_synchronous_clock_disable(uint32_t usart_periph)
  404:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
  731              		.loc 1 404 1 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 21
+GAS LISTING /tmp/cc2FGa8Y.s 			page 21
 
 
  732              		.cfi_startproc
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  760              		.loc 1 432 5 is_stmt 1
  433:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     /* set CK length, CK phase, CK polarity */
  434:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     ctl |= (USART_CTL1_CLEN & clen) | (USART_CTL1_CPH & cph) | (USART_CTL1_CPL & cpl);
-GAS LISTING /tmp/ccbAfrTf.s 			page 22
+GAS LISTING /tmp/cc2FGa8Y.s 			page 22
 
 
  761              		.loc 1 434 55 is_stmt 0
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  802 0004 1307F70F 		addi	a4,a4,255
  803 0008 F98F     		and	a5,a5,a4
  804 000a 1CCD     		sw	a5,24(a0)
-GAS LISTING /tmp/ccbAfrTf.s 			page 23
+GAS LISTING /tmp/cc2FGa8Y.s 			page 23
 
 
  449:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     USART_GP(usart_periph) |= (USART_GP_GUAT & ((gaut)<<8));
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  463:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** /*!
  464:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \brief      disable smartcard mode
  465:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  usart_periph: USARTx(x=0,1,2)
-GAS LISTING /tmp/ccbAfrTf.s 			page 24
+GAS LISTING /tmp/cc2FGa8Y.s 			page 24
 
 
  466:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[out] none
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  486:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \brief      disable NACK in smartcard mode
  487:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  usart_periph: USARTx(x=0,1,2)
  488:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[out] none
-GAS LISTING /tmp/ccbAfrTf.s 			page 25
+GAS LISTING /tmp/cc2FGa8Y.s 			page 25
 
 
  489:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \retval     none
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  509:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[in]  usart_periph: USARTx(x=0,1,2)/UARTx(x=3,4)
  510:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \param[out] none
  511:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     \retval     none
-GAS LISTING /tmp/ccbAfrTf.s 			page 26
+GAS LISTING /tmp/cc2FGa8Y.s 			page 26
 
 
  512:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** */
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  964              		.align	1
  965              		.globl	usart_irda_lowpower_config
  967              	usart_irda_lowpower_config:
-GAS LISTING /tmp/ccbAfrTf.s 			page 27
+GAS LISTING /tmp/cc2FGa8Y.s 			page 27
 
 
  968              	.LFB34:
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  556:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** */
  557:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_hardware_flow_rts_config(uint32_t usart_periph, uint32_t rtsconfig)
  558:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
-GAS LISTING /tmp/ccbAfrTf.s 			page 28
+GAS LISTING /tmp/cc2FGa8Y.s 			page 28
 
 
  997              		.loc 1 558 1 is_stmt 1
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  581:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     
  582:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     ctl = USART_CTL2(usart_periph);
  1031              		.loc 1 582 5
-GAS LISTING /tmp/ccbAfrTf.s 			page 29
+GAS LISTING /tmp/cc2FGa8Y.s 			page 29
 
 
  1032              		.loc 1 582 9 is_stmt 0
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  1066              		.loc 1 604 9 is_stmt 0
  1067 0002 93F7F7FB 		andi	a5,a5,-65
  1068              	.LVL89:
-GAS LISTING /tmp/ccbAfrTf.s 			page 30
+GAS LISTING /tmp/cc2FGa8Y.s 			page 30
 
 
  605:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     ctl |= dmacmd;
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  627:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     /* configure DMA transmission */
  628:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     USART_CTL2(usart_periph) = ctl;
  1103              		.loc 1 628 5 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 31
+GAS LISTING /tmp/cc2FGa8Y.s 			page 31
 
 
  1104              		.loc 1 628 30 is_stmt 0
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  1132              		.cfi_endproc
  1133              	.LFE39:
  1135              		.section	.text.usart_flag_clear,"ax",@progbits
-GAS LISTING /tmp/ccbAfrTf.s 			page 32
+GAS LISTING /tmp/cc2FGa8Y.s 			page 32
 
 
  1136              		.align	1
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  680:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****       \arg        USART_INT_PERR: parity error interrupt
  681:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****       \arg        USART_INT_TBE: transmitter buffer empty interrupt
  682:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****       \arg        USART_INT_TC: transmission complete interrupt
-GAS LISTING /tmp/ccbAfrTf.s 			page 33
+GAS LISTING /tmp/cc2FGa8Y.s 			page 33
 
 
  683:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****       \arg        USART_INT_RBNE: read data buffer not empty interrupt and overrun error interrupt
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  712:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** void usart_interrupt_disable(uint32_t usart_periph, uint32_t interrupt)
  713:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** {
  1197              		.loc 1 713 1 is_stmt 1
-GAS LISTING /tmp/ccbAfrTf.s 			page 34
+GAS LISTING /tmp/cc2FGa8Y.s 			page 34
 
 
  1198              		.cfi_startproc
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  1229              		.loc 1 738 5
  739:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     /* get the interrupt enable bit status */
  740:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c ****     intenable = (USART_REG_VAL(usart_periph, int_flag) & BIT(USART_BIT_POS(int_flag)));
-GAS LISTING /tmp/ccbAfrTf.s 			page 35
+GAS LISTING /tmp/cc2FGa8Y.s 			page 35
 
 
  1230              		.loc 1 740 5
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  1272              		.globl	usart_interrupt_flag_clear
  1274              	usart_interrupt_flag_clear:
  1275              	.LFB44:
-GAS LISTING /tmp/ccbAfrTf.s 			page 36
+GAS LISTING /tmp/cc2FGa8Y.s 			page 36
 
 
  750:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c **** 
@@ -2143,1001 +2143,1001 @@ GAS LISTING /tmp/ccbAfrTf.s 			page 1
  1298              	.LFE44:
  1300              		.text
  1301              	.Letext0:
- 1302              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 1303              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 1302              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 1303              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  1304              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  1305              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  1306              		.file 6 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_usart.h"
  1307              		.file 7 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/ccbAfrTf.s 			page 37
+GAS LISTING /tmp/cc2FGa8Y.s 			page 37
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_usart.c
-     /tmp/ccbAfrTf.s:13     .text.usart_deinit:0000000000000000 usart_deinit
-     /tmp/ccbAfrTf.s:17     .text.usart_deinit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:19     .text.usart_deinit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:20     .text.usart_deinit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:21     .text.usart_deinit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:23     .text.usart_deinit:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:25     .text.usart_deinit:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:27     .text.usart_deinit:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:28     .text.usart_deinit:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:30     .text.usart_deinit:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:38     .text.usart_deinit:0000000000000024 .L0 
-     /tmp/ccbAfrTf.s:43     .text.usart_deinit:0000000000000030 .L0 
-     /tmp/ccbAfrTf.s:44     .text.usart_deinit:0000000000000030 .L0 
-     /tmp/ccbAfrTf.s:45     .text.usart_deinit:0000000000000032 .L0 
-     /tmp/ccbAfrTf.s:46     .text.usart_deinit:0000000000000032 .L0 
-     /tmp/ccbAfrTf.s:48     .text.usart_deinit:0000000000000032 .L0 
-     /tmp/ccbAfrTf.s:50     .text.usart_deinit:0000000000000036 .L0 
-     /tmp/ccbAfrTf.s:52     .text.usart_deinit:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:54     .text.usart_deinit:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:58     .text.usart_deinit:0000000000000040 .L0 
-     /tmp/ccbAfrTf.s:60     .text.usart_deinit:0000000000000040 .L0 
-     /tmp/ccbAfrTf.s:66     .text.usart_deinit:0000000000000054 .L0 
-     /tmp/ccbAfrTf.s:71     .text.usart_deinit:0000000000000060 .L0 
-     /tmp/ccbAfrTf.s:72     .text.usart_deinit:0000000000000060 .L0 
-     /tmp/ccbAfrTf.s:73     .text.usart_deinit:0000000000000062 .L0 
-     /tmp/ccbAfrTf.s:74     .text.usart_deinit:0000000000000062 .L0 
-     /tmp/ccbAfrTf.s:76     .text.usart_deinit:0000000000000062 .L0 
-     /tmp/ccbAfrTf.s:78     .text.usart_deinit:0000000000000066 .L0 
-     /tmp/ccbAfrTf.s:80     .text.usart_deinit:0000000000000068 .L0 
-     /tmp/ccbAfrTf.s:82     .text.usart_deinit:0000000000000068 .L0 
-     /tmp/ccbAfrTf.s:86     .text.usart_deinit:0000000000000070 .L0 
-     /tmp/ccbAfrTf.s:88     .text.usart_deinit:0000000000000070 .L0 
-     /tmp/ccbAfrTf.s:93     .text.usart_deinit:000000000000007c .L0 
-     /tmp/ccbAfrTf.s:94     .text.usart_deinit:000000000000007c .L0 
-     /tmp/ccbAfrTf.s:95     .text.usart_deinit:000000000000007e .L0 
-     /tmp/ccbAfrTf.s:96     .text.usart_deinit:000000000000007e .L0 
-     /tmp/ccbAfrTf.s:98     .text.usart_deinit:000000000000007e .L0 
-     /tmp/ccbAfrTf.s:100    .text.usart_deinit:0000000000000082 .L0 
-     /tmp/ccbAfrTf.s:102    .text.usart_deinit:0000000000000084 .L0 
-     /tmp/ccbAfrTf.s:104    .text.usart_deinit:0000000000000084 .L0 
-     /tmp/ccbAfrTf.s:108    .text.usart_deinit:000000000000008c .L0 
-     /tmp/ccbAfrTf.s:110    .text.usart_deinit:000000000000008c .L0 
-     /tmp/ccbAfrTf.s:115    .text.usart_deinit:0000000000000098 .L0 
-     /tmp/ccbAfrTf.s:116    .text.usart_deinit:0000000000000098 .L0 
-     /tmp/ccbAfrTf.s:117    .text.usart_deinit:000000000000009a .L0 
-     /tmp/ccbAfrTf.s:118    .text.usart_deinit:000000000000009a .L0 
-     /tmp/ccbAfrTf.s:120    .text.usart_deinit:000000000000009a .L0 
-     /tmp/ccbAfrTf.s:122    .text.usart_deinit:000000000000009e .L0 
-     /tmp/ccbAfrTf.s:124    .text.usart_deinit:00000000000000a0 .L0 
-     /tmp/ccbAfrTf.s:126    .text.usart_deinit:00000000000000a0 .L0 
-     /tmp/ccbAfrTf.s:130    .text.usart_deinit:00000000000000a8 .L0 
-     /tmp/ccbAfrTf.s:132    .text.usart_deinit:00000000000000a8 .L0 
-     /tmp/ccbAfrTf.s:133    .text.usart_deinit:00000000000000aa .L0 
-     /tmp/ccbAfrTf.s:134    .text.usart_deinit:00000000000000aa .L0 
-     /tmp/ccbAfrTf.s:137    .text.usart_deinit:00000000000000ac .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 38
+     /tmp/cc2FGa8Y.s:13     .text.usart_deinit:0000000000000000 usart_deinit
+     /tmp/cc2FGa8Y.s:17     .text.usart_deinit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:19     .text.usart_deinit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:20     .text.usart_deinit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:21     .text.usart_deinit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:23     .text.usart_deinit:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:25     .text.usart_deinit:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:27     .text.usart_deinit:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:28     .text.usart_deinit:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:30     .text.usart_deinit:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:38     .text.usart_deinit:0000000000000024 .L0 
+     /tmp/cc2FGa8Y.s:43     .text.usart_deinit:0000000000000030 .L0 
+     /tmp/cc2FGa8Y.s:44     .text.usart_deinit:0000000000000030 .L0 
+     /tmp/cc2FGa8Y.s:45     .text.usart_deinit:0000000000000032 .L0 
+     /tmp/cc2FGa8Y.s:46     .text.usart_deinit:0000000000000032 .L0 
+     /tmp/cc2FGa8Y.s:48     .text.usart_deinit:0000000000000032 .L0 
+     /tmp/cc2FGa8Y.s:50     .text.usart_deinit:0000000000000036 .L0 
+     /tmp/cc2FGa8Y.s:52     .text.usart_deinit:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:54     .text.usart_deinit:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:58     .text.usart_deinit:0000000000000040 .L0 
+     /tmp/cc2FGa8Y.s:60     .text.usart_deinit:0000000000000040 .L0 
+     /tmp/cc2FGa8Y.s:66     .text.usart_deinit:0000000000000054 .L0 
+     /tmp/cc2FGa8Y.s:71     .text.usart_deinit:0000000000000060 .L0 
+     /tmp/cc2FGa8Y.s:72     .text.usart_deinit:0000000000000060 .L0 
+     /tmp/cc2FGa8Y.s:73     .text.usart_deinit:0000000000000062 .L0 
+     /tmp/cc2FGa8Y.s:74     .text.usart_deinit:0000000000000062 .L0 
+     /tmp/cc2FGa8Y.s:76     .text.usart_deinit:0000000000000062 .L0 
+     /tmp/cc2FGa8Y.s:78     .text.usart_deinit:0000000000000066 .L0 
+     /tmp/cc2FGa8Y.s:80     .text.usart_deinit:0000000000000068 .L0 
+     /tmp/cc2FGa8Y.s:82     .text.usart_deinit:0000000000000068 .L0 
+     /tmp/cc2FGa8Y.s:86     .text.usart_deinit:0000000000000070 .L0 
+     /tmp/cc2FGa8Y.s:88     .text.usart_deinit:0000000000000070 .L0 
+     /tmp/cc2FGa8Y.s:93     .text.usart_deinit:000000000000007c .L0 
+     /tmp/cc2FGa8Y.s:94     .text.usart_deinit:000000000000007c .L0 
+     /tmp/cc2FGa8Y.s:95     .text.usart_deinit:000000000000007e .L0 
+     /tmp/cc2FGa8Y.s:96     .text.usart_deinit:000000000000007e .L0 
+     /tmp/cc2FGa8Y.s:98     .text.usart_deinit:000000000000007e .L0 
+     /tmp/cc2FGa8Y.s:100    .text.usart_deinit:0000000000000082 .L0 
+     /tmp/cc2FGa8Y.s:102    .text.usart_deinit:0000000000000084 .L0 
+     /tmp/cc2FGa8Y.s:104    .text.usart_deinit:0000000000000084 .L0 
+     /tmp/cc2FGa8Y.s:108    .text.usart_deinit:000000000000008c .L0 
+     /tmp/cc2FGa8Y.s:110    .text.usart_deinit:000000000000008c .L0 
+     /tmp/cc2FGa8Y.s:115    .text.usart_deinit:0000000000000098 .L0 
+     /tmp/cc2FGa8Y.s:116    .text.usart_deinit:0000000000000098 .L0 
+     /tmp/cc2FGa8Y.s:117    .text.usart_deinit:000000000000009a .L0 
+     /tmp/cc2FGa8Y.s:118    .text.usart_deinit:000000000000009a .L0 
+     /tmp/cc2FGa8Y.s:120    .text.usart_deinit:000000000000009a .L0 
+     /tmp/cc2FGa8Y.s:122    .text.usart_deinit:000000000000009e .L0 
+     /tmp/cc2FGa8Y.s:124    .text.usart_deinit:00000000000000a0 .L0 
+     /tmp/cc2FGa8Y.s:126    .text.usart_deinit:00000000000000a0 .L0 
+     /tmp/cc2FGa8Y.s:130    .text.usart_deinit:00000000000000a8 .L0 
+     /tmp/cc2FGa8Y.s:132    .text.usart_deinit:00000000000000a8 .L0 
+     /tmp/cc2FGa8Y.s:133    .text.usart_deinit:00000000000000aa .L0 
+     /tmp/cc2FGa8Y.s:134    .text.usart_deinit:00000000000000aa .L0 
+     /tmp/cc2FGa8Y.s:137    .text.usart_deinit:00000000000000ac .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 38
 
 
-     /tmp/ccbAfrTf.s:141    .text.usart_deinit:00000000000000ae .L0 
-     /tmp/ccbAfrTf.s:143    .text.usart_deinit:00000000000000ae .L0 
-     /tmp/ccbAfrTf.s:148    .text.usart_deinit:00000000000000ba .L0 
-     /tmp/ccbAfrTf.s:149    .text.usart_deinit:00000000000000ba .L0 
-     /tmp/ccbAfrTf.s:150    .text.usart_deinit:00000000000000bc .L0 
-     /tmp/ccbAfrTf.s:152    .text.usart_deinit:00000000000000bc .L0 
-     /tmp/ccbAfrTf.s:154    .text.usart_deinit:00000000000000c0 .L0 
-     /tmp/ccbAfrTf.s:156    .text.usart_deinit:00000000000000c2 .L0 
-     /tmp/ccbAfrTf.s:158    .text.usart_deinit:00000000000000c2 .L0 
-     /tmp/ccbAfrTf.s:160    .text.usart_deinit:00000000000000ca .L0 
-     /tmp/ccbAfrTf.s:167    .text.usart_baudrate_set:0000000000000000 usart_baudrate_set
-     /tmp/ccbAfrTf.s:170    .text.usart_baudrate_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:172    .text.usart_baudrate_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:173    .text.usart_baudrate_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:174    .text.usart_baudrate_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:175    .text.usart_baudrate_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:177    .text.usart_baudrate_set:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:179    .text.usart_baudrate_set:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:181    .text.usart_baudrate_set:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:184    .text.usart_baudrate_set:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:185    .text.usart_baudrate_set:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:186    .text.usart_baudrate_set:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:188    .text.usart_baudrate_set:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:190    .text.usart_baudrate_set:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:193    .text.usart_baudrate_set:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:199    .text.usart_baudrate_set:0000000000000028 .L0 
-     /tmp/ccbAfrTf.s:202    .text.usart_baudrate_set:000000000000002a .L0 
-     /tmp/ccbAfrTf.s:204    .text.usart_baudrate_set:000000000000002e .L0 
-     /tmp/ccbAfrTf.s:205    .text.usart_baudrate_set:000000000000002e .L0 
-     /tmp/ccbAfrTf.s:210    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:211    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:212    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:213    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:214    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:215    .text.usart_baudrate_set:0000000000000038 .L0 
-     /tmp/ccbAfrTf.s:217    .text.usart_baudrate_set:000000000000003c .L0 
-     /tmp/ccbAfrTf.s:219    .text.usart_baudrate_set:000000000000003e .L0 
-     /tmp/ccbAfrTf.s:222    .text.usart_baudrate_set:0000000000000042 .L0 
-     /tmp/ccbAfrTf.s:223    .text.usart_baudrate_set:0000000000000044 .L0 
-     /tmp/ccbAfrTf.s:224    .text.usart_baudrate_set:0000000000000044 .L0 
-     /tmp/ccbAfrTf.s:226    .text.usart_baudrate_set:0000000000000046 .L0 
-     /tmp/ccbAfrTf.s:229    .text.usart_baudrate_set:0000000000000046 .L0 
-     /tmp/ccbAfrTf.s:233    .text.usart_baudrate_set:000000000000004a .L0 
-     /tmp/ccbAfrTf.s:235    .text.usart_baudrate_set:000000000000004c .L0 
-     /tmp/ccbAfrTf.s:236    .text.usart_baudrate_set:000000000000004e .L0 
-     /tmp/ccbAfrTf.s:240    .text.usart_baudrate_set:0000000000000050 .L0 
-     /tmp/ccbAfrTf.s:245    .text.usart_baudrate_set:0000000000000052 .L0 
-     /tmp/ccbAfrTf.s:247    .text.usart_baudrate_set:0000000000000052 .L0 
-     /tmp/ccbAfrTf.s:252    .text.usart_baudrate_set:0000000000000062 .L0 
-     /tmp/ccbAfrTf.s:254    .text.usart_baudrate_set:0000000000000064 .L0 
-     /tmp/ccbAfrTf.s:257    .text.usart_baudrate_set:0000000000000068 .L0 
-     /tmp/ccbAfrTf.s:258    .text.usart_baudrate_set:0000000000000068 .L0 
-     /tmp/ccbAfrTf.s:262    .text.usart_baudrate_set:0000000000000072 .L0 
-     /tmp/ccbAfrTf.s:263    .text.usart_baudrate_set:0000000000000074 .L0 
-     /tmp/ccbAfrTf.s:270    .text.usart_parity_config:0000000000000000 usart_parity_config
-     /tmp/ccbAfrTf.s:273    .text.usart_parity_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:275    .text.usart_parity_config:0000000000000000 .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 39
+     /tmp/cc2FGa8Y.s:141    .text.usart_deinit:00000000000000ae .L0 
+     /tmp/cc2FGa8Y.s:143    .text.usart_deinit:00000000000000ae .L0 
+     /tmp/cc2FGa8Y.s:148    .text.usart_deinit:00000000000000ba .L0 
+     /tmp/cc2FGa8Y.s:149    .text.usart_deinit:00000000000000ba .L0 
+     /tmp/cc2FGa8Y.s:150    .text.usart_deinit:00000000000000bc .L0 
+     /tmp/cc2FGa8Y.s:152    .text.usart_deinit:00000000000000bc .L0 
+     /tmp/cc2FGa8Y.s:154    .text.usart_deinit:00000000000000c0 .L0 
+     /tmp/cc2FGa8Y.s:156    .text.usart_deinit:00000000000000c2 .L0 
+     /tmp/cc2FGa8Y.s:158    .text.usart_deinit:00000000000000c2 .L0 
+     /tmp/cc2FGa8Y.s:160    .text.usart_deinit:00000000000000ca .L0 
+     /tmp/cc2FGa8Y.s:167    .text.usart_baudrate_set:0000000000000000 usart_baudrate_set
+     /tmp/cc2FGa8Y.s:170    .text.usart_baudrate_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:172    .text.usart_baudrate_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:173    .text.usart_baudrate_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:174    .text.usart_baudrate_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:175    .text.usart_baudrate_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:177    .text.usart_baudrate_set:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:179    .text.usart_baudrate_set:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:181    .text.usart_baudrate_set:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:184    .text.usart_baudrate_set:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:185    .text.usart_baudrate_set:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:186    .text.usart_baudrate_set:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:188    .text.usart_baudrate_set:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:190    .text.usart_baudrate_set:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:193    .text.usart_baudrate_set:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:199    .text.usart_baudrate_set:0000000000000028 .L0 
+     /tmp/cc2FGa8Y.s:202    .text.usart_baudrate_set:000000000000002a .L0 
+     /tmp/cc2FGa8Y.s:204    .text.usart_baudrate_set:000000000000002e .L0 
+     /tmp/cc2FGa8Y.s:205    .text.usart_baudrate_set:000000000000002e .L0 
+     /tmp/cc2FGa8Y.s:210    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:211    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:212    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:213    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:214    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:215    .text.usart_baudrate_set:0000000000000038 .L0 
+     /tmp/cc2FGa8Y.s:217    .text.usart_baudrate_set:000000000000003c .L0 
+     /tmp/cc2FGa8Y.s:219    .text.usart_baudrate_set:000000000000003e .L0 
+     /tmp/cc2FGa8Y.s:222    .text.usart_baudrate_set:0000000000000042 .L0 
+     /tmp/cc2FGa8Y.s:223    .text.usart_baudrate_set:0000000000000044 .L0 
+     /tmp/cc2FGa8Y.s:224    .text.usart_baudrate_set:0000000000000044 .L0 
+     /tmp/cc2FGa8Y.s:226    .text.usart_baudrate_set:0000000000000046 .L0 
+     /tmp/cc2FGa8Y.s:229    .text.usart_baudrate_set:0000000000000046 .L0 
+     /tmp/cc2FGa8Y.s:233    .text.usart_baudrate_set:000000000000004a .L0 
+     /tmp/cc2FGa8Y.s:235    .text.usart_baudrate_set:000000000000004c .L0 
+     /tmp/cc2FGa8Y.s:236    .text.usart_baudrate_set:000000000000004e .L0 
+     /tmp/cc2FGa8Y.s:240    .text.usart_baudrate_set:0000000000000050 .L0 
+     /tmp/cc2FGa8Y.s:245    .text.usart_baudrate_set:0000000000000052 .L0 
+     /tmp/cc2FGa8Y.s:247    .text.usart_baudrate_set:0000000000000052 .L0 
+     /tmp/cc2FGa8Y.s:252    .text.usart_baudrate_set:0000000000000062 .L0 
+     /tmp/cc2FGa8Y.s:254    .text.usart_baudrate_set:0000000000000064 .L0 
+     /tmp/cc2FGa8Y.s:257    .text.usart_baudrate_set:0000000000000068 .L0 
+     /tmp/cc2FGa8Y.s:258    .text.usart_baudrate_set:0000000000000068 .L0 
+     /tmp/cc2FGa8Y.s:262    .text.usart_baudrate_set:0000000000000072 .L0 
+     /tmp/cc2FGa8Y.s:263    .text.usart_baudrate_set:0000000000000074 .L0 
+     /tmp/cc2FGa8Y.s:270    .text.usart_parity_config:0000000000000000 usart_parity_config
+     /tmp/cc2FGa8Y.s:273    .text.usart_parity_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:275    .text.usart_parity_config:0000000000000000 .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 39
 
 
-     /tmp/ccbAfrTf.s:276    .text.usart_parity_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:277    .text.usart_parity_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:281    .text.usart_parity_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:282    .text.usart_parity_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:287    .text.usart_parity_config:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:288    .text.usart_parity_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:295    .text.usart_word_length_set:0000000000000000 usart_word_length_set
-     /tmp/ccbAfrTf.s:298    .text.usart_word_length_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:300    .text.usart_word_length_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:301    .text.usart_word_length_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:302    .text.usart_word_length_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:308    .text.usart_word_length_set:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:309    .text.usart_word_length_set:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:314    .text.usart_word_length_set:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:315    .text.usart_word_length_set:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:322    .text.usart_stop_bit_set:0000000000000000 usart_stop_bit_set
-     /tmp/ccbAfrTf.s:325    .text.usart_stop_bit_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:327    .text.usart_stop_bit_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:328    .text.usart_stop_bit_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:329    .text.usart_stop_bit_set:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:335    .text.usart_stop_bit_set:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:336    .text.usart_stop_bit_set:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:341    .text.usart_stop_bit_set:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:342    .text.usart_stop_bit_set:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:349    .text.usart_enable:0000000000000000 usart_enable
-     /tmp/ccbAfrTf.s:352    .text.usart_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:354    .text.usart_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:355    .text.usart_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:356    .text.usart_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:361    .text.usart_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:362    .text.usart_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:369    .text.usart_disable:0000000000000000 usart_disable
-     /tmp/ccbAfrTf.s:372    .text.usart_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:374    .text.usart_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:375    .text.usart_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:376    .text.usart_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:382    .text.usart_disable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:383    .text.usart_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:390    .text.usart_transmit_config:0000000000000000 usart_transmit_config
-     /tmp/ccbAfrTf.s:393    .text.usart_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:395    .text.usart_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:396    .text.usart_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:397    .text.usart_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:398    .text.usart_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:401    .text.usart_transmit_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:402    .text.usart_transmit_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:405    .text.usart_transmit_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:406    .text.usart_transmit_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:409    .text.usart_transmit_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:410    .text.usart_transmit_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:412    .text.usart_transmit_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:413    .text.usart_transmit_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:420    .text.usart_receive_config:0000000000000000 usart_receive_config
-     /tmp/ccbAfrTf.s:423    .text.usart_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:425    .text.usart_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:426    .text.usart_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:427    .text.usart_receive_config:0000000000000000 .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 40
+     /tmp/cc2FGa8Y.s:276    .text.usart_parity_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:277    .text.usart_parity_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:281    .text.usart_parity_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:282    .text.usart_parity_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:287    .text.usart_parity_config:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:288    .text.usart_parity_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:295    .text.usart_word_length_set:0000000000000000 usart_word_length_set
+     /tmp/cc2FGa8Y.s:298    .text.usart_word_length_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:300    .text.usart_word_length_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:301    .text.usart_word_length_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:302    .text.usart_word_length_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:308    .text.usart_word_length_set:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:309    .text.usart_word_length_set:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:314    .text.usart_word_length_set:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:315    .text.usart_word_length_set:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:322    .text.usart_stop_bit_set:0000000000000000 usart_stop_bit_set
+     /tmp/cc2FGa8Y.s:325    .text.usart_stop_bit_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:327    .text.usart_stop_bit_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:328    .text.usart_stop_bit_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:329    .text.usart_stop_bit_set:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:335    .text.usart_stop_bit_set:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:336    .text.usart_stop_bit_set:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:341    .text.usart_stop_bit_set:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:342    .text.usart_stop_bit_set:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:349    .text.usart_enable:0000000000000000 usart_enable
+     /tmp/cc2FGa8Y.s:352    .text.usart_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:354    .text.usart_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:355    .text.usart_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:356    .text.usart_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:361    .text.usart_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:362    .text.usart_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:369    .text.usart_disable:0000000000000000 usart_disable
+     /tmp/cc2FGa8Y.s:372    .text.usart_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:374    .text.usart_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:375    .text.usart_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:376    .text.usart_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:382    .text.usart_disable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:383    .text.usart_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:390    .text.usart_transmit_config:0000000000000000 usart_transmit_config
+     /tmp/cc2FGa8Y.s:393    .text.usart_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:395    .text.usart_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:396    .text.usart_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:397    .text.usart_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:398    .text.usart_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:401    .text.usart_transmit_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:402    .text.usart_transmit_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:405    .text.usart_transmit_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:406    .text.usart_transmit_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:409    .text.usart_transmit_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:410    .text.usart_transmit_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:412    .text.usart_transmit_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:413    .text.usart_transmit_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:420    .text.usart_receive_config:0000000000000000 usart_receive_config
+     /tmp/cc2FGa8Y.s:423    .text.usart_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:425    .text.usart_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:426    .text.usart_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:427    .text.usart_receive_config:0000000000000000 .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 40
 
 
-     /tmp/ccbAfrTf.s:428    .text.usart_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:431    .text.usart_receive_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:432    .text.usart_receive_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:435    .text.usart_receive_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:436    .text.usart_receive_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:439    .text.usart_receive_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:440    .text.usart_receive_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:442    .text.usart_receive_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:443    .text.usart_receive_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:450    .text.usart_data_transmit:0000000000000000 usart_data_transmit
-     /tmp/ccbAfrTf.s:453    .text.usart_data_transmit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:455    .text.usart_data_transmit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:456    .text.usart_data_transmit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:457    .text.usart_data_transmit:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:460    .text.usart_data_transmit:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:462    .text.usart_data_transmit:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:463    .text.usart_data_transmit:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:470    .text.usart_data_receive:0000000000000000 usart_data_receive
-     /tmp/ccbAfrTf.s:473    .text.usart_data_receive:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:475    .text.usart_data_receive:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:476    .text.usart_data_receive:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:477    .text.usart_data_receive:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:480    .text.usart_data_receive:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:482    .text.usart_data_receive:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:489    .text.usart_address_config:0000000000000000 usart_address_config
-     /tmp/ccbAfrTf.s:492    .text.usart_address_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:494    .text.usart_address_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:495    .text.usart_address_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:496    .text.usart_address_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:498    .text.usart_address_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:501    .text.usart_address_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:504    .text.usart_address_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:505    .text.usart_address_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:509    .text.usart_address_config:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:510    .text.usart_address_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:517    .text.usart_mute_mode_enable:0000000000000000 usart_mute_mode_enable
-     /tmp/ccbAfrTf.s:520    .text.usart_mute_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:522    .text.usart_mute_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:523    .text.usart_mute_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:524    .text.usart_mute_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:528    .text.usart_mute_mode_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:529    .text.usart_mute_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:536    .text.usart_mute_mode_disable:0000000000000000 usart_mute_mode_disable
-     /tmp/ccbAfrTf.s:539    .text.usart_mute_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:541    .text.usart_mute_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:542    .text.usart_mute_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:543    .text.usart_mute_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:547    .text.usart_mute_mode_disable:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:548    .text.usart_mute_mode_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:555    .text.usart_mute_mode_wakeup_config:0000000000000000 usart_mute_mode_wakeup_config
-     /tmp/ccbAfrTf.s:558    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:560    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:561    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:562    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:568    .text.usart_mute_mode_wakeup_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:569    .text.usart_mute_mode_wakeup_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:574    .text.usart_mute_mode_wakeup_config:0000000000000012 .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 41
+     /tmp/cc2FGa8Y.s:428    .text.usart_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:431    .text.usart_receive_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:432    .text.usart_receive_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:435    .text.usart_receive_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:436    .text.usart_receive_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:439    .text.usart_receive_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:440    .text.usart_receive_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:442    .text.usart_receive_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:443    .text.usart_receive_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:450    .text.usart_data_transmit:0000000000000000 usart_data_transmit
+     /tmp/cc2FGa8Y.s:453    .text.usart_data_transmit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:455    .text.usart_data_transmit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:456    .text.usart_data_transmit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:457    .text.usart_data_transmit:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:460    .text.usart_data_transmit:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:462    .text.usart_data_transmit:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:463    .text.usart_data_transmit:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:470    .text.usart_data_receive:0000000000000000 usart_data_receive
+     /tmp/cc2FGa8Y.s:473    .text.usart_data_receive:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:475    .text.usart_data_receive:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:476    .text.usart_data_receive:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:477    .text.usart_data_receive:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:480    .text.usart_data_receive:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:482    .text.usart_data_receive:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:489    .text.usart_address_config:0000000000000000 usart_address_config
+     /tmp/cc2FGa8Y.s:492    .text.usart_address_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:494    .text.usart_address_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:495    .text.usart_address_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:496    .text.usart_address_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:498    .text.usart_address_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:501    .text.usart_address_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:504    .text.usart_address_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:505    .text.usart_address_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:509    .text.usart_address_config:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:510    .text.usart_address_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:517    .text.usart_mute_mode_enable:0000000000000000 usart_mute_mode_enable
+     /tmp/cc2FGa8Y.s:520    .text.usart_mute_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:522    .text.usart_mute_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:523    .text.usart_mute_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:524    .text.usart_mute_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:528    .text.usart_mute_mode_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:529    .text.usart_mute_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:536    .text.usart_mute_mode_disable:0000000000000000 usart_mute_mode_disable
+     /tmp/cc2FGa8Y.s:539    .text.usart_mute_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:541    .text.usart_mute_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:542    .text.usart_mute_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:543    .text.usart_mute_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:547    .text.usart_mute_mode_disable:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:548    .text.usart_mute_mode_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:555    .text.usart_mute_mode_wakeup_config:0000000000000000 usart_mute_mode_wakeup_config
+     /tmp/cc2FGa8Y.s:558    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:560    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:561    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:562    .text.usart_mute_mode_wakeup_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:568    .text.usart_mute_mode_wakeup_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:569    .text.usart_mute_mode_wakeup_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:574    .text.usart_mute_mode_wakeup_config:0000000000000012 .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 41
 
 
-     /tmp/ccbAfrTf.s:575    .text.usart_mute_mode_wakeup_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:582    .text.usart_lin_mode_enable:0000000000000000 usart_lin_mode_enable
-     /tmp/ccbAfrTf.s:585    .text.usart_lin_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:587    .text.usart_lin_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:588    .text.usart_lin_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:589    .text.usart_lin_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:594    .text.usart_lin_mode_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:595    .text.usart_lin_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:602    .text.usart_lin_mode_disable:0000000000000000 usart_lin_mode_disable
-     /tmp/ccbAfrTf.s:605    .text.usart_lin_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:607    .text.usart_lin_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:608    .text.usart_lin_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:609    .text.usart_lin_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:615    .text.usart_lin_mode_disable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:616    .text.usart_lin_mode_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:623    .text.usart_lin_break_detection_length_config:0000000000000000 usart_lin_break_detection_length_config
-     /tmp/ccbAfrTf.s:626    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:628    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:629    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:630    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:632    .text.usart_lin_break_detection_length_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:635    .text.usart_lin_break_detection_length_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:638    .text.usart_lin_break_detection_length_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:639    .text.usart_lin_break_detection_length_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:643    .text.usart_lin_break_detection_length_config:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:644    .text.usart_lin_break_detection_length_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:651    .text.usart_send_break:0000000000000000 usart_send_break
-     /tmp/ccbAfrTf.s:654    .text.usart_send_break:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:656    .text.usart_send_break:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:657    .text.usart_send_break:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:658    .text.usart_send_break:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:662    .text.usart_send_break:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:663    .text.usart_send_break:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:670    .text.usart_halfduplex_enable:0000000000000000 usart_halfduplex_enable
-     /tmp/ccbAfrTf.s:673    .text.usart_halfduplex_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:675    .text.usart_halfduplex_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:676    .text.usart_halfduplex_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:677    .text.usart_halfduplex_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:681    .text.usart_halfduplex_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:682    .text.usart_halfduplex_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:689    .text.usart_halfduplex_disable:0000000000000000 usart_halfduplex_disable
-     /tmp/ccbAfrTf.s:692    .text.usart_halfduplex_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:694    .text.usart_halfduplex_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:695    .text.usart_halfduplex_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:696    .text.usart_halfduplex_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:700    .text.usart_halfduplex_disable:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:701    .text.usart_halfduplex_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:708    .text.usart_synchronous_clock_enable:0000000000000000 usart_synchronous_clock_enable
-     /tmp/ccbAfrTf.s:711    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:713    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:714    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:715    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:721    .text.usart_synchronous_clock_enable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:722    .text.usart_synchronous_clock_enable:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:729    .text.usart_synchronous_clock_disable:0000000000000000 usart_synchronous_clock_disable
-     /tmp/ccbAfrTf.s:732    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:734    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 42
+     /tmp/cc2FGa8Y.s:575    .text.usart_mute_mode_wakeup_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:582    .text.usart_lin_mode_enable:0000000000000000 usart_lin_mode_enable
+     /tmp/cc2FGa8Y.s:585    .text.usart_lin_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:587    .text.usart_lin_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:588    .text.usart_lin_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:589    .text.usart_lin_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:594    .text.usart_lin_mode_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:595    .text.usart_lin_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:602    .text.usart_lin_mode_disable:0000000000000000 usart_lin_mode_disable
+     /tmp/cc2FGa8Y.s:605    .text.usart_lin_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:607    .text.usart_lin_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:608    .text.usart_lin_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:609    .text.usart_lin_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:615    .text.usart_lin_mode_disable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:616    .text.usart_lin_mode_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:623    .text.usart_lin_break_detection_length_config:0000000000000000 usart_lin_break_detection_length_config
+     /tmp/cc2FGa8Y.s:626    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:628    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:629    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:630    .text.usart_lin_break_detection_length_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:632    .text.usart_lin_break_detection_length_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:635    .text.usart_lin_break_detection_length_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:638    .text.usart_lin_break_detection_length_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:639    .text.usart_lin_break_detection_length_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:643    .text.usart_lin_break_detection_length_config:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:644    .text.usart_lin_break_detection_length_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:651    .text.usart_send_break:0000000000000000 usart_send_break
+     /tmp/cc2FGa8Y.s:654    .text.usart_send_break:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:656    .text.usart_send_break:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:657    .text.usart_send_break:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:658    .text.usart_send_break:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:662    .text.usart_send_break:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:663    .text.usart_send_break:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:670    .text.usart_halfduplex_enable:0000000000000000 usart_halfduplex_enable
+     /tmp/cc2FGa8Y.s:673    .text.usart_halfduplex_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:675    .text.usart_halfduplex_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:676    .text.usart_halfduplex_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:677    .text.usart_halfduplex_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:681    .text.usart_halfduplex_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:682    .text.usart_halfduplex_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:689    .text.usart_halfduplex_disable:0000000000000000 usart_halfduplex_disable
+     /tmp/cc2FGa8Y.s:692    .text.usart_halfduplex_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:694    .text.usart_halfduplex_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:695    .text.usart_halfduplex_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:696    .text.usart_halfduplex_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:700    .text.usart_halfduplex_disable:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:701    .text.usart_halfduplex_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:708    .text.usart_synchronous_clock_enable:0000000000000000 usart_synchronous_clock_enable
+     /tmp/cc2FGa8Y.s:711    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:713    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:714    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:715    .text.usart_synchronous_clock_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:721    .text.usart_synchronous_clock_enable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:722    .text.usart_synchronous_clock_enable:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:729    .text.usart_synchronous_clock_disable:0000000000000000 usart_synchronous_clock_disable
+     /tmp/cc2FGa8Y.s:732    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:734    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 42
 
 
-     /tmp/ccbAfrTf.s:735    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:736    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:742    .text.usart_synchronous_clock_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:743    .text.usart_synchronous_clock_disable:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:750    .text.usart_synchronous_clock_config:0000000000000000 usart_synchronous_clock_config
-     /tmp/ccbAfrTf.s:753    .text.usart_synchronous_clock_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:755    .text.usart_synchronous_clock_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:756    .text.usart_synchronous_clock_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:757    .text.usart_synchronous_clock_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:758    .text.usart_synchronous_clock_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:761    .text.usart_synchronous_clock_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:762    .text.usart_synchronous_clock_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:765    .text.usart_synchronous_clock_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:768    .text.usart_synchronous_clock_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:770    .text.usart_synchronous_clock_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:773    .text.usart_synchronous_clock_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:776    .text.usart_synchronous_clock_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:777    .text.usart_synchronous_clock_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:779    .text.usart_synchronous_clock_config:0000000000000016 .L0 
-     /tmp/ccbAfrTf.s:782    .text.usart_synchronous_clock_config:0000000000000018 .L0 
-     /tmp/ccbAfrTf.s:783    .text.usart_synchronous_clock_config:0000000000000018 .L0 
-     /tmp/ccbAfrTf.s:785    .text.usart_synchronous_clock_config:000000000000001a .L0 
-     /tmp/ccbAfrTf.s:786    .text.usart_synchronous_clock_config:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:793    .text.usart_guard_time_config:0000000000000000 usart_guard_time_config
-     /tmp/ccbAfrTf.s:796    .text.usart_guard_time_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:798    .text.usart_guard_time_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:799    .text.usart_guard_time_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:800    .text.usart_guard_time_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:806    .text.usart_guard_time_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:807    .text.usart_guard_time_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:809    .text.usart_guard_time_config:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:811    .text.usart_guard_time_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:814    .text.usart_guard_time_config:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:817    .text.usart_guard_time_config:0000000000000016 .L0 
-     /tmp/ccbAfrTf.s:820    .text.usart_guard_time_config:000000000000001a .L0 
-     /tmp/ccbAfrTf.s:821    .text.usart_guard_time_config:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:828    .text.usart_smartcard_mode_enable:0000000000000000 usart_smartcard_mode_enable
-     /tmp/ccbAfrTf.s:831    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:833    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:834    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:835    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:839    .text.usart_smartcard_mode_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:840    .text.usart_smartcard_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:847    .text.usart_smartcard_mode_disable:0000000000000000 usart_smartcard_mode_disable
-     /tmp/ccbAfrTf.s:850    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:852    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:853    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:854    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:858    .text.usart_smartcard_mode_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:859    .text.usart_smartcard_mode_disable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:866    .text.usart_smartcard_mode_nack_enable:0000000000000000 usart_smartcard_mode_nack_enable
-     /tmp/ccbAfrTf.s:869    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:871    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:872    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:873    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:877    .text.usart_smartcard_mode_nack_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:878    .text.usart_smartcard_mode_nack_enable:000000000000000a .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 43
+     /tmp/cc2FGa8Y.s:735    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:736    .text.usart_synchronous_clock_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:742    .text.usart_synchronous_clock_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:743    .text.usart_synchronous_clock_disable:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:750    .text.usart_synchronous_clock_config:0000000000000000 usart_synchronous_clock_config
+     /tmp/cc2FGa8Y.s:753    .text.usart_synchronous_clock_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:755    .text.usart_synchronous_clock_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:756    .text.usart_synchronous_clock_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:757    .text.usart_synchronous_clock_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:758    .text.usart_synchronous_clock_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:761    .text.usart_synchronous_clock_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:762    .text.usart_synchronous_clock_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:765    .text.usart_synchronous_clock_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:768    .text.usart_synchronous_clock_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:770    .text.usart_synchronous_clock_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:773    .text.usart_synchronous_clock_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:776    .text.usart_synchronous_clock_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:777    .text.usart_synchronous_clock_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:779    .text.usart_synchronous_clock_config:0000000000000016 .L0 
+     /tmp/cc2FGa8Y.s:782    .text.usart_synchronous_clock_config:0000000000000018 .L0 
+     /tmp/cc2FGa8Y.s:783    .text.usart_synchronous_clock_config:0000000000000018 .L0 
+     /tmp/cc2FGa8Y.s:785    .text.usart_synchronous_clock_config:000000000000001a .L0 
+     /tmp/cc2FGa8Y.s:786    .text.usart_synchronous_clock_config:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:793    .text.usart_guard_time_config:0000000000000000 usart_guard_time_config
+     /tmp/cc2FGa8Y.s:796    .text.usart_guard_time_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:798    .text.usart_guard_time_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:799    .text.usart_guard_time_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:800    .text.usart_guard_time_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:806    .text.usart_guard_time_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:807    .text.usart_guard_time_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:809    .text.usart_guard_time_config:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:811    .text.usart_guard_time_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:814    .text.usart_guard_time_config:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:817    .text.usart_guard_time_config:0000000000000016 .L0 
+     /tmp/cc2FGa8Y.s:820    .text.usart_guard_time_config:000000000000001a .L0 
+     /tmp/cc2FGa8Y.s:821    .text.usart_guard_time_config:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:828    .text.usart_smartcard_mode_enable:0000000000000000 usart_smartcard_mode_enable
+     /tmp/cc2FGa8Y.s:831    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:833    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:834    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:835    .text.usart_smartcard_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:839    .text.usart_smartcard_mode_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:840    .text.usart_smartcard_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:847    .text.usart_smartcard_mode_disable:0000000000000000 usart_smartcard_mode_disable
+     /tmp/cc2FGa8Y.s:850    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:852    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:853    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:854    .text.usart_smartcard_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:858    .text.usart_smartcard_mode_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:859    .text.usart_smartcard_mode_disable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:866    .text.usart_smartcard_mode_nack_enable:0000000000000000 usart_smartcard_mode_nack_enable
+     /tmp/cc2FGa8Y.s:869    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:871    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:872    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:873    .text.usart_smartcard_mode_nack_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:877    .text.usart_smartcard_mode_nack_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:878    .text.usart_smartcard_mode_nack_enable:000000000000000a .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 43
 
 
-     /tmp/ccbAfrTf.s:885    .text.usart_smartcard_mode_nack_disable:0000000000000000 usart_smartcard_mode_nack_disable
-     /tmp/ccbAfrTf.s:888    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:890    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:891    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:892    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:896    .text.usart_smartcard_mode_nack_disable:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:897    .text.usart_smartcard_mode_nack_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:904    .text.usart_irda_mode_enable:0000000000000000 usart_irda_mode_enable
-     /tmp/ccbAfrTf.s:907    .text.usart_irda_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:909    .text.usart_irda_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:910    .text.usart_irda_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:911    .text.usart_irda_mode_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:915    .text.usart_irda_mode_enable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:916    .text.usart_irda_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:923    .text.usart_irda_mode_disable:0000000000000000 usart_irda_mode_disable
-     /tmp/ccbAfrTf.s:926    .text.usart_irda_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:928    .text.usart_irda_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:929    .text.usart_irda_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:930    .text.usart_irda_mode_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:934    .text.usart_irda_mode_disable:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:935    .text.usart_irda_mode_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:942    .text.usart_prescaler_config:0000000000000000 usart_prescaler_config
-     /tmp/ccbAfrTf.s:945    .text.usart_prescaler_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:947    .text.usart_prescaler_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:948    .text.usart_prescaler_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:949    .text.usart_prescaler_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:953    .text.usart_prescaler_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:954    .text.usart_prescaler_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:959    .text.usart_prescaler_config:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:960    .text.usart_prescaler_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:967    .text.usart_irda_lowpower_config:0000000000000000 usart_irda_lowpower_config
-     /tmp/ccbAfrTf.s:970    .text.usart_irda_lowpower_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:972    .text.usart_irda_lowpower_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:973    .text.usart_irda_lowpower_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:974    .text.usart_irda_lowpower_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:976    .text.usart_irda_lowpower_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:979    .text.usart_irda_lowpower_config:0000000000000004 .L0 
-     /tmp/ccbAfrTf.s:982    .text.usart_irda_lowpower_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:983    .text.usart_irda_lowpower_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:987    .text.usart_irda_lowpower_config:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:988    .text.usart_irda_lowpower_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:995    .text.usart_hardware_flow_rts_config:0000000000000000 usart_hardware_flow_rts_config
-     /tmp/ccbAfrTf.s:998    .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1000   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1001   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1002   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1003   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1006   .text.usart_hardware_flow_rts_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1007   .text.usart_hardware_flow_rts_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1010   .text.usart_hardware_flow_rts_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1011   .text.usart_hardware_flow_rts_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1014   .text.usart_hardware_flow_rts_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1015   .text.usart_hardware_flow_rts_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1017   .text.usart_hardware_flow_rts_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:1018   .text.usart_hardware_flow_rts_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1025   .text.usart_hardware_flow_cts_config:0000000000000000 usart_hardware_flow_cts_config
-     /tmp/ccbAfrTf.s:1028   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 44
+     /tmp/cc2FGa8Y.s:885    .text.usart_smartcard_mode_nack_disable:0000000000000000 usart_smartcard_mode_nack_disable
+     /tmp/cc2FGa8Y.s:888    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:890    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:891    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:892    .text.usart_smartcard_mode_nack_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:896    .text.usart_smartcard_mode_nack_disable:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:897    .text.usart_smartcard_mode_nack_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:904    .text.usart_irda_mode_enable:0000000000000000 usart_irda_mode_enable
+     /tmp/cc2FGa8Y.s:907    .text.usart_irda_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:909    .text.usart_irda_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:910    .text.usart_irda_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:911    .text.usart_irda_mode_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:915    .text.usart_irda_mode_enable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:916    .text.usart_irda_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:923    .text.usart_irda_mode_disable:0000000000000000 usart_irda_mode_disable
+     /tmp/cc2FGa8Y.s:926    .text.usart_irda_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:928    .text.usart_irda_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:929    .text.usart_irda_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:930    .text.usart_irda_mode_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:934    .text.usart_irda_mode_disable:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:935    .text.usart_irda_mode_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:942    .text.usart_prescaler_config:0000000000000000 usart_prescaler_config
+     /tmp/cc2FGa8Y.s:945    .text.usart_prescaler_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:947    .text.usart_prescaler_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:948    .text.usart_prescaler_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:949    .text.usart_prescaler_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:953    .text.usart_prescaler_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:954    .text.usart_prescaler_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:959    .text.usart_prescaler_config:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:960    .text.usart_prescaler_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:967    .text.usart_irda_lowpower_config:0000000000000000 usart_irda_lowpower_config
+     /tmp/cc2FGa8Y.s:970    .text.usart_irda_lowpower_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:972    .text.usart_irda_lowpower_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:973    .text.usart_irda_lowpower_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:974    .text.usart_irda_lowpower_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:976    .text.usart_irda_lowpower_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:979    .text.usart_irda_lowpower_config:0000000000000004 .L0 
+     /tmp/cc2FGa8Y.s:982    .text.usart_irda_lowpower_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:983    .text.usart_irda_lowpower_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:987    .text.usart_irda_lowpower_config:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:988    .text.usart_irda_lowpower_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:995    .text.usart_hardware_flow_rts_config:0000000000000000 usart_hardware_flow_rts_config
+     /tmp/cc2FGa8Y.s:998    .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1000   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1001   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1002   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1003   .text.usart_hardware_flow_rts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1006   .text.usart_hardware_flow_rts_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1007   .text.usart_hardware_flow_rts_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1010   .text.usart_hardware_flow_rts_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1011   .text.usart_hardware_flow_rts_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1014   .text.usart_hardware_flow_rts_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1015   .text.usart_hardware_flow_rts_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1017   .text.usart_hardware_flow_rts_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:1018   .text.usart_hardware_flow_rts_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1025   .text.usart_hardware_flow_cts_config:0000000000000000 usart_hardware_flow_cts_config
+     /tmp/cc2FGa8Y.s:1028   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 44
 
 
-     /tmp/ccbAfrTf.s:1030   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1031   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1032   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1033   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1036   .text.usart_hardware_flow_cts_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1037   .text.usart_hardware_flow_cts_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1040   .text.usart_hardware_flow_cts_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1041   .text.usart_hardware_flow_cts_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1044   .text.usart_hardware_flow_cts_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1045   .text.usart_hardware_flow_cts_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1047   .text.usart_hardware_flow_cts_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:1048   .text.usart_hardware_flow_cts_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1055   .text.usart_dma_receive_config:0000000000000000 usart_dma_receive_config
-     /tmp/ccbAfrTf.s:1058   .text.usart_dma_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1060   .text.usart_dma_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1061   .text.usart_dma_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1062   .text.usart_dma_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1063   .text.usart_dma_receive_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1066   .text.usart_dma_receive_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1067   .text.usart_dma_receive_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1070   .text.usart_dma_receive_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1071   .text.usart_dma_receive_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1074   .text.usart_dma_receive_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1075   .text.usart_dma_receive_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1077   .text.usart_dma_receive_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:1078   .text.usart_dma_receive_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1085   .text.usart_dma_transmit_config:0000000000000000 usart_dma_transmit_config
-     /tmp/ccbAfrTf.s:1088   .text.usart_dma_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1090   .text.usart_dma_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1091   .text.usart_dma_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1092   .text.usart_dma_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1093   .text.usart_dma_transmit_config:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1096   .text.usart_dma_transmit_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1097   .text.usart_dma_transmit_config:0000000000000002 .L0 
-     /tmp/ccbAfrTf.s:1100   .text.usart_dma_transmit_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1101   .text.usart_dma_transmit_config:0000000000000006 .L0 
-     /tmp/ccbAfrTf.s:1104   .text.usart_dma_transmit_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1105   .text.usart_dma_transmit_config:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1107   .text.usart_dma_transmit_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:1108   .text.usart_dma_transmit_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1115   .text.usart_flag_get:0000000000000000 usart_flag_get
-     /tmp/ccbAfrTf.s:1118   .text.usart_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1120   .text.usart_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1121   .text.usart_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1122   .text.usart_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1128   .text.usart_flag_get:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1130   .text.usart_flag_get:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:1132   .text.usart_flag_get:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:1139   .text.usart_flag_clear:0000000000000000 usart_flag_clear
-     /tmp/ccbAfrTf.s:1142   .text.usart_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1144   .text.usart_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1145   .text.usart_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1146   .text.usart_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1152   .text.usart_flag_clear:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1155   .text.usart_flag_clear:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:1157   .text.usart_flag_clear:0000000000000016 .L0 
-     /tmp/ccbAfrTf.s:1160   .text.usart_flag_clear:000000000000001a .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 45
+     /tmp/cc2FGa8Y.s:1030   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1031   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1032   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1033   .text.usart_hardware_flow_cts_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1036   .text.usart_hardware_flow_cts_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1037   .text.usart_hardware_flow_cts_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1040   .text.usart_hardware_flow_cts_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1041   .text.usart_hardware_flow_cts_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1044   .text.usart_hardware_flow_cts_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1045   .text.usart_hardware_flow_cts_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1047   .text.usart_hardware_flow_cts_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:1048   .text.usart_hardware_flow_cts_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1055   .text.usart_dma_receive_config:0000000000000000 usart_dma_receive_config
+     /tmp/cc2FGa8Y.s:1058   .text.usart_dma_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1060   .text.usart_dma_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1061   .text.usart_dma_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1062   .text.usart_dma_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1063   .text.usart_dma_receive_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1066   .text.usart_dma_receive_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1067   .text.usart_dma_receive_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1070   .text.usart_dma_receive_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1071   .text.usart_dma_receive_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1074   .text.usart_dma_receive_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1075   .text.usart_dma_receive_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1077   .text.usart_dma_receive_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:1078   .text.usart_dma_receive_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1085   .text.usart_dma_transmit_config:0000000000000000 usart_dma_transmit_config
+     /tmp/cc2FGa8Y.s:1088   .text.usart_dma_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1090   .text.usart_dma_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1091   .text.usart_dma_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1092   .text.usart_dma_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1093   .text.usart_dma_transmit_config:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1096   .text.usart_dma_transmit_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1097   .text.usart_dma_transmit_config:0000000000000002 .L0 
+     /tmp/cc2FGa8Y.s:1100   .text.usart_dma_transmit_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1101   .text.usart_dma_transmit_config:0000000000000006 .L0 
+     /tmp/cc2FGa8Y.s:1104   .text.usart_dma_transmit_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1105   .text.usart_dma_transmit_config:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1107   .text.usart_dma_transmit_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:1108   .text.usart_dma_transmit_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1115   .text.usart_flag_get:0000000000000000 usart_flag_get
+     /tmp/cc2FGa8Y.s:1118   .text.usart_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1120   .text.usart_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1121   .text.usart_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1122   .text.usart_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1128   .text.usart_flag_get:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1130   .text.usart_flag_get:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:1132   .text.usart_flag_get:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:1139   .text.usart_flag_clear:0000000000000000 usart_flag_clear
+     /tmp/cc2FGa8Y.s:1142   .text.usart_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1144   .text.usart_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1145   .text.usart_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1146   .text.usart_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1152   .text.usart_flag_clear:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1155   .text.usart_flag_clear:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:1157   .text.usart_flag_clear:0000000000000016 .L0 
+     /tmp/cc2FGa8Y.s:1160   .text.usart_flag_clear:000000000000001a .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 45
 
 
-     /tmp/ccbAfrTf.s:1161   .text.usart_flag_clear:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:1168   .text.usart_interrupt_enable:0000000000000000 usart_interrupt_enable
-     /tmp/ccbAfrTf.s:1171   .text.usart_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1173   .text.usart_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1174   .text.usart_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1175   .text.usart_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1181   .text.usart_interrupt_enable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1184   .text.usart_interrupt_enable:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:1187   .text.usart_interrupt_enable:0000000000000016 .L0 
-     /tmp/ccbAfrTf.s:1188   .text.usart_interrupt_enable:0000000000000018 .L0 
-     /tmp/ccbAfrTf.s:1195   .text.usart_interrupt_disable:0000000000000000 usart_interrupt_disable
-     /tmp/ccbAfrTf.s:1198   .text.usart_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1200   .text.usart_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1201   .text.usart_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1202   .text.usart_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1208   .text.usart_interrupt_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1211   .text.usart_interrupt_disable:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:1213   .text.usart_interrupt_disable:0000000000000016 .L0 
-     /tmp/ccbAfrTf.s:1216   .text.usart_interrupt_disable:000000000000001a .L0 
-     /tmp/ccbAfrTf.s:1217   .text.usart_interrupt_disable:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:1224   .text.usart_interrupt_flag_get:0000000000000000 usart_interrupt_flag_get
-     /tmp/ccbAfrTf.s:1227   .text.usart_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1229   .text.usart_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1230   .text.usart_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1231   .text.usart_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1232   .text.usart_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1235   .text.usart_interrupt_flag_get:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1237   .text.usart_interrupt_flag_get:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1239   .text.usart_interrupt_flag_get:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:1241   .text.usart_interrupt_flag_get:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:1244   .text.usart_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:1245   .text.usart_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:1247   .text.usart_interrupt_flag_get:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:1252   .text.usart_interrupt_flag_get:000000000000001e .L0 
-     /tmp/ccbAfrTf.s:1255   .text.usart_interrupt_flag_get:0000000000000020 .L0 
-     /tmp/ccbAfrTf.s:1256   .text.usart_interrupt_flag_get:0000000000000020 .L0 
-     /tmp/ccbAfrTf.s:1258   .text.usart_interrupt_flag_get:0000000000000022 .L0 
-     /tmp/ccbAfrTf.s:1261   .text.usart_interrupt_flag_get:0000000000000026 .L0 
-     /tmp/ccbAfrTf.s:1263   .text.usart_interrupt_flag_get:0000000000000028 .L0 
-     /tmp/ccbAfrTf.s:1266   .text.usart_interrupt_flag_get:000000000000002c .L0 
-     /tmp/ccbAfrTf.s:1267   .text.usart_interrupt_flag_get:000000000000002e .L0 
-     /tmp/ccbAfrTf.s:1274   .text.usart_interrupt_flag_clear:0000000000000000 usart_interrupt_flag_clear
-     /tmp/ccbAfrTf.s:1277   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1279   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1280   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1281   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:1286   .text.usart_interrupt_flag_clear:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:1291   .text.usart_interrupt_flag_clear:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:1293   .text.usart_interrupt_flag_clear:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:1296   .text.usart_interrupt_flag_clear:0000000000000018 .L0 
-     /tmp/ccbAfrTf.s:1297   .text.usart_interrupt_flag_clear:000000000000001a .L0 
-     /tmp/ccbAfrTf.s:163    .text.usart_deinit:00000000000000ca .L0 
-     /tmp/ccbAfrTf.s:266    .text.usart_baudrate_set:0000000000000074 .L0 
-     /tmp/ccbAfrTf.s:291    .text.usart_parity_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:318    .text.usart_word_length_set:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:345    .text.usart_stop_bit_set:0000000000000012 .L0 
-     /tmp/ccbAfrTf.s:365    .text.usart_enable:000000000000000a .L0 
-GAS LISTING /tmp/ccbAfrTf.s 			page 46
+     /tmp/cc2FGa8Y.s:1161   .text.usart_flag_clear:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:1168   .text.usart_interrupt_enable:0000000000000000 usart_interrupt_enable
+     /tmp/cc2FGa8Y.s:1171   .text.usart_interrupt_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1173   .text.usart_interrupt_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1174   .text.usart_interrupt_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1175   .text.usart_interrupt_enable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1181   .text.usart_interrupt_enable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1184   .text.usart_interrupt_enable:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:1187   .text.usart_interrupt_enable:0000000000000016 .L0 
+     /tmp/cc2FGa8Y.s:1188   .text.usart_interrupt_enable:0000000000000018 .L0 
+     /tmp/cc2FGa8Y.s:1195   .text.usart_interrupt_disable:0000000000000000 usart_interrupt_disable
+     /tmp/cc2FGa8Y.s:1198   .text.usart_interrupt_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1200   .text.usart_interrupt_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1201   .text.usart_interrupt_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1202   .text.usart_interrupt_disable:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1208   .text.usart_interrupt_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1211   .text.usart_interrupt_disable:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:1213   .text.usart_interrupt_disable:0000000000000016 .L0 
+     /tmp/cc2FGa8Y.s:1216   .text.usart_interrupt_disable:000000000000001a .L0 
+     /tmp/cc2FGa8Y.s:1217   .text.usart_interrupt_disable:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:1224   .text.usart_interrupt_flag_get:0000000000000000 usart_interrupt_flag_get
+     /tmp/cc2FGa8Y.s:1227   .text.usart_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1229   .text.usart_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1230   .text.usart_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1231   .text.usart_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1232   .text.usart_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1235   .text.usart_interrupt_flag_get:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1237   .text.usart_interrupt_flag_get:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1239   .text.usart_interrupt_flag_get:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:1241   .text.usart_interrupt_flag_get:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:1244   .text.usart_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:1245   .text.usart_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:1247   .text.usart_interrupt_flag_get:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:1252   .text.usart_interrupt_flag_get:000000000000001e .L0 
+     /tmp/cc2FGa8Y.s:1255   .text.usart_interrupt_flag_get:0000000000000020 .L0 
+     /tmp/cc2FGa8Y.s:1256   .text.usart_interrupt_flag_get:0000000000000020 .L0 
+     /tmp/cc2FGa8Y.s:1258   .text.usart_interrupt_flag_get:0000000000000022 .L0 
+     /tmp/cc2FGa8Y.s:1261   .text.usart_interrupt_flag_get:0000000000000026 .L0 
+     /tmp/cc2FGa8Y.s:1263   .text.usart_interrupt_flag_get:0000000000000028 .L0 
+     /tmp/cc2FGa8Y.s:1266   .text.usart_interrupt_flag_get:000000000000002c .L0 
+     /tmp/cc2FGa8Y.s:1267   .text.usart_interrupt_flag_get:000000000000002e .L0 
+     /tmp/cc2FGa8Y.s:1274   .text.usart_interrupt_flag_clear:0000000000000000 usart_interrupt_flag_clear
+     /tmp/cc2FGa8Y.s:1277   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1279   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1280   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1281   .text.usart_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/cc2FGa8Y.s:1286   .text.usart_interrupt_flag_clear:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:1291   .text.usart_interrupt_flag_clear:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:1293   .text.usart_interrupt_flag_clear:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:1296   .text.usart_interrupt_flag_clear:0000000000000018 .L0 
+     /tmp/cc2FGa8Y.s:1297   .text.usart_interrupt_flag_clear:000000000000001a .L0 
+     /tmp/cc2FGa8Y.s:163    .text.usart_deinit:00000000000000ca .L0 
+     /tmp/cc2FGa8Y.s:266    .text.usart_baudrate_set:0000000000000074 .L0 
+     /tmp/cc2FGa8Y.s:291    .text.usart_parity_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:318    .text.usart_word_length_set:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:345    .text.usart_stop_bit_set:0000000000000012 .L0 
+     /tmp/cc2FGa8Y.s:365    .text.usart_enable:000000000000000a .L0 
+GAS LISTING /tmp/cc2FGa8Y.s 			page 46
 
 
-     /tmp/ccbAfrTf.s:386    .text.usart_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:416    .text.usart_transmit_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:446    .text.usart_receive_config:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:466    .text.usart_data_transmit:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:485    .text.usart_data_receive:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:513    .text.usart_address_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:532    .text.usart_mute_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:551    .text.usart_mute_mode_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:578    .text.usart_mute_mode_wakeup_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:598    .text.usart_lin_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:619    .text.usart_lin_mode_disable:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:647    .text.usart_lin_break_detection_length_config:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:666    .text.usart_send_break:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:685    .text.usart_halfduplex_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:704    .text.usart_halfduplex_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:725    .text.usart_synchronous_clock_enable:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:746    .text.usart_synchronous_clock_disable:000000000000000e .L0 
-     /tmp/ccbAfrTf.s:789    .text.usart_synchronous_clock_config:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:824    .text.usart_guard_time_config:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:843    .text.usart_smartcard_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:862    .text.usart_smartcard_mode_disable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:881    .text.usart_smartcard_mode_nack_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:900    .text.usart_smartcard_mode_nack_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:919    .text.usart_irda_mode_enable:000000000000000a .L0 
-     /tmp/ccbAfrTf.s:938    .text.usart_irda_mode_disable:0000000000000008 .L0 
-     /tmp/ccbAfrTf.s:963    .text.usart_prescaler_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:991    .text.usart_irda_lowpower_config:0000000000000010 .L0 
-     /tmp/ccbAfrTf.s:1021   .text.usart_hardware_flow_rts_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1051   .text.usart_hardware_flow_cts_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1081   .text.usart_dma_receive_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1111   .text.usart_dma_transmit_config:000000000000000c .L0 
-     /tmp/ccbAfrTf.s:1135   .text.usart_flag_get:0000000000000014 .L0 
-     /tmp/ccbAfrTf.s:1164   .text.usart_flag_clear:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:1191   .text.usart_interrupt_enable:0000000000000018 .L0 
-     /tmp/ccbAfrTf.s:1220   .text.usart_interrupt_disable:000000000000001c .L0 
-     /tmp/ccbAfrTf.s:1270   .text.usart_interrupt_flag_get:000000000000002e .L0 
-     /tmp/ccbAfrTf.s:1300   .text.usart_interrupt_flag_clear:000000000000001a .L0 
+     /tmp/cc2FGa8Y.s:386    .text.usart_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:416    .text.usart_transmit_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:446    .text.usart_receive_config:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:466    .text.usart_data_transmit:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:485    .text.usart_data_receive:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:513    .text.usart_address_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:532    .text.usart_mute_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:551    .text.usart_mute_mode_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:578    .text.usart_mute_mode_wakeup_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:598    .text.usart_lin_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:619    .text.usart_lin_mode_disable:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:647    .text.usart_lin_break_detection_length_config:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:666    .text.usart_send_break:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:685    .text.usart_halfduplex_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:704    .text.usart_halfduplex_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:725    .text.usart_synchronous_clock_enable:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:746    .text.usart_synchronous_clock_disable:000000000000000e .L0 
+     /tmp/cc2FGa8Y.s:789    .text.usart_synchronous_clock_config:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:824    .text.usart_guard_time_config:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:843    .text.usart_smartcard_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:862    .text.usart_smartcard_mode_disable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:881    .text.usart_smartcard_mode_nack_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:900    .text.usart_smartcard_mode_nack_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:919    .text.usart_irda_mode_enable:000000000000000a .L0 
+     /tmp/cc2FGa8Y.s:938    .text.usart_irda_mode_disable:0000000000000008 .L0 
+     /tmp/cc2FGa8Y.s:963    .text.usart_prescaler_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:991    .text.usart_irda_lowpower_config:0000000000000010 .L0 
+     /tmp/cc2FGa8Y.s:1021   .text.usart_hardware_flow_rts_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1051   .text.usart_hardware_flow_cts_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1081   .text.usart_dma_receive_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1111   .text.usart_dma_transmit_config:000000000000000c .L0 
+     /tmp/cc2FGa8Y.s:1135   .text.usart_flag_get:0000000000000014 .L0 
+     /tmp/cc2FGa8Y.s:1164   .text.usart_flag_clear:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:1191   .text.usart_interrupt_enable:0000000000000018 .L0 
+     /tmp/cc2FGa8Y.s:1220   .text.usart_interrupt_disable:000000000000001c .L0 
+     /tmp/cc2FGa8Y.s:1270   .text.usart_interrupt_flag_get:000000000000002e .L0 
+     /tmp/cc2FGa8Y.s:1300   .text.usart_interrupt_flag_clear:000000000000001a .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccbAfrTf.s:84     .text.usart_deinit:0000000000000070 .L2
-     /tmp/ccbAfrTf.s:56     .text.usart_deinit:0000000000000040 .L10
-     /tmp/ccbAfrTf.s:106    .text.usart_deinit:000000000000008c .L7
-     /tmp/ccbAfrTf.s:128    .text.usart_deinit:00000000000000a8 .L1
-     /tmp/ccbAfrTf.s:139    .text.usart_deinit:00000000000000ae .L4
-     /tmp/ccbAfrTf.s:255    .text.usart_baudrate_set:0000000000000068 .L12
-     /tmp/ccbAfrTf.s:243    .text.usart_baudrate_set:0000000000000052 .L17
-     /tmp/ccbAfrTf.s:209    .text.usart_baudrate_set:0000000000000038 .L14
-     /tmp/ccbAfrTf.s:1264   .text.usart_interrupt_flag_get:000000000000002c .L57
-     /tmp/ccbAfrTf.s:3019   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccbAfrTf.s:4764   .debug_str:0000000000000485 .LASF137
-     /tmp/ccbAfrTf.s:4806   .debug_str:0000000000000663 .LASF138
-     /tmp/ccbAfrTf.s:4768   .debug_str:000000000000050c .LASF139
-     /tmp/ccbAfrTf.s:4530   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccbAfrTf.s:4620   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccbAfrTf.s:4640   .debug_str:00000000000000a4 .LASF0
-     /tmp/ccbAfrTf.s:4882   .debug_str:00000000000008cc .LASF1
-     /tmp/ccbAfrTf.s:4826   .debug_str:0000000000000700 .LASF4
-     /tmp/ccbAfrTf.s:4856   .debug_str:0000000000000807 .LASF2
-GAS LISTING /tmp/ccbAfrTf.s 			page 47
+     /tmp/cc2FGa8Y.s:84     .text.usart_deinit:0000000000000070 .L2
+     /tmp/cc2FGa8Y.s:56     .text.usart_deinit:0000000000000040 .L10
+     /tmp/cc2FGa8Y.s:106    .text.usart_deinit:000000000000008c .L7
+     /tmp/cc2FGa8Y.s:128    .text.usart_deinit:00000000000000a8 .L1
+     /tmp/cc2FGa8Y.s:139    .text.usart_deinit:00000000000000ae .L4
+     /tmp/cc2FGa8Y.s:255    .text.usart_baudrate_set:0000000000000068 .L12
+     /tmp/cc2FGa8Y.s:243    .text.usart_baudrate_set:0000000000000052 .L17
+     /tmp/cc2FGa8Y.s:209    .text.usart_baudrate_set:0000000000000038 .L14
+     /tmp/cc2FGa8Y.s:1264   .text.usart_interrupt_flag_get:000000000000002c .L57
+     /tmp/cc2FGa8Y.s:3019   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/cc2FGa8Y.s:4764   .debug_str:0000000000000485 .LASF137
+     /tmp/cc2FGa8Y.s:4804   .debug_str:000000000000060a .LASF138
+     /tmp/cc2FGa8Y.s:4872   .debug_str:0000000000000833 .LASF139
+     /tmp/cc2FGa8Y.s:4530   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/cc2FGa8Y.s:4620   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/cc2FGa8Y.s:4640   .debug_str:00000000000000a4 .LASF0
+     /tmp/cc2FGa8Y.s:4882   .debug_str:00000000000008d2 .LASF1
+     /tmp/cc2FGa8Y.s:4824   .debug_str:00000000000006a7 .LASF4
+     /tmp/cc2FGa8Y.s:4854   .debug_str:00000000000007ae .LASF2
+GAS LISTING /tmp/cc2FGa8Y.s 			page 47
 
 
-     /tmp/ccbAfrTf.s:4802   .debug_str:000000000000064f .LASF3
-     /tmp/ccbAfrTf.s:4692   .debug_str:0000000000000253 .LASF5
-     /tmp/ccbAfrTf.s:4884   .debug_str:00000000000008d8 .LASF6
-     /tmp/ccbAfrTf.s:4808   .debug_str:00000000000006a9 .LASF7
-     /tmp/ccbAfrTf.s:4858   .debug_str:0000000000000815 .LASF8
-     /tmp/ccbAfrTf.s:4842   .debug_str:0000000000000775 .LASF9
-     /tmp/ccbAfrTf.s:4754   .debug_str:0000000000000432 .LASF10
-     /tmp/ccbAfrTf.s:4684   .debug_str:0000000000000213 .LASF11
-     /tmp/ccbAfrTf.s:4740   .debug_str:00000000000003cd .LASF12
-     /tmp/ccbAfrTf.s:4788   .debug_str:00000000000005c9 .LASF13
-     /tmp/ccbAfrTf.s:4666   .debug_str:0000000000000175 .LASF14
-     /tmp/ccbAfrTf.s:4628   .debug_str:0000000000000054 .LASF140
-     /tmp/ccbAfrTf.s:4818   .debug_str:00000000000006e5 .LASF15
-     /tmp/ccbAfrTf.s:4650   .debug_str:00000000000000fb .LASF16
-     /tmp/ccbAfrTf.s:4744   .debug_str:00000000000003ea .LASF17
-     /tmp/ccbAfrTf.s:4706   .debug_str:00000000000002b3 .LASF18
-     /tmp/ccbAfrTf.s:4880   .debug_str:00000000000008be .LASF19
-     /tmp/ccbAfrTf.s:4752   .debug_str:0000000000000424 .LASF20
-     /tmp/ccbAfrTf.s:4636   .debug_str:000000000000008b .LASF21
-     /tmp/ccbAfrTf.s:4796   .debug_str:000000000000060d .LASF22
-     /tmp/ccbAfrTf.s:4674   .debug_str:00000000000001ba .LASF23
-     /tmp/ccbAfrTf.s:4866   .debug_str:0000000000000859 .LASF24
-     /tmp/ccbAfrTf.s:4644   .debug_str:00000000000000cc .LASF25
-     /tmp/ccbAfrTf.s:4800   .debug_str:0000000000000643 .LASF26
-     /tmp/ccbAfrTf.s:4836   .debug_str:0000000000000740 .LASF27
-     /tmp/ccbAfrTf.s:4714   .debug_str:0000000000000303 .LASF28
-     /tmp/ccbAfrTf.s:4830   .debug_str:0000000000000718 .LASF29
-     /tmp/ccbAfrTf.s:4712   .debug_str:00000000000002f6 .LASF30
-     /tmp/ccbAfrTf.s:4864   .debug_str:000000000000084d .LASF31
-     /tmp/ccbAfrTf.s:4730   .debug_str:000000000000037c .LASF32
-     /tmp/ccbAfrTf.s:4814   .debug_str:00000000000006c6 .LASF33
-     /tmp/ccbAfrTf.s:4694   .debug_str:000000000000025e .LASF34
-     /tmp/ccbAfrTf.s:4886   .debug_str:00000000000008eb .LASF35
-     /tmp/ccbAfrTf.s:4756   .debug_str:0000000000000440 .LASF36
-     /tmp/ccbAfrTf.s:4638   .debug_str:0000000000000099 .LASF37
-     /tmp/ccbAfrTf.s:4804   .debug_str:0000000000000659 .LASF38
-     /tmp/ccbAfrTf.s:4748   .debug_str:00000000000003fc .LASF39
-     /tmp/ccbAfrTf.s:4632   .debug_str:000000000000006e .LASF40
-     /tmp/ccbAfrTf.s:4782   .debug_str:00000000000005a7 .LASF41
-     /tmp/ccbAfrTf.s:4664   .debug_str:0000000000000168 .LASF42
-     /tmp/ccbAfrTf.s:4834   .debug_str:0000000000000733 .LASF43
-     /tmp/ccbAfrTf.s:4704   .debug_str:00000000000002a7 .LASF44
-     /tmp/ccbAfrTf.s:4876   .debug_str:000000000000089c .LASF45
-     /tmp/ccbAfrTf.s:4828   .debug_str:000000000000070a .LASF46
-     /tmp/ccbAfrTf.s:4758   .debug_str:000000000000044b .LASF47
-     /tmp/ccbAfrTf.s:4670   .debug_str:000000000000018e .LASF48
-     /tmp/ccbAfrTf.s:4776   .debug_str:000000000000057b .LASF49
-     /tmp/ccbAfrTf.s:4700   .debug_str:0000000000000299 .LASF50
-     /tmp/ccbAfrTf.s:4822   .debug_str:00000000000006f0 .LASF51
-     /tmp/ccbAfrTf.s:4824   .debug_str:00000000000006f8 .LASF52
-     /tmp/ccbAfrTf.s:4784   .debug_str:00000000000005b4 .LASF53
-     /tmp/ccbAfrTf.s:4654   .debug_str:000000000000010e .LASF54
-     /tmp/ccbAfrTf.s:4762   .debug_str:0000000000000476 .LASF55
-     /tmp/ccbAfrTf.s:4812   .debug_str:00000000000006b7 .LASF56
-     /tmp/ccbAfrTf.s:4896   .debug_str:000000000000094e .LASF57
-     /tmp/ccbAfrTf.s:4874   .debug_str:000000000000088c .LASF58
-     /tmp/ccbAfrTf.s:4716   .debug_str:0000000000000311 .LASF59
-GAS LISTING /tmp/ccbAfrTf.s 			page 48
+     /tmp/cc2FGa8Y.s:4800   .debug_str:00000000000005f6 .LASF3
+     /tmp/cc2FGa8Y.s:4692   .debug_str:0000000000000253 .LASF5
+     /tmp/cc2FGa8Y.s:4884   .debug_str:00000000000008de .LASF6
+     /tmp/cc2FGa8Y.s:4806   .debug_str:0000000000000650 .LASF7
+     /tmp/cc2FGa8Y.s:4856   .debug_str:00000000000007bc .LASF8
+     /tmp/cc2FGa8Y.s:4840   .debug_str:000000000000071c .LASF9
+     /tmp/cc2FGa8Y.s:4754   .debug_str:0000000000000432 .LASF10
+     /tmp/cc2FGa8Y.s:4684   .debug_str:0000000000000213 .LASF11
+     /tmp/cc2FGa8Y.s:4740   .debug_str:00000000000003cd .LASF12
+     /tmp/cc2FGa8Y.s:4786   .debug_str:0000000000000570 .LASF13
+     /tmp/cc2FGa8Y.s:4666   .debug_str:0000000000000175 .LASF14
+     /tmp/cc2FGa8Y.s:4628   .debug_str:0000000000000054 .LASF140
+     /tmp/cc2FGa8Y.s:4816   .debug_str:000000000000068c .LASF15
+     /tmp/cc2FGa8Y.s:4650   .debug_str:00000000000000fb .LASF16
+     /tmp/cc2FGa8Y.s:4744   .debug_str:00000000000003ea .LASF17
+     /tmp/cc2FGa8Y.s:4706   .debug_str:00000000000002b3 .LASF18
+     /tmp/cc2FGa8Y.s:4880   .debug_str:00000000000008c4 .LASF19
+     /tmp/cc2FGa8Y.s:4752   .debug_str:0000000000000424 .LASF20
+     /tmp/cc2FGa8Y.s:4636   .debug_str:000000000000008b .LASF21
+     /tmp/cc2FGa8Y.s:4794   .debug_str:00000000000005b4 .LASF22
+     /tmp/cc2FGa8Y.s:4674   .debug_str:00000000000001ba .LASF23
+     /tmp/cc2FGa8Y.s:4864   .debug_str:0000000000000800 .LASF24
+     /tmp/cc2FGa8Y.s:4644   .debug_str:00000000000000cc .LASF25
+     /tmp/cc2FGa8Y.s:4798   .debug_str:00000000000005ea .LASF26
+     /tmp/cc2FGa8Y.s:4834   .debug_str:00000000000006e7 .LASF27
+     /tmp/cc2FGa8Y.s:4714   .debug_str:0000000000000303 .LASF28
+     /tmp/cc2FGa8Y.s:4828   .debug_str:00000000000006bf .LASF29
+     /tmp/cc2FGa8Y.s:4712   .debug_str:00000000000002f6 .LASF30
+     /tmp/cc2FGa8Y.s:4862   .debug_str:00000000000007f4 .LASF31
+     /tmp/cc2FGa8Y.s:4730   .debug_str:000000000000037c .LASF32
+     /tmp/cc2FGa8Y.s:4812   .debug_str:000000000000066d .LASF33
+     /tmp/cc2FGa8Y.s:4694   .debug_str:000000000000025e .LASF34
+     /tmp/cc2FGa8Y.s:4886   .debug_str:00000000000008f1 .LASF35
+     /tmp/cc2FGa8Y.s:4756   .debug_str:0000000000000440 .LASF36
+     /tmp/cc2FGa8Y.s:4638   .debug_str:0000000000000099 .LASF37
+     /tmp/cc2FGa8Y.s:4802   .debug_str:0000000000000600 .LASF38
+     /tmp/cc2FGa8Y.s:4748   .debug_str:00000000000003fc .LASF39
+     /tmp/cc2FGa8Y.s:4632   .debug_str:000000000000006e .LASF40
+     /tmp/cc2FGa8Y.s:4780   .debug_str:000000000000054e .LASF41
+     /tmp/cc2FGa8Y.s:4664   .debug_str:0000000000000168 .LASF42
+     /tmp/cc2FGa8Y.s:4832   .debug_str:00000000000006da .LASF43
+     /tmp/cc2FGa8Y.s:4704   .debug_str:00000000000002a7 .LASF44
+     /tmp/cc2FGa8Y.s:4876   .debug_str:00000000000008a2 .LASF45
+     /tmp/cc2FGa8Y.s:4826   .debug_str:00000000000006b1 .LASF46
+     /tmp/cc2FGa8Y.s:4758   .debug_str:000000000000044b .LASF47
+     /tmp/cc2FGa8Y.s:4670   .debug_str:000000000000018e .LASF48
+     /tmp/cc2FGa8Y.s:4774   .debug_str:0000000000000522 .LASF49
+     /tmp/cc2FGa8Y.s:4700   .debug_str:0000000000000299 .LASF50
+     /tmp/cc2FGa8Y.s:4820   .debug_str:0000000000000697 .LASF51
+     /tmp/cc2FGa8Y.s:4822   .debug_str:000000000000069f .LASF52
+     /tmp/cc2FGa8Y.s:4782   .debug_str:000000000000055b .LASF53
+     /tmp/cc2FGa8Y.s:4654   .debug_str:000000000000010e .LASF54
+     /tmp/cc2FGa8Y.s:4762   .debug_str:0000000000000476 .LASF55
+     /tmp/cc2FGa8Y.s:4810   .debug_str:000000000000065e .LASF56
+     /tmp/cc2FGa8Y.s:4896   .debug_str:0000000000000954 .LASF57
+     /tmp/cc2FGa8Y.s:4874   .debug_str:0000000000000892 .LASF58
+     /tmp/cc2FGa8Y.s:4716   .debug_str:0000000000000311 .LASF59
+GAS LISTING /tmp/cc2FGa8Y.s 			page 48
 
 
-     /tmp/ccbAfrTf.s:4718   .debug_str:0000000000000321 .LASF60
-     /tmp/ccbAfrTf.s:4634   .debug_str:000000000000007b .LASF61
-     /tmp/ccbAfrTf.s:4728   .debug_str:000000000000036c .LASF62
-     /tmp/ccbAfrTf.s:4668   .debug_str:000000000000017e .LASF63
-     /tmp/ccbAfrTf.s:4890   .debug_str:0000000000000919 .LASF64
-     /tmp/ccbAfrTf.s:4750   .debug_str:0000000000000409 .LASF69
-     /tmp/ccbAfrTf.s:1275   .text.usart_interrupt_flag_clear:0000000000000000 .LFB44
-     /tmp/ccbAfrTf.s:1298   .text.usart_interrupt_flag_clear:000000000000001a .LFE44
-     /tmp/ccbAfrTf.s:4766   .debug_str:00000000000004ff .LASF65
-     /tmp/ccbAfrTf.s:3500   .debug_loc:0000000000000000 .LLST43
-     /tmp/ccbAfrTf.s:4676   .debug_str:00000000000001c8 .LASF66
-     /tmp/ccbAfrTf.s:3514   .debug_loc:0000000000000021 .LLST44
-     /tmp/ccbAfrTf.s:4852   .debug_str:00000000000007d7 .LASF75
-     /tmp/ccbAfrTf.s:1225   .text.usart_interrupt_flag_get:0000000000000000 .LFB43
-     /tmp/ccbAfrTf.s:1268   .text.usart_interrupt_flag_get:000000000000002e .LFE43
-     /tmp/ccbAfrTf.s:3528   .debug_loc:0000000000000042 .LLST40
-     /tmp/ccbAfrTf.s:4770   .debug_str:0000000000000565 .LASF67
-     /tmp/ccbAfrTf.s:3542   .debug_loc:0000000000000063 .LLST41
-     /tmp/ccbAfrTf.s:4900   .debug_str:0000000000000966 .LASF68
-     /tmp/ccbAfrTf.s:3563   .debug_loc:000000000000008b .LLST42
-     /tmp/ccbAfrTf.s:4872   .debug_str:0000000000000874 .LASF70
-     /tmp/ccbAfrTf.s:1196   .text.usart_interrupt_disable:0000000000000000 .LFB42
-     /tmp/ccbAfrTf.s:1218   .text.usart_interrupt_disable:000000000000001c .LFE42
-     /tmp/ccbAfrTf.s:3592   .debug_loc:00000000000000c2 .LLST39
-     /tmp/ccbAfrTf.s:4840   .debug_str:000000000000076b .LASF71
-     /tmp/ccbAfrTf.s:4850   .debug_str:00000000000007c0 .LASF72
-     /tmp/ccbAfrTf.s:1169   .text.usart_interrupt_enable:0000000000000000 .LFB41
-     /tmp/ccbAfrTf.s:1189   .text.usart_interrupt_enable:0000000000000018 .LFE41
-     /tmp/ccbAfrTf.s:3606   .debug_loc:00000000000000e3 .LLST38
-     /tmp/ccbAfrTf.s:4678   .debug_str:00000000000001d1 .LASF73
-     /tmp/ccbAfrTf.s:1140   .text.usart_flag_clear:0000000000000000 .LFB40
-     /tmp/ccbAfrTf.s:1162   .text.usart_flag_clear:000000000000001c .LFE40
-     /tmp/ccbAfrTf.s:3620   .debug_loc:0000000000000104 .LLST37
-     /tmp/ccbAfrTf.s:4820   .debug_str:00000000000006eb .LASF74
-     /tmp/ccbAfrTf.s:4790   .debug_str:00000000000005d2 .LASF76
-     /tmp/ccbAfrTf.s:1116   .text.usart_flag_get:0000000000000000 .LFB39
-     /tmp/ccbAfrTf.s:1133   .text.usart_flag_get:0000000000000014 .LFE39
-     /tmp/ccbAfrTf.s:3634   .debug_loc:0000000000000125 .LLST36
-     /tmp/ccbAfrTf.s:4738   .debug_str:00000000000003b3 .LASF77
-     /tmp/ccbAfrTf.s:1086   .text.usart_dma_transmit_config:0000000000000000 .LFB38
-     /tmp/ccbAfrTf.s:1109   .text.usart_dma_transmit_config:000000000000000c .LFE38
-     /tmp/ccbAfrTf.s:4774   .debug_str:0000000000000574 .LASF78
-     /tmp/ccbAfrTf.s:3648   .debug_loc:0000000000000146 .LLST34
-     /tmp/ccbAfrTf.s:3662   .debug_loc:0000000000000167 .LLST35
-     /tmp/ccbAfrTf.s:4648   .debug_str:00000000000000e2 .LASF79
-     /tmp/ccbAfrTf.s:1056   .text.usart_dma_receive_config:0000000000000000 .LFB37
-     /tmp/ccbAfrTf.s:1079   .text.usart_dma_receive_config:000000000000000c .LFE37
-     /tmp/ccbAfrTf.s:3678   .debug_loc:0000000000000191 .LLST32
-     /tmp/ccbAfrTf.s:3692   .debug_loc:00000000000001b2 .LLST33
-     /tmp/ccbAfrTf.s:4622   .debug_str:0000000000000000 .LASF80
-     /tmp/ccbAfrTf.s:1026   .text.usart_hardware_flow_cts_config:0000000000000000 .LFB36
-     /tmp/ccbAfrTf.s:1049   .text.usart_hardware_flow_cts_config:000000000000000c .LFE36
-     /tmp/ccbAfrTf.s:4630   .debug_str:0000000000000064 .LASF81
-     /tmp/ccbAfrTf.s:3708   .debug_loc:00000000000001dc .LLST30
-     /tmp/ccbAfrTf.s:3722   .debug_loc:00000000000001fd .LLST31
-     /tmp/ccbAfrTf.s:4760   .debug_str:0000000000000457 .LASF82
-     /tmp/ccbAfrTf.s:996    .text.usart_hardware_flow_rts_config:0000000000000000 .LFB35
-GAS LISTING /tmp/ccbAfrTf.s 			page 49
+     /tmp/cc2FGa8Y.s:4718   .debug_str:0000000000000321 .LASF60
+     /tmp/cc2FGa8Y.s:4634   .debug_str:000000000000007b .LASF61
+     /tmp/cc2FGa8Y.s:4728   .debug_str:000000000000036c .LASF62
+     /tmp/cc2FGa8Y.s:4668   .debug_str:000000000000017e .LASF63
+     /tmp/cc2FGa8Y.s:4890   .debug_str:000000000000091f .LASF64
+     /tmp/cc2FGa8Y.s:4750   .debug_str:0000000000000409 .LASF69
+     /tmp/cc2FGa8Y.s:1275   .text.usart_interrupt_flag_clear:0000000000000000 .LFB44
+     /tmp/cc2FGa8Y.s:1298   .text.usart_interrupt_flag_clear:000000000000001a .LFE44
+     /tmp/cc2FGa8Y.s:4766   .debug_str:00000000000004ff .LASF65
+     /tmp/cc2FGa8Y.s:3500   .debug_loc:0000000000000000 .LLST43
+     /tmp/cc2FGa8Y.s:4676   .debug_str:00000000000001c8 .LASF66
+     /tmp/cc2FGa8Y.s:3514   .debug_loc:0000000000000021 .LLST44
+     /tmp/cc2FGa8Y.s:4850   .debug_str:000000000000077e .LASF75
+     /tmp/cc2FGa8Y.s:1225   .text.usart_interrupt_flag_get:0000000000000000 .LFB43
+     /tmp/cc2FGa8Y.s:1268   .text.usart_interrupt_flag_get:000000000000002e .LFE43
+     /tmp/cc2FGa8Y.s:3528   .debug_loc:0000000000000042 .LLST40
+     /tmp/cc2FGa8Y.s:4768   .debug_str:000000000000050c .LASF67
+     /tmp/cc2FGa8Y.s:3542   .debug_loc:0000000000000063 .LLST41
+     /tmp/cc2FGa8Y.s:4900   .debug_str:000000000000096c .LASF68
+     /tmp/cc2FGa8Y.s:3563   .debug_loc:000000000000008b .LLST42
+     /tmp/cc2FGa8Y.s:4870   .debug_str:000000000000081b .LASF70
+     /tmp/cc2FGa8Y.s:1196   .text.usart_interrupt_disable:0000000000000000 .LFB42
+     /tmp/cc2FGa8Y.s:1218   .text.usart_interrupt_disable:000000000000001c .LFE42
+     /tmp/cc2FGa8Y.s:3592   .debug_loc:00000000000000c2 .LLST39
+     /tmp/cc2FGa8Y.s:4838   .debug_str:0000000000000712 .LASF71
+     /tmp/cc2FGa8Y.s:4848   .debug_str:0000000000000767 .LASF72
+     /tmp/cc2FGa8Y.s:1169   .text.usart_interrupt_enable:0000000000000000 .LFB41
+     /tmp/cc2FGa8Y.s:1189   .text.usart_interrupt_enable:0000000000000018 .LFE41
+     /tmp/cc2FGa8Y.s:3606   .debug_loc:00000000000000e3 .LLST38
+     /tmp/cc2FGa8Y.s:4678   .debug_str:00000000000001d1 .LASF73
+     /tmp/cc2FGa8Y.s:1140   .text.usart_flag_clear:0000000000000000 .LFB40
+     /tmp/cc2FGa8Y.s:1162   .text.usart_flag_clear:000000000000001c .LFE40
+     /tmp/cc2FGa8Y.s:3620   .debug_loc:0000000000000104 .LLST37
+     /tmp/cc2FGa8Y.s:4818   .debug_str:0000000000000692 .LASF74
+     /tmp/cc2FGa8Y.s:4788   .debug_str:0000000000000579 .LASF76
+     /tmp/cc2FGa8Y.s:1116   .text.usart_flag_get:0000000000000000 .LFB39
+     /tmp/cc2FGa8Y.s:1133   .text.usart_flag_get:0000000000000014 .LFE39
+     /tmp/cc2FGa8Y.s:3634   .debug_loc:0000000000000125 .LLST36
+     /tmp/cc2FGa8Y.s:4738   .debug_str:00000000000003b3 .LASF77
+     /tmp/cc2FGa8Y.s:1086   .text.usart_dma_transmit_config:0000000000000000 .LFB38
+     /tmp/cc2FGa8Y.s:1109   .text.usart_dma_transmit_config:000000000000000c .LFE38
+     /tmp/cc2FGa8Y.s:4772   .debug_str:000000000000051b .LASF78
+     /tmp/cc2FGa8Y.s:3648   .debug_loc:0000000000000146 .LLST34
+     /tmp/cc2FGa8Y.s:3662   .debug_loc:0000000000000167 .LLST35
+     /tmp/cc2FGa8Y.s:4648   .debug_str:00000000000000e2 .LASF79
+     /tmp/cc2FGa8Y.s:1056   .text.usart_dma_receive_config:0000000000000000 .LFB37
+     /tmp/cc2FGa8Y.s:1079   .text.usart_dma_receive_config:000000000000000c .LFE37
+     /tmp/cc2FGa8Y.s:3678   .debug_loc:0000000000000191 .LLST32
+     /tmp/cc2FGa8Y.s:3692   .debug_loc:00000000000001b2 .LLST33
+     /tmp/cc2FGa8Y.s:4622   .debug_str:0000000000000000 .LASF80
+     /tmp/cc2FGa8Y.s:1026   .text.usart_hardware_flow_cts_config:0000000000000000 .LFB36
+     /tmp/cc2FGa8Y.s:1049   .text.usart_hardware_flow_cts_config:000000000000000c .LFE36
+     /tmp/cc2FGa8Y.s:4630   .debug_str:0000000000000064 .LASF81
+     /tmp/cc2FGa8Y.s:3708   .debug_loc:00000000000001dc .LLST30
+     /tmp/cc2FGa8Y.s:3722   .debug_loc:00000000000001fd .LLST31
+     /tmp/cc2FGa8Y.s:4760   .debug_str:0000000000000457 .LASF82
+     /tmp/cc2FGa8Y.s:996    .text.usart_hardware_flow_rts_config:0000000000000000 .LFB35
+GAS LISTING /tmp/cc2FGa8Y.s 			page 49
 
 
-     /tmp/ccbAfrTf.s:1019   .text.usart_hardware_flow_rts_config:000000000000000c .LFE35
-     /tmp/ccbAfrTf.s:4646   .debug_str:00000000000000d8 .LASF83
-     /tmp/ccbAfrTf.s:3738   .debug_loc:0000000000000227 .LLST28
-     /tmp/ccbAfrTf.s:3752   .debug_loc:0000000000000248 .LLST29
-     /tmp/ccbAfrTf.s:4642   .debug_str:00000000000000b1 .LASF84
-     /tmp/ccbAfrTf.s:968    .text.usart_irda_lowpower_config:0000000000000000 .LFB34
-     /tmp/ccbAfrTf.s:989    .text.usart_irda_lowpower_config:0000000000000010 .LFE34
-     /tmp/ccbAfrTf.s:4772   .debug_str:000000000000056f .LASF85
-     /tmp/ccbAfrTf.s:3768   .debug_loc:0000000000000272 .LLST27
-     /tmp/ccbAfrTf.s:4854   .debug_str:00000000000007f0 .LASF86
-     /tmp/ccbAfrTf.s:943    .text.usart_prescaler_config:0000000000000000 .LFB33
-     /tmp/ccbAfrTf.s:961    .text.usart_prescaler_config:0000000000000010 .LFE33
-     /tmp/ccbAfrTf.s:3782   .debug_loc:0000000000000293 .LLST26
-     /tmp/ccbAfrTf.s:4658   .debug_str:0000000000000124 .LASF87
-     /tmp/ccbAfrTf.s:924    .text.usart_irda_mode_disable:0000000000000000 .LFB32
-     /tmp/ccbAfrTf.s:936    .text.usart_irda_mode_disable:0000000000000008 .LFE32
-     /tmp/ccbAfrTf.s:4860   .debug_str:0000000000000820 .LASF88
-     /tmp/ccbAfrTf.s:905    .text.usart_irda_mode_enable:0000000000000000 .LFB31
-     /tmp/ccbAfrTf.s:917    .text.usart_irda_mode_enable:000000000000000a .LFE31
-     /tmp/ccbAfrTf.s:4888   .debug_str:00000000000008f7 .LASF89
-     /tmp/ccbAfrTf.s:886    .text.usart_smartcard_mode_nack_disable:0000000000000000 .LFB30
-     /tmp/ccbAfrTf.s:898    .text.usart_smartcard_mode_nack_disable:0000000000000008 .LFE30
-     /tmp/ccbAfrTf.s:4624   .debug_str:000000000000001f .LASF90
-     /tmp/ccbAfrTf.s:867    .text.usart_smartcard_mode_nack_enable:0000000000000000 .LFB29
-     /tmp/ccbAfrTf.s:879    .text.usart_smartcard_mode_nack_enable:000000000000000a .LFE29
-     /tmp/ccbAfrTf.s:4838   .debug_str:000000000000074e .LASF91
-     /tmp/ccbAfrTf.s:848    .text.usart_smartcard_mode_disable:0000000000000000 .LFB28
-     /tmp/ccbAfrTf.s:860    .text.usart_smartcard_mode_disable:000000000000000a .LFE28
-     /tmp/ccbAfrTf.s:4844   .debug_str:0000000000000787 .LASF92
-     /tmp/ccbAfrTf.s:829    .text.usart_smartcard_mode_enable:0000000000000000 .LFB27
-     /tmp/ccbAfrTf.s:841    .text.usart_smartcard_mode_enable:000000000000000a .LFE27
-     /tmp/ccbAfrTf.s:4894   .debug_str:0000000000000936 .LASF93
-     /tmp/ccbAfrTf.s:794    .text.usart_guard_time_config:0000000000000000 .LFB26
-     /tmp/ccbAfrTf.s:822    .text.usart_guard_time_config:000000000000001c .LFE26
-     /tmp/ccbAfrTf.s:4686   .debug_str:000000000000022a .LASF94
-     /tmp/ccbAfrTf.s:3796   .debug_loc:00000000000002b4 .LLST25
-     /tmp/ccbAfrTf.s:4792   .debug_str:00000000000005e1 .LASF95
-     /tmp/ccbAfrTf.s:751    .text.usart_synchronous_clock_config:0000000000000000 .LFB25
-     /tmp/ccbAfrTf.s:787    .text.usart_synchronous_clock_config:000000000000001c .LFE25
-     /tmp/ccbAfrTf.s:4688   .debug_str:000000000000022f .LASF96
-     /tmp/ccbAfrTf.s:3810   .debug_loc:00000000000002d5 .LLST21
-     /tmp/ccbAfrTf.s:3824   .debug_loc:00000000000002f6 .LLST22
-     /tmp/ccbAfrTf.s:3838   .debug_loc:0000000000000317 .LLST23
-     /tmp/ccbAfrTf.s:3852   .debug_loc:0000000000000338 .LLST24
-     /tmp/ccbAfrTf.s:4710   .debug_str:00000000000002d6 .LASF97
-     /tmp/ccbAfrTf.s:730    .text.usart_synchronous_clock_disable:0000000000000000 .LFB24
-     /tmp/ccbAfrTf.s:744    .text.usart_synchronous_clock_disable:000000000000000e .LFE24
-     /tmp/ccbAfrTf.s:4690   .debug_str:0000000000000234 .LASF98
-     /tmp/ccbAfrTf.s:709    .text.usart_synchronous_clock_enable:0000000000000000 .LFB23
-     /tmp/ccbAfrTf.s:723    .text.usart_synchronous_clock_enable:000000000000000e .LFE23
-     /tmp/ccbAfrTf.s:4680   .debug_str:00000000000001e2 .LASF99
-     /tmp/ccbAfrTf.s:690    .text.usart_halfduplex_disable:0000000000000000 .LFB22
-     /tmp/ccbAfrTf.s:702    .text.usart_halfduplex_disable:0000000000000008 .LFE22
-     /tmp/ccbAfrTf.s:4682   .debug_str:00000000000001fb .LASF100
-     /tmp/ccbAfrTf.s:671    .text.usart_halfduplex_enable:0000000000000000 .LFB21
-     /tmp/ccbAfrTf.s:683    .text.usart_halfduplex_enable:000000000000000a .LFE21
-     /tmp/ccbAfrTf.s:4778   .debug_str:0000000000000582 .LASF101
-GAS LISTING /tmp/ccbAfrTf.s 			page 50
+     /tmp/cc2FGa8Y.s:1019   .text.usart_hardware_flow_rts_config:000000000000000c .LFE35
+     /tmp/cc2FGa8Y.s:4646   .debug_str:00000000000000d8 .LASF83
+     /tmp/cc2FGa8Y.s:3738   .debug_loc:0000000000000227 .LLST28
+     /tmp/cc2FGa8Y.s:3752   .debug_loc:0000000000000248 .LLST29
+     /tmp/cc2FGa8Y.s:4642   .debug_str:00000000000000b1 .LASF84
+     /tmp/cc2FGa8Y.s:968    .text.usart_irda_lowpower_config:0000000000000000 .LFB34
+     /tmp/cc2FGa8Y.s:989    .text.usart_irda_lowpower_config:0000000000000010 .LFE34
+     /tmp/cc2FGa8Y.s:4770   .debug_str:0000000000000516 .LASF85
+     /tmp/cc2FGa8Y.s:3768   .debug_loc:0000000000000272 .LLST27
+     /tmp/cc2FGa8Y.s:4852   .debug_str:0000000000000797 .LASF86
+     /tmp/cc2FGa8Y.s:943    .text.usart_prescaler_config:0000000000000000 .LFB33
+     /tmp/cc2FGa8Y.s:961    .text.usart_prescaler_config:0000000000000010 .LFE33
+     /tmp/cc2FGa8Y.s:3782   .debug_loc:0000000000000293 .LLST26
+     /tmp/cc2FGa8Y.s:4658   .debug_str:0000000000000124 .LASF87
+     /tmp/cc2FGa8Y.s:924    .text.usart_irda_mode_disable:0000000000000000 .LFB32
+     /tmp/cc2FGa8Y.s:936    .text.usart_irda_mode_disable:0000000000000008 .LFE32
+     /tmp/cc2FGa8Y.s:4858   .debug_str:00000000000007c7 .LASF88
+     /tmp/cc2FGa8Y.s:905    .text.usart_irda_mode_enable:0000000000000000 .LFB31
+     /tmp/cc2FGa8Y.s:917    .text.usart_irda_mode_enable:000000000000000a .LFE31
+     /tmp/cc2FGa8Y.s:4888   .debug_str:00000000000008fd .LASF89
+     /tmp/cc2FGa8Y.s:886    .text.usart_smartcard_mode_nack_disable:0000000000000000 .LFB30
+     /tmp/cc2FGa8Y.s:898    .text.usart_smartcard_mode_nack_disable:0000000000000008 .LFE30
+     /tmp/cc2FGa8Y.s:4624   .debug_str:000000000000001f .LASF90
+     /tmp/cc2FGa8Y.s:867    .text.usart_smartcard_mode_nack_enable:0000000000000000 .LFB29
+     /tmp/cc2FGa8Y.s:879    .text.usart_smartcard_mode_nack_enable:000000000000000a .LFE29
+     /tmp/cc2FGa8Y.s:4836   .debug_str:00000000000006f5 .LASF91
+     /tmp/cc2FGa8Y.s:848    .text.usart_smartcard_mode_disable:0000000000000000 .LFB28
+     /tmp/cc2FGa8Y.s:860    .text.usart_smartcard_mode_disable:000000000000000a .LFE28
+     /tmp/cc2FGa8Y.s:4842   .debug_str:000000000000072e .LASF92
+     /tmp/cc2FGa8Y.s:829    .text.usart_smartcard_mode_enable:0000000000000000 .LFB27
+     /tmp/cc2FGa8Y.s:841    .text.usart_smartcard_mode_enable:000000000000000a .LFE27
+     /tmp/cc2FGa8Y.s:4894   .debug_str:000000000000093c .LASF93
+     /tmp/cc2FGa8Y.s:794    .text.usart_guard_time_config:0000000000000000 .LFB26
+     /tmp/cc2FGa8Y.s:822    .text.usart_guard_time_config:000000000000001c .LFE26
+     /tmp/cc2FGa8Y.s:4686   .debug_str:000000000000022a .LASF94
+     /tmp/cc2FGa8Y.s:3796   .debug_loc:00000000000002b4 .LLST25
+     /tmp/cc2FGa8Y.s:4790   .debug_str:0000000000000588 .LASF95
+     /tmp/cc2FGa8Y.s:751    .text.usart_synchronous_clock_config:0000000000000000 .LFB25
+     /tmp/cc2FGa8Y.s:787    .text.usart_synchronous_clock_config:000000000000001c .LFE25
+     /tmp/cc2FGa8Y.s:4688   .debug_str:000000000000022f .LASF96
+     /tmp/cc2FGa8Y.s:3810   .debug_loc:00000000000002d5 .LLST21
+     /tmp/cc2FGa8Y.s:3824   .debug_loc:00000000000002f6 .LLST22
+     /tmp/cc2FGa8Y.s:3838   .debug_loc:0000000000000317 .LLST23
+     /tmp/cc2FGa8Y.s:3852   .debug_loc:0000000000000338 .LLST24
+     /tmp/cc2FGa8Y.s:4710   .debug_str:00000000000002d6 .LASF97
+     /tmp/cc2FGa8Y.s:730    .text.usart_synchronous_clock_disable:0000000000000000 .LFB24
+     /tmp/cc2FGa8Y.s:744    .text.usart_synchronous_clock_disable:000000000000000e .LFE24
+     /tmp/cc2FGa8Y.s:4690   .debug_str:0000000000000234 .LASF98
+     /tmp/cc2FGa8Y.s:709    .text.usart_synchronous_clock_enable:0000000000000000 .LFB23
+     /tmp/cc2FGa8Y.s:723    .text.usart_synchronous_clock_enable:000000000000000e .LFE23
+     /tmp/cc2FGa8Y.s:4680   .debug_str:00000000000001e2 .LASF99
+     /tmp/cc2FGa8Y.s:690    .text.usart_halfduplex_disable:0000000000000000 .LFB22
+     /tmp/cc2FGa8Y.s:702    .text.usart_halfduplex_disable:0000000000000008 .LFE22
+     /tmp/cc2FGa8Y.s:4682   .debug_str:00000000000001fb .LASF100
+     /tmp/cc2FGa8Y.s:671    .text.usart_halfduplex_enable:0000000000000000 .LFB21
+     /tmp/cc2FGa8Y.s:683    .text.usart_halfduplex_enable:000000000000000a .LFE21
+     /tmp/cc2FGa8Y.s:4776   .debug_str:0000000000000529 .LASF101
+GAS LISTING /tmp/cc2FGa8Y.s 			page 50
 
 
-     /tmp/ccbAfrTf.s:652    .text.usart_send_break:0000000000000000 .LFB20
-     /tmp/ccbAfrTf.s:664    .text.usart_send_break:000000000000000a .LFE20
-     /tmp/ccbAfrTf.s:4798   .debug_str:000000000000061b .LASF102
-     /tmp/ccbAfrTf.s:624    .text.usart_lin_break_detection_length_config:0000000000000000 .LFB19
-     /tmp/ccbAfrTf.s:645    .text.usart_lin_break_detection_length_config:0000000000000014 .LFE19
-     /tmp/ccbAfrTf.s:4726   .debug_str:0000000000000366 .LASF103
-     /tmp/ccbAfrTf.s:3868   .debug_loc:0000000000000362 .LLST20
-     /tmp/ccbAfrTf.s:4722   .debug_str:000000000000034a .LASF104
-     /tmp/ccbAfrTf.s:603    .text.usart_lin_mode_disable:0000000000000000 .LFB18
-     /tmp/ccbAfrTf.s:617    .text.usart_lin_mode_disable:000000000000000c .LFE18
-     /tmp/ccbAfrTf.s:4862   .debug_str:0000000000000837 .LASF105
-     /tmp/ccbAfrTf.s:583    .text.usart_lin_mode_enable:0000000000000000 .LFB17
-     /tmp/ccbAfrTf.s:596    .text.usart_lin_mode_enable:000000000000000a .LFE17
-     /tmp/ccbAfrTf.s:4672   .debug_str:000000000000019c .LASF106
-     /tmp/ccbAfrTf.s:556    .text.usart_mute_mode_wakeup_config:0000000000000000 .LFB16
-     /tmp/ccbAfrTf.s:576    .text.usart_mute_mode_wakeup_config:0000000000000014 .LFE16
-     /tmp/ccbAfrTf.s:4652   .debug_str:0000000000000106 .LASF107
-     /tmp/ccbAfrTf.s:3882   .debug_loc:0000000000000383 .LLST19
-     /tmp/ccbAfrTf.s:4720   .debug_str:0000000000000332 .LASF108
-     /tmp/ccbAfrTf.s:537    .text.usart_mute_mode_disable:0000000000000000 .LFB15
-     /tmp/ccbAfrTf.s:549    .text.usart_mute_mode_disable:0000000000000008 .LFE15
-     /tmp/ccbAfrTf.s:4696   .debug_str:000000000000026a .LASF109
-     /tmp/ccbAfrTf.s:518    .text.usart_mute_mode_enable:0000000000000000 .LFB14
-     /tmp/ccbAfrTf.s:530    .text.usart_mute_mode_enable:000000000000000a .LFE14
-     /tmp/ccbAfrTf.s:4742   .debug_str:00000000000003d5 .LASF110
-     /tmp/ccbAfrTf.s:490    .text.usart_address_config:0000000000000000 .LFB13
-     /tmp/ccbAfrTf.s:511    .text.usart_address_config:0000000000000010 .LFE13
-     /tmp/ccbAfrTf.s:4868   .debug_str:0000000000000866 .LASF111
-     /tmp/ccbAfrTf.s:3896   .debug_loc:00000000000003a4 .LLST18
-     /tmp/ccbAfrTf.s:4662   .debug_str:0000000000000155 .LASF112
-     /tmp/ccbAfrTf.s:471    .text.usart_data_receive:0000000000000000 .LFB12
-     /tmp/ccbAfrTf.s:483    .text.usart_data_receive:0000000000000008 .LFE12
-     /tmp/ccbAfrTf.s:3910   .debug_loc:00000000000003c5 .LLST17
-     /tmp/ccbAfrTf.s:4626   .debug_str:0000000000000040 .LASF113
-     /tmp/ccbAfrTf.s:451    .text.usart_data_transmit:0000000000000000 .LFB11
-     /tmp/ccbAfrTf.s:464    .text.usart_data_transmit:0000000000000008 .LFE11
-     /tmp/ccbAfrTf.s:4732   .debug_str:0000000000000388 .LASF114
-     /tmp/ccbAfrTf.s:3924   .debug_loc:00000000000003e6 .LLST16
-     /tmp/ccbAfrTf.s:4708   .debug_str:00000000000002c1 .LASF115
-     /tmp/ccbAfrTf.s:421    .text.usart_receive_config:0000000000000000 .LFB10
-     /tmp/ccbAfrTf.s:444    .text.usart_receive_config:000000000000000a .LFE10
-     /tmp/ccbAfrTf.s:4870   .debug_str:000000000000086b .LASF116
-     /tmp/ccbAfrTf.s:3938   .debug_loc:0000000000000407 .LLST14
-     /tmp/ccbAfrTf.s:3952   .debug_loc:0000000000000428 .LLST15
-     /tmp/ccbAfrTf.s:4848   .debug_str:00000000000007aa .LASF117
-     /tmp/ccbAfrTf.s:391    .text.usart_transmit_config:0000000000000000 .LFB9
-     /tmp/ccbAfrTf.s:414    .text.usart_transmit_config:000000000000000a .LFE9
-     /tmp/ccbAfrTf.s:4786   .debug_str:00000000000005c0 .LASF118
-     /tmp/ccbAfrTf.s:3968   .debug_loc:0000000000000452 .LLST12
-     /tmp/ccbAfrTf.s:3982   .debug_loc:0000000000000473 .LLST13
-     /tmp/ccbAfrTf.s:4832   .debug_str:0000000000000725 .LASF119
-     /tmp/ccbAfrTf.s:370    .text.usart_disable:0000000000000000 .LFB8
-     /tmp/ccbAfrTf.s:384    .text.usart_disable:000000000000000c .LFE8
-     /tmp/ccbAfrTf.s:4892   .debug_str:0000000000000929 .LASF120
-     /tmp/ccbAfrTf.s:350    .text.usart_enable:0000000000000000 .LFB7
-     /tmp/ccbAfrTf.s:363    .text.usart_enable:000000000000000a .LFE7
-     /tmp/ccbAfrTf.s:4736   .debug_str:00000000000003a0 .LASF121
-GAS LISTING /tmp/ccbAfrTf.s 			page 51
+     /tmp/cc2FGa8Y.s:652    .text.usart_send_break:0000000000000000 .LFB20
+     /tmp/cc2FGa8Y.s:664    .text.usart_send_break:000000000000000a .LFE20
+     /tmp/cc2FGa8Y.s:4796   .debug_str:00000000000005c2 .LASF102
+     /tmp/cc2FGa8Y.s:624    .text.usart_lin_break_detection_length_config:0000000000000000 .LFB19
+     /tmp/cc2FGa8Y.s:645    .text.usart_lin_break_detection_length_config:0000000000000014 .LFE19
+     /tmp/cc2FGa8Y.s:4726   .debug_str:0000000000000366 .LASF103
+     /tmp/cc2FGa8Y.s:3868   .debug_loc:0000000000000362 .LLST20
+     /tmp/cc2FGa8Y.s:4722   .debug_str:000000000000034a .LASF104
+     /tmp/cc2FGa8Y.s:603    .text.usart_lin_mode_disable:0000000000000000 .LFB18
+     /tmp/cc2FGa8Y.s:617    .text.usart_lin_mode_disable:000000000000000c .LFE18
+     /tmp/cc2FGa8Y.s:4860   .debug_str:00000000000007de .LASF105
+     /tmp/cc2FGa8Y.s:583    .text.usart_lin_mode_enable:0000000000000000 .LFB17
+     /tmp/cc2FGa8Y.s:596    .text.usart_lin_mode_enable:000000000000000a .LFE17
+     /tmp/cc2FGa8Y.s:4672   .debug_str:000000000000019c .LASF106
+     /tmp/cc2FGa8Y.s:556    .text.usart_mute_mode_wakeup_config:0000000000000000 .LFB16
+     /tmp/cc2FGa8Y.s:576    .text.usart_mute_mode_wakeup_config:0000000000000014 .LFE16
+     /tmp/cc2FGa8Y.s:4652   .debug_str:0000000000000106 .LASF107
+     /tmp/cc2FGa8Y.s:3882   .debug_loc:0000000000000383 .LLST19
+     /tmp/cc2FGa8Y.s:4720   .debug_str:0000000000000332 .LASF108
+     /tmp/cc2FGa8Y.s:537    .text.usart_mute_mode_disable:0000000000000000 .LFB15
+     /tmp/cc2FGa8Y.s:549    .text.usart_mute_mode_disable:0000000000000008 .LFE15
+     /tmp/cc2FGa8Y.s:4696   .debug_str:000000000000026a .LASF109
+     /tmp/cc2FGa8Y.s:518    .text.usart_mute_mode_enable:0000000000000000 .LFB14
+     /tmp/cc2FGa8Y.s:530    .text.usart_mute_mode_enable:000000000000000a .LFE14
+     /tmp/cc2FGa8Y.s:4742   .debug_str:00000000000003d5 .LASF110
+     /tmp/cc2FGa8Y.s:490    .text.usart_address_config:0000000000000000 .LFB13
+     /tmp/cc2FGa8Y.s:511    .text.usart_address_config:0000000000000010 .LFE13
+     /tmp/cc2FGa8Y.s:4866   .debug_str:000000000000080d .LASF111
+     /tmp/cc2FGa8Y.s:3896   .debug_loc:00000000000003a4 .LLST18
+     /tmp/cc2FGa8Y.s:4662   .debug_str:0000000000000155 .LASF112
+     /tmp/cc2FGa8Y.s:471    .text.usart_data_receive:0000000000000000 .LFB12
+     /tmp/cc2FGa8Y.s:483    .text.usart_data_receive:0000000000000008 .LFE12
+     /tmp/cc2FGa8Y.s:3910   .debug_loc:00000000000003c5 .LLST17
+     /tmp/cc2FGa8Y.s:4626   .debug_str:0000000000000040 .LASF113
+     /tmp/cc2FGa8Y.s:451    .text.usart_data_transmit:0000000000000000 .LFB11
+     /tmp/cc2FGa8Y.s:464    .text.usart_data_transmit:0000000000000008 .LFE11
+     /tmp/cc2FGa8Y.s:4732   .debug_str:0000000000000388 .LASF114
+     /tmp/cc2FGa8Y.s:3924   .debug_loc:00000000000003e6 .LLST16
+     /tmp/cc2FGa8Y.s:4708   .debug_str:00000000000002c1 .LASF115
+     /tmp/cc2FGa8Y.s:421    .text.usart_receive_config:0000000000000000 .LFB10
+     /tmp/cc2FGa8Y.s:444    .text.usart_receive_config:000000000000000a .LFE10
+     /tmp/cc2FGa8Y.s:4868   .debug_str:0000000000000812 .LASF116
+     /tmp/cc2FGa8Y.s:3938   .debug_loc:0000000000000407 .LLST14
+     /tmp/cc2FGa8Y.s:3952   .debug_loc:0000000000000428 .LLST15
+     /tmp/cc2FGa8Y.s:4846   .debug_str:0000000000000751 .LASF117
+     /tmp/cc2FGa8Y.s:391    .text.usart_transmit_config:0000000000000000 .LFB9
+     /tmp/cc2FGa8Y.s:414    .text.usart_transmit_config:000000000000000a .LFE9
+     /tmp/cc2FGa8Y.s:4784   .debug_str:0000000000000567 .LASF118
+     /tmp/cc2FGa8Y.s:3968   .debug_loc:0000000000000452 .LLST12
+     /tmp/cc2FGa8Y.s:3982   .debug_loc:0000000000000473 .LLST13
+     /tmp/cc2FGa8Y.s:4830   .debug_str:00000000000006cc .LASF119
+     /tmp/cc2FGa8Y.s:370    .text.usart_disable:0000000000000000 .LFB8
+     /tmp/cc2FGa8Y.s:384    .text.usart_disable:000000000000000c .LFE8
+     /tmp/cc2FGa8Y.s:4892   .debug_str:000000000000092f .LASF120
+     /tmp/cc2FGa8Y.s:350    .text.usart_enable:0000000000000000 .LFB7
+     /tmp/cc2FGa8Y.s:363    .text.usart_enable:000000000000000a .LFE7
+     /tmp/cc2FGa8Y.s:4736   .debug_str:00000000000003a0 .LASF121
+GAS LISTING /tmp/cc2FGa8Y.s 			page 51
 
 
-     /tmp/ccbAfrTf.s:323    .text.usart_stop_bit_set:0000000000000000 .LFB6
-     /tmp/ccbAfrTf.s:343    .text.usart_stop_bit_set:0000000000000012 .LFE6
-     /tmp/ccbAfrTf.s:4846   .debug_str:00000000000007a3 .LASF122
-     /tmp/ccbAfrTf.s:3998   .debug_loc:000000000000049d .LLST11
-     /tmp/ccbAfrTf.s:4878   .debug_str:00000000000008a8 .LASF123
-     /tmp/ccbAfrTf.s:296    .text.usart_word_length_set:0000000000000000 .LFB5
-     /tmp/ccbAfrTf.s:316    .text.usart_word_length_set:0000000000000012 .LFE5
-     /tmp/ccbAfrTf.s:4810   .debug_str:00000000000006b2 .LASF124
-     /tmp/ccbAfrTf.s:4012   .debug_loc:00000000000004be .LLST10
-     /tmp/ccbAfrTf.s:4780   .debug_str:0000000000000593 .LASF125
-     /tmp/ccbAfrTf.s:271    .text.usart_parity_config:0000000000000000 .LFB4
-     /tmp/ccbAfrTf.s:289    .text.usart_parity_config:0000000000000010 .LFE4
-     /tmp/ccbAfrTf.s:4898   .debug_str:000000000000095c .LASF126
-     /tmp/ccbAfrTf.s:4026   .debug_loc:00000000000004df .LLST9
-     /tmp/ccbAfrTf.s:4816   .debug_str:00000000000006d2 .LASF127
-     /tmp/ccbAfrTf.s:168    .text.usart_baudrate_set:0000000000000000 .LFB3
-     /tmp/ccbAfrTf.s:264    .text.usart_baudrate_set:0000000000000074 .LFE3
-     /tmp/ccbAfrTf.s:4040   .debug_loc:0000000000000500 .LLST2
-     /tmp/ccbAfrTf.s:4063   .debug_loc:0000000000000538 .LLST3
-     /tmp/ccbAfrTf.s:4902   .debug_str:0000000000000971 .LASF128
-     /tmp/ccbAfrTf.s:4085   .debug_loc:000000000000056f .LLST4
-     /tmp/ccbAfrTf.s:4724   .debug_str:0000000000000361 .LASF129
-     /tmp/ccbAfrTf.s:4107   .debug_loc:00000000000005a6 .LLST5
-     /tmp/ccbAfrTf.s:4702   .debug_str:00000000000002a0 .LASF130
-     /tmp/ccbAfrTf.s:4128   .debug_loc:00000000000005dc .LLST6
-     /tmp/ccbAfrTf.s:4656   .debug_str:000000000000011d .LASF131
-     /tmp/ccbAfrTf.s:4189   .debug_loc:000000000000063c .LLST7
-     /tmp/ccbAfrTf.s:4746   .debug_str:00000000000003f7 .LASF132
-     /tmp/ccbAfrTf.s:4248   .debug_loc:0000000000000698 .LLST8
-     /tmp/ccbAfrTf.s:207    .text.usart_baudrate_set:0000000000000038 .LVL18
-     /tmp/ccbAfrTf.s:260    .text.usart_baudrate_set:0000000000000072 .LVL24
-     /tmp/ccbAfrTf.s:4794   .debug_str:0000000000000600 .LASF133
-     /tmp/ccbAfrTf.s:14     .text.usart_deinit:0000000000000000 .LFB2
-     /tmp/ccbAfrTf.s:161    .text.usart_deinit:00000000000000ca .LFE2
-     /tmp/ccbAfrTf.s:4307   .debug_loc:00000000000006fb .LLST0
-     /tmp/ccbAfrTf.s:4375   .debug_loc:000000000000079f .LLST1
-     /tmp/ccbAfrTf.s:41     .text.usart_deinit:0000000000000030 .LVL2
-     /tmp/ccbAfrTf.s:55     .text.usart_deinit:0000000000000040 .LVL3
-     /tmp/ccbAfrTf.s:69     .text.usart_deinit:0000000000000060 .LVL5
-     /tmp/ccbAfrTf.s:83     .text.usart_deinit:0000000000000070 .LVL6
-     /tmp/ccbAfrTf.s:91     .text.usart_deinit:000000000000007c .LVL8
-     /tmp/ccbAfrTf.s:105    .text.usart_deinit:000000000000008c .LVL9
-     /tmp/ccbAfrTf.s:113    .text.usart_deinit:0000000000000098 .LVL11
-     /tmp/ccbAfrTf.s:127    .text.usart_deinit:00000000000000a8 .LVL12
-     /tmp/ccbAfrTf.s:146    .text.usart_deinit:00000000000000ba .LVL14
-     /tmp/ccbAfrTf.s:159    .text.usart_deinit:00000000000000ca .LVL15
-     /tmp/ccbAfrTf.s:4734   .debug_str:000000000000038d .LASF134
-     /tmp/ccbAfrTf.s:4698   .debug_str:0000000000000281 .LASF135
-     /tmp/ccbAfrTf.s:4660   .debug_str:000000000000013c .LASF136
-     /tmp/ccbAfrTf.s:1278   .text.usart_interrupt_flag_clear:0000000000000000 .LVL108
-     /tmp/ccbAfrTf.s:1283   .text.usart_interrupt_flag_clear:0000000000000006 .LVL109
-     /tmp/ccbAfrTf.s:1287   .text.usart_interrupt_flag_clear:000000000000000a .LVL110
-     /tmp/ccbAfrTf.s:1228   .text.usart_interrupt_flag_get:0000000000000000 .LVL103
-     /tmp/ccbAfrTf.s:1248   .text.usart_interrupt_flag_get:0000000000000018 .LVL105
-     /tmp/ccbAfrTf.s:1242   .text.usart_interrupt_flag_get:0000000000000012 .LVL104
-     /tmp/ccbAfrTf.s:1253   .text.usart_interrupt_flag_get:0000000000000020 .LVL106
-     /tmp/ccbAfrTf.s:1259   .text.usart_interrupt_flag_get:0000000000000026 .LVL107
-GAS LISTING /tmp/ccbAfrTf.s 			page 52
+     /tmp/cc2FGa8Y.s:323    .text.usart_stop_bit_set:0000000000000000 .LFB6
+     /tmp/cc2FGa8Y.s:343    .text.usart_stop_bit_set:0000000000000012 .LFE6
+     /tmp/cc2FGa8Y.s:4844   .debug_str:000000000000074a .LASF122
+     /tmp/cc2FGa8Y.s:3998   .debug_loc:000000000000049d .LLST11
+     /tmp/cc2FGa8Y.s:4878   .debug_str:00000000000008ae .LASF123
+     /tmp/cc2FGa8Y.s:296    .text.usart_word_length_set:0000000000000000 .LFB5
+     /tmp/cc2FGa8Y.s:316    .text.usart_word_length_set:0000000000000012 .LFE5
+     /tmp/cc2FGa8Y.s:4808   .debug_str:0000000000000659 .LASF124
+     /tmp/cc2FGa8Y.s:4012   .debug_loc:00000000000004be .LLST10
+     /tmp/cc2FGa8Y.s:4778   .debug_str:000000000000053a .LASF125
+     /tmp/cc2FGa8Y.s:271    .text.usart_parity_config:0000000000000000 .LFB4
+     /tmp/cc2FGa8Y.s:289    .text.usart_parity_config:0000000000000010 .LFE4
+     /tmp/cc2FGa8Y.s:4898   .debug_str:0000000000000962 .LASF126
+     /tmp/cc2FGa8Y.s:4026   .debug_loc:00000000000004df .LLST9
+     /tmp/cc2FGa8Y.s:4814   .debug_str:0000000000000679 .LASF127
+     /tmp/cc2FGa8Y.s:168    .text.usart_baudrate_set:0000000000000000 .LFB3
+     /tmp/cc2FGa8Y.s:264    .text.usart_baudrate_set:0000000000000074 .LFE3
+     /tmp/cc2FGa8Y.s:4040   .debug_loc:0000000000000500 .LLST2
+     /tmp/cc2FGa8Y.s:4063   .debug_loc:0000000000000538 .LLST3
+     /tmp/cc2FGa8Y.s:4902   .debug_str:0000000000000977 .LASF128
+     /tmp/cc2FGa8Y.s:4085   .debug_loc:000000000000056f .LLST4
+     /tmp/cc2FGa8Y.s:4724   .debug_str:0000000000000361 .LASF129
+     /tmp/cc2FGa8Y.s:4107   .debug_loc:00000000000005a6 .LLST5
+     /tmp/cc2FGa8Y.s:4702   .debug_str:00000000000002a0 .LASF130
+     /tmp/cc2FGa8Y.s:4128   .debug_loc:00000000000005dc .LLST6
+     /tmp/cc2FGa8Y.s:4656   .debug_str:000000000000011d .LASF131
+     /tmp/cc2FGa8Y.s:4189   .debug_loc:000000000000063c .LLST7
+     /tmp/cc2FGa8Y.s:4746   .debug_str:00000000000003f7 .LASF132
+     /tmp/cc2FGa8Y.s:4248   .debug_loc:0000000000000698 .LLST8
+     /tmp/cc2FGa8Y.s:207    .text.usart_baudrate_set:0000000000000038 .LVL18
+     /tmp/cc2FGa8Y.s:260    .text.usart_baudrate_set:0000000000000072 .LVL24
+     /tmp/cc2FGa8Y.s:4792   .debug_str:00000000000005a7 .LASF133
+     /tmp/cc2FGa8Y.s:14     .text.usart_deinit:0000000000000000 .LFB2
+     /tmp/cc2FGa8Y.s:161    .text.usart_deinit:00000000000000ca .LFE2
+     /tmp/cc2FGa8Y.s:4307   .debug_loc:00000000000006fb .LLST0
+     /tmp/cc2FGa8Y.s:4375   .debug_loc:000000000000079f .LLST1
+     /tmp/cc2FGa8Y.s:41     .text.usart_deinit:0000000000000030 .LVL2
+     /tmp/cc2FGa8Y.s:55     .text.usart_deinit:0000000000000040 .LVL3
+     /tmp/cc2FGa8Y.s:69     .text.usart_deinit:0000000000000060 .LVL5
+     /tmp/cc2FGa8Y.s:83     .text.usart_deinit:0000000000000070 .LVL6
+     /tmp/cc2FGa8Y.s:91     .text.usart_deinit:000000000000007c .LVL8
+     /tmp/cc2FGa8Y.s:105    .text.usart_deinit:000000000000008c .LVL9
+     /tmp/cc2FGa8Y.s:113    .text.usart_deinit:0000000000000098 .LVL11
+     /tmp/cc2FGa8Y.s:127    .text.usart_deinit:00000000000000a8 .LVL12
+     /tmp/cc2FGa8Y.s:146    .text.usart_deinit:00000000000000ba .LVL14
+     /tmp/cc2FGa8Y.s:159    .text.usart_deinit:00000000000000ca .LVL15
+     /tmp/cc2FGa8Y.s:4734   .debug_str:000000000000038d .LASF134
+     /tmp/cc2FGa8Y.s:4698   .debug_str:0000000000000281 .LASF135
+     /tmp/cc2FGa8Y.s:4660   .debug_str:000000000000013c .LASF136
+     /tmp/cc2FGa8Y.s:1278   .text.usart_interrupt_flag_clear:0000000000000000 .LVL108
+     /tmp/cc2FGa8Y.s:1283   .text.usart_interrupt_flag_clear:0000000000000006 .LVL109
+     /tmp/cc2FGa8Y.s:1287   .text.usart_interrupt_flag_clear:000000000000000a .LVL110
+     /tmp/cc2FGa8Y.s:1228   .text.usart_interrupt_flag_get:0000000000000000 .LVL103
+     /tmp/cc2FGa8Y.s:1248   .text.usart_interrupt_flag_get:0000000000000018 .LVL105
+     /tmp/cc2FGa8Y.s:1242   .text.usart_interrupt_flag_get:0000000000000012 .LVL104
+     /tmp/cc2FGa8Y.s:1253   .text.usart_interrupt_flag_get:0000000000000020 .LVL106
+     /tmp/cc2FGa8Y.s:1259   .text.usart_interrupt_flag_get:0000000000000026 .LVL107
+GAS LISTING /tmp/cc2FGa8Y.s 			page 52
 
 
-     /tmp/ccbAfrTf.s:1199   .text.usart_interrupt_disable:0000000000000000 .LVL101
-     /tmp/ccbAfrTf.s:1205   .text.usart_interrupt_disable:000000000000000a .LVL102
-     /tmp/ccbAfrTf.s:1172   .text.usart_interrupt_enable:0000000000000000 .LVL99
-     /tmp/ccbAfrTf.s:1178   .text.usart_interrupt_enable:000000000000000a .LVL100
-     /tmp/ccbAfrTf.s:1143   .text.usart_flag_clear:0000000000000000 .LVL97
-     /tmp/ccbAfrTf.s:1149   .text.usart_flag_clear:000000000000000a .LVL98
-     /tmp/ccbAfrTf.s:1119   .text.usart_flag_get:0000000000000000 .LVL95
-     /tmp/ccbAfrTf.s:1125   .text.usart_flag_get:000000000000000a .LVL96
-     /tmp/ccbAfrTf.s:1089   .text.usart_dma_transmit_config:0000000000000000 .LVL91
-     /tmp/ccbAfrTf.s:1102   .text.usart_dma_transmit_config:0000000000000008 .LVL94
-     /tmp/ccbAfrTf.s:1094   .text.usart_dma_transmit_config:0000000000000002 .LVL92
-     /tmp/ccbAfrTf.s:1059   .text.usart_dma_receive_config:0000000000000000 .LVL87
-     /tmp/ccbAfrTf.s:1072   .text.usart_dma_receive_config:0000000000000008 .LVL90
-     /tmp/ccbAfrTf.s:1064   .text.usart_dma_receive_config:0000000000000002 .LVL88
-     /tmp/ccbAfrTf.s:1029   .text.usart_hardware_flow_cts_config:0000000000000000 .LVL83
-     /tmp/ccbAfrTf.s:1042   .text.usart_hardware_flow_cts_config:0000000000000008 .LVL86
-     /tmp/ccbAfrTf.s:1034   .text.usart_hardware_flow_cts_config:0000000000000002 .LVL84
-     /tmp/ccbAfrTf.s:999    .text.usart_hardware_flow_rts_config:0000000000000000 .LVL79
-     /tmp/ccbAfrTf.s:1012   .text.usart_hardware_flow_rts_config:0000000000000008 .LVL82
-     /tmp/ccbAfrTf.s:1004   .text.usart_hardware_flow_rts_config:0000000000000002 .LVL80
-     /tmp/ccbAfrTf.s:971    .text.usart_irda_lowpower_config:0000000000000000 .LVL77
-     /tmp/ccbAfrTf.s:977    .text.usart_irda_lowpower_config:0000000000000004 .LVL78
-     /tmp/ccbAfrTf.s:946    .text.usart_prescaler_config:0000000000000000 .LVL75
-     /tmp/ccbAfrTf.s:956    .text.usart_prescaler_config:000000000000000c .LVL76
-     /tmp/ccbAfrTf.s:797    .text.usart_guard_time_config:0000000000000000 .LVL67
-     /tmp/ccbAfrTf.s:812    .text.usart_guard_time_config:0000000000000012 .LVL68
-     /tmp/ccbAfrTf.s:754    .text.usart_synchronous_clock_config:0000000000000000 .LVL60
-     /tmp/ccbAfrTf.s:771    .text.usart_synchronous_clock_config:0000000000000010 .LVL64
-     /tmp/ccbAfrTf.s:763    .text.usart_synchronous_clock_config:0000000000000006 .LVL62
-     /tmp/ccbAfrTf.s:766    .text.usart_synchronous_clock_config:000000000000000a .LVL63
-     /tmp/ccbAfrTf.s:759    .text.usart_synchronous_clock_config:0000000000000002 .LVL61
-     /tmp/ccbAfrTf.s:780    .text.usart_synchronous_clock_config:0000000000000018 .LVL66
-     /tmp/ccbAfrTf.s:627    .text.usart_lin_break_detection_length_config:0000000000000000 .LVL53
-     /tmp/ccbAfrTf.s:633    .text.usart_lin_break_detection_length_config:0000000000000006 .LVL54
-     /tmp/ccbAfrTf.s:559    .text.usart_mute_mode_wakeup_config:0000000000000000 .LVL49
-     /tmp/ccbAfrTf.s:571    .text.usart_mute_mode_wakeup_config:0000000000000010 .LVL50
-     /tmp/ccbAfrTf.s:493    .text.usart_address_config:0000000000000000 .LVL45
-     /tmp/ccbAfrTf.s:499    .text.usart_address_config:0000000000000004 .LVL46
-     /tmp/ccbAfrTf.s:474    .text.usart_data_receive:0000000000000000 .LVL43
-     /tmp/ccbAfrTf.s:478    .text.usart_data_receive:0000000000000002 .LVL44
-     /tmp/ccbAfrTf.s:454    .text.usart_data_transmit:0000000000000000 .LVL41
-     /tmp/ccbAfrTf.s:458    .text.usart_data_transmit:0000000000000004 .LVL42
-     /tmp/ccbAfrTf.s:424    .text.usart_receive_config:0000000000000000 .LVL37
-     /tmp/ccbAfrTf.s:437    .text.usart_receive_config:0000000000000006 .LVL40
-     /tmp/ccbAfrTf.s:429    .text.usart_receive_config:0000000000000002 .LVL38
-     /tmp/ccbAfrTf.s:394    .text.usart_transmit_config:0000000000000000 .LVL33
-     /tmp/ccbAfrTf.s:407    .text.usart_transmit_config:0000000000000006 .LVL36
-     /tmp/ccbAfrTf.s:399    .text.usart_transmit_config:0000000000000002 .LVL34
-     /tmp/ccbAfrTf.s:326    .text.usart_stop_bit_set:0000000000000000 .LVL29
-     /tmp/ccbAfrTf.s:338    .text.usart_stop_bit_set:000000000000000e .LVL30
-     /tmp/ccbAfrTf.s:299    .text.usart_word_length_set:0000000000000000 .LVL27
-     /tmp/ccbAfrTf.s:311    .text.usart_word_length_set:000000000000000e .LVL28
-     /tmp/ccbAfrTf.s:274    .text.usart_parity_config:0000000000000000 .LVL25
-     /tmp/ccbAfrTf.s:284    .text.usart_parity_config:000000000000000c .LVL26
-     /tmp/ccbAfrTf.s:176    .text.usart_baudrate_set:0000000000000002 .LCFI12
-     /tmp/ccbAfrTf.s:239    .text.usart_baudrate_set:0000000000000050 .LCFI13
-     /tmp/ccbAfrTf.s:244    .text.usart_baudrate_set:0000000000000052 .LCFI14
-GAS LISTING /tmp/ccbAfrTf.s 			page 53
+     /tmp/cc2FGa8Y.s:1199   .text.usart_interrupt_disable:0000000000000000 .LVL101
+     /tmp/cc2FGa8Y.s:1205   .text.usart_interrupt_disable:000000000000000a .LVL102
+     /tmp/cc2FGa8Y.s:1172   .text.usart_interrupt_enable:0000000000000000 .LVL99
+     /tmp/cc2FGa8Y.s:1178   .text.usart_interrupt_enable:000000000000000a .LVL100
+     /tmp/cc2FGa8Y.s:1143   .text.usart_flag_clear:0000000000000000 .LVL97
+     /tmp/cc2FGa8Y.s:1149   .text.usart_flag_clear:000000000000000a .LVL98
+     /tmp/cc2FGa8Y.s:1119   .text.usart_flag_get:0000000000000000 .LVL95
+     /tmp/cc2FGa8Y.s:1125   .text.usart_flag_get:000000000000000a .LVL96
+     /tmp/cc2FGa8Y.s:1089   .text.usart_dma_transmit_config:0000000000000000 .LVL91
+     /tmp/cc2FGa8Y.s:1102   .text.usart_dma_transmit_config:0000000000000008 .LVL94
+     /tmp/cc2FGa8Y.s:1094   .text.usart_dma_transmit_config:0000000000000002 .LVL92
+     /tmp/cc2FGa8Y.s:1059   .text.usart_dma_receive_config:0000000000000000 .LVL87
+     /tmp/cc2FGa8Y.s:1072   .text.usart_dma_receive_config:0000000000000008 .LVL90
+     /tmp/cc2FGa8Y.s:1064   .text.usart_dma_receive_config:0000000000000002 .LVL88
+     /tmp/cc2FGa8Y.s:1029   .text.usart_hardware_flow_cts_config:0000000000000000 .LVL83
+     /tmp/cc2FGa8Y.s:1042   .text.usart_hardware_flow_cts_config:0000000000000008 .LVL86
+     /tmp/cc2FGa8Y.s:1034   .text.usart_hardware_flow_cts_config:0000000000000002 .LVL84
+     /tmp/cc2FGa8Y.s:999    .text.usart_hardware_flow_rts_config:0000000000000000 .LVL79
+     /tmp/cc2FGa8Y.s:1012   .text.usart_hardware_flow_rts_config:0000000000000008 .LVL82
+     /tmp/cc2FGa8Y.s:1004   .text.usart_hardware_flow_rts_config:0000000000000002 .LVL80
+     /tmp/cc2FGa8Y.s:971    .text.usart_irda_lowpower_config:0000000000000000 .LVL77
+     /tmp/cc2FGa8Y.s:977    .text.usart_irda_lowpower_config:0000000000000004 .LVL78
+     /tmp/cc2FGa8Y.s:946    .text.usart_prescaler_config:0000000000000000 .LVL75
+     /tmp/cc2FGa8Y.s:956    .text.usart_prescaler_config:000000000000000c .LVL76
+     /tmp/cc2FGa8Y.s:797    .text.usart_guard_time_config:0000000000000000 .LVL67
+     /tmp/cc2FGa8Y.s:812    .text.usart_guard_time_config:0000000000000012 .LVL68
+     /tmp/cc2FGa8Y.s:754    .text.usart_synchronous_clock_config:0000000000000000 .LVL60
+     /tmp/cc2FGa8Y.s:771    .text.usart_synchronous_clock_config:0000000000000010 .LVL64
+     /tmp/cc2FGa8Y.s:763    .text.usart_synchronous_clock_config:0000000000000006 .LVL62
+     /tmp/cc2FGa8Y.s:766    .text.usart_synchronous_clock_config:000000000000000a .LVL63
+     /tmp/cc2FGa8Y.s:759    .text.usart_synchronous_clock_config:0000000000000002 .LVL61
+     /tmp/cc2FGa8Y.s:780    .text.usart_synchronous_clock_config:0000000000000018 .LVL66
+     /tmp/cc2FGa8Y.s:627    .text.usart_lin_break_detection_length_config:0000000000000000 .LVL53
+     /tmp/cc2FGa8Y.s:633    .text.usart_lin_break_detection_length_config:0000000000000006 .LVL54
+     /tmp/cc2FGa8Y.s:559    .text.usart_mute_mode_wakeup_config:0000000000000000 .LVL49
+     /tmp/cc2FGa8Y.s:571    .text.usart_mute_mode_wakeup_config:0000000000000010 .LVL50
+     /tmp/cc2FGa8Y.s:493    .text.usart_address_config:0000000000000000 .LVL45
+     /tmp/cc2FGa8Y.s:499    .text.usart_address_config:0000000000000004 .LVL46
+     /tmp/cc2FGa8Y.s:474    .text.usart_data_receive:0000000000000000 .LVL43
+     /tmp/cc2FGa8Y.s:478    .text.usart_data_receive:0000000000000002 .LVL44
+     /tmp/cc2FGa8Y.s:454    .text.usart_data_transmit:0000000000000000 .LVL41
+     /tmp/cc2FGa8Y.s:458    .text.usart_data_transmit:0000000000000004 .LVL42
+     /tmp/cc2FGa8Y.s:424    .text.usart_receive_config:0000000000000000 .LVL37
+     /tmp/cc2FGa8Y.s:437    .text.usart_receive_config:0000000000000006 .LVL40
+     /tmp/cc2FGa8Y.s:429    .text.usart_receive_config:0000000000000002 .LVL38
+     /tmp/cc2FGa8Y.s:394    .text.usart_transmit_config:0000000000000000 .LVL33
+     /tmp/cc2FGa8Y.s:407    .text.usart_transmit_config:0000000000000006 .LVL36
+     /tmp/cc2FGa8Y.s:399    .text.usart_transmit_config:0000000000000002 .LVL34
+     /tmp/cc2FGa8Y.s:326    .text.usart_stop_bit_set:0000000000000000 .LVL29
+     /tmp/cc2FGa8Y.s:338    .text.usart_stop_bit_set:000000000000000e .LVL30
+     /tmp/cc2FGa8Y.s:299    .text.usart_word_length_set:0000000000000000 .LVL27
+     /tmp/cc2FGa8Y.s:311    .text.usart_word_length_set:000000000000000e .LVL28
+     /tmp/cc2FGa8Y.s:274    .text.usart_parity_config:0000000000000000 .LVL25
+     /tmp/cc2FGa8Y.s:284    .text.usart_parity_config:000000000000000c .LVL26
+     /tmp/cc2FGa8Y.s:176    .text.usart_baudrate_set:0000000000000002 .LCFI12
+     /tmp/cc2FGa8Y.s:239    .text.usart_baudrate_set:0000000000000050 .LCFI13
+     /tmp/cc2FGa8Y.s:244    .text.usart_baudrate_set:0000000000000052 .LCFI14
+GAS LISTING /tmp/cc2FGa8Y.s 			page 53
 
 
-     /tmp/ccbAfrTf.s:171    .text.usart_baudrate_set:0000000000000000 .LVL16
-     /tmp/ccbAfrTf.s:200    .text.usart_baudrate_set:000000000000002a .LVL17
-     /tmp/ccbAfrTf.s:237    .text.usart_baudrate_set:000000000000004e .LVL22
-     /tmp/ccbAfrTf.s:242    .text.usart_baudrate_set:0000000000000052 .LVL23
-     /tmp/ccbAfrTf.s:227    .text.usart_baudrate_set:0000000000000046 .LVL20
-     /tmp/ccbAfrTf.s:220    .text.usart_baudrate_set:0000000000000042 .LVL19
-     /tmp/ccbAfrTf.s:230    .text.usart_baudrate_set:0000000000000048 .LVL21
-     /tmp/ccbAfrTf.s:22     .text.usart_deinit:0000000000000002 .LCFI0
-     /tmp/ccbAfrTf.s:51     .text.usart_deinit:0000000000000038 .LCFI1
-     /tmp/ccbAfrTf.s:57     .text.usart_deinit:0000000000000040 .LCFI2
-     /tmp/ccbAfrTf.s:79     .text.usart_deinit:0000000000000068 .LCFI3
-     /tmp/ccbAfrTf.s:85     .text.usart_deinit:0000000000000070 .LCFI4
-     /tmp/ccbAfrTf.s:101    .text.usart_deinit:0000000000000084 .LCFI5
-     /tmp/ccbAfrTf.s:107    .text.usart_deinit:000000000000008c .LCFI6
-     /tmp/ccbAfrTf.s:123    .text.usart_deinit:00000000000000a0 .LCFI7
-     /tmp/ccbAfrTf.s:129    .text.usart_deinit:00000000000000a8 .LCFI8
-     /tmp/ccbAfrTf.s:136    .text.usart_deinit:00000000000000ac .LCFI9
-     /tmp/ccbAfrTf.s:140    .text.usart_deinit:00000000000000ae .LCFI10
-     /tmp/ccbAfrTf.s:155    .text.usart_deinit:00000000000000c2 .LCFI11
-     /tmp/ccbAfrTf.s:18     .text.usart_deinit:0000000000000000 .LVL0
-     /tmp/ccbAfrTf.s:39     .text.usart_deinit:0000000000000028 .LVL1
-     /tmp/ccbAfrTf.s:67     .text.usart_deinit:0000000000000058 .LVL4
-     /tmp/ccbAfrTf.s:89     .text.usart_deinit:0000000000000074 .LVL7
-     /tmp/ccbAfrTf.s:111    .text.usart_deinit:0000000000000090 .LVL10
-     /tmp/ccbAfrTf.s:144    .text.usart_deinit:00000000000000b2 .LVL13
-     /tmp/ccbAfrTf.s:1309   .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/cc2FGa8Y.s:171    .text.usart_baudrate_set:0000000000000000 .LVL16
+     /tmp/cc2FGa8Y.s:200    .text.usart_baudrate_set:000000000000002a .LVL17
+     /tmp/cc2FGa8Y.s:237    .text.usart_baudrate_set:000000000000004e .LVL22
+     /tmp/cc2FGa8Y.s:242    .text.usart_baudrate_set:0000000000000052 .LVL23
+     /tmp/cc2FGa8Y.s:227    .text.usart_baudrate_set:0000000000000046 .LVL20
+     /tmp/cc2FGa8Y.s:220    .text.usart_baudrate_set:0000000000000042 .LVL19
+     /tmp/cc2FGa8Y.s:230    .text.usart_baudrate_set:0000000000000048 .LVL21
+     /tmp/cc2FGa8Y.s:22     .text.usart_deinit:0000000000000002 .LCFI0
+     /tmp/cc2FGa8Y.s:51     .text.usart_deinit:0000000000000038 .LCFI1
+     /tmp/cc2FGa8Y.s:57     .text.usart_deinit:0000000000000040 .LCFI2
+     /tmp/cc2FGa8Y.s:79     .text.usart_deinit:0000000000000068 .LCFI3
+     /tmp/cc2FGa8Y.s:85     .text.usart_deinit:0000000000000070 .LCFI4
+     /tmp/cc2FGa8Y.s:101    .text.usart_deinit:0000000000000084 .LCFI5
+     /tmp/cc2FGa8Y.s:107    .text.usart_deinit:000000000000008c .LCFI6
+     /tmp/cc2FGa8Y.s:123    .text.usart_deinit:00000000000000a0 .LCFI7
+     /tmp/cc2FGa8Y.s:129    .text.usart_deinit:00000000000000a8 .LCFI8
+     /tmp/cc2FGa8Y.s:136    .text.usart_deinit:00000000000000ac .LCFI9
+     /tmp/cc2FGa8Y.s:140    .text.usart_deinit:00000000000000ae .LCFI10
+     /tmp/cc2FGa8Y.s:155    .text.usart_deinit:00000000000000c2 .LCFI11
+     /tmp/cc2FGa8Y.s:18     .text.usart_deinit:0000000000000000 .LVL0
+     /tmp/cc2FGa8Y.s:39     .text.usart_deinit:0000000000000028 .LVL1
+     /tmp/cc2FGa8Y.s:67     .text.usart_deinit:0000000000000058 .LVL4
+     /tmp/cc2FGa8Y.s:89     .text.usart_deinit:0000000000000074 .LVL7
+     /tmp/cc2FGa8Y.s:111    .text.usart_deinit:0000000000000090 .LVL10
+     /tmp/cc2FGa8Y.s:144    .text.usart_deinit:00000000000000b2 .LVL13
+     /tmp/cc2FGa8Y.s:1309   .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_reset_enable

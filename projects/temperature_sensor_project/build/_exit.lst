@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccvD6s69.s 			page 1
+GAS LISTING /tmp/ccHLQRaY.s 			page 1
 
 
    1              		.file	"_exit.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccvD6s69.s 			page 1
   42              		.cfi_offset 8, -8
    9:../../firmware/RISCV/stubs/_exit.c ****   const char message[] = "\nProgram has exited with code:";
   43              		.loc 1 9 1
-GAS LISTING /tmp/ccvD6s69.s 			page 2
+GAS LISTING /tmp/ccHLQRaY.s 			page 2
 
 
   44 0032 2A84     		mv	s0,a0
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccvD6s69.s 			page 1
   90              	.LC0:
   91 0004 0A50726F 		.string	"\nProgram has exited with code:"
   91      6772616D 
-GAS LISTING /tmp/ccvD6s69.s 			page 3
+GAS LISTING /tmp/ccHLQRaY.s 			page 3
 
 
   91      20686173 
@@ -126,84 +126,84 @@ GAS LISTING /tmp/ccvD6s69.s 			page 1
   91      74656420 
   92              		.text
   93              	.Letext0:
-  94              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  94              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
   95              		.file 3 "../../firmware/RISCV/stubs/stub.h"
-GAS LISTING /tmp/ccvD6s69.s 			page 4
+GAS LISTING /tmp/ccHLQRaY.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 _exit.c
-     /tmp/ccvD6s69.s:13     .text._exit:0000000000000000 _exit
-     /tmp/ccvD6s69.s:17     .text._exit:0000000000000000 .L0 
-     /tmp/ccvD6s69.s:19     .text._exit:0000000000000000 .L0 
-     /tmp/ccvD6s69.s:20     .text._exit:0000000000000000 .L0 
-     /tmp/ccvD6s69.s:21     .text._exit:0000000000000000 .L0 
-     /tmp/ccvD6s69.s:33     .text._exit:000000000000002a .L0 
-     /tmp/ccvD6s69.s:35     .text._exit:000000000000002c .L0 
-     /tmp/ccvD6s69.s:37     .text._exit:000000000000002c .L0 
-     /tmp/ccvD6s69.s:39     .text._exit:000000000000002e .L0 
-     /tmp/ccvD6s69.s:41     .text._exit:0000000000000030 .L0 
-     /tmp/ccvD6s69.s:42     .text._exit:0000000000000032 .L0 
-     /tmp/ccvD6s69.s:44     .text._exit:0000000000000032 .L0 
-     /tmp/ccvD6s69.s:46     .text._exit:0000000000000034 .L0 
-     /tmp/ccvD6s69.s:49     .text._exit:0000000000000036 .L0 
-     /tmp/ccvD6s69.s:50     .text._exit:0000000000000038 .L0 
-     /tmp/ccvD6s69.s:52     .text._exit:0000000000000038 .L0 
-     /tmp/ccvD6s69.s:62     .text._exit:000000000000004e .L0 
-     /tmp/ccvD6s69.s:65     .text._exit:0000000000000056 .L0 
-     /tmp/ccvD6s69.s:70     .text._exit:0000000000000062 .L0 
-     /tmp/ccvD6s69.s:78     .text._exit:0000000000000076 .L0 
-     /tmp/ccvD6s69.s:79     .text._exit:0000000000000076 .L0 
-     /tmp/ccvD6s69.s:80     .text._exit:0000000000000076 .L0 
-     /tmp/ccvD6s69.s:81     .text._exit:0000000000000076 .L0 
-     /tmp/ccvD6s69.s:82     .text._exit:0000000000000078 .L0 
-     /tmp/ccvD6s69.s:85     .text._exit:0000000000000078 .L0 
+     /tmp/ccHLQRaY.s:13     .text._exit:0000000000000000 _exit
+     /tmp/ccHLQRaY.s:17     .text._exit:0000000000000000 .L0 
+     /tmp/ccHLQRaY.s:19     .text._exit:0000000000000000 .L0 
+     /tmp/ccHLQRaY.s:20     .text._exit:0000000000000000 .L0 
+     /tmp/ccHLQRaY.s:21     .text._exit:0000000000000000 .L0 
+     /tmp/ccHLQRaY.s:33     .text._exit:000000000000002a .L0 
+     /tmp/ccHLQRaY.s:35     .text._exit:000000000000002c .L0 
+     /tmp/ccHLQRaY.s:37     .text._exit:000000000000002c .L0 
+     /tmp/ccHLQRaY.s:39     .text._exit:000000000000002e .L0 
+     /tmp/ccHLQRaY.s:41     .text._exit:0000000000000030 .L0 
+     /tmp/ccHLQRaY.s:42     .text._exit:0000000000000032 .L0 
+     /tmp/ccHLQRaY.s:44     .text._exit:0000000000000032 .L0 
+     /tmp/ccHLQRaY.s:46     .text._exit:0000000000000034 .L0 
+     /tmp/ccHLQRaY.s:49     .text._exit:0000000000000036 .L0 
+     /tmp/ccHLQRaY.s:50     .text._exit:0000000000000038 .L0 
+     /tmp/ccHLQRaY.s:52     .text._exit:0000000000000038 .L0 
+     /tmp/ccHLQRaY.s:62     .text._exit:000000000000004e .L0 
+     /tmp/ccHLQRaY.s:65     .text._exit:0000000000000056 .L0 
+     /tmp/ccHLQRaY.s:70     .text._exit:0000000000000062 .L0 
+     /tmp/ccHLQRaY.s:78     .text._exit:0000000000000076 .L0 
+     /tmp/ccHLQRaY.s:79     .text._exit:0000000000000076 .L0 
+     /tmp/ccHLQRaY.s:80     .text._exit:0000000000000076 .L0 
+     /tmp/ccHLQRaY.s:81     .text._exit:0000000000000076 .L0 
+     /tmp/ccHLQRaY.s:82     .text._exit:0000000000000078 .L0 
+     /tmp/ccHLQRaY.s:85     .text._exit:0000000000000078 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccvD6s69.s:90     .rodata._exit.str1.4:0000000000000004 .LC0
-     /tmp/ccvD6s69.s:87     .rodata._exit.str1.4:0000000000000000 .LC1
-     /tmp/ccvD6s69.s:76     .text._exit:0000000000000076 .L2
-     /tmp/ccvD6s69.s:329    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccvD6s69.s:599    .debug_str:000000000000005a .LASF19
-     /tmp/ccvD6s69.s:603    .debug_str:00000000000000de .LASF20
-     /tmp/ccvD6s69.s:613    .debug_str:0000000000000120 .LASF21
-     /tmp/ccvD6s69.s:577    .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccvD6s69.s:583    .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccvD6s69.s:621    .debug_str:000000000000019c .LASF0
-     /tmp/ccvD6s69.s:609    .debug_str:000000000000010d .LASF1
-     /tmp/ccvD6s69.s:629    .debug_str:00000000000001c4 .LASF2
-     /tmp/ccvD6s69.s:619    .debug_str:0000000000000189 .LASF3
-     /tmp/ccvD6s69.s:615    .debug_str:0000000000000179 .LASF4
-     /tmp/ccvD6s69.s:595    .debug_str:0000000000000031 .LASF5
-     /tmp/ccvD6s69.s:585    .debug_str:0000000000000000 .LASF6
-     /tmp/ccvD6s69.s:597    .debug_str:0000000000000043 .LASF7
-     /tmp/ccvD6s69.s:587    .debug_str:000000000000000e .LASF8
-     /tmp/ccvD6s69.s:611    .debug_str:000000000000011b .LASF9
-     /tmp/ccvD6s69.s:625    .debug_str:00000000000001b1 .LASF10
-     /tmp/ccvD6s69.s:631    .debug_str:00000000000001ce .LASF11
-     /tmp/ccvD6s69.s:627    .debug_str:00000000000001bd .LASF12
-     /tmp/ccvD6s69.s:591    .debug_str:0000000000000023 .LASF13
-     /tmp/ccvD6s69.s:593    .debug_str:000000000000002a .LASF14
-     /tmp/ccvD6s69.s:617    .debug_str:0000000000000182 .LASF15
-     /tmp/ccvD6s69.s:623    .debug_str:00000000000001a8 .LASF16
-     /tmp/ccvD6s69.s:607    .debug_str:0000000000000107 .LASF22
-     /tmp/ccvD6s69.s:14     .text._exit:0000000000000000 .LFB1
-     /tmp/ccvD6s69.s:83     .text._exit:0000000000000078 .LFE1
-GAS LISTING /tmp/ccvD6s69.s 			page 5
+     /tmp/ccHLQRaY.s:90     .rodata._exit.str1.4:0000000000000004 .LC0
+     /tmp/ccHLQRaY.s:87     .rodata._exit.str1.4:0000000000000000 .LC1
+     /tmp/ccHLQRaY.s:76     .text._exit:0000000000000076 .L2
+     /tmp/ccHLQRaY.s:329    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccHLQRaY.s:599    .debug_str:000000000000005a .LASF19
+     /tmp/ccHLQRaY.s:603    .debug_str:00000000000000de .LASF20
+     /tmp/ccHLQRaY.s:629    .debug_str:0000000000000175 .LASF21
+     /tmp/ccHLQRaY.s:577    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccHLQRaY.s:583    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccHLQRaY.s:619    .debug_str:0000000000000143 .LASF0
+     /tmp/ccHLQRaY.s:609    .debug_str:000000000000010d .LASF1
+     /tmp/ccHLQRaY.s:627    .debug_str:000000000000016b .LASF2
+     /tmp/ccHLQRaY.s:617    .debug_str:0000000000000130 .LASF3
+     /tmp/ccHLQRaY.s:613    .debug_str:0000000000000120 .LASF4
+     /tmp/ccHLQRaY.s:595    .debug_str:0000000000000031 .LASF5
+     /tmp/ccHLQRaY.s:585    .debug_str:0000000000000000 .LASF6
+     /tmp/ccHLQRaY.s:597    .debug_str:0000000000000043 .LASF7
+     /tmp/ccHLQRaY.s:587    .debug_str:000000000000000e .LASF8
+     /tmp/ccHLQRaY.s:611    .debug_str:000000000000011b .LASF9
+     /tmp/ccHLQRaY.s:623    .debug_str:0000000000000158 .LASF10
+     /tmp/ccHLQRaY.s:631    .debug_str:00000000000001d4 .LASF11
+     /tmp/ccHLQRaY.s:625    .debug_str:0000000000000164 .LASF12
+     /tmp/ccHLQRaY.s:591    .debug_str:0000000000000023 .LASF13
+     /tmp/ccHLQRaY.s:593    .debug_str:000000000000002a .LASF14
+     /tmp/ccHLQRaY.s:615    .debug_str:0000000000000129 .LASF15
+     /tmp/ccHLQRaY.s:621    .debug_str:000000000000014f .LASF16
+     /tmp/ccHLQRaY.s:607    .debug_str:0000000000000107 .LASF22
+     /tmp/ccHLQRaY.s:14     .text._exit:0000000000000000 .LFB1
+     /tmp/ccHLQRaY.s:83     .text._exit:0000000000000078 .LFE1
+GAS LISTING /tmp/ccHLQRaY.s 			page 5
 
 
-     /tmp/ccvD6s69.s:540    .debug_loc:0000000000000000 .LLST0
-     /tmp/ccvD6s69.s:633    .debug_str:00000000000001d6 .LASF23
-     /tmp/ccvD6s69.s:553    .debug_loc:0000000000000020 .LLST1
-     /tmp/ccvD6s69.s:589    .debug_str:000000000000001b .LASF24
-     /tmp/ccvD6s69.s:63     .text._exit:0000000000000056 .LVL2
-     /tmp/ccvD6s69.s:68     .text._exit:0000000000000062 .LVL3
-     /tmp/ccvD6s69.s:75     .text._exit:0000000000000076 .LVL4
-     /tmp/ccvD6s69.s:605    .debug_str:0000000000000101 .LASF17
-     /tmp/ccvD6s69.s:601    .debug_str:00000000000000d4 .LASF18
-     /tmp/ccvD6s69.s:34     .text._exit:000000000000002c .LCFI0
-     /tmp/ccvD6s69.s:18     .text._exit:0000000000000000 .LVL0
-     /tmp/ccvD6s69.s:47     .text._exit:0000000000000036 .LVL1
-     /tmp/ccvD6s69.s:97     .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccHLQRaY.s:540    .debug_loc:0000000000000000 .LLST0
+     /tmp/ccHLQRaY.s:633    .debug_str:00000000000001dc .LASF23
+     /tmp/ccHLQRaY.s:553    .debug_loc:0000000000000020 .LLST1
+     /tmp/ccHLQRaY.s:589    .debug_str:000000000000001b .LASF24
+     /tmp/ccHLQRaY.s:63     .text._exit:0000000000000056 .LVL2
+     /tmp/ccHLQRaY.s:68     .text._exit:0000000000000062 .LVL3
+     /tmp/ccHLQRaY.s:75     .text._exit:0000000000000076 .LVL4
+     /tmp/ccHLQRaY.s:605    .debug_str:0000000000000101 .LASF17
+     /tmp/ccHLQRaY.s:601    .debug_str:00000000000000d4 .LASF18
+     /tmp/ccHLQRaY.s:34     .text._exit:000000000000002c .LCFI0
+     /tmp/ccHLQRaY.s:18     .text._exit:0000000000000000 .LVL0
+     /tmp/ccHLQRaY.s:47     .text._exit:0000000000000036 .LVL1
+     /tmp/ccHLQRaY.s:97     .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 write

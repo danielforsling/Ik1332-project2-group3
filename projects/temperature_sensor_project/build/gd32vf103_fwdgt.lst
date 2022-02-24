@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccpSg95L.s 			page 1
+GAS LISTING /tmp/ccZi36H7.s 			page 1
 
 
    1              		.file	"gd32vf103_fwdgt.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c **** #define RLD_RLD(regval)             (BITS(0,11) & ((uint32_t)(regval) << 0))
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c **** 
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c **** /*!
-GAS LISTING /tmp/ccpSg95L.s 			page 2
+GAS LISTING /tmp/ccZi36H7.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \brief      enable write access to FWDGT_PSC and FWDGT_RLD
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
   66:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \brief      start the free watchdog timer counter
   67:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \param[in]  none
   68:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \param[out] none
-GAS LISTING /tmp/ccpSg95L.s 			page 3
+GAS LISTING /tmp/ccZi36H7.s 			page 3
 
 
   69:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \retval     none
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
   89:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \param[in]  reload_value: specify reload value(0x0000 - 0x0FFF)
   90:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     \param[in]  prescaler_div: FWDGT prescaler value
   91:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****                 only one parameter can be selected which is shown as below:
-GAS LISTING /tmp/ccpSg95L.s 			page 4
+GAS LISTING /tmp/ccZi36H7.s 			page 4
 
 
   92:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****       \arg        FWDGT_PSC_DIV4: FWDGT prescaler set to 4
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
  123              	.L7:
  110:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****        flag_status = FWDGT_STAT & FWDGT_STAT_PUD;
  124              		.loc 1 110 5 is_stmt 1 discriminator 1
-GAS LISTING /tmp/ccpSg95L.s 			page 5
+GAS LISTING /tmp/ccZi36H7.s 			page 5
 
 
  111:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****        flag_status = FWDGT_STAT & FWDGT_STAT_PUD;
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
  164              		.loc 1 123 8 discriminator 1
  165              	.LVL14:
  166 0042 7D17     		addi	a4,a4,-1
-GAS LISTING /tmp/ccpSg95L.s 			page 6
+GAS LISTING /tmp/ccZi36H7.s 			page 6
 
 
  167              	.LVL15:
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
  126:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****         return ERROR;
  206              		.loc 1 126 7 is_stmt 0
  207 0062 F5D3     		beq	a5,zero,.L15
-GAS LISTING /tmp/ccpSg95L.s 			page 7
+GAS LISTING /tmp/ccZi36H7.s 			page 7
 
 
  115:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_fwdgt.c ****     }
@@ -408,205 +408,205 @@ GAS LISTING /tmp/ccpSg95L.s 			page 1
  235              	.LFE7:
  237              		.text
  238              	.Letext0:
- 239              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 240              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 239              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 240              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  241              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  242              		.file 5 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/ccpSg95L.s 			page 8
+GAS LISTING /tmp/ccZi36H7.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_fwdgt.c
-     /tmp/ccpSg95L.s:13     .text.fwdgt_write_enable:0000000000000000 fwdgt_write_enable
-     /tmp/ccpSg95L.s:17     .text.fwdgt_write_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:18     .text.fwdgt_write_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:19     .text.fwdgt_write_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:20     .text.fwdgt_write_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:25     .text.fwdgt_write_enable:000000000000000c .L0 
-     /tmp/ccpSg95L.s:26     .text.fwdgt_write_enable:000000000000000e .L0 
-     /tmp/ccpSg95L.s:33     .text.fwdgt_write_disable:0000000000000000 fwdgt_write_disable
-     /tmp/ccpSg95L.s:36     .text.fwdgt_write_disable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:37     .text.fwdgt_write_disable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:38     .text.fwdgt_write_disable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:39     .text.fwdgt_write_disable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:42     .text.fwdgt_write_disable:0000000000000008 .L0 
-     /tmp/ccpSg95L.s:43     .text.fwdgt_write_disable:000000000000000a .L0 
-     /tmp/ccpSg95L.s:50     .text.fwdgt_enable:0000000000000000 fwdgt_enable
-     /tmp/ccpSg95L.s:53     .text.fwdgt_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:54     .text.fwdgt_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:55     .text.fwdgt_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:56     .text.fwdgt_enable:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:61     .text.fwdgt_enable:000000000000000c .L0 
-     /tmp/ccpSg95L.s:62     .text.fwdgt_enable:000000000000000e .L0 
-     /tmp/ccpSg95L.s:69     .text.fwdgt_counter_reload:0000000000000000 fwdgt_counter_reload
-     /tmp/ccpSg95L.s:72     .text.fwdgt_counter_reload:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:73     .text.fwdgt_counter_reload:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:74     .text.fwdgt_counter_reload:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:75     .text.fwdgt_counter_reload:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:80     .text.fwdgt_counter_reload:000000000000000c .L0 
-     /tmp/ccpSg95L.s:81     .text.fwdgt_counter_reload:000000000000000e .L0 
-     /tmp/ccpSg95L.s:88     .text.fwdgt_config:0000000000000000 fwdgt_config
-     /tmp/ccpSg95L.s:91     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:93     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:94     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:95     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:96     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:97     .text.fwdgt_config:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:102    .text.fwdgt_config:000000000000000c .L0 
-     /tmp/ccpSg95L.s:103    .text.fwdgt_config:000000000000000c .L0 
-     /tmp/ccpSg95L.s:104    .text.fwdgt_config:000000000000000c .L0 
-     /tmp/ccpSg95L.s:106    .text.fwdgt_config:000000000000000e .L0 
-     /tmp/ccpSg95L.s:111    .text.fwdgt_config:0000000000000016 .L0 
-     /tmp/ccpSg95L.s:116    .text.fwdgt_config:000000000000001c .L0 
-     /tmp/ccpSg95L.s:119    .text.fwdgt_config:000000000000001e .L0 
-     /tmp/ccpSg95L.s:122    .text.fwdgt_config:0000000000000020 .L0 
-     /tmp/ccpSg95L.s:125    .text.fwdgt_config:0000000000000022 .L0 
-     /tmp/ccpSg95L.s:127    .text.fwdgt_config:0000000000000022 .L0 
-     /tmp/ccpSg95L.s:130    .text.fwdgt_config:0000000000000024 .L0 
-     /tmp/ccpSg95L.s:134    .text.fwdgt_config:0000000000000026 .L0 
-     /tmp/ccpSg95L.s:135    .text.fwdgt_config:0000000000000026 .L0 
-     /tmp/ccpSg95L.s:140    .text.fwdgt_config:000000000000002c .L0 
-     /tmp/ccpSg95L.s:141    .text.fwdgt_config:000000000000002c .L0 
-     /tmp/ccpSg95L.s:142    .text.fwdgt_config:000000000000002c .L0 
-     /tmp/ccpSg95L.s:143    .text.fwdgt_config:000000000000002c .L0 
-     /tmp/ccpSg95L.s:145    .text.fwdgt_config:000000000000002e .L0 
-     /tmp/ccpSg95L.s:150    .text.fwdgt_config:0000000000000036 .L0 
-     /tmp/ccpSg95L.s:155    .text.fwdgt_config:000000000000003c .L0 
-GAS LISTING /tmp/ccpSg95L.s 			page 9
+     /tmp/ccZi36H7.s:13     .text.fwdgt_write_enable:0000000000000000 fwdgt_write_enable
+     /tmp/ccZi36H7.s:17     .text.fwdgt_write_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:18     .text.fwdgt_write_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:19     .text.fwdgt_write_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:20     .text.fwdgt_write_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:25     .text.fwdgt_write_enable:000000000000000c .L0 
+     /tmp/ccZi36H7.s:26     .text.fwdgt_write_enable:000000000000000e .L0 
+     /tmp/ccZi36H7.s:33     .text.fwdgt_write_disable:0000000000000000 fwdgt_write_disable
+     /tmp/ccZi36H7.s:36     .text.fwdgt_write_disable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:37     .text.fwdgt_write_disable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:38     .text.fwdgt_write_disable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:39     .text.fwdgt_write_disable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:42     .text.fwdgt_write_disable:0000000000000008 .L0 
+     /tmp/ccZi36H7.s:43     .text.fwdgt_write_disable:000000000000000a .L0 
+     /tmp/ccZi36H7.s:50     .text.fwdgt_enable:0000000000000000 fwdgt_enable
+     /tmp/ccZi36H7.s:53     .text.fwdgt_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:54     .text.fwdgt_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:55     .text.fwdgt_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:56     .text.fwdgt_enable:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:61     .text.fwdgt_enable:000000000000000c .L0 
+     /tmp/ccZi36H7.s:62     .text.fwdgt_enable:000000000000000e .L0 
+     /tmp/ccZi36H7.s:69     .text.fwdgt_counter_reload:0000000000000000 fwdgt_counter_reload
+     /tmp/ccZi36H7.s:72     .text.fwdgt_counter_reload:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:73     .text.fwdgt_counter_reload:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:74     .text.fwdgt_counter_reload:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:75     .text.fwdgt_counter_reload:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:80     .text.fwdgt_counter_reload:000000000000000c .L0 
+     /tmp/ccZi36H7.s:81     .text.fwdgt_counter_reload:000000000000000e .L0 
+     /tmp/ccZi36H7.s:88     .text.fwdgt_config:0000000000000000 fwdgt_config
+     /tmp/ccZi36H7.s:91     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:93     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:94     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:95     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:96     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:97     .text.fwdgt_config:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:102    .text.fwdgt_config:000000000000000c .L0 
+     /tmp/ccZi36H7.s:103    .text.fwdgt_config:000000000000000c .L0 
+     /tmp/ccZi36H7.s:104    .text.fwdgt_config:000000000000000c .L0 
+     /tmp/ccZi36H7.s:106    .text.fwdgt_config:000000000000000e .L0 
+     /tmp/ccZi36H7.s:111    .text.fwdgt_config:0000000000000016 .L0 
+     /tmp/ccZi36H7.s:116    .text.fwdgt_config:000000000000001c .L0 
+     /tmp/ccZi36H7.s:119    .text.fwdgt_config:000000000000001e .L0 
+     /tmp/ccZi36H7.s:122    .text.fwdgt_config:0000000000000020 .L0 
+     /tmp/ccZi36H7.s:125    .text.fwdgt_config:0000000000000022 .L0 
+     /tmp/ccZi36H7.s:127    .text.fwdgt_config:0000000000000022 .L0 
+     /tmp/ccZi36H7.s:130    .text.fwdgt_config:0000000000000024 .L0 
+     /tmp/ccZi36H7.s:134    .text.fwdgt_config:0000000000000026 .L0 
+     /tmp/ccZi36H7.s:135    .text.fwdgt_config:0000000000000026 .L0 
+     /tmp/ccZi36H7.s:140    .text.fwdgt_config:000000000000002c .L0 
+     /tmp/ccZi36H7.s:141    .text.fwdgt_config:000000000000002c .L0 
+     /tmp/ccZi36H7.s:142    .text.fwdgt_config:000000000000002c .L0 
+     /tmp/ccZi36H7.s:143    .text.fwdgt_config:000000000000002c .L0 
+     /tmp/ccZi36H7.s:145    .text.fwdgt_config:000000000000002e .L0 
+     /tmp/ccZi36H7.s:150    .text.fwdgt_config:0000000000000036 .L0 
+     /tmp/ccZi36H7.s:155    .text.fwdgt_config:000000000000003c .L0 
+GAS LISTING /tmp/ccZi36H7.s 			page 9
 
 
-     /tmp/ccpSg95L.s:158    .text.fwdgt_config:000000000000003e .L0 
-     /tmp/ccpSg95L.s:161    .text.fwdgt_config:0000000000000040 .L0 
-     /tmp/ccpSg95L.s:164    .text.fwdgt_config:0000000000000042 .L0 
-     /tmp/ccpSg95L.s:166    .text.fwdgt_config:0000000000000042 .L0 
-     /tmp/ccpSg95L.s:169    .text.fwdgt_config:0000000000000044 .L0 
-     /tmp/ccpSg95L.s:173    .text.fwdgt_config:0000000000000046 .L0 
-     /tmp/ccpSg95L.s:174    .text.fwdgt_config:0000000000000046 .L0 
-     /tmp/ccpSg95L.s:177    .text.fwdgt_config:0000000000000048 .L0 
-     /tmp/ccpSg95L.s:179    .text.fwdgt_config:000000000000004c .L0 
-     /tmp/ccpSg95L.s:181    .text.fwdgt_config:000000000000004e .L0 
-     /tmp/ccpSg95L.s:184    .text.fwdgt_config:0000000000000050 .L0 
-     /tmp/ccpSg95L.s:186    .text.fwdgt_config:0000000000000052 .L0 
-     /tmp/ccpSg95L.s:187    .text.fwdgt_config:0000000000000052 .L0 
-     /tmp/ccpSg95L.s:190    .text.fwdgt_config:0000000000000058 .L0 
-     /tmp/ccpSg95L.s:191    .text.fwdgt_config:0000000000000058 .L0 
-     /tmp/ccpSg95L.s:193    .text.fwdgt_config:000000000000005a .L0 
-     /tmp/ccpSg95L.s:197    .text.fwdgt_config:000000000000005c .L0 
-     /tmp/ccpSg95L.s:198    .text.fwdgt_config:000000000000005c .L0 
-     /tmp/ccpSg95L.s:200    .text.fwdgt_config:000000000000005e .L0 
-     /tmp/ccpSg95L.s:206    .text.fwdgt_config:0000000000000062 .L0 
-     /tmp/ccpSg95L.s:207    .text.fwdgt_config:0000000000000062 .L0 
-     /tmp/ccpSg95L.s:209    .text.fwdgt_config:0000000000000064 .L0 
-     /tmp/ccpSg95L.s:212    .text.fwdgt_config:0000000000000068 .L0 
-     /tmp/ccpSg95L.s:219    .text.fwdgt_flag_get:0000000000000000 fwdgt_flag_get
-     /tmp/ccpSg95L.s:222    .text.fwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:224    .text.fwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:225    .text.fwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:226    .text.fwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:229    .text.fwdgt_flag_get:0000000000000006 .L0 
-     /tmp/ccpSg95L.s:232    .text.fwdgt_flag_get:0000000000000008 .L0 
-     /tmp/ccpSg95L.s:234    .text.fwdgt_flag_get:000000000000000e .L0 
-     /tmp/ccpSg95L.s:29     .text.fwdgt_write_enable:000000000000000e .L0 
-     /tmp/ccpSg95L.s:46     .text.fwdgt_write_disable:000000000000000a .L0 
-     /tmp/ccpSg95L.s:65     .text.fwdgt_enable:000000000000000e .L0 
-     /tmp/ccpSg95L.s:84     .text.fwdgt_counter_reload:000000000000000e .L0 
-     /tmp/ccpSg95L.s:215    .text.fwdgt_config:0000000000000068 .L0 
-     /tmp/ccpSg95L.s:237    .text.fwdgt_flag_get:000000000000000e .L0 
+     /tmp/ccZi36H7.s:158    .text.fwdgt_config:000000000000003e .L0 
+     /tmp/ccZi36H7.s:161    .text.fwdgt_config:0000000000000040 .L0 
+     /tmp/ccZi36H7.s:164    .text.fwdgt_config:0000000000000042 .L0 
+     /tmp/ccZi36H7.s:166    .text.fwdgt_config:0000000000000042 .L0 
+     /tmp/ccZi36H7.s:169    .text.fwdgt_config:0000000000000044 .L0 
+     /tmp/ccZi36H7.s:173    .text.fwdgt_config:0000000000000046 .L0 
+     /tmp/ccZi36H7.s:174    .text.fwdgt_config:0000000000000046 .L0 
+     /tmp/ccZi36H7.s:177    .text.fwdgt_config:0000000000000048 .L0 
+     /tmp/ccZi36H7.s:179    .text.fwdgt_config:000000000000004c .L0 
+     /tmp/ccZi36H7.s:181    .text.fwdgt_config:000000000000004e .L0 
+     /tmp/ccZi36H7.s:184    .text.fwdgt_config:0000000000000050 .L0 
+     /tmp/ccZi36H7.s:186    .text.fwdgt_config:0000000000000052 .L0 
+     /tmp/ccZi36H7.s:187    .text.fwdgt_config:0000000000000052 .L0 
+     /tmp/ccZi36H7.s:190    .text.fwdgt_config:0000000000000058 .L0 
+     /tmp/ccZi36H7.s:191    .text.fwdgt_config:0000000000000058 .L0 
+     /tmp/ccZi36H7.s:193    .text.fwdgt_config:000000000000005a .L0 
+     /tmp/ccZi36H7.s:197    .text.fwdgt_config:000000000000005c .L0 
+     /tmp/ccZi36H7.s:198    .text.fwdgt_config:000000000000005c .L0 
+     /tmp/ccZi36H7.s:200    .text.fwdgt_config:000000000000005e .L0 
+     /tmp/ccZi36H7.s:206    .text.fwdgt_config:0000000000000062 .L0 
+     /tmp/ccZi36H7.s:207    .text.fwdgt_config:0000000000000062 .L0 
+     /tmp/ccZi36H7.s:209    .text.fwdgt_config:0000000000000064 .L0 
+     /tmp/ccZi36H7.s:212    .text.fwdgt_config:0000000000000068 .L0 
+     /tmp/ccZi36H7.s:219    .text.fwdgt_flag_get:0000000000000000 fwdgt_flag_get
+     /tmp/ccZi36H7.s:222    .text.fwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:224    .text.fwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:225    .text.fwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:226    .text.fwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccZi36H7.s:229    .text.fwdgt_flag_get:0000000000000006 .L0 
+     /tmp/ccZi36H7.s:232    .text.fwdgt_flag_get:0000000000000008 .L0 
+     /tmp/ccZi36H7.s:234    .text.fwdgt_flag_get:000000000000000e .L0 
+     /tmp/ccZi36H7.s:29     .text.fwdgt_write_enable:000000000000000e .L0 
+     /tmp/ccZi36H7.s:46     .text.fwdgt_write_disable:000000000000000a .L0 
+     /tmp/ccZi36H7.s:65     .text.fwdgt_enable:000000000000000e .L0 
+     /tmp/ccZi36H7.s:84     .text.fwdgt_counter_reload:000000000000000e .L0 
+     /tmp/ccZi36H7.s:215    .text.fwdgt_config:0000000000000068 .L0 
+     /tmp/ccZi36H7.s:237    .text.fwdgt_flag_get:000000000000000e .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccpSg95L.s:123    .text.fwdgt_config:0000000000000022 .L7
-     /tmp/ccpSg95L.s:195    .text.fwdgt_config:000000000000005c .L8
-     /tmp/ccpSg95L.s:114    .text.fwdgt_config:000000000000001c .L9
-     /tmp/ccpSg95L.s:162    .text.fwdgt_config:0000000000000042 .L12
-     /tmp/ccpSg95L.s:204    .text.fwdgt_config:0000000000000062 .L13
-     /tmp/ccpSg95L.s:153    .text.fwdgt_config:000000000000003c .L14
-     /tmp/ccpSg95L.s:132    .text.fwdgt_config:0000000000000026 .L10
-     /tmp/ccpSg95L.s:171    .text.fwdgt_config:0000000000000046 .L15
-     /tmp/ccpSg95L.s:510    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccpSg95L.s:911    .debug_str:0000000000000000 .LASF32
-     /tmp/ccpSg95L.s:957    .debug_str:00000000000001e7 .LASF33
-     /tmp/ccpSg95L.s:955    .debug_str:000000000000018e .LASF34
-     /tmp/ccpSg95L.s:893    .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccpSg95L.s:909    .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccpSg95L.s:949    .debug_str:0000000000000162 .LASF0
-     /tmp/ccpSg95L.s:977    .debug_str:0000000000000294 .LASF1
-     /tmp/ccpSg95L.s:913    .debug_str:000000000000007a .LASF4
-     /tmp/ccpSg95L.s:923    .debug_str:00000000000000bf .LASF2
-     /tmp/ccpSg95L.s:965    .debug_str:0000000000000253 .LASF3
-GAS LISTING /tmp/ccpSg95L.s 			page 10
+     /tmp/ccZi36H7.s:123    .text.fwdgt_config:0000000000000022 .L7
+     /tmp/ccZi36H7.s:195    .text.fwdgt_config:000000000000005c .L8
+     /tmp/ccZi36H7.s:114    .text.fwdgt_config:000000000000001c .L9
+     /tmp/ccZi36H7.s:162    .text.fwdgt_config:0000000000000042 .L12
+     /tmp/ccZi36H7.s:204    .text.fwdgt_config:0000000000000062 .L13
+     /tmp/ccZi36H7.s:153    .text.fwdgt_config:000000000000003c .L14
+     /tmp/ccZi36H7.s:132    .text.fwdgt_config:0000000000000026 .L10
+     /tmp/ccZi36H7.s:171    .text.fwdgt_config:0000000000000046 .L15
+     /tmp/ccZi36H7.s:510    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccZi36H7.s:911    .debug_str:0000000000000000 .LASF32
+     /tmp/ccZi36H7.s:957    .debug_str:00000000000001ed .LASF33
+     /tmp/ccZi36H7.s:951    .debug_str:000000000000016f .LASF34
+     /tmp/ccZi36H7.s:893    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccZi36H7.s:909    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccZi36H7.s:949    .debug_str:0000000000000162 .LASF0
+     /tmp/ccZi36H7.s:977    .debug_str:000000000000029a .LASF1
+     /tmp/ccZi36H7.s:913    .debug_str:000000000000007a .LASF4
+     /tmp/ccZi36H7.s:923    .debug_str:00000000000000bf .LASF2
+     /tmp/ccZi36H7.s:965    .debug_str:0000000000000259 .LASF3
+GAS LISTING /tmp/ccZi36H7.s 			page 10
 
 
-     /tmp/ccpSg95L.s:935    .debug_str:0000000000000108 .LASF5
-     /tmp/ccpSg95L.s:921    .debug_str:00000000000000ac .LASF6
-     /tmp/ccpSg95L.s:917    .debug_str:000000000000008e .LASF7
-     /tmp/ccpSg95L.s:941    .debug_str:0000000000000132 .LASF8
-     /tmp/ccpSg95L.s:937    .debug_str:0000000000000113 .LASF9
-     /tmp/ccpSg95L.s:959    .debug_str:000000000000022d .LASF10
-     /tmp/ccpSg95L.s:951    .debug_str:000000000000016f .LASF11
-     /tmp/ccpSg95L.s:953    .debug_str:0000000000000186 .LASF12
-     /tmp/ccpSg95L.s:967    .debug_str:000000000000025d .LASF13
-     /tmp/ccpSg95L.s:971    .debug_str:0000000000000279 .LASF14
-     /tmp/ccpSg95L.s:963    .debug_str:0000000000000243 .LASF35
-     /tmp/ccpSg95L.s:979    .debug_str:00000000000002a0 .LASF15
-     /tmp/ccpSg95L.s:927    .debug_str:00000000000000d5 .LASF16
-     /tmp/ccpSg95L.s:973    .debug_str:0000000000000282 .LASF17
-     /tmp/ccpSg95L.s:925    .debug_str:00000000000000cd .LASF18
-     /tmp/ccpSg95L.s:915    .debug_str:0000000000000084 .LASF19
-     /tmp/ccpSg95L.s:975    .debug_str:0000000000000288 .LASF20
-     /tmp/ccpSg95L.s:981    .debug_str:00000000000002a6 .LASF21
-     /tmp/ccpSg95L.s:220    .text.fwdgt_flag_get:0000000000000000 .LFB7
-     /tmp/ccpSg95L.s:235    .text.fwdgt_flag_get:000000000000000e .LFE7
-     /tmp/ccpSg95L.s:945    .debug_str:0000000000000151 .LASF23
-     /tmp/ccpSg95L.s:733    .debug_loc:0000000000000000 .LLST3
-     /tmp/ccpSg95L.s:939    .debug_str:0000000000000125 .LASF22
-     /tmp/ccpSg95L.s:89     .text.fwdgt_config:0000000000000000 .LFB6
-     /tmp/ccpSg95L.s:213    .text.fwdgt_config:0000000000000068 .LFE6
-     /tmp/ccpSg95L.s:933    .debug_str:00000000000000fb .LASF24
-     /tmp/ccpSg95L.s:747    .debug_loc:0000000000000021 .LLST0
-     /tmp/ccpSg95L.s:931    .debug_str:00000000000000ed .LASF25
-     /tmp/ccpSg95L.s:961    .debug_str:000000000000023b .LASF26
-     /tmp/ccpSg95L.s:783    .debug_loc:0000000000000074 .LLST1
-     /tmp/ccpSg95L.s:947    .debug_str:0000000000000156 .LASF27
-     /tmp/ccpSg95L.s:842    .debug_loc:0000000000000106 .LLST2
-     /tmp/ccpSg95L.s:919    .debug_str:0000000000000097 .LASF28
-     /tmp/ccpSg95L.s:70     .text.fwdgt_counter_reload:0000000000000000 .LFB5
-     /tmp/ccpSg95L.s:82     .text.fwdgt_counter_reload:000000000000000e .LFE5
-     /tmp/ccpSg95L.s:929    .debug_str:00000000000000e0 .LASF29
-     /tmp/ccpSg95L.s:51     .text.fwdgt_enable:0000000000000000 .LFB4
-     /tmp/ccpSg95L.s:63     .text.fwdgt_enable:000000000000000e .LFE4
-     /tmp/ccpSg95L.s:943    .debug_str:000000000000013d .LASF30
-     /tmp/ccpSg95L.s:34     .text.fwdgt_write_disable:0000000000000000 .LFB3
-     /tmp/ccpSg95L.s:44     .text.fwdgt_write_disable:000000000000000a .LFE3
-     /tmp/ccpSg95L.s:969    .debug_str:0000000000000266 .LASF31
-     /tmp/ccpSg95L.s:14     .text.fwdgt_write_enable:0000000000000000 .LFB2
-     /tmp/ccpSg95L.s:27     .text.fwdgt_write_enable:000000000000000e .LFE2
-     /tmp/ccpSg95L.s:223    .text.fwdgt_flag_get:0000000000000000 .LVL23
-     /tmp/ccpSg95L.s:230    .text.fwdgt_flag_get:0000000000000008 .LVL24
-     /tmp/ccpSg95L.s:92     .text.fwdgt_config:0000000000000000 .LVL0
-     /tmp/ccpSg95L.s:175    .text.fwdgt_config:0000000000000048 .LVL17
-     /tmp/ccpSg95L.s:194    .text.fwdgt_config:000000000000005c .LVL19
-     /tmp/ccpSg95L.s:201    .text.fwdgt_config:0000000000000060 .LVL20
-     /tmp/ccpSg95L.s:203    .text.fwdgt_config:0000000000000062 .LVL21
-     /tmp/ccpSg95L.s:210    .text.fwdgt_config:0000000000000066 .LVL22
-     /tmp/ccpSg95L.s:109    .text.fwdgt_config:0000000000000016 .LVL1
-     /tmp/ccpSg95L.s:113    .text.fwdgt_config:000000000000001c .LVL2
-     /tmp/ccpSg95L.s:120    .text.fwdgt_config:0000000000000020 .LVL4
-     /tmp/ccpSg95L.s:126    .text.fwdgt_config:0000000000000022 .LVL5
-     /tmp/ccpSg95L.s:128    .text.fwdgt_config:0000000000000024 .LVL6
-GAS LISTING /tmp/ccpSg95L.s 			page 11
+     /tmp/ccZi36H7.s:935    .debug_str:0000000000000108 .LASF5
+     /tmp/ccZi36H7.s:921    .debug_str:00000000000000ac .LASF6
+     /tmp/ccZi36H7.s:917    .debug_str:000000000000008e .LASF7
+     /tmp/ccZi36H7.s:941    .debug_str:0000000000000132 .LASF8
+     /tmp/ccZi36H7.s:937    .debug_str:0000000000000113 .LASF9
+     /tmp/ccZi36H7.s:959    .debug_str:0000000000000233 .LASF10
+     /tmp/ccZi36H7.s:953    .debug_str:00000000000001ce .LASF11
+     /tmp/ccZi36H7.s:955    .debug_str:00000000000001e5 .LASF12
+     /tmp/ccZi36H7.s:967    .debug_str:0000000000000263 .LASF13
+     /tmp/ccZi36H7.s:971    .debug_str:000000000000027f .LASF14
+     /tmp/ccZi36H7.s:963    .debug_str:0000000000000249 .LASF35
+     /tmp/ccZi36H7.s:979    .debug_str:00000000000002a6 .LASF15
+     /tmp/ccZi36H7.s:927    .debug_str:00000000000000d5 .LASF16
+     /tmp/ccZi36H7.s:973    .debug_str:0000000000000288 .LASF17
+     /tmp/ccZi36H7.s:925    .debug_str:00000000000000cd .LASF18
+     /tmp/ccZi36H7.s:915    .debug_str:0000000000000084 .LASF19
+     /tmp/ccZi36H7.s:975    .debug_str:000000000000028e .LASF20
+     /tmp/ccZi36H7.s:981    .debug_str:00000000000002ac .LASF21
+     /tmp/ccZi36H7.s:220    .text.fwdgt_flag_get:0000000000000000 .LFB7
+     /tmp/ccZi36H7.s:235    .text.fwdgt_flag_get:000000000000000e .LFE7
+     /tmp/ccZi36H7.s:945    .debug_str:0000000000000151 .LASF23
+     /tmp/ccZi36H7.s:733    .debug_loc:0000000000000000 .LLST3
+     /tmp/ccZi36H7.s:939    .debug_str:0000000000000125 .LASF22
+     /tmp/ccZi36H7.s:89     .text.fwdgt_config:0000000000000000 .LFB6
+     /tmp/ccZi36H7.s:213    .text.fwdgt_config:0000000000000068 .LFE6
+     /tmp/ccZi36H7.s:933    .debug_str:00000000000000fb .LASF24
+     /tmp/ccZi36H7.s:747    .debug_loc:0000000000000021 .LLST0
+     /tmp/ccZi36H7.s:931    .debug_str:00000000000000ed .LASF25
+     /tmp/ccZi36H7.s:961    .debug_str:0000000000000241 .LASF26
+     /tmp/ccZi36H7.s:783    .debug_loc:0000000000000074 .LLST1
+     /tmp/ccZi36H7.s:947    .debug_str:0000000000000156 .LASF27
+     /tmp/ccZi36H7.s:842    .debug_loc:0000000000000106 .LLST2
+     /tmp/ccZi36H7.s:919    .debug_str:0000000000000097 .LASF28
+     /tmp/ccZi36H7.s:70     .text.fwdgt_counter_reload:0000000000000000 .LFB5
+     /tmp/ccZi36H7.s:82     .text.fwdgt_counter_reload:000000000000000e .LFE5
+     /tmp/ccZi36H7.s:929    .debug_str:00000000000000e0 .LASF29
+     /tmp/ccZi36H7.s:51     .text.fwdgt_enable:0000000000000000 .LFB4
+     /tmp/ccZi36H7.s:63     .text.fwdgt_enable:000000000000000e .LFE4
+     /tmp/ccZi36H7.s:943    .debug_str:000000000000013d .LASF30
+     /tmp/ccZi36H7.s:34     .text.fwdgt_write_disable:0000000000000000 .LFB3
+     /tmp/ccZi36H7.s:44     .text.fwdgt_write_disable:000000000000000a .LFE3
+     /tmp/ccZi36H7.s:969    .debug_str:000000000000026c .LASF31
+     /tmp/ccZi36H7.s:14     .text.fwdgt_write_enable:0000000000000000 .LFB2
+     /tmp/ccZi36H7.s:27     .text.fwdgt_write_enable:000000000000000e .LFE2
+     /tmp/ccZi36H7.s:223    .text.fwdgt_flag_get:0000000000000000 .LVL23
+     /tmp/ccZi36H7.s:230    .text.fwdgt_flag_get:0000000000000008 .LVL24
+     /tmp/ccZi36H7.s:92     .text.fwdgt_config:0000000000000000 .LVL0
+     /tmp/ccZi36H7.s:175    .text.fwdgt_config:0000000000000048 .LVL17
+     /tmp/ccZi36H7.s:194    .text.fwdgt_config:000000000000005c .LVL19
+     /tmp/ccZi36H7.s:201    .text.fwdgt_config:0000000000000060 .LVL20
+     /tmp/ccZi36H7.s:203    .text.fwdgt_config:0000000000000062 .LVL21
+     /tmp/ccZi36H7.s:210    .text.fwdgt_config:0000000000000066 .LVL22
+     /tmp/ccZi36H7.s:109    .text.fwdgt_config:0000000000000016 .LVL1
+     /tmp/ccZi36H7.s:113    .text.fwdgt_config:000000000000001c .LVL2
+     /tmp/ccZi36H7.s:120    .text.fwdgt_config:0000000000000020 .LVL4
+     /tmp/ccZi36H7.s:126    .text.fwdgt_config:0000000000000022 .LVL5
+     /tmp/ccZi36H7.s:128    .text.fwdgt_config:0000000000000024 .LVL6
+GAS LISTING /tmp/ccZi36H7.s 			page 11
 
 
-     /tmp/ccpSg95L.s:131    .text.fwdgt_config:0000000000000026 .LVL7
-     /tmp/ccpSg95L.s:139    .text.fwdgt_config:000000000000002c .LVL9
-     /tmp/ccpSg95L.s:148    .text.fwdgt_config:0000000000000036 .LVL10
-     /tmp/ccpSg95L.s:152    .text.fwdgt_config:000000000000003c .LVL11
-     /tmp/ccpSg95L.s:159    .text.fwdgt_config:0000000000000040 .LVL13
-     /tmp/ccpSg95L.s:165    .text.fwdgt_config:0000000000000042 .LVL14
-     /tmp/ccpSg95L.s:167    .text.fwdgt_config:0000000000000044 .LVL15
-     /tmp/ccpSg95L.s:170    .text.fwdgt_config:0000000000000046 .LVL16
-     /tmp/ccpSg95L.s:117    .text.fwdgt_config:000000000000001e .LVL3
-     /tmp/ccpSg95L.s:136    .text.fwdgt_config:000000000000002a .LVL8
-     /tmp/ccpSg95L.s:156    .text.fwdgt_config:000000000000003e .LVL12
-     /tmp/ccpSg95L.s:182    .text.fwdgt_config:0000000000000050 .LVL18
-     /tmp/ccpSg95L.s:244    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccZi36H7.s:131    .text.fwdgt_config:0000000000000026 .LVL7
+     /tmp/ccZi36H7.s:139    .text.fwdgt_config:000000000000002c .LVL9
+     /tmp/ccZi36H7.s:148    .text.fwdgt_config:0000000000000036 .LVL10
+     /tmp/ccZi36H7.s:152    .text.fwdgt_config:000000000000003c .LVL11
+     /tmp/ccZi36H7.s:159    .text.fwdgt_config:0000000000000040 .LVL13
+     /tmp/ccZi36H7.s:165    .text.fwdgt_config:0000000000000042 .LVL14
+     /tmp/ccZi36H7.s:167    .text.fwdgt_config:0000000000000044 .LVL15
+     /tmp/ccZi36H7.s:170    .text.fwdgt_config:0000000000000046 .LVL16
+     /tmp/ccZi36H7.s:117    .text.fwdgt_config:000000000000001e .LVL3
+     /tmp/ccZi36H7.s:136    .text.fwdgt_config:000000000000002a .LVL8
+     /tmp/ccZi36H7.s:156    .text.fwdgt_config:000000000000003e .LVL12
+     /tmp/ccZi36H7.s:182    .text.fwdgt_config:0000000000000050 .LVL18
+     /tmp/ccZi36H7.s:244    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS

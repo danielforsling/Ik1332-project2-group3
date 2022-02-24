@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cckab7sG.s 			page 1
+GAS LISTING /tmp/ccAVpbY0.s 			page 1
 
 
    1              		.file	"gd32vf103_exmc.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** 
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** /* EXMC register bit offset */
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** #define SNCTL_NRMUX_OFFSET                ((uint32_t)1U)
-GAS LISTING /tmp/cckab7sG.s 			page 2
+GAS LISTING /tmp/ccAVpbY0.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** #define SNCTL_WREN_OFFSET                 ((uint32_t)12U)
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
   48              	exmc_norsram_struct_para_init:
   49              	.LFB3:
   68:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** 
-GAS LISTING /tmp/cckab7sG.s 			page 3
+GAS LISTING /tmp/ccAVpbY0.s 			page 3
 
 
   69:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** /*!
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
   81:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****     exmc_norsram_init_struct->nwait_polarity = EXMC_NWAIT_POLARITY_LOW;
   74              		.loc 1 81 5 is_stmt 1
   82:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****     exmc_norsram_init_struct->memory_write = ENABLE;
-GAS LISTING /tmp/cckab7sG.s 			page 4
+GAS LISTING /tmp/ccAVpbY0.s 			page 4
 
 
   75              		.loc 1 82 5
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  102:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                   databus_width: EXMC_NOR_DATABUS_WIDTH_8B,EXMC_NOR_DATABUS_WIDTH_16B
  103:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                   memory_type: EXMC_MEMORY_TYPE_SRAM,EXMC_MEMORY_TYPE_PSRAM,EXMC_MEMORY_TYPE_NOR
  104:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                   address_data_mux: ENABLE
-GAS LISTING /tmp/cckab7sG.s 			page 5
+GAS LISTING /tmp/ccAVpbY0.s 			page 5
 
 
  105:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                   read_write_timing: structure exmc_norsram_timing_parameter_struct set the time
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  132 0016 37080014 		li	a6,335544320
  122:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                         exmc_norsram_init_struct->nwait_polarity |
  133              		.loc 1 122 65
-GAS LISTING /tmp/cckab7sG.s 			page 6
+GAS LISTING /tmp/ccAVpbY0.s 			page 6
 
 
  134 001a 33E7E800 		or	a4,a7,a4
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  124:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                        ((uint32_t)exmc_norsram_init_struct->nwait_signal << SNCTL_NRWTEN_OFFSET) |
  171              		.loc 1 124 74 is_stmt 0
  172 0050 B20F     		slli	t6,t6,12
-GAS LISTING /tmp/cckab7sG.s 			page 7
+GAS LISTING /tmp/ccAVpbY0.s 			page 7
 
 
  129:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                        (((exmc_norsram_init_struct->read_write_timing->asyn_data_setuptime - 1U ) <
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  210 0086 2146     		li	a2,8
  120:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c ****                         exmc_norsram_init_struct->memory_type |
  211              		.loc 1 120 11
-GAS LISTING /tmp/cckab7sG.s 			page 8
+GAS LISTING /tmp/ccAVpbY0.s 			page 8
 
 
  212 0088 CD8F     		or	a5,a5,a1
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  151:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exmc.c **** {
  250              		.loc 1 151 1 is_stmt 1
  251              		.cfi_startproc
-GAS LISTING /tmp/cckab7sG.s 			page 9
+GAS LISTING /tmp/ccAVpbY0.s 			page 9
 
 
  252              	.LVL11:
@@ -534,235 +534,235 @@ GAS LISTING /tmp/cckab7sG.s 			page 1
  290              	.LFE6:
  292              		.text
  293              	.Letext0:
- 294              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 295              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 294              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 295              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  296              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  297              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_exmc.h"
-GAS LISTING /tmp/cckab7sG.s 			page 10
+GAS LISTING /tmp/ccAVpbY0.s 			page 10
 
 
  298              		.file 6 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/cckab7sG.s 			page 11
+GAS LISTING /tmp/ccAVpbY0.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_exmc.c
-     /tmp/cckab7sG.s:13     .text.exmc_norsram_deinit:0000000000000000 exmc_norsram_deinit
-     /tmp/cckab7sG.s:17     .text.exmc_norsram_deinit:0000000000000000 .L0 
-     /tmp/cckab7sG.s:19     .text.exmc_norsram_deinit:0000000000000000 .L0 
-     /tmp/cckab7sG.s:20     .text.exmc_norsram_deinit:0000000000000000 .L0 
-     /tmp/cckab7sG.s:21     .text.exmc_norsram_deinit:0000000000000000 .L0 
-     /tmp/cckab7sG.s:23     .text.exmc_norsram_deinit:0000000000000002 .L0 
-     /tmp/cckab7sG.s:24     .text.exmc_norsram_deinit:0000000000000002 .L0 
-     /tmp/cckab7sG.s:30     .text.exmc_norsram_deinit:000000000000000e .L0 
-     /tmp/cckab7sG.s:36     .text.exmc_norsram_deinit:0000000000000018 .L0 
-     /tmp/cckab7sG.s:40     .text.exmc_norsram_deinit:0000000000000020 .L0 
-     /tmp/cckab7sG.s:41     .text.exmc_norsram_deinit:0000000000000022 .L0 
-     /tmp/cckab7sG.s:48     .text.exmc_norsram_struct_para_init:0000000000000000 exmc_norsram_struct_para_init
-     /tmp/cckab7sG.s:51     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:53     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:54     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:55     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:57     .text.exmc_norsram_struct_para_init:0000000000000002 .L0 
-     /tmp/cckab7sG.s:59     .text.exmc_norsram_struct_para_init:0000000000000004 .L0 
-     /tmp/cckab7sG.s:61     .text.exmc_norsram_struct_para_init:0000000000000006 .L0 
-     /tmp/cckab7sG.s:63     .text.exmc_norsram_struct_para_init:0000000000000008 .L0 
-     /tmp/cckab7sG.s:65     .text.exmc_norsram_struct_para_init:000000000000000a .L0 
-     /tmp/cckab7sG.s:67     .text.exmc_norsram_struct_para_init:000000000000000c .L0 
-     /tmp/cckab7sG.s:69     .text.exmc_norsram_struct_para_init:000000000000000e .L0 
-     /tmp/cckab7sG.s:71     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
-     /tmp/cckab7sG.s:72     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
-     /tmp/cckab7sG.s:73     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
-     /tmp/cckab7sG.s:75     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
-     /tmp/cckab7sG.s:76     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
-     /tmp/cckab7sG.s:77     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
-     /tmp/cckab7sG.s:79     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
-     /tmp/cckab7sG.s:80     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
-     /tmp/cckab7sG.s:81     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
-     /tmp/cckab7sG.s:82     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
-     /tmp/cckab7sG.s:84     .text.exmc_norsram_struct_para_init:000000000000001e .L0 
-     /tmp/cckab7sG.s:85     .text.exmc_norsram_struct_para_init:000000000000001e .L0 
-     /tmp/cckab7sG.s:87     .text.exmc_norsram_struct_para_init:0000000000000020 .L0 
-     /tmp/cckab7sG.s:89     .text.exmc_norsram_struct_para_init:0000000000000024 .L0 
-     /tmp/cckab7sG.s:91     .text.exmc_norsram_struct_para_init:0000000000000026 .L0 
-     /tmp/cckab7sG.s:92     .text.exmc_norsram_struct_para_init:0000000000000026 .L0 
-     /tmp/cckab7sG.s:94     .text.exmc_norsram_struct_para_init:0000000000000028 .L0 
-     /tmp/cckab7sG.s:95     .text.exmc_norsram_struct_para_init:0000000000000028 .L0 
-     /tmp/cckab7sG.s:97     .text.exmc_norsram_struct_para_init:000000000000002a .L0 
-     /tmp/cckab7sG.s:98     .text.exmc_norsram_struct_para_init:000000000000002a .L0 
-     /tmp/cckab7sG.s:100    .text.exmc_norsram_struct_para_init:000000000000002c .L0 
-     /tmp/cckab7sG.s:101    .text.exmc_norsram_struct_para_init:000000000000002e .L0 
-     /tmp/cckab7sG.s:108    .text.exmc_norsram_init:0000000000000000 exmc_norsram_init
-     /tmp/cckab7sG.s:111    .text.exmc_norsram_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:113    .text.exmc_norsram_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:114    .text.exmc_norsram_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:115    .text.exmc_norsram_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:116    .text.exmc_norsram_init:0000000000000000 .L0 
-     /tmp/cckab7sG.s:118    .text.exmc_norsram_init:0000000000000002 .L0 
-     /tmp/cckab7sG.s:120    .text.exmc_norsram_init:0000000000000006 .L0 
-     /tmp/cckab7sG.s:122    .text.exmc_norsram_init:0000000000000008 .L0 
-     /tmp/cckab7sG.s:124    .text.exmc_norsram_init:000000000000000c .L0 
-GAS LISTING /tmp/cckab7sG.s 			page 12
+     /tmp/ccAVpbY0.s:13     .text.exmc_norsram_deinit:0000000000000000 exmc_norsram_deinit
+     /tmp/ccAVpbY0.s:17     .text.exmc_norsram_deinit:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:19     .text.exmc_norsram_deinit:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:20     .text.exmc_norsram_deinit:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:21     .text.exmc_norsram_deinit:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:23     .text.exmc_norsram_deinit:0000000000000002 .L0 
+     /tmp/ccAVpbY0.s:24     .text.exmc_norsram_deinit:0000000000000002 .L0 
+     /tmp/ccAVpbY0.s:30     .text.exmc_norsram_deinit:000000000000000e .L0 
+     /tmp/ccAVpbY0.s:36     .text.exmc_norsram_deinit:0000000000000018 .L0 
+     /tmp/ccAVpbY0.s:40     .text.exmc_norsram_deinit:0000000000000020 .L0 
+     /tmp/ccAVpbY0.s:41     .text.exmc_norsram_deinit:0000000000000022 .L0 
+     /tmp/ccAVpbY0.s:48     .text.exmc_norsram_struct_para_init:0000000000000000 exmc_norsram_struct_para_init
+     /tmp/ccAVpbY0.s:51     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:53     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:54     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:55     .text.exmc_norsram_struct_para_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:57     .text.exmc_norsram_struct_para_init:0000000000000002 .L0 
+     /tmp/ccAVpbY0.s:59     .text.exmc_norsram_struct_para_init:0000000000000004 .L0 
+     /tmp/ccAVpbY0.s:61     .text.exmc_norsram_struct_para_init:0000000000000006 .L0 
+     /tmp/ccAVpbY0.s:63     .text.exmc_norsram_struct_para_init:0000000000000008 .L0 
+     /tmp/ccAVpbY0.s:65     .text.exmc_norsram_struct_para_init:000000000000000a .L0 
+     /tmp/ccAVpbY0.s:67     .text.exmc_norsram_struct_para_init:000000000000000c .L0 
+     /tmp/ccAVpbY0.s:69     .text.exmc_norsram_struct_para_init:000000000000000e .L0 
+     /tmp/ccAVpbY0.s:71     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:72     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:73     .text.exmc_norsram_struct_para_init:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:75     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
+     /tmp/ccAVpbY0.s:76     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
+     /tmp/ccAVpbY0.s:77     .text.exmc_norsram_struct_para_init:0000000000000016 .L0 
+     /tmp/ccAVpbY0.s:79     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
+     /tmp/ccAVpbY0.s:80     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
+     /tmp/ccAVpbY0.s:81     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
+     /tmp/ccAVpbY0.s:82     .text.exmc_norsram_struct_para_init:000000000000001a .L0 
+     /tmp/ccAVpbY0.s:84     .text.exmc_norsram_struct_para_init:000000000000001e .L0 
+     /tmp/ccAVpbY0.s:85     .text.exmc_norsram_struct_para_init:000000000000001e .L0 
+     /tmp/ccAVpbY0.s:87     .text.exmc_norsram_struct_para_init:0000000000000020 .L0 
+     /tmp/ccAVpbY0.s:89     .text.exmc_norsram_struct_para_init:0000000000000024 .L0 
+     /tmp/ccAVpbY0.s:91     .text.exmc_norsram_struct_para_init:0000000000000026 .L0 
+     /tmp/ccAVpbY0.s:92     .text.exmc_norsram_struct_para_init:0000000000000026 .L0 
+     /tmp/ccAVpbY0.s:94     .text.exmc_norsram_struct_para_init:0000000000000028 .L0 
+     /tmp/ccAVpbY0.s:95     .text.exmc_norsram_struct_para_init:0000000000000028 .L0 
+     /tmp/ccAVpbY0.s:97     .text.exmc_norsram_struct_para_init:000000000000002a .L0 
+     /tmp/ccAVpbY0.s:98     .text.exmc_norsram_struct_para_init:000000000000002a .L0 
+     /tmp/ccAVpbY0.s:100    .text.exmc_norsram_struct_para_init:000000000000002c .L0 
+     /tmp/ccAVpbY0.s:101    .text.exmc_norsram_struct_para_init:000000000000002e .L0 
+     /tmp/ccAVpbY0.s:108    .text.exmc_norsram_init:0000000000000000 exmc_norsram_init
+     /tmp/ccAVpbY0.s:111    .text.exmc_norsram_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:113    .text.exmc_norsram_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:114    .text.exmc_norsram_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:115    .text.exmc_norsram_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:116    .text.exmc_norsram_init:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:118    .text.exmc_norsram_init:0000000000000002 .L0 
+     /tmp/ccAVpbY0.s:120    .text.exmc_norsram_init:0000000000000006 .L0 
+     /tmp/ccAVpbY0.s:122    .text.exmc_norsram_init:0000000000000008 .L0 
+     /tmp/ccAVpbY0.s:124    .text.exmc_norsram_init:000000000000000c .L0 
+GAS LISTING /tmp/ccAVpbY0.s 			page 12
 
 
-     /tmp/cckab7sG.s:126    .text.exmc_norsram_init:0000000000000010 .L0 
-     /tmp/cckab7sG.s:128    .text.exmc_norsram_init:0000000000000012 .L0 
-     /tmp/cckab7sG.s:130    .text.exmc_norsram_init:0000000000000014 .L0 
-     /tmp/cckab7sG.s:132    .text.exmc_norsram_init:0000000000000016 .L0 
-     /tmp/cckab7sG.s:134    .text.exmc_norsram_init:000000000000001a .L0 
-     /tmp/cckab7sG.s:137    .text.exmc_norsram_init:0000000000000022 .L0 
-     /tmp/cckab7sG.s:139    .text.exmc_norsram_init:0000000000000024 .L0 
-     /tmp/cckab7sG.s:141    .text.exmc_norsram_init:0000000000000026 .L0 
-     /tmp/cckab7sG.s:143    .text.exmc_norsram_init:000000000000002a .L0 
-     /tmp/cckab7sG.s:145    .text.exmc_norsram_init:000000000000002e .L0 
-     /tmp/cckab7sG.s:147    .text.exmc_norsram_init:0000000000000030 .L0 
-     /tmp/cckab7sG.s:149    .text.exmc_norsram_init:0000000000000032 .L0 
-     /tmp/cckab7sG.s:151    .text.exmc_norsram_init:0000000000000034 .L0 
-     /tmp/cckab7sG.s:153    .text.exmc_norsram_init:0000000000000038 .L0 
-     /tmp/cckab7sG.s:155    .text.exmc_norsram_init:000000000000003c .L0 
-     /tmp/cckab7sG.s:157    .text.exmc_norsram_init:000000000000003e .L0 
-     /tmp/cckab7sG.s:160    .text.exmc_norsram_init:0000000000000042 .L0 
-     /tmp/cckab7sG.s:162    .text.exmc_norsram_init:0000000000000044 .L0 
-     /tmp/cckab7sG.s:164    .text.exmc_norsram_init:0000000000000048 .L0 
-     /tmp/cckab7sG.s:166    .text.exmc_norsram_init:000000000000004a .L0 
-     /tmp/cckab7sG.s:168    .text.exmc_norsram_init:000000000000004c .L0 
-     /tmp/cckab7sG.s:171    .text.exmc_norsram_init:0000000000000050 .L0 
-     /tmp/cckab7sG.s:172    .text.exmc_norsram_init:0000000000000050 .L0 
-     /tmp/cckab7sG.s:174    .text.exmc_norsram_init:0000000000000052 .L0 
-     /tmp/cckab7sG.s:176    .text.exmc_norsram_init:0000000000000056 .L0 
-     /tmp/cckab7sG.s:178    .text.exmc_norsram_init:0000000000000058 .L0 
-     /tmp/cckab7sG.s:180    .text.exmc_norsram_init:000000000000005c .L0 
-     /tmp/cckab7sG.s:182    .text.exmc_norsram_init:000000000000005e .L0 
-     /tmp/cckab7sG.s:184    .text.exmc_norsram_init:0000000000000062 .L0 
-     /tmp/cckab7sG.s:186    .text.exmc_norsram_init:0000000000000066 .L0 
-     /tmp/cckab7sG.s:188    .text.exmc_norsram_init:0000000000000068 .L0 
-     /tmp/cckab7sG.s:190    .text.exmc_norsram_init:000000000000006a .L0 
-     /tmp/cckab7sG.s:192    .text.exmc_norsram_init:000000000000006c .L0 
-     /tmp/cckab7sG.s:194    .text.exmc_norsram_init:0000000000000070 .L0 
-     /tmp/cckab7sG.s:196    .text.exmc_norsram_init:0000000000000074 .L0 
-     /tmp/cckab7sG.s:198    .text.exmc_norsram_init:0000000000000076 .L0 
-     /tmp/cckab7sG.s:200    .text.exmc_norsram_init:0000000000000078 .L0 
-     /tmp/cckab7sG.s:202    .text.exmc_norsram_init:000000000000007c .L0 
-     /tmp/cckab7sG.s:204    .text.exmc_norsram_init:000000000000007e .L0 
-     /tmp/cckab7sG.s:207    .text.exmc_norsram_init:0000000000000082 .L0 
-     /tmp/cckab7sG.s:208    .text.exmc_norsram_init:0000000000000082 .L0 
-     /tmp/cckab7sG.s:210    .text.exmc_norsram_init:0000000000000086 .L0 
-     /tmp/cckab7sG.s:212    .text.exmc_norsram_init:0000000000000088 .L0 
-     /tmp/cckab7sG.s:215    .text.exmc_norsram_init:000000000000008a .L0 
-     /tmp/cckab7sG.s:216    .text.exmc_norsram_init:000000000000008a .L0 
-     /tmp/cckab7sG.s:219    .text.exmc_norsram_init:000000000000008c .L0 
-     /tmp/cckab7sG.s:220    .text.exmc_norsram_init:000000000000008c .L0 
-     /tmp/cckab7sG.s:222    .text.exmc_norsram_init:0000000000000090 .L0 
-     /tmp/cckab7sG.s:223    .text.exmc_norsram_init:0000000000000090 .L0 
-     /tmp/cckab7sG.s:227    .text.exmc_norsram_init:0000000000000094 .L0 
-     /tmp/cckab7sG.s:228    .text.exmc_norsram_init:0000000000000094 .L0 
-     /tmp/cckab7sG.s:230    .text.exmc_norsram_init:0000000000000098 .L0 
-     /tmp/cckab7sG.s:237    .text.exmc_norsram_init:00000000000000a4 .L0 
-     /tmp/cckab7sG.s:240    .text.exmc_norsram_init:00000000000000a6 .L0 
-     /tmp/cckab7sG.s:241    .text.exmc_norsram_init:00000000000000a8 .L0 
-     /tmp/cckab7sG.s:248    .text.exmc_norsram_enable:0000000000000000 exmc_norsram_enable
-     /tmp/cckab7sG.s:251    .text.exmc_norsram_enable:0000000000000000 .L0 
-GAS LISTING /tmp/cckab7sG.s 			page 13
+     /tmp/ccAVpbY0.s:126    .text.exmc_norsram_init:0000000000000010 .L0 
+     /tmp/ccAVpbY0.s:128    .text.exmc_norsram_init:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:130    .text.exmc_norsram_init:0000000000000014 .L0 
+     /tmp/ccAVpbY0.s:132    .text.exmc_norsram_init:0000000000000016 .L0 
+     /tmp/ccAVpbY0.s:134    .text.exmc_norsram_init:000000000000001a .L0 
+     /tmp/ccAVpbY0.s:137    .text.exmc_norsram_init:0000000000000022 .L0 
+     /tmp/ccAVpbY0.s:139    .text.exmc_norsram_init:0000000000000024 .L0 
+     /tmp/ccAVpbY0.s:141    .text.exmc_norsram_init:0000000000000026 .L0 
+     /tmp/ccAVpbY0.s:143    .text.exmc_norsram_init:000000000000002a .L0 
+     /tmp/ccAVpbY0.s:145    .text.exmc_norsram_init:000000000000002e .L0 
+     /tmp/ccAVpbY0.s:147    .text.exmc_norsram_init:0000000000000030 .L0 
+     /tmp/ccAVpbY0.s:149    .text.exmc_norsram_init:0000000000000032 .L0 
+     /tmp/ccAVpbY0.s:151    .text.exmc_norsram_init:0000000000000034 .L0 
+     /tmp/ccAVpbY0.s:153    .text.exmc_norsram_init:0000000000000038 .L0 
+     /tmp/ccAVpbY0.s:155    .text.exmc_norsram_init:000000000000003c .L0 
+     /tmp/ccAVpbY0.s:157    .text.exmc_norsram_init:000000000000003e .L0 
+     /tmp/ccAVpbY0.s:160    .text.exmc_norsram_init:0000000000000042 .L0 
+     /tmp/ccAVpbY0.s:162    .text.exmc_norsram_init:0000000000000044 .L0 
+     /tmp/ccAVpbY0.s:164    .text.exmc_norsram_init:0000000000000048 .L0 
+     /tmp/ccAVpbY0.s:166    .text.exmc_norsram_init:000000000000004a .L0 
+     /tmp/ccAVpbY0.s:168    .text.exmc_norsram_init:000000000000004c .L0 
+     /tmp/ccAVpbY0.s:171    .text.exmc_norsram_init:0000000000000050 .L0 
+     /tmp/ccAVpbY0.s:172    .text.exmc_norsram_init:0000000000000050 .L0 
+     /tmp/ccAVpbY0.s:174    .text.exmc_norsram_init:0000000000000052 .L0 
+     /tmp/ccAVpbY0.s:176    .text.exmc_norsram_init:0000000000000056 .L0 
+     /tmp/ccAVpbY0.s:178    .text.exmc_norsram_init:0000000000000058 .L0 
+     /tmp/ccAVpbY0.s:180    .text.exmc_norsram_init:000000000000005c .L0 
+     /tmp/ccAVpbY0.s:182    .text.exmc_norsram_init:000000000000005e .L0 
+     /tmp/ccAVpbY0.s:184    .text.exmc_norsram_init:0000000000000062 .L0 
+     /tmp/ccAVpbY0.s:186    .text.exmc_norsram_init:0000000000000066 .L0 
+     /tmp/ccAVpbY0.s:188    .text.exmc_norsram_init:0000000000000068 .L0 
+     /tmp/ccAVpbY0.s:190    .text.exmc_norsram_init:000000000000006a .L0 
+     /tmp/ccAVpbY0.s:192    .text.exmc_norsram_init:000000000000006c .L0 
+     /tmp/ccAVpbY0.s:194    .text.exmc_norsram_init:0000000000000070 .L0 
+     /tmp/ccAVpbY0.s:196    .text.exmc_norsram_init:0000000000000074 .L0 
+     /tmp/ccAVpbY0.s:198    .text.exmc_norsram_init:0000000000000076 .L0 
+     /tmp/ccAVpbY0.s:200    .text.exmc_norsram_init:0000000000000078 .L0 
+     /tmp/ccAVpbY0.s:202    .text.exmc_norsram_init:000000000000007c .L0 
+     /tmp/ccAVpbY0.s:204    .text.exmc_norsram_init:000000000000007e .L0 
+     /tmp/ccAVpbY0.s:207    .text.exmc_norsram_init:0000000000000082 .L0 
+     /tmp/ccAVpbY0.s:208    .text.exmc_norsram_init:0000000000000082 .L0 
+     /tmp/ccAVpbY0.s:210    .text.exmc_norsram_init:0000000000000086 .L0 
+     /tmp/ccAVpbY0.s:212    .text.exmc_norsram_init:0000000000000088 .L0 
+     /tmp/ccAVpbY0.s:215    .text.exmc_norsram_init:000000000000008a .L0 
+     /tmp/ccAVpbY0.s:216    .text.exmc_norsram_init:000000000000008a .L0 
+     /tmp/ccAVpbY0.s:219    .text.exmc_norsram_init:000000000000008c .L0 
+     /tmp/ccAVpbY0.s:220    .text.exmc_norsram_init:000000000000008c .L0 
+     /tmp/ccAVpbY0.s:222    .text.exmc_norsram_init:0000000000000090 .L0 
+     /tmp/ccAVpbY0.s:223    .text.exmc_norsram_init:0000000000000090 .L0 
+     /tmp/ccAVpbY0.s:227    .text.exmc_norsram_init:0000000000000094 .L0 
+     /tmp/ccAVpbY0.s:228    .text.exmc_norsram_init:0000000000000094 .L0 
+     /tmp/ccAVpbY0.s:230    .text.exmc_norsram_init:0000000000000098 .L0 
+     /tmp/ccAVpbY0.s:237    .text.exmc_norsram_init:00000000000000a4 .L0 
+     /tmp/ccAVpbY0.s:240    .text.exmc_norsram_init:00000000000000a6 .L0 
+     /tmp/ccAVpbY0.s:241    .text.exmc_norsram_init:00000000000000a8 .L0 
+     /tmp/ccAVpbY0.s:248    .text.exmc_norsram_enable:0000000000000000 exmc_norsram_enable
+     /tmp/ccAVpbY0.s:251    .text.exmc_norsram_enable:0000000000000000 .L0 
+GAS LISTING /tmp/ccAVpbY0.s 			page 13
 
 
-     /tmp/cckab7sG.s:253    .text.exmc_norsram_enable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:254    .text.exmc_norsram_enable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:255    .text.exmc_norsram_enable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:264    .text.exmc_norsram_enable:0000000000000010 .L0 
-     /tmp/cckab7sG.s:265    .text.exmc_norsram_enable:0000000000000012 .L0 
-     /tmp/cckab7sG.s:272    .text.exmc_norsram_disable:0000000000000000 exmc_norsram_disable
-     /tmp/cckab7sG.s:275    .text.exmc_norsram_disable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:277    .text.exmc_norsram_disable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:278    .text.exmc_norsram_disable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:279    .text.exmc_norsram_disable:0000000000000000 .L0 
-     /tmp/cckab7sG.s:288    .text.exmc_norsram_disable:000000000000000e .L0 
-     /tmp/cckab7sG.s:289    .text.exmc_norsram_disable:0000000000000010 .L0 
-     /tmp/cckab7sG.s:44     .text.exmc_norsram_deinit:0000000000000022 .L0 
-     /tmp/cckab7sG.s:104    .text.exmc_norsram_struct_para_init:000000000000002e .L0 
-     /tmp/cckab7sG.s:244    .text.exmc_norsram_init:00000000000000a8 .L0 
-     /tmp/cckab7sG.s:268    .text.exmc_norsram_enable:0000000000000012 .L0 
-     /tmp/cckab7sG.s:292    .text.exmc_norsram_disable:0000000000000010 .L0 
+     /tmp/ccAVpbY0.s:253    .text.exmc_norsram_enable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:254    .text.exmc_norsram_enable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:255    .text.exmc_norsram_enable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:264    .text.exmc_norsram_enable:0000000000000010 .L0 
+     /tmp/ccAVpbY0.s:265    .text.exmc_norsram_enable:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:272    .text.exmc_norsram_disable:0000000000000000 exmc_norsram_disable
+     /tmp/ccAVpbY0.s:275    .text.exmc_norsram_disable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:277    .text.exmc_norsram_disable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:278    .text.exmc_norsram_disable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:279    .text.exmc_norsram_disable:0000000000000000 .L0 
+     /tmp/ccAVpbY0.s:288    .text.exmc_norsram_disable:000000000000000e .L0 
+     /tmp/ccAVpbY0.s:289    .text.exmc_norsram_disable:0000000000000010 .L0 
+     /tmp/ccAVpbY0.s:44     .text.exmc_norsram_deinit:0000000000000022 .L0 
+     /tmp/ccAVpbY0.s:104    .text.exmc_norsram_struct_para_init:000000000000002e .L0 
+     /tmp/ccAVpbY0.s:244    .text.exmc_norsram_init:00000000000000a8 .L0 
+     /tmp/ccAVpbY0.s:268    .text.exmc_norsram_enable:0000000000000012 .L0 
+     /tmp/ccAVpbY0.s:292    .text.exmc_norsram_disable:0000000000000010 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/cckab7sG.s:28     .text.exmc_norsram_deinit:000000000000000e .L2
-     /tmp/cckab7sG.s:225    .text.exmc_norsram_init:0000000000000094 .L6
-     /tmp/cckab7sG.s:675    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/cckab7sG.s:1058   .debug_str:000000000000000e .LASF37
-     /tmp/cckab7sG.s:1086   .debug_str:000000000000015c .LASF38
-     /tmp/cckab7sG.s:1100   .debug_str:00000000000001fb .LASF39
-     /tmp/cckab7sG.s:1040   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/cckab7sG.s:1054   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/cckab7sG.s:1094   .debug_str:00000000000001cb .LASF0
-     /tmp/cckab7sG.s:1072   .debug_str:00000000000000eb .LASF1
-     /tmp/cckab7sG.s:1074   .debug_str:00000000000000f7 .LASF2
-     /tmp/cckab7sG.s:1118   .debug_str:0000000000000304 .LASF3
-     /tmp/cckab7sG.s:1080   .debug_str:000000000000012b .LASF4
-     /tmp/cckab7sG.s:1126   .debug_str:000000000000033c .LASF5
-     /tmp/cckab7sG.s:1090   .debug_str:00000000000001ba .LASF9
-     /tmp/cckab7sG.s:1076   .debug_str:0000000000000105 .LASF6
-     /tmp/cckab7sG.s:1056   .debug_str:0000000000000000 .LASF7
-     /tmp/cckab7sG.s:1096   .debug_str:00000000000001d8 .LASF8
-     /tmp/cckab7sG.s:1124   .debug_str:0000000000000333 .LASF10
-     /tmp/cckab7sG.s:1112   .debug_str:00000000000002c0 .LASF40
-     /tmp/cckab7sG.s:1134   .debug_str:0000000000000369 .LASF11
-     /tmp/cckab7sG.s:1070   .debug_str:00000000000000e4 .LASF12
-     /tmp/cckab7sG.s:1122   .debug_str:0000000000000325 .LASF13
-     /tmp/cckab7sG.s:1132   .debug_str:000000000000035d .LASF14
-     /tmp/cckab7sG.s:1098   .debug_str:00000000000001ef .LASF15
-     /tmp/cckab7sG.s:1108   .debug_str:00000000000002a0 .LASF16
-     /tmp/cckab7sG.s:1116   .debug_str:00000000000002ee .LASF17
-     /tmp/cckab7sG.s:1120   .debug_str:000000000000030e .LASF18
-     /tmp/cckab7sG.s:1104   .debug_str:0000000000000269 .LASF19
-     /tmp/cckab7sG.s:1068   .debug_str:00000000000000d5 .LASF20
-     /tmp/cckab7sG.s:1084   .debug_str:0000000000000152 .LASF21
-     /tmp/cckab7sG.s:1136   .debug_str:0000000000000371 .LASF22
-     /tmp/cckab7sG.s:1138   .debug_str:000000000000037e .LASF23
-     /tmp/cckab7sG.s:1062   .debug_str:00000000000000a6 .LASF24
-     /tmp/cckab7sG.s:1066   .debug_str:00000000000000c7 .LASF25
-     /tmp/cckab7sG.s:1110   .debug_str:00000000000002b4 .LASF26
-     /tmp/cckab7sG.s:1130   .debug_str:000000000000034c .LASF27
-     /tmp/cckab7sG.s:1064   .debug_str:00000000000000b5 .LASF28
-     /tmp/cckab7sG.s:1114   .debug_str:00000000000002d0 .LASF29
-GAS LISTING /tmp/cckab7sG.s 			page 14
+     /tmp/ccAVpbY0.s:28     .text.exmc_norsram_deinit:000000000000000e .L2
+     /tmp/ccAVpbY0.s:225    .text.exmc_norsram_init:0000000000000094 .L6
+     /tmp/ccAVpbY0.s:675    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccAVpbY0.s:1058   .debug_str:000000000000000e .LASF37
+     /tmp/ccAVpbY0.s:1086   .debug_str:000000000000015c .LASF38
+     /tmp/ccAVpbY0.s:1096   .debug_str:00000000000001d8 .LASF39
+     /tmp/ccAVpbY0.s:1040   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccAVpbY0.s:1054   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccAVpbY0.s:1094   .debug_str:00000000000001cb .LASF0
+     /tmp/ccAVpbY0.s:1072   .debug_str:00000000000000eb .LASF1
+     /tmp/ccAVpbY0.s:1074   .debug_str:00000000000000f7 .LASF2
+     /tmp/ccAVpbY0.s:1118   .debug_str:000000000000030a .LASF3
+     /tmp/ccAVpbY0.s:1080   .debug_str:000000000000012b .LASF4
+     /tmp/ccAVpbY0.s:1126   .debug_str:0000000000000342 .LASF5
+     /tmp/ccAVpbY0.s:1090   .debug_str:00000000000001ba .LASF9
+     /tmp/ccAVpbY0.s:1076   .debug_str:0000000000000105 .LASF6
+     /tmp/ccAVpbY0.s:1056   .debug_str:0000000000000000 .LASF7
+     /tmp/ccAVpbY0.s:1098   .debug_str:0000000000000237 .LASF8
+     /tmp/ccAVpbY0.s:1124   .debug_str:0000000000000339 .LASF10
+     /tmp/ccAVpbY0.s:1112   .debug_str:00000000000002c6 .LASF40
+     /tmp/ccAVpbY0.s:1134   .debug_str:000000000000036f .LASF11
+     /tmp/ccAVpbY0.s:1070   .debug_str:00000000000000e4 .LASF12
+     /tmp/ccAVpbY0.s:1122   .debug_str:000000000000032b .LASF13
+     /tmp/ccAVpbY0.s:1132   .debug_str:0000000000000363 .LASF14
+     /tmp/ccAVpbY0.s:1100   .debug_str:000000000000024e .LASF15
+     /tmp/ccAVpbY0.s:1108   .debug_str:00000000000002a6 .LASF16
+     /tmp/ccAVpbY0.s:1116   .debug_str:00000000000002f4 .LASF17
+     /tmp/ccAVpbY0.s:1120   .debug_str:0000000000000314 .LASF18
+     /tmp/ccAVpbY0.s:1104   .debug_str:000000000000026f .LASF19
+     /tmp/ccAVpbY0.s:1068   .debug_str:00000000000000d5 .LASF20
+     /tmp/ccAVpbY0.s:1084   .debug_str:0000000000000152 .LASF21
+     /tmp/ccAVpbY0.s:1136   .debug_str:0000000000000377 .LASF22
+     /tmp/ccAVpbY0.s:1138   .debug_str:0000000000000384 .LASF23
+     /tmp/ccAVpbY0.s:1062   .debug_str:00000000000000a6 .LASF24
+     /tmp/ccAVpbY0.s:1066   .debug_str:00000000000000c7 .LASF25
+     /tmp/ccAVpbY0.s:1110   .debug_str:00000000000002ba .LASF26
+     /tmp/ccAVpbY0.s:1130   .debug_str:0000000000000352 .LASF27
+     /tmp/ccAVpbY0.s:1064   .debug_str:00000000000000b5 .LASF28
+     /tmp/ccAVpbY0.s:1114   .debug_str:00000000000002d6 .LASF29
+GAS LISTING /tmp/ccAVpbY0.s 			page 14
 
 
-     /tmp/cckab7sG.s:1102   .debug_str:0000000000000254 .LASF30
-     /tmp/cckab7sG.s:273    .text.exmc_norsram_disable:0000000000000000 .LFB6
-     /tmp/cckab7sG.s:290    .text.exmc_norsram_disable:0000000000000010 .LFE6
-     /tmp/cckab7sG.s:928    .debug_loc:0000000000000000 .LLST4
-     /tmp/cckab7sG.s:1082   .debug_str:000000000000013e .LASF31
-     /tmp/cckab7sG.s:249    .text.exmc_norsram_enable:0000000000000000 .LFB5
-     /tmp/cckab7sG.s:266    .text.exmc_norsram_enable:0000000000000012 .LFE5
-     /tmp/cckab7sG.s:948    .debug_loc:0000000000000032 .LLST3
-     /tmp/cckab7sG.s:1106   .debug_str:000000000000028e .LASF32
-     /tmp/cckab7sG.s:109    .text.exmc_norsram_init:0000000000000000 .LFB4
-     /tmp/cckab7sG.s:242    .text.exmc_norsram_init:00000000000000a8 .LFE4
-     /tmp/cckab7sG.s:1088   .debug_str:00000000000001a1 .LASF33
-     /tmp/cckab7sG.s:1092   .debug_str:00000000000001c5 .LASF34
-     /tmp/cckab7sG.s:968    .debug_loc:0000000000000064 .LLST1
-     /tmp/cckab7sG.s:1128   .debug_str:0000000000000345 .LASF35
-     /tmp/cckab7sG.s:993    .debug_loc:00000000000000a5 .LLST2
-     /tmp/cckab7sG.s:1060   .debug_str:0000000000000088 .LASF36
-     /tmp/cckab7sG.s:49     .text.exmc_norsram_struct_para_init:0000000000000000 .LFB3
-     /tmp/cckab7sG.s:102    .text.exmc_norsram_struct_para_init:000000000000002e .LFE3
-     /tmp/cckab7sG.s:1078   .debug_str:0000000000000117 .LASF41
-     /tmp/cckab7sG.s:14     .text.exmc_norsram_deinit:0000000000000000 .LFB2
-     /tmp/cckab7sG.s:42     .text.exmc_norsram_deinit:0000000000000022 .LFE2
-     /tmp/cckab7sG.s:1005   .debug_loc:00000000000000c4 .LLST0
-     /tmp/cckab7sG.s:276    .text.exmc_norsram_disable:0000000000000000 .LVL14
-     /tmp/cckab7sG.s:281    .text.exmc_norsram_disable:0000000000000006 .LVL15
-     /tmp/cckab7sG.s:283    .text.exmc_norsram_disable:0000000000000008 .LVL16
-     /tmp/cckab7sG.s:252    .text.exmc_norsram_enable:0000000000000000 .LVL11
-     /tmp/cckab7sG.s:257    .text.exmc_norsram_enable:0000000000000006 .LVL12
-     /tmp/cckab7sG.s:259    .text.exmc_norsram_enable:0000000000000008 .LVL13
-     /tmp/cckab7sG.s:112    .text.exmc_norsram_init:0000000000000000 .LVL3
-     /tmp/cckab7sG.s:169    .text.exmc_norsram_init:0000000000000050 .LVL4
-     /tmp/cckab7sG.s:205    .text.exmc_norsram_init:0000000000000082 .LVL5
-     /tmp/cckab7sG.s:213    .text.exmc_norsram_init:000000000000008a .LVL6
-     /tmp/cckab7sG.s:231    .text.exmc_norsram_init:000000000000009a .LVL9
-     /tmp/cckab7sG.s:238    .text.exmc_norsram_init:00000000000000a6 .LVL10
-     /tmp/cckab7sG.s:217    .text.exmc_norsram_init:000000000000008c .LVL7
-     /tmp/cckab7sG.s:18     .text.exmc_norsram_deinit:0000000000000000 .LVL0
-     /tmp/cckab7sG.s:33     .text.exmc_norsram_deinit:0000000000000016 .LVL1
-     /tmp/cckab7sG.s:300    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccAVpbY0.s:1102   .debug_str:000000000000025a .LASF30
+     /tmp/ccAVpbY0.s:273    .text.exmc_norsram_disable:0000000000000000 .LFB6
+     /tmp/ccAVpbY0.s:290    .text.exmc_norsram_disable:0000000000000010 .LFE6
+     /tmp/ccAVpbY0.s:928    .debug_loc:0000000000000000 .LLST4
+     /tmp/ccAVpbY0.s:1082   .debug_str:000000000000013e .LASF31
+     /tmp/ccAVpbY0.s:249    .text.exmc_norsram_enable:0000000000000000 .LFB5
+     /tmp/ccAVpbY0.s:266    .text.exmc_norsram_enable:0000000000000012 .LFE5
+     /tmp/ccAVpbY0.s:948    .debug_loc:0000000000000032 .LLST3
+     /tmp/ccAVpbY0.s:1106   .debug_str:0000000000000294 .LASF32
+     /tmp/ccAVpbY0.s:109    .text.exmc_norsram_init:0000000000000000 .LFB4
+     /tmp/ccAVpbY0.s:242    .text.exmc_norsram_init:00000000000000a8 .LFE4
+     /tmp/ccAVpbY0.s:1088   .debug_str:00000000000001a1 .LASF33
+     /tmp/ccAVpbY0.s:1092   .debug_str:00000000000001c5 .LASF34
+     /tmp/ccAVpbY0.s:968    .debug_loc:0000000000000064 .LLST1
+     /tmp/ccAVpbY0.s:1128   .debug_str:000000000000034b .LASF35
+     /tmp/ccAVpbY0.s:993    .debug_loc:00000000000000a5 .LLST2
+     /tmp/ccAVpbY0.s:1060   .debug_str:0000000000000088 .LASF36
+     /tmp/ccAVpbY0.s:49     .text.exmc_norsram_struct_para_init:0000000000000000 .LFB3
+     /tmp/ccAVpbY0.s:102    .text.exmc_norsram_struct_para_init:000000000000002e .LFE3
+     /tmp/ccAVpbY0.s:1078   .debug_str:0000000000000117 .LASF41
+     /tmp/ccAVpbY0.s:14     .text.exmc_norsram_deinit:0000000000000000 .LFB2
+     /tmp/ccAVpbY0.s:42     .text.exmc_norsram_deinit:0000000000000022 .LFE2
+     /tmp/ccAVpbY0.s:1005   .debug_loc:00000000000000c4 .LLST0
+     /tmp/ccAVpbY0.s:276    .text.exmc_norsram_disable:0000000000000000 .LVL14
+     /tmp/ccAVpbY0.s:281    .text.exmc_norsram_disable:0000000000000006 .LVL15
+     /tmp/ccAVpbY0.s:283    .text.exmc_norsram_disable:0000000000000008 .LVL16
+     /tmp/ccAVpbY0.s:252    .text.exmc_norsram_enable:0000000000000000 .LVL11
+     /tmp/ccAVpbY0.s:257    .text.exmc_norsram_enable:0000000000000006 .LVL12
+     /tmp/ccAVpbY0.s:259    .text.exmc_norsram_enable:0000000000000008 .LVL13
+     /tmp/ccAVpbY0.s:112    .text.exmc_norsram_init:0000000000000000 .LVL3
+     /tmp/ccAVpbY0.s:169    .text.exmc_norsram_init:0000000000000050 .LVL4
+     /tmp/ccAVpbY0.s:205    .text.exmc_norsram_init:0000000000000082 .LVL5
+     /tmp/ccAVpbY0.s:213    .text.exmc_norsram_init:000000000000008a .LVL6
+     /tmp/ccAVpbY0.s:231    .text.exmc_norsram_init:000000000000009a .LVL9
+     /tmp/ccAVpbY0.s:238    .text.exmc_norsram_init:00000000000000a6 .LVL10
+     /tmp/ccAVpbY0.s:217    .text.exmc_norsram_init:000000000000008c .LVL7
+     /tmp/ccAVpbY0.s:18     .text.exmc_norsram_deinit:0000000000000000 .LVL0
+     /tmp/ccAVpbY0.s:33     .text.exmc_norsram_deinit:0000000000000016 .LVL1
+     /tmp/ccAVpbY0.s:300    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS

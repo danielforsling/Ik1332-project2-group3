@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cczUjV95.s 			page 1
+GAS LISTING /tmp/ccQNFSxm.s 			page 1
 
 
    1              		.file	"gd32vf103_gpio.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_POSITION_MASK                  ((uint32_t)0x000F0000U)  /*!< AFIO_PCF register position
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_SWJCFG_MASK                    ((uint32_t)0xF0FFFFFFU)  /*!< AFIO_PCF register SWJCFG m
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_LOCATION1_MASK                 ((uint32_t)0x00200000U)  /*!< AFIO_PCF register location
-GAS LISTING /tmp/cczUjV95.s 			page 2
+GAS LISTING /tmp/ccQNFSxm.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_LOCATION2_MASK                 ((uint32_t)0x00100000U)  /*!< AFIO_PCF register location
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
   78:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         /* reset GPIOE */
   79:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         rcu_periph_reset_enable(RCU_GPIOERST);
   35              		.loc 1 79 9 is_stmt 1
-GAS LISTING /tmp/cczUjV95.s 			page 3
+GAS LISTING /tmp/ccQNFSxm.s 			page 3
 
 
   36 0024 13056030 		li	a0,774
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
   75 0062 4101     		addi	sp,sp,16
   76              	.LCFI3:
   77              		.cfi_def_cfa_offset 0
-GAS LISTING /tmp/cczUjV95.s 			page 4
+GAS LISTING /tmp/ccQNFSxm.s 			page 4
 
 
   65:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         break;
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  120              	.LCFI7:
  121              		.cfi_def_cfa_offset 0
   75:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         break;
-GAS LISTING /tmp/cczUjV95.s 			page 5
+GAS LISTING /tmp/ccQNFSxm.s 			page 5
 
 
  122              		.loc 1 75 9
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
   91:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \retval     none
   92:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** */
   93:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** void gpio_afio_deinit(void)
-GAS LISTING /tmp/cczUjV95.s 			page 6
+GAS LISTING /tmp/ccQNFSxm.s 			page 6
 
 
   94:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** {
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  107:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_IPU: pull-up input mode
  108:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_OUT_OD: GPIO output with open-drain
  109:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_OUT_PP: GPIO output with push-pull
-GAS LISTING /tmp/cczUjV95.s 			page 7
+GAS LISTING /tmp/ccQNFSxm.s 			page 7
 
 
  110:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_AF_OD: AFIO output with open-drain
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  126:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     uint16_t i;
  224              		.loc 1 126 1 is_stmt 0
  225 000e 8147     		li	a5,0
-GAS LISTING /tmp/cczUjV95.s 			page 8
+GAS LISTING /tmp/ccQNFSxm.s 			page 8
 
 
  142:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         if ((1U << i) & pin) {
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  255 0036 032F0500 		lw	t5,0(a0)
  256              	.LVL22:
  146:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****             /* set the specified pin mode bits */
-GAS LISTING /tmp/cczUjV95.s 			page 9
+GAS LISTING /tmp/ccQNFSxm.s 			page 9
 
 
  257              		.loc 1 146 13 is_stmt 1
@@ -538,7 +538,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  176:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 /* reset the corresponding OCTL bit */
  177:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
  178:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****             } else {
-GAS LISTING /tmp/cczUjV95.s 			page 10
+GAS LISTING /tmp/ccQNFSxm.s 			page 10
 
 
  179:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 /* set the corresponding OCTL bit */
@@ -598,7 +598,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  175:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 /* reset the corresponding OCTL bit */
  322              		.loc 1 175 16 is_stmt 0
  323 0086 638FF501 		beq	a1,t6,.L37
-GAS LISTING /tmp/cczUjV95.s 			page 11
+GAS LISTING /tmp/ccQNFSxm.s 			page 11
 
 
  324              		.loc 1 180 20
@@ -658,7 +658,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  361 00a6 E5B7     		j	.L22
  362              		.cfi_endproc
  363              	.LFE4:
-GAS LISTING /tmp/cczUjV95.s 			page 12
+GAS LISTING /tmp/ccQNFSxm.s 			page 12
 
 
  365              		.section	.text.gpio_bit_set,"ax",@progbits
@@ -718,7 +718,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  394              		.loc 1 216 1
  395 0002 8280     		ret
  396              		.cfi_endproc
-GAS LISTING /tmp/cczUjV95.s 			page 13
+GAS LISTING /tmp/ccQNFSxm.s 			page 13
 
 
  397              	.LFE6:
@@ -778,7 +778,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  242:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  gpio_periph: GPIOx(x = A,B,C,D,E)
  243:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  data: specify the value to be written to the port output data register
  244:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[out] none
-GAS LISTING /tmp/cczUjV95.s 			page 14
+GAS LISTING /tmp/ccQNFSxm.s 			page 14
 
 
  245:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \retval     none
@@ -838,7 +838,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  463              		.align	1
  464              		.globl	gpio_input_port_get
  466              	gpio_input_port_get:
-GAS LISTING /tmp/cczUjV95.s 			page 15
+GAS LISTING /tmp/ccQNFSxm.s 			page 15
 
 
  467              	.LFB10:
@@ -898,7 +898,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  295:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         return RESET;
  296:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     }
  297:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** }
-GAS LISTING /tmp/cczUjV95.s 			page 16
+GAS LISTING /tmp/ccQNFSxm.s 			page 16
 
 
  497              		.loc 1 297 1
@@ -958,7 +958,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  324:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_TIMER1_FULL_REMAP: TIMER1 full remapping
  325:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_TIMER2_PARTIAL_REMAP: TIMER2 partial remapping
  326:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_TIMER2_FULL_REMAP: TIMER2 full remapping
-GAS LISTING /tmp/cczUjV95.s 			page 17
+GAS LISTING /tmp/ccQNFSxm.s 			page 17
 
 
  327:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_TIMER3_REMAP: TIMER3 remapping
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  355:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** 
  546              		.loc 1 355 12 is_stmt 0
  547 000e 93160501 		slli	a3,a0,16
-GAS LISTING /tmp/cczUjV95.s 			page 18
+GAS LISTING /tmp/ccQNFSxm.s 			page 18
 
 
  548              		.loc 1 359 23
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  583              		.loc 1 372 5 is_stmt 1
  584              		.loc 1 372 8 is_stmt 0
  585 003e 99C5     		beq	a1,zero,.L55
-GAS LISTING /tmp/cczUjV95.s 			page 19
+GAS LISTING /tmp/ccQNFSxm.s 			page 19
 
 
  373:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         temp_reg |= (remap1 << ((remap >> 0x15U) * 0x10U));
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  368:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     }
  622              		.loc 1 368 9 is_stmt 1
  368:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     }
-GAS LISTING /tmp/cczUjV95.s 			page 20
+GAS LISTING /tmp/ccQNFSxm.s 			page 20
 
 
  623              		.loc 1 368 18 is_stmt 0
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  662 0094 7D17     		addi	a4,a4,-1
  361:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     } else if (PCF_LOCATION2_MASK == (remap & PCF_LOCATION2_MASK)) {
  663              		.loc 1 361 19
-GAS LISTING /tmp/cczUjV95.s 			page 21
+GAS LISTING /tmp/ccQNFSxm.s 			page 21
 
 
  664 0096 798E     		and	a2,a2,a4
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  694 0008 3317F700 		sll	a4,a4,a5
  695              		.loc 1 405 8
  696 000c 8D46     		li	a3,3
-GAS LISTING /tmp/cczUjV95.s 			page 22
+GAS LISTING /tmp/ccQNFSxm.s 			page 22
 
 
  697 000e 1347F7FF 		not	a4,a4
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  737              		.loc 1 419 22
  738 0046 B7060140 		li	a3,1073807360
  417:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         /* select EXTI8/EXTI9/EXTI10/EXTI11 */
-GAS LISTING /tmp/cczUjV95.s 			page 23
+GAS LISTING /tmp/ccQNFSxm.s 			page 23
 
 
  739              		.loc 1 417 15
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  441:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  output_pin:
  442:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 only one parameter can be selected which are shown as below:
  443:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_EVENT_PIN_x(x=0..15)
-GAS LISTING /tmp/cczUjV95.s 			page 24
+GAS LISTING /tmp/ccQNFSxm.s 			page 24
 
 
  444:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[out] none
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  462:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \brief      enable GPIO pin event output
  463:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  none
  464:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[out] none
-GAS LISTING /tmp/cczUjV95.s 			page 25
+GAS LISTING /tmp/ccQNFSxm.s 			page 25
 
 
  465:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \retval     none
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  485:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  gpio_periph: GPIOx(x = A,B,C,D,E)
  486:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \param[in]  pin: GPIO pin
  487:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 one or more parameters can be selected which are shown as below:
-GAS LISTING /tmp/cczUjV95.s 			page 26
+GAS LISTING /tmp/ccQNFSxm.s 			page 26
 
 
  488:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_PIN_x(x=0..15), GPIO_PIN_ALL
@@ -1548,705 +1548,705 @@ GAS LISTING /tmp/cczUjV95.s 			page 1
  876              	.LFE18:
  878              		.text
  879              	.Letext0:
- 880              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 881              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 880              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 881              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  882              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  883              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  884              		.file 6 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_gpio.h"
  885              		.file 7 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/cczUjV95.s 			page 27
+GAS LISTING /tmp/ccQNFSxm.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_gpio.c
-     /tmp/cczUjV95.s:13     .text.gpio_deinit:0000000000000000 gpio_deinit
-     /tmp/cczUjV95.s:17     .text.gpio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:19     .text.gpio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:20     .text.gpio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:21     .text.gpio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:23     .text.gpio_deinit:0000000000000002 .L0 
-     /tmp/cczUjV95.s:25     .text.gpio_deinit:0000000000000004 .L0 
-     /tmp/cczUjV95.s:27     .text.gpio_deinit:0000000000000004 .L0 
-     /tmp/cczUjV95.s:36     .text.gpio_deinit:0000000000000024 .L0 
-     /tmp/cczUjV95.s:41     .text.gpio_deinit:0000000000000030 .L0 
-     /tmp/cczUjV95.s:42     .text.gpio_deinit:0000000000000030 .L0 
-     /tmp/cczUjV95.s:43     .text.gpio_deinit:0000000000000032 .L0 
-     /tmp/cczUjV95.s:44     .text.gpio_deinit:0000000000000032 .L0 
-     /tmp/cczUjV95.s:46     .text.gpio_deinit:0000000000000032 .L0 
-     /tmp/cczUjV95.s:48     .text.gpio_deinit:0000000000000036 .L0 
-     /tmp/cczUjV95.s:50     .text.gpio_deinit:0000000000000038 .L0 
-     /tmp/cczUjV95.s:52     .text.gpio_deinit:0000000000000038 .L0 
-     /tmp/cczUjV95.s:56     .text.gpio_deinit:0000000000000040 .L0 
-     /tmp/cczUjV95.s:58     .text.gpio_deinit:0000000000000040 .L0 
-     /tmp/cczUjV95.s:63     .text.gpio_deinit:0000000000000050 .L0 
-     /tmp/cczUjV95.s:68     .text.gpio_deinit:000000000000005c .L0 
-     /tmp/cczUjV95.s:69     .text.gpio_deinit:000000000000005c .L0 
-     /tmp/cczUjV95.s:70     .text.gpio_deinit:000000000000005e .L0 
-     /tmp/cczUjV95.s:71     .text.gpio_deinit:000000000000005e .L0 
-     /tmp/cczUjV95.s:73     .text.gpio_deinit:000000000000005e .L0 
-     /tmp/cczUjV95.s:75     .text.gpio_deinit:0000000000000062 .L0 
-     /tmp/cczUjV95.s:77     .text.gpio_deinit:0000000000000064 .L0 
-     /tmp/cczUjV95.s:79     .text.gpio_deinit:0000000000000064 .L0 
-     /tmp/cczUjV95.s:83     .text.gpio_deinit:000000000000006c .L0 
-     /tmp/cczUjV95.s:85     .text.gpio_deinit:000000000000006c .L0 
-     /tmp/cczUjV95.s:90     .text.gpio_deinit:0000000000000078 .L0 
-     /tmp/cczUjV95.s:91     .text.gpio_deinit:0000000000000078 .L0 
-     /tmp/cczUjV95.s:92     .text.gpio_deinit:000000000000007a .L0 
-     /tmp/cczUjV95.s:93     .text.gpio_deinit:000000000000007a .L0 
-     /tmp/cczUjV95.s:95     .text.gpio_deinit:000000000000007a .L0 
-     /tmp/cczUjV95.s:97     .text.gpio_deinit:000000000000007e .L0 
-     /tmp/cczUjV95.s:99     .text.gpio_deinit:0000000000000080 .L0 
-     /tmp/cczUjV95.s:101    .text.gpio_deinit:0000000000000080 .L0 
-     /tmp/cczUjV95.s:105    .text.gpio_deinit:0000000000000088 .L0 
-     /tmp/cczUjV95.s:107    .text.gpio_deinit:0000000000000088 .L0 
-     /tmp/cczUjV95.s:112    .text.gpio_deinit:0000000000000094 .L0 
-     /tmp/cczUjV95.s:113    .text.gpio_deinit:0000000000000094 .L0 
-     /tmp/cczUjV95.s:114    .text.gpio_deinit:0000000000000096 .L0 
-     /tmp/cczUjV95.s:115    .text.gpio_deinit:0000000000000096 .L0 
-     /tmp/cczUjV95.s:117    .text.gpio_deinit:0000000000000096 .L0 
-     /tmp/cczUjV95.s:119    .text.gpio_deinit:000000000000009a .L0 
-     /tmp/cczUjV95.s:121    .text.gpio_deinit:000000000000009c .L0 
-     /tmp/cczUjV95.s:123    .text.gpio_deinit:000000000000009c .L0 
-     /tmp/cczUjV95.s:127    .text.gpio_deinit:00000000000000a4 .L0 
-     /tmp/cczUjV95.s:129    .text.gpio_deinit:00000000000000a4 .L0 
-     /tmp/cczUjV95.s:130    .text.gpio_deinit:00000000000000a6 .L0 
-     /tmp/cczUjV95.s:131    .text.gpio_deinit:00000000000000a6 .L0 
-     /tmp/cczUjV95.s:134    .text.gpio_deinit:00000000000000a8 .L0 
-     /tmp/cczUjV95.s:138    .text.gpio_deinit:00000000000000aa .L0 
-     /tmp/cczUjV95.s:140    .text.gpio_deinit:00000000000000aa .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 28
+     /tmp/ccQNFSxm.s:13     .text.gpio_deinit:0000000000000000 gpio_deinit
+     /tmp/ccQNFSxm.s:17     .text.gpio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:19     .text.gpio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:20     .text.gpio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:21     .text.gpio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:23     .text.gpio_deinit:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:25     .text.gpio_deinit:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:27     .text.gpio_deinit:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:36     .text.gpio_deinit:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:41     .text.gpio_deinit:0000000000000030 .L0 
+     /tmp/ccQNFSxm.s:42     .text.gpio_deinit:0000000000000030 .L0 
+     /tmp/ccQNFSxm.s:43     .text.gpio_deinit:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:44     .text.gpio_deinit:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:46     .text.gpio_deinit:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:48     .text.gpio_deinit:0000000000000036 .L0 
+     /tmp/ccQNFSxm.s:50     .text.gpio_deinit:0000000000000038 .L0 
+     /tmp/ccQNFSxm.s:52     .text.gpio_deinit:0000000000000038 .L0 
+     /tmp/ccQNFSxm.s:56     .text.gpio_deinit:0000000000000040 .L0 
+     /tmp/ccQNFSxm.s:58     .text.gpio_deinit:0000000000000040 .L0 
+     /tmp/ccQNFSxm.s:63     .text.gpio_deinit:0000000000000050 .L0 
+     /tmp/ccQNFSxm.s:68     .text.gpio_deinit:000000000000005c .L0 
+     /tmp/ccQNFSxm.s:69     .text.gpio_deinit:000000000000005c .L0 
+     /tmp/ccQNFSxm.s:70     .text.gpio_deinit:000000000000005e .L0 
+     /tmp/ccQNFSxm.s:71     .text.gpio_deinit:000000000000005e .L0 
+     /tmp/ccQNFSxm.s:73     .text.gpio_deinit:000000000000005e .L0 
+     /tmp/ccQNFSxm.s:75     .text.gpio_deinit:0000000000000062 .L0 
+     /tmp/ccQNFSxm.s:77     .text.gpio_deinit:0000000000000064 .L0 
+     /tmp/ccQNFSxm.s:79     .text.gpio_deinit:0000000000000064 .L0 
+     /tmp/ccQNFSxm.s:83     .text.gpio_deinit:000000000000006c .L0 
+     /tmp/ccQNFSxm.s:85     .text.gpio_deinit:000000000000006c .L0 
+     /tmp/ccQNFSxm.s:90     .text.gpio_deinit:0000000000000078 .L0 
+     /tmp/ccQNFSxm.s:91     .text.gpio_deinit:0000000000000078 .L0 
+     /tmp/ccQNFSxm.s:92     .text.gpio_deinit:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:93     .text.gpio_deinit:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:95     .text.gpio_deinit:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:97     .text.gpio_deinit:000000000000007e .L0 
+     /tmp/ccQNFSxm.s:99     .text.gpio_deinit:0000000000000080 .L0 
+     /tmp/ccQNFSxm.s:101    .text.gpio_deinit:0000000000000080 .L0 
+     /tmp/ccQNFSxm.s:105    .text.gpio_deinit:0000000000000088 .L0 
+     /tmp/ccQNFSxm.s:107    .text.gpio_deinit:0000000000000088 .L0 
+     /tmp/ccQNFSxm.s:112    .text.gpio_deinit:0000000000000094 .L0 
+     /tmp/ccQNFSxm.s:113    .text.gpio_deinit:0000000000000094 .L0 
+     /tmp/ccQNFSxm.s:114    .text.gpio_deinit:0000000000000096 .L0 
+     /tmp/ccQNFSxm.s:115    .text.gpio_deinit:0000000000000096 .L0 
+     /tmp/ccQNFSxm.s:117    .text.gpio_deinit:0000000000000096 .L0 
+     /tmp/ccQNFSxm.s:119    .text.gpio_deinit:000000000000009a .L0 
+     /tmp/ccQNFSxm.s:121    .text.gpio_deinit:000000000000009c .L0 
+     /tmp/ccQNFSxm.s:123    .text.gpio_deinit:000000000000009c .L0 
+     /tmp/ccQNFSxm.s:127    .text.gpio_deinit:00000000000000a4 .L0 
+     /tmp/ccQNFSxm.s:129    .text.gpio_deinit:00000000000000a4 .L0 
+     /tmp/ccQNFSxm.s:130    .text.gpio_deinit:00000000000000a6 .L0 
+     /tmp/ccQNFSxm.s:131    .text.gpio_deinit:00000000000000a6 .L0 
+     /tmp/ccQNFSxm.s:134    .text.gpio_deinit:00000000000000a8 .L0 
+     /tmp/ccQNFSxm.s:138    .text.gpio_deinit:00000000000000aa .L0 
+     /tmp/ccQNFSxm.s:140    .text.gpio_deinit:00000000000000aa .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 28
 
 
-     /tmp/cczUjV95.s:145    .text.gpio_deinit:00000000000000b6 .L0 
-     /tmp/cczUjV95.s:146    .text.gpio_deinit:00000000000000b6 .L0 
-     /tmp/cczUjV95.s:147    .text.gpio_deinit:00000000000000b8 .L0 
-     /tmp/cczUjV95.s:149    .text.gpio_deinit:00000000000000b8 .L0 
-     /tmp/cczUjV95.s:151    .text.gpio_deinit:00000000000000bc .L0 
-     /tmp/cczUjV95.s:153    .text.gpio_deinit:00000000000000be .L0 
-     /tmp/cczUjV95.s:155    .text.gpio_deinit:00000000000000be .L0 
-     /tmp/cczUjV95.s:157    .text.gpio_deinit:00000000000000c6 .L0 
-     /tmp/cczUjV95.s:164    .text.gpio_afio_deinit:0000000000000000 gpio_afio_deinit
-     /tmp/cczUjV95.s:167    .text.gpio_afio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:168    .text.gpio_afio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:169    .text.gpio_afio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:170    .text.gpio_afio_deinit:0000000000000000 .L0 
-     /tmp/cczUjV95.s:172    .text.gpio_afio_deinit:0000000000000002 .L0 
-     /tmp/cczUjV95.s:174    .text.gpio_afio_deinit:0000000000000002 .L0 
-     /tmp/cczUjV95.s:176    .text.gpio_afio_deinit:0000000000000006 .L0 
-     /tmp/cczUjV95.s:177    .text.gpio_afio_deinit:0000000000000008 .L0 
-     /tmp/cczUjV95.s:179    .text.gpio_afio_deinit:0000000000000008 .L0 
-     /tmp/cczUjV95.s:182    .text.gpio_afio_deinit:0000000000000010 .L0 
-     /tmp/cczUjV95.s:183    .text.gpio_afio_deinit:0000000000000010 .L0 
-     /tmp/cczUjV95.s:184    .text.gpio_afio_deinit:0000000000000012 .L0 
-     /tmp/cczUjV95.s:186    .text.gpio_afio_deinit:0000000000000012 .L0 
-     /tmp/cczUjV95.s:188    .text.gpio_afio_deinit:0000000000000016 .L0 
-     /tmp/cczUjV95.s:190    .text.gpio_afio_deinit:0000000000000018 .L0 
-     /tmp/cczUjV95.s:192    .text.gpio_afio_deinit:0000000000000018 .L0 
-     /tmp/cczUjV95.s:194    .text.gpio_afio_deinit:0000000000000020 .L0 
-     /tmp/cczUjV95.s:201    .text.gpio_init:0000000000000000 gpio_init
-     /tmp/cczUjV95.s:204    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:206    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:207    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:208    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:209    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:210    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:211    .text.gpio_init:0000000000000000 .L0 
-     /tmp/cczUjV95.s:213    .text.gpio_init:0000000000000004 .L0 
-     /tmp/cczUjV95.s:216    .text.gpio_init:0000000000000008 .L0 
-     /tmp/cczUjV95.s:217    .text.gpio_init:0000000000000008 .L0 
-     /tmp/cczUjV95.s:219    .text.gpio_init:000000000000000a .L0 
-     /tmp/cczUjV95.s:220    .text.gpio_init:000000000000000a .L0 
-     /tmp/cczUjV95.s:224    .text.gpio_init:000000000000000e .L0 
-     /tmp/cczUjV95.s:225    .text.gpio_init:000000000000000e .L0 
-     /tmp/cczUjV95.s:227    .text.gpio_init:0000000000000010 .L0 
-     /tmp/cczUjV95.s:229    .text.gpio_init:0000000000000012 .L0 
-     /tmp/cczUjV95.s:231    .text.gpio_init:0000000000000014 .L0 
-     /tmp/cczUjV95.s:233    .text.gpio_init:0000000000000018 .L0 
-     /tmp/cczUjV95.s:235    .text.gpio_init:000000000000001c .L0 
-     /tmp/cczUjV95.s:239    .text.gpio_init:000000000000001e .L0 
-     /tmp/cczUjV95.s:240    .text.gpio_init:000000000000001e .L0 
-     /tmp/cczUjV95.s:242    .text.gpio_init:0000000000000022 .L0 
-     /tmp/cczUjV95.s:244    .text.gpio_init:0000000000000026 .L0 
-     /tmp/cczUjV95.s:246    .text.gpio_init:000000000000002a .L0 
-     /tmp/cczUjV95.s:248    .text.gpio_init:000000000000002c .L0 
-     /tmp/cczUjV95.s:250    .text.gpio_init:0000000000000030 .L0 
-     /tmp/cczUjV95.s:252    .text.gpio_init:0000000000000034 .L0 
-     /tmp/cczUjV95.s:254    .text.gpio_init:0000000000000036 .L0 
-     /tmp/cczUjV95.s:255    .text.gpio_init:0000000000000036 .L0 
-     /tmp/cczUjV95.s:258    .text.gpio_init:000000000000003a .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 29
+     /tmp/ccQNFSxm.s:145    .text.gpio_deinit:00000000000000b6 .L0 
+     /tmp/ccQNFSxm.s:146    .text.gpio_deinit:00000000000000b6 .L0 
+     /tmp/ccQNFSxm.s:147    .text.gpio_deinit:00000000000000b8 .L0 
+     /tmp/ccQNFSxm.s:149    .text.gpio_deinit:00000000000000b8 .L0 
+     /tmp/ccQNFSxm.s:151    .text.gpio_deinit:00000000000000bc .L0 
+     /tmp/ccQNFSxm.s:153    .text.gpio_deinit:00000000000000be .L0 
+     /tmp/ccQNFSxm.s:155    .text.gpio_deinit:00000000000000be .L0 
+     /tmp/ccQNFSxm.s:157    .text.gpio_deinit:00000000000000c6 .L0 
+     /tmp/ccQNFSxm.s:164    .text.gpio_afio_deinit:0000000000000000 gpio_afio_deinit
+     /tmp/ccQNFSxm.s:167    .text.gpio_afio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:168    .text.gpio_afio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:169    .text.gpio_afio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:170    .text.gpio_afio_deinit:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:172    .text.gpio_afio_deinit:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:174    .text.gpio_afio_deinit:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:176    .text.gpio_afio_deinit:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:177    .text.gpio_afio_deinit:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:179    .text.gpio_afio_deinit:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:182    .text.gpio_afio_deinit:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:183    .text.gpio_afio_deinit:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:184    .text.gpio_afio_deinit:0000000000000012 .L0 
+     /tmp/ccQNFSxm.s:186    .text.gpio_afio_deinit:0000000000000012 .L0 
+     /tmp/ccQNFSxm.s:188    .text.gpio_afio_deinit:0000000000000016 .L0 
+     /tmp/ccQNFSxm.s:190    .text.gpio_afio_deinit:0000000000000018 .L0 
+     /tmp/ccQNFSxm.s:192    .text.gpio_afio_deinit:0000000000000018 .L0 
+     /tmp/ccQNFSxm.s:194    .text.gpio_afio_deinit:0000000000000020 .L0 
+     /tmp/ccQNFSxm.s:201    .text.gpio_init:0000000000000000 gpio_init
+     /tmp/ccQNFSxm.s:204    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:206    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:207    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:208    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:209    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:210    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:211    .text.gpio_init:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:213    .text.gpio_init:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:216    .text.gpio_init:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:217    .text.gpio_init:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:219    .text.gpio_init:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:220    .text.gpio_init:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:224    .text.gpio_init:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:225    .text.gpio_init:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:227    .text.gpio_init:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:229    .text.gpio_init:0000000000000012 .L0 
+     /tmp/ccQNFSxm.s:231    .text.gpio_init:0000000000000014 .L0 
+     /tmp/ccQNFSxm.s:233    .text.gpio_init:0000000000000018 .L0 
+     /tmp/ccQNFSxm.s:235    .text.gpio_init:000000000000001c .L0 
+     /tmp/ccQNFSxm.s:239    .text.gpio_init:000000000000001e .L0 
+     /tmp/ccQNFSxm.s:240    .text.gpio_init:000000000000001e .L0 
+     /tmp/ccQNFSxm.s:242    .text.gpio_init:0000000000000022 .L0 
+     /tmp/ccQNFSxm.s:244    .text.gpio_init:0000000000000026 .L0 
+     /tmp/ccQNFSxm.s:246    .text.gpio_init:000000000000002a .L0 
+     /tmp/ccQNFSxm.s:248    .text.gpio_init:000000000000002c .L0 
+     /tmp/ccQNFSxm.s:250    .text.gpio_init:0000000000000030 .L0 
+     /tmp/ccQNFSxm.s:252    .text.gpio_init:0000000000000034 .L0 
+     /tmp/ccQNFSxm.s:254    .text.gpio_init:0000000000000036 .L0 
+     /tmp/ccQNFSxm.s:255    .text.gpio_init:0000000000000036 .L0 
+     /tmp/ccQNFSxm.s:258    .text.gpio_init:000000000000003a .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 29
 
 
-     /tmp/cczUjV95.s:259    .text.gpio_init:000000000000003a .L0 
-     /tmp/cczUjV95.s:262    .text.gpio_init:000000000000003e .L0 
-     /tmp/cczUjV95.s:263    .text.gpio_init:000000000000003e .L0 
-     /tmp/cczUjV95.s:266    .text.gpio_init:0000000000000042 .L0 
-     /tmp/cczUjV95.s:267    .text.gpio_init:0000000000000042 .L0 
-     /tmp/cczUjV95.s:269    .text.gpio_init:0000000000000046 .L0 
-     /tmp/cczUjV95.s:272    .text.gpio_init:000000000000004a .L0 
-     /tmp/cczUjV95.s:273    .text.gpio_init:000000000000004a .L0 
-     /tmp/cczUjV95.s:279    .text.gpio_init:000000000000004e .L0 
-     /tmp/cczUjV95.s:281    .text.gpio_init:0000000000000052 .L0 
-     /tmp/cczUjV95.s:283    .text.gpio_init:0000000000000054 .L0 
-     /tmp/cczUjV95.s:285    .text.gpio_init:0000000000000056 .L0 
-     /tmp/cczUjV95.s:287    .text.gpio_init:000000000000005a .L0 
-     /tmp/cczUjV95.s:289    .text.gpio_init:000000000000005e .L0 
-     /tmp/cczUjV95.s:293    .text.gpio_init:0000000000000060 .L0 
-     /tmp/cczUjV95.s:294    .text.gpio_init:0000000000000060 .L0 
-     /tmp/cczUjV95.s:295    .text.gpio_init:0000000000000060 .L0 
-     /tmp/cczUjV95.s:298    .text.gpio_init:0000000000000066 .L0 
-     /tmp/cczUjV95.s:300    .text.gpio_init:000000000000006a .L0 
-     /tmp/cczUjV95.s:302    .text.gpio_init:000000000000006e .L0 
-     /tmp/cczUjV95.s:304    .text.gpio_init:0000000000000070 .L0 
-     /tmp/cczUjV95.s:306    .text.gpio_init:0000000000000074 .L0 
-     /tmp/cczUjV95.s:308    .text.gpio_init:0000000000000078 .L0 
-     /tmp/cczUjV95.s:310    .text.gpio_init:000000000000007a .L0 
-     /tmp/cczUjV95.s:311    .text.gpio_init:000000000000007a .L0 
-     /tmp/cczUjV95.s:314    .text.gpio_init:000000000000007e .L0 
-     /tmp/cczUjV95.s:315    .text.gpio_init:000000000000007e .L0 
-     /tmp/cczUjV95.s:318    .text.gpio_init:0000000000000082 .L0 
-     /tmp/cczUjV95.s:319    .text.gpio_init:0000000000000082 .L0 
-     /tmp/cczUjV95.s:322    .text.gpio_init:0000000000000086 .L0 
-     /tmp/cczUjV95.s:323    .text.gpio_init:0000000000000086 .L0 
-     /tmp/cczUjV95.s:325    .text.gpio_init:000000000000008a .L0 
-     /tmp/cczUjV95.s:328    .text.gpio_init:000000000000008e .L0 
-     /tmp/cczUjV95.s:329    .text.gpio_init:000000000000008e .L0 
-     /tmp/cczUjV95.s:335    .text.gpio_init:0000000000000092 .L0 
-     /tmp/cczUjV95.s:337    .text.gpio_init:0000000000000096 .L0 
-     /tmp/cczUjV95.s:341    .text.gpio_init:0000000000000098 .L0 
-     /tmp/cczUjV95.s:342    .text.gpio_init:0000000000000098 .L0 
-     /tmp/cczUjV95.s:347    .text.gpio_init:000000000000009c .L0 
-     /tmp/cczUjV95.s:348    .text.gpio_init:000000000000009c .L0 
-     /tmp/cczUjV95.s:353    .text.gpio_init:00000000000000a0 .L0 
-     /tmp/cczUjV95.s:354    .text.gpio_init:00000000000000a0 .L0 
-     /tmp/cczUjV95.s:359    .text.gpio_init:00000000000000a4 .L0 
-     /tmp/cczUjV95.s:360    .text.gpio_init:00000000000000a4 .L0 
-     /tmp/cczUjV95.s:362    .text.gpio_init:00000000000000a8 .L0 
-     /tmp/cczUjV95.s:369    .text.gpio_bit_set:0000000000000000 gpio_bit_set
-     /tmp/cczUjV95.s:372    .text.gpio_bit_set:0000000000000000 .L0 
-     /tmp/cczUjV95.s:374    .text.gpio_bit_set:0000000000000000 .L0 
-     /tmp/cczUjV95.s:375    .text.gpio_bit_set:0000000000000000 .L0 
-     /tmp/cczUjV95.s:376    .text.gpio_bit_set:0000000000000000 .L0 
-     /tmp/cczUjV95.s:378    .text.gpio_bit_set:0000000000000002 .L0 
-     /tmp/cczUjV95.s:379    .text.gpio_bit_set:0000000000000004 .L0 
-     /tmp/cczUjV95.s:386    .text.gpio_bit_reset:0000000000000000 gpio_bit_reset
-     /tmp/cczUjV95.s:389    .text.gpio_bit_reset:0000000000000000 .L0 
-     /tmp/cczUjV95.s:391    .text.gpio_bit_reset:0000000000000000 .L0 
-     /tmp/cczUjV95.s:392    .text.gpio_bit_reset:0000000000000000 .L0 
-     /tmp/cczUjV95.s:393    .text.gpio_bit_reset:0000000000000000 .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 30
+     /tmp/ccQNFSxm.s:259    .text.gpio_init:000000000000003a .L0 
+     /tmp/ccQNFSxm.s:262    .text.gpio_init:000000000000003e .L0 
+     /tmp/ccQNFSxm.s:263    .text.gpio_init:000000000000003e .L0 
+     /tmp/ccQNFSxm.s:266    .text.gpio_init:0000000000000042 .L0 
+     /tmp/ccQNFSxm.s:267    .text.gpio_init:0000000000000042 .L0 
+     /tmp/ccQNFSxm.s:269    .text.gpio_init:0000000000000046 .L0 
+     /tmp/ccQNFSxm.s:272    .text.gpio_init:000000000000004a .L0 
+     /tmp/ccQNFSxm.s:273    .text.gpio_init:000000000000004a .L0 
+     /tmp/ccQNFSxm.s:279    .text.gpio_init:000000000000004e .L0 
+     /tmp/ccQNFSxm.s:281    .text.gpio_init:0000000000000052 .L0 
+     /tmp/ccQNFSxm.s:283    .text.gpio_init:0000000000000054 .L0 
+     /tmp/ccQNFSxm.s:285    .text.gpio_init:0000000000000056 .L0 
+     /tmp/ccQNFSxm.s:287    .text.gpio_init:000000000000005a .L0 
+     /tmp/ccQNFSxm.s:289    .text.gpio_init:000000000000005e .L0 
+     /tmp/ccQNFSxm.s:293    .text.gpio_init:0000000000000060 .L0 
+     /tmp/ccQNFSxm.s:294    .text.gpio_init:0000000000000060 .L0 
+     /tmp/ccQNFSxm.s:295    .text.gpio_init:0000000000000060 .L0 
+     /tmp/ccQNFSxm.s:298    .text.gpio_init:0000000000000066 .L0 
+     /tmp/ccQNFSxm.s:300    .text.gpio_init:000000000000006a .L0 
+     /tmp/ccQNFSxm.s:302    .text.gpio_init:000000000000006e .L0 
+     /tmp/ccQNFSxm.s:304    .text.gpio_init:0000000000000070 .L0 
+     /tmp/ccQNFSxm.s:306    .text.gpio_init:0000000000000074 .L0 
+     /tmp/ccQNFSxm.s:308    .text.gpio_init:0000000000000078 .L0 
+     /tmp/ccQNFSxm.s:310    .text.gpio_init:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:311    .text.gpio_init:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:314    .text.gpio_init:000000000000007e .L0 
+     /tmp/ccQNFSxm.s:315    .text.gpio_init:000000000000007e .L0 
+     /tmp/ccQNFSxm.s:318    .text.gpio_init:0000000000000082 .L0 
+     /tmp/ccQNFSxm.s:319    .text.gpio_init:0000000000000082 .L0 
+     /tmp/ccQNFSxm.s:322    .text.gpio_init:0000000000000086 .L0 
+     /tmp/ccQNFSxm.s:323    .text.gpio_init:0000000000000086 .L0 
+     /tmp/ccQNFSxm.s:325    .text.gpio_init:000000000000008a .L0 
+     /tmp/ccQNFSxm.s:328    .text.gpio_init:000000000000008e .L0 
+     /tmp/ccQNFSxm.s:329    .text.gpio_init:000000000000008e .L0 
+     /tmp/ccQNFSxm.s:335    .text.gpio_init:0000000000000092 .L0 
+     /tmp/ccQNFSxm.s:337    .text.gpio_init:0000000000000096 .L0 
+     /tmp/ccQNFSxm.s:341    .text.gpio_init:0000000000000098 .L0 
+     /tmp/ccQNFSxm.s:342    .text.gpio_init:0000000000000098 .L0 
+     /tmp/ccQNFSxm.s:347    .text.gpio_init:000000000000009c .L0 
+     /tmp/ccQNFSxm.s:348    .text.gpio_init:000000000000009c .L0 
+     /tmp/ccQNFSxm.s:353    .text.gpio_init:00000000000000a0 .L0 
+     /tmp/ccQNFSxm.s:354    .text.gpio_init:00000000000000a0 .L0 
+     /tmp/ccQNFSxm.s:359    .text.gpio_init:00000000000000a4 .L0 
+     /tmp/ccQNFSxm.s:360    .text.gpio_init:00000000000000a4 .L0 
+     /tmp/ccQNFSxm.s:362    .text.gpio_init:00000000000000a8 .L0 
+     /tmp/ccQNFSxm.s:369    .text.gpio_bit_set:0000000000000000 gpio_bit_set
+     /tmp/ccQNFSxm.s:372    .text.gpio_bit_set:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:374    .text.gpio_bit_set:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:375    .text.gpio_bit_set:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:376    .text.gpio_bit_set:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:378    .text.gpio_bit_set:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:379    .text.gpio_bit_set:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:386    .text.gpio_bit_reset:0000000000000000 gpio_bit_reset
+     /tmp/ccQNFSxm.s:389    .text.gpio_bit_reset:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:391    .text.gpio_bit_reset:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:392    .text.gpio_bit_reset:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:393    .text.gpio_bit_reset:0000000000000000 .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 30
 
 
-     /tmp/cczUjV95.s:395    .text.gpio_bit_reset:0000000000000002 .L0 
-     /tmp/cczUjV95.s:396    .text.gpio_bit_reset:0000000000000004 .L0 
-     /tmp/cczUjV95.s:403    .text.gpio_bit_write:0000000000000000 gpio_bit_write
-     /tmp/cczUjV95.s:406    .text.gpio_bit_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:408    .text.gpio_bit_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:409    .text.gpio_bit_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:410    .text.gpio_bit_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:412    .text.gpio_bit_write:0000000000000002 .L0 
-     /tmp/cczUjV95.s:413    .text.gpio_bit_write:0000000000000002 .L0 
-     /tmp/cczUjV95.s:417    .text.gpio_bit_write:0000000000000006 .L0 
-     /tmp/cczUjV95.s:418    .text.gpio_bit_write:0000000000000006 .L0 
-     /tmp/cczUjV95.s:420    .text.gpio_bit_write:0000000000000008 .L0 
-     /tmp/cczUjV95.s:421    .text.gpio_bit_write:000000000000000a .L0 
-     /tmp/cczUjV95.s:428    .text.gpio_port_write:0000000000000000 gpio_port_write
-     /tmp/cczUjV95.s:431    .text.gpio_port_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:433    .text.gpio_port_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:434    .text.gpio_port_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:435    .text.gpio_port_write:0000000000000000 .L0 
-     /tmp/cczUjV95.s:437    .text.gpio_port_write:0000000000000002 .L0 
-     /tmp/cczUjV95.s:438    .text.gpio_port_write:0000000000000004 .L0 
-     /tmp/cczUjV95.s:445    .text.gpio_input_bit_get:0000000000000000 gpio_input_bit_get
-     /tmp/cczUjV95.s:448    .text.gpio_input_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:450    .text.gpio_input_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:451    .text.gpio_input_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:452    .text.gpio_input_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:455    .text.gpio_input_bit_get:0000000000000002 .L0 
-     /tmp/cczUjV95.s:457    .text.gpio_input_bit_get:0000000000000004 .L0 
-     /tmp/cczUjV95.s:459    .text.gpio_input_bit_get:000000000000000a .L0 
-     /tmp/cczUjV95.s:466    .text.gpio_input_port_get:0000000000000000 gpio_input_port_get
-     /tmp/cczUjV95.s:469    .text.gpio_input_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:471    .text.gpio_input_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:472    .text.gpio_input_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:473    .text.gpio_input_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:476    .text.gpio_input_port_get:0000000000000002 .L0 
-     /tmp/cczUjV95.s:479    .text.gpio_input_port_get:0000000000000008 .L0 
-     /tmp/cczUjV95.s:486    .text.gpio_output_bit_get:0000000000000000 gpio_output_bit_get
-     /tmp/cczUjV95.s:489    .text.gpio_output_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:491    .text.gpio_output_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:492    .text.gpio_output_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:493    .text.gpio_output_bit_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:496    .text.gpio_output_bit_get:0000000000000002 .L0 
-     /tmp/cczUjV95.s:498    .text.gpio_output_bit_get:0000000000000004 .L0 
-     /tmp/cczUjV95.s:500    .text.gpio_output_bit_get:000000000000000a .L0 
-     /tmp/cczUjV95.s:507    .text.gpio_output_port_get:0000000000000000 gpio_output_port_get
-     /tmp/cczUjV95.s:510    .text.gpio_output_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:512    .text.gpio_output_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:513    .text.gpio_output_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:514    .text.gpio_output_port_get:0000000000000000 .L0 
-     /tmp/cczUjV95.s:517    .text.gpio_output_port_get:0000000000000002 .L0 
-     /tmp/cczUjV95.s:520    .text.gpio_output_port_get:0000000000000008 .L0 
-     /tmp/cczUjV95.s:527    .text.gpio_pin_remap_config:0000000000000000 gpio_pin_remap_config
-     /tmp/cczUjV95.s:530    .text.gpio_pin_remap_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:532    .text.gpio_pin_remap_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:533    .text.gpio_pin_remap_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:534    .text.gpio_pin_remap_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:535    .text.gpio_pin_remap_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:537    .text.gpio_pin_remap_config:0000000000000004 .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 31
+     /tmp/ccQNFSxm.s:395    .text.gpio_bit_reset:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:396    .text.gpio_bit_reset:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:403    .text.gpio_bit_write:0000000000000000 gpio_bit_write
+     /tmp/ccQNFSxm.s:406    .text.gpio_bit_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:408    .text.gpio_bit_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:409    .text.gpio_bit_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:410    .text.gpio_bit_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:412    .text.gpio_bit_write:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:413    .text.gpio_bit_write:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:417    .text.gpio_bit_write:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:418    .text.gpio_bit_write:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:420    .text.gpio_bit_write:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:421    .text.gpio_bit_write:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:428    .text.gpio_port_write:0000000000000000 gpio_port_write
+     /tmp/ccQNFSxm.s:431    .text.gpio_port_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:433    .text.gpio_port_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:434    .text.gpio_port_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:435    .text.gpio_port_write:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:437    .text.gpio_port_write:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:438    .text.gpio_port_write:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:445    .text.gpio_input_bit_get:0000000000000000 gpio_input_bit_get
+     /tmp/ccQNFSxm.s:448    .text.gpio_input_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:450    .text.gpio_input_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:451    .text.gpio_input_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:452    .text.gpio_input_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:455    .text.gpio_input_bit_get:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:457    .text.gpio_input_bit_get:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:459    .text.gpio_input_bit_get:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:466    .text.gpio_input_port_get:0000000000000000 gpio_input_port_get
+     /tmp/ccQNFSxm.s:469    .text.gpio_input_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:471    .text.gpio_input_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:472    .text.gpio_input_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:473    .text.gpio_input_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:476    .text.gpio_input_port_get:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:479    .text.gpio_input_port_get:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:486    .text.gpio_output_bit_get:0000000000000000 gpio_output_bit_get
+     /tmp/ccQNFSxm.s:489    .text.gpio_output_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:491    .text.gpio_output_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:492    .text.gpio_output_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:493    .text.gpio_output_bit_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:496    .text.gpio_output_bit_get:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:498    .text.gpio_output_bit_get:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:500    .text.gpio_output_bit_get:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:507    .text.gpio_output_port_get:0000000000000000 gpio_output_port_get
+     /tmp/ccQNFSxm.s:510    .text.gpio_output_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:512    .text.gpio_output_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:513    .text.gpio_output_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:514    .text.gpio_output_port_get:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:517    .text.gpio_output_port_get:0000000000000002 .L0 
+     /tmp/ccQNFSxm.s:520    .text.gpio_output_port_get:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:527    .text.gpio_pin_remap_config:0000000000000000 gpio_pin_remap_config
+     /tmp/ccQNFSxm.s:530    .text.gpio_pin_remap_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:532    .text.gpio_pin_remap_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:533    .text.gpio_pin_remap_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:534    .text.gpio_pin_remap_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:535    .text.gpio_pin_remap_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:537    .text.gpio_pin_remap_config:0000000000000004 .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 31
 
 
-     /tmp/cczUjV95.s:539    .text.gpio_pin_remap_config:0000000000000008 .L0 
-     /tmp/cczUjV95.s:540    .text.gpio_pin_remap_config:0000000000000008 .L0 
-     /tmp/cczUjV95.s:542    .text.gpio_pin_remap_config:000000000000000c .L0 
-     /tmp/cczUjV95.s:545    .text.gpio_pin_remap_config:000000000000000e .L0 
-     /tmp/cczUjV95.s:546    .text.gpio_pin_remap_config:000000000000000e .L0 
-     /tmp/cczUjV95.s:547    .text.gpio_pin_remap_config:000000000000000e .L0 
-     /tmp/cczUjV95.s:549    .text.gpio_pin_remap_config:0000000000000012 .L0 
-     /tmp/cczUjV95.s:551    .text.gpio_pin_remap_config:0000000000000016 .L0 
-     /tmp/cczUjV95.s:554    .text.gpio_pin_remap_config:0000000000000018 .L0 
-     /tmp/cczUjV95.s:555    .text.gpio_pin_remap_config:0000000000000018 .L0 
-     /tmp/cczUjV95.s:559    .text.gpio_pin_remap_config:000000000000001c .L0 
-     /tmp/cczUjV95.s:560    .text.gpio_pin_remap_config:000000000000001c .L0 
-     /tmp/cczUjV95.s:564    .text.gpio_pin_remap_config:0000000000000024 .L0 
-     /tmp/cczUjV95.s:565    .text.gpio_pin_remap_config:0000000000000024 .L0 
-     /tmp/cczUjV95.s:566    .text.gpio_pin_remap_config:0000000000000024 .L0 
-     /tmp/cczUjV95.s:568    .text.gpio_pin_remap_config:0000000000000028 .L0 
-     /tmp/cczUjV95.s:570    .text.gpio_pin_remap_config:000000000000002c .L0 
-     /tmp/cczUjV95.s:573    .text.gpio_pin_remap_config:0000000000000032 .L0 
-     /tmp/cczUjV95.s:575    .text.gpio_pin_remap_config:0000000000000036 .L0 
-     /tmp/cczUjV95.s:578    .text.gpio_pin_remap_config:0000000000000038 .L0 
-     /tmp/cczUjV95.s:579    .text.gpio_pin_remap_config:0000000000000038 .L0 
-     /tmp/cczUjV95.s:584    .text.gpio_pin_remap_config:000000000000003e .L0 
-     /tmp/cczUjV95.s:585    .text.gpio_pin_remap_config:000000000000003e .L0 
-     /tmp/cczUjV95.s:587    .text.gpio_pin_remap_config:0000000000000040 .L0 
-     /tmp/cczUjV95.s:588    .text.gpio_pin_remap_config:0000000000000040 .L0 
-     /tmp/cczUjV95.s:590    .text.gpio_pin_remap_config:0000000000000044 .L0 
-     /tmp/cczUjV95.s:592    .text.gpio_pin_remap_config:0000000000000046 .L0 
-     /tmp/cczUjV95.s:595    .text.gpio_pin_remap_config:000000000000004a .L0 
-     /tmp/cczUjV95.s:599    .text.gpio_pin_remap_config:000000000000004c .L0 
-     /tmp/cczUjV95.s:600    .text.gpio_pin_remap_config:000000000000004c .L0 
-     /tmp/cczUjV95.s:602    .text.gpio_pin_remap_config:0000000000000050 .L0 
-     /tmp/cczUjV95.s:604    .text.gpio_pin_remap_config:0000000000000054 .L0 
-     /tmp/cczUjV95.s:605    .text.gpio_pin_remap_config:0000000000000054 .L0 
-     /tmp/cczUjV95.s:607    .text.gpio_pin_remap_config:0000000000000056 .L0 
-     /tmp/cczUjV95.s:611    .text.gpio_pin_remap_config:0000000000000058 .L0 
-     /tmp/cczUjV95.s:612    .text.gpio_pin_remap_config:0000000000000058 .L0 
-     /tmp/cczUjV95.s:614    .text.gpio_pin_remap_config:000000000000005c .L0 
-     /tmp/cczUjV95.s:616    .text.gpio_pin_remap_config:000000000000005e .L0 
-     /tmp/cczUjV95.s:618    .text.gpio_pin_remap_config:0000000000000062 .L0 
-     /tmp/cczUjV95.s:620    .text.gpio_pin_remap_config:0000000000000066 .L0 
-     /tmp/cczUjV95.s:623    .text.gpio_pin_remap_config:0000000000000068 .L0 
-     /tmp/cczUjV95.s:624    .text.gpio_pin_remap_config:0000000000000068 .L0 
-     /tmp/cczUjV95.s:631    .text.gpio_pin_remap_config:0000000000000070 .L0 
-     /tmp/cczUjV95.s:632    .text.gpio_pin_remap_config:0000000000000070 .L0 
-     /tmp/cczUjV95.s:637    .text.gpio_pin_remap_config:0000000000000074 .L0 
-     /tmp/cczUjV95.s:638    .text.gpio_pin_remap_config:0000000000000074 .L0 
-     /tmp/cczUjV95.s:640    .text.gpio_pin_remap_config:0000000000000078 .L0 
-     /tmp/cczUjV95.s:643    .text.gpio_pin_remap_config:000000000000007a .L0 
-     /tmp/cczUjV95.s:644    .text.gpio_pin_remap_config:000000000000007a .L0 
-     /tmp/cczUjV95.s:645    .text.gpio_pin_remap_config:000000000000007a .L0 
-     /tmp/cczUjV95.s:647    .text.gpio_pin_remap_config:000000000000007e .L0 
-     /tmp/cczUjV95.s:649    .text.gpio_pin_remap_config:0000000000000082 .L0 
-     /tmp/cczUjV95.s:652    .text.gpio_pin_remap_config:0000000000000084 .L0 
-     /tmp/cczUjV95.s:653    .text.gpio_pin_remap_config:0000000000000084 .L0 
-     /tmp/cczUjV95.s:657    .text.gpio_pin_remap_config:0000000000000088 .L0 
-     /tmp/cczUjV95.s:658    .text.gpio_pin_remap_config:0000000000000088 .L0 
-     /tmp/cczUjV95.s:661    .text.gpio_pin_remap_config:0000000000000090 .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 32
+     /tmp/ccQNFSxm.s:539    .text.gpio_pin_remap_config:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:540    .text.gpio_pin_remap_config:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:542    .text.gpio_pin_remap_config:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:545    .text.gpio_pin_remap_config:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:546    .text.gpio_pin_remap_config:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:547    .text.gpio_pin_remap_config:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:549    .text.gpio_pin_remap_config:0000000000000012 .L0 
+     /tmp/ccQNFSxm.s:551    .text.gpio_pin_remap_config:0000000000000016 .L0 
+     /tmp/ccQNFSxm.s:554    .text.gpio_pin_remap_config:0000000000000018 .L0 
+     /tmp/ccQNFSxm.s:555    .text.gpio_pin_remap_config:0000000000000018 .L0 
+     /tmp/ccQNFSxm.s:559    .text.gpio_pin_remap_config:000000000000001c .L0 
+     /tmp/ccQNFSxm.s:560    .text.gpio_pin_remap_config:000000000000001c .L0 
+     /tmp/ccQNFSxm.s:564    .text.gpio_pin_remap_config:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:565    .text.gpio_pin_remap_config:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:566    .text.gpio_pin_remap_config:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:568    .text.gpio_pin_remap_config:0000000000000028 .L0 
+     /tmp/ccQNFSxm.s:570    .text.gpio_pin_remap_config:000000000000002c .L0 
+     /tmp/ccQNFSxm.s:573    .text.gpio_pin_remap_config:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:575    .text.gpio_pin_remap_config:0000000000000036 .L0 
+     /tmp/ccQNFSxm.s:578    .text.gpio_pin_remap_config:0000000000000038 .L0 
+     /tmp/ccQNFSxm.s:579    .text.gpio_pin_remap_config:0000000000000038 .L0 
+     /tmp/ccQNFSxm.s:584    .text.gpio_pin_remap_config:000000000000003e .L0 
+     /tmp/ccQNFSxm.s:585    .text.gpio_pin_remap_config:000000000000003e .L0 
+     /tmp/ccQNFSxm.s:587    .text.gpio_pin_remap_config:0000000000000040 .L0 
+     /tmp/ccQNFSxm.s:588    .text.gpio_pin_remap_config:0000000000000040 .L0 
+     /tmp/ccQNFSxm.s:590    .text.gpio_pin_remap_config:0000000000000044 .L0 
+     /tmp/ccQNFSxm.s:592    .text.gpio_pin_remap_config:0000000000000046 .L0 
+     /tmp/ccQNFSxm.s:595    .text.gpio_pin_remap_config:000000000000004a .L0 
+     /tmp/ccQNFSxm.s:599    .text.gpio_pin_remap_config:000000000000004c .L0 
+     /tmp/ccQNFSxm.s:600    .text.gpio_pin_remap_config:000000000000004c .L0 
+     /tmp/ccQNFSxm.s:602    .text.gpio_pin_remap_config:0000000000000050 .L0 
+     /tmp/ccQNFSxm.s:604    .text.gpio_pin_remap_config:0000000000000054 .L0 
+     /tmp/ccQNFSxm.s:605    .text.gpio_pin_remap_config:0000000000000054 .L0 
+     /tmp/ccQNFSxm.s:607    .text.gpio_pin_remap_config:0000000000000056 .L0 
+     /tmp/ccQNFSxm.s:611    .text.gpio_pin_remap_config:0000000000000058 .L0 
+     /tmp/ccQNFSxm.s:612    .text.gpio_pin_remap_config:0000000000000058 .L0 
+     /tmp/ccQNFSxm.s:614    .text.gpio_pin_remap_config:000000000000005c .L0 
+     /tmp/ccQNFSxm.s:616    .text.gpio_pin_remap_config:000000000000005e .L0 
+     /tmp/ccQNFSxm.s:618    .text.gpio_pin_remap_config:0000000000000062 .L0 
+     /tmp/ccQNFSxm.s:620    .text.gpio_pin_remap_config:0000000000000066 .L0 
+     /tmp/ccQNFSxm.s:623    .text.gpio_pin_remap_config:0000000000000068 .L0 
+     /tmp/ccQNFSxm.s:624    .text.gpio_pin_remap_config:0000000000000068 .L0 
+     /tmp/ccQNFSxm.s:631    .text.gpio_pin_remap_config:0000000000000070 .L0 
+     /tmp/ccQNFSxm.s:632    .text.gpio_pin_remap_config:0000000000000070 .L0 
+     /tmp/ccQNFSxm.s:637    .text.gpio_pin_remap_config:0000000000000074 .L0 
+     /tmp/ccQNFSxm.s:638    .text.gpio_pin_remap_config:0000000000000074 .L0 
+     /tmp/ccQNFSxm.s:640    .text.gpio_pin_remap_config:0000000000000078 .L0 
+     /tmp/ccQNFSxm.s:643    .text.gpio_pin_remap_config:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:644    .text.gpio_pin_remap_config:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:645    .text.gpio_pin_remap_config:000000000000007a .L0 
+     /tmp/ccQNFSxm.s:647    .text.gpio_pin_remap_config:000000000000007e .L0 
+     /tmp/ccQNFSxm.s:649    .text.gpio_pin_remap_config:0000000000000082 .L0 
+     /tmp/ccQNFSxm.s:652    .text.gpio_pin_remap_config:0000000000000084 .L0 
+     /tmp/ccQNFSxm.s:653    .text.gpio_pin_remap_config:0000000000000084 .L0 
+     /tmp/ccQNFSxm.s:657    .text.gpio_pin_remap_config:0000000000000088 .L0 
+     /tmp/ccQNFSxm.s:658    .text.gpio_pin_remap_config:0000000000000088 .L0 
+     /tmp/ccQNFSxm.s:661    .text.gpio_pin_remap_config:0000000000000090 .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 32
 
 
-     /tmp/cczUjV95.s:664    .text.gpio_pin_remap_config:0000000000000096 .L0 
-     /tmp/cczUjV95.s:666    .text.gpio_pin_remap_config:0000000000000098 .L0 
-     /tmp/cczUjV95.s:669    .text.gpio_pin_remap_config:000000000000009a .L0 
-     /tmp/cczUjV95.s:670    .text.gpio_pin_remap_config:000000000000009a .L0 
-     /tmp/cczUjV95.s:672    .text.gpio_pin_remap_config:00000000000000a0 .L0 
-     /tmp/cczUjV95.s:679    .text.gpio_exti_source_select:0000000000000000 gpio_exti_source_select
-     /tmp/cczUjV95.s:682    .text.gpio_exti_source_select:0000000000000000 .L0 
-     /tmp/cczUjV95.s:684    .text.gpio_exti_source_select:0000000000000000 .L0 
-     /tmp/cczUjV95.s:685    .text.gpio_exti_source_select:0000000000000000 .L0 
-     /tmp/cczUjV95.s:686    .text.gpio_exti_source_select:0000000000000000 .L0 
-     /tmp/cczUjV95.s:687    .text.gpio_exti_source_select:0000000000000000 .L0 
-     /tmp/cczUjV95.s:689    .text.gpio_exti_source_select:0000000000000004 .L0 
-     /tmp/cczUjV95.s:692    .text.gpio_exti_source_select:0000000000000006 .L0 
-     /tmp/cczUjV95.s:693    .text.gpio_exti_source_select:0000000000000006 .L0 
-     /tmp/cczUjV95.s:696    .text.gpio_exti_source_select:000000000000000c .L0 
-     /tmp/cczUjV95.s:702    .text.gpio_exti_source_select:000000000000001a .L0 
-     /tmp/cczUjV95.s:703    .text.gpio_exti_source_select:000000000000001a .L0 
-     /tmp/cczUjV95.s:709    .text.gpio_exti_source_select:0000000000000024 .L0 
-     /tmp/cczUjV95.s:710    .text.gpio_exti_source_select:0000000000000024 .L0 
-     /tmp/cczUjV95.s:717    .text.gpio_exti_source_select:000000000000002c .L0 
-     /tmp/cczUjV95.s:718    .text.gpio_exti_source_select:000000000000002c .L0 
-     /tmp/cczUjV95.s:722    .text.gpio_exti_source_select:0000000000000032 .L0 
-     /tmp/cczUjV95.s:723    .text.gpio_exti_source_select:0000000000000032 .L0 
-     /tmp/cczUjV95.s:728    .text.gpio_exti_source_select:000000000000003c .L0 
-     /tmp/cczUjV95.s:729    .text.gpio_exti_source_select:000000000000003c .L0 
-     /tmp/cczUjV95.s:735    .text.gpio_exti_source_select:0000000000000044 .L0 
-     /tmp/cczUjV95.s:736    .text.gpio_exti_source_select:0000000000000044 .L0 
-     /tmp/cczUjV95.s:738    .text.gpio_exti_source_select:0000000000000046 .L0 
-     /tmp/cczUjV95.s:740    .text.gpio_exti_source_select:000000000000004a .L0 
-     /tmp/cczUjV95.s:742    .text.gpio_exti_source_select:000000000000004e .L0 
-     /tmp/cczUjV95.s:743    .text.gpio_exti_source_select:000000000000004e .L0 
-     /tmp/cczUjV95.s:747    .text.gpio_exti_source_select:0000000000000054 .L0 
-     /tmp/cczUjV95.s:748    .text.gpio_exti_source_select:0000000000000054 .L0 
-     /tmp/cczUjV95.s:754    .text.gpio_exti_source_select:000000000000005c .L0 
-     /tmp/cczUjV95.s:755    .text.gpio_exti_source_select:000000000000005c .L0 
-     /tmp/cczUjV95.s:759    .text.gpio_exti_source_select:0000000000000062 .L0 
-     /tmp/cczUjV95.s:760    .text.gpio_exti_source_select:0000000000000062 .L0 
-     /tmp/cczUjV95.s:764    .text.gpio_exti_source_select:0000000000000068 .L0 
-     /tmp/cczUjV95.s:765    .text.gpio_exti_source_select:000000000000006a .L0 
-     /tmp/cczUjV95.s:772    .text.gpio_event_output_config:0000000000000000 gpio_event_output_config
-     /tmp/cczUjV95.s:775    .text.gpio_event_output_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:777    .text.gpio_event_output_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:778    .text.gpio_event_output_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:779    .text.gpio_event_output_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:780    .text.gpio_event_output_config:0000000000000000 .L0 
-     /tmp/cczUjV95.s:784    .text.gpio_event_output_config:0000000000000006 .L0 
-     /tmp/cczUjV95.s:785    .text.gpio_event_output_config:0000000000000006 .L0 
-     /tmp/cczUjV95.s:786    .text.gpio_event_output_config:0000000000000006 .L0 
-     /tmp/cczUjV95.s:787    .text.gpio_event_output_config:0000000000000006 .L0 
-     /tmp/cczUjV95.s:790    .text.gpio_event_output_config:0000000000000008 .L0 
-     /tmp/cczUjV95.s:794    .text.gpio_event_output_config:000000000000000e .L0 
-     /tmp/cczUjV95.s:797    .text.gpio_event_output_config:0000000000000010 .L0 
-     /tmp/cczUjV95.s:798    .text.gpio_event_output_config:0000000000000010 .L0 
-     /tmp/cczUjV95.s:800    .text.gpio_event_output_config:0000000000000012 .L0 
-     /tmp/cczUjV95.s:801    .text.gpio_event_output_config:0000000000000014 .L0 
-     /tmp/cczUjV95.s:808    .text.gpio_event_output_enable:0000000000000000 gpio_event_output_enable
-     /tmp/cczUjV95.s:811    .text.gpio_event_output_enable:0000000000000000 .L0 
-GAS LISTING /tmp/cczUjV95.s 			page 33
+     /tmp/ccQNFSxm.s:664    .text.gpio_pin_remap_config:0000000000000096 .L0 
+     /tmp/ccQNFSxm.s:666    .text.gpio_pin_remap_config:0000000000000098 .L0 
+     /tmp/ccQNFSxm.s:669    .text.gpio_pin_remap_config:000000000000009a .L0 
+     /tmp/ccQNFSxm.s:670    .text.gpio_pin_remap_config:000000000000009a .L0 
+     /tmp/ccQNFSxm.s:672    .text.gpio_pin_remap_config:00000000000000a0 .L0 
+     /tmp/ccQNFSxm.s:679    .text.gpio_exti_source_select:0000000000000000 gpio_exti_source_select
+     /tmp/ccQNFSxm.s:682    .text.gpio_exti_source_select:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:684    .text.gpio_exti_source_select:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:685    .text.gpio_exti_source_select:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:686    .text.gpio_exti_source_select:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:687    .text.gpio_exti_source_select:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:689    .text.gpio_exti_source_select:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:692    .text.gpio_exti_source_select:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:693    .text.gpio_exti_source_select:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:696    .text.gpio_exti_source_select:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:702    .text.gpio_exti_source_select:000000000000001a .L0 
+     /tmp/ccQNFSxm.s:703    .text.gpio_exti_source_select:000000000000001a .L0 
+     /tmp/ccQNFSxm.s:709    .text.gpio_exti_source_select:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:710    .text.gpio_exti_source_select:0000000000000024 .L0 
+     /tmp/ccQNFSxm.s:717    .text.gpio_exti_source_select:000000000000002c .L0 
+     /tmp/ccQNFSxm.s:718    .text.gpio_exti_source_select:000000000000002c .L0 
+     /tmp/ccQNFSxm.s:722    .text.gpio_exti_source_select:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:723    .text.gpio_exti_source_select:0000000000000032 .L0 
+     /tmp/ccQNFSxm.s:728    .text.gpio_exti_source_select:000000000000003c .L0 
+     /tmp/ccQNFSxm.s:729    .text.gpio_exti_source_select:000000000000003c .L0 
+     /tmp/ccQNFSxm.s:735    .text.gpio_exti_source_select:0000000000000044 .L0 
+     /tmp/ccQNFSxm.s:736    .text.gpio_exti_source_select:0000000000000044 .L0 
+     /tmp/ccQNFSxm.s:738    .text.gpio_exti_source_select:0000000000000046 .L0 
+     /tmp/ccQNFSxm.s:740    .text.gpio_exti_source_select:000000000000004a .L0 
+     /tmp/ccQNFSxm.s:742    .text.gpio_exti_source_select:000000000000004e .L0 
+     /tmp/ccQNFSxm.s:743    .text.gpio_exti_source_select:000000000000004e .L0 
+     /tmp/ccQNFSxm.s:747    .text.gpio_exti_source_select:0000000000000054 .L0 
+     /tmp/ccQNFSxm.s:748    .text.gpio_exti_source_select:0000000000000054 .L0 
+     /tmp/ccQNFSxm.s:754    .text.gpio_exti_source_select:000000000000005c .L0 
+     /tmp/ccQNFSxm.s:755    .text.gpio_exti_source_select:000000000000005c .L0 
+     /tmp/ccQNFSxm.s:759    .text.gpio_exti_source_select:0000000000000062 .L0 
+     /tmp/ccQNFSxm.s:760    .text.gpio_exti_source_select:0000000000000062 .L0 
+     /tmp/ccQNFSxm.s:764    .text.gpio_exti_source_select:0000000000000068 .L0 
+     /tmp/ccQNFSxm.s:765    .text.gpio_exti_source_select:000000000000006a .L0 
+     /tmp/ccQNFSxm.s:772    .text.gpio_event_output_config:0000000000000000 gpio_event_output_config
+     /tmp/ccQNFSxm.s:775    .text.gpio_event_output_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:777    .text.gpio_event_output_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:778    .text.gpio_event_output_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:779    .text.gpio_event_output_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:780    .text.gpio_event_output_config:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:784    .text.gpio_event_output_config:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:785    .text.gpio_event_output_config:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:786    .text.gpio_event_output_config:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:787    .text.gpio_event_output_config:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:790    .text.gpio_event_output_config:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:794    .text.gpio_event_output_config:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:797    .text.gpio_event_output_config:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:798    .text.gpio_event_output_config:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:800    .text.gpio_event_output_config:0000000000000012 .L0 
+     /tmp/ccQNFSxm.s:801    .text.gpio_event_output_config:0000000000000014 .L0 
+     /tmp/ccQNFSxm.s:808    .text.gpio_event_output_enable:0000000000000000 gpio_event_output_enable
+     /tmp/ccQNFSxm.s:811    .text.gpio_event_output_enable:0000000000000000 .L0 
+GAS LISTING /tmp/ccQNFSxm.s 			page 33
 
 
-     /tmp/cczUjV95.s:812    .text.gpio_event_output_enable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:813    .text.gpio_event_output_enable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:814    .text.gpio_event_output_enable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:819    .text.gpio_event_output_enable:000000000000000c .L0 
-     /tmp/cczUjV95.s:820    .text.gpio_event_output_enable:000000000000000e .L0 
-     /tmp/cczUjV95.s:827    .text.gpio_event_output_disable:0000000000000000 gpio_event_output_disable
-     /tmp/cczUjV95.s:830    .text.gpio_event_output_disable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:831    .text.gpio_event_output_disable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:832    .text.gpio_event_output_disable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:833    .text.gpio_event_output_disable:0000000000000000 .L0 
-     /tmp/cczUjV95.s:838    .text.gpio_event_output_disable:000000000000000c .L0 
-     /tmp/cczUjV95.s:839    .text.gpio_event_output_disable:000000000000000e .L0 
-     /tmp/cczUjV95.s:846    .text.gpio_pin_lock:0000000000000000 gpio_pin_lock
-     /tmp/cczUjV95.s:849    .text.gpio_pin_lock:0000000000000000 .L0 
-     /tmp/cczUjV95.s:851    .text.gpio_pin_lock:0000000000000000 .L0 
-     /tmp/cczUjV95.s:852    .text.gpio_pin_lock:0000000000000000 .L0 
-     /tmp/cczUjV95.s:853    .text.gpio_pin_lock:0000000000000000 .L0 
-     /tmp/cczUjV95.s:854    .text.gpio_pin_lock:0000000000000000 .L0 
-     /tmp/cczUjV95.s:858    .text.gpio_pin_lock:0000000000000004 .L0 
-     /tmp/cczUjV95.s:859    .text.gpio_pin_lock:0000000000000004 .L0 
-     /tmp/cczUjV95.s:861    .text.gpio_pin_lock:0000000000000006 .L0 
-     /tmp/cczUjV95.s:862    .text.gpio_pin_lock:0000000000000006 .L0 
-     /tmp/cczUjV95.s:864    .text.gpio_pin_lock:0000000000000008 .L0 
-     /tmp/cczUjV95.s:865    .text.gpio_pin_lock:0000000000000008 .L0 
-     /tmp/cczUjV95.s:867    .text.gpio_pin_lock:000000000000000a .L0 
-     /tmp/cczUjV95.s:868    .text.gpio_pin_lock:000000000000000a .L0 
-     /tmp/cczUjV95.s:871    .text.gpio_pin_lock:000000000000000c .L0 
-     /tmp/cczUjV95.s:872    .text.gpio_pin_lock:000000000000000c .L0 
-     /tmp/cczUjV95.s:874    .text.gpio_pin_lock:000000000000000e .L0 
-     /tmp/cczUjV95.s:875    .text.gpio_pin_lock:0000000000000010 .L0 
-     /tmp/cczUjV95.s:160    .text.gpio_deinit:00000000000000c6 .L0 
-     /tmp/cczUjV95.s:197    .text.gpio_afio_deinit:0000000000000020 .L0 
-     /tmp/cczUjV95.s:365    .text.gpio_init:00000000000000a8 .L0 
-     /tmp/cczUjV95.s:382    .text.gpio_bit_set:0000000000000004 .L0 
-     /tmp/cczUjV95.s:399    .text.gpio_bit_reset:0000000000000004 .L0 
-     /tmp/cczUjV95.s:424    .text.gpio_bit_write:000000000000000a .L0 
-     /tmp/cczUjV95.s:441    .text.gpio_port_write:0000000000000004 .L0 
-     /tmp/cczUjV95.s:462    .text.gpio_input_bit_get:000000000000000a .L0 
-     /tmp/cczUjV95.s:482    .text.gpio_input_port_get:0000000000000008 .L0 
-     /tmp/cczUjV95.s:503    .text.gpio_output_bit_get:000000000000000a .L0 
-     /tmp/cczUjV95.s:523    .text.gpio_output_port_get:0000000000000008 .L0 
-     /tmp/cczUjV95.s:675    .text.gpio_pin_remap_config:00000000000000a0 .L0 
-     /tmp/cczUjV95.s:768    .text.gpio_exti_source_select:000000000000006a .L0 
-     /tmp/cczUjV95.s:804    .text.gpio_event_output_config:0000000000000014 .L0 
-     /tmp/cczUjV95.s:823    .text.gpio_event_output_enable:000000000000000e .L0 
-     /tmp/cczUjV95.s:842    .text.gpio_event_output_disable:000000000000000e .L0 
-     /tmp/cczUjV95.s:878    .text.gpio_pin_lock:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:812    .text.gpio_event_output_enable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:813    .text.gpio_event_output_enable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:814    .text.gpio_event_output_enable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:819    .text.gpio_event_output_enable:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:820    .text.gpio_event_output_enable:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:827    .text.gpio_event_output_disable:0000000000000000 gpio_event_output_disable
+     /tmp/ccQNFSxm.s:830    .text.gpio_event_output_disable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:831    .text.gpio_event_output_disable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:832    .text.gpio_event_output_disable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:833    .text.gpio_event_output_disable:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:838    .text.gpio_event_output_disable:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:839    .text.gpio_event_output_disable:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:846    .text.gpio_pin_lock:0000000000000000 gpio_pin_lock
+     /tmp/ccQNFSxm.s:849    .text.gpio_pin_lock:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:851    .text.gpio_pin_lock:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:852    .text.gpio_pin_lock:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:853    .text.gpio_pin_lock:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:854    .text.gpio_pin_lock:0000000000000000 .L0 
+     /tmp/ccQNFSxm.s:858    .text.gpio_pin_lock:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:859    .text.gpio_pin_lock:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:861    .text.gpio_pin_lock:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:862    .text.gpio_pin_lock:0000000000000006 .L0 
+     /tmp/ccQNFSxm.s:864    .text.gpio_pin_lock:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:865    .text.gpio_pin_lock:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:867    .text.gpio_pin_lock:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:868    .text.gpio_pin_lock:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:871    .text.gpio_pin_lock:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:872    .text.gpio_pin_lock:000000000000000c .L0 
+     /tmp/ccQNFSxm.s:874    .text.gpio_pin_lock:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:875    .text.gpio_pin_lock:0000000000000010 .L0 
+     /tmp/ccQNFSxm.s:160    .text.gpio_deinit:00000000000000c6 .L0 
+     /tmp/ccQNFSxm.s:197    .text.gpio_afio_deinit:0000000000000020 .L0 
+     /tmp/ccQNFSxm.s:365    .text.gpio_init:00000000000000a8 .L0 
+     /tmp/ccQNFSxm.s:382    .text.gpio_bit_set:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:399    .text.gpio_bit_reset:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:424    .text.gpio_bit_write:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:441    .text.gpio_port_write:0000000000000004 .L0 
+     /tmp/ccQNFSxm.s:462    .text.gpio_input_bit_get:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:482    .text.gpio_input_port_get:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:503    .text.gpio_output_bit_get:000000000000000a .L0 
+     /tmp/ccQNFSxm.s:523    .text.gpio_output_port_get:0000000000000008 .L0 
+     /tmp/ccQNFSxm.s:675    .text.gpio_pin_remap_config:00000000000000a0 .L0 
+     /tmp/ccQNFSxm.s:768    .text.gpio_exti_source_select:000000000000006a .L0 
+     /tmp/ccQNFSxm.s:804    .text.gpio_event_output_config:0000000000000014 .L0 
+     /tmp/ccQNFSxm.s:823    .text.gpio_event_output_enable:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:842    .text.gpio_event_output_disable:000000000000000e .L0 
+     /tmp/ccQNFSxm.s:878    .text.gpio_pin_lock:0000000000000010 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/cczUjV95.s:81     .text.gpio_deinit:000000000000006c .L2
-     /tmp/cczUjV95.s:54     .text.gpio_deinit:0000000000000040 .L11
-     /tmp/cczUjV95.s:103    .text.gpio_deinit:0000000000000088 .L7
-     /tmp/cczUjV95.s:125    .text.gpio_deinit:00000000000000a4 .L1
-     /tmp/cczUjV95.s:136    .text.gpio_deinit:00000000000000aa .L4
-     /tmp/cczUjV95.s:222    .text.gpio_init:000000000000000e .L15
-     /tmp/cczUjV95.s:275    .text.gpio_init:000000000000004c .L16
-     /tmp/cczUjV95.s:351    .text.gpio_init:00000000000000a0 .L35
-     /tmp/cczUjV95.s:339    .text.gpio_init:0000000000000098 .L36
-GAS LISTING /tmp/cczUjV95.s 			page 34
+     /tmp/ccQNFSxm.s:81     .text.gpio_deinit:000000000000006c .L2
+     /tmp/ccQNFSxm.s:54     .text.gpio_deinit:0000000000000040 .L11
+     /tmp/ccQNFSxm.s:103    .text.gpio_deinit:0000000000000088 .L7
+     /tmp/ccQNFSxm.s:125    .text.gpio_deinit:00000000000000a4 .L1
+     /tmp/ccQNFSxm.s:136    .text.gpio_deinit:00000000000000aa .L4
+     /tmp/ccQNFSxm.s:222    .text.gpio_init:000000000000000e .L15
+     /tmp/ccQNFSxm.s:275    .text.gpio_init:000000000000004c .L16
+     /tmp/ccQNFSxm.s:351    .text.gpio_init:00000000000000a0 .L35
+     /tmp/ccQNFSxm.s:339    .text.gpio_init:0000000000000098 .L36
+GAS LISTING /tmp/ccQNFSxm.s 			page 34
 
 
-     /tmp/cczUjV95.s:237    .text.gpio_init:000000000000001e .L19
-     /tmp/cczUjV95.s:331    .text.gpio_init:0000000000000090 .L20
-     /tmp/cczUjV95.s:357    .text.gpio_init:00000000000000a4 .L37
-     /tmp/cczUjV95.s:345    .text.gpio_init:000000000000009c .L38
-     /tmp/cczUjV95.s:290    .text.gpio_init:0000000000000060 .L23
-     /tmp/cczUjV95.s:270    .text.gpio_init:000000000000004a .L18
-     /tmp/cczUjV95.s:326    .text.gpio_init:000000000000008e .L22
-     /tmp/cczUjV95.s:415    .text.gpio_bit_write:0000000000000006 .L42
-     /tmp/cczUjV95.s:635    .text.gpio_pin_remap_config:0000000000000074 .L61
-     /tmp/cczUjV95.s:655    .text.gpio_pin_remap_config:0000000000000088 .L62
-     /tmp/cczUjV95.s:609    .text.gpio_pin_remap_config:0000000000000058 .L54
-     /tmp/cczUjV95.s:597    .text.gpio_pin_remap_config:000000000000004c .L55
-     /tmp/cczUjV95.s:629    .text.gpio_pin_remap_config:0000000000000070 .L63
-     /tmp/cczUjV95.s:582    .text.gpio_pin_remap_config:000000000000003e .L53
-     /tmp/cczUjV95.s:557    .text.gpio_pin_remap_config:000000000000001c .L52
-     /tmp/cczUjV95.s:715    .text.gpio_exti_source_select:000000000000002c .L65
-     /tmp/cczUjV95.s:733    .text.gpio_exti_source_select:0000000000000044 .L67
-     /tmp/cczUjV95.s:752    .text.gpio_exti_source_select:000000000000005c .L68
-     /tmp/cczUjV95.s:1833   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/cczUjV95.s:3099   .debug_str:000000000000029c .LASF89
-     /tmp/cczUjV95.s:3021   .debug_str:000000000000002e .LASF90
-     /tmp/cczUjV95.s:3025   .debug_str:0000000000000080 .LASF91
-     /tmp/cczUjV95.s:2975   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/cczUjV95.s:3013   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/cczUjV95.s:3115   .debug_str:0000000000000388 .LASF0
-     /tmp/cczUjV95.s:3103   .debug_str:000000000000032e .LASF1
-     /tmp/cczUjV95.s:3077   .debug_str:000000000000021b .LASF4
-     /tmp/cczUjV95.s:3093   .debug_str:0000000000000278 .LASF2
-     /tmp/cczUjV95.s:3055   .debug_str:000000000000019d .LASF3
-     /tmp/cczUjV95.s:3049   .debug_str:000000000000016e .LASF5
-     /tmp/cczUjV95.s:3129   .debug_str:00000000000003d9 .LASF6
-     /tmp/cczUjV95.s:3071   .debug_str:00000000000001fa .LASF7
-     /tmp/cczUjV95.s:3041   .debug_str:0000000000000147 .LASF8
-     /tmp/cczUjV95.s:3159   .debug_str:00000000000004ab .LASF9
-     /tmp/cczUjV95.s:3069   .debug_str:00000000000001ec .LASF10
-     /tmp/cczUjV95.s:3107   .debug_str:0000000000000345 .LASF11
-     /tmp/cczUjV95.s:3057   .debug_str:00000000000001a7 .LASF12
-     /tmp/cczUjV95.s:3117   .debug_str:0000000000000395 .LASF13
-     /tmp/cczUjV95.s:3111   .debug_str:0000000000000369 .LASF14
-     /tmp/cczUjV95.s:3149   .debug_str:0000000000000465 .LASF92
-     /tmp/cczUjV95.s:3059   .debug_str:00000000000001af .LASF15
-     /tmp/cczUjV95.s:3195   .debug_str:0000000000000590 .LASF16
-     /tmp/cczUjV95.s:3135   .debug_str:000000000000040e .LASF17
-     /tmp/cczUjV95.s:3175   .debug_str:0000000000000513 .LASF18
-     /tmp/cczUjV95.s:3191   .debug_str:0000000000000579 .LASF19
-     /tmp/cczUjV95.s:3019   .debug_str:0000000000000021 .LASF20
-     /tmp/cczUjV95.s:3137   .debug_str:000000000000041c .LASF21
-     /tmp/cczUjV95.s:3061   .debug_str:00000000000001b7 .LASF22
-     /tmp/cczUjV95.s:3085   .debug_str:0000000000000240 .LASF23
-     /tmp/cczUjV95.s:3081   .debug_str:000000000000022c .LASF24
-     /tmp/cczUjV95.s:3147   .debug_str:0000000000000457 .LASF25
-     /tmp/cczUjV95.s:3189   .debug_str:000000000000056b .LASF26
-     /tmp/cczUjV95.s:3199   .debug_str:00000000000005a5 .LASF27
-     /tmp/cczUjV95.s:3035   .debug_str:0000000000000109 .LASF28
-     /tmp/cczUjV95.s:3075   .debug_str:000000000000020f .LASF29
-     /tmp/cczUjV95.s:3155   .debug_str:0000000000000489 .LASF30
-     /tmp/cczUjV95.s:3197   .debug_str:0000000000000597 .LASF31
-GAS LISTING /tmp/cczUjV95.s 			page 35
+     /tmp/ccQNFSxm.s:237    .text.gpio_init:000000000000001e .L19
+     /tmp/ccQNFSxm.s:331    .text.gpio_init:0000000000000090 .L20
+     /tmp/ccQNFSxm.s:357    .text.gpio_init:00000000000000a4 .L37
+     /tmp/ccQNFSxm.s:345    .text.gpio_init:000000000000009c .L38
+     /tmp/ccQNFSxm.s:290    .text.gpio_init:0000000000000060 .L23
+     /tmp/ccQNFSxm.s:270    .text.gpio_init:000000000000004a .L18
+     /tmp/ccQNFSxm.s:326    .text.gpio_init:000000000000008e .L22
+     /tmp/ccQNFSxm.s:415    .text.gpio_bit_write:0000000000000006 .L42
+     /tmp/ccQNFSxm.s:635    .text.gpio_pin_remap_config:0000000000000074 .L61
+     /tmp/ccQNFSxm.s:655    .text.gpio_pin_remap_config:0000000000000088 .L62
+     /tmp/ccQNFSxm.s:609    .text.gpio_pin_remap_config:0000000000000058 .L54
+     /tmp/ccQNFSxm.s:597    .text.gpio_pin_remap_config:000000000000004c .L55
+     /tmp/ccQNFSxm.s:629    .text.gpio_pin_remap_config:0000000000000070 .L63
+     /tmp/ccQNFSxm.s:582    .text.gpio_pin_remap_config:000000000000003e .L53
+     /tmp/ccQNFSxm.s:557    .text.gpio_pin_remap_config:000000000000001c .L52
+     /tmp/ccQNFSxm.s:715    .text.gpio_exti_source_select:000000000000002c .L65
+     /tmp/ccQNFSxm.s:733    .text.gpio_exti_source_select:0000000000000044 .L67
+     /tmp/ccQNFSxm.s:752    .text.gpio_exti_source_select:000000000000005c .L68
+     /tmp/ccQNFSxm.s:1833   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccQNFSxm.s:3099   .debug_str:00000000000002a2 .LASF89
+     /tmp/ccQNFSxm.s:3021   .debug_str:000000000000002e .LASF90
+     /tmp/ccQNFSxm.s:3069   .debug_str:00000000000001a1 .LASF91
+     /tmp/ccQNFSxm.s:2975   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccQNFSxm.s:3013   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccQNFSxm.s:3115   .debug_str:000000000000038e .LASF0
+     /tmp/ccQNFSxm.s:3103   .debug_str:0000000000000334 .LASF1
+     /tmp/ccQNFSxm.s:3077   .debug_str:0000000000000221 .LASF4
+     /tmp/ccQNFSxm.s:3093   .debug_str:000000000000027e .LASF2
+     /tmp/ccQNFSxm.s:3053   .debug_str:0000000000000144 .LASF3
+     /tmp/ccQNFSxm.s:3047   .debug_str:0000000000000115 .LASF5
+     /tmp/ccQNFSxm.s:3129   .debug_str:00000000000003df .LASF6
+     /tmp/ccQNFSxm.s:3071   .debug_str:0000000000000200 .LASF7
+     /tmp/ccQNFSxm.s:3039   .debug_str:00000000000000ee .LASF8
+     /tmp/ccQNFSxm.s:3159   .debug_str:00000000000004b1 .LASF9
+     /tmp/ccQNFSxm.s:3067   .debug_str:0000000000000193 .LASF10
+     /tmp/ccQNFSxm.s:3107   .debug_str:000000000000034b .LASF11
+     /tmp/ccQNFSxm.s:3055   .debug_str:000000000000014e .LASF12
+     /tmp/ccQNFSxm.s:3117   .debug_str:000000000000039b .LASF13
+     /tmp/ccQNFSxm.s:3111   .debug_str:000000000000036f .LASF14
+     /tmp/ccQNFSxm.s:3149   .debug_str:000000000000046b .LASF92
+     /tmp/ccQNFSxm.s:3057   .debug_str:0000000000000156 .LASF15
+     /tmp/ccQNFSxm.s:3195   .debug_str:0000000000000596 .LASF16
+     /tmp/ccQNFSxm.s:3135   .debug_str:0000000000000414 .LASF17
+     /tmp/ccQNFSxm.s:3175   .debug_str:0000000000000519 .LASF18
+     /tmp/ccQNFSxm.s:3191   .debug_str:000000000000057f .LASF19
+     /tmp/ccQNFSxm.s:3019   .debug_str:0000000000000021 .LASF20
+     /tmp/ccQNFSxm.s:3137   .debug_str:0000000000000422 .LASF21
+     /tmp/ccQNFSxm.s:3059   .debug_str:000000000000015e .LASF22
+     /tmp/ccQNFSxm.s:3085   .debug_str:0000000000000246 .LASF23
+     /tmp/ccQNFSxm.s:3081   .debug_str:0000000000000232 .LASF24
+     /tmp/ccQNFSxm.s:3147   .debug_str:000000000000045d .LASF25
+     /tmp/ccQNFSxm.s:3189   .debug_str:0000000000000571 .LASF26
+     /tmp/ccQNFSxm.s:3199   .debug_str:00000000000005ab .LASF27
+     /tmp/ccQNFSxm.s:3033   .debug_str:00000000000000b0 .LASF28
+     /tmp/ccQNFSxm.s:3075   .debug_str:0000000000000215 .LASF29
+     /tmp/ccQNFSxm.s:3155   .debug_str:000000000000048f .LASF30
+     /tmp/ccQNFSxm.s:3197   .debug_str:000000000000059d .LASF31
+GAS LISTING /tmp/ccQNFSxm.s 			page 35
 
 
-     /tmp/cczUjV95.s:3161   .debug_str:00000000000004bd .LASF32
-     /tmp/cczUjV95.s:3023   .debug_str:0000000000000073 .LASF33
-     /tmp/cczUjV95.s:3193   .debug_str:0000000000000584 .LASF34
-     /tmp/cczUjV95.s:3169   .debug_str:00000000000004f2 .LASF35
-     /tmp/cczUjV95.s:3029   .debug_str:00000000000000e6 .LASF36
-     /tmp/cczUjV95.s:3065   .debug_str:00000000000001d2 .LASF37
-     /tmp/cczUjV95.s:3033   .debug_str:00000000000000fd .LASF38
-     /tmp/cczUjV95.s:3171   .debug_str:00000000000004fe .LASF39
-     /tmp/cczUjV95.s:3105   .debug_str:000000000000033a .LASF40
-     /tmp/cczUjV95.s:3095   .debug_str:0000000000000286 .LASF41
-     /tmp/cczUjV95.s:3109   .debug_str:000000000000035c .LASF42
-     /tmp/cczUjV95.s:3165   .debug_str:00000000000004db .LASF43
-     /tmp/cczUjV95.s:3027   .debug_str:00000000000000d9 .LASF44
-     /tmp/cczUjV95.s:3063   .debug_str:00000000000001c5 .LASF45
-     /tmp/cczUjV95.s:3119   .debug_str:000000000000039e .LASF46
-     /tmp/cczUjV95.s:3125   .debug_str:00000000000003b8 .LASF47
-     /tmp/cczUjV95.s:3177   .debug_str:0000000000000519 .LASF48
-     /tmp/cczUjV95.s:3017   .debug_str:0000000000000013 .LASF49
-     /tmp/cczUjV95.s:3181   .debug_str:0000000000000531 .LASF50
-     /tmp/cczUjV95.s:3089   .debug_str:000000000000025e .LASF51
-     /tmp/cczUjV95.s:3091   .debug_str:000000000000026c .LASF52
-     /tmp/cczUjV95.s:3031   .debug_str:00000000000000f2 .LASF53
-     /tmp/cczUjV95.s:3067   .debug_str:00000000000001de .LASF57
-     /tmp/cczUjV95.s:847    .text.gpio_pin_lock:0000000000000000 .LFB18
-     /tmp/cczUjV95.s:876    .text.gpio_pin_lock:0000000000000010 .LFE18
-     /tmp/cczUjV95.s:3097   .debug_str:0000000000000290 .LASF54
-     /tmp/cczUjV95.s:3145   .debug_str:0000000000000452 .LASF61
-     /tmp/cczUjV95.s:2362   .debug_loc:0000000000000000 .LLST19
-     /tmp/cczUjV95.s:3053   .debug_str:0000000000000183 .LASF55
-     /tmp/cczUjV95.s:828    .text.gpio_event_output_disable:0000000000000000 .LFB17
-     /tmp/cczUjV95.s:840    .text.gpio_event_output_disable:000000000000000e .LFE17
-     /tmp/cczUjV95.s:3039   .debug_str:000000000000012e .LASF56
-     /tmp/cczUjV95.s:809    .text.gpio_event_output_enable:0000000000000000 .LFB16
-     /tmp/cczUjV95.s:821    .text.gpio_event_output_enable:000000000000000e .LFE16
-     /tmp/cczUjV95.s:3133   .debug_str:00000000000003f5 .LASF58
-     /tmp/cczUjV95.s:773    .text.gpio_event_output_config:0000000000000000 .LFB15
-     /tmp/cczUjV95.s:802    .text.gpio_event_output_config:0000000000000014 .LFE15
-     /tmp/cczUjV95.s:3073   .debug_str:0000000000000203 .LASF59
-     /tmp/cczUjV95.s:2376   .debug_loc:0000000000000021 .LLST17
-     /tmp/cczUjV95.s:3139   .debug_str:000000000000042a .LASF60
-     /tmp/cczUjV95.s:2390   .debug_loc:0000000000000042 .LLST18
-     /tmp/cczUjV95.s:3101   .debug_str:0000000000000316 .LASF62
-     /tmp/cczUjV95.s:680    .text.gpio_exti_source_select:0000000000000000 .LFB14
-     /tmp/cczUjV95.s:766    .text.gpio_exti_source_select:000000000000006a .LFE14
-     /tmp/cczUjV95.s:2437   .debug_loc:0000000000000092 .LLST15
-     /tmp/cczUjV95.s:3079   .debug_str:0000000000000225 .LASF63
-     /tmp/cczUjV95.s:2451   .debug_loc:00000000000000b3 .LLST16
-     /tmp/cczUjV95.s:3113   .debug_str:0000000000000372 .LASF64
-     /tmp/cczUjV95.s:528    .text.gpio_pin_remap_config:0000000000000000 .LFB13
-     /tmp/cczUjV95.s:673    .text.gpio_pin_remap_config:00000000000000a0 .LFE13
-     /tmp/cczUjV95.s:3083   .debug_str:000000000000023a .LASF65
-     /tmp/cczUjV95.s:3131   .debug_str:00000000000003ec .LASF66
-     /tmp/cczUjV95.s:3185   .debug_str:000000000000054c .LASF67
-     /tmp/cczUjV95.s:2499   .debug_loc:000000000000010b .LLST11
-     /tmp/cczUjV95.s:3123   .debug_str:00000000000003b1 .LASF68
-     /tmp/cczUjV95.s:2524   .debug_loc:000000000000014c .LLST12
-     /tmp/cczUjV95.s:3141   .debug_str:0000000000000435 .LASF69
-GAS LISTING /tmp/cczUjV95.s 			page 36
+     /tmp/ccQNFSxm.s:3161   .debug_str:00000000000004c3 .LASF32
+     /tmp/ccQNFSxm.s:3023   .debug_str:0000000000000073 .LASF33
+     /tmp/ccQNFSxm.s:3193   .debug_str:000000000000058a .LASF34
+     /tmp/ccQNFSxm.s:3169   .debug_str:00000000000004f8 .LASF35
+     /tmp/ccQNFSxm.s:3027   .debug_str:000000000000008d .LASF36
+     /tmp/ccQNFSxm.s:3063   .debug_str:0000000000000179 .LASF37
+     /tmp/ccQNFSxm.s:3031   .debug_str:00000000000000a4 .LASF38
+     /tmp/ccQNFSxm.s:3171   .debug_str:0000000000000504 .LASF39
+     /tmp/ccQNFSxm.s:3105   .debug_str:0000000000000340 .LASF40
+     /tmp/ccQNFSxm.s:3095   .debug_str:000000000000028c .LASF41
+     /tmp/ccQNFSxm.s:3109   .debug_str:0000000000000362 .LASF42
+     /tmp/ccQNFSxm.s:3165   .debug_str:00000000000004e1 .LASF43
+     /tmp/ccQNFSxm.s:3025   .debug_str:0000000000000080 .LASF44
+     /tmp/ccQNFSxm.s:3061   .debug_str:000000000000016c .LASF45
+     /tmp/ccQNFSxm.s:3119   .debug_str:00000000000003a4 .LASF46
+     /tmp/ccQNFSxm.s:3125   .debug_str:00000000000003be .LASF47
+     /tmp/ccQNFSxm.s:3177   .debug_str:000000000000051f .LASF48
+     /tmp/ccQNFSxm.s:3017   .debug_str:0000000000000013 .LASF49
+     /tmp/ccQNFSxm.s:3181   .debug_str:0000000000000537 .LASF50
+     /tmp/ccQNFSxm.s:3089   .debug_str:0000000000000264 .LASF51
+     /tmp/ccQNFSxm.s:3091   .debug_str:0000000000000272 .LASF52
+     /tmp/ccQNFSxm.s:3029   .debug_str:0000000000000099 .LASF53
+     /tmp/ccQNFSxm.s:3065   .debug_str:0000000000000185 .LASF57
+     /tmp/ccQNFSxm.s:847    .text.gpio_pin_lock:0000000000000000 .LFB18
+     /tmp/ccQNFSxm.s:876    .text.gpio_pin_lock:0000000000000010 .LFE18
+     /tmp/ccQNFSxm.s:3097   .debug_str:0000000000000296 .LASF54
+     /tmp/ccQNFSxm.s:3145   .debug_str:0000000000000458 .LASF61
+     /tmp/ccQNFSxm.s:2362   .debug_loc:0000000000000000 .LLST19
+     /tmp/ccQNFSxm.s:3051   .debug_str:000000000000012a .LASF55
+     /tmp/ccQNFSxm.s:828    .text.gpio_event_output_disable:0000000000000000 .LFB17
+     /tmp/ccQNFSxm.s:840    .text.gpio_event_output_disable:000000000000000e .LFE17
+     /tmp/ccQNFSxm.s:3037   .debug_str:00000000000000d5 .LASF56
+     /tmp/ccQNFSxm.s:809    .text.gpio_event_output_enable:0000000000000000 .LFB16
+     /tmp/ccQNFSxm.s:821    .text.gpio_event_output_enable:000000000000000e .LFE16
+     /tmp/ccQNFSxm.s:3133   .debug_str:00000000000003fb .LASF58
+     /tmp/ccQNFSxm.s:773    .text.gpio_event_output_config:0000000000000000 .LFB15
+     /tmp/ccQNFSxm.s:802    .text.gpio_event_output_config:0000000000000014 .LFE15
+     /tmp/ccQNFSxm.s:3073   .debug_str:0000000000000209 .LASF59
+     /tmp/ccQNFSxm.s:2376   .debug_loc:0000000000000021 .LLST17
+     /tmp/ccQNFSxm.s:3139   .debug_str:0000000000000430 .LASF60
+     /tmp/ccQNFSxm.s:2390   .debug_loc:0000000000000042 .LLST18
+     /tmp/ccQNFSxm.s:3101   .debug_str:000000000000031c .LASF62
+     /tmp/ccQNFSxm.s:680    .text.gpio_exti_source_select:0000000000000000 .LFB14
+     /tmp/ccQNFSxm.s:766    .text.gpio_exti_source_select:000000000000006a .LFE14
+     /tmp/ccQNFSxm.s:2437   .debug_loc:0000000000000092 .LLST15
+     /tmp/ccQNFSxm.s:3079   .debug_str:000000000000022b .LASF63
+     /tmp/ccQNFSxm.s:2451   .debug_loc:00000000000000b3 .LLST16
+     /tmp/ccQNFSxm.s:3113   .debug_str:0000000000000378 .LASF64
+     /tmp/ccQNFSxm.s:528    .text.gpio_pin_remap_config:0000000000000000 .LFB13
+     /tmp/ccQNFSxm.s:673    .text.gpio_pin_remap_config:00000000000000a0 .LFE13
+     /tmp/ccQNFSxm.s:3083   .debug_str:0000000000000240 .LASF65
+     /tmp/ccQNFSxm.s:3131   .debug_str:00000000000003f2 .LASF66
+     /tmp/ccQNFSxm.s:3185   .debug_str:0000000000000552 .LASF67
+     /tmp/ccQNFSxm.s:2499   .debug_loc:000000000000010b .LLST11
+     /tmp/ccQNFSxm.s:3123   .debug_str:00000000000003b7 .LASF68
+     /tmp/ccQNFSxm.s:2524   .debug_loc:000000000000014c .LLST12
+     /tmp/ccQNFSxm.s:3141   .debug_str:000000000000043b .LASF69
+GAS LISTING /tmp/ccQNFSxm.s 			page 36
 
 
-     /tmp/cczUjV95.s:2554   .debug_loc:000000000000018b .LLST13
-     /tmp/cczUjV95.s:3173   .debug_str:0000000000000509 .LASF70
-     /tmp/cczUjV95.s:2591   .debug_loc:00000000000001ed .LLST14
-     /tmp/cczUjV95.s:3127   .debug_str:00000000000003c4 .LASF71
-     /tmp/cczUjV95.s:508    .text.gpio_output_port_get:0000000000000000 .LFB12
-     /tmp/cczUjV95.s:521    .text.gpio_output_port_get:0000000000000008 .LFE12
-     /tmp/cczUjV95.s:2624   .debug_loc:000000000000022f .LLST10
-     /tmp/cczUjV95.s:3143   .debug_str:000000000000043e .LASF72
-     /tmp/cczUjV95.s:487    .text.gpio_output_bit_get:0000000000000000 .LFB11
-     /tmp/cczUjV95.s:501    .text.gpio_output_bit_get:000000000000000a .LFE11
-     /tmp/cczUjV95.s:2638   .debug_loc:0000000000000250 .LLST9
-     /tmp/cczUjV95.s:3157   .debug_str:0000000000000497 .LASF73
-     /tmp/cczUjV95.s:467    .text.gpio_input_port_get:0000000000000000 .LFB10
-     /tmp/cczUjV95.s:480    .text.gpio_input_port_get:0000000000000008 .LFE10
-     /tmp/cczUjV95.s:2652   .debug_loc:0000000000000271 .LLST8
-     /tmp/cczUjV95.s:3015   .debug_str:0000000000000000 .LASF74
-     /tmp/cczUjV95.s:446    .text.gpio_input_bit_get:0000000000000000 .LFB9
-     /tmp/cczUjV95.s:460    .text.gpio_input_bit_get:000000000000000a .LFE9
-     /tmp/cczUjV95.s:2666   .debug_loc:0000000000000292 .LLST7
-     /tmp/cczUjV95.s:3087   .debug_str:000000000000024e .LASF75
-     /tmp/cczUjV95.s:429    .text.gpio_port_write:0000000000000000 .LFB8
-     /tmp/cczUjV95.s:439    .text.gpio_port_write:0000000000000004 .LFE8
-     /tmp/cczUjV95.s:3153   .debug_str:0000000000000484 .LASF76
-     /tmp/cczUjV95.s:3183   .debug_str:000000000000053d .LASF77
-     /tmp/cczUjV95.s:404    .text.gpio_bit_write:0000000000000000 .LFB7
-     /tmp/cczUjV95.s:422    .text.gpio_bit_write:000000000000000a .LFE7
-     /tmp/cczUjV95.s:3051   .debug_str:0000000000000179 .LASF78
-     /tmp/cczUjV95.s:3151   .debug_str:0000000000000475 .LASF79
-     /tmp/cczUjV95.s:387    .text.gpio_bit_reset:0000000000000000 .LFB6
-     /tmp/cczUjV95.s:397    .text.gpio_bit_reset:0000000000000004 .LFE6
-     /tmp/cczUjV95.s:3043   .debug_str:0000000000000152 .LASF80
-     /tmp/cczUjV95.s:370    .text.gpio_bit_set:0000000000000000 .LFB5
-     /tmp/cczUjV95.s:380    .text.gpio_bit_set:0000000000000004 .LFE5
-     /tmp/cczUjV95.s:3167   .debug_str:00000000000004e8 .LASF81
-     /tmp/cczUjV95.s:202    .text.gpio_init:0000000000000000 .LFB4
-     /tmp/cczUjV95.s:363    .text.gpio_init:00000000000000a8 .LFE4
-     /tmp/cczUjV95.s:3045   .debug_str:000000000000015f .LASF82
-     /tmp/cczUjV95.s:3121   .debug_str:00000000000003ab .LASF83
-     /tmp/cczUjV95.s:2680   .debug_loc:00000000000002b3 .LLST3
-     /tmp/cczUjV95.s:2694   .debug_loc:00000000000002d4 .LLST4
-     /tmp/cczUjV95.s:3047   .debug_str:0000000000000164 .LASF84
-     /tmp/cczUjV95.s:2726   .debug_loc:0000000000000323 .LLST5
-     /tmp/cczUjV95.s:2738   .debug_loc:0000000000000342 .LLST6
-     /tmp/cczUjV95.s:3163   .debug_str:00000000000004ca .LASF85
-     /tmp/cczUjV95.s:165    .text.gpio_afio_deinit:0000000000000000 .LFB3
-     /tmp/cczUjV95.s:195    .text.gpio_afio_deinit:0000000000000020 .LFE3
-     /tmp/cczUjV95.s:2786   .debug_loc:00000000000003c4 .LLST2
-     /tmp/cczUjV95.s:180    .text.gpio_afio_deinit:0000000000000010 .LVL16
-     /tmp/cczUjV95.s:193    .text.gpio_afio_deinit:0000000000000020 .LVL17
-     /tmp/cczUjV95.s:3179   .debug_str:0000000000000525 .LASF86
-     /tmp/cczUjV95.s:14     .text.gpio_deinit:0000000000000000 .LFB2
-     /tmp/cczUjV95.s:158    .text.gpio_deinit:00000000000000c6 .LFE2
-     /tmp/cczUjV95.s:2804   .debug_loc:00000000000003f0 .LLST0
-     /tmp/cczUjV95.s:2872   .debug_loc:0000000000000494 .LLST1
-     /tmp/cczUjV95.s:39     .text.gpio_deinit:0000000000000030 .LVL2
-     /tmp/cczUjV95.s:53     .text.gpio_deinit:0000000000000040 .LVL3
-     /tmp/cczUjV95.s:66     .text.gpio_deinit:000000000000005c .LVL5
-GAS LISTING /tmp/cczUjV95.s 			page 37
+     /tmp/ccQNFSxm.s:2554   .debug_loc:000000000000018b .LLST13
+     /tmp/ccQNFSxm.s:3173   .debug_str:000000000000050f .LASF70
+     /tmp/ccQNFSxm.s:2591   .debug_loc:00000000000001ed .LLST14
+     /tmp/ccQNFSxm.s:3127   .debug_str:00000000000003ca .LASF71
+     /tmp/ccQNFSxm.s:508    .text.gpio_output_port_get:0000000000000000 .LFB12
+     /tmp/ccQNFSxm.s:521    .text.gpio_output_port_get:0000000000000008 .LFE12
+     /tmp/ccQNFSxm.s:2624   .debug_loc:000000000000022f .LLST10
+     /tmp/ccQNFSxm.s:3143   .debug_str:0000000000000444 .LASF72
+     /tmp/ccQNFSxm.s:487    .text.gpio_output_bit_get:0000000000000000 .LFB11
+     /tmp/ccQNFSxm.s:501    .text.gpio_output_bit_get:000000000000000a .LFE11
+     /tmp/ccQNFSxm.s:2638   .debug_loc:0000000000000250 .LLST9
+     /tmp/ccQNFSxm.s:3157   .debug_str:000000000000049d .LASF73
+     /tmp/ccQNFSxm.s:467    .text.gpio_input_port_get:0000000000000000 .LFB10
+     /tmp/ccQNFSxm.s:480    .text.gpio_input_port_get:0000000000000008 .LFE10
+     /tmp/ccQNFSxm.s:2652   .debug_loc:0000000000000271 .LLST8
+     /tmp/ccQNFSxm.s:3015   .debug_str:0000000000000000 .LASF74
+     /tmp/ccQNFSxm.s:446    .text.gpio_input_bit_get:0000000000000000 .LFB9
+     /tmp/ccQNFSxm.s:460    .text.gpio_input_bit_get:000000000000000a .LFE9
+     /tmp/ccQNFSxm.s:2666   .debug_loc:0000000000000292 .LLST7
+     /tmp/ccQNFSxm.s:3087   .debug_str:0000000000000254 .LASF75
+     /tmp/ccQNFSxm.s:429    .text.gpio_port_write:0000000000000000 .LFB8
+     /tmp/ccQNFSxm.s:439    .text.gpio_port_write:0000000000000004 .LFE8
+     /tmp/ccQNFSxm.s:3153   .debug_str:000000000000048a .LASF76
+     /tmp/ccQNFSxm.s:3183   .debug_str:0000000000000543 .LASF77
+     /tmp/ccQNFSxm.s:404    .text.gpio_bit_write:0000000000000000 .LFB7
+     /tmp/ccQNFSxm.s:422    .text.gpio_bit_write:000000000000000a .LFE7
+     /tmp/ccQNFSxm.s:3049   .debug_str:0000000000000120 .LASF78
+     /tmp/ccQNFSxm.s:3151   .debug_str:000000000000047b .LASF79
+     /tmp/ccQNFSxm.s:387    .text.gpio_bit_reset:0000000000000000 .LFB6
+     /tmp/ccQNFSxm.s:397    .text.gpio_bit_reset:0000000000000004 .LFE6
+     /tmp/ccQNFSxm.s:3041   .debug_str:00000000000000f9 .LASF80
+     /tmp/ccQNFSxm.s:370    .text.gpio_bit_set:0000000000000000 .LFB5
+     /tmp/ccQNFSxm.s:380    .text.gpio_bit_set:0000000000000004 .LFE5
+     /tmp/ccQNFSxm.s:3167   .debug_str:00000000000004ee .LASF81
+     /tmp/ccQNFSxm.s:202    .text.gpio_init:0000000000000000 .LFB4
+     /tmp/ccQNFSxm.s:363    .text.gpio_init:00000000000000a8 .LFE4
+     /tmp/ccQNFSxm.s:3043   .debug_str:0000000000000106 .LASF82
+     /tmp/ccQNFSxm.s:3121   .debug_str:00000000000003b1 .LASF83
+     /tmp/ccQNFSxm.s:2680   .debug_loc:00000000000002b3 .LLST3
+     /tmp/ccQNFSxm.s:2694   .debug_loc:00000000000002d4 .LLST4
+     /tmp/ccQNFSxm.s:3045   .debug_str:000000000000010b .LASF84
+     /tmp/ccQNFSxm.s:2726   .debug_loc:0000000000000323 .LLST5
+     /tmp/ccQNFSxm.s:2738   .debug_loc:0000000000000342 .LLST6
+     /tmp/ccQNFSxm.s:3163   .debug_str:00000000000004d0 .LASF85
+     /tmp/ccQNFSxm.s:165    .text.gpio_afio_deinit:0000000000000000 .LFB3
+     /tmp/ccQNFSxm.s:195    .text.gpio_afio_deinit:0000000000000020 .LFE3
+     /tmp/ccQNFSxm.s:2786   .debug_loc:00000000000003c4 .LLST2
+     /tmp/ccQNFSxm.s:180    .text.gpio_afio_deinit:0000000000000010 .LVL16
+     /tmp/ccQNFSxm.s:193    .text.gpio_afio_deinit:0000000000000020 .LVL17
+     /tmp/ccQNFSxm.s:3179   .debug_str:000000000000052b .LASF86
+     /tmp/ccQNFSxm.s:14     .text.gpio_deinit:0000000000000000 .LFB2
+     /tmp/ccQNFSxm.s:158    .text.gpio_deinit:00000000000000c6 .LFE2
+     /tmp/ccQNFSxm.s:2804   .debug_loc:00000000000003f0 .LLST0
+     /tmp/ccQNFSxm.s:2872   .debug_loc:0000000000000494 .LLST1
+     /tmp/ccQNFSxm.s:39     .text.gpio_deinit:0000000000000030 .LVL2
+     /tmp/ccQNFSxm.s:53     .text.gpio_deinit:0000000000000040 .LVL3
+     /tmp/ccQNFSxm.s:66     .text.gpio_deinit:000000000000005c .LVL5
+GAS LISTING /tmp/ccQNFSxm.s 			page 37
 
 
-     /tmp/cczUjV95.s:80     .text.gpio_deinit:000000000000006c .LVL6
-     /tmp/cczUjV95.s:88     .text.gpio_deinit:0000000000000078 .LVL8
-     /tmp/cczUjV95.s:102    .text.gpio_deinit:0000000000000088 .LVL9
-     /tmp/cczUjV95.s:110    .text.gpio_deinit:0000000000000094 .LVL11
-     /tmp/cczUjV95.s:124    .text.gpio_deinit:00000000000000a4 .LVL12
-     /tmp/cczUjV95.s:143    .text.gpio_deinit:00000000000000b6 .LVL14
-     /tmp/cczUjV95.s:156    .text.gpio_deinit:00000000000000c6 .LVL15
-     /tmp/cczUjV95.s:3187   .debug_str:0000000000000553 .LASF87
-     /tmp/cczUjV95.s:3037   .debug_str:0000000000000115 .LASF88
-     /tmp/cczUjV95.s:850    .text.gpio_pin_lock:0000000000000000 .LVL78
-     /tmp/cczUjV95.s:856    .text.gpio_pin_lock:0000000000000004 .LVL79
-     /tmp/cczUjV95.s:869    .text.gpio_pin_lock:000000000000000c .LVL80
-     /tmp/cczUjV95.s:776    .text.gpio_event_output_config:0000000000000000 .LVL73
-     /tmp/cczUjV95.s:788    .text.gpio_event_output_config:0000000000000008 .LVL75
-     /tmp/cczUjV95.s:782    .text.gpio_event_output_config:0000000000000006 .LVL74
-     /tmp/cczUjV95.s:791    .text.gpio_event_output_config:000000000000000c .LVL76
-     /tmp/cczUjV95.s:795    .text.gpio_event_output_config:0000000000000010 .LVL77
-     /tmp/cczUjV95.s:683    .text.gpio_exti_source_select:0000000000000000 .LVL67
-     /tmp/cczUjV95.s:699    .text.gpio_exti_source_select:0000000000000016 .LVL69
-     /tmp/cczUjV95.s:690    .text.gpio_exti_source_select:0000000000000006 .LVL68
-     /tmp/cczUjV95.s:705    .text.gpio_exti_source_select:0000000000000020 .LVL70
-     /tmp/cczUjV95.s:714    .text.gpio_exti_source_select:000000000000002c .LVL71
-     /tmp/cczUjV95.s:719    .text.gpio_exti_source_select:000000000000002e .LVL72
-     /tmp/cczUjV95.s:531    .text.gpio_pin_remap_config:0000000000000000 .LVL49
-     /tmp/cczUjV95.s:552    .text.gpio_pin_remap_config:0000000000000018 .LVL51
-     /tmp/cczUjV95.s:593    .text.gpio_pin_remap_config:000000000000004a .LVL56
-     /tmp/cczUjV95.s:608    .text.gpio_pin_remap_config:0000000000000058 .LVL58
-     /tmp/cczUjV95.s:628    .text.gpio_pin_remap_config:0000000000000070 .LVL61
-     /tmp/cczUjV95.s:634    .text.gpio_pin_remap_config:0000000000000074 .LVL62
-     /tmp/cczUjV95.s:650    .text.gpio_pin_remap_config:0000000000000084 .LVL64
-     /tmp/cczUjV95.s:563    .text.gpio_pin_remap_config:0000000000000024 .LVL53
-     /tmp/cczUjV95.s:581    .text.gpio_pin_remap_config:000000000000003e .LVL55
-     /tmp/cczUjV95.s:543    .text.gpio_pin_remap_config:000000000000000e .LVL50
-     /tmp/cczUjV95.s:576    .text.gpio_pin_remap_config:0000000000000038 .LVL54
-     /tmp/cczUjV95.s:621    .text.gpio_pin_remap_config:0000000000000068 .LVL59
-     /tmp/cczUjV95.s:626    .text.gpio_pin_remap_config:000000000000006e .LVL60
-     /tmp/cczUjV95.s:641    .text.gpio_pin_remap_config:000000000000007a .LVL63
-     /tmp/cczUjV95.s:556    .text.gpio_pin_remap_config:000000000000001c .LVL52
-     /tmp/cczUjV95.s:654    .text.gpio_pin_remap_config:0000000000000088 .LVL65
-     /tmp/cczUjV95.s:511    .text.gpio_output_port_get:0000000000000000 .LVL47
-     /tmp/cczUjV95.s:515    .text.gpio_output_port_get:0000000000000002 .LVL48
-     /tmp/cczUjV95.s:490    .text.gpio_output_bit_get:0000000000000000 .LVL45
-     /tmp/cczUjV95.s:494    .text.gpio_output_bit_get:0000000000000002 .LVL46
-     /tmp/cczUjV95.s:470    .text.gpio_input_port_get:0000000000000000 .LVL43
-     /tmp/cczUjV95.s:474    .text.gpio_input_port_get:0000000000000002 .LVL44
-     /tmp/cczUjV95.s:449    .text.gpio_input_bit_get:0000000000000000 .LVL41
-     /tmp/cczUjV95.s:453    .text.gpio_input_bit_get:0000000000000002 .LVL42
-     /tmp/cczUjV95.s:205    .text.gpio_init:0000000000000000 .LVL18
-     /tmp/cczUjV95.s:236    .text.gpio_init:000000000000001e .LVL21
-     /tmp/cczUjV95.s:221    .text.gpio_init:000000000000000e .LVL20
-     /tmp/cczUjV95.s:274    .text.gpio_init:000000000000004c .LVL25
-     /tmp/cczUjV95.s:277    .text.gpio_init:000000000000004e .LVL26
-     /tmp/cczUjV95.s:291    .text.gpio_init:0000000000000060 .LVL27
-     /tmp/cczUjV95.s:330    .text.gpio_init:0000000000000090 .LVL31
-     /tmp/cczUjV95.s:333    .text.gpio_init:0000000000000092 .LVL32
-     /tmp/cczUjV95.s:338    .text.gpio_init:0000000000000098 .LVL33
-     /tmp/cczUjV95.s:214    .text.gpio_init:0000000000000008 .LVL19
-GAS LISTING /tmp/cczUjV95.s 			page 38
+     /tmp/ccQNFSxm.s:80     .text.gpio_deinit:000000000000006c .LVL6
+     /tmp/ccQNFSxm.s:88     .text.gpio_deinit:0000000000000078 .LVL8
+     /tmp/ccQNFSxm.s:102    .text.gpio_deinit:0000000000000088 .LVL9
+     /tmp/ccQNFSxm.s:110    .text.gpio_deinit:0000000000000094 .LVL11
+     /tmp/ccQNFSxm.s:124    .text.gpio_deinit:00000000000000a4 .LVL12
+     /tmp/ccQNFSxm.s:143    .text.gpio_deinit:00000000000000b6 .LVL14
+     /tmp/ccQNFSxm.s:156    .text.gpio_deinit:00000000000000c6 .LVL15
+     /tmp/ccQNFSxm.s:3187   .debug_str:0000000000000559 .LASF87
+     /tmp/ccQNFSxm.s:3035   .debug_str:00000000000000bc .LASF88
+     /tmp/ccQNFSxm.s:850    .text.gpio_pin_lock:0000000000000000 .LVL78
+     /tmp/ccQNFSxm.s:856    .text.gpio_pin_lock:0000000000000004 .LVL79
+     /tmp/ccQNFSxm.s:869    .text.gpio_pin_lock:000000000000000c .LVL80
+     /tmp/ccQNFSxm.s:776    .text.gpio_event_output_config:0000000000000000 .LVL73
+     /tmp/ccQNFSxm.s:788    .text.gpio_event_output_config:0000000000000008 .LVL75
+     /tmp/ccQNFSxm.s:782    .text.gpio_event_output_config:0000000000000006 .LVL74
+     /tmp/ccQNFSxm.s:791    .text.gpio_event_output_config:000000000000000c .LVL76
+     /tmp/ccQNFSxm.s:795    .text.gpio_event_output_config:0000000000000010 .LVL77
+     /tmp/ccQNFSxm.s:683    .text.gpio_exti_source_select:0000000000000000 .LVL67
+     /tmp/ccQNFSxm.s:699    .text.gpio_exti_source_select:0000000000000016 .LVL69
+     /tmp/ccQNFSxm.s:690    .text.gpio_exti_source_select:0000000000000006 .LVL68
+     /tmp/ccQNFSxm.s:705    .text.gpio_exti_source_select:0000000000000020 .LVL70
+     /tmp/ccQNFSxm.s:714    .text.gpio_exti_source_select:000000000000002c .LVL71
+     /tmp/ccQNFSxm.s:719    .text.gpio_exti_source_select:000000000000002e .LVL72
+     /tmp/ccQNFSxm.s:531    .text.gpio_pin_remap_config:0000000000000000 .LVL49
+     /tmp/ccQNFSxm.s:552    .text.gpio_pin_remap_config:0000000000000018 .LVL51
+     /tmp/ccQNFSxm.s:593    .text.gpio_pin_remap_config:000000000000004a .LVL56
+     /tmp/ccQNFSxm.s:608    .text.gpio_pin_remap_config:0000000000000058 .LVL58
+     /tmp/ccQNFSxm.s:628    .text.gpio_pin_remap_config:0000000000000070 .LVL61
+     /tmp/ccQNFSxm.s:634    .text.gpio_pin_remap_config:0000000000000074 .LVL62
+     /tmp/ccQNFSxm.s:650    .text.gpio_pin_remap_config:0000000000000084 .LVL64
+     /tmp/ccQNFSxm.s:563    .text.gpio_pin_remap_config:0000000000000024 .LVL53
+     /tmp/ccQNFSxm.s:581    .text.gpio_pin_remap_config:000000000000003e .LVL55
+     /tmp/ccQNFSxm.s:543    .text.gpio_pin_remap_config:000000000000000e .LVL50
+     /tmp/ccQNFSxm.s:576    .text.gpio_pin_remap_config:0000000000000038 .LVL54
+     /tmp/ccQNFSxm.s:621    .text.gpio_pin_remap_config:0000000000000068 .LVL59
+     /tmp/ccQNFSxm.s:626    .text.gpio_pin_remap_config:000000000000006e .LVL60
+     /tmp/ccQNFSxm.s:641    .text.gpio_pin_remap_config:000000000000007a .LVL63
+     /tmp/ccQNFSxm.s:556    .text.gpio_pin_remap_config:000000000000001c .LVL52
+     /tmp/ccQNFSxm.s:654    .text.gpio_pin_remap_config:0000000000000088 .LVL65
+     /tmp/ccQNFSxm.s:511    .text.gpio_output_port_get:0000000000000000 .LVL47
+     /tmp/ccQNFSxm.s:515    .text.gpio_output_port_get:0000000000000002 .LVL48
+     /tmp/ccQNFSxm.s:490    .text.gpio_output_bit_get:0000000000000000 .LVL45
+     /tmp/ccQNFSxm.s:494    .text.gpio_output_bit_get:0000000000000002 .LVL46
+     /tmp/ccQNFSxm.s:470    .text.gpio_input_port_get:0000000000000000 .LVL43
+     /tmp/ccQNFSxm.s:474    .text.gpio_input_port_get:0000000000000002 .LVL44
+     /tmp/ccQNFSxm.s:449    .text.gpio_input_bit_get:0000000000000000 .LVL41
+     /tmp/ccQNFSxm.s:453    .text.gpio_input_bit_get:0000000000000002 .LVL42
+     /tmp/ccQNFSxm.s:205    .text.gpio_init:0000000000000000 .LVL18
+     /tmp/ccQNFSxm.s:236    .text.gpio_init:000000000000001e .LVL21
+     /tmp/ccQNFSxm.s:221    .text.gpio_init:000000000000000e .LVL20
+     /tmp/ccQNFSxm.s:274    .text.gpio_init:000000000000004c .LVL25
+     /tmp/ccQNFSxm.s:277    .text.gpio_init:000000000000004e .LVL26
+     /tmp/ccQNFSxm.s:291    .text.gpio_init:0000000000000060 .LVL27
+     /tmp/ccQNFSxm.s:330    .text.gpio_init:0000000000000090 .LVL31
+     /tmp/ccQNFSxm.s:333    .text.gpio_init:0000000000000092 .LVL32
+     /tmp/ccQNFSxm.s:338    .text.gpio_init:0000000000000098 .LVL33
+     /tmp/ccQNFSxm.s:214    .text.gpio_init:0000000000000008 .LVL19
+GAS LISTING /tmp/ccQNFSxm.s 			page 38
 
 
-     /tmp/cczUjV95.s:256    .text.gpio_init:000000000000003a .LVL22
-     /tmp/cczUjV95.s:260    .text.gpio_init:000000000000003e .LVL23
-     /tmp/cczUjV95.s:264    .text.gpio_init:0000000000000042 .LVL24
-     /tmp/cczUjV95.s:312    .text.gpio_init:000000000000007e .LVL28
-     /tmp/cczUjV95.s:316    .text.gpio_init:0000000000000082 .LVL29
-     /tmp/cczUjV95.s:320    .text.gpio_init:0000000000000086 .LVL30
-     /tmp/cczUjV95.s:344    .text.gpio_init:000000000000009c .LVL34
-     /tmp/cczUjV95.s:350    .text.gpio_init:00000000000000a0 .LVL35
-     /tmp/cczUjV95.s:356    .text.gpio_init:00000000000000a4 .LVL36
-     /tmp/cczUjV95.s:171    .text.gpio_afio_deinit:0000000000000002 .LCFI12
-     /tmp/cczUjV95.s:189    .text.gpio_afio_deinit:0000000000000018 .LCFI13
-     /tmp/cczUjV95.s:22     .text.gpio_deinit:0000000000000002 .LCFI0
-     /tmp/cczUjV95.s:49     .text.gpio_deinit:0000000000000038 .LCFI1
-     /tmp/cczUjV95.s:55     .text.gpio_deinit:0000000000000040 .LCFI2
-     /tmp/cczUjV95.s:76     .text.gpio_deinit:0000000000000064 .LCFI3
-     /tmp/cczUjV95.s:82     .text.gpio_deinit:000000000000006c .LCFI4
-     /tmp/cczUjV95.s:98     .text.gpio_deinit:0000000000000080 .LCFI5
-     /tmp/cczUjV95.s:104    .text.gpio_deinit:0000000000000088 .LCFI6
-     /tmp/cczUjV95.s:120    .text.gpio_deinit:000000000000009c .LCFI7
-     /tmp/cczUjV95.s:126    .text.gpio_deinit:00000000000000a4 .LCFI8
-     /tmp/cczUjV95.s:133    .text.gpio_deinit:00000000000000a8 .LCFI9
-     /tmp/cczUjV95.s:137    .text.gpio_deinit:00000000000000aa .LCFI10
-     /tmp/cczUjV95.s:152    .text.gpio_deinit:00000000000000be .LCFI11
-     /tmp/cczUjV95.s:18     .text.gpio_deinit:0000000000000000 .LVL0
-     /tmp/cczUjV95.s:37     .text.gpio_deinit:0000000000000028 .LVL1
-     /tmp/cczUjV95.s:64     .text.gpio_deinit:0000000000000054 .LVL4
-     /tmp/cczUjV95.s:86     .text.gpio_deinit:0000000000000070 .LVL7
-     /tmp/cczUjV95.s:108    .text.gpio_deinit:000000000000008c .LVL10
-     /tmp/cczUjV95.s:141    .text.gpio_deinit:00000000000000ae .LVL13
-     /tmp/cczUjV95.s:887    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccQNFSxm.s:256    .text.gpio_init:000000000000003a .LVL22
+     /tmp/ccQNFSxm.s:260    .text.gpio_init:000000000000003e .LVL23
+     /tmp/ccQNFSxm.s:264    .text.gpio_init:0000000000000042 .LVL24
+     /tmp/ccQNFSxm.s:312    .text.gpio_init:000000000000007e .LVL28
+     /tmp/ccQNFSxm.s:316    .text.gpio_init:0000000000000082 .LVL29
+     /tmp/ccQNFSxm.s:320    .text.gpio_init:0000000000000086 .LVL30
+     /tmp/ccQNFSxm.s:344    .text.gpio_init:000000000000009c .LVL34
+     /tmp/ccQNFSxm.s:350    .text.gpio_init:00000000000000a0 .LVL35
+     /tmp/ccQNFSxm.s:356    .text.gpio_init:00000000000000a4 .LVL36
+     /tmp/ccQNFSxm.s:171    .text.gpio_afio_deinit:0000000000000002 .LCFI12
+     /tmp/ccQNFSxm.s:189    .text.gpio_afio_deinit:0000000000000018 .LCFI13
+     /tmp/ccQNFSxm.s:22     .text.gpio_deinit:0000000000000002 .LCFI0
+     /tmp/ccQNFSxm.s:49     .text.gpio_deinit:0000000000000038 .LCFI1
+     /tmp/ccQNFSxm.s:55     .text.gpio_deinit:0000000000000040 .LCFI2
+     /tmp/ccQNFSxm.s:76     .text.gpio_deinit:0000000000000064 .LCFI3
+     /tmp/ccQNFSxm.s:82     .text.gpio_deinit:000000000000006c .LCFI4
+     /tmp/ccQNFSxm.s:98     .text.gpio_deinit:0000000000000080 .LCFI5
+     /tmp/ccQNFSxm.s:104    .text.gpio_deinit:0000000000000088 .LCFI6
+     /tmp/ccQNFSxm.s:120    .text.gpio_deinit:000000000000009c .LCFI7
+     /tmp/ccQNFSxm.s:126    .text.gpio_deinit:00000000000000a4 .LCFI8
+     /tmp/ccQNFSxm.s:133    .text.gpio_deinit:00000000000000a8 .LCFI9
+     /tmp/ccQNFSxm.s:137    .text.gpio_deinit:00000000000000aa .LCFI10
+     /tmp/ccQNFSxm.s:152    .text.gpio_deinit:00000000000000be .LCFI11
+     /tmp/ccQNFSxm.s:18     .text.gpio_deinit:0000000000000000 .LVL0
+     /tmp/ccQNFSxm.s:37     .text.gpio_deinit:0000000000000028 .LVL1
+     /tmp/ccQNFSxm.s:64     .text.gpio_deinit:0000000000000054 .LVL4
+     /tmp/ccQNFSxm.s:86     .text.gpio_deinit:0000000000000070 .LVL7
+     /tmp/ccQNFSxm.s:108    .text.gpio_deinit:000000000000008c .LVL10
+     /tmp/ccQNFSxm.s:141    .text.gpio_deinit:00000000000000ae .LVL13
+     /tmp/ccQNFSxm.s:887    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_reset_enable
