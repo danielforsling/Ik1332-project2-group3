@@ -15,9 +15,6 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 #define EI 1
 #define DI 0
 
-void ds18B20callBack(unsigned int temp){
-}
-
 int main(void){  
     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
     int lookUpTbl[16]={1,4,7,14,2,5,8,0,3,6,9,15,10,11,12,13};
