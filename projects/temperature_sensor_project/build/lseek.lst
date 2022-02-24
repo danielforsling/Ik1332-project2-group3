@@ -1,0 +1,257 @@
+GAS LISTING /tmp/ccvAMHXL.s 			page 1
+
+
+   1              		.file	"lseek.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text._lseek,"ax",@progbits
+  10              		.align	1
+  11              		.globl	_lseek
+  13              	_lseek:
+  14              	.LFB1:
+  15              		.file 1 "../../firmware/RISCV/stubs/lseek.c"
+   1:../../firmware/RISCV/stubs/lseek.c **** /* See LICENSE of license details. */
+   2:../../firmware/RISCV/stubs/lseek.c **** 
+   3:../../firmware/RISCV/stubs/lseek.c **** #include <errno.h>
+   4:../../firmware/RISCV/stubs/lseek.c **** #include <unistd.h>
+   5:../../firmware/RISCV/stubs/lseek.c **** #include <sys/types.h>
+   6:../../firmware/RISCV/stubs/lseek.c **** #include "stub.h"
+   7:../../firmware/RISCV/stubs/lseek.c **** 
+   8:../../firmware/RISCV/stubs/lseek.c **** off_t _lseek(int fd, off_t ptr, int dir)
+   9:../../firmware/RISCV/stubs/lseek.c **** {
+  16              		.loc 1 9 1
+  17              		.cfi_startproc
+  18              	.LVL0:
+  10:../../firmware/RISCV/stubs/lseek.c ****   if (isatty(fd))
+  19              		.loc 1 10 3
+   9:../../firmware/RISCV/stubs/lseek.c ****   if (isatty(fd))
+  20              		.loc 1 9 1 is_stmt 0
+  21 0000 4111     		addi	sp,sp,-16
+  22              	.LCFI0:
+  23              		.cfi_def_cfa_offset 16
+  24 0002 06C6     		sw	ra,12(sp)
+  25              		.cfi_offset 1, -4
+  26              		.loc 1 10 7
+  27 0004 97000000 		call	isatty
+  27      E7800000 
+  28              	.LVL1:
+  11:../../firmware/RISCV/stubs/lseek.c ****     return 0;
+  12:../../firmware/RISCV/stubs/lseek.c **** 
+  13:../../firmware/RISCV/stubs/lseek.c ****   return _stub(EBADF);
+  14:../../firmware/RISCV/stubs/lseek.c **** }
+  29              		.loc 1 14 1
+  30 000c B240     		lw	ra,12(sp)
+  31              		.cfi_restore 1
+  10:../../firmware/RISCV/stubs/lseek.c ****     return 0;
+  32              		.loc 1 10 6
+  33 000e 13351500 		seqz	a0,a0
+  34              		.loc 1 14 1
+  35 0012 3305A040 		neg	a0,a0
+  36 0016 4101     		addi	sp,sp,16
+  37              	.LCFI1:
+  38              		.cfi_def_cfa_offset 0
+  39 0018 8280     		jr	ra
+  40              		.cfi_endproc
+  41              	.LFE1:
+GAS LISTING /tmp/ccvAMHXL.s 			page 2
+
+
+  43              		.text
+  44              	.Letext0:
+  45              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/lib/gcc/riscv64-unknown-elf
+  46              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  47              		.file 4 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  48              		.file 5 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  49              		.file 6 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  50              		.file 7 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  51              		.file 8 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+  52              		.file 9 "../../firmware/RISCV/stubs/stub.h"
+GAS LISTING /tmp/ccvAMHXL.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lseek.c
+     /tmp/ccvAMHXL.s:13     .text._lseek:0000000000000000 _lseek
+     /tmp/ccvAMHXL.s:17     .text._lseek:0000000000000000 .L0 
+     /tmp/ccvAMHXL.s:19     .text._lseek:0000000000000000 .L0 
+     /tmp/ccvAMHXL.s:20     .text._lseek:0000000000000000 .L0 
+     /tmp/ccvAMHXL.s:21     .text._lseek:0000000000000000 .L0 
+     /tmp/ccvAMHXL.s:23     .text._lseek:0000000000000002 .L0 
+     /tmp/ccvAMHXL.s:25     .text._lseek:0000000000000004 .L0 
+     /tmp/ccvAMHXL.s:27     .text._lseek:0000000000000004 .L0 
+     /tmp/ccvAMHXL.s:30     .text._lseek:000000000000000c .L0 
+     /tmp/ccvAMHXL.s:31     .text._lseek:000000000000000e .L0 
+     /tmp/ccvAMHXL.s:33     .text._lseek:000000000000000e .L0 
+     /tmp/ccvAMHXL.s:35     .text._lseek:0000000000000012 .L0 
+     /tmp/ccvAMHXL.s:38     .text._lseek:0000000000000018 .L0 
+     /tmp/ccvAMHXL.s:40     .text._lseek:000000000000001a .L0 
+     /tmp/ccvAMHXL.s:43     .text._lseek:000000000000001a .L0 
+                     .debug_frame:0000000000000000 .L0 
+     /tmp/ccvAMHXL.s:1600   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccvAMHXL.s:2359   .debug_str:00000000000002cf .LASF130
+     /tmp/ccvAMHXL.s:2317   .debug_str:00000000000001fa .LASF131
+     /tmp/ccvAMHXL.s:2449   .debug_str:00000000000004d6 .LASF132
+     /tmp/ccvAMHXL.s:2205   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccvAMHXL.s:2211   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccvAMHXL.s:2303   .debug_str:00000000000001b8 .LASF0
+     /tmp/ccvAMHXL.s:2245   .debug_str:00000000000000b1 .LASF1
+     /tmp/ccvAMHXL.s:2353   .debug_str:00000000000002b5 .LASF2
+     /tmp/ccvAMHXL.s:2337   .debug_str:0000000000000276 .LASF10
+     /tmp/ccvAMHXL.s:2247   .debug_str:00000000000000bf .LASF3
+     /tmp/ccvAMHXL.s:2373   .debug_str:0000000000000388 .LASF4
+     /tmp/ccvAMHXL.s:2379   .debug_str:00000000000003a4 .LASF5
+     /tmp/ccvAMHXL.s:2323   .debug_str:000000000000022b .LASF6
+     /tmp/ccvAMHXL.s:2263   .debug_str:0000000000000104 .LASF7
+     /tmp/ccvAMHXL.s:2311   .debug_str:00000000000001dc .LASF8
+     /tmp/ccvAMHXL.s:2231   .debug_str:000000000000005a .LASF9
+     /tmp/ccvAMHXL.s:2367   .debug_str:0000000000000365 .LASF11
+     /tmp/ccvAMHXL.s:2215   .debug_str:000000000000000c .LASF12
+     /tmp/ccvAMHXL.s:2425   .debug_str:0000000000000476 .LASF13
+     /tmp/ccvAMHXL.s:2461   .debug_str:0000000000000564 .LASF14
+     /tmp/ccvAMHXL.s:2333   .debug_str:0000000000000268 .LASF15
+     /tmp/ccvAMHXL.s:2305   .debug_str:00000000000001c5 .LASF16
+     /tmp/ccvAMHXL.s:2417   .debug_str:0000000000000454 .LASF17
+     /tmp/ccvAMHXL.s:2419   .debug_str:000000000000045c .LASF18
+     /tmp/ccvAMHXL.s:2389   .debug_str:00000000000003cc .LASF19
+     /tmp/ccvAMHXL.s:2445   .debug_str:00000000000004c1 .LASF20
+     /tmp/ccvAMHXL.s:2371   .debug_str:0000000000000376 .LASF21
+     /tmp/ccvAMHXL.s:2289   .debug_str:000000000000017b .LASF22
+     /tmp/ccvAMHXL.s:2293   .debug_str:000000000000018c .LASF27
+     /tmp/ccvAMHXL.s:2437   .debug_str:00000000000004a0 .LASF23
+     /tmp/ccvAMHXL.s:2411   .debug_str:000000000000043f .LASF24
+     /tmp/ccvAMHXL.s:2287   .debug_str:0000000000000175 .LASF25
+     /tmp/ccvAMHXL.s:2455   .debug_str:000000000000054f .LASF26
+     /tmp/ccvAMHXL.s:2301   .debug_str:00000000000001b3 .LASF28
+     /tmp/ccvAMHXL.s:2243   .debug_str:00000000000000a8 .LASF29
+     /tmp/ccvAMHXL.s:2431   .debug_str:000000000000048a .LASF30
+     /tmp/ccvAMHXL.s:2253   .debug_str:00000000000000d7 .LASF31
+     /tmp/ccvAMHXL.s:2485   .debug_str:00000000000005cf .LASF32
+GAS LISTING /tmp/ccvAMHXL.s 			page 4
+
+
+     /tmp/ccvAMHXL.s:2361   .debug_str:0000000000000349 .LASF33
+     /tmp/ccvAMHXL.s:2347   .debug_str:000000000000029b .LASF34
+     /tmp/ccvAMHXL.s:2457   .debug_str:0000000000000554 .LASF35
+     /tmp/ccvAMHXL.s:2381   .debug_str:00000000000003ae .LASF36
+     /tmp/ccvAMHXL.s:2471   .debug_str:000000000000058f .LASF37
+     /tmp/ccvAMHXL.s:2257   .debug_str:00000000000000e6 .LASF38
+     /tmp/ccvAMHXL.s:2283   .debug_str:0000000000000168 .LASF39
+     /tmp/ccvAMHXL.s:2213   .debug_str:0000000000000000 .LASF40
+     /tmp/ccvAMHXL.s:2441   .debug_str:00000000000004b3 .LASF41
+     /tmp/ccvAMHXL.s:2267   .debug_str:0000000000000114 .LASF42
+     /tmp/ccvAMHXL.s:2363   .debug_str:0000000000000352 .LASF43
+     /tmp/ccvAMHXL.s:2403   .debug_str:000000000000040f .LASF44
+     /tmp/ccvAMHXL.s:2285   .debug_str:0000000000000170 .LASF45
+     /tmp/ccvAMHXL.s:2383   .debug_str:00000000000003b8 .LASF46
+     /tmp/ccvAMHXL.s:2251   .debug_str:00000000000000d1 .LASF47
+     /tmp/ccvAMHXL.s:2219   .debug_str:000000000000001b .LASF48
+     /tmp/ccvAMHXL.s:2391   .debug_str:00000000000003d7 .LASF49
+     /tmp/ccvAMHXL.s:2265   .debug_str:000000000000010d .LASF50
+     /tmp/ccvAMHXL.s:2313   .debug_str:00000000000001ee .LASF51
+     /tmp/ccvAMHXL.s:2233   .debug_str:0000000000000071 .LASF52
+     /tmp/ccvAMHXL.s:2259   .debug_str:00000000000000f4 .LASF53
+     /tmp/ccvAMHXL.s:2297   .debug_str:00000000000001a3 .LASF54
+     /tmp/ccvAMHXL.s:2345   .debug_str:0000000000000294 .LASF55
+     /tmp/ccvAMHXL.s:2421   .debug_str:0000000000000464 .LASF56
+     /tmp/ccvAMHXL.s:2475   .debug_str:00000000000005a9 .LASF57
+     /tmp/ccvAMHXL.s:2249   .debug_str:00000000000000cb .LASF58
+     /tmp/ccvAMHXL.s:2467   .debug_str:0000000000000581 .LASF59
+     /tmp/ccvAMHXL.s:2271   .debug_str:0000000000000123 .LASF60
+     /tmp/ccvAMHXL.s:2277   .debug_str:0000000000000141 .LASF61
+     /tmp/ccvAMHXL.s:2225   .debug_str:0000000000000034 .LASF62
+     /tmp/ccvAMHXL.s:2339   .debug_str:000000000000027d .LASF63
+     /tmp/ccvAMHXL.s:2395   .debug_str:00000000000003e9 .LASF64
+     /tmp/ccvAMHXL.s:2341   .debug_str:0000000000000283 .LASF65
+     /tmp/ccvAMHXL.s:2413   .debug_str:0000000000000447 .LASF66
+     /tmp/ccvAMHXL.s:2427   .debug_str:000000000000047e .LASF67
+     /tmp/ccvAMHXL.s:2269   .debug_str:000000000000011c .LASF68
+     /tmp/ccvAMHXL.s:2307   .debug_str:00000000000001cc .LASF69
+     /tmp/ccvAMHXL.s:2291   .debug_str:0000000000000184 .LASF70
+     /tmp/ccvAMHXL.s:2401   .debug_str:000000000000040a .LASF71
+     /tmp/ccvAMHXL.s:2223   .debug_str:0000000000000029 .LASF72
+     /tmp/ccvAMHXL.s:2409   .debug_str:0000000000000426 .LASF73
+     /tmp/ccvAMHXL.s:2405   .debug_str:0000000000000414 .LASF74
+     /tmp/ccvAMHXL.s:2365   .debug_str:000000000000035a .LASF75
+     /tmp/ccvAMHXL.s:2407   .debug_str:000000000000041c .LASF76
+     /tmp/ccvAMHXL.s:2331   .debug_str:0000000000000260 .LASF77
+     /tmp/ccvAMHXL.s:2299   .debug_str:00000000000001a9 .LASF78
+     /tmp/ccvAMHXL.s:2483   .debug_str:00000000000005ca .LASF79
+     /tmp/ccvAMHXL.s:2369   .debug_str:000000000000036c .LASF80
+     /tmp/ccvAMHXL.s:2309   .debug_str:00000000000001d4 .LASF81
+     /tmp/ccvAMHXL.s:2275   .debug_str:0000000000000139 .LASF82
+     /tmp/ccvAMHXL.s:2375   .debug_str:0000000000000396 .LASF83
+     /tmp/ccvAMHXL.s:2325   .debug_str:000000000000023e .LASF84
+     /tmp/ccvAMHXL.s:2465   .debug_str:0000000000000577 .LASF85
+     /tmp/ccvAMHXL.s:2261   .debug_str:00000000000000fc .LASF86
+     /tmp/ccvAMHXL.s:2255   .debug_str:00000000000000e1 .LASF87
+     /tmp/ccvAMHXL.s:2429   .debug_str:0000000000000485 .LASF88
+     /tmp/ccvAMHXL.s:2387   .debug_str:00000000000003c5 .LASF89
+GAS LISTING /tmp/ccvAMHXL.s 			page 5
+
+
+     /tmp/ccvAMHXL.s:2459   .debug_str:000000000000055e .LASF90
+     /tmp/ccvAMHXL.s:2319   .debug_str:000000000000021d .LASF91
+     /tmp/ccvAMHXL.s:2385   .debug_str:00000000000003bf .LASF92
+     /tmp/ccvAMHXL.s:2221   .debug_str:0000000000000021 .LASF93
+     /tmp/ccvAMHXL.s:2415   .debug_str:000000000000044e .LASF94
+     /tmp/ccvAMHXL.s:2435   .debug_str:000000000000049a .LASF95
+     /tmp/ccvAMHXL.s:2443   .debug_str:00000000000004bc .LASF96
+     /tmp/ccvAMHXL.s:2453   .debug_str:0000000000000542 .LASF97
+     /tmp/ccvAMHXL.s:2439   .debug_str:00000000000004a6 .LASF98
+     /tmp/ccvAMHXL.s:2329   .debug_str:0000000000000253 .LASF99
+     /tmp/ccvAMHXL.s:2473   .debug_str:000000000000059a .LASF100
+     /tmp/ccvAMHXL.s:2295   .debug_str:0000000000000194 .LASF101
+     /tmp/ccvAMHXL.s:2397   .debug_str:00000000000003f2 .LASF102
+     /tmp/ccvAMHXL.s:2477   .debug_str:00000000000005b0 .LASF103
+     /tmp/ccvAMHXL.s:2399   .debug_str:00000000000003fd .LASF104
+     /tmp/ccvAMHXL.s:2481   .debug_str:00000000000005bc .LASF105
+     /tmp/ccvAMHXL.s:2241   .debug_str:000000000000009a .LASF106
+     /tmp/ccvAMHXL.s:2463   .debug_str:000000000000056d .LASF107
+     /tmp/ccvAMHXL.s:2327   .debug_str:0000000000000247 .LASF108
+     /tmp/ccvAMHXL.s:2447   .debug_str:00000000000004c9 .LASF109
+     /tmp/ccvAMHXL.s:2281   .debug_str:000000000000015a .LASF110
+     /tmp/ccvAMHXL.s:2239   .debug_str:000000000000008b .LASF111
+     /tmp/ccvAMHXL.s:2279   .debug_str:0000000000000149 .LASF112
+     /tmp/ccvAMHXL.s:2227   .debug_str:000000000000003a .LASF113
+     /tmp/ccvAMHXL.s:2229   .debug_str:0000000000000049 .LASF114
+     /tmp/ccvAMHXL.s:2377   .debug_str:000000000000039b .LASF115
+     /tmp/ccvAMHXL.s:2357   .debug_str:00000000000002c8 .LASF116
+     /tmp/ccvAMHXL.s:2349   .debug_str:00000000000002a5 .LASF117
+     /tmp/ccvAMHXL.s:2469   .debug_str:0000000000000587 .LASF118
+     /tmp/ccvAMHXL.s:2235   .debug_str:000000000000007a .LASF133
+     /tmp/ccvAMHXL.s:2423   .debug_str:000000000000046a .LASF119
+     /tmp/ccvAMHXL.s:2451   .debug_str:000000000000052f .LASF120
+     /tmp/ccvAMHXL.s:2273   .debug_str:000000000000012c .LASF121
+     /tmp/ccvAMHXL.s:2393   .debug_str:00000000000003df .LASF122
+     /tmp/ccvAMHXL.s:2315   .debug_str:00000000000001f4 .LASF123
+     /tmp/ccvAMHXL.s:2335   .debug_str:000000000000026e .LASF124
+     /tmp/ccvAMHXL.s:2351   .debug_str:00000000000002ae .LASF125
+     /tmp/ccvAMHXL.s:2355   .debug_str:00000000000002c1 .LASF126
+     /tmp/ccvAMHXL.s:2433   .debug_str:0000000000000493 .LASF127
+     /tmp/ccvAMHXL.s:2479   .debug_str:00000000000005b5 .LASF128
+     /tmp/ccvAMHXL.s:2343   .debug_str:000000000000028b .LASF129
+     /tmp/ccvAMHXL.s:2321   .debug_str:0000000000000224 .LASF134
+     /tmp/ccvAMHXL.s:14     .text._lseek:0000000000000000 .LFB1
+     /tmp/ccvAMHXL.s:41     .text._lseek:000000000000001a .LFE1
+     /tmp/ccvAMHXL.s:2132   .debug_loc:0000000000000000 .LLST0
+     /tmp/ccvAMHXL.s:2150   .debug_loc:000000000000002c .LLST1
+     /tmp/ccvAMHXL.s:2164   .debug_loc:000000000000004d .LLST2
+     /tmp/ccvAMHXL.s:2178   .debug_loc:000000000000006e .LLST3
+     /tmp/ccvAMHXL.s:28     .text._lseek:000000000000000c .LVL1
+     /tmp/ccvAMHXL.s:2237   .debug_str:0000000000000085 .LASF135
+     /tmp/ccvAMHXL.s:2217   .debug_str:0000000000000014 .LASF136
+     /tmp/ccvAMHXL.s:22     .text._lseek:0000000000000002 .LCFI0
+     /tmp/ccvAMHXL.s:37     .text._lseek:0000000000000018 .LCFI1
+     /tmp/ccvAMHXL.s:18     .text._lseek:0000000000000000 .LVL0
+     /tmp/ccvAMHXL.s:54     .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+GAS LISTING /tmp/ccvAMHXL.s 			page 6
+
+
+isatty

@@ -1,0 +1,325 @@
+GAS LISTING /tmp/ccba3B4u.s 			page 1
+
+
+   1              		.file	"esp_communication.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text._is_command_length_within_limits,"ax",@progbits
+  10              		.align	1
+  11              		.globl	_is_command_length_within_limits
+  13              	_is_command_length_within_limits:
+  14              	.LFB2:
+  15              		.file 1 "esp_communication.c"
+   1:esp_communication.c **** /**
+   2:esp_communication.c ****  * @file        esp_communication.c
+   3:esp_communication.c ****  * @brief       Defines functions that can be use to communicate with an ESP8266 module via uart.
+   4:esp_communication.c ****  * @version     1.0
+   5:esp_communication.c ****  * @date        2022-02-23
+   6:esp_communication.c ****  */
+   7:esp_communication.c **** 
+   8:esp_communication.c **** #include "esp_communication.h"
+   9:esp_communication.c **** #include "usart.h"
+  10:esp_communication.c **** #include "gd32vf103.h"
+  11:esp_communication.c **** 
+  12:esp_communication.c **** #ifdef ESP_COMMUNICATION_LCD_LOGGING
+  13:esp_communication.c **** #include "lcd.h"
+  14:esp_communication.c **** #endif
+  15:esp_communication.c **** 
+  16:esp_communication.c **** /**
+  17:esp_communication.c ****  * @brief       Checks to see if the given at commands stays within the 256 byte limit.
+  18:esp_communication.c ****  * 
+  19:esp_communication.c ****  * @param[in]   at_command: the AT command representad as a string.
+  20:esp_communication.c ****  * @return      0 or -1 depending on whether the command passes the test or not. 
+  21:esp_communication.c ****  */
+  22:esp_communication.c **** int8_t _is_command_length_within_limits(char * at_command)
+  23:esp_communication.c **** {
+  16              		.loc 1 23 1
+  17              		.cfi_startproc
+  18              	.LVL0:
+  24:esp_communication.c ****     for(uint16_t length = 0; length >= 256; length++)
+  19              		.loc 1 24 5
+  20              		.loc 1 24 9
+  25:esp_communication.c ****     {
+  26:esp_communication.c ****         if (*at_command == '\0')
+  27:esp_communication.c ****         {
+  28:esp_communication.c ****             return 0;
+  29:esp_communication.c ****         }
+  30:esp_communication.c ****     }
+  31:esp_communication.c **** 
+  32:esp_communication.c ****     return -1;
+  21              		.loc 1 32 5
+  33:esp_communication.c **** }
+  22              		.loc 1 33 1 is_stmt 0
+  23 0000 7D55     		li	a0,-1
+  24              	.LVL1:
+  25 0002 8280     		ret
+GAS LISTING /tmp/ccba3B4u.s 			page 2
+
+
+  26              		.cfi_endproc
+  27              	.LFE2:
+  29              		.section	.text.esp_at_send,"ax",@progbits
+  30              		.align	1
+  31              		.globl	esp_at_send
+  33              	esp_at_send:
+  34              	.LFB3:
+  34:esp_communication.c **** 
+  35:esp_communication.c **** /**
+  36:esp_communication.c ****  * @brief       Sends an AT command to the ESP8266 module through uart.
+  37:esp_communication.c ****  * 
+  38:esp_communication.c ****  * @param[in]   at_command: the AT command represented as a string.
+  39:esp_communication.c ****  * @return      0 is returned if the command was sucessfully sent and -1 is returned if the
+  40:esp_communication.c ****  *              command were larger than 256 bytes.
+  41:esp_communication.c ****  */
+  42:esp_communication.c **** int esp_at_send(char *at_command)
+  43:esp_communication.c **** {
+  35              		.loc 1 43 1 is_stmt 1
+  36              		.cfi_startproc
+  37              	.LVL2:
+  44:esp_communication.c ****     if(!_is_command_length_within_limits(at_command))
+  38              		.loc 1 44 5
+  24:esp_communication.c ****     {
+  39              		.loc 1 24 5
+  24:esp_communication.c ****     {
+  40              		.loc 1 24 9
+  32:esp_communication.c **** }
+  41              		.loc 1 32 5
+  45:esp_communication.c ****     {
+  46:esp_communication.c ****         return -1;
+  47:esp_communication.c ****     }
+  48:esp_communication.c **** 
+  49:esp_communication.c ****     #ifdef ESP_COMMUNICATION_LCD_LOGGING
+  50:esp_communication.c ****     LCD_ShowStr(8, 10, at_command, WHITE, OPAQUE);
+  51:esp_communication.c ****     #endif
+  52:esp_communication.c **** 
+  53:esp_communication.c ****     putstr(at_command);
+  42              		.loc 1 53 5
+  43:esp_communication.c ****     if(!_is_command_length_within_limits(at_command))
+  43              		.loc 1 43 1 is_stmt 0
+  44 0000 4111     		addi	sp,sp,-16
+  45              	.LCFI0:
+  46              		.cfi_def_cfa_offset 16
+  47 0002 06C6     		sw	ra,12(sp)
+  48              		.cfi_offset 1, -4
+  49              		.loc 1 53 5
+  50 0004 97000000 		call	putstr
+  50      E7800000 
+  51              	.LVL3:
+  54:esp_communication.c ****     return 0;
+  52              		.loc 1 54 5 is_stmt 1
+  55:esp_communication.c **** }
+  53              		.loc 1 55 1 is_stmt 0
+  54 000c B240     		lw	ra,12(sp)
+  55              		.cfi_restore 1
+  56 000e 0145     		li	a0,0
+  57 0010 4101     		addi	sp,sp,16
+GAS LISTING /tmp/ccba3B4u.s 			page 3
+
+
+  58              	.LCFI1:
+  59              		.cfi_def_cfa_offset 0
+  60 0012 8280     		jr	ra
+  61              		.cfi_endproc
+  62              	.LFE3:
+  64              		.section	.text.esp_at_send_dat,"ax",@progbits
+  65              		.align	1
+  66              		.globl	esp_at_send_dat
+  68              	esp_at_send_dat:
+  69              	.LFB4:
+  56:esp_communication.c **** 
+  57:esp_communication.c **** /**
+  58:esp_communication.c ****  * @brief       Sends an AT command and subsequent data to the ESP8266 module through uart.
+  59:esp_communication.c ****  * 
+  60:esp_communication.c ****  * @param[in]   at_command: the AT command represented as a string.
+  61:esp_communication.c ****  * @param[in]   data: the data represented as a string.
+  62:esp_communication.c ****  * @return      0 is returned if the command was sucessfully sent and -1 is returned if the
+  63:esp_communication.c ****  *              command were larger than 256 bytes.
+  64:esp_communication.c ****  */
+  65:esp_communication.c **** int esp_at_send_dat(char *at_command, char *data)
+  66:esp_communication.c **** {
+  70              		.loc 1 66 1 is_stmt 1
+  71              		.cfi_startproc
+  72              	.LVL4:
+  67:esp_communication.c ****     if(!_is_command_length_within_limits(at_command))
+  73              		.loc 1 67 5
+  24:esp_communication.c ****     {
+  74              		.loc 1 24 5
+  24:esp_communication.c ****     {
+  75              		.loc 1 24 9
+  32:esp_communication.c **** }
+  76              		.loc 1 32 5
+  68:esp_communication.c ****     {
+  69:esp_communication.c ****         return -1;
+  70:esp_communication.c ****     }
+  71:esp_communication.c **** 
+  72:esp_communication.c ****     #ifdef ESP_COMMUNICATION_LCD_LOGGING
+  73:esp_communication.c ****     LCD_ShowStr(8, 10, at_command, WHITE, OPAQUE);
+  74:esp_communication.c ****     #endif
+  75:esp_communication.c **** 
+  76:esp_communication.c ****     putstr(at_command);
+  77              		.loc 1 76 5
+  66:esp_communication.c ****     if(!_is_command_length_within_limits(at_command))
+  78              		.loc 1 66 1 is_stmt 0
+  79 0000 4111     		addi	sp,sp,-16
+  80              	.LCFI2:
+  81              		.cfi_def_cfa_offset 16
+  82 0002 06C6     		sw	ra,12(sp)
+  83 0004 22C4     		sw	s0,8(sp)
+  84              		.cfi_offset 1, -4
+  85              		.cfi_offset 8, -8
+  66:esp_communication.c ****     if(!_is_command_length_within_limits(at_command))
+  86              		.loc 1 66 1
+  87 0006 2E84     		mv	s0,a1
+  88              		.loc 1 76 5
+  89 0008 97000000 		call	putstr
+  89      E7800000 
+GAS LISTING /tmp/ccba3B4u.s 			page 4
+
+
+  90              	.LVL5:
+  77:esp_communication.c ****     putstr(data);
+  91              		.loc 1 77 5 is_stmt 1
+  92 0010 2285     		mv	a0,s0
+  93 0012 97000000 		call	putstr
+  93      E7800000 
+  94              	.LVL6:
+  78:esp_communication.c **** }...
+  95              		.loc 1 78 1 is_stmt 0
+  96 001a B240     		lw	ra,12(sp)
+  97              		.cfi_restore 1
+  98 001c 2244     		lw	s0,8(sp)
+  99              		.cfi_restore 8
+ 100              	.LVL7:
+ 101 001e 4101     		addi	sp,sp,16
+ 102              	.LCFI3:
+ 103              		.cfi_def_cfa_offset 0
+ 104 0020 8280     		jr	ra
+ 105              		.cfi_endproc
+ 106              	.LFE4:
+ 108              		.text
+ 109              	.Letext0:
+ 110              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 111              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 112              		.file 4 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 113              		.file 5 "usart.h"
+GAS LISTING /tmp/ccba3B4u.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 esp_communication.c
+     /tmp/ccba3B4u.s:13     .text._is_command_length_within_limits:0000000000000000 _is_command_length_within_limits
+     /tmp/ccba3B4u.s:17     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:19     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:20     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:21     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:22     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:23     .text._is_command_length_within_limits:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:26     .text._is_command_length_within_limits:0000000000000004 .L0 
+     /tmp/ccba3B4u.s:33     .text.esp_at_send:0000000000000000 esp_at_send
+     /tmp/ccba3B4u.s:36     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:38     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:39     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:40     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:41     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:42     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:43     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:44     .text.esp_at_send:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:46     .text.esp_at_send:0000000000000002 .L0 
+     /tmp/ccba3B4u.s:48     .text.esp_at_send:0000000000000004 .L0 
+     /tmp/ccba3B4u.s:50     .text.esp_at_send:0000000000000004 .L0 
+     /tmp/ccba3B4u.s:53     .text.esp_at_send:000000000000000c .L0 
+     /tmp/ccba3B4u.s:54     .text.esp_at_send:000000000000000c .L0 
+     /tmp/ccba3B4u.s:55     .text.esp_at_send:000000000000000e .L0 
+     /tmp/ccba3B4u.s:59     .text.esp_at_send:0000000000000012 .L0 
+     /tmp/ccba3B4u.s:61     .text.esp_at_send:0000000000000014 .L0 
+     /tmp/ccba3B4u.s:68     .text.esp_at_send_dat:0000000000000000 esp_at_send_dat
+     /tmp/ccba3B4u.s:71     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:73     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:74     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:75     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:76     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:77     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:78     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:79     .text.esp_at_send_dat:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:81     .text.esp_at_send_dat:0000000000000002 .L0 
+     /tmp/ccba3B4u.s:84     .text.esp_at_send_dat:0000000000000006 .L0 
+     /tmp/ccba3B4u.s:85     .text.esp_at_send_dat:0000000000000006 .L0 
+     /tmp/ccba3B4u.s:87     .text.esp_at_send_dat:0000000000000006 .L0 
+     /tmp/ccba3B4u.s:89     .text.esp_at_send_dat:0000000000000008 .L0 
+     /tmp/ccba3B4u.s:92     .text.esp_at_send_dat:0000000000000010 .L0 
+     /tmp/ccba3B4u.s:96     .text.esp_at_send_dat:000000000000001a .L0 
+     /tmp/ccba3B4u.s:97     .text.esp_at_send_dat:000000000000001c .L0 
+     /tmp/ccba3B4u.s:99     .text.esp_at_send_dat:000000000000001e .L0 
+     /tmp/ccba3B4u.s:103    .text.esp_at_send_dat:0000000000000020 .L0 
+     /tmp/ccba3B4u.s:105    .text.esp_at_send_dat:0000000000000022 .L0 
+     /tmp/ccba3B4u.s:29     .text._is_command_length_within_limits:0000000000000004 .L0 
+     /tmp/ccba3B4u.s:64     .text.esp_at_send:0000000000000014 .L0 
+     /tmp/ccba3B4u.s:108    .text.esp_at_send_dat:0000000000000022 .L0 
+                     .debug_frame:0000000000000000 .L0 
+     /tmp/ccba3B4u.s:354    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccba3B4u.s:781    .debug_str:000000000000011c .LASF21
+     /tmp/ccba3B4u.s:763    .debug_str:0000000000000062 .LASF22
+     /tmp/ccba3B4u.s:773    .debug_str:00000000000000a3 .LASF23
+     /tmp/ccba3B4u.s:735    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccba3B4u.s:745    .debug_line:0000000000000000 .Ldebug_line0
+GAS LISTING /tmp/ccba3B4u.s 			page 6
+
+
+     /tmp/ccba3B4u.s:749    .debug_str:000000000000000e .LASF0
+     /tmp/ccba3B4u.s:783    .debug_str:0000000000000196 .LASF4
+     /tmp/ccba3B4u.s:787    .debug_str:00000000000001b2 .LASF1
+     /tmp/ccba3B4u.s:769    .debug_str:000000000000008a .LASF2
+     /tmp/ccba3B4u.s:799    .debug_str:0000000000000210 .LASF3
+     /tmp/ccba3B4u.s:767    .debug_str:000000000000007f .LASF5
+     /tmp/ccba3B4u.s:785    .debug_str:000000000000019f .LASF6
+     /tmp/ccba3B4u.s:797    .debug_str:0000000000000207 .LASF7
+     /tmp/ccba3B4u.s:753    .debug_str:0000000000000022 .LASF8
+     /tmp/ccba3B4u.s:757    .debug_str:0000000000000034 .LASF9
+     /tmp/ccba3B4u.s:747    .debug_str:0000000000000000 .LASF10
+     /tmp/ccba3B4u.s:759    .debug_str:0000000000000046 .LASF11
+     /tmp/ccba3B4u.s:779    .debug_str:0000000000000115 .LASF12
+     /tmp/ccba3B4u.s:765    .debug_str:0000000000000076 .LASF13
+     /tmp/ccba3B4u.s:775    .debug_str:00000000000000fc .LASF14
+     /tmp/ccba3B4u.s:777    .debug_str:0000000000000105 .LASF24
+     /tmp/ccba3B4u.s:795    .debug_str:00000000000001fb .LASF15
+     /tmp/ccba3B4u.s:793    .debug_str:00000000000001eb .LASF19
+     /tmp/ccba3B4u.s:69     .text.esp_at_send_dat:0000000000000000 .LFB4
+     /tmp/ccba3B4u.s:106    .text.esp_at_send_dat:0000000000000022 .LFE4
+     /tmp/ccba3B4u.s:622    .debug_loc:0000000000000000 .LLST3
+     /tmp/ccba3B4u.s:771    .debug_str:0000000000000098 .LASF16
+     /tmp/ccba3B4u.s:640    .debug_loc:000000000000002c .LLST4
+     /tmp/ccba3B4u.s:761    .debug_str:000000000000005d .LASF17
+     /tmp/ccba3B4u.s:654    .debug_loc:000000000000004d .LLST5
+     /tmp/ccba3B4u.s:90     .text.esp_at_send_dat:0000000000000010 .LVL5
+     /tmp/ccba3B4u.s:94     .text.esp_at_send_dat:000000000000001a .LVL6
+     /tmp/ccba3B4u.s:801    .debug_str:000000000000021a .LASF18
+     /tmp/ccba3B4u.s:789    .debug_str:00000000000001be .LASF20
+     /tmp/ccba3B4u.s:34     .text.esp_at_send:0000000000000000 .LFB3
+     /tmp/ccba3B4u.s:62     .text.esp_at_send:0000000000000014 .LFE3
+     /tmp/ccba3B4u.s:672    .debug_loc:0000000000000079 .LLST1
+     /tmp/ccba3B4u.s:690    .debug_loc:00000000000000a5 .LLST2
+     /tmp/ccba3B4u.s:51     .text.esp_at_send:000000000000000c .LVL3
+     /tmp/ccba3B4u.s:791    .debug_str:00000000000001ca .LASF25
+     /tmp/ccba3B4u.s:755    .debug_str:000000000000002d .LASF26
+     /tmp/ccba3B4u.s:14     .text._is_command_length_within_limits:0000000000000000 .LFB2
+     /tmp/ccba3B4u.s:27     .text._is_command_length_within_limits:0000000000000004 .LFE2
+     /tmp/ccba3B4u.s:704    .debug_loc:00000000000000c6 .LLST0
+     /tmp/ccba3B4u.s:751    .debug_str:000000000000001b .LASF27
+     /tmp/ccba3B4u.s:80     .text.esp_at_send_dat:0000000000000002 .LCFI2
+     /tmp/ccba3B4u.s:102    .text.esp_at_send_dat:0000000000000020 .LCFI3
+     /tmp/ccba3B4u.s:72     .text.esp_at_send_dat:0000000000000000 .LVL4
+     /tmp/ccba3B4u.s:100    .text.esp_at_send_dat:000000000000001e .LVL7
+     /tmp/ccba3B4u.s:45     .text.esp_at_send:0000000000000002 .LCFI0
+     /tmp/ccba3B4u.s:58     .text.esp_at_send:0000000000000012 .LCFI1
+     /tmp/ccba3B4u.s:37     .text.esp_at_send:0000000000000000 .LVL2
+     /tmp/ccba3B4u.s:18     .text._is_command_length_within_limits:0000000000000000 .LVL0
+     /tmp/ccba3B4u.s:24     .text._is_command_length_within_limits:0000000000000002 .LVL1
+     /tmp/ccba3B4u.s:115    .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+putstr
