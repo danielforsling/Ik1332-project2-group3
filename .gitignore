@@ -52,3 +52,6 @@ Mkfile.old
 dkms.conf
 
 compiler/
+
+# ctags for vim
+tags
