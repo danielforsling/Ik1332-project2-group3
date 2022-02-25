@@ -1,2 +1,2 @@
 all:
-	gcc -o temp_simulation main.c
+	gcc -o temp_simulation temp_simulation.c
