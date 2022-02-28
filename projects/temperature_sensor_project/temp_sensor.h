@@ -24,4 +24,4 @@ void temp_sensor_init();
 void temp_sensor_callback(unsigned int temp);
 TEMPERATURE_STATUS _check_temp(u16 temp);
 
-#endif TEMP_SENSOR_H
+#endif 
