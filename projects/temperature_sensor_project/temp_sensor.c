@@ -1,4 +1,5 @@
 #include "temp_sensor.h"
+#include "bool8.h"
 
 /**
  * @brief       Initializes the temperature sensor.

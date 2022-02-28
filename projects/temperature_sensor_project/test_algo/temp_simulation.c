@@ -3,12 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../bool8.h"
 
-#define MAX_READINGS 10 
-
-typedef uint8_t bool_u8;
-#define FALSE 0
-#define TRUE  1
+#define MAX_READINGS 20 
 
 static uint16_t temp_readings[MAX_READINGS];
 static uint16_t temp_index = 0;
