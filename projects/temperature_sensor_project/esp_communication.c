@@ -5,14 +5,73 @@
  * @version     1.0
  * @date        2022-02-23
  */
-
 #include "esp_communication.h"
+#include "AT_commands.h"
 #include "usart.h"
 #include "gd32vf103.h"
-
-#ifdef ESP_COMMUNICATION_LCD_LOGGING
 #include "lcd.h"
-#endif
+
+uint8_t ok_end_sequence_matches = 0;
+DATA_TRANSMIT_STATE transmit_state = READY_TO_SEND;
+
+/**
+ * @brief       callback function for the uart data recieve callback. Its' purpose is to
+ *              determine when the wifi module has finished sending data.
+ * 
+ * @param[in]   recieved_data: the data recived by the UART0 interface.
+ * @return      no return value. 
+ */
+void wifi_uart_data_recieved_callback(uint8_t recieved_data)
+{
+    if (recieved_data == AT_RECIEVE_OK[ok_end_sequence_matches])
+    {
+        ok_end_sequence_matches++;
+        if (ok_end_sequence_matches == AT_RECIEVE_OK_LENGTH)
+        {
+            transmit_state = AT_DONE;
+            ok_end_sequence_matches = 0;
+        }
+    }
+    else
+    {
+        ok_end_sequence_matches = 0;
+    }
+}
+
+/**
+ * @brief       returns the transmission state.
+ * 
+ * @param       void: no arguments.
+ * @return      The state of the transmission represented as an 
+ *              DATA_TRANSMIT_STATE enum value.
+ */
+DATA_TRANSMIT_STATE _get_transmit_state()
+{
+    switch(transmit_state)
+    {
+        case READY_TO_SEND:
+        case WAITING: return transmit_state;
+        case AT_DONE:
+            ok_end_sequence_matches = 0;
+            transmit_state = READY_TO_SEND;
+            return  AT_DONE;
+        case AT_ERROR:
+            ok_end_sequence_matches = 0;
+            transmit_state = READY_TO_SEND;
+            return  AT_ERROR;
+    }
+}
+
+/**
+ * @brief       sets the transmition state to WAITING.
+ * 
+ * @param       void: no arguments.
+ * @return      no return value.
+ */
+void _set_transmit_state_waiting()
+{
+    transmit_state = WAITING;
+}
 
 /**
  * @brief       Checks to see if the given at commands stays within the 256 byte limit.
@@ -26,11 +85,29 @@ int8_t _is_command_length_within_limits(char * at_command)
     {
         if (*at_command == '\0')
         {
-            return 0;
+            return 1;
         }
     }
-
     return -1;
+}
+
+/**
+ * @brief       Tries to connect to at mqtt broker.
+ * 
+ * @param       void: no arguemnts.
+ * @return      0 or 1 depending on if the connection is successfull or not.
+ */
+int connect_to_network()
+{
+    esp_at_send(AT_SET_CWMODE_ONE, WAIT_FOR_RESPONSE);
+
+    esp_at_send(AT_AP_CONNECT, WAIT_FOR_RESPONSE);
+
+    esp_at_send(AT_SET_MQTT_CONFIG, WAIT_FOR_RESPONSE);
+
+    esp_at_send(AT_MQTT_CONNECT, WAIT_FOR_RESPONSE);
+
+    return 0;
 }
 
 /**
@@ -40,17 +117,43 @@ int8_t _is_command_length_within_limits(char * at_command)
  * @return      0 is returned if the command was sucessfully sent and -1 is returned if the
  *              command were larger than 256 bytes.
  */
-int esp_at_send(char *at_command)
+int esp_at_send(char *at_command, uint8_t response_falg)
 {
     if(!_is_command_length_within_limits(at_command))
     {
         return -1;
     }
 
+    putstr(at_command);
+    _set_transmit_state_waiting();
+    
+    if (response_falg == WAIT_FOR_RESPONSE)
+    {
+        while(1)
+        {
+            DATA_TRANSMIT_STATE current_state = _get_transmit_state();
+            if (current_state == WAITING)
+            {
+                u0_TX_Queue();
+                continue;
+            }
+            break;
+        }
+    }
+
     #ifdef ESP_COMMUNICATION_LCD_LOGGING
-    LCD_ShowStr(8, 10, at_command, WHITE, OPAQUE);
+    int i = 0, j = 0; 
+    char current_char;
+    while((current_char = getChar()) != '\0')
+    {
+        LCD_ShowChar(8 + i * 8, 8 + j * 16, current_char, OPAQUE, WHITE);
+        if (i == 17)
+        {
+            j = (j + 1) % 4;
+        }
+        i = (i + 1) % 18;
+    }
     #endif
 
-    putstr(at_command);
     return 0;
 }
