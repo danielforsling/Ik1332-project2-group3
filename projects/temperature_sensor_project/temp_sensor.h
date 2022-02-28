@@ -22,6 +22,6 @@ typedef enum {
 
 void temp_sensor_init();
 void temp_sensor_callback(unsigned int temp);
-TEMPERATURE_STATUS _check_temp(u16 temp);
+TEMPERATURE_STATUS _check_temp();
 
 #endif 

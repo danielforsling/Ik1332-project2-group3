@@ -1,6 +1,12 @@
 #include "temp_sensor.h"
 #include "bool8.h"
 
+#define MAX_READINGS 20 
+
+static uint16_t temp_readings[MAX_READINGS];
+static uint16_t temp_index = 0;
+static uint16_t temp_normal_avg;    // The "normal" avg. temp. calculated in the initialization procedure
+
 /**
  * @brief       Initializes the temperature sensor.
  * 
@@ -12,8 +18,9 @@ void temp_sensor_init()
 }
 
 /**
- * @brief       Converts the thermometer conversion to a decimal celsius value
- *              with one decimal precision. 
+ * @brief       This function gets called whenever there's a new temperature reading.
+ *              It will calculate sample averages and notify the user if unwanted 
+ *              fluctuation has been detected.
  * 
  * @param[in]   temp: 16 bit temperature conversion value. The bit format of the 
  *              conversion is SSSS SIII IIII FFFF where S are sign bits, 
@@ -26,27 +33,55 @@ void temp_sensor_callback(unsigned int temp)
 {
     // Get the I bits (integer value)
     u16 temp_integer = temp >> 4;
+    temp_readings[temp_index++] = temp_integer;
 
-    // Get the F bits (fraction)
-    u16 temp_sixteenths = temp & 0x000F;
+    // Get the F bits (fraction) (right now we don't care about the fraction)
+    // u16 temp_sixteenths = temp & 0x000F;
 
     // Save one decimal
-    u16 temp_fraction = (temp_sixteenths * 625) / 1000;
+    // u16 temp_fraction = (temp_sixteenths * 625) / 1000;
+
+    if(temp_index >= MAX_READINGS) {
+        _check_temp();
+
+        /* Start reading new samples */
+        temp_index = 0;
+    }
 }
 
 /**
- * @brief       Checks if the provided temperature is in a valid range
+ * @brief       Calculates a new sample average, compares this to the normal sample 
+ *              average, and then returns the result of the comparison. The first time this
+ *              function is called it will set the temp. normal avg. to the calculated sample avg.
  * 
- * @param[in]   temp: the measured temperature 
- *
- * @return      TEMP_OK if the temperature is in valid range, otherwise 
- *              TEMP_WARNING is returned.
+ * @return      TEMP_OK if no fluctuation has been detected, otherwise TEMP_WARNING
+ *              will be returned.
  */
-TEMPERATURE_STATUS _check_temp(u16 temp)
+TEMPERATURE_STATUS _check_temp()
 {
-    if(temp >= 24 && temp <= 26) {
-        return TEMP_OK;
+    static bool_u8 temp_initialized = FALSE;
+
+    /* Calculate new sample average */
+    uint16_t temp_sample_avg = 0;
+    for(int i = 0; i < MAX_READINGS; i++) {
+        temp_sample_avg += temp_readings[i];
+    }
+    temp_sample_avg /= MAX_READINGS;
+
+    if(temp_initialized == TRUE) {
+        /* We will multiply by 100 to get better precision when dividing */
+        /* Just remember that were counting in hundreds */
+        uint16_t temp_sample_avg_fp = temp_sample_avg * 100; 
+
+        /* Calculate how much the new avg. deviates from the old avg. in percentage */
+        /* A drop in temperature will result in negative deviation */
+        int32_t deviation = (100 - (temp_sample_avg_fp / temp_normal_avg)) * -1; 
+
+        // TODO: Alarm user if temp. deviated a certain amount (e.g. dropped 15% in temp.)
+    } else {
+        temp_normal_avg = temp_sample_avg;
+        temp_initialized = TRUE;
     }
 
-    return TEMP_WARNING;
+    return TEMP_OK;
 }
