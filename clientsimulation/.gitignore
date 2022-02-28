@@ -1,0 +1,8 @@
+# IDE
+.idea
+
+# Local Configurations
+config.yml
+
+# Environment
+Pipfile.lock
