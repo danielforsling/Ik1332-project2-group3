@@ -12,6 +12,7 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 #include "ds18b20.h"
 #include "temp_sensor.h"
 #include "usart.h"
+#include "esp_communication.h"
 #define EI 1
 #define DI 0
 
@@ -27,7 +28,7 @@ int main(void){
     Lcd_SetType(LCD_INVERTED);              // LCD_INVERTED/LCD_NORMAL!
     Lcd_Init();
     LCD_Clear(BLACK);
-    u0init(DI);                             // Initialize USART0 toolbox
+    u0init(DI,&wifi_uart_data_recieved_callback); // Initialize USART0 toolbox
     temp_sensor_init();
 
     eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
