@@ -1,3 +1,10 @@
+/**
+ * @file usart.c
+ * @brief Modified version of the uart.c file from the DS18B20.
+ * @version 0.1
+ * 
+ */
+
 #include "gd32vf103.h"
 #include "usart.h" 
 #include "eclicw.h"   
