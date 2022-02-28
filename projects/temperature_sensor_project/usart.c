@@ -1,6 +1,6 @@
 /**
  * @file usart.c
- * @brief Modified version of the uart.c file from the DS18B20.
+ * @brief Modified version of the usart.c file from the DS18B20 driver package.
  * @version 0.1
  * 
  */
