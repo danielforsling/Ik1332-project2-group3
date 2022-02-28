@@ -1,11 +1,22 @@
 #include "temp_sensor.h"
-#include "bool8.h"
+#include "stdbool.h"
+
+#define SIMULATE_TEMP // comment this out to read the real temperature from the sensor
+
+#ifdef SIMULATE_TEMP
+#include "temp_simulation.h"
+static u32 states = 2;
+static bool fridge_door_states[states] = { // For each run, if the fridge door is open (TRUE) or closed (FALSE)
+    false, true 
+};
+static u32 simulation_run = 0;
+#endif
 
 #define MAX_READINGS 20 
 
-static uint16_t temp_readings[MAX_READINGS];
-static uint16_t temp_index = 0;
-static uint16_t temp_normal_avg;    // The "normal" avg. temp. calculated in the initialization procedure
+static u16 temp_readings[MAX_READINGS];
+static u16 temp_index = 0;
+static u16 temp_normal_avg;    // The "normal" avg. temp. calculated in the initialization procedure
 
 /**
  * @brief       Initializes the temperature sensor.
@@ -32,7 +43,16 @@ void temp_sensor_init()
 void temp_sensor_callback(unsigned int temp) 
 {
     // Get the I bits (integer value)
-    u16 temp_integer = temp >> 4;
+    u16 temp_integer;
+#ifdef SIMULATE_TEMP
+    if(fridge_door_states[simulation_run] == TRUE) {
+        temp_integer = simulate_temp_reading_cold();
+    } else {
+        temp_integer = simulate_temp_reading_normal();
+    }
+#else
+    temp_integer = temp >> 4;
+#endif
     temp_readings[temp_index++] = temp_integer;
 
     // Get the F bits (fraction) (right now we don't care about the fraction)
@@ -46,6 +66,10 @@ void temp_sensor_callback(unsigned int temp)
 
         /* Start reading new samples */
         temp_index = 0;
+
+#ifdef SIMULATE_TEMP
+        simulation_run = (simulation_run + 1) % states;
+#endif
     }
 }
 
@@ -59,16 +83,16 @@ void temp_sensor_callback(unsigned int temp)
  */
 TEMPERATURE_STATUS _check_temp()
 {
-    static bool_u8 temp_initialized = FALSE;
+    static bool temp_initialized = false;
 
     /* Calculate new sample average */
-    uint16_t temp_sample_avg = 0;
+    u16 temp_sample_avg = 0;
     for(int i = 0; i < MAX_READINGS; i++) {
         temp_sample_avg += temp_readings[i];
     }
     temp_sample_avg /= MAX_READINGS;
 
-    if(temp_initialized == TRUE) {
+    if(temp_initialized == true) {
         /* We will multiply by 100 to get better precision when dividing */
         /* Just remember that were counting in hundreds */
         uint16_t temp_sample_avg_fp = temp_sample_avg * 100; 

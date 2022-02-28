@@ -1,16 +1,16 @@
-#include <stdint.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include "../bool8.h"
+#include "temp_simulation.h"
+#include "unistd.h"
+#include "stdlib.h"
+#include "time.h"
+#include "stdbool.h"
+#include "stdint.h"
 
 #define MAX_READINGS 20 
 
 static uint16_t temp_readings[MAX_READINGS];
 static uint16_t temp_index = 0;
 static uint16_t temp_last_avg = 0;
-static bool_u8  temp_initialized = FALSE;
+static bool temp_initialized = false;
 
 /**
  * @brief       Generates a random temperature.
@@ -21,7 +21,7 @@ static bool_u8  temp_initialized = FALSE;
  *
  * @return      the generated temperature.
  */
-uint16_t rand_temp(uint32_t min_temp, uint32_t max_temp)
+uint16_t simulate_rand_temp(uint32_t min_temp, uint32_t max_temp)
 {
     return ((float)((float)rand() / RAND_MAX) * (max_temp + 1 - min_temp)) + min_temp;
 }
@@ -33,8 +33,7 @@ uint16_t rand_temp(uint32_t min_temp, uint32_t max_temp)
  */
 uint16_t simulate_temp_reading_normal()
 {
-    uint16_t temp = rand_temp(23, 26);
-    printf("Fridge [open: %s\t temp: %u]\n", "FALSE", temp); 
+    uint16_t temp = simulate_rand_temp(23, 26);
     
     return temp;
 }
@@ -46,8 +45,7 @@ uint16_t simulate_temp_reading_normal()
  */
 uint16_t simulate_temp_reading_cold()
 {
-    uint16_t temp = rand_temp(10, 15);
-    printf("Fridge [open: %s\t temp: %u]\n", "TRUE", temp); 
+    uint16_t temp = simulate_rand_temp(10, 15);
     
     return temp;
 }
@@ -58,19 +56,16 @@ uint16_t simulate_temp_reading_cold()
  *
  * @return  None.
  */
-void init()
+void simulate_temp_init()
 {
     for(int i = 0; i < MAX_READINGS; i++) {
-        uint16_t temp = simulate_temp_reading_normal(FALSE);
-        printf("t[%d]: %u\n", i, temp);
+        uint16_t temp = simulate_temp_reading_normal(false);
         temp_readings[i] = temp;
         temp_last_avg += temp;
     }
     temp_last_avg /= MAX_READINGS;
-    printf("avg. temp: %u\n", temp_last_avg);
 
-    temp_initialized = TRUE;
-    printf("initialization done!\n");
+    temp_initialized = true;
 }
 
 /**
@@ -84,7 +79,7 @@ void init()
  *
  * @return      None.
  */
-void temp_sensor_callback(bool_u8 door_open)
+void simulate_temp_sensor_callback(bool door_open)
 {
     if(temp_index < MAX_READINGS) {
         /* Simulation: if door is open, generate colder temperatures */
@@ -110,52 +105,9 @@ void temp_sensor_callback(bool_u8 door_open)
         /* A drop in temperature will result in negative deviation */
         int32_t deviation = (100 - (temp_new_avg_fp / temp_last_avg)) * -1; 
 
-        printf("new avg : %u\n", temp_new_avg);
-        printf("old avg : %u\n", temp_last_avg);
-        printf("new avg. deviates %s%d%% from old avg.\n", (deviation > 0) ? "+" : "", deviation);
-
         temp_last_avg = temp_new_avg;
 
         /* Start reading new samples */
         temp_index = 0;
     }
-}
-
-/**
- * @brief       Simulates an amount of temp. sensor readings equal to the 'MAX_READINGS' parameter.
- *
- * @param[in]   door_start_open: TRUE if the door should be assumed to start open, otherwise FALSE if
- *                                  door should start closed.   
- *
- * @param[in]   n: the amount of readings that the door should be in the state specified by 'door_start_open'.
- *
- * return       None.
- */
-void simulate_temp_sensor(bool_u8 door_start_open, uint32_t n)
-{
-    if(n > MAX_READINGS) {
-        printf("Readings needs to be less than %u\n", MAX_READINGS);
-        return;
-    }
-
-    for(int r = 0; r < n; r++) {
-        temp_sensor_callback(door_start_open);
-        sleep(1);
-    }
-
-    for(int r = 0; r <= (MAX_READINGS - n); r++) {
-        temp_sensor_callback(!door_start_open);
-        sleep(1);
-    }
-}
-
-int main()
-{
-    srand(time(NULL));
-    init();
-
-    simulate_temp_sensor(FALSE, 5);
-    simulate_temp_sensor(TRUE, 3);
-
-    printf("simulation done\n");
 }
