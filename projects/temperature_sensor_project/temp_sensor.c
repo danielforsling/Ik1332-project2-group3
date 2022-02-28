@@ -26,22 +26,12 @@ void temp_sensor_callback(unsigned int temp)
 {
     // Get the I bits (integer value)
     u16 temp_integer = temp >> 4;
-    LCD_ShowNum(8, 10, temp_integer, 2, WHITE);
 
     // Get the F bits (fraction)
     u16 temp_sixteenths = temp & 0x000F;
-    u16 temp_fraction = temp_sixteenths * 625;
 
-    LCD_ShowNum(30, 30, temp_fraction, 4, WHITE);
-
-    // Show only 1 decimal
-    LCD_ShowNum(8, 30, temp_fraction / 1000, 1, WHITE);
-
-    if(_check_temp(temp_integer) == TEMP_OK) {
-        LCD_ShowString(30, 10, "OK", GREEN);
-    } else { 
-        LCD_ShowString(30, 10, "NO", RED);
-    }
+    // Save one decimal
+    u16 temp_fraction = (temp_sixteenths * 625) / 1000;
 }
 
 /**
