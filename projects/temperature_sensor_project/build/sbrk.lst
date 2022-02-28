@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccqawonl.s 			page 1
+GAS LISTING /tmp/ccRXehO8.s 			page 1
 
 
    1              		.file	"sbrk.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccqawonl.s 			page 1
   15:../../firmware/RISCV/stubs/sbrk.c ****   return curbrk - incr;
   42              		.loc 1 15 3 is_stmt 1
   16:../../firmware/RISCV/stubs/sbrk.c **** }...
-GAS LISTING /tmp/ccqawonl.s 			page 2
+GAS LISTING /tmp/ccRXehO8.s 			page 2
 
 
   43              		.loc 1 16 1 is_stmt 0
@@ -80,58 +80,58 @@ GAS LISTING /tmp/ccqawonl.s 			page 1
   61 0000 00000000 		.word	_end
   62              		.text
   63              	.Letext0:
-  64              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/lib/gcc/riscv64-unknown-elf
-GAS LISTING /tmp/ccqawonl.s 			page 3
+  64              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/lib/gcc/riscv64-unkno
+GAS LISTING /tmp/ccRXehO8.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 sbrk.c
-     /tmp/ccqawonl.s:13     .text._sbrk:0000000000000000 _sbrk
-     /tmp/ccqawonl.s:17     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:19     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:20     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:21     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:22     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:23     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:24     .text._sbrk:0000000000000000 .L0 
-     /tmp/ccqawonl.s:28     .text._sbrk:000000000000000a .L0 
-     /tmp/ccqawonl.s:31     .text._sbrk:0000000000000012 .L0 
-     /tmp/ccqawonl.s:34     .text._sbrk:0000000000000014 .L0 
-     /tmp/ccqawonl.s:36     .text._sbrk:0000000000000018 .L0 
-     /tmp/ccqawonl.s:40     .text._sbrk:0000000000000024 .L0 
-     /tmp/ccqawonl.s:41     .text._sbrk:0000000000000024 .L0 
-     /tmp/ccqawonl.s:43     .text._sbrk:0000000000000026 .L0 
-     /tmp/ccqawonl.s:44     .text._sbrk:0000000000000026 .L0 
-     /tmp/ccqawonl.s:48     .text._sbrk:000000000000002a .L0 
-     /tmp/ccqawonl.s:50     .text._sbrk:000000000000002c .L0 
-     /tmp/ccqawonl.s:52     .text._sbrk:0000000000000030 .L0 
-     /tmp/ccqawonl.s:57     .sdata.curbrk.1524:0000000000000000 .LANCHOR0
-     /tmp/ccqawonl.s:60     .sdata.curbrk.1524:0000000000000000 curbrk.1524
-     /tmp/ccqawonl.s:55     .text._sbrk:0000000000000030 .L0 
+     /tmp/ccRXehO8.s:13     .text._sbrk:0000000000000000 _sbrk
+     /tmp/ccRXehO8.s:17     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:19     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:20     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:21     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:22     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:23     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:24     .text._sbrk:0000000000000000 .L0 
+     /tmp/ccRXehO8.s:28     .text._sbrk:000000000000000a .L0 
+     /tmp/ccRXehO8.s:31     .text._sbrk:0000000000000012 .L0 
+     /tmp/ccRXehO8.s:34     .text._sbrk:0000000000000014 .L0 
+     /tmp/ccRXehO8.s:36     .text._sbrk:0000000000000018 .L0 
+     /tmp/ccRXehO8.s:40     .text._sbrk:0000000000000024 .L0 
+     /tmp/ccRXehO8.s:41     .text._sbrk:0000000000000024 .L0 
+     /tmp/ccRXehO8.s:43     .text._sbrk:0000000000000026 .L0 
+     /tmp/ccRXehO8.s:44     .text._sbrk:0000000000000026 .L0 
+     /tmp/ccRXehO8.s:48     .text._sbrk:000000000000002a .L0 
+     /tmp/ccRXehO8.s:50     .text._sbrk:000000000000002c .L0 
+     /tmp/ccRXehO8.s:52     .text._sbrk:0000000000000030 .L0 
+     /tmp/ccRXehO8.s:57     .sdata.curbrk.1524:0000000000000000 .LANCHOR0
+     /tmp/ccRXehO8.s:60     .sdata.curbrk.1524:0000000000000000 curbrk.1524
+     /tmp/ccRXehO8.s:55     .text._sbrk:0000000000000030 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccqawonl.s:46     .text._sbrk:000000000000002a .L4
-     /tmp/ccqawonl.s:166    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccqawonl.s:379    .debug_str:0000000000000013 .LASF6
-     /tmp/ccqawonl.s:391    .debug_str:0000000000000101 .LASF7
-     /tmp/ccqawonl.s:381    .debug_str:000000000000008d .LASF8
-     /tmp/ccqawonl.s:367    .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccqawonl.s:373    .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccqawonl.s:395    .debug_str:000000000000012d .LASF9
-     /tmp/ccqawonl.s:375    .debug_str:0000000000000000 .LASF0
-     /tmp/ccqawonl.s:399    .debug_str:000000000000013e .LASF1
-     /tmp/ccqawonl.s:389    .debug_str:00000000000000f5 .LASF2
-     /tmp/ccqawonl.s:377    .debug_str:000000000000000d .LASF10
-     /tmp/ccqawonl.s:14     .text._sbrk:0000000000000000 .LFB0
-     /tmp/ccqawonl.s:53     .text._sbrk:0000000000000030 .LFE0
-     /tmp/ccqawonl.s:387    .debug_str:00000000000000f0 .LASF11
-     /tmp/ccqawonl.s:340    .debug_loc:0000000000000000 .LLST0
-     /tmp/ccqawonl.s:383    .debug_str:00000000000000e6 .LASF3
-     /tmp/ccqawonl.s:393    .debug_str:0000000000000123 .LASF4
-     /tmp/ccqawonl.s:397    .debug_str:0000000000000137 .LASF12
-     /tmp/ccqawonl.s:385    .debug_str:00000000000000eb .LASF5
-     /tmp/ccqawonl.s:18     .text._sbrk:0000000000000000 .LVL0
-     /tmp/ccqawonl.s:32     .text._sbrk:0000000000000014 .LVL1
-     /tmp/ccqawonl.s:66     .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccRXehO8.s:46     .text._sbrk:000000000000002a .L4
+     /tmp/ccRXehO8.s:166    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccRXehO8.s:381    .debug_str:000000000000001f .LASF6
+     /tmp/ccRXehO8.s:391    .debug_str:0000000000000107 .LASF7
+     /tmp/ccRXehO8.s:383    .debug_str:0000000000000099 .LASF8
+     /tmp/ccRXehO8.s:367    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccRXehO8.s:373    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccRXehO8.s:395    .debug_str:0000000000000133 .LASF9
+     /tmp/ccRXehO8.s:375    .debug_str:0000000000000000 .LASF0
+     /tmp/ccRXehO8.s:399    .debug_str:0000000000000144 .LASF1
+     /tmp/ccRXehO8.s:377    .debug_str:000000000000000d .LASF2
+     /tmp/ccRXehO8.s:379    .debug_str:0000000000000019 .LASF10
+     /tmp/ccRXehO8.s:14     .text._sbrk:0000000000000000 .LFB0
+     /tmp/ccRXehO8.s:53     .text._sbrk:0000000000000030 .LFE0
+     /tmp/ccRXehO8.s:389    .debug_str:0000000000000102 .LASF11
+     /tmp/ccRXehO8.s:340    .debug_loc:0000000000000000 .LLST0
+     /tmp/ccRXehO8.s:385    .debug_str:00000000000000f8 .LASF3
+     /tmp/ccRXehO8.s:393    .debug_str:0000000000000129 .LASF4
+     /tmp/ccRXehO8.s:397    .debug_str:000000000000013d .LASF12
+     /tmp/ccRXehO8.s:387    .debug_str:00000000000000fd .LASF5
+     /tmp/ccRXehO8.s:18     .text._sbrk:0000000000000000 .LVL0
+     /tmp/ccRXehO8.s:32     .text._sbrk:0000000000000014 .LVL1
+     /tmp/ccRXehO8.s:66     .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 _end

@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccS4JbrI.s 			page 1
+GAS LISTING /tmp/ccbKuuWf.s 			page 1
 
 
    1              		.file	"write_hex.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccS4JbrI.s 			page 1
   43              		.cfi_offset 9, -12
   44              		.cfi_offset 18, -16
   45              		.cfi_offset 19, -20
-GAS LISTING /tmp/ccS4JbrI.s 			page 2
+GAS LISTING /tmp/ccbKuuWf.s 			page 2
 
 
   46              		.cfi_offset 20, -24
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccS4JbrI.s 			page 1
   14:../../firmware/RISCV/stubs/write_hex.c ****     towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
   87              		.loc 1 14 34 is_stmt 0
   88 004e B3978900 		sll	a5,s3,s0
-GAS LISTING /tmp/ccS4JbrI.s 			page 3
+GAS LISTING /tmp/ccbKuuWf.s 			page 3
 
 
   14:../../firmware/RISCV/stubs/write_hex.c ****     towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccS4JbrI.s 			page 1
  132 0094 D24A     		lw	s5,20(sp)
  133              		.cfi_restore 21
  134              	.LVL10:
-GAS LISTING /tmp/ccS4JbrI.s 			page 4
+GAS LISTING /tmp/ccbKuuWf.s 			page 4
 
 
  135 0096 4561     		addi	sp,sp,48
@@ -193,134 +193,134 @@ GAS LISTING /tmp/ccS4JbrI.s 			page 1
  145 0000 307800   		.string	"0x"
  146              		.text
  147              	.Letext0:
- 148              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 149              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 150              		.file 4 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
-GAS LISTING /tmp/ccS4JbrI.s 			page 5
+ 148              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 149              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 150              		.file 4 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+GAS LISTING /tmp/ccbKuuWf.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 write_hex.c
-     /tmp/ccS4JbrI.s:13     .text.write_hex:0000000000000000 write_hex
-     /tmp/ccS4JbrI.s:17     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:19     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:20     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:21     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:22     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:23     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:24     .text.write_hex:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:26     .text.write_hex:0000000000000002 .L0 
-     /tmp/ccS4JbrI.s:28     .text.write_hex:0000000000000004 .L0 
-     /tmp/ccS4JbrI.s:31     .text.write_hex:0000000000000006 .L0 
-     /tmp/ccS4JbrI.s:36     .text.write_hex:0000000000000010 .L0 
-     /tmp/ccS4JbrI.s:42     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:43     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:44     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:45     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:46     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:47     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:49     .text.write_hex:000000000000001c .L0 
-     /tmp/ccS4JbrI.s:51     .text.write_hex:000000000000001e .L0 
-     /tmp/ccS4JbrI.s:56     .text.write_hex:0000000000000028 .L0 
-     /tmp/ccS4JbrI.s:57     .text.write_hex:0000000000000028 .L0 
-     /tmp/ccS4JbrI.s:59     .text.write_hex:000000000000002a .L0 
-     /tmp/ccS4JbrI.s:62     .text.write_hex:000000000000002c .L0 
-     /tmp/ccS4JbrI.s:68     .text.write_hex:0000000000000030 .L0 
-     /tmp/ccS4JbrI.s:72     .text.write_hex:0000000000000036 .L0 
-     /tmp/ccS4JbrI.s:76     .text.write_hex:000000000000003e .L0 
-     /tmp/ccS4JbrI.s:78     .text.write_hex:0000000000000042 .L0 
-     /tmp/ccS4JbrI.s:82     .text.write_hex:000000000000004a .L0 
-     /tmp/ccS4JbrI.s:86     .text.write_hex:000000000000004e .L0 
-     /tmp/ccS4JbrI.s:87     .text.write_hex:000000000000004e .L0 
-     /tmp/ccS4JbrI.s:88     .text.write_hex:000000000000004e .L0 
-     /tmp/ccS4JbrI.s:90     .text.write_hex:0000000000000052 .L0 
-     /tmp/ccS4JbrI.s:92     .text.write_hex:0000000000000056 .L0 
-     /tmp/ccS4JbrI.s:94     .text.write_hex:000000000000005a .L0 
-     /tmp/ccS4JbrI.s:97     .text.write_hex:000000000000005e .L0 
-     /tmp/ccS4JbrI.s:98     .text.write_hex:000000000000005e .L0 
-     /tmp/ccS4JbrI.s:102    .text.write_hex:000000000000006a .L0 
-     /tmp/ccS4JbrI.s:106    .text.write_hex:0000000000000070 .L0 
-     /tmp/ccS4JbrI.s:110    .text.write_hex:0000000000000078 .L0 
-     /tmp/ccS4JbrI.s:112    .text.write_hex:000000000000007c .L0 
-     /tmp/ccS4JbrI.s:116    .text.write_hex:0000000000000084 .L0 
-     /tmp/ccS4JbrI.s:119    .text.write_hex:0000000000000088 .L0 
-     /tmp/ccS4JbrI.s:120    .text.write_hex:000000000000008a .L0 
-     /tmp/ccS4JbrI.s:122    .text.write_hex:000000000000008c .L0 
-     /tmp/ccS4JbrI.s:124    .text.write_hex:000000000000008e .L0 
-     /tmp/ccS4JbrI.s:126    .text.write_hex:0000000000000090 .L0 
-     /tmp/ccS4JbrI.s:128    .text.write_hex:0000000000000092 .L0 
-     /tmp/ccS4JbrI.s:130    .text.write_hex:0000000000000094 .L0 
-     /tmp/ccS4JbrI.s:133    .text.write_hex:0000000000000096 .L0 
-     /tmp/ccS4JbrI.s:137    .text.write_hex:0000000000000098 .L0 
-     /tmp/ccS4JbrI.s:139    .text.write_hex:000000000000009a .L0 
-     /tmp/ccS4JbrI.s:142    .text.write_hex:000000000000009a .L0 
+     /tmp/ccbKuuWf.s:13     .text.write_hex:0000000000000000 write_hex
+     /tmp/ccbKuuWf.s:17     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:19     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:20     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:21     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:22     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:23     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:24     .text.write_hex:0000000000000000 .L0 
+     /tmp/ccbKuuWf.s:26     .text.write_hex:0000000000000002 .L0 
+     /tmp/ccbKuuWf.s:28     .text.write_hex:0000000000000004 .L0 
+     /tmp/ccbKuuWf.s:31     .text.write_hex:0000000000000006 .L0 
+     /tmp/ccbKuuWf.s:36     .text.write_hex:0000000000000010 .L0 
+     /tmp/ccbKuuWf.s:42     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:43     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:44     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:45     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:46     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:47     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:49     .text.write_hex:000000000000001c .L0 
+     /tmp/ccbKuuWf.s:51     .text.write_hex:000000000000001e .L0 
+     /tmp/ccbKuuWf.s:56     .text.write_hex:0000000000000028 .L0 
+     /tmp/ccbKuuWf.s:57     .text.write_hex:0000000000000028 .L0 
+     /tmp/ccbKuuWf.s:59     .text.write_hex:000000000000002a .L0 
+     /tmp/ccbKuuWf.s:62     .text.write_hex:000000000000002c .L0 
+     /tmp/ccbKuuWf.s:68     .text.write_hex:0000000000000030 .L0 
+     /tmp/ccbKuuWf.s:72     .text.write_hex:0000000000000036 .L0 
+     /tmp/ccbKuuWf.s:76     .text.write_hex:000000000000003e .L0 
+     /tmp/ccbKuuWf.s:78     .text.write_hex:0000000000000042 .L0 
+     /tmp/ccbKuuWf.s:82     .text.write_hex:000000000000004a .L0 
+     /tmp/ccbKuuWf.s:86     .text.write_hex:000000000000004e .L0 
+     /tmp/ccbKuuWf.s:87     .text.write_hex:000000000000004e .L0 
+     /tmp/ccbKuuWf.s:88     .text.write_hex:000000000000004e .L0 
+     /tmp/ccbKuuWf.s:90     .text.write_hex:0000000000000052 .L0 
+     /tmp/ccbKuuWf.s:92     .text.write_hex:0000000000000056 .L0 
+     /tmp/ccbKuuWf.s:94     .text.write_hex:000000000000005a .L0 
+     /tmp/ccbKuuWf.s:97     .text.write_hex:000000000000005e .L0 
+     /tmp/ccbKuuWf.s:98     .text.write_hex:000000000000005e .L0 
+     /tmp/ccbKuuWf.s:102    .text.write_hex:000000000000006a .L0 
+     /tmp/ccbKuuWf.s:106    .text.write_hex:0000000000000070 .L0 
+     /tmp/ccbKuuWf.s:110    .text.write_hex:0000000000000078 .L0 
+     /tmp/ccbKuuWf.s:112    .text.write_hex:000000000000007c .L0 
+     /tmp/ccbKuuWf.s:116    .text.write_hex:0000000000000084 .L0 
+     /tmp/ccbKuuWf.s:119    .text.write_hex:0000000000000088 .L0 
+     /tmp/ccbKuuWf.s:120    .text.write_hex:000000000000008a .L0 
+     /tmp/ccbKuuWf.s:122    .text.write_hex:000000000000008c .L0 
+     /tmp/ccbKuuWf.s:124    .text.write_hex:000000000000008e .L0 
+     /tmp/ccbKuuWf.s:126    .text.write_hex:0000000000000090 .L0 
+     /tmp/ccbKuuWf.s:128    .text.write_hex:0000000000000092 .L0 
+     /tmp/ccbKuuWf.s:130    .text.write_hex:0000000000000094 .L0 
+     /tmp/ccbKuuWf.s:133    .text.write_hex:0000000000000096 .L0 
+     /tmp/ccbKuuWf.s:137    .text.write_hex:0000000000000098 .L0 
+     /tmp/ccbKuuWf.s:139    .text.write_hex:000000000000009a .L0 
+     /tmp/ccbKuuWf.s:142    .text.write_hex:000000000000009a .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccS4JbrI.s:144    .rodata.write_hex.str1.4:0000000000000000 .LC0
-GAS LISTING /tmp/ccS4JbrI.s 			page 6
+     /tmp/ccbKuuWf.s:144    .rodata.write_hex.str1.4:0000000000000000 .LC0
+GAS LISTING /tmp/ccbKuuWf.s 			page 6
 
 
-     /tmp/ccS4JbrI.s:83     .text.write_hex:000000000000004e .L4
-     /tmp/ccS4JbrI.s:117    .text.write_hex:0000000000000088 .L8
-     /tmp/ccS4JbrI.s:65     .text.write_hex:0000000000000030 .L9
-     /tmp/ccS4JbrI.s:414    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccS4JbrI.s:785    .debug_str:0000000000000000 .LASF21
-     /tmp/ccS4JbrI.s:811    .debug_str:00000000000000fa .LASF22
-     /tmp/ccS4JbrI.s:821    .debug_str:000000000000014d .LASF23
-     /tmp/ccS4JbrI.s:769    .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccS4JbrI.s:783    .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccS4JbrI.s:835    .debug_str:00000000000001e0 .LASF0
-     /tmp/ccS4JbrI.s:787    .debug_str:000000000000007a .LASF9
-     /tmp/ccS4JbrI.s:795    .debug_str:000000000000009d .LASF1
-     /tmp/ccS4JbrI.s:827    .debug_str:00000000000001b9 .LASF2
-     /tmp/ccS4JbrI.s:801    .debug_str:00000000000000c4 .LASF3
-     /tmp/ccS4JbrI.s:831    .debug_str:00000000000001cb .LASF4
-     /tmp/ccS4JbrI.s:799    .debug_str:00000000000000b2 .LASF5
-     /tmp/ccS4JbrI.s:823    .debug_str:00000000000001a6 .LASF6
-     /tmp/ccS4JbrI.s:815    .debug_str:0000000000000127 .LASF7
-     /tmp/ccS4JbrI.s:809    .debug_str:00000000000000ed .LASF8
-     /tmp/ccS4JbrI.s:817    .debug_str:000000000000013e .LASF10
-     /tmp/ccS4JbrI.s:825    .debug_str:00000000000001b4 .LASF11
-     /tmp/ccS4JbrI.s:833    .debug_str:00000000000001d4 .LASF12
-     /tmp/ccS4JbrI.s:829    .debug_str:00000000000001c3 .LASF13
-     /tmp/ccS4JbrI.s:805    .debug_str:00000000000000e0 .LASF14
-     /tmp/ccS4JbrI.s:797    .debug_str:00000000000000ab .LASF15
-     /tmp/ccS4JbrI.s:791    .debug_str:000000000000008c .LASF16
-     /tmp/ccS4JbrI.s:819    .debug_str:0000000000000146 .LASF17
-     /tmp/ccS4JbrI.s:803    .debug_str:00000000000000d7 .LASF18
-     /tmp/ccS4JbrI.s:793    .debug_str:0000000000000093 .LASF24
-     /tmp/ccS4JbrI.s:14     .text.write_hex:0000000000000000 .LFB0
-     /tmp/ccS4JbrI.s:140    .text.write_hex:000000000000009a .LFE0
-     /tmp/ccS4JbrI.s:671    .debug_loc:0000000000000000 .LLST0
-     /tmp/ccS4JbrI.s:689    .debug_loc:000000000000002c .LLST1
-     /tmp/ccS4JbrI.s:707    .debug_loc:0000000000000058 .LLST2
-     /tmp/ccS4JbrI.s:725    .debug_loc:0000000000000084 .LLST3
-     /tmp/ccS4JbrI.s:789    .debug_str:0000000000000084 .LASF19
-     /tmp/ccS4JbrI.s:813    .debug_str:0000000000000121 .LASF20
-     /tmp/ccS4JbrI.s:733    .debug_loc:0000000000000098 .LLST4
-     /tmp/ccS4JbrI.s:79     .text.write_hex:000000000000004a .LVL5
-     /tmp/ccS4JbrI.s:113    .text.write_hex:0000000000000084 .LVL8
-     /tmp/ccS4JbrI.s:53     .text.write_hex:0000000000000028 .LVL2
-     /tmp/ccS4JbrI.s:807    .debug_str:00000000000000e7 .LASF25
-     /tmp/ccS4JbrI.s:25     .text.write_hex:0000000000000002 .LCFI0
-     /tmp/ccS4JbrI.s:136    .text.write_hex:0000000000000098 .LCFI1
-     /tmp/ccS4JbrI.s:18     .text.write_hex:0000000000000000 .LVL0
-     /tmp/ccS4JbrI.s:131    .text.write_hex:0000000000000094 .LVL9
-     /tmp/ccS4JbrI.s:32     .text.write_hex:000000000000000a .LVL1
-     /tmp/ccS4JbrI.s:134    .text.write_hex:0000000000000096 .LVL10
-     /tmp/ccS4JbrI.s:64     .text.write_hex:0000000000000030 .LVL3
-     /tmp/ccS4JbrI.s:69     .text.write_hex:0000000000000034 .LVL4
-     /tmp/ccS4JbrI.s:95     .text.write_hex:000000000000005e .LVL6
-     /tmp/ccS4JbrI.s:103    .text.write_hex:000000000000006e .LVL7
-     /tmp/ccS4JbrI.s:152    .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/ccS4JbrI.s:55     .text.write_hex:0000000000000028 .LBB2
-     /tmp/ccS4JbrI.s:60     .text.write_hex:000000000000002c .LBE2
-     /tmp/ccS4JbrI.s:66     .text.write_hex:0000000000000030 .LBB3
-     /tmp/ccS4JbrI.s:80     .text.write_hex:000000000000004a .LBE3
-GAS LISTING /tmp/ccS4JbrI.s 			page 7
+     /tmp/ccbKuuWf.s:83     .text.write_hex:000000000000004e .L4
+     /tmp/ccbKuuWf.s:117    .text.write_hex:0000000000000088 .L8
+     /tmp/ccbKuuWf.s:65     .text.write_hex:0000000000000030 .L9
+     /tmp/ccbKuuWf.s:414    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccbKuuWf.s:785    .debug_str:0000000000000000 .LASF21
+     /tmp/ccbKuuWf.s:813    .debug_str:0000000000000159 .LASF22
+     /tmp/ccbKuuWf.s:791    .debug_str:000000000000008c .LASF23
+     /tmp/ccbKuuWf.s:769    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccbKuuWf.s:783    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccbKuuWf.s:835    .debug_str:00000000000001e6 .LASF0
+     /tmp/ccbKuuWf.s:787    .debug_str:000000000000007a .LASF9
+     /tmp/ccbKuuWf.s:797    .debug_str:00000000000000fc .LASF1
+     /tmp/ccbKuuWf.s:827    .debug_str:00000000000001bf .LASF2
+     /tmp/ccbKuuWf.s:803    .debug_str:0000000000000123 .LASF3
+     /tmp/ccbKuuWf.s:831    .debug_str:00000000000001d1 .LASF4
+     /tmp/ccbKuuWf.s:801    .debug_str:0000000000000111 .LASF5
+     /tmp/ccbKuuWf.s:823    .debug_str:00000000000001ac .LASF6
+     /tmp/ccbKuuWf.s:817    .debug_str:0000000000000186 .LASF7
+     /tmp/ccbKuuWf.s:811    .debug_str:000000000000014c .LASF8
+     /tmp/ccbKuuWf.s:819    .debug_str:000000000000019d .LASF10
+     /tmp/ccbKuuWf.s:825    .debug_str:00000000000001ba .LASF11
+     /tmp/ccbKuuWf.s:833    .debug_str:00000000000001da .LASF12
+     /tmp/ccbKuuWf.s:829    .debug_str:00000000000001c9 .LASF13
+     /tmp/ccbKuuWf.s:807    .debug_str:000000000000013f .LASF14
+     /tmp/ccbKuuWf.s:799    .debug_str:000000000000010a .LASF15
+     /tmp/ccbKuuWf.s:793    .debug_str:00000000000000eb .LASF16
+     /tmp/ccbKuuWf.s:821    .debug_str:00000000000001a5 .LASF17
+     /tmp/ccbKuuWf.s:805    .debug_str:0000000000000136 .LASF18
+     /tmp/ccbKuuWf.s:795    .debug_str:00000000000000f2 .LASF24
+     /tmp/ccbKuuWf.s:14     .text.write_hex:0000000000000000 .LFB0
+     /tmp/ccbKuuWf.s:140    .text.write_hex:000000000000009a .LFE0
+     /tmp/ccbKuuWf.s:671    .debug_loc:0000000000000000 .LLST0
+     /tmp/ccbKuuWf.s:689    .debug_loc:000000000000002c .LLST1
+     /tmp/ccbKuuWf.s:707    .debug_loc:0000000000000058 .LLST2
+     /tmp/ccbKuuWf.s:725    .debug_loc:0000000000000084 .LLST3
+     /tmp/ccbKuuWf.s:789    .debug_str:0000000000000084 .LASF19
+     /tmp/ccbKuuWf.s:815    .debug_str:0000000000000180 .LASF20
+     /tmp/ccbKuuWf.s:733    .debug_loc:0000000000000098 .LLST4
+     /tmp/ccbKuuWf.s:79     .text.write_hex:000000000000004a .LVL5
+     /tmp/ccbKuuWf.s:113    .text.write_hex:0000000000000084 .LVL8
+     /tmp/ccbKuuWf.s:53     .text.write_hex:0000000000000028 .LVL2
+     /tmp/ccbKuuWf.s:809    .debug_str:0000000000000146 .LASF25
+     /tmp/ccbKuuWf.s:25     .text.write_hex:0000000000000002 .LCFI0
+     /tmp/ccbKuuWf.s:136    .text.write_hex:0000000000000098 .LCFI1
+     /tmp/ccbKuuWf.s:18     .text.write_hex:0000000000000000 .LVL0
+     /tmp/ccbKuuWf.s:131    .text.write_hex:0000000000000094 .LVL9
+     /tmp/ccbKuuWf.s:32     .text.write_hex:000000000000000a .LVL1
+     /tmp/ccbKuuWf.s:134    .text.write_hex:0000000000000096 .LVL10
+     /tmp/ccbKuuWf.s:64     .text.write_hex:0000000000000030 .LVL3
+     /tmp/ccbKuuWf.s:69     .text.write_hex:0000000000000034 .LVL4
+     /tmp/ccbKuuWf.s:95     .text.write_hex:000000000000005e .LVL6
+     /tmp/ccbKuuWf.s:103    .text.write_hex:000000000000006e .LVL7
+     /tmp/ccbKuuWf.s:152    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccbKuuWf.s:55     .text.write_hex:0000000000000028 .LBB2
+     /tmp/ccbKuuWf.s:60     .text.write_hex:000000000000002c .LBE2
+     /tmp/ccbKuuWf.s:66     .text.write_hex:0000000000000030 .LBB3
+     /tmp/ccbKuuWf.s:80     .text.write_hex:000000000000004a .LBE3
+GAS LISTING /tmp/ccbKuuWf.s 			page 7
 
 
-     /tmp/ccS4JbrI.s:84     .text.write_hex:000000000000004e .LBB4
-     /tmp/ccS4JbrI.s:114    .text.write_hex:0000000000000084 .LBE4
+     /tmp/ccbKuuWf.s:84     .text.write_hex:000000000000004e .LBB4
+     /tmp/ccbKuuWf.s:114    .text.write_hex:0000000000000084 .LBE4
 
 UNDEFINED SYMBOLS
 write

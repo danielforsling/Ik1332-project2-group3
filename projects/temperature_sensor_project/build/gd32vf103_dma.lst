@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccGQvFzq.s 			page 1
+GAS LISTING /tmp/ccjAYoxF.s 			page 1
 
 
    1              		.file	"gd32vf103_dma.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** /* check whether peripheral matches channels or not */
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** static ErrStatus dma_periph_and_channel_check(uint32_t dma_periph, dma_channel_enum channelx);
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 
-GAS LISTING /tmp/ccGQvFzq.s 			page 2
+GAS LISTING /tmp/ccjAYoxF.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** /*!
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
   92:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \param[in]  dma_periph: DMAx(x=0,1)
   93:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****       \arg        DMAx(x=0,1)
   94:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \param[in]  channelx: specify which DMA channel is initialized
-GAS LISTING /tmp/ccGQvFzq.s 			page 3
+GAS LISTING /tmp/ccjAYoxF.s 			page 3
 
 
   95:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****                 only one parameter can be selected which is shown as below:
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  149:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_CHCTL(dma_periph, channelx) &= ~DMA_CHXCTL_DIR;
  150:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }else{
  151:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_CHCTL(dma_periph, channelx) |= DMA_CHXCTL_DIR;
-GAS LISTING /tmp/ccGQvFzq.s 			page 4
+GAS LISTING /tmp/ccjAYoxF.s 			page 4
 
 
  152:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  206:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
  207:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  208:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 
-GAS LISTING /tmp/ccGQvFzq.s 			page 5
+GAS LISTING /tmp/ccjAYoxF.s 			page 5
 
 
  209:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     DMA_CHCTL(dma_periph, channelx) |= DMA_CHXCTL_M2M;
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  263:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
  264:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  265:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 
-GAS LISTING /tmp/ccGQvFzq.s 			page 6
+GAS LISTING /tmp/ccjAYoxF.s 			page 6
 
 
  266:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     DMA_CHCTL(dma_periph, channelx) &= ~DMA_CHXCTL_CHEN;
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  320:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** void dma_transfer_number_config(uint32_t dma_periph, dma_channel_enum channelx, uint32_t number)
  321:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** {
  322:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     if(ERROR == dma_periph_and_channel_check(dma_periph, channelx)){
-GAS LISTING /tmp/ccGQvFzq.s 			page 7
+GAS LISTING /tmp/ccjAYoxF.s 			page 7
 
 
  323:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  377:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     DMA_CHCTL(dma_periph, channelx) = ctl;
  378:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
  379:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 
-GAS LISTING /tmp/ccGQvFzq.s 			page 8
+GAS LISTING /tmp/ccjAYoxF.s 			page 8
 
 
  380:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** /*!
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  434:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     /* acquire DMA_CHxCTL register */
  435:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl = DMA_CHCTL(dma_periph, channelx);
  436:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     /* assign regiser */
-GAS LISTING /tmp/ccGQvFzq.s 			page 9
+GAS LISTING /tmp/ccjAYoxF.s 			page 9
 
 
  437:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl &= ~DMA_CHXCTL_PWIDTH;
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  491:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** {
  492:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     if(ERROR == dma_periph_and_channel_check(dma_periph, channelx)){
  493:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
-GAS LISTING /tmp/ccGQvFzq.s 			page 10
+GAS LISTING /tmp/ccjAYoxF.s 			page 10
 
 
  494:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  548:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****       \arg        DMAx(x=0,1)
  549:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \param[in]  channelx: specify which DMA channel to get flag
  550:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****                 only one parameter can be selected which is shown as below:
-GAS LISTING /tmp/ccGQvFzq.s 			page 11
+GAS LISTING /tmp/ccjAYoxF.s 			page 11
 
 
  551:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****       \arg        DMA0: DMA_CHx(x=0..6), DMA1: DMA_CHx(x=0..4)
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  605:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****       \arg        DMA_INT_FLAG_HTF: half transfer finish interrupt flag of channel
  606:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****       \arg        DMA_INT_FLAG_ERR: error interrupt flag of channel
  607:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \param[out] none
-GAS LISTING /tmp/ccGQvFzq.s 			page 12
+GAS LISTING /tmp/ccjAYoxF.s 			page 12
 
 
  608:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \retval     FlagStatus: SET or RESET
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  662:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 
  663:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** /*!
  664:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \brief      enable DMA interrupt
-GAS LISTING /tmp/ccGQvFzq.s 			page 13
+GAS LISTING /tmp/ccjAYoxF.s 			page 13
 
 
  665:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \param[in]  dma_periph: DMAx(x=0,1)
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  719:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     \retval     none
  720:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** */
  721:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** static ErrStatus dma_periph_and_channel_check(uint32_t dma_periph, dma_channel_enum channelx)
-GAS LISTING /tmp/ccGQvFzq.s 			page 14
+GAS LISTING /tmp/ccjAYoxF.s 			page 14
 
 
  722:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** {
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
   58              		.loc 1 67 2 is_stmt 1
   67:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
   59              		.loc 1 67 23 is_stmt 0
-GAS LISTING /tmp/ccGQvFzq.s 			page 15
+GAS LISTING /tmp/ccjAYoxF.s 			page 15
 
 
   60 0034 5C41     		lw	a5,4(a0)
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
   87:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
  100              		.loc 1 87 5
   79:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     init_struct->periph_width = 0U;
-GAS LISTING /tmp/ccGQvFzq.s 			page 16
+GAS LISTING /tmp/ccjAYoxF.s 			page 16
 
 
  101              		.loc 1 79 31 is_stmt 0
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  142 0008 6304F508 		beq	a0,a5,.L16
  143              	.L8:
  144              	.LBE51:
-GAS LISTING /tmp/ccGQvFzq.s 			page 17
+GAS LISTING /tmp/ccjAYoxF.s 			page 17
 
 
  145              	.LBE50:
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  129:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl |= (init_struct->periph_width | init_struct->memory_width | init_struct->priority);
  182              		.loc 1 129 9
  183 0032 F175     		li	a1,-16384
-GAS LISTING /tmp/ccGQvFzq.s 			page 18
+GAS LISTING /tmp/ccjAYoxF.s 			page 18
 
 
  184 0034 9385F50F 		addi	a1,a1,255
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  149:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }else{
  223              		.loc 1 149 9 is_stmt 1
  149:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }else{
-GAS LISTING /tmp/ccGQvFzq.s 			page 19
+GAS LISTING /tmp/ccjAYoxF.s 			page 19
 
 
  224              		.loc 1 149 41 is_stmt 0
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  267              		.loc 1 115 9 discriminator 1
  268 0096 01A0     		j	.L9
  269              		.cfi_endproc
-GAS LISTING /tmp/ccGQvFzq.s 			page 20
+GAS LISTING /tmp/ccjAYoxF.s 			page 20
 
 
  270              	.LFE4:
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  316              		.loc 1 168 9 is_stmt 1 discriminator 1
  168:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  317              		.loc 1 168 9 discriminator 1
-GAS LISTING /tmp/ccGQvFzq.s 			page 21
+GAS LISTING /tmp/ccjAYoxF.s 			page 21
 
 
  168:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  363 0020 9147     		li	a5,4
  364 0022 E3F5B7FE 		bleu	a1,a5,.L24
  365              	.L25:
-GAS LISTING /tmp/ccGQvFzq.s 			page 22
+GAS LISTING /tmp/ccjAYoxF.s 			page 22
 
 
  366              	.LBE60:
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  409              		.loc 1 210 1
  410 001e 8280     		ret
  411              	.L30:
-GAS LISTING /tmp/ccGQvFzq.s 			page 23
+GAS LISTING /tmp/ccjAYoxF.s 			page 23
 
 
  412              	.LBB65:
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  456 0012 8A07     		slli	a5,a5,2
  457 0014 AA97     		add	a5,a5,a0
  458 0016 9847     		lw	a4,8(a5)
-GAS LISTING /tmp/ccGQvFzq.s 			page 24
+GAS LISTING /tmp/ccjAYoxF.s 			page 24
 
 
  459 0018 F176     		li	a3,-16384
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  504              	.LBE71:
  505              	.LBE70:
  247:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
-GAS LISTING /tmp/ccGQvFzq.s 			page 25
+GAS LISTING /tmp/ccjAYoxF.s 			page 25
 
 
  506              		.loc 1 247 5 is_stmt 1
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
  552              		.loc 1 725 5
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
-GAS LISTING /tmp/ccGQvFzq.s 			page 26
+GAS LISTING /tmp/ccjAYoxF.s 			page 26
 
 
  553              		.loc 1 725 7 is_stmt 0
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  599              		.loc 1 725 7 is_stmt 0
  600 0000 B7070240 		li	a5,1073872896
  601 0004 93870740 		addi	a5,a5,1024
-GAS LISTING /tmp/ccGQvFzq.s 			page 27
+GAS LISTING /tmp/ccjAYoxF.s 			page 27
 
 
  602              	.LVL28:
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  646              		.loc 1 302 5
  647              	.LBB82:
  648              	.LBB83:
-GAS LISTING /tmp/ccGQvFzq.s 			page 28
+GAS LISTING /tmp/ccjAYoxF.s 			page 28
 
 
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  693              		.loc 1 321 1
  694              		.cfi_startproc
  695              	.LVL31:
-GAS LISTING /tmp/ccGQvFzq.s 			page 29
+GAS LISTING /tmp/ccjAYoxF.s 			page 29
 
 
  322:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  737              		.loc 1 323 9 discriminator 1
  323:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  738              		.loc 1 323 9 discriminator 1
-GAS LISTING /tmp/ccGQvFzq.s 			page 30
+GAS LISTING /tmp/ccjAYoxF.s 			page 30
 
 
  323:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  784 001a 9147     		li	a5,4
  785 001c E3F8B7FE 		bleu	a1,a5,.L56
  786              	.L57:
-GAS LISTING /tmp/ccGQvFzq.s 			page 31
+GAS LISTING /tmp/ccjAYoxF.s 			page 31
 
 
  787              	.LBE92:
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  829              	.LVL41:
  375:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl |= priority;
  830              		.loc 1 375 5 is_stmt 1
-GAS LISTING /tmp/ccGQvFzq.s 			page 32
+GAS LISTING /tmp/ccjAYoxF.s 			page 32
 
 
  375:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl |= priority;
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  874              		.loc 1 399 5
  875              	.LBB98:
  876              	.LBB99:
-GAS LISTING /tmp/ccGQvFzq.s 			page 33
+GAS LISTING /tmp/ccjAYoxF.s 			page 33
 
 
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  917              		.loc 1 727 11 is_stmt 0
  918 0026 9147     		li	a5,4
  919 0028 E3F2B7FE 		bleu	a1,a5,.L64
-GAS LISTING /tmp/ccGQvFzq.s 			page 34
+GAS LISTING /tmp/ccjAYoxF.s 			page 34
 
 
  920              	.L65:
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  962 0016 9847     		lw	a4,8(a5)
  963              	.LVL53:
  437:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     ctl |= pwidth;
-GAS LISTING /tmp/ccGQvFzq.s 			page 35
+GAS LISTING /tmp/ccjAYoxF.s 			page 35
 
 
  964              		.loc 1 437 5 is_stmt 1
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
  1008              		.loc 1 725 7 is_stmt 0
  1009 0000 B7070240 		li	a5,1073872896
-GAS LISTING /tmp/ccGQvFzq.s 			page 36
+GAS LISTING /tmp/ccjAYoxF.s 			page 36
 
 
  1010 0004 93870740 		addi	a5,a5,1024
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1055              		.cfi_startproc
  1056              	.LVL59:
  473:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         DMA_WRONG_HANDLE
-GAS LISTING /tmp/ccGQvFzq.s 			page 37
+GAS LISTING /tmp/ccjAYoxF.s 			page 37
 
 
  1057              		.loc 1 473 5
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1101              		.align	1
  1102              		.globl	dma_periph_increase_enable
  1104              	dma_periph_increase_enable:
-GAS LISTING /tmp/ccGQvFzq.s 			page 38
+GAS LISTING /tmp/ccjAYoxF.s 			page 38
 
 
  1105              	.LFB20:
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  493:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  1147              		.loc 1 493 9 discriminator 1
  1148 0026 01A0     		j	.L81
-GAS LISTING /tmp/ccGQvFzq.s 			page 39
+GAS LISTING /tmp/ccjAYoxF.s 			page 39
 
 
  1149              		.cfi_endproc
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  512:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
  1196              		.loc 1 512 9 is_stmt 1 discriminator 1
  512:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
-GAS LISTING /tmp/ccGQvFzq.s 			page 40
+GAS LISTING /tmp/ccjAYoxF.s 			page 40
 
 
  1197              		.loc 1 512 9 discriminator 1
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1240 001e 8280     		ret
  1241              	.L90:
  541:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****     }
-GAS LISTING /tmp/ccGQvFzq.s 			page 41
+GAS LISTING /tmp/ccjAYoxF.s 			page 41
 
 
  1242              		.loc 1 541 9 is_stmt 1
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  565:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         reval = SET;
  1286              		.loc 1 565 29
  1287 0008 6D8D     		and	a0,a1,a0
-GAS LISTING /tmp/ccGQvFzq.s 			page 42
+GAS LISTING /tmp/ccjAYoxF.s 			page 42
 
 
  1288              	.LVL71:
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1336 000e 6303F600 		beq	a2,a5,.L105
  1337              	.L98:
  631:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 	}
-GAS LISTING /tmp/ccGQvFzq.s 			page 43
+GAS LISTING /tmp/ccjAYoxF.s 			page 43
 
 
  1338              		.loc 1 631 4 discriminator 1
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1375              		.loc 1 640 1
  1376 0034 8280     		ret
  1377              	.LVL80:
-GAS LISTING /tmp/ccGQvFzq.s 			page 44
+GAS LISTING /tmp/ccjAYoxF.s 			page 44
 
 
  1378              	.L97:
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1417              		.loc 1 623 23
  1418 0062 9C43     		lw	a5,0(a5)
  622:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** 			interrupt_enable = DMA_CHCTL(dma_periph, (uint32_t)channelx) & DMA_CHXCTL_HTFIE;
-GAS LISTING /tmp/ccGQvFzq.s 			page 45
+GAS LISTING /tmp/ccjAYoxF.s 			page 45
 
 
  1419              		.loc 1 622 44
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1466              	.LBE126:
  684:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
  1467              		.loc 1 684 5 is_stmt 1
-GAS LISTING /tmp/ccGQvFzq.s 			page 46
+GAS LISTING /tmp/ccjAYoxF.s 			page 46
 
 
  684:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c **** }
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1513              		.loc 1 725 5
  725:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dma.c ****         /* for DMA1, the channel is from DMA_CH0 to DMA_CH4 */
  1514              		.loc 1 725 7 is_stmt 0
-GAS LISTING /tmp/ccGQvFzq.s 			page 47
+GAS LISTING /tmp/ccjAYoxF.s 			page 47
 
 
  1515 0008 630DF500 		beq	a0,a5,.L114
@@ -2807,1032 +2807,1032 @@ GAS LISTING /tmp/ccGQvFzq.s 			page 1
  1549              	.LFE28:
  1551              		.text
  1552              	.Letext0:
- 1553              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 1554              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 1553              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 1554              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  1555              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  1556              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_dma.h"
  1557              		.file 6 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/ccGQvFzq.s 			page 48
+GAS LISTING /tmp/ccjAYoxF.s 			page 48
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_dma.c
-     /tmp/ccGQvFzq.s:13     .text.dma_deinit:0000000000000000 dma_deinit
-     /tmp/ccGQvFzq.s:17     .text.dma_deinit:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:19     .text.dma_deinit:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:22     .text.dma_deinit:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:23     .text.dma_deinit:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:27     .text.dma_deinit:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:28     .text.dma_deinit:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:29     .text.dma_deinit:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:34     .text.dma_deinit:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:35     .text.dma_deinit:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:41     .text.dma_deinit:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:44     .text.dma_deinit:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:47     .text.dma_deinit:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:48     .text.dma_deinit:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:50     .text.dma_deinit:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:51     .text.dma_deinit:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:53     .text.dma_deinit:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:54     .text.dma_deinit:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:56     .text.dma_deinit:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:57     .text.dma_deinit:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:59     .text.dma_deinit:0000000000000034 .L0 
-     /tmp/ccGQvFzq.s:60     .text.dma_deinit:0000000000000034 .L0 
-     /tmp/ccGQvFzq.s:64     .text.dma_deinit:000000000000003a .L0 
-     /tmp/ccGQvFzq.s:69     .text.dma_deinit:000000000000003c .L0 
-     /tmp/ccGQvFzq.s:70     .text.dma_deinit:000000000000003c .L0 
-     /tmp/ccGQvFzq.s:76     .text.dma_deinit:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:77     .text.dma_deinit:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:78     .text.dma_deinit:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:79     .text.dma_deinit:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:80     .text.dma_deinit:0000000000000044 .L0 
-     /tmp/ccGQvFzq.s:87     .text.dma_struct_para_init:0000000000000000 dma_struct_para_init
-     /tmp/ccGQvFzq.s:90     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:92     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:93     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:94     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:95     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:96     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:97     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:98     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:99     .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:100    .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:101    .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:102    .text.dma_struct_para_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:104    .text.dma_struct_para_init:0000000000000004 .L0 
-     /tmp/ccGQvFzq.s:106    .text.dma_struct_para_init:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:108    .text.dma_struct_para_init:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:110    .text.dma_struct_para_init:0000000000000010 .L0 
-     /tmp/ccGQvFzq.s:112    .text.dma_struct_para_init:0000000000000014 .L0 
-     /tmp/ccGQvFzq.s:114    .text.dma_struct_para_init:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:116    .text.dma_struct_para_init:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:118    .text.dma_struct_para_init:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:119    .text.dma_struct_para_init:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:126    .text.dma_init:0000000000000000 dma_init
-     /tmp/ccGQvFzq.s:129    .text.dma_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:131    .text.dma_init:0000000000000000 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 49
+     /tmp/ccjAYoxF.s:13     .text.dma_deinit:0000000000000000 dma_deinit
+     /tmp/ccjAYoxF.s:17     .text.dma_deinit:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:19     .text.dma_deinit:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:22     .text.dma_deinit:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:23     .text.dma_deinit:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:27     .text.dma_deinit:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:28     .text.dma_deinit:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:29     .text.dma_deinit:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:34     .text.dma_deinit:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:35     .text.dma_deinit:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:41     .text.dma_deinit:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:44     .text.dma_deinit:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:47     .text.dma_deinit:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:48     .text.dma_deinit:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:50     .text.dma_deinit:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:51     .text.dma_deinit:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:53     .text.dma_deinit:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:54     .text.dma_deinit:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:56     .text.dma_deinit:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:57     .text.dma_deinit:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:59     .text.dma_deinit:0000000000000034 .L0 
+     /tmp/ccjAYoxF.s:60     .text.dma_deinit:0000000000000034 .L0 
+     /tmp/ccjAYoxF.s:64     .text.dma_deinit:000000000000003a .L0 
+     /tmp/ccjAYoxF.s:69     .text.dma_deinit:000000000000003c .L0 
+     /tmp/ccjAYoxF.s:70     .text.dma_deinit:000000000000003c .L0 
+     /tmp/ccjAYoxF.s:76     .text.dma_deinit:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:77     .text.dma_deinit:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:78     .text.dma_deinit:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:79     .text.dma_deinit:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:80     .text.dma_deinit:0000000000000044 .L0 
+     /tmp/ccjAYoxF.s:87     .text.dma_struct_para_init:0000000000000000 dma_struct_para_init
+     /tmp/ccjAYoxF.s:90     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:92     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:93     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:94     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:95     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:96     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:97     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:98     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:99     .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:100    .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:101    .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:102    .text.dma_struct_para_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:104    .text.dma_struct_para_init:0000000000000004 .L0 
+     /tmp/ccjAYoxF.s:106    .text.dma_struct_para_init:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:108    .text.dma_struct_para_init:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:110    .text.dma_struct_para_init:0000000000000010 .L0 
+     /tmp/ccjAYoxF.s:112    .text.dma_struct_para_init:0000000000000014 .L0 
+     /tmp/ccjAYoxF.s:114    .text.dma_struct_para_init:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:116    .text.dma_struct_para_init:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:118    .text.dma_struct_para_init:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:119    .text.dma_struct_para_init:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:126    .text.dma_init:0000000000000000 dma_init
+     /tmp/ccjAYoxF.s:129    .text.dma_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:131    .text.dma_init:0000000000000000 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 49
 
 
-     /tmp/ccGQvFzq.s:132    .text.dma_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:135    .text.dma_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:136    .text.dma_init:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:140    .text.dma_init:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:141    .text.dma_init:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:142    .text.dma_init:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:147    .text.dma_init:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:149    .text.dma_init:0000000000000010 .L0 
-     /tmp/ccGQvFzq.s:151    .text.dma_init:0000000000000012 .L0 
-     /tmp/ccGQvFzq.s:155    .text.dma_init:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:157    .text.dma_init:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:158    .text.dma_init:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:160    .text.dma_init:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:163    .text.dma_init:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:165    .text.dma_init:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:166    .text.dma_init:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:168    .text.dma_init:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:170    .text.dma_init:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:171    .text.dma_init:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:175    .text.dma_init:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:178    .text.dma_init:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:179    .text.dma_init:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:181    .text.dma_init:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:183    .text.dma_init:0000000000000032 .L0 
-     /tmp/ccGQvFzq.s:188    .text.dma_init:000000000000003a .L0 
-     /tmp/ccGQvFzq.s:189    .text.dma_init:000000000000003a .L0 
-     /tmp/ccGQvFzq.s:191    .text.dma_init:000000000000003e .L0 
-     /tmp/ccGQvFzq.s:194    .text.dma_init:0000000000000040 .L0 
-     /tmp/ccGQvFzq.s:195    .text.dma_init:0000000000000040 .L0 
-     /tmp/ccGQvFzq.s:197    .text.dma_init:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:198    .text.dma_init:0000000000000042 .L0 
-     /tmp/ccGQvFzq.s:202    .text.dma_init:000000000000004a .L0 
-     /tmp/ccGQvFzq.s:203    .text.dma_init:000000000000004a .L0 
-     /tmp/ccGQvFzq.s:209    .text.dma_init:0000000000000052 .L0 
-     /tmp/ccGQvFzq.s:210    .text.dma_init:0000000000000052 .L0 
-     /tmp/ccGQvFzq.s:214    .text.dma_init:000000000000005c .L0 
-     /tmp/ccGQvFzq.s:215    .text.dma_init:000000000000005c .L0 
-     /tmp/ccGQvFzq.s:220    .text.dma_init:0000000000000064 .L0 
-     /tmp/ccGQvFzq.s:221    .text.dma_init:0000000000000064 .L0 
-     /tmp/ccGQvFzq.s:224    .text.dma_init:000000000000006a .L0 
-     /tmp/ccGQvFzq.s:225    .text.dma_init:000000000000006a .L0 
-     /tmp/ccGQvFzq.s:231    .text.dma_init:0000000000000072 .L0 
-     /tmp/ccGQvFzq.s:232    .text.dma_init:0000000000000072 .L0 
-     /tmp/ccGQvFzq.s:236    .text.dma_init:000000000000007a .L0 
-     /tmp/ccGQvFzq.s:239    .text.dma_init:000000000000007c .L0 
-     /tmp/ccGQvFzq.s:240    .text.dma_init:000000000000007c .L0 
-     /tmp/ccGQvFzq.s:247    .text.dma_init:0000000000000086 .L0 
-     /tmp/ccGQvFzq.s:248    .text.dma_init:0000000000000086 .L0 
-     /tmp/ccGQvFzq.s:258    .text.dma_init:0000000000000090 .L0 
-     /tmp/ccGQvFzq.s:259    .text.dma_init:0000000000000090 .L0 
-     /tmp/ccGQvFzq.s:265    .text.dma_init:0000000000000096 .L0 
-     /tmp/ccGQvFzq.s:266    .text.dma_init:0000000000000096 .L0 
-     /tmp/ccGQvFzq.s:267    .text.dma_init:0000000000000096 .L0 
-     /tmp/ccGQvFzq.s:268    .text.dma_init:0000000000000096 .L0 
-     /tmp/ccGQvFzq.s:269    .text.dma_init:0000000000000098 .L0 
-     /tmp/ccGQvFzq.s:276    .text.dma_circulation_enable:0000000000000000 dma_circulation_enable
-     /tmp/ccGQvFzq.s:279    .text.dma_circulation_enable:0000000000000000 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 50
+     /tmp/ccjAYoxF.s:132    .text.dma_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:135    .text.dma_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:136    .text.dma_init:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:140    .text.dma_init:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:141    .text.dma_init:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:142    .text.dma_init:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:147    .text.dma_init:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:149    .text.dma_init:0000000000000010 .L0 
+     /tmp/ccjAYoxF.s:151    .text.dma_init:0000000000000012 .L0 
+     /tmp/ccjAYoxF.s:155    .text.dma_init:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:157    .text.dma_init:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:158    .text.dma_init:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:160    .text.dma_init:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:163    .text.dma_init:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:165    .text.dma_init:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:166    .text.dma_init:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:168    .text.dma_init:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:170    .text.dma_init:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:171    .text.dma_init:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:175    .text.dma_init:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:178    .text.dma_init:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:179    .text.dma_init:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:181    .text.dma_init:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:183    .text.dma_init:0000000000000032 .L0 
+     /tmp/ccjAYoxF.s:188    .text.dma_init:000000000000003a .L0 
+     /tmp/ccjAYoxF.s:189    .text.dma_init:000000000000003a .L0 
+     /tmp/ccjAYoxF.s:191    .text.dma_init:000000000000003e .L0 
+     /tmp/ccjAYoxF.s:194    .text.dma_init:0000000000000040 .L0 
+     /tmp/ccjAYoxF.s:195    .text.dma_init:0000000000000040 .L0 
+     /tmp/ccjAYoxF.s:197    .text.dma_init:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:198    .text.dma_init:0000000000000042 .L0 
+     /tmp/ccjAYoxF.s:202    .text.dma_init:000000000000004a .L0 
+     /tmp/ccjAYoxF.s:203    .text.dma_init:000000000000004a .L0 
+     /tmp/ccjAYoxF.s:209    .text.dma_init:0000000000000052 .L0 
+     /tmp/ccjAYoxF.s:210    .text.dma_init:0000000000000052 .L0 
+     /tmp/ccjAYoxF.s:214    .text.dma_init:000000000000005c .L0 
+     /tmp/ccjAYoxF.s:215    .text.dma_init:000000000000005c .L0 
+     /tmp/ccjAYoxF.s:220    .text.dma_init:0000000000000064 .L0 
+     /tmp/ccjAYoxF.s:221    .text.dma_init:0000000000000064 .L0 
+     /tmp/ccjAYoxF.s:224    .text.dma_init:000000000000006a .L0 
+     /tmp/ccjAYoxF.s:225    .text.dma_init:000000000000006a .L0 
+     /tmp/ccjAYoxF.s:231    .text.dma_init:0000000000000072 .L0 
+     /tmp/ccjAYoxF.s:232    .text.dma_init:0000000000000072 .L0 
+     /tmp/ccjAYoxF.s:236    .text.dma_init:000000000000007a .L0 
+     /tmp/ccjAYoxF.s:239    .text.dma_init:000000000000007c .L0 
+     /tmp/ccjAYoxF.s:240    .text.dma_init:000000000000007c .L0 
+     /tmp/ccjAYoxF.s:247    .text.dma_init:0000000000000086 .L0 
+     /tmp/ccjAYoxF.s:248    .text.dma_init:0000000000000086 .L0 
+     /tmp/ccjAYoxF.s:258    .text.dma_init:0000000000000090 .L0 
+     /tmp/ccjAYoxF.s:259    .text.dma_init:0000000000000090 .L0 
+     /tmp/ccjAYoxF.s:265    .text.dma_init:0000000000000096 .L0 
+     /tmp/ccjAYoxF.s:266    .text.dma_init:0000000000000096 .L0 
+     /tmp/ccjAYoxF.s:267    .text.dma_init:0000000000000096 .L0 
+     /tmp/ccjAYoxF.s:268    .text.dma_init:0000000000000096 .L0 
+     /tmp/ccjAYoxF.s:269    .text.dma_init:0000000000000098 .L0 
+     /tmp/ccjAYoxF.s:276    .text.dma_circulation_enable:0000000000000000 dma_circulation_enable
+     /tmp/ccjAYoxF.s:279    .text.dma_circulation_enable:0000000000000000 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 50
 
 
-     /tmp/ccGQvFzq.s:281    .text.dma_circulation_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:284    .text.dma_circulation_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:285    .text.dma_circulation_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:289    .text.dma_circulation_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:290    .text.dma_circulation_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:291    .text.dma_circulation_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:296    .text.dma_circulation_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:297    .text.dma_circulation_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:305    .text.dma_circulation_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:310    .text.dma_circulation_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:311    .text.dma_circulation_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:317    .text.dma_circulation_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:318    .text.dma_circulation_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:319    .text.dma_circulation_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:320    .text.dma_circulation_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:321    .text.dma_circulation_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:328    .text.dma_circulation_disable:0000000000000000 dma_circulation_disable
-     /tmp/ccGQvFzq.s:331    .text.dma_circulation_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:333    .text.dma_circulation_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:336    .text.dma_circulation_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:337    .text.dma_circulation_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:341    .text.dma_circulation_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:342    .text.dma_circulation_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:343    .text.dma_circulation_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:348    .text.dma_circulation_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:349    .text.dma_circulation_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:357    .text.dma_circulation_disable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:362    .text.dma_circulation_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:363    .text.dma_circulation_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:369    .text.dma_circulation_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:370    .text.dma_circulation_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:371    .text.dma_circulation_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:372    .text.dma_circulation_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:373    .text.dma_circulation_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:380    .text.dma_memory_to_memory_enable:0000000000000000 dma_memory_to_memory_enable
-     /tmp/ccGQvFzq.s:383    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:385    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:388    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:389    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:393    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:394    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:395    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:400    .text.dma_memory_to_memory_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:401    .text.dma_memory_to_memory_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:410    .text.dma_memory_to_memory_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:415    .text.dma_memory_to_memory_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:416    .text.dma_memory_to_memory_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:422    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:423    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:424    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:425    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:426    .text.dma_memory_to_memory_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:433    .text.dma_memory_to_memory_disable:0000000000000000 dma_memory_to_memory_disable
-     /tmp/ccGQvFzq.s:436    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:438    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:441    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:442    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 51
+     /tmp/ccjAYoxF.s:281    .text.dma_circulation_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:284    .text.dma_circulation_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:285    .text.dma_circulation_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:289    .text.dma_circulation_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:290    .text.dma_circulation_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:291    .text.dma_circulation_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:296    .text.dma_circulation_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:297    .text.dma_circulation_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:305    .text.dma_circulation_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:310    .text.dma_circulation_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:311    .text.dma_circulation_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:317    .text.dma_circulation_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:318    .text.dma_circulation_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:319    .text.dma_circulation_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:320    .text.dma_circulation_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:321    .text.dma_circulation_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:328    .text.dma_circulation_disable:0000000000000000 dma_circulation_disable
+     /tmp/ccjAYoxF.s:331    .text.dma_circulation_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:333    .text.dma_circulation_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:336    .text.dma_circulation_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:337    .text.dma_circulation_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:341    .text.dma_circulation_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:342    .text.dma_circulation_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:343    .text.dma_circulation_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:348    .text.dma_circulation_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:349    .text.dma_circulation_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:357    .text.dma_circulation_disable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:362    .text.dma_circulation_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:363    .text.dma_circulation_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:369    .text.dma_circulation_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:370    .text.dma_circulation_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:371    .text.dma_circulation_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:372    .text.dma_circulation_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:373    .text.dma_circulation_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:380    .text.dma_memory_to_memory_enable:0000000000000000 dma_memory_to_memory_enable
+     /tmp/ccjAYoxF.s:383    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:385    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:388    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:389    .text.dma_memory_to_memory_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:393    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:394    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:395    .text.dma_memory_to_memory_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:400    .text.dma_memory_to_memory_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:401    .text.dma_memory_to_memory_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:410    .text.dma_memory_to_memory_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:415    .text.dma_memory_to_memory_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:416    .text.dma_memory_to_memory_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:422    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:423    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:424    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:425    .text.dma_memory_to_memory_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:426    .text.dma_memory_to_memory_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:433    .text.dma_memory_to_memory_disable:0000000000000000 dma_memory_to_memory_disable
+     /tmp/ccjAYoxF.s:436    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:438    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:441    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:442    .text.dma_memory_to_memory_disable:0000000000000000 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 51
 
 
-     /tmp/ccGQvFzq.s:446    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:447    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:448    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:453    .text.dma_memory_to_memory_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:454    .text.dma_memory_to_memory_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:464    .text.dma_memory_to_memory_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:469    .text.dma_memory_to_memory_disable:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:470    .text.dma_memory_to_memory_disable:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:476    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:477    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:478    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:479    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:480    .text.dma_memory_to_memory_disable:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:487    .text.dma_channel_enable:0000000000000000 dma_channel_enable
-     /tmp/ccGQvFzq.s:490    .text.dma_channel_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:492    .text.dma_channel_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:495    .text.dma_channel_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:496    .text.dma_channel_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:500    .text.dma_channel_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:501    .text.dma_channel_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:502    .text.dma_channel_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:507    .text.dma_channel_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:508    .text.dma_channel_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:516    .text.dma_channel_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:521    .text.dma_channel_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:522    .text.dma_channel_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:528    .text.dma_channel_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:529    .text.dma_channel_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:530    .text.dma_channel_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:531    .text.dma_channel_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:532    .text.dma_channel_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:539    .text.dma_channel_disable:0000000000000000 dma_channel_disable
-     /tmp/ccGQvFzq.s:542    .text.dma_channel_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:544    .text.dma_channel_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:547    .text.dma_channel_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:548    .text.dma_channel_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:552    .text.dma_channel_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:553    .text.dma_channel_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:554    .text.dma_channel_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:559    .text.dma_channel_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:560    .text.dma_channel_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:568    .text.dma_channel_disable:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:573    .text.dma_channel_disable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:574    .text.dma_channel_disable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:580    .text.dma_channel_disable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:581    .text.dma_channel_disable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:582    .text.dma_channel_disable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:583    .text.dma_channel_disable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:584    .text.dma_channel_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:591    .text.dma_periph_address_config:0000000000000000 dma_periph_address_config
-     /tmp/ccGQvFzq.s:594    .text.dma_periph_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:596    .text.dma_periph_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:599    .text.dma_periph_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:600    .text.dma_periph_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:604    .text.dma_periph_address_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:605    .text.dma_periph_address_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:606    .text.dma_periph_address_config:0000000000000008 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 52
+     /tmp/ccjAYoxF.s:446    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:447    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:448    .text.dma_memory_to_memory_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:453    .text.dma_memory_to_memory_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:454    .text.dma_memory_to_memory_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:464    .text.dma_memory_to_memory_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:469    .text.dma_memory_to_memory_disable:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:470    .text.dma_memory_to_memory_disable:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:476    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:477    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:478    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:479    .text.dma_memory_to_memory_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:480    .text.dma_memory_to_memory_disable:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:487    .text.dma_channel_enable:0000000000000000 dma_channel_enable
+     /tmp/ccjAYoxF.s:490    .text.dma_channel_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:492    .text.dma_channel_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:495    .text.dma_channel_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:496    .text.dma_channel_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:500    .text.dma_channel_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:501    .text.dma_channel_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:502    .text.dma_channel_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:507    .text.dma_channel_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:508    .text.dma_channel_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:516    .text.dma_channel_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:521    .text.dma_channel_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:522    .text.dma_channel_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:528    .text.dma_channel_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:529    .text.dma_channel_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:530    .text.dma_channel_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:531    .text.dma_channel_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:532    .text.dma_channel_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:539    .text.dma_channel_disable:0000000000000000 dma_channel_disable
+     /tmp/ccjAYoxF.s:542    .text.dma_channel_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:544    .text.dma_channel_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:547    .text.dma_channel_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:548    .text.dma_channel_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:552    .text.dma_channel_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:553    .text.dma_channel_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:554    .text.dma_channel_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:559    .text.dma_channel_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:560    .text.dma_channel_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:568    .text.dma_channel_disable:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:573    .text.dma_channel_disable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:574    .text.dma_channel_disable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:580    .text.dma_channel_disable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:581    .text.dma_channel_disable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:582    .text.dma_channel_disable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:583    .text.dma_channel_disable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:584    .text.dma_channel_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:591    .text.dma_periph_address_config:0000000000000000 dma_periph_address_config
+     /tmp/ccjAYoxF.s:594    .text.dma_periph_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:596    .text.dma_periph_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:599    .text.dma_periph_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:600    .text.dma_periph_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:604    .text.dma_periph_address_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:605    .text.dma_periph_address_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:606    .text.dma_periph_address_config:0000000000000008 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 52
 
 
-     /tmp/ccGQvFzq.s:611    .text.dma_periph_address_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:616    .text.dma_periph_address_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:618    .text.dma_periph_address_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:623    .text.dma_periph_address_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:624    .text.dma_periph_address_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:630    .text.dma_periph_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:631    .text.dma_periph_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:632    .text.dma_periph_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:633    .text.dma_periph_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:634    .text.dma_periph_address_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:641    .text.dma_memory_address_config:0000000000000000 dma_memory_address_config
-     /tmp/ccGQvFzq.s:644    .text.dma_memory_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:646    .text.dma_memory_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:649    .text.dma_memory_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:650    .text.dma_memory_address_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:654    .text.dma_memory_address_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:655    .text.dma_memory_address_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:656    .text.dma_memory_address_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:661    .text.dma_memory_address_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:666    .text.dma_memory_address_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:668    .text.dma_memory_address_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:673    .text.dma_memory_address_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:674    .text.dma_memory_address_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:680    .text.dma_memory_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:681    .text.dma_memory_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:682    .text.dma_memory_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:683    .text.dma_memory_address_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:684    .text.dma_memory_address_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:691    .text.dma_transfer_number_config:0000000000000000 dma_transfer_number_config
-     /tmp/ccGQvFzq.s:694    .text.dma_transfer_number_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:696    .text.dma_transfer_number_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:699    .text.dma_transfer_number_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:700    .text.dma_transfer_number_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:704    .text.dma_transfer_number_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:705    .text.dma_transfer_number_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:706    .text.dma_transfer_number_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:711    .text.dma_transfer_number_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:715    .text.dma_transfer_number_config:0000000000000014 .L0 
-     /tmp/ccGQvFzq.s:718    .text.dma_transfer_number_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:720    .text.dma_transfer_number_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:722    .text.dma_transfer_number_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:724    .text.dma_transfer_number_config:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:730    .text.dma_transfer_number_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:731    .text.dma_transfer_number_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:737    .text.dma_transfer_number_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:738    .text.dma_transfer_number_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:739    .text.dma_transfer_number_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:740    .text.dma_transfer_number_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:741    .text.dma_transfer_number_config:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:748    .text.dma_transfer_number_get:0000000000000000 dma_transfer_number_get
-     /tmp/ccGQvFzq.s:751    .text.dma_transfer_number_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:753    .text.dma_transfer_number_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:756    .text.dma_transfer_number_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:757    .text.dma_transfer_number_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:761    .text.dma_transfer_number_get:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:762    .text.dma_transfer_number_get:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:763    .text.dma_transfer_number_get:0000000000000008 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 53
+     /tmp/ccjAYoxF.s:611    .text.dma_periph_address_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:616    .text.dma_periph_address_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:618    .text.dma_periph_address_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:623    .text.dma_periph_address_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:624    .text.dma_periph_address_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:630    .text.dma_periph_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:631    .text.dma_periph_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:632    .text.dma_periph_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:633    .text.dma_periph_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:634    .text.dma_periph_address_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:641    .text.dma_memory_address_config:0000000000000000 dma_memory_address_config
+     /tmp/ccjAYoxF.s:644    .text.dma_memory_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:646    .text.dma_memory_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:649    .text.dma_memory_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:650    .text.dma_memory_address_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:654    .text.dma_memory_address_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:655    .text.dma_memory_address_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:656    .text.dma_memory_address_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:661    .text.dma_memory_address_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:666    .text.dma_memory_address_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:668    .text.dma_memory_address_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:673    .text.dma_memory_address_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:674    .text.dma_memory_address_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:680    .text.dma_memory_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:681    .text.dma_memory_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:682    .text.dma_memory_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:683    .text.dma_memory_address_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:684    .text.dma_memory_address_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:691    .text.dma_transfer_number_config:0000000000000000 dma_transfer_number_config
+     /tmp/ccjAYoxF.s:694    .text.dma_transfer_number_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:696    .text.dma_transfer_number_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:699    .text.dma_transfer_number_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:700    .text.dma_transfer_number_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:704    .text.dma_transfer_number_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:705    .text.dma_transfer_number_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:706    .text.dma_transfer_number_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:711    .text.dma_transfer_number_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:715    .text.dma_transfer_number_config:0000000000000014 .L0 
+     /tmp/ccjAYoxF.s:718    .text.dma_transfer_number_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:720    .text.dma_transfer_number_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:722    .text.dma_transfer_number_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:724    .text.dma_transfer_number_config:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:730    .text.dma_transfer_number_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:731    .text.dma_transfer_number_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:737    .text.dma_transfer_number_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:738    .text.dma_transfer_number_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:739    .text.dma_transfer_number_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:740    .text.dma_transfer_number_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:741    .text.dma_transfer_number_config:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:748    .text.dma_transfer_number_get:0000000000000000 dma_transfer_number_get
+     /tmp/ccjAYoxF.s:751    .text.dma_transfer_number_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:753    .text.dma_transfer_number_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:756    .text.dma_transfer_number_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:757    .text.dma_transfer_number_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:761    .text.dma_transfer_number_get:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:762    .text.dma_transfer_number_get:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:763    .text.dma_transfer_number_get:0000000000000008 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 53
 
 
-     /tmp/ccGQvFzq.s:768    .text.dma_transfer_number_get:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:769    .text.dma_transfer_number_get:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:774    .text.dma_transfer_number_get:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:777    .text.dma_transfer_number_get:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:783    .text.dma_transfer_number_get:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:784    .text.dma_transfer_number_get:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:790    .text.dma_transfer_number_get:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:791    .text.dma_transfer_number_get:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:792    .text.dma_transfer_number_get:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:793    .text.dma_transfer_number_get:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:794    .text.dma_transfer_number_get:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:801    .text.dma_priority_config:0000000000000000 dma_priority_config
-     /tmp/ccGQvFzq.s:804    .text.dma_priority_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:806    .text.dma_priority_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:807    .text.dma_priority_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:810    .text.dma_priority_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:811    .text.dma_priority_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:815    .text.dma_priority_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:816    .text.dma_priority_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:817    .text.dma_priority_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:822    .text.dma_priority_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:823    .text.dma_priority_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:828    .text.dma_priority_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:831    .text.dma_priority_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:832    .text.dma_priority_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:837    .text.dma_priority_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:838    .text.dma_priority_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:841    .text.dma_priority_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:842    .text.dma_priority_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:844    .text.dma_priority_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:850    .text.dma_priority_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:851    .text.dma_priority_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:857    .text.dma_priority_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:858    .text.dma_priority_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:859    .text.dma_priority_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:860    .text.dma_priority_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:861    .text.dma_priority_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:868    .text.dma_memory_width_config:0000000000000000 dma_memory_width_config
-     /tmp/ccGQvFzq.s:871    .text.dma_memory_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:873    .text.dma_memory_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:874    .text.dma_memory_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:877    .text.dma_memory_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:878    .text.dma_memory_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:882    .text.dma_memory_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:883    .text.dma_memory_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:884    .text.dma_memory_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:889    .text.dma_memory_width_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:890    .text.dma_memory_width_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:895    .text.dma_memory_width_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:898    .text.dma_memory_width_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:899    .text.dma_memory_width_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:904    .text.dma_memory_width_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:905    .text.dma_memory_width_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:908    .text.dma_memory_width_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:909    .text.dma_memory_width_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:911    .text.dma_memory_width_config:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:917    .text.dma_memory_width_config:0000000000000026 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 54
+     /tmp/ccjAYoxF.s:768    .text.dma_transfer_number_get:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:769    .text.dma_transfer_number_get:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:774    .text.dma_transfer_number_get:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:777    .text.dma_transfer_number_get:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:783    .text.dma_transfer_number_get:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:784    .text.dma_transfer_number_get:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:790    .text.dma_transfer_number_get:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:791    .text.dma_transfer_number_get:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:792    .text.dma_transfer_number_get:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:793    .text.dma_transfer_number_get:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:794    .text.dma_transfer_number_get:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:801    .text.dma_priority_config:0000000000000000 dma_priority_config
+     /tmp/ccjAYoxF.s:804    .text.dma_priority_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:806    .text.dma_priority_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:807    .text.dma_priority_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:810    .text.dma_priority_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:811    .text.dma_priority_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:815    .text.dma_priority_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:816    .text.dma_priority_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:817    .text.dma_priority_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:822    .text.dma_priority_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:823    .text.dma_priority_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:828    .text.dma_priority_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:831    .text.dma_priority_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:832    .text.dma_priority_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:837    .text.dma_priority_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:838    .text.dma_priority_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:841    .text.dma_priority_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:842    .text.dma_priority_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:844    .text.dma_priority_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:850    .text.dma_priority_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:851    .text.dma_priority_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:857    .text.dma_priority_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:858    .text.dma_priority_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:859    .text.dma_priority_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:860    .text.dma_priority_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:861    .text.dma_priority_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:868    .text.dma_memory_width_config:0000000000000000 dma_memory_width_config
+     /tmp/ccjAYoxF.s:871    .text.dma_memory_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:873    .text.dma_memory_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:874    .text.dma_memory_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:877    .text.dma_memory_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:878    .text.dma_memory_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:882    .text.dma_memory_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:883    .text.dma_memory_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:884    .text.dma_memory_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:889    .text.dma_memory_width_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:890    .text.dma_memory_width_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:895    .text.dma_memory_width_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:898    .text.dma_memory_width_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:899    .text.dma_memory_width_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:904    .text.dma_memory_width_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:905    .text.dma_memory_width_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:908    .text.dma_memory_width_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:909    .text.dma_memory_width_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:911    .text.dma_memory_width_config:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:917    .text.dma_memory_width_config:0000000000000026 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 54
 
 
-     /tmp/ccGQvFzq.s:918    .text.dma_memory_width_config:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:924    .text.dma_memory_width_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:925    .text.dma_memory_width_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:926    .text.dma_memory_width_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:927    .text.dma_memory_width_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:928    .text.dma_memory_width_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:935    .text.dma_periph_width_config:0000000000000000 dma_periph_width_config
-     /tmp/ccGQvFzq.s:938    .text.dma_periph_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:940    .text.dma_periph_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:941    .text.dma_periph_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:944    .text.dma_periph_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:945    .text.dma_periph_width_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:949    .text.dma_periph_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:950    .text.dma_periph_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:951    .text.dma_periph_width_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:956    .text.dma_periph_width_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:957    .text.dma_periph_width_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:962    .text.dma_periph_width_config:0000000000000016 .L0 
-     /tmp/ccGQvFzq.s:965    .text.dma_periph_width_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:966    .text.dma_periph_width_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:969    .text.dma_periph_width_config:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:970    .text.dma_periph_width_config:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:973    .text.dma_periph_width_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:974    .text.dma_periph_width_config:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:976    .text.dma_periph_width_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:982    .text.dma_periph_width_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:983    .text.dma_periph_width_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:989    .text.dma_periph_width_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:990    .text.dma_periph_width_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:991    .text.dma_periph_width_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:992    .text.dma_periph_width_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:993    .text.dma_periph_width_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:1000   .text.dma_memory_increase_enable:0000000000000000 dma_memory_increase_enable
-     /tmp/ccGQvFzq.s:1003   .text.dma_memory_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1005   .text.dma_memory_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1008   .text.dma_memory_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1009   .text.dma_memory_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1013   .text.dma_memory_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1014   .text.dma_memory_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1015   .text.dma_memory_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1020   .text.dma_memory_increase_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1021   .text.dma_memory_increase_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1029   .text.dma_memory_increase_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1034   .text.dma_memory_increase_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1035   .text.dma_memory_increase_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1041   .text.dma_memory_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1042   .text.dma_memory_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1043   .text.dma_memory_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1044   .text.dma_memory_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1045   .text.dma_memory_increase_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1052   .text.dma_memory_increase_disable:0000000000000000 dma_memory_increase_disable
-     /tmp/ccGQvFzq.s:1055   .text.dma_memory_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1057   .text.dma_memory_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1060   .text.dma_memory_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1061   .text.dma_memory_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1065   .text.dma_memory_increase_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1066   .text.dma_memory_increase_disable:0000000000000008 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 55
+     /tmp/ccjAYoxF.s:918    .text.dma_memory_width_config:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:924    .text.dma_memory_width_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:925    .text.dma_memory_width_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:926    .text.dma_memory_width_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:927    .text.dma_memory_width_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:928    .text.dma_memory_width_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:935    .text.dma_periph_width_config:0000000000000000 dma_periph_width_config
+     /tmp/ccjAYoxF.s:938    .text.dma_periph_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:940    .text.dma_periph_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:941    .text.dma_periph_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:944    .text.dma_periph_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:945    .text.dma_periph_width_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:949    .text.dma_periph_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:950    .text.dma_periph_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:951    .text.dma_periph_width_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:956    .text.dma_periph_width_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:957    .text.dma_periph_width_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:962    .text.dma_periph_width_config:0000000000000016 .L0 
+     /tmp/ccjAYoxF.s:965    .text.dma_periph_width_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:966    .text.dma_periph_width_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:969    .text.dma_periph_width_config:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:970    .text.dma_periph_width_config:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:973    .text.dma_periph_width_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:974    .text.dma_periph_width_config:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:976    .text.dma_periph_width_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:982    .text.dma_periph_width_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:983    .text.dma_periph_width_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:989    .text.dma_periph_width_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:990    .text.dma_periph_width_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:991    .text.dma_periph_width_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:992    .text.dma_periph_width_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:993    .text.dma_periph_width_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:1000   .text.dma_memory_increase_enable:0000000000000000 dma_memory_increase_enable
+     /tmp/ccjAYoxF.s:1003   .text.dma_memory_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1005   .text.dma_memory_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1008   .text.dma_memory_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1009   .text.dma_memory_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1013   .text.dma_memory_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1014   .text.dma_memory_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1015   .text.dma_memory_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1020   .text.dma_memory_increase_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1021   .text.dma_memory_increase_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1029   .text.dma_memory_increase_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1034   .text.dma_memory_increase_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1035   .text.dma_memory_increase_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1041   .text.dma_memory_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1042   .text.dma_memory_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1043   .text.dma_memory_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1044   .text.dma_memory_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1045   .text.dma_memory_increase_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1052   .text.dma_memory_increase_disable:0000000000000000 dma_memory_increase_disable
+     /tmp/ccjAYoxF.s:1055   .text.dma_memory_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1057   .text.dma_memory_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1060   .text.dma_memory_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1061   .text.dma_memory_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1065   .text.dma_memory_increase_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1066   .text.dma_memory_increase_disable:0000000000000008 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 55
 
 
-     /tmp/ccGQvFzq.s:1067   .text.dma_memory_increase_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1072   .text.dma_memory_increase_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1073   .text.dma_memory_increase_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1081   .text.dma_memory_increase_disable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1086   .text.dma_memory_increase_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1087   .text.dma_memory_increase_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1093   .text.dma_memory_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1094   .text.dma_memory_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1095   .text.dma_memory_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1096   .text.dma_memory_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1097   .text.dma_memory_increase_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1104   .text.dma_periph_increase_enable:0000000000000000 dma_periph_increase_enable
-     /tmp/ccGQvFzq.s:1107   .text.dma_periph_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1109   .text.dma_periph_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1112   .text.dma_periph_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1113   .text.dma_periph_increase_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1117   .text.dma_periph_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1118   .text.dma_periph_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1119   .text.dma_periph_increase_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1124   .text.dma_periph_increase_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1125   .text.dma_periph_increase_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1133   .text.dma_periph_increase_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1138   .text.dma_periph_increase_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1139   .text.dma_periph_increase_enable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1145   .text.dma_periph_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1146   .text.dma_periph_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1147   .text.dma_periph_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1148   .text.dma_periph_increase_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1149   .text.dma_periph_increase_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1156   .text.dma_periph_increase_disable:0000000000000000 dma_periph_increase_disable
-     /tmp/ccGQvFzq.s:1159   .text.dma_periph_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1161   .text.dma_periph_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1164   .text.dma_periph_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1165   .text.dma_periph_increase_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1169   .text.dma_periph_increase_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1170   .text.dma_periph_increase_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1171   .text.dma_periph_increase_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1176   .text.dma_periph_increase_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1177   .text.dma_periph_increase_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1185   .text.dma_periph_increase_disable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1190   .text.dma_periph_increase_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1191   .text.dma_periph_increase_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1197   .text.dma_periph_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1198   .text.dma_periph_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1199   .text.dma_periph_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1200   .text.dma_periph_increase_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1201   .text.dma_periph_increase_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1208   .text.dma_transfer_direction_config:0000000000000000 dma_transfer_direction_config
-     /tmp/ccGQvFzq.s:1211   .text.dma_transfer_direction_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1213   .text.dma_transfer_direction_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1216   .text.dma_transfer_direction_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1217   .text.dma_transfer_direction_config:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1221   .text.dma_transfer_direction_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1222   .text.dma_transfer_direction_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1223   .text.dma_transfer_direction_config:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1228   .text.dma_transfer_direction_config:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1233   .text.dma_transfer_direction_config:0000000000000016 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 56
+     /tmp/ccjAYoxF.s:1067   .text.dma_memory_increase_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1072   .text.dma_memory_increase_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1073   .text.dma_memory_increase_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1081   .text.dma_memory_increase_disable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1086   .text.dma_memory_increase_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1087   .text.dma_memory_increase_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1093   .text.dma_memory_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1094   .text.dma_memory_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1095   .text.dma_memory_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1096   .text.dma_memory_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1097   .text.dma_memory_increase_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1104   .text.dma_periph_increase_enable:0000000000000000 dma_periph_increase_enable
+     /tmp/ccjAYoxF.s:1107   .text.dma_periph_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1109   .text.dma_periph_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1112   .text.dma_periph_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1113   .text.dma_periph_increase_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1117   .text.dma_periph_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1118   .text.dma_periph_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1119   .text.dma_periph_increase_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1124   .text.dma_periph_increase_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1125   .text.dma_periph_increase_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1133   .text.dma_periph_increase_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1138   .text.dma_periph_increase_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1139   .text.dma_periph_increase_enable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1145   .text.dma_periph_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1146   .text.dma_periph_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1147   .text.dma_periph_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1148   .text.dma_periph_increase_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1149   .text.dma_periph_increase_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1156   .text.dma_periph_increase_disable:0000000000000000 dma_periph_increase_disable
+     /tmp/ccjAYoxF.s:1159   .text.dma_periph_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1161   .text.dma_periph_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1164   .text.dma_periph_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1165   .text.dma_periph_increase_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1169   .text.dma_periph_increase_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1170   .text.dma_periph_increase_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1171   .text.dma_periph_increase_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1176   .text.dma_periph_increase_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1177   .text.dma_periph_increase_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1185   .text.dma_periph_increase_disable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1190   .text.dma_periph_increase_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1191   .text.dma_periph_increase_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1197   .text.dma_periph_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1198   .text.dma_periph_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1199   .text.dma_periph_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1200   .text.dma_periph_increase_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1201   .text.dma_periph_increase_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1208   .text.dma_transfer_direction_config:0000000000000000 dma_transfer_direction_config
+     /tmp/ccjAYoxF.s:1211   .text.dma_transfer_direction_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1213   .text.dma_transfer_direction_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1216   .text.dma_transfer_direction_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1217   .text.dma_transfer_direction_config:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1221   .text.dma_transfer_direction_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1222   .text.dma_transfer_direction_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1223   .text.dma_transfer_direction_config:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1228   .text.dma_transfer_direction_config:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1233   .text.dma_transfer_direction_config:0000000000000016 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 56
 
 
-     /tmp/ccGQvFzq.s:1235   .text.dma_transfer_direction_config:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:1237   .text.dma_transfer_direction_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:1238   .text.dma_transfer_direction_config:000000000000001a .L0 
-     /tmp/ccGQvFzq.s:1243   .text.dma_transfer_direction_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1244   .text.dma_transfer_direction_config:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1247   .text.dma_transfer_direction_config:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1252   .text.dma_transfer_direction_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1253   .text.dma_transfer_direction_config:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1259   .text.dma_transfer_direction_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1260   .text.dma_transfer_direction_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1261   .text.dma_transfer_direction_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1262   .text.dma_transfer_direction_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1263   .text.dma_transfer_direction_config:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:1270   .text.dma_flag_get:0000000000000000 dma_flag_get
-     /tmp/ccGQvFzq.s:1273   .text.dma_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1275   .text.dma_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1276   .text.dma_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1277   .text.dma_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1278   .text.dma_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1281   .text.dma_flag_get:0000000000000002 .L0 
-     /tmp/ccGQvFzq.s:1282   .text.dma_flag_get:0000000000000002 .L0 
-     /tmp/ccGQvFzq.s:1287   .text.dma_flag_get:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1290   .text.dma_flag_get:000000000000000a .L0 
-     /tmp/ccGQvFzq.s:1292   .text.dma_flag_get:0000000000000010 .L0 
-     /tmp/ccGQvFzq.s:1299   .text.dma_flag_clear:0000000000000000 dma_flag_clear
-     /tmp/ccGQvFzq.s:1302   .text.dma_flag_clear:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1304   .text.dma_flag_clear:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1305   .text.dma_flag_clear:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1306   .text.dma_flag_clear:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1308   .text.dma_flag_clear:0000000000000002 .L0 
-     /tmp/ccGQvFzq.s:1313   .text.dma_flag_clear:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1316   .text.dma_flag_clear:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1317   .text.dma_flag_clear:000000000000000e .L0 
-     /tmp/ccGQvFzq.s:1324   .text.dma_interrupt_flag_get:0000000000000000 dma_interrupt_flag_get
-     /tmp/ccGQvFzq.s:1327   .text.dma_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1329   .text.dma_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1330   .text.dma_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1331   .text.dma_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1339   .text.dma_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccGQvFzq.s:1340   .text.dma_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccGQvFzq.s:1341   .text.dma_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccGQvFzq.s:1342   .text.dma_interrupt_flag_get:0000000000000012 .L0 
-     /tmp/ccGQvFzq.s:1345   .text.dma_interrupt_flag_get:0000000000000014 .L0 
-     /tmp/ccGQvFzq.s:1346   .text.dma_interrupt_flag_get:0000000000000014 .L0 
-     /tmp/ccGQvFzq.s:1348   .text.dma_interrupt_flag_get:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:1353   .text.dma_interrupt_flag_get:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:1356   .text.dma_interrupt_flag_get:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:1358   .text.dma_interrupt_flag_get:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1360   .text.dma_interrupt_flag_get:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:1363   .text.dma_interrupt_flag_get:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:1364   .text.dma_interrupt_flag_get:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:1368   .text.dma_interrupt_flag_get:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1369   .text.dma_interrupt_flag_get:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1370   .text.dma_interrupt_flag_get:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:1372   .text.dma_interrupt_flag_get:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:1376   .text.dma_interrupt_flag_get:0000000000000034 .L0 
-     /tmp/ccGQvFzq.s:1380   .text.dma_interrupt_flag_get:0000000000000036 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 57
+     /tmp/ccjAYoxF.s:1235   .text.dma_transfer_direction_config:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:1237   .text.dma_transfer_direction_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:1238   .text.dma_transfer_direction_config:000000000000001a .L0 
+     /tmp/ccjAYoxF.s:1243   .text.dma_transfer_direction_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1244   .text.dma_transfer_direction_config:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1247   .text.dma_transfer_direction_config:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1252   .text.dma_transfer_direction_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1253   .text.dma_transfer_direction_config:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1259   .text.dma_transfer_direction_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1260   .text.dma_transfer_direction_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1261   .text.dma_transfer_direction_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1262   .text.dma_transfer_direction_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1263   .text.dma_transfer_direction_config:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:1270   .text.dma_flag_get:0000000000000000 dma_flag_get
+     /tmp/ccjAYoxF.s:1273   .text.dma_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1275   .text.dma_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1276   .text.dma_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1277   .text.dma_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1278   .text.dma_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1281   .text.dma_flag_get:0000000000000002 .L0 
+     /tmp/ccjAYoxF.s:1282   .text.dma_flag_get:0000000000000002 .L0 
+     /tmp/ccjAYoxF.s:1287   .text.dma_flag_get:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1290   .text.dma_flag_get:000000000000000a .L0 
+     /tmp/ccjAYoxF.s:1292   .text.dma_flag_get:0000000000000010 .L0 
+     /tmp/ccjAYoxF.s:1299   .text.dma_flag_clear:0000000000000000 dma_flag_clear
+     /tmp/ccjAYoxF.s:1302   .text.dma_flag_clear:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1304   .text.dma_flag_clear:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1305   .text.dma_flag_clear:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1306   .text.dma_flag_clear:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1308   .text.dma_flag_clear:0000000000000002 .L0 
+     /tmp/ccjAYoxF.s:1313   .text.dma_flag_clear:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1316   .text.dma_flag_clear:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1317   .text.dma_flag_clear:000000000000000e .L0 
+     /tmp/ccjAYoxF.s:1324   .text.dma_interrupt_flag_get:0000000000000000 dma_interrupt_flag_get
+     /tmp/ccjAYoxF.s:1327   .text.dma_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1329   .text.dma_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1330   .text.dma_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1331   .text.dma_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1339   .text.dma_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/ccjAYoxF.s:1340   .text.dma_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/ccjAYoxF.s:1341   .text.dma_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/ccjAYoxF.s:1342   .text.dma_interrupt_flag_get:0000000000000012 .L0 
+     /tmp/ccjAYoxF.s:1345   .text.dma_interrupt_flag_get:0000000000000014 .L0 
+     /tmp/ccjAYoxF.s:1346   .text.dma_interrupt_flag_get:0000000000000014 .L0 
+     /tmp/ccjAYoxF.s:1348   .text.dma_interrupt_flag_get:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:1353   .text.dma_interrupt_flag_get:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:1356   .text.dma_interrupt_flag_get:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:1358   .text.dma_interrupt_flag_get:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1360   .text.dma_interrupt_flag_get:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:1363   .text.dma_interrupt_flag_get:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:1364   .text.dma_interrupt_flag_get:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:1368   .text.dma_interrupt_flag_get:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1369   .text.dma_interrupt_flag_get:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1370   .text.dma_interrupt_flag_get:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:1372   .text.dma_interrupt_flag_get:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:1376   .text.dma_interrupt_flag_get:0000000000000034 .L0 
+     /tmp/ccjAYoxF.s:1380   .text.dma_interrupt_flag_get:0000000000000036 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 57
 
 
-     /tmp/ccGQvFzq.s:1381   .text.dma_interrupt_flag_get:0000000000000036 .L0 
-     /tmp/ccGQvFzq.s:1383   .text.dma_interrupt_flag_get:000000000000003a .L0 
-     /tmp/ccGQvFzq.s:1388   .text.dma_interrupt_flag_get:0000000000000044 .L0 
-     /tmp/ccGQvFzq.s:1391   .text.dma_interrupt_flag_get:0000000000000046 .L0 
-     /tmp/ccGQvFzq.s:1393   .text.dma_interrupt_flag_get:0000000000000048 .L0 
-     /tmp/ccGQvFzq.s:1396   .text.dma_interrupt_flag_get:000000000000004c .L0 
-     /tmp/ccGQvFzq.s:1399   .text.dma_interrupt_flag_get:000000000000004e .L0 
-     /tmp/ccGQvFzq.s:1400   .text.dma_interrupt_flag_get:000000000000004e .L0 
-     /tmp/ccGQvFzq.s:1403   .text.dma_interrupt_flag_get:0000000000000050 .L0 
-     /tmp/ccGQvFzq.s:1407   .text.dma_interrupt_flag_get:0000000000000052 .L0 
-     /tmp/ccGQvFzq.s:1408   .text.dma_interrupt_flag_get:0000000000000052 .L0 
-     /tmp/ccGQvFzq.s:1410   .text.dma_interrupt_flag_get:0000000000000056 .L0 
-     /tmp/ccGQvFzq.s:1415   .text.dma_interrupt_flag_get:0000000000000060 .L0 
-     /tmp/ccGQvFzq.s:1418   .text.dma_interrupt_flag_get:0000000000000062 .L0 
-     /tmp/ccGQvFzq.s:1420   .text.dma_interrupt_flag_get:0000000000000064 .L0 
-     /tmp/ccGQvFzq.s:1422   .text.dma_interrupt_flag_get:0000000000000068 .L0 
-     /tmp/ccGQvFzq.s:1425   .text.dma_interrupt_flag_get:000000000000006a .L0 
-     /tmp/ccGQvFzq.s:1426   .text.dma_interrupt_flag_get:000000000000006a .L0 
-     /tmp/ccGQvFzq.s:1429   .text.dma_interrupt_flag_get:000000000000006c .L0 
-     /tmp/ccGQvFzq.s:1430   .text.dma_interrupt_flag_get:000000000000006e .L0 
-     /tmp/ccGQvFzq.s:1437   .text.dma_interrupt_flag_clear:0000000000000000 dma_interrupt_flag_clear
-     /tmp/ccGQvFzq.s:1439   .text.dma_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1441   .text.dma_interrupt_flag_clear:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1448   .text.dma_interrupt_enable:0000000000000000 dma_interrupt_enable
-     /tmp/ccGQvFzq.s:1451   .text.dma_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1453   .text.dma_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1456   .text.dma_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1457   .text.dma_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1461   .text.dma_interrupt_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1462   .text.dma_interrupt_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1463   .text.dma_interrupt_enable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1468   .text.dma_interrupt_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1469   .text.dma_interrupt_enable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1477   .text.dma_interrupt_enable:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:1482   .text.dma_interrupt_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1483   .text.dma_interrupt_enable:000000000000001e .L0 
-     /tmp/ccGQvFzq.s:1489   .text.dma_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:1490   .text.dma_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:1491   .text.dma_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:1492   .text.dma_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccGQvFzq.s:1493   .text.dma_interrupt_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1500   .text.dma_interrupt_disable:0000000000000000 dma_interrupt_disable
-     /tmp/ccGQvFzq.s:1503   .text.dma_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1505   .text.dma_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1508   .text.dma_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1509   .text.dma_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:1513   .text.dma_interrupt_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1514   .text.dma_interrupt_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1515   .text.dma_interrupt_disable:0000000000000008 .L0 
-     /tmp/ccGQvFzq.s:1520   .text.dma_interrupt_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1521   .text.dma_interrupt_disable:000000000000000c .L0 
-     /tmp/ccGQvFzq.s:1527   .text.dma_interrupt_disable:0000000000000018 .L0 
-     /tmp/ccGQvFzq.s:1529   .text.dma_interrupt_disable:000000000000001c .L0 
-     /tmp/ccGQvFzq.s:1532   .text.dma_interrupt_disable:0000000000000020 .L0 
-     /tmp/ccGQvFzq.s:1537   .text.dma_interrupt_disable:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:1538   .text.dma_interrupt_disable:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:1544   .text.dma_interrupt_disable:0000000000000028 .L0 
-GAS LISTING /tmp/ccGQvFzq.s 			page 58
+     /tmp/ccjAYoxF.s:1381   .text.dma_interrupt_flag_get:0000000000000036 .L0 
+     /tmp/ccjAYoxF.s:1383   .text.dma_interrupt_flag_get:000000000000003a .L0 
+     /tmp/ccjAYoxF.s:1388   .text.dma_interrupt_flag_get:0000000000000044 .L0 
+     /tmp/ccjAYoxF.s:1391   .text.dma_interrupt_flag_get:0000000000000046 .L0 
+     /tmp/ccjAYoxF.s:1393   .text.dma_interrupt_flag_get:0000000000000048 .L0 
+     /tmp/ccjAYoxF.s:1396   .text.dma_interrupt_flag_get:000000000000004c .L0 
+     /tmp/ccjAYoxF.s:1399   .text.dma_interrupt_flag_get:000000000000004e .L0 
+     /tmp/ccjAYoxF.s:1400   .text.dma_interrupt_flag_get:000000000000004e .L0 
+     /tmp/ccjAYoxF.s:1403   .text.dma_interrupt_flag_get:0000000000000050 .L0 
+     /tmp/ccjAYoxF.s:1407   .text.dma_interrupt_flag_get:0000000000000052 .L0 
+     /tmp/ccjAYoxF.s:1408   .text.dma_interrupt_flag_get:0000000000000052 .L0 
+     /tmp/ccjAYoxF.s:1410   .text.dma_interrupt_flag_get:0000000000000056 .L0 
+     /tmp/ccjAYoxF.s:1415   .text.dma_interrupt_flag_get:0000000000000060 .L0 
+     /tmp/ccjAYoxF.s:1418   .text.dma_interrupt_flag_get:0000000000000062 .L0 
+     /tmp/ccjAYoxF.s:1420   .text.dma_interrupt_flag_get:0000000000000064 .L0 
+     /tmp/ccjAYoxF.s:1422   .text.dma_interrupt_flag_get:0000000000000068 .L0 
+     /tmp/ccjAYoxF.s:1425   .text.dma_interrupt_flag_get:000000000000006a .L0 
+     /tmp/ccjAYoxF.s:1426   .text.dma_interrupt_flag_get:000000000000006a .L0 
+     /tmp/ccjAYoxF.s:1429   .text.dma_interrupt_flag_get:000000000000006c .L0 
+     /tmp/ccjAYoxF.s:1430   .text.dma_interrupt_flag_get:000000000000006e .L0 
+     /tmp/ccjAYoxF.s:1437   .text.dma_interrupt_flag_clear:0000000000000000 dma_interrupt_flag_clear
+     /tmp/ccjAYoxF.s:1439   .text.dma_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1441   .text.dma_interrupt_flag_clear:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1448   .text.dma_interrupt_enable:0000000000000000 dma_interrupt_enable
+     /tmp/ccjAYoxF.s:1451   .text.dma_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1453   .text.dma_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1456   .text.dma_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1457   .text.dma_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1461   .text.dma_interrupt_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1462   .text.dma_interrupt_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1463   .text.dma_interrupt_enable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1468   .text.dma_interrupt_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1469   .text.dma_interrupt_enable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1477   .text.dma_interrupt_enable:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:1482   .text.dma_interrupt_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1483   .text.dma_interrupt_enable:000000000000001e .L0 
+     /tmp/ccjAYoxF.s:1489   .text.dma_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:1490   .text.dma_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:1491   .text.dma_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:1492   .text.dma_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccjAYoxF.s:1493   .text.dma_interrupt_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1500   .text.dma_interrupt_disable:0000000000000000 dma_interrupt_disable
+     /tmp/ccjAYoxF.s:1503   .text.dma_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1505   .text.dma_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1508   .text.dma_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1509   .text.dma_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccjAYoxF.s:1513   .text.dma_interrupt_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1514   .text.dma_interrupt_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1515   .text.dma_interrupt_disable:0000000000000008 .L0 
+     /tmp/ccjAYoxF.s:1520   .text.dma_interrupt_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1521   .text.dma_interrupt_disable:000000000000000c .L0 
+     /tmp/ccjAYoxF.s:1527   .text.dma_interrupt_disable:0000000000000018 .L0 
+     /tmp/ccjAYoxF.s:1529   .text.dma_interrupt_disable:000000000000001c .L0 
+     /tmp/ccjAYoxF.s:1532   .text.dma_interrupt_disable:0000000000000020 .L0 
+     /tmp/ccjAYoxF.s:1537   .text.dma_interrupt_disable:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:1538   .text.dma_interrupt_disable:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:1544   .text.dma_interrupt_disable:0000000000000028 .L0 
+GAS LISTING /tmp/ccjAYoxF.s 			page 58
 
 
-     /tmp/ccGQvFzq.s:1545   .text.dma_interrupt_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1546   .text.dma_interrupt_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1547   .text.dma_interrupt_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1548   .text.dma_interrupt_disable:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:83     .text.dma_deinit:0000000000000044 .L0 
-     /tmp/ccGQvFzq.s:122    .text.dma_struct_para_init:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:272    .text.dma_init:0000000000000098 .L0 
-     /tmp/ccGQvFzq.s:324    .text.dma_circulation_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:376    .text.dma_circulation_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:429    .text.dma_memory_to_memory_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:483    .text.dma_memory_to_memory_disable:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:535    .text.dma_channel_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:587    .text.dma_channel_disable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:637    .text.dma_periph_address_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:687    .text.dma_memory_address_config:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:744    .text.dma_transfer_number_config:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:797    .text.dma_transfer_number_get:0000000000000022 .L0 
-     /tmp/ccGQvFzq.s:864    .text.dma_priority_config:000000000000002c .L0 
-     /tmp/ccGQvFzq.s:931    .text.dma_memory_width_config:000000000000002e .L0 
-     /tmp/ccGQvFzq.s:996    .text.dma_periph_width_config:000000000000002a .L0 
-     /tmp/ccGQvFzq.s:1048   .text.dma_memory_increase_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1100   .text.dma_memory_increase_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1152   .text.dma_periph_increase_enable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1204   .text.dma_periph_increase_disable:0000000000000028 .L0 
-     /tmp/ccGQvFzq.s:1266   .text.dma_transfer_direction_config:0000000000000030 .L0 
-     /tmp/ccGQvFzq.s:1295   .text.dma_flag_get:0000000000000010 .L0 
-     /tmp/ccGQvFzq.s:1320   .text.dma_flag_clear:000000000000000e .L0 
-     /tmp/ccGQvFzq.s:1433   .text.dma_interrupt_flag_get:000000000000006e .L0 
-     /tmp/ccGQvFzq.s:1496   .text.dma_interrupt_enable:0000000000000026 .L0 
-     /tmp/ccGQvFzq.s:1551   .text.dma_interrupt_disable:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:1545   .text.dma_interrupt_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1546   .text.dma_interrupt_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1547   .text.dma_interrupt_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1548   .text.dma_interrupt_disable:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:83     .text.dma_deinit:0000000000000044 .L0 
+     /tmp/ccjAYoxF.s:122    .text.dma_struct_para_init:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:272    .text.dma_init:0000000000000098 .L0 
+     /tmp/ccjAYoxF.s:324    .text.dma_circulation_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:376    .text.dma_circulation_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:429    .text.dma_memory_to_memory_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:483    .text.dma_memory_to_memory_disable:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:535    .text.dma_channel_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:587    .text.dma_channel_disable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:637    .text.dma_periph_address_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:687    .text.dma_memory_address_config:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:744    .text.dma_transfer_number_config:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:797    .text.dma_transfer_number_get:0000000000000022 .L0 
+     /tmp/ccjAYoxF.s:864    .text.dma_priority_config:000000000000002c .L0 
+     /tmp/ccjAYoxF.s:931    .text.dma_memory_width_config:000000000000002e .L0 
+     /tmp/ccjAYoxF.s:996    .text.dma_periph_width_config:000000000000002a .L0 
+     /tmp/ccjAYoxF.s:1048   .text.dma_memory_increase_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1100   .text.dma_memory_increase_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1152   .text.dma_periph_increase_enable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1204   .text.dma_periph_increase_disable:0000000000000028 .L0 
+     /tmp/ccjAYoxF.s:1266   .text.dma_transfer_direction_config:0000000000000030 .L0 
+     /tmp/ccjAYoxF.s:1295   .text.dma_flag_get:0000000000000010 .L0 
+     /tmp/ccjAYoxF.s:1320   .text.dma_flag_clear:000000000000000e .L0 
+     /tmp/ccjAYoxF.s:1433   .text.dma_interrupt_flag_get:000000000000006e .L0 
+     /tmp/ccjAYoxF.s:1496   .text.dma_interrupt_enable:0000000000000026 .L0 
+     /tmp/ccjAYoxF.s:1551   .text.dma_interrupt_disable:000000000000002a .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccGQvFzq.s:65     .text.dma_deinit:000000000000003c .L5
-     /tmp/ccGQvFzq.s:30     .text.dma_deinit:000000000000000c .L2
-     /tmp/ccGQvFzq.s:72     .text.dma_deinit:0000000000000042 .L3
-     /tmp/ccGQvFzq.s:254    .text.dma_init:0000000000000090 .L16
-     /tmp/ccGQvFzq.s:245    .text.dma_init:0000000000000086 .L17
-     /tmp/ccGQvFzq.s:237    .text.dma_init:000000000000007c .L18
-     /tmp/ccGQvFzq.s:229    .text.dma_init:0000000000000072 .L14
-     /tmp/ccGQvFzq.s:218    .text.dma_init:0000000000000064 .L13
-     /tmp/ccGQvFzq.s:207    .text.dma_init:0000000000000052 .L11
-     /tmp/ccGQvFzq.s:143    .text.dma_init:000000000000000c .L8
-     /tmp/ccGQvFzq.s:261    .text.dma_init:0000000000000096 .L9
-     /tmp/ccGQvFzq.s:306    .text.dma_circulation_enable:0000000000000020 .L22
-     /tmp/ccGQvFzq.s:292    .text.dma_circulation_enable:000000000000000c .L20
-     /tmp/ccGQvFzq.s:313    .text.dma_circulation_enable:0000000000000026 .L21
-     /tmp/ccGQvFzq.s:358    .text.dma_circulation_disable:0000000000000020 .L26
-     /tmp/ccGQvFzq.s:344    .text.dma_circulation_disable:000000000000000c .L24
-     /tmp/ccGQvFzq.s:365    .text.dma_circulation_disable:0000000000000026 .L25
-     /tmp/ccGQvFzq.s:411    .text.dma_memory_to_memory_enable:0000000000000020 .L30
-     /tmp/ccGQvFzq.s:396    .text.dma_memory_to_memory_enable:000000000000000c .L28
-     /tmp/ccGQvFzq.s:418    .text.dma_memory_to_memory_enable:0000000000000026 .L29
-     /tmp/ccGQvFzq.s:465    .text.dma_memory_to_memory_disable:0000000000000022 .L34
-     /tmp/ccGQvFzq.s:449    .text.dma_memory_to_memory_disable:000000000000000c .L32
-     /tmp/ccGQvFzq.s:472    .text.dma_memory_to_memory_disable:0000000000000028 .L33
-     /tmp/ccGQvFzq.s:517    .text.dma_channel_enable:0000000000000020 .L38
-     /tmp/ccGQvFzq.s:503    .text.dma_channel_enable:000000000000000c .L36
-     /tmp/ccGQvFzq.s:524    .text.dma_channel_enable:0000000000000026 .L37
-GAS LISTING /tmp/ccGQvFzq.s 			page 59
+     /tmp/ccjAYoxF.s:65     .text.dma_deinit:000000000000003c .L5
+     /tmp/ccjAYoxF.s:30     .text.dma_deinit:000000000000000c .L2
+     /tmp/ccjAYoxF.s:72     .text.dma_deinit:0000000000000042 .L3
+     /tmp/ccjAYoxF.s:254    .text.dma_init:0000000000000090 .L16
+     /tmp/ccjAYoxF.s:245    .text.dma_init:0000000000000086 .L17
+     /tmp/ccjAYoxF.s:237    .text.dma_init:000000000000007c .L18
+     /tmp/ccjAYoxF.s:229    .text.dma_init:0000000000000072 .L14
+     /tmp/ccjAYoxF.s:218    .text.dma_init:0000000000000064 .L13
+     /tmp/ccjAYoxF.s:207    .text.dma_init:0000000000000052 .L11
+     /tmp/ccjAYoxF.s:143    .text.dma_init:000000000000000c .L8
+     /tmp/ccjAYoxF.s:261    .text.dma_init:0000000000000096 .L9
+     /tmp/ccjAYoxF.s:306    .text.dma_circulation_enable:0000000000000020 .L22
+     /tmp/ccjAYoxF.s:292    .text.dma_circulation_enable:000000000000000c .L20
+     /tmp/ccjAYoxF.s:313    .text.dma_circulation_enable:0000000000000026 .L21
+     /tmp/ccjAYoxF.s:358    .text.dma_circulation_disable:0000000000000020 .L26
+     /tmp/ccjAYoxF.s:344    .text.dma_circulation_disable:000000000000000c .L24
+     /tmp/ccjAYoxF.s:365    .text.dma_circulation_disable:0000000000000026 .L25
+     /tmp/ccjAYoxF.s:411    .text.dma_memory_to_memory_enable:0000000000000020 .L30
+     /tmp/ccjAYoxF.s:396    .text.dma_memory_to_memory_enable:000000000000000c .L28
+     /tmp/ccjAYoxF.s:418    .text.dma_memory_to_memory_enable:0000000000000026 .L29
+     /tmp/ccjAYoxF.s:465    .text.dma_memory_to_memory_disable:0000000000000022 .L34
+     /tmp/ccjAYoxF.s:449    .text.dma_memory_to_memory_disable:000000000000000c .L32
+     /tmp/ccjAYoxF.s:472    .text.dma_memory_to_memory_disable:0000000000000028 .L33
+     /tmp/ccjAYoxF.s:517    .text.dma_channel_enable:0000000000000020 .L38
+     /tmp/ccjAYoxF.s:503    .text.dma_channel_enable:000000000000000c .L36
+     /tmp/ccjAYoxF.s:524    .text.dma_channel_enable:0000000000000026 .L37
+GAS LISTING /tmp/ccjAYoxF.s 			page 59
 
 
-     /tmp/ccGQvFzq.s:569    .text.dma_channel_disable:000000000000001e .L42
-     /tmp/ccGQvFzq.s:555    .text.dma_channel_disable:000000000000000c .L40
-     /tmp/ccGQvFzq.s:576    .text.dma_channel_disable:0000000000000024 .L41
-     /tmp/ccGQvFzq.s:619    .text.dma_periph_address_config:000000000000001a .L46
-     /tmp/ccGQvFzq.s:607    .text.dma_periph_address_config:000000000000000c .L44
-     /tmp/ccGQvFzq.s:626    .text.dma_periph_address_config:0000000000000020 .L45
-     /tmp/ccGQvFzq.s:669    .text.dma_memory_address_config:000000000000001a .L50
-     /tmp/ccGQvFzq.s:657    .text.dma_memory_address_config:000000000000000c .L48
-     /tmp/ccGQvFzq.s:676    .text.dma_memory_address_config:0000000000000020 .L49
-     /tmp/ccGQvFzq.s:726    .text.dma_transfer_number_config:000000000000001e .L54
-     /tmp/ccGQvFzq.s:707    .text.dma_transfer_number_config:000000000000000c .L52
-     /tmp/ccGQvFzq.s:733    .text.dma_transfer_number_config:0000000000000024 .L53
-     /tmp/ccGQvFzq.s:779    .text.dma_transfer_number_get:000000000000001a .L58
-     /tmp/ccGQvFzq.s:764    .text.dma_transfer_number_get:000000000000000c .L56
-     /tmp/ccGQvFzq.s:786    .text.dma_transfer_number_get:0000000000000020 .L57
-     /tmp/ccGQvFzq.s:846    .text.dma_priority_config:0000000000000024 .L62
-     /tmp/ccGQvFzq.s:818    .text.dma_priority_config:000000000000000c .L60
-     /tmp/ccGQvFzq.s:853    .text.dma_priority_config:000000000000002a .L61
-     /tmp/ccGQvFzq.s:913    .text.dma_memory_width_config:0000000000000026 .L66
-     /tmp/ccGQvFzq.s:885    .text.dma_memory_width_config:000000000000000c .L64
-     /tmp/ccGQvFzq.s:920    .text.dma_memory_width_config:000000000000002c .L65
-     /tmp/ccGQvFzq.s:978    .text.dma_periph_width_config:0000000000000022 .L70
-     /tmp/ccGQvFzq.s:952    .text.dma_periph_width_config:000000000000000c .L68
-     /tmp/ccGQvFzq.s:985    .text.dma_periph_width_config:0000000000000028 .L69
-     /tmp/ccGQvFzq.s:1030   .text.dma_memory_increase_enable:0000000000000020 .L74
-     /tmp/ccGQvFzq.s:1016   .text.dma_memory_increase_enable:000000000000000c .L72
-     /tmp/ccGQvFzq.s:1037   .text.dma_memory_increase_enable:0000000000000026 .L73
-     /tmp/ccGQvFzq.s:1082   .text.dma_memory_increase_disable:0000000000000020 .L78
-     /tmp/ccGQvFzq.s:1068   .text.dma_memory_increase_disable:000000000000000c .L76
-     /tmp/ccGQvFzq.s:1089   .text.dma_memory_increase_disable:0000000000000026 .L77
-     /tmp/ccGQvFzq.s:1134   .text.dma_periph_increase_enable:0000000000000020 .L82
-     /tmp/ccGQvFzq.s:1120   .text.dma_periph_increase_enable:000000000000000c .L80
-     /tmp/ccGQvFzq.s:1141   .text.dma_periph_increase_enable:0000000000000026 .L81
-     /tmp/ccGQvFzq.s:1186   .text.dma_periph_increase_disable:0000000000000020 .L86
-     /tmp/ccGQvFzq.s:1172   .text.dma_periph_increase_disable:000000000000000c .L84
-     /tmp/ccGQvFzq.s:1193   .text.dma_periph_increase_disable:0000000000000026 .L85
-     /tmp/ccGQvFzq.s:1248   .text.dma_transfer_direction_config:0000000000000028 .L92
-     /tmp/ccGQvFzq.s:1241   .text.dma_transfer_direction_config:0000000000000020 .L90
-     /tmp/ccGQvFzq.s:1224   .text.dma_transfer_direction_config:000000000000000c .L88
-     /tmp/ccGQvFzq.s:1255   .text.dma_transfer_direction_config:000000000000002e .L89
-     /tmp/ccGQvFzq.s:1405   .text.dma_interrupt_flag_get:0000000000000052 .L96
-     /tmp/ccGQvFzq.s:1378   .text.dma_interrupt_flag_get:0000000000000036 .L97
-     /tmp/ccGQvFzq.s:1343   .text.dma_interrupt_flag_get:0000000000000014 .L105
-     /tmp/ccGQvFzq.s:1337   .text.dma_interrupt_flag_get:0000000000000012 .L98
-     /tmp/ccGQvFzq.s:1374   .text.dma_interrupt_flag_get:0000000000000034 .L95
-     /tmp/ccGQvFzq.s:1367   .text.dma_interrupt_flag_get:000000000000002e .L99
-     /tmp/ccGQvFzq.s:1478   .text.dma_interrupt_enable:000000000000001e .L110
-     /tmp/ccGQvFzq.s:1464   .text.dma_interrupt_enable:000000000000000c .L108
-     /tmp/ccGQvFzq.s:1485   .text.dma_interrupt_enable:0000000000000024 .L109
-     /tmp/ccGQvFzq.s:1533   .text.dma_interrupt_disable:0000000000000022 .L114
-     /tmp/ccGQvFzq.s:1516   .text.dma_interrupt_disable:000000000000000c .L112
-     /tmp/ccGQvFzq.s:1540   .text.dma_interrupt_disable:0000000000000028 .L113
-     /tmp/ccGQvFzq.s:3305   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccGQvFzq.s:4576   .debug_str:0000000000000305 .LASF73
-     /tmp/ccGQvFzq.s:4536   .debug_str:00000000000001b4 .LASF74
-     /tmp/ccGQvFzq.s:4492   .debug_str:000000000000000f .LASF75
-     /tmp/ccGQvFzq.s:4300   .debug_ranges:0000000000000000 .Ldebug_ranges0
-GAS LISTING /tmp/ccGQvFzq.s 			page 60
+     /tmp/ccjAYoxF.s:569    .text.dma_channel_disable:000000000000001e .L42
+     /tmp/ccjAYoxF.s:555    .text.dma_channel_disable:000000000000000c .L40
+     /tmp/ccjAYoxF.s:576    .text.dma_channel_disable:0000000000000024 .L41
+     /tmp/ccjAYoxF.s:619    .text.dma_periph_address_config:000000000000001a .L46
+     /tmp/ccjAYoxF.s:607    .text.dma_periph_address_config:000000000000000c .L44
+     /tmp/ccjAYoxF.s:626    .text.dma_periph_address_config:0000000000000020 .L45
+     /tmp/ccjAYoxF.s:669    .text.dma_memory_address_config:000000000000001a .L50
+     /tmp/ccjAYoxF.s:657    .text.dma_memory_address_config:000000000000000c .L48
+     /tmp/ccjAYoxF.s:676    .text.dma_memory_address_config:0000000000000020 .L49
+     /tmp/ccjAYoxF.s:726    .text.dma_transfer_number_config:000000000000001e .L54
+     /tmp/ccjAYoxF.s:707    .text.dma_transfer_number_config:000000000000000c .L52
+     /tmp/ccjAYoxF.s:733    .text.dma_transfer_number_config:0000000000000024 .L53
+     /tmp/ccjAYoxF.s:779    .text.dma_transfer_number_get:000000000000001a .L58
+     /tmp/ccjAYoxF.s:764    .text.dma_transfer_number_get:000000000000000c .L56
+     /tmp/ccjAYoxF.s:786    .text.dma_transfer_number_get:0000000000000020 .L57
+     /tmp/ccjAYoxF.s:846    .text.dma_priority_config:0000000000000024 .L62
+     /tmp/ccjAYoxF.s:818    .text.dma_priority_config:000000000000000c .L60
+     /tmp/ccjAYoxF.s:853    .text.dma_priority_config:000000000000002a .L61
+     /tmp/ccjAYoxF.s:913    .text.dma_memory_width_config:0000000000000026 .L66
+     /tmp/ccjAYoxF.s:885    .text.dma_memory_width_config:000000000000000c .L64
+     /tmp/ccjAYoxF.s:920    .text.dma_memory_width_config:000000000000002c .L65
+     /tmp/ccjAYoxF.s:978    .text.dma_periph_width_config:0000000000000022 .L70
+     /tmp/ccjAYoxF.s:952    .text.dma_periph_width_config:000000000000000c .L68
+     /tmp/ccjAYoxF.s:985    .text.dma_periph_width_config:0000000000000028 .L69
+     /tmp/ccjAYoxF.s:1030   .text.dma_memory_increase_enable:0000000000000020 .L74
+     /tmp/ccjAYoxF.s:1016   .text.dma_memory_increase_enable:000000000000000c .L72
+     /tmp/ccjAYoxF.s:1037   .text.dma_memory_increase_enable:0000000000000026 .L73
+     /tmp/ccjAYoxF.s:1082   .text.dma_memory_increase_disable:0000000000000020 .L78
+     /tmp/ccjAYoxF.s:1068   .text.dma_memory_increase_disable:000000000000000c .L76
+     /tmp/ccjAYoxF.s:1089   .text.dma_memory_increase_disable:0000000000000026 .L77
+     /tmp/ccjAYoxF.s:1134   .text.dma_periph_increase_enable:0000000000000020 .L82
+     /tmp/ccjAYoxF.s:1120   .text.dma_periph_increase_enable:000000000000000c .L80
+     /tmp/ccjAYoxF.s:1141   .text.dma_periph_increase_enable:0000000000000026 .L81
+     /tmp/ccjAYoxF.s:1186   .text.dma_periph_increase_disable:0000000000000020 .L86
+     /tmp/ccjAYoxF.s:1172   .text.dma_periph_increase_disable:000000000000000c .L84
+     /tmp/ccjAYoxF.s:1193   .text.dma_periph_increase_disable:0000000000000026 .L85
+     /tmp/ccjAYoxF.s:1248   .text.dma_transfer_direction_config:0000000000000028 .L92
+     /tmp/ccjAYoxF.s:1241   .text.dma_transfer_direction_config:0000000000000020 .L90
+     /tmp/ccjAYoxF.s:1224   .text.dma_transfer_direction_config:000000000000000c .L88
+     /tmp/ccjAYoxF.s:1255   .text.dma_transfer_direction_config:000000000000002e .L89
+     /tmp/ccjAYoxF.s:1405   .text.dma_interrupt_flag_get:0000000000000052 .L96
+     /tmp/ccjAYoxF.s:1378   .text.dma_interrupt_flag_get:0000000000000036 .L97
+     /tmp/ccjAYoxF.s:1343   .text.dma_interrupt_flag_get:0000000000000014 .L105
+     /tmp/ccjAYoxF.s:1337   .text.dma_interrupt_flag_get:0000000000000012 .L98
+     /tmp/ccjAYoxF.s:1374   .text.dma_interrupt_flag_get:0000000000000034 .L95
+     /tmp/ccjAYoxF.s:1367   .text.dma_interrupt_flag_get:000000000000002e .L99
+     /tmp/ccjAYoxF.s:1478   .text.dma_interrupt_enable:000000000000001e .L110
+     /tmp/ccjAYoxF.s:1464   .text.dma_interrupt_enable:000000000000000c .L108
+     /tmp/ccjAYoxF.s:1485   .text.dma_interrupt_enable:0000000000000024 .L109
+     /tmp/ccjAYoxF.s:1533   .text.dma_interrupt_disable:0000000000000022 .L114
+     /tmp/ccjAYoxF.s:1516   .text.dma_interrupt_disable:000000000000000c .L112
+     /tmp/ccjAYoxF.s:1540   .text.dma_interrupt_disable:0000000000000028 .L113
+     /tmp/ccjAYoxF.s:3305   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccjAYoxF.s:4576   .debug_str:000000000000030b .LASF73
+     /tmp/ccjAYoxF.s:4534   .debug_str:000000000000015b .LASF74
+     /tmp/ccjAYoxF.s:4538   .debug_str:00000000000001a7 .LASF75
+     /tmp/ccjAYoxF.s:4300   .debug_ranges:0000000000000000 .Ldebug_ranges0
+GAS LISTING /tmp/ccjAYoxF.s 			page 60
 
 
-     /tmp/ccGQvFzq.s:4488   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccGQvFzq.s:4580   .debug_str:0000000000000388 .LASF0
-     /tmp/ccGQvFzq.s:4572   .debug_str:00000000000002e2 .LASF1
-     /tmp/ccGQvFzq.s:4648   .debug_str:00000000000005a7 .LASF6
-     /tmp/ccGQvFzq.s:4566   .debug_str:00000000000002a2 .LASF2
-     /tmp/ccGQvFzq.s:4512   .debug_str:00000000000000fb .LASF3
-     /tmp/ccGQvFzq.s:4584   .debug_str:00000000000003b1 .LASF4
-     /tmp/ccGQvFzq.s:4540   .debug_str:0000000000000200 .LASF5
-     /tmp/ccGQvFzq.s:4600   .debug_str:0000000000000453 .LASF7
-     /tmp/ccGQvFzq.s:4596   .debug_str:000000000000042a .LASF8
-     /tmp/ccGQvFzq.s:4504   .debug_str:00000000000000a9 .LASF9
-     /tmp/ccGQvFzq.s:4574   .debug_str:00000000000002ee .LASF10
-     /tmp/ccGQvFzq.s:4518   .debug_str:0000000000000126 .LASF11
-     /tmp/ccGQvFzq.s:4578   .debug_str:000000000000037f .LASF12
-     /tmp/ccGQvFzq.s:4592   .debug_str:00000000000003fe .LASF76
-     /tmp/ccGQvFzq.s:4610   .debug_str:0000000000000493 .LASF13
-     /tmp/ccGQvFzq.s:4638   .debug_str:0000000000000560 .LASF14
-     /tmp/ccGQvFzq.s:4554   .debug_str:0000000000000256 .LASF15
-     /tmp/ccGQvFzq.s:4538   .debug_str:00000000000001f8 .LASF16
-     /tmp/ccGQvFzq.s:4500   .debug_str:0000000000000095 .LASF17
-     /tmp/ccGQvFzq.s:4564   .debug_str:0000000000000296 .LASF18
-     /tmp/ccGQvFzq.s:4630   .debug_str:0000000000000540 .LASF19
-     /tmp/ccGQvFzq.s:4632   .debug_str:0000000000000548 .LASF20
-     /tmp/ccGQvFzq.s:4634   .debug_str:0000000000000550 .LASF21
-     /tmp/ccGQvFzq.s:4636   .debug_str:0000000000000558 .LASF22
-     /tmp/ccGQvFzq.s:4524   .debug_str:000000000000015f .LASF23
-     /tmp/ccGQvFzq.s:4640   .debug_str:000000000000056b .LASF24
-     /tmp/ccGQvFzq.s:4642   .debug_str:0000000000000573 .LASF25
-     /tmp/ccGQvFzq.s:4508   .debug_str:00000000000000d2 .LASF26
-     /tmp/ccGQvFzq.s:4498   .debug_str:0000000000000089 .LASF27
-     /tmp/ccGQvFzq.s:4558   .debug_str:0000000000000267 .LASF28
-     /tmp/ccGQvFzq.s:4602   .debug_str:000000000000045e .LASF29
-     /tmp/ccGQvFzq.s:4560   .debug_str:0000000000000274 .LASF30
-     /tmp/ccGQvFzq.s:4622   .debug_str:0000000000000506 .LASF31
-     /tmp/ccGQvFzq.s:4494   .debug_str:0000000000000068 .LASF32
-     /tmp/ccGQvFzq.s:4556   .debug_str:000000000000025c .LASF33
-     /tmp/ccGQvFzq.s:4514   .debug_str:0000000000000105 .LASF34
-     /tmp/ccGQvFzq.s:4502   .debug_str:000000000000009f .LASF35
-     /tmp/ccGQvFzq.s:4562   .debug_str:0000000000000281 .LASF36
-     /tmp/ccGQvFzq.s:4522   .debug_str:0000000000000142 .LASF77
-     /tmp/ccGQvFzq.s:4624   .debug_str:000000000000050d .LASF37
-     /tmp/ccGQvFzq.s:4588   .debug_str:00000000000003dd .LASF38
-     /tmp/ccGQvFzq.s:4516   .debug_str:0000000000000110 .LASF40
-     /tmp/ccGQvFzq.s:1501   .text.dma_interrupt_disable:0000000000000000 .LFB28
-     /tmp/ccGQvFzq.s:1549   .text.dma_interrupt_disable:000000000000002a .LFE28
-     /tmp/ccGQvFzq.s:4552   .debug_str:000000000000024f .LASF39
-     /tmp/ccGQvFzq.s:1506   .text.dma_interrupt_disable:0000000000000000 .LBB130
-     /tmp/ccGQvFzq.s:4626   .debug_str:0000000000000518 .LASF41
-     /tmp/ccGQvFzq.s:1449   .text.dma_interrupt_enable:0000000000000000 .LFB27
-     /tmp/ccGQvFzq.s:1494   .text.dma_interrupt_enable:0000000000000026 .LFE27
-     /tmp/ccGQvFzq.s:1454   .text.dma_interrupt_enable:0000000000000000 .LBB126
-     /tmp/ccGQvFzq.s:4586   .debug_str:00000000000003c4 .LASF78
-     /tmp/ccGQvFzq.s:4620   .debug_str:0000000000000501 .LASF42
-     /tmp/ccGQvFzq.s:4532   .debug_str:0000000000000196 .LASF46
-     /tmp/ccGQvFzq.s:1325   .text.dma_interrupt_flag_get:0000000000000000 .LFB25
-     /tmp/ccGQvFzq.s:1431   .text.dma_interrupt_flag_get:000000000000006e .LFE25
-     /tmp/ccGQvFzq.s:3829   .debug_loc:0000000000000000 .LLST16
-GAS LISTING /tmp/ccGQvFzq.s 			page 61
+     /tmp/ccjAYoxF.s:4488   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccjAYoxF.s:4580   .debug_str:000000000000038e .LASF0
+     /tmp/ccjAYoxF.s:4572   .debug_str:00000000000002e8 .LASF1
+     /tmp/ccjAYoxF.s:4648   .debug_str:00000000000005ad .LASF6
+     /tmp/ccjAYoxF.s:4566   .debug_str:00000000000002a8 .LASF2
+     /tmp/ccjAYoxF.s:4510   .debug_str:00000000000000a2 .LASF3
+     /tmp/ccjAYoxF.s:4584   .debug_str:00000000000003b7 .LASF4
+     /tmp/ccjAYoxF.s:4540   .debug_str:0000000000000206 .LASF5
+     /tmp/ccjAYoxF.s:4600   .debug_str:0000000000000459 .LASF7
+     /tmp/ccjAYoxF.s:4596   .debug_str:0000000000000430 .LASF8
+     /tmp/ccjAYoxF.s:4504   .debug_str:0000000000000068 .LASF9
+     /tmp/ccjAYoxF.s:4574   .debug_str:00000000000002f4 .LASF10
+     /tmp/ccjAYoxF.s:4516   .debug_str:00000000000000cd .LASF11
+     /tmp/ccjAYoxF.s:4578   .debug_str:0000000000000385 .LASF12
+     /tmp/ccjAYoxF.s:4592   .debug_str:0000000000000404 .LASF76
+     /tmp/ccjAYoxF.s:4610   .debug_str:0000000000000499 .LASF13
+     /tmp/ccjAYoxF.s:4638   .debug_str:0000000000000566 .LASF14
+     /tmp/ccjAYoxF.s:4554   .debug_str:000000000000025c .LASF15
+     /tmp/ccjAYoxF.s:4536   .debug_str:000000000000019f .LASF16
+     /tmp/ccjAYoxF.s:4500   .debug_str:0000000000000054 .LASF17
+     /tmp/ccjAYoxF.s:4564   .debug_str:000000000000029c .LASF18
+     /tmp/ccjAYoxF.s:4630   .debug_str:0000000000000546 .LASF19
+     /tmp/ccjAYoxF.s:4632   .debug_str:000000000000054e .LASF20
+     /tmp/ccjAYoxF.s:4634   .debug_str:0000000000000556 .LASF21
+     /tmp/ccjAYoxF.s:4636   .debug_str:000000000000055e .LASF22
+     /tmp/ccjAYoxF.s:4522   .debug_str:0000000000000106 .LASF23
+     /tmp/ccjAYoxF.s:4640   .debug_str:0000000000000571 .LASF24
+     /tmp/ccjAYoxF.s:4642   .debug_str:0000000000000579 .LASF25
+     /tmp/ccjAYoxF.s:4508   .debug_str:0000000000000091 .LASF26
+     /tmp/ccjAYoxF.s:4498   .debug_str:0000000000000048 .LASF27
+     /tmp/ccjAYoxF.s:4558   .debug_str:000000000000026d .LASF28
+     /tmp/ccjAYoxF.s:4602   .debug_str:0000000000000464 .LASF29
+     /tmp/ccjAYoxF.s:4560   .debug_str:000000000000027a .LASF30
+     /tmp/ccjAYoxF.s:4622   .debug_str:000000000000050c .LASF31
+     /tmp/ccjAYoxF.s:4494   .debug_str:0000000000000027 .LASF32
+     /tmp/ccjAYoxF.s:4556   .debug_str:0000000000000262 .LASF33
+     /tmp/ccjAYoxF.s:4512   .debug_str:00000000000000ac .LASF34
+     /tmp/ccjAYoxF.s:4502   .debug_str:000000000000005e .LASF35
+     /tmp/ccjAYoxF.s:4562   .debug_str:0000000000000287 .LASF36
+     /tmp/ccjAYoxF.s:4520   .debug_str:00000000000000e9 .LASF77
+     /tmp/ccjAYoxF.s:4624   .debug_str:0000000000000513 .LASF37
+     /tmp/ccjAYoxF.s:4588   .debug_str:00000000000003e3 .LASF38
+     /tmp/ccjAYoxF.s:4514   .debug_str:00000000000000b7 .LASF40
+     /tmp/ccjAYoxF.s:1501   .text.dma_interrupt_disable:0000000000000000 .LFB28
+     /tmp/ccjAYoxF.s:1549   .text.dma_interrupt_disable:000000000000002a .LFE28
+     /tmp/ccjAYoxF.s:4552   .debug_str:0000000000000255 .LASF39
+     /tmp/ccjAYoxF.s:1506   .text.dma_interrupt_disable:0000000000000000 .LBB130
+     /tmp/ccjAYoxF.s:4626   .debug_str:000000000000051e .LASF41
+     /tmp/ccjAYoxF.s:1449   .text.dma_interrupt_enable:0000000000000000 .LFB27
+     /tmp/ccjAYoxF.s:1494   .text.dma_interrupt_enable:0000000000000026 .LFE27
+     /tmp/ccjAYoxF.s:1454   .text.dma_interrupt_enable:0000000000000000 .LBB126
+     /tmp/ccjAYoxF.s:4586   .debug_str:00000000000003ca .LASF78
+     /tmp/ccjAYoxF.s:4620   .debug_str:0000000000000507 .LASF42
+     /tmp/ccjAYoxF.s:4530   .debug_str:000000000000013d .LASF46
+     /tmp/ccjAYoxF.s:1325   .text.dma_interrupt_flag_get:0000000000000000 .LFB25
+     /tmp/ccjAYoxF.s:1431   .text.dma_interrupt_flag_get:000000000000006e .LFE25
+     /tmp/ccjAYoxF.s:3829   .debug_loc:0000000000000000 .LLST16
+GAS LISTING /tmp/ccjAYoxF.s 			page 61
 
 
-     /tmp/ccGQvFzq.s:3865   .debug_loc:0000000000000053 .LLST17
-     /tmp/ccGQvFzq.s:4546   .debug_str:0000000000000217 .LASF43
-     /tmp/ccGQvFzq.s:3894   .debug_loc:0000000000000098 .LLST18
-     /tmp/ccGQvFzq.s:4644   .debug_str:000000000000057b .LASF44
-     /tmp/ccGQvFzq.s:3924   .debug_loc:00000000000000e5 .LLST19
-     /tmp/ccGQvFzq.s:4490   .debug_str:0000000000000000 .LASF45
-     /tmp/ccGQvFzq.s:1300   .text.dma_flag_clear:0000000000000000 .LFB24
-     /tmp/ccGQvFzq.s:1318   .text.dma_flag_clear:000000000000000e .LFE24
-     /tmp/ccGQvFzq.s:3954   .debug_loc:0000000000000132 .LLST14
-     /tmp/ccGQvFzq.s:3968   .debug_loc:0000000000000153 .LLST15
-     /tmp/ccGQvFzq.s:4528   .debug_str:0000000000000182 .LASF47
-     /tmp/ccGQvFzq.s:1271   .text.dma_flag_get:0000000000000000 .LFB23
-     /tmp/ccGQvFzq.s:1293   .text.dma_flag_get:0000000000000010 .LFE23
-     /tmp/ccGQvFzq.s:3982   .debug_loc:0000000000000174 .LLST11
-     /tmp/ccGQvFzq.s:3996   .debug_loc:0000000000000195 .LLST12
-     /tmp/ccGQvFzq.s:4542   .debug_str:0000000000000209 .LASF48
-     /tmp/ccGQvFzq.s:4010   .debug_loc:00000000000001b6 .LLST13
-     /tmp/ccGQvFzq.s:4616   .debug_str:00000000000004c9 .LASF49
-     /tmp/ccGQvFzq.s:1209   .text.dma_transfer_direction_config:0000000000000000 .LFB22
-     /tmp/ccGQvFzq.s:1264   .text.dma_transfer_direction_config:0000000000000030 .LFE22
-     /tmp/ccGQvFzq.s:1214   .text.dma_transfer_direction_config:0000000000000000 .LBB122
-     /tmp/ccGQvFzq.s:4594   .debug_str:000000000000040e .LASF50
-     /tmp/ccGQvFzq.s:1157   .text.dma_periph_increase_disable:0000000000000000 .LFB21
-     /tmp/ccGQvFzq.s:1202   .text.dma_periph_increase_disable:0000000000000028 .LFE21
-     /tmp/ccGQvFzq.s:1162   .text.dma_periph_increase_disable:0000000000000000 .LBB118
-     /tmp/ccGQvFzq.s:4526   .debug_str:0000000000000167 .LASF51
-     /tmp/ccGQvFzq.s:1105   .text.dma_periph_increase_enable:0000000000000000 .LFB20
-     /tmp/ccGQvFzq.s:1150   .text.dma_periph_increase_enable:0000000000000028 .LFE20
-     /tmp/ccGQvFzq.s:1110   .text.dma_periph_increase_enable:0000000000000000 .LBB114
-     /tmp/ccGQvFzq.s:4550   .debug_str:0000000000000233 .LASF52
-     /tmp/ccGQvFzq.s:1053   .text.dma_memory_increase_disable:0000000000000000 .LFB19
-     /tmp/ccGQvFzq.s:1098   .text.dma_memory_increase_disable:0000000000000028 .LFE19
-     /tmp/ccGQvFzq.s:1058   .text.dma_memory_increase_disable:0000000000000000 .LBB110
-     /tmp/ccGQvFzq.s:4506   .debug_str:00000000000000b7 .LASF53
-     /tmp/ccGQvFzq.s:1001   .text.dma_memory_increase_enable:0000000000000000 .LFB18
-     /tmp/ccGQvFzq.s:1046   .text.dma_memory_increase_enable:0000000000000028 .LFE18
-     /tmp/ccGQvFzq.s:1006   .text.dma_memory_increase_enable:0000000000000000 .LBB106
-     /tmp/ccGQvFzq.s:4570   .debug_str:00000000000002ca .LASF54
-     /tmp/ccGQvFzq.s:936    .text.dma_periph_width_config:0000000000000000 .LFB17
-     /tmp/ccGQvFzq.s:994    .text.dma_periph_width_config:000000000000002a .LFE17
-     /tmp/ccGQvFzq.s:4530   .debug_str:000000000000018f .LASF55
-     /tmp/ccGQvFzq.s:4069   .debug_loc:000000000000020b .LLST10
-     /tmp/ccGQvFzq.s:942    .text.dma_periph_width_config:0000000000000000 .LBB102
-     /tmp/ccGQvFzq.s:4510   .debug_str:00000000000000e3 .LASF56
-     /tmp/ccGQvFzq.s:869    .text.dma_memory_width_config:0000000000000000 .LFB16
-     /tmp/ccGQvFzq.s:929    .text.dma_memory_width_config:000000000000002e .LFE16
-     /tmp/ccGQvFzq.s:4534   .debug_str:00000000000001ad .LASF57
-     /tmp/ccGQvFzq.s:4076   .debug_loc:000000000000021e .LLST9
-     /tmp/ccGQvFzq.s:875    .text.dma_memory_width_config:0000000000000000 .LBB98
-     /tmp/ccGQvFzq.s:4520   .debug_str:000000000000012e .LASF58
-     /tmp/ccGQvFzq.s:802    .text.dma_priority_config:0000000000000000 .LFB15
-     /tmp/ccGQvFzq.s:862    .text.dma_priority_config:000000000000002c .LFE15
-     /tmp/ccGQvFzq.s:4083   .debug_loc:0000000000000231 .LLST8
-     /tmp/ccGQvFzq.s:808    .text.dma_priority_config:0000000000000000 .LBB94
-     /tmp/ccGQvFzq.s:4590   .debug_str:00000000000003e6 .LASF59
-     /tmp/ccGQvFzq.s:749    .text.dma_transfer_number_get:0000000000000000 .LFB14
-     /tmp/ccGQvFzq.s:795    .text.dma_transfer_number_get:0000000000000022 .LFE14
-GAS LISTING /tmp/ccGQvFzq.s 			page 62
+     /tmp/ccjAYoxF.s:3865   .debug_loc:0000000000000053 .LLST17
+     /tmp/ccjAYoxF.s:4546   .debug_str:000000000000021d .LASF43
+     /tmp/ccjAYoxF.s:3894   .debug_loc:0000000000000098 .LLST18
+     /tmp/ccjAYoxF.s:4644   .debug_str:0000000000000581 .LASF44
+     /tmp/ccjAYoxF.s:3924   .debug_loc:00000000000000e5 .LLST19
+     /tmp/ccjAYoxF.s:4490   .debug_str:0000000000000000 .LASF45
+     /tmp/ccjAYoxF.s:1300   .text.dma_flag_clear:0000000000000000 .LFB24
+     /tmp/ccjAYoxF.s:1318   .text.dma_flag_clear:000000000000000e .LFE24
+     /tmp/ccjAYoxF.s:3954   .debug_loc:0000000000000132 .LLST14
+     /tmp/ccjAYoxF.s:3968   .debug_loc:0000000000000153 .LLST15
+     /tmp/ccjAYoxF.s:4526   .debug_str:0000000000000129 .LASF47
+     /tmp/ccjAYoxF.s:1271   .text.dma_flag_get:0000000000000000 .LFB23
+     /tmp/ccjAYoxF.s:1293   .text.dma_flag_get:0000000000000010 .LFE23
+     /tmp/ccjAYoxF.s:3982   .debug_loc:0000000000000174 .LLST11
+     /tmp/ccjAYoxF.s:3996   .debug_loc:0000000000000195 .LLST12
+     /tmp/ccjAYoxF.s:4542   .debug_str:000000000000020f .LASF48
+     /tmp/ccjAYoxF.s:4010   .debug_loc:00000000000001b6 .LLST13
+     /tmp/ccjAYoxF.s:4616   .debug_str:00000000000004cf .LASF49
+     /tmp/ccjAYoxF.s:1209   .text.dma_transfer_direction_config:0000000000000000 .LFB22
+     /tmp/ccjAYoxF.s:1264   .text.dma_transfer_direction_config:0000000000000030 .LFE22
+     /tmp/ccjAYoxF.s:1214   .text.dma_transfer_direction_config:0000000000000000 .LBB122
+     /tmp/ccjAYoxF.s:4594   .debug_str:0000000000000414 .LASF50
+     /tmp/ccjAYoxF.s:1157   .text.dma_periph_increase_disable:0000000000000000 .LFB21
+     /tmp/ccjAYoxF.s:1202   .text.dma_periph_increase_disable:0000000000000028 .LFE21
+     /tmp/ccjAYoxF.s:1162   .text.dma_periph_increase_disable:0000000000000000 .LBB118
+     /tmp/ccjAYoxF.s:4524   .debug_str:000000000000010e .LASF51
+     /tmp/ccjAYoxF.s:1105   .text.dma_periph_increase_enable:0000000000000000 .LFB20
+     /tmp/ccjAYoxF.s:1150   .text.dma_periph_increase_enable:0000000000000028 .LFE20
+     /tmp/ccjAYoxF.s:1110   .text.dma_periph_increase_enable:0000000000000000 .LBB114
+     /tmp/ccjAYoxF.s:4550   .debug_str:0000000000000239 .LASF52
+     /tmp/ccjAYoxF.s:1053   .text.dma_memory_increase_disable:0000000000000000 .LFB19
+     /tmp/ccjAYoxF.s:1098   .text.dma_memory_increase_disable:0000000000000028 .LFE19
+     /tmp/ccjAYoxF.s:1058   .text.dma_memory_increase_disable:0000000000000000 .LBB110
+     /tmp/ccjAYoxF.s:4506   .debug_str:0000000000000076 .LASF53
+     /tmp/ccjAYoxF.s:1001   .text.dma_memory_increase_enable:0000000000000000 .LFB18
+     /tmp/ccjAYoxF.s:1046   .text.dma_memory_increase_enable:0000000000000028 .LFE18
+     /tmp/ccjAYoxF.s:1006   .text.dma_memory_increase_enable:0000000000000000 .LBB106
+     /tmp/ccjAYoxF.s:4570   .debug_str:00000000000002d0 .LASF54
+     /tmp/ccjAYoxF.s:936    .text.dma_periph_width_config:0000000000000000 .LFB17
+     /tmp/ccjAYoxF.s:994    .text.dma_periph_width_config:000000000000002a .LFE17
+     /tmp/ccjAYoxF.s:4528   .debug_str:0000000000000136 .LASF55
+     /tmp/ccjAYoxF.s:4069   .debug_loc:000000000000020b .LLST10
+     /tmp/ccjAYoxF.s:942    .text.dma_periph_width_config:0000000000000000 .LBB102
+     /tmp/ccjAYoxF.s:4492   .debug_str:000000000000000f .LASF56
+     /tmp/ccjAYoxF.s:869    .text.dma_memory_width_config:0000000000000000 .LFB16
+     /tmp/ccjAYoxF.s:929    .text.dma_memory_width_config:000000000000002e .LFE16
+     /tmp/ccjAYoxF.s:4532   .debug_str:0000000000000154 .LASF57
+     /tmp/ccjAYoxF.s:4076   .debug_loc:000000000000021e .LLST9
+     /tmp/ccjAYoxF.s:875    .text.dma_memory_width_config:0000000000000000 .LBB98
+     /tmp/ccjAYoxF.s:4518   .debug_str:00000000000000d5 .LASF58
+     /tmp/ccjAYoxF.s:802    .text.dma_priority_config:0000000000000000 .LFB15
+     /tmp/ccjAYoxF.s:862    .text.dma_priority_config:000000000000002c .LFE15
+     /tmp/ccjAYoxF.s:4083   .debug_loc:0000000000000231 .LLST8
+     /tmp/ccjAYoxF.s:808    .text.dma_priority_config:0000000000000000 .LBB94
+     /tmp/ccjAYoxF.s:4590   .debug_str:00000000000003ec .LASF59
+     /tmp/ccjAYoxF.s:749    .text.dma_transfer_number_get:0000000000000000 .LFB14
+     /tmp/ccjAYoxF.s:795    .text.dma_transfer_number_get:0000000000000022 .LFE14
+GAS LISTING /tmp/ccjAYoxF.s 			page 62
 
 
-     /tmp/ccGQvFzq.s:4090   .debug_loc:0000000000000244 .LLST6
-     /tmp/ccGQvFzq.s:754    .text.dma_transfer_number_get:0000000000000000 .LBB90
-     /tmp/ccGQvFzq.s:4108   .debug_loc:0000000000000270 .LLST7
-     /tmp/ccGQvFzq.s:4612   .debug_str:0000000000000499 .LASF60
-     /tmp/ccGQvFzq.s:692    .text.dma_transfer_number_config:0000000000000000 .LFB13
-     /tmp/ccGQvFzq.s:742    .text.dma_transfer_number_config:0000000000000026 .LFE13
-     /tmp/ccGQvFzq.s:4126   .debug_loc:000000000000029c .LLST5
-     /tmp/ccGQvFzq.s:697    .text.dma_transfer_number_config:0000000000000000 .LBB86
-     /tmp/ccGQvFzq.s:4618   .debug_str:00000000000004e7 .LASF61
-     /tmp/ccGQvFzq.s:642    .text.dma_memory_address_config:0000000000000000 .LFB12
-     /tmp/ccGQvFzq.s:685    .text.dma_memory_address_config:0000000000000022 .LFE12
-     /tmp/ccGQvFzq.s:4544   .debug_str:000000000000020f .LASF62
-     /tmp/ccGQvFzq.s:647    .text.dma_memory_address_config:0000000000000000 .LBB82
-     /tmp/ccGQvFzq.s:4568   .debug_str:00000000000002b0 .LASF63
-     /tmp/ccGQvFzq.s:592    .text.dma_periph_address_config:0000000000000000 .LFB11
-     /tmp/ccGQvFzq.s:635    .text.dma_periph_address_config:0000000000000022 .LFE11
-     /tmp/ccGQvFzq.s:597    .text.dma_periph_address_config:0000000000000000 .LBB78
-     /tmp/ccGQvFzq.s:4606   .debug_str:0000000000000473 .LASF64
-     /tmp/ccGQvFzq.s:540    .text.dma_channel_disable:0000000000000000 .LFB10
-     /tmp/ccGQvFzq.s:585    .text.dma_channel_disable:0000000000000026 .LFE10
-     /tmp/ccGQvFzq.s:545    .text.dma_channel_disable:0000000000000000 .LBB74
-     /tmp/ccGQvFzq.s:4628   .debug_str:000000000000052d .LASF65
-     /tmp/ccGQvFzq.s:488    .text.dma_channel_enable:0000000000000000 .LFB9
-     /tmp/ccGQvFzq.s:533    .text.dma_channel_enable:0000000000000028 .LFE9
-     /tmp/ccGQvFzq.s:493    .text.dma_channel_enable:0000000000000000 .LBB70
-     /tmp/ccGQvFzq.s:4646   .debug_str:000000000000058a .LASF66
-     /tmp/ccGQvFzq.s:434    .text.dma_memory_to_memory_disable:0000000000000000 .LFB8
-     /tmp/ccGQvFzq.s:481    .text.dma_memory_to_memory_disable:000000000000002a .LFE8
-     /tmp/ccGQvFzq.s:439    .text.dma_memory_to_memory_disable:0000000000000000 .LBB66
-     /tmp/ccGQvFzq.s:4582   .debug_str:0000000000000395 .LASF67
-     /tmp/ccGQvFzq.s:381    .text.dma_memory_to_memory_enable:0000000000000000 .LFB7
-     /tmp/ccGQvFzq.s:427    .text.dma_memory_to_memory_enable:0000000000000028 .LFE7
-     /tmp/ccGQvFzq.s:386    .text.dma_memory_to_memory_enable:0000000000000000 .LBB62
-     /tmp/ccGQvFzq.s:4496   .debug_str:0000000000000071 .LASF68
-     /tmp/ccGQvFzq.s:329    .text.dma_circulation_disable:0000000000000000 .LFB6
-     /tmp/ccGQvFzq.s:374    .text.dma_circulation_disable:0000000000000028 .LFE6
-     /tmp/ccGQvFzq.s:334    .text.dma_circulation_disable:0000000000000000 .LBB58
-     /tmp/ccGQvFzq.s:4598   .debug_str:000000000000043c .LASF69
-     /tmp/ccGQvFzq.s:277    .text.dma_circulation_enable:0000000000000000 .LFB5
-     /tmp/ccGQvFzq.s:322    .text.dma_circulation_enable:0000000000000028 .LFE5
-     /tmp/ccGQvFzq.s:282    .text.dma_circulation_enable:0000000000000000 .LBB54
-     /tmp/ccGQvFzq.s:4604   .debug_str:000000000000046a .LASF70
-     /tmp/ccGQvFzq.s:127    .text.dma_init:0000000000000000 .LFB4
-     /tmp/ccGQvFzq.s:270    .text.dma_init:0000000000000098 .LFE4
-     /tmp/ccGQvFzq.s:4144   .debug_loc:00000000000002c8 .LLST0
-     /tmp/ccGQvFzq.s:4162   .debug_loc:00000000000002f4 .LLST1
-     /tmp/ccGQvFzq.s:4608   .debug_str:0000000000000487 .LASF71
-     /tmp/ccGQvFzq.s:4180   .debug_loc:0000000000000320 .LLST2
-     /tmp/ccGQvFzq.s:133    .text.dma_init:0000000000000000 .LBB50
-     /tmp/ccGQvFzq.s:4201   .debug_loc:0000000000000356 .LLST3
-     /tmp/ccGQvFzq.s:4219   .debug_loc:0000000000000382 .LLST4
-     /tmp/ccGQvFzq.s:4614   .debug_str:00000000000004b4 .LASF72
-     /tmp/ccGQvFzq.s:88     .text.dma_struct_para_init:0000000000000000 .LFB3
-     /tmp/ccGQvFzq.s:120    .text.dma_struct_para_init:0000000000000022 .LFE3
-     /tmp/ccGQvFzq.s:4548   .debug_str:0000000000000228 .LASF79
-     /tmp/ccGQvFzq.s:14     .text.dma_deinit:0000000000000000 .LFB2
-     /tmp/ccGQvFzq.s:81     .text.dma_deinit:0000000000000044 .LFE2
-GAS LISTING /tmp/ccGQvFzq.s 			page 63
+     /tmp/ccjAYoxF.s:4090   .debug_loc:0000000000000244 .LLST6
+     /tmp/ccjAYoxF.s:754    .text.dma_transfer_number_get:0000000000000000 .LBB90
+     /tmp/ccjAYoxF.s:4108   .debug_loc:0000000000000270 .LLST7
+     /tmp/ccjAYoxF.s:4612   .debug_str:000000000000049f .LASF60
+     /tmp/ccjAYoxF.s:692    .text.dma_transfer_number_config:0000000000000000 .LFB13
+     /tmp/ccjAYoxF.s:742    .text.dma_transfer_number_config:0000000000000026 .LFE13
+     /tmp/ccjAYoxF.s:4126   .debug_loc:000000000000029c .LLST5
+     /tmp/ccjAYoxF.s:697    .text.dma_transfer_number_config:0000000000000000 .LBB86
+     /tmp/ccjAYoxF.s:4618   .debug_str:00000000000004ed .LASF61
+     /tmp/ccjAYoxF.s:642    .text.dma_memory_address_config:0000000000000000 .LFB12
+     /tmp/ccjAYoxF.s:685    .text.dma_memory_address_config:0000000000000022 .LFE12
+     /tmp/ccjAYoxF.s:4544   .debug_str:0000000000000215 .LASF62
+     /tmp/ccjAYoxF.s:647    .text.dma_memory_address_config:0000000000000000 .LBB82
+     /tmp/ccjAYoxF.s:4568   .debug_str:00000000000002b6 .LASF63
+     /tmp/ccjAYoxF.s:592    .text.dma_periph_address_config:0000000000000000 .LFB11
+     /tmp/ccjAYoxF.s:635    .text.dma_periph_address_config:0000000000000022 .LFE11
+     /tmp/ccjAYoxF.s:597    .text.dma_periph_address_config:0000000000000000 .LBB78
+     /tmp/ccjAYoxF.s:4606   .debug_str:0000000000000479 .LASF64
+     /tmp/ccjAYoxF.s:540    .text.dma_channel_disable:0000000000000000 .LFB10
+     /tmp/ccjAYoxF.s:585    .text.dma_channel_disable:0000000000000026 .LFE10
+     /tmp/ccjAYoxF.s:545    .text.dma_channel_disable:0000000000000000 .LBB74
+     /tmp/ccjAYoxF.s:4628   .debug_str:0000000000000533 .LASF65
+     /tmp/ccjAYoxF.s:488    .text.dma_channel_enable:0000000000000000 .LFB9
+     /tmp/ccjAYoxF.s:533    .text.dma_channel_enable:0000000000000028 .LFE9
+     /tmp/ccjAYoxF.s:493    .text.dma_channel_enable:0000000000000000 .LBB70
+     /tmp/ccjAYoxF.s:4646   .debug_str:0000000000000590 .LASF66
+     /tmp/ccjAYoxF.s:434    .text.dma_memory_to_memory_disable:0000000000000000 .LFB8
+     /tmp/ccjAYoxF.s:481    .text.dma_memory_to_memory_disable:000000000000002a .LFE8
+     /tmp/ccjAYoxF.s:439    .text.dma_memory_to_memory_disable:0000000000000000 .LBB66
+     /tmp/ccjAYoxF.s:4582   .debug_str:000000000000039b .LASF67
+     /tmp/ccjAYoxF.s:381    .text.dma_memory_to_memory_enable:0000000000000000 .LFB7
+     /tmp/ccjAYoxF.s:427    .text.dma_memory_to_memory_enable:0000000000000028 .LFE7
+     /tmp/ccjAYoxF.s:386    .text.dma_memory_to_memory_enable:0000000000000000 .LBB62
+     /tmp/ccjAYoxF.s:4496   .debug_str:0000000000000030 .LASF68
+     /tmp/ccjAYoxF.s:329    .text.dma_circulation_disable:0000000000000000 .LFB6
+     /tmp/ccjAYoxF.s:374    .text.dma_circulation_disable:0000000000000028 .LFE6
+     /tmp/ccjAYoxF.s:334    .text.dma_circulation_disable:0000000000000000 .LBB58
+     /tmp/ccjAYoxF.s:4598   .debug_str:0000000000000442 .LASF69
+     /tmp/ccjAYoxF.s:277    .text.dma_circulation_enable:0000000000000000 .LFB5
+     /tmp/ccjAYoxF.s:322    .text.dma_circulation_enable:0000000000000028 .LFE5
+     /tmp/ccjAYoxF.s:282    .text.dma_circulation_enable:0000000000000000 .LBB54
+     /tmp/ccjAYoxF.s:4604   .debug_str:0000000000000470 .LASF70
+     /tmp/ccjAYoxF.s:127    .text.dma_init:0000000000000000 .LFB4
+     /tmp/ccjAYoxF.s:270    .text.dma_init:0000000000000098 .LFE4
+     /tmp/ccjAYoxF.s:4144   .debug_loc:00000000000002c8 .LLST0
+     /tmp/ccjAYoxF.s:4162   .debug_loc:00000000000002f4 .LLST1
+     /tmp/ccjAYoxF.s:4608   .debug_str:000000000000048d .LASF71
+     /tmp/ccjAYoxF.s:4180   .debug_loc:0000000000000320 .LLST2
+     /tmp/ccjAYoxF.s:133    .text.dma_init:0000000000000000 .LBB50
+     /tmp/ccjAYoxF.s:4201   .debug_loc:0000000000000356 .LLST3
+     /tmp/ccjAYoxF.s:4219   .debug_loc:0000000000000382 .LLST4
+     /tmp/ccjAYoxF.s:4614   .debug_str:00000000000004ba .LASF72
+     /tmp/ccjAYoxF.s:88     .text.dma_struct_para_init:0000000000000000 .LFB3
+     /tmp/ccjAYoxF.s:120    .text.dma_struct_para_init:0000000000000022 .LFE3
+     /tmp/ccjAYoxF.s:4548   .debug_str:000000000000022e .LASF79
+     /tmp/ccjAYoxF.s:14     .text.dma_deinit:0000000000000000 .LFB2
+     /tmp/ccjAYoxF.s:81     .text.dma_deinit:0000000000000044 .LFE2
+GAS LISTING /tmp/ccjAYoxF.s 			page 63
 
 
-     /tmp/ccGQvFzq.s:20     .text.dma_deinit:0000000000000000 .LBB46
-     /tmp/ccGQvFzq.s:1328   .text.dma_interrupt_flag_get:0000000000000000 .LVL75
-     /tmp/ccGQvFzq.s:1354   .text.dma_interrupt_flag_get:0000000000000024 .LVL76
-     /tmp/ccGQvFzq.s:1377   .text.dma_interrupt_flag_get:0000000000000036 .LVL80
-     /tmp/ccGQvFzq.s:1389   .text.dma_interrupt_flag_get:0000000000000046 .LVL81
-     /tmp/ccGQvFzq.s:1404   .text.dma_interrupt_flag_get:0000000000000052 .LVL85
-     /tmp/ccGQvFzq.s:1416   .text.dma_interrupt_flag_get:0000000000000062 .LVL86
-     /tmp/ccGQvFzq.s:1365   .text.dma_interrupt_flag_get:000000000000002e .LVL78
-     /tmp/ccGQvFzq.s:1394   .text.dma_interrupt_flag_get:000000000000004c .LVL82
-     /tmp/ccGQvFzq.s:1401   .text.dma_interrupt_flag_get:0000000000000050 .LVL84
-     /tmp/ccGQvFzq.s:1427   .text.dma_interrupt_flag_get:000000000000006c .LVL88
-     /tmp/ccGQvFzq.s:1361   .text.dma_interrupt_flag_get:000000000000002c .LVL77
-     /tmp/ccGQvFzq.s:1373   .text.dma_interrupt_flag_get:0000000000000034 .LVL79
-     /tmp/ccGQvFzq.s:1397   .text.dma_interrupt_flag_get:000000000000004e .LVL83
-     /tmp/ccGQvFzq.s:1423   .text.dma_interrupt_flag_get:000000000000006a .LVL87
-     /tmp/ccGQvFzq.s:1303   .text.dma_flag_clear:0000000000000000 .LVL72
-     /tmp/ccGQvFzq.s:1309   .text.dma_flag_clear:0000000000000004 .LVL73
-     /tmp/ccGQvFzq.s:1311   .text.dma_flag_clear:0000000000000008 .LVL74
-     /tmp/ccGQvFzq.s:1274   .text.dma_flag_get:0000000000000000 .LVL67
-     /tmp/ccGQvFzq.s:1279   .text.dma_flag_get:0000000000000002 .LVL68
-     /tmp/ccGQvFzq.s:1283   .text.dma_flag_get:0000000000000004 .LVL69
-     /tmp/ccGQvFzq.s:1285   .text.dma_flag_get:0000000000000008 .LVL70
-     /tmp/ccGQvFzq.s:1288   .text.dma_flag_get:000000000000000a .LVL71
-     /tmp/ccGQvFzq.s:963    .text.dma_periph_width_config:0000000000000018 .LVL53
-     /tmp/ccGQvFzq.s:977    .text.dma_periph_width_config:0000000000000022 .LVL56
-     /tmp/ccGQvFzq.s:896    .text.dma_memory_width_config:0000000000000018 .LVL47
-     /tmp/ccGQvFzq.s:912    .text.dma_memory_width_config:0000000000000026 .LVL50
-     /tmp/ccGQvFzq.s:829    .text.dma_priority_config:0000000000000018 .LVL41
-     /tmp/ccGQvFzq.s:845    .text.dma_priority_config:0000000000000024 .LVL44
-     /tmp/ccGQvFzq.s:752    .text.dma_transfer_number_get:0000000000000000 .LVL35
-     /tmp/ccGQvFzq.s:775    .text.dma_transfer_number_get:0000000000000018 .LVL37
-     /tmp/ccGQvFzq.s:778    .text.dma_transfer_number_get:000000000000001a .LVL38
-     /tmp/ccGQvFzq.s:695    .text.dma_transfer_number_config:0000000000000000 .LVL31
-     /tmp/ccGQvFzq.s:716    .text.dma_transfer_number_config:0000000000000016 .LVL33
-     /tmp/ccGQvFzq.s:725    .text.dma_transfer_number_config:000000000000001e .LVL34
-     /tmp/ccGQvFzq.s:130    .text.dma_init:0000000000000000 .LVL3
-     /tmp/ccGQvFzq.s:161    .text.dma_init:000000000000001e .LVL5
-     /tmp/ccGQvFzq.s:253    .text.dma_init:0000000000000090 .LVL14
-     /tmp/ccGQvFzq.s:172    .text.dma_init:0000000000000028 .LVL6
-     /tmp/ccGQvFzq.s:176    .text.dma_init:000000000000002c .LVL7
-     /tmp/ccGQvFzq.s:192    .text.dma_init:0000000000000040 .LVL9
-     /tmp/ccGQvFzq.s:199    .text.dma_init:0000000000000046 .LVL10
-     /tmp/ccGQvFzq.s:206    .text.dma_init:0000000000000052 .LVL11
-     /tmp/ccGQvFzq.s:244    .text.dma_init:0000000000000086 .LVL12
-     /tmp/ccGQvFzq.s:251    .text.dma_init:000000000000008e .LVL13
-     /tmp/ccGQvFzq.s:138    .text.dma_init:0000000000000008 .LVL4
-     /tmp/ccGQvFzq.s:1559   .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/ccGQvFzq.s:32     .text.dma_deinit:000000000000000c .LBE46
-     /tmp/ccGQvFzq.s:66     .text.dma_deinit:000000000000003c .LBB49
-     /tmp/ccGQvFzq.s:74     .text.dma_deinit:0000000000000042 .LBE49
-     /tmp/ccGQvFzq.s:145    .text.dma_init:000000000000000c .LBE50
-     /tmp/ccGQvFzq.s:255    .text.dma_init:0000000000000090 .LBB53
-     /tmp/ccGQvFzq.s:263    .text.dma_init:0000000000000096 .LBE53
-     /tmp/ccGQvFzq.s:294    .text.dma_circulation_enable:000000000000000c .LBE54
-     /tmp/ccGQvFzq.s:307    .text.dma_circulation_enable:0000000000000020 .LBB57
-     /tmp/ccGQvFzq.s:315    .text.dma_circulation_enable:0000000000000026 .LBE57
-     /tmp/ccGQvFzq.s:346    .text.dma_circulation_disable:000000000000000c .LBE58
-GAS LISTING /tmp/ccGQvFzq.s 			page 64
+     /tmp/ccjAYoxF.s:20     .text.dma_deinit:0000000000000000 .LBB46
+     /tmp/ccjAYoxF.s:1328   .text.dma_interrupt_flag_get:0000000000000000 .LVL75
+     /tmp/ccjAYoxF.s:1354   .text.dma_interrupt_flag_get:0000000000000024 .LVL76
+     /tmp/ccjAYoxF.s:1377   .text.dma_interrupt_flag_get:0000000000000036 .LVL80
+     /tmp/ccjAYoxF.s:1389   .text.dma_interrupt_flag_get:0000000000000046 .LVL81
+     /tmp/ccjAYoxF.s:1404   .text.dma_interrupt_flag_get:0000000000000052 .LVL85
+     /tmp/ccjAYoxF.s:1416   .text.dma_interrupt_flag_get:0000000000000062 .LVL86
+     /tmp/ccjAYoxF.s:1365   .text.dma_interrupt_flag_get:000000000000002e .LVL78
+     /tmp/ccjAYoxF.s:1394   .text.dma_interrupt_flag_get:000000000000004c .LVL82
+     /tmp/ccjAYoxF.s:1401   .text.dma_interrupt_flag_get:0000000000000050 .LVL84
+     /tmp/ccjAYoxF.s:1427   .text.dma_interrupt_flag_get:000000000000006c .LVL88
+     /tmp/ccjAYoxF.s:1361   .text.dma_interrupt_flag_get:000000000000002c .LVL77
+     /tmp/ccjAYoxF.s:1373   .text.dma_interrupt_flag_get:0000000000000034 .LVL79
+     /tmp/ccjAYoxF.s:1397   .text.dma_interrupt_flag_get:000000000000004e .LVL83
+     /tmp/ccjAYoxF.s:1423   .text.dma_interrupt_flag_get:000000000000006a .LVL87
+     /tmp/ccjAYoxF.s:1303   .text.dma_flag_clear:0000000000000000 .LVL72
+     /tmp/ccjAYoxF.s:1309   .text.dma_flag_clear:0000000000000004 .LVL73
+     /tmp/ccjAYoxF.s:1311   .text.dma_flag_clear:0000000000000008 .LVL74
+     /tmp/ccjAYoxF.s:1274   .text.dma_flag_get:0000000000000000 .LVL67
+     /tmp/ccjAYoxF.s:1279   .text.dma_flag_get:0000000000000002 .LVL68
+     /tmp/ccjAYoxF.s:1283   .text.dma_flag_get:0000000000000004 .LVL69
+     /tmp/ccjAYoxF.s:1285   .text.dma_flag_get:0000000000000008 .LVL70
+     /tmp/ccjAYoxF.s:1288   .text.dma_flag_get:000000000000000a .LVL71
+     /tmp/ccjAYoxF.s:963    .text.dma_periph_width_config:0000000000000018 .LVL53
+     /tmp/ccjAYoxF.s:977    .text.dma_periph_width_config:0000000000000022 .LVL56
+     /tmp/ccjAYoxF.s:896    .text.dma_memory_width_config:0000000000000018 .LVL47
+     /tmp/ccjAYoxF.s:912    .text.dma_memory_width_config:0000000000000026 .LVL50
+     /tmp/ccjAYoxF.s:829    .text.dma_priority_config:0000000000000018 .LVL41
+     /tmp/ccjAYoxF.s:845    .text.dma_priority_config:0000000000000024 .LVL44
+     /tmp/ccjAYoxF.s:752    .text.dma_transfer_number_get:0000000000000000 .LVL35
+     /tmp/ccjAYoxF.s:775    .text.dma_transfer_number_get:0000000000000018 .LVL37
+     /tmp/ccjAYoxF.s:778    .text.dma_transfer_number_get:000000000000001a .LVL38
+     /tmp/ccjAYoxF.s:695    .text.dma_transfer_number_config:0000000000000000 .LVL31
+     /tmp/ccjAYoxF.s:716    .text.dma_transfer_number_config:0000000000000016 .LVL33
+     /tmp/ccjAYoxF.s:725    .text.dma_transfer_number_config:000000000000001e .LVL34
+     /tmp/ccjAYoxF.s:130    .text.dma_init:0000000000000000 .LVL3
+     /tmp/ccjAYoxF.s:161    .text.dma_init:000000000000001e .LVL5
+     /tmp/ccjAYoxF.s:253    .text.dma_init:0000000000000090 .LVL14
+     /tmp/ccjAYoxF.s:172    .text.dma_init:0000000000000028 .LVL6
+     /tmp/ccjAYoxF.s:176    .text.dma_init:000000000000002c .LVL7
+     /tmp/ccjAYoxF.s:192    .text.dma_init:0000000000000040 .LVL9
+     /tmp/ccjAYoxF.s:199    .text.dma_init:0000000000000046 .LVL10
+     /tmp/ccjAYoxF.s:206    .text.dma_init:0000000000000052 .LVL11
+     /tmp/ccjAYoxF.s:244    .text.dma_init:0000000000000086 .LVL12
+     /tmp/ccjAYoxF.s:251    .text.dma_init:000000000000008e .LVL13
+     /tmp/ccjAYoxF.s:138    .text.dma_init:0000000000000008 .LVL4
+     /tmp/ccjAYoxF.s:1559   .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccjAYoxF.s:32     .text.dma_deinit:000000000000000c .LBE46
+     /tmp/ccjAYoxF.s:66     .text.dma_deinit:000000000000003c .LBB49
+     /tmp/ccjAYoxF.s:74     .text.dma_deinit:0000000000000042 .LBE49
+     /tmp/ccjAYoxF.s:145    .text.dma_init:000000000000000c .LBE50
+     /tmp/ccjAYoxF.s:255    .text.dma_init:0000000000000090 .LBB53
+     /tmp/ccjAYoxF.s:263    .text.dma_init:0000000000000096 .LBE53
+     /tmp/ccjAYoxF.s:294    .text.dma_circulation_enable:000000000000000c .LBE54
+     /tmp/ccjAYoxF.s:307    .text.dma_circulation_enable:0000000000000020 .LBB57
+     /tmp/ccjAYoxF.s:315    .text.dma_circulation_enable:0000000000000026 .LBE57
+     /tmp/ccjAYoxF.s:346    .text.dma_circulation_disable:000000000000000c .LBE58
+GAS LISTING /tmp/ccjAYoxF.s 			page 64
 
 
-     /tmp/ccGQvFzq.s:359    .text.dma_circulation_disable:0000000000000020 .LBB61
-     /tmp/ccGQvFzq.s:367    .text.dma_circulation_disable:0000000000000026 .LBE61
-     /tmp/ccGQvFzq.s:398    .text.dma_memory_to_memory_enable:000000000000000c .LBE62
-     /tmp/ccGQvFzq.s:412    .text.dma_memory_to_memory_enable:0000000000000020 .LBB65
-     /tmp/ccGQvFzq.s:420    .text.dma_memory_to_memory_enable:0000000000000026 .LBE65
-     /tmp/ccGQvFzq.s:451    .text.dma_memory_to_memory_disable:000000000000000c .LBE66
-     /tmp/ccGQvFzq.s:466    .text.dma_memory_to_memory_disable:0000000000000022 .LBB69
-     /tmp/ccGQvFzq.s:474    .text.dma_memory_to_memory_disable:0000000000000028 .LBE69
-     /tmp/ccGQvFzq.s:505    .text.dma_channel_enable:000000000000000c .LBE70
-     /tmp/ccGQvFzq.s:518    .text.dma_channel_enable:0000000000000020 .LBB73
-     /tmp/ccGQvFzq.s:526    .text.dma_channel_enable:0000000000000026 .LBE73
-     /tmp/ccGQvFzq.s:557    .text.dma_channel_disable:000000000000000c .LBE74
-     /tmp/ccGQvFzq.s:570    .text.dma_channel_disable:000000000000001e .LBB77
-     /tmp/ccGQvFzq.s:578    .text.dma_channel_disable:0000000000000024 .LBE77
-     /tmp/ccGQvFzq.s:609    .text.dma_periph_address_config:000000000000000c .LBE78
-     /tmp/ccGQvFzq.s:620    .text.dma_periph_address_config:000000000000001a .LBB81
-     /tmp/ccGQvFzq.s:628    .text.dma_periph_address_config:0000000000000020 .LBE81
-     /tmp/ccGQvFzq.s:659    .text.dma_memory_address_config:000000000000000c .LBE82
-     /tmp/ccGQvFzq.s:670    .text.dma_memory_address_config:000000000000001a .LBB85
-     /tmp/ccGQvFzq.s:678    .text.dma_memory_address_config:0000000000000020 .LBE85
-     /tmp/ccGQvFzq.s:709    .text.dma_transfer_number_config:000000000000000c .LBE86
-     /tmp/ccGQvFzq.s:727    .text.dma_transfer_number_config:000000000000001e .LBB89
-     /tmp/ccGQvFzq.s:735    .text.dma_transfer_number_config:0000000000000024 .LBE89
-     /tmp/ccGQvFzq.s:766    .text.dma_transfer_number_get:000000000000000c .LBE90
-     /tmp/ccGQvFzq.s:780    .text.dma_transfer_number_get:000000000000001a .LBB93
-     /tmp/ccGQvFzq.s:788    .text.dma_transfer_number_get:0000000000000020 .LBE93
-     /tmp/ccGQvFzq.s:820    .text.dma_priority_config:000000000000000c .LBE94
-     /tmp/ccGQvFzq.s:847    .text.dma_priority_config:0000000000000024 .LBB97
-     /tmp/ccGQvFzq.s:855    .text.dma_priority_config:000000000000002a .LBE97
-     /tmp/ccGQvFzq.s:887    .text.dma_memory_width_config:000000000000000c .LBE98
-     /tmp/ccGQvFzq.s:914    .text.dma_memory_width_config:0000000000000026 .LBB101
-     /tmp/ccGQvFzq.s:922    .text.dma_memory_width_config:000000000000002c .LBE101
-     /tmp/ccGQvFzq.s:954    .text.dma_periph_width_config:000000000000000c .LBE102
-     /tmp/ccGQvFzq.s:979    .text.dma_periph_width_config:0000000000000022 .LBB105
-     /tmp/ccGQvFzq.s:987    .text.dma_periph_width_config:0000000000000028 .LBE105
-     /tmp/ccGQvFzq.s:1018   .text.dma_memory_increase_enable:000000000000000c .LBE106
-     /tmp/ccGQvFzq.s:1031   .text.dma_memory_increase_enable:0000000000000020 .LBB109
-     /tmp/ccGQvFzq.s:1039   .text.dma_memory_increase_enable:0000000000000026 .LBE109
-     /tmp/ccGQvFzq.s:1070   .text.dma_memory_increase_disable:000000000000000c .LBE110
-     /tmp/ccGQvFzq.s:1083   .text.dma_memory_increase_disable:0000000000000020 .LBB113
-     /tmp/ccGQvFzq.s:1091   .text.dma_memory_increase_disable:0000000000000026 .LBE113
-     /tmp/ccGQvFzq.s:1122   .text.dma_periph_increase_enable:000000000000000c .LBE114
-     /tmp/ccGQvFzq.s:1135   .text.dma_periph_increase_enable:0000000000000020 .LBB117
-     /tmp/ccGQvFzq.s:1143   .text.dma_periph_increase_enable:0000000000000026 .LBE117
-     /tmp/ccGQvFzq.s:1174   .text.dma_periph_increase_disable:000000000000000c .LBE118
-     /tmp/ccGQvFzq.s:1187   .text.dma_periph_increase_disable:0000000000000020 .LBB121
-     /tmp/ccGQvFzq.s:1195   .text.dma_periph_increase_disable:0000000000000026 .LBE121
-     /tmp/ccGQvFzq.s:1226   .text.dma_transfer_direction_config:000000000000000c .LBE122
-     /tmp/ccGQvFzq.s:1249   .text.dma_transfer_direction_config:0000000000000028 .LBB125
-     /tmp/ccGQvFzq.s:1257   .text.dma_transfer_direction_config:000000000000002e .LBE125
-     /tmp/ccGQvFzq.s:1466   .text.dma_interrupt_enable:000000000000000c .LBE126
-     /tmp/ccGQvFzq.s:1479   .text.dma_interrupt_enable:000000000000001e .LBB129
-     /tmp/ccGQvFzq.s:1487   .text.dma_interrupt_enable:0000000000000024 .LBE129
-     /tmp/ccGQvFzq.s:1518   .text.dma_interrupt_disable:000000000000000c .LBE130
-     /tmp/ccGQvFzq.s:1534   .text.dma_interrupt_disable:0000000000000022 .LBB133
-     /tmp/ccGQvFzq.s:1542   .text.dma_interrupt_disable:0000000000000028 .LBE133
+     /tmp/ccjAYoxF.s:359    .text.dma_circulation_disable:0000000000000020 .LBB61
+     /tmp/ccjAYoxF.s:367    .text.dma_circulation_disable:0000000000000026 .LBE61
+     /tmp/ccjAYoxF.s:398    .text.dma_memory_to_memory_enable:000000000000000c .LBE62
+     /tmp/ccjAYoxF.s:412    .text.dma_memory_to_memory_enable:0000000000000020 .LBB65
+     /tmp/ccjAYoxF.s:420    .text.dma_memory_to_memory_enable:0000000000000026 .LBE65
+     /tmp/ccjAYoxF.s:451    .text.dma_memory_to_memory_disable:000000000000000c .LBE66
+     /tmp/ccjAYoxF.s:466    .text.dma_memory_to_memory_disable:0000000000000022 .LBB69
+     /tmp/ccjAYoxF.s:474    .text.dma_memory_to_memory_disable:0000000000000028 .LBE69
+     /tmp/ccjAYoxF.s:505    .text.dma_channel_enable:000000000000000c .LBE70
+     /tmp/ccjAYoxF.s:518    .text.dma_channel_enable:0000000000000020 .LBB73
+     /tmp/ccjAYoxF.s:526    .text.dma_channel_enable:0000000000000026 .LBE73
+     /tmp/ccjAYoxF.s:557    .text.dma_channel_disable:000000000000000c .LBE74
+     /tmp/ccjAYoxF.s:570    .text.dma_channel_disable:000000000000001e .LBB77
+     /tmp/ccjAYoxF.s:578    .text.dma_channel_disable:0000000000000024 .LBE77
+     /tmp/ccjAYoxF.s:609    .text.dma_periph_address_config:000000000000000c .LBE78
+     /tmp/ccjAYoxF.s:620    .text.dma_periph_address_config:000000000000001a .LBB81
+     /tmp/ccjAYoxF.s:628    .text.dma_periph_address_config:0000000000000020 .LBE81
+     /tmp/ccjAYoxF.s:659    .text.dma_memory_address_config:000000000000000c .LBE82
+     /tmp/ccjAYoxF.s:670    .text.dma_memory_address_config:000000000000001a .LBB85
+     /tmp/ccjAYoxF.s:678    .text.dma_memory_address_config:0000000000000020 .LBE85
+     /tmp/ccjAYoxF.s:709    .text.dma_transfer_number_config:000000000000000c .LBE86
+     /tmp/ccjAYoxF.s:727    .text.dma_transfer_number_config:000000000000001e .LBB89
+     /tmp/ccjAYoxF.s:735    .text.dma_transfer_number_config:0000000000000024 .LBE89
+     /tmp/ccjAYoxF.s:766    .text.dma_transfer_number_get:000000000000000c .LBE90
+     /tmp/ccjAYoxF.s:780    .text.dma_transfer_number_get:000000000000001a .LBB93
+     /tmp/ccjAYoxF.s:788    .text.dma_transfer_number_get:0000000000000020 .LBE93
+     /tmp/ccjAYoxF.s:820    .text.dma_priority_config:000000000000000c .LBE94
+     /tmp/ccjAYoxF.s:847    .text.dma_priority_config:0000000000000024 .LBB97
+     /tmp/ccjAYoxF.s:855    .text.dma_priority_config:000000000000002a .LBE97
+     /tmp/ccjAYoxF.s:887    .text.dma_memory_width_config:000000000000000c .LBE98
+     /tmp/ccjAYoxF.s:914    .text.dma_memory_width_config:0000000000000026 .LBB101
+     /tmp/ccjAYoxF.s:922    .text.dma_memory_width_config:000000000000002c .LBE101
+     /tmp/ccjAYoxF.s:954    .text.dma_periph_width_config:000000000000000c .LBE102
+     /tmp/ccjAYoxF.s:979    .text.dma_periph_width_config:0000000000000022 .LBB105
+     /tmp/ccjAYoxF.s:987    .text.dma_periph_width_config:0000000000000028 .LBE105
+     /tmp/ccjAYoxF.s:1018   .text.dma_memory_increase_enable:000000000000000c .LBE106
+     /tmp/ccjAYoxF.s:1031   .text.dma_memory_increase_enable:0000000000000020 .LBB109
+     /tmp/ccjAYoxF.s:1039   .text.dma_memory_increase_enable:0000000000000026 .LBE109
+     /tmp/ccjAYoxF.s:1070   .text.dma_memory_increase_disable:000000000000000c .LBE110
+     /tmp/ccjAYoxF.s:1083   .text.dma_memory_increase_disable:0000000000000020 .LBB113
+     /tmp/ccjAYoxF.s:1091   .text.dma_memory_increase_disable:0000000000000026 .LBE113
+     /tmp/ccjAYoxF.s:1122   .text.dma_periph_increase_enable:000000000000000c .LBE114
+     /tmp/ccjAYoxF.s:1135   .text.dma_periph_increase_enable:0000000000000020 .LBB117
+     /tmp/ccjAYoxF.s:1143   .text.dma_periph_increase_enable:0000000000000026 .LBE117
+     /tmp/ccjAYoxF.s:1174   .text.dma_periph_increase_disable:000000000000000c .LBE118
+     /tmp/ccjAYoxF.s:1187   .text.dma_periph_increase_disable:0000000000000020 .LBB121
+     /tmp/ccjAYoxF.s:1195   .text.dma_periph_increase_disable:0000000000000026 .LBE121
+     /tmp/ccjAYoxF.s:1226   .text.dma_transfer_direction_config:000000000000000c .LBE122
+     /tmp/ccjAYoxF.s:1249   .text.dma_transfer_direction_config:0000000000000028 .LBB125
+     /tmp/ccjAYoxF.s:1257   .text.dma_transfer_direction_config:000000000000002e .LBE125
+     /tmp/ccjAYoxF.s:1466   .text.dma_interrupt_enable:000000000000000c .LBE126
+     /tmp/ccjAYoxF.s:1479   .text.dma_interrupt_enable:000000000000001e .LBB129
+     /tmp/ccjAYoxF.s:1487   .text.dma_interrupt_enable:0000000000000024 .LBE129
+     /tmp/ccjAYoxF.s:1518   .text.dma_interrupt_disable:000000000000000c .LBE130
+     /tmp/ccjAYoxF.s:1534   .text.dma_interrupt_disable:0000000000000022 .LBB133
+     /tmp/ccjAYoxF.s:1542   .text.dma_interrupt_disable:0000000000000028 .LBE133
 
-GAS LISTING /tmp/ccGQvFzq.s 			page 65
+GAS LISTING /tmp/ccjAYoxF.s 			page 65
 
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cc7FuzDx.s 			page 1
+GAS LISTING /tmp/ccldrNAj.s 			page 1
 
 
    1              		.file	"gd32vf103_dbg.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cc7FuzDx.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \param[out] none
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \retval     DBG_ID code
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** */
-GAS LISTING /tmp/cc7FuzDx.s 			page 2
+GAS LISTING /tmp/ccldrNAj.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** uint32_t dbg_id_get(void)
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cc7FuzDx.s 			page 1
   64:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** /*!
   65:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \brief      disable low power behavior when the mcu is in debug mode
   66:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \param[in]  dbg_low_power:
-GAS LISTING /tmp/cc7FuzDx.s 			page 3
+GAS LISTING /tmp/ccldrNAj.s 			page 3
 
 
   67:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****                 one or more parameters can be selected which are shown as below:
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cc7FuzDx.s 			page 1
   83              		.loc 1 93 13 is_stmt 0
   84 0000 372704E0 		li	a4,-536600576
   85 0004 5C43     		lw	a5,4(a4)
-GAS LISTING /tmp/cc7FuzDx.s 			page 4
+GAS LISTING /tmp/ccldrNAj.s 			page 4
 
 
   86 0006 5D8D     		or	a0,a5,a0
@@ -231,130 +231,130 @@ GAS LISTING /tmp/cc7FuzDx.s 			page 1
  117              	.LFE6:
  119              		.text
  120              	.Letext0:
- 121              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 122              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 121              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 122              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  123              		.file 4 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_dbg.h"
  124              		.file 5 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/cc7FuzDx.s 			page 5
+GAS LISTING /tmp/ccldrNAj.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_dbg.c
-     /tmp/cc7FuzDx.s:13     .text.dbg_id_get:0000000000000000 dbg_id_get
-     /tmp/cc7FuzDx.s:17     .text.dbg_id_get:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:18     .text.dbg_id_get:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:19     .text.dbg_id_get:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:20     .text.dbg_id_get:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:23     .text.dbg_id_get:0000000000000006 .L0 
-     /tmp/cc7FuzDx.s:24     .text.dbg_id_get:0000000000000008 .L0 
-     /tmp/cc7FuzDx.s:31     .text.dbg_low_power_enable:0000000000000000 dbg_low_power_enable
-     /tmp/cc7FuzDx.s:34     .text.dbg_low_power_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:36     .text.dbg_low_power_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:37     .text.dbg_low_power_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:38     .text.dbg_low_power_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:44     .text.dbg_low_power_enable:000000000000000a .L0 
-     /tmp/cc7FuzDx.s:45     .text.dbg_low_power_enable:000000000000000c .L0 
-     /tmp/cc7FuzDx.s:52     .text.dbg_low_power_disable:0000000000000000 dbg_low_power_disable
-     /tmp/cc7FuzDx.s:55     .text.dbg_low_power_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:57     .text.dbg_low_power_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:58     .text.dbg_low_power_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:59     .text.dbg_low_power_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:62     .text.dbg_low_power_disable:0000000000000006 .L0 
-     /tmp/cc7FuzDx.s:65     .text.dbg_low_power_disable:000000000000000a .L0 
-     /tmp/cc7FuzDx.s:69     .text.dbg_low_power_disable:000000000000000e .L0 
-     /tmp/cc7FuzDx.s:70     .text.dbg_low_power_disable:0000000000000010 .L0 
-     /tmp/cc7FuzDx.s:77     .text.dbg_periph_enable:0000000000000000 dbg_periph_enable
-     /tmp/cc7FuzDx.s:80     .text.dbg_periph_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:82     .text.dbg_periph_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:83     .text.dbg_periph_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:84     .text.dbg_periph_enable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:90     .text.dbg_periph_enable:000000000000000a .L0 
-     /tmp/cc7FuzDx.s:91     .text.dbg_periph_enable:000000000000000c .L0 
-     /tmp/cc7FuzDx.s:98     .text.dbg_periph_disable:0000000000000000 dbg_periph_disable
-     /tmp/cc7FuzDx.s:101    .text.dbg_periph_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:103    .text.dbg_periph_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:104    .text.dbg_periph_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:105    .text.dbg_periph_disable:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:108    .text.dbg_periph_disable:0000000000000006 .L0 
-     /tmp/cc7FuzDx.s:111    .text.dbg_periph_disable:000000000000000a .L0 
-     /tmp/cc7FuzDx.s:115    .text.dbg_periph_disable:000000000000000e .L0 
-     /tmp/cc7FuzDx.s:116    .text.dbg_periph_disable:0000000000000010 .L0 
-     /tmp/cc7FuzDx.s:27     .text.dbg_id_get:0000000000000008 .L0 
-     /tmp/cc7FuzDx.s:48     .text.dbg_low_power_enable:000000000000000c .L0 
-     /tmp/cc7FuzDx.s:73     .text.dbg_low_power_disable:0000000000000010 .L0 
-     /tmp/cc7FuzDx.s:94     .text.dbg_periph_enable:000000000000000c .L0 
-     /tmp/cc7FuzDx.s:119    .text.dbg_periph_disable:0000000000000010 .L0 
+     /tmp/ccldrNAj.s:13     .text.dbg_id_get:0000000000000000 dbg_id_get
+     /tmp/ccldrNAj.s:17     .text.dbg_id_get:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:18     .text.dbg_id_get:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:19     .text.dbg_id_get:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:20     .text.dbg_id_get:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:23     .text.dbg_id_get:0000000000000006 .L0 
+     /tmp/ccldrNAj.s:24     .text.dbg_id_get:0000000000000008 .L0 
+     /tmp/ccldrNAj.s:31     .text.dbg_low_power_enable:0000000000000000 dbg_low_power_enable
+     /tmp/ccldrNAj.s:34     .text.dbg_low_power_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:36     .text.dbg_low_power_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:37     .text.dbg_low_power_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:38     .text.dbg_low_power_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:44     .text.dbg_low_power_enable:000000000000000a .L0 
+     /tmp/ccldrNAj.s:45     .text.dbg_low_power_enable:000000000000000c .L0 
+     /tmp/ccldrNAj.s:52     .text.dbg_low_power_disable:0000000000000000 dbg_low_power_disable
+     /tmp/ccldrNAj.s:55     .text.dbg_low_power_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:57     .text.dbg_low_power_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:58     .text.dbg_low_power_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:59     .text.dbg_low_power_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:62     .text.dbg_low_power_disable:0000000000000006 .L0 
+     /tmp/ccldrNAj.s:65     .text.dbg_low_power_disable:000000000000000a .L0 
+     /tmp/ccldrNAj.s:69     .text.dbg_low_power_disable:000000000000000e .L0 
+     /tmp/ccldrNAj.s:70     .text.dbg_low_power_disable:0000000000000010 .L0 
+     /tmp/ccldrNAj.s:77     .text.dbg_periph_enable:0000000000000000 dbg_periph_enable
+     /tmp/ccldrNAj.s:80     .text.dbg_periph_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:82     .text.dbg_periph_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:83     .text.dbg_periph_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:84     .text.dbg_periph_enable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:90     .text.dbg_periph_enable:000000000000000a .L0 
+     /tmp/ccldrNAj.s:91     .text.dbg_periph_enable:000000000000000c .L0 
+     /tmp/ccldrNAj.s:98     .text.dbg_periph_disable:0000000000000000 dbg_periph_disable
+     /tmp/ccldrNAj.s:101    .text.dbg_periph_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:103    .text.dbg_periph_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:104    .text.dbg_periph_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:105    .text.dbg_periph_disable:0000000000000000 .L0 
+     /tmp/ccldrNAj.s:108    .text.dbg_periph_disable:0000000000000006 .L0 
+     /tmp/ccldrNAj.s:111    .text.dbg_periph_disable:000000000000000a .L0 
+     /tmp/ccldrNAj.s:115    .text.dbg_periph_disable:000000000000000e .L0 
+     /tmp/ccldrNAj.s:116    .text.dbg_periph_disable:0000000000000010 .L0 
+     /tmp/ccldrNAj.s:27     .text.dbg_id_get:0000000000000008 .L0 
+     /tmp/ccldrNAj.s:48     .text.dbg_low_power_enable:000000000000000c .L0 
+     /tmp/ccldrNAj.s:73     .text.dbg_low_power_disable:0000000000000010 .L0 
+     /tmp/ccldrNAj.s:94     .text.dbg_periph_enable:000000000000000c .L0 
+     /tmp/ccldrNAj.s:119    .text.dbg_periph_disable:0000000000000010 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/cc7FuzDx.s:362    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/cc7FuzDx.s:660    .debug_str:000000000000000b .LASF32
-     /tmp/cc7FuzDx.s:672    .debug_str:00000000000000c6 .LASF33
-     /tmp/cc7FuzDx.s:708    .debug_str:000000000000021e .LASF34
-     /tmp/cc7FuzDx.s:642    .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/cc7FuzDx.s:656    .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/cc7FuzDx.s:700    .debug_str:00000000000001dc .LASF0
-     /tmp/cc7FuzDx.s:724    .debug_str:00000000000002d7 .LASF1
-     /tmp/cc7FuzDx.s:682    .debug_str:000000000000014d .LASF2
-     /tmp/cc7FuzDx.s:716    .debug_str:00000000000002a5 .LASF3
-GAS LISTING /tmp/cc7FuzDx.s 			page 6
+     /tmp/ccldrNAj.s:362    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccldrNAj.s:660    .debug_str:000000000000000b .LASF32
+     /tmp/ccldrNAj.s:672    .debug_str:00000000000000c6 .LASF33
+     /tmp/ccldrNAj.s:702    .debug_str:00000000000001e9 .LASF34
+     /tmp/ccldrNAj.s:642    .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccldrNAj.s:656    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccldrNAj.s:700    .debug_str:00000000000001dc .LASF0
+     /tmp/ccldrNAj.s:724    .debug_str:00000000000002dd .LASF1
+     /tmp/ccldrNAj.s:682    .debug_str:000000000000014d .LASF2
+     /tmp/ccldrNAj.s:716    .debug_str:00000000000002ab .LASF3
+GAS LISTING /tmp/ccldrNAj.s 			page 6
 
 
-     /tmp/cc7FuzDx.s:688    .debug_str:000000000000017b .LASF4
-     /tmp/cc7FuzDx.s:668    .debug_str:00000000000000ae .LASF5
-     /tmp/cc7FuzDx.s:694    .debug_str:00000000000001ae .LASF9
-     /tmp/cc7FuzDx.s:686    .debug_str:0000000000000169 .LASF6
-     /tmp/cc7FuzDx.s:712    .debug_str:0000000000000287 .LASF7
-     /tmp/cc7FuzDx.s:704    .debug_str:00000000000001f7 .LASF8
-     /tmp/cc7FuzDx.s:718    .debug_str:00000000000002af .LASF10
-     /tmp/cc7FuzDx.s:714    .debug_str:0000000000000295 .LASF35
-     /tmp/cc7FuzDx.s:722    .debug_str:00000000000002cb .LASF11
-     /tmp/cc7FuzDx.s:680    .debug_str:000000000000013e .LASF12
-     /tmp/cc7FuzDx.s:670    .debug_str:00000000000000b7 .LASF13
-     /tmp/cc7FuzDx.s:726    .debug_str:00000000000002e3 .LASF14
-     /tmp/cc7FuzDx.s:692    .debug_str:000000000000019e .LASF15
-     /tmp/cc7FuzDx.s:710    .debug_str:0000000000000277 .LASF16
-     /tmp/cc7FuzDx.s:662    .debug_str:0000000000000085 .LASF17
-     /tmp/cc7FuzDx.s:666    .debug_str:00000000000000a0 .LASF18
-     /tmp/cc7FuzDx.s:674    .debug_str:000000000000010a .LASF19
-     /tmp/cc7FuzDx.s:702    .debug_str:00000000000001e9 .LASF20
-     /tmp/cc7FuzDx.s:690    .debug_str:000000000000018e .LASF21
-     /tmp/cc7FuzDx.s:706    .debug_str:000000000000020e .LASF22
-     /tmp/cc7FuzDx.s:728    .debug_str:00000000000002f3 .LASF23
-     /tmp/cc7FuzDx.s:684    .debug_str:000000000000015b .LASF24
-     /tmp/cc7FuzDx.s:676    .debug_str:0000000000000118 .LASF25
-     /tmp/cc7FuzDx.s:720    .debug_str:00000000000002b8 .LASF26
-     /tmp/cc7FuzDx.s:99     .text.dbg_periph_disable:0000000000000000 .LFB6
-     /tmp/cc7FuzDx.s:117    .text.dbg_periph_disable:0000000000000010 .LFE6
-     /tmp/cc7FuzDx.s:658    .debug_str:0000000000000000 .LASF28
-     /tmp/cc7FuzDx.s:551    .debug_loc:0000000000000000 .LLST3
-     /tmp/cc7FuzDx.s:730    .debug_str:0000000000000303 .LASF27
-     /tmp/cc7FuzDx.s:78     .text.dbg_periph_enable:0000000000000000 .LFB5
-     /tmp/cc7FuzDx.s:92     .text.dbg_periph_enable:000000000000000c .LFE5
-     /tmp/cc7FuzDx.s:572    .debug_loc:000000000000002f .LLST2
-     /tmp/cc7FuzDx.s:678    .debug_str:0000000000000128 .LASF29
-     /tmp/cc7FuzDx.s:53     .text.dbg_low_power_disable:0000000000000000 .LFB4
-     /tmp/cc7FuzDx.s:71     .text.dbg_low_power_disable:0000000000000010 .LFE4
-     /tmp/cc7FuzDx.s:698    .debug_str:00000000000001ce .LASF30
-     /tmp/cc7FuzDx.s:586    .debug_loc:0000000000000050 .LLST1
-     /tmp/cc7FuzDx.s:696    .debug_str:00000000000001b9 .LASF31
-     /tmp/cc7FuzDx.s:32     .text.dbg_low_power_enable:0000000000000000 .LFB3
-     /tmp/cc7FuzDx.s:46     .text.dbg_low_power_enable:000000000000000c .LFE3
-     /tmp/cc7FuzDx.s:607    .debug_loc:000000000000007f .LLST0
-     /tmp/cc7FuzDx.s:664    .debug_str:0000000000000095 .LASF36
-     /tmp/cc7FuzDx.s:14     .text.dbg_id_get:0000000000000000 .LFB2
-     /tmp/cc7FuzDx.s:25     .text.dbg_id_get:0000000000000008 .LFE2
-     /tmp/cc7FuzDx.s:102    .text.dbg_periph_disable:0000000000000000 .LVL7
-     /tmp/cc7FuzDx.s:109    .text.dbg_periph_disable:000000000000000a .LVL8
-     /tmp/cc7FuzDx.s:112    .text.dbg_periph_disable:000000000000000c .LVL9
-     /tmp/cc7FuzDx.s:81     .text.dbg_periph_enable:0000000000000000 .LVL5
-     /tmp/cc7FuzDx.s:87     .text.dbg_periph_enable:0000000000000008 .LVL6
-     /tmp/cc7FuzDx.s:56     .text.dbg_low_power_disable:0000000000000000 .LVL2
-     /tmp/cc7FuzDx.s:63     .text.dbg_low_power_disable:000000000000000a .LVL3
-     /tmp/cc7FuzDx.s:66     .text.dbg_low_power_disable:000000000000000c .LVL4
-     /tmp/cc7FuzDx.s:35     .text.dbg_low_power_enable:0000000000000000 .LVL0
-     /tmp/cc7FuzDx.s:41     .text.dbg_low_power_enable:0000000000000008 .LVL1
-     /tmp/cc7FuzDx.s:126    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccldrNAj.s:688    .debug_str:000000000000017b .LASF4
+     /tmp/ccldrNAj.s:668    .debug_str:00000000000000ae .LASF5
+     /tmp/ccldrNAj.s:694    .debug_str:00000000000001ae .LASF9
+     /tmp/ccldrNAj.s:686    .debug_str:0000000000000169 .LASF6
+     /tmp/ccldrNAj.s:712    .debug_str:000000000000028d .LASF7
+     /tmp/ccldrNAj.s:706    .debug_str:0000000000000256 .LASF8
+     /tmp/ccldrNAj.s:718    .debug_str:00000000000002b5 .LASF10
+     /tmp/ccldrNAj.s:714    .debug_str:000000000000029b .LASF35
+     /tmp/ccldrNAj.s:722    .debug_str:00000000000002d1 .LASF11
+     /tmp/ccldrNAj.s:680    .debug_str:000000000000013e .LASF12
+     /tmp/ccldrNAj.s:670    .debug_str:00000000000000b7 .LASF13
+     /tmp/ccldrNAj.s:726    .debug_str:00000000000002e9 .LASF14
+     /tmp/ccldrNAj.s:692    .debug_str:000000000000019e .LASF15
+     /tmp/ccldrNAj.s:710    .debug_str:000000000000027d .LASF16
+     /tmp/ccldrNAj.s:662    .debug_str:0000000000000085 .LASF17
+     /tmp/ccldrNAj.s:666    .debug_str:00000000000000a0 .LASF18
+     /tmp/ccldrNAj.s:674    .debug_str:000000000000010a .LASF19
+     /tmp/ccldrNAj.s:704    .debug_str:0000000000000248 .LASF20
+     /tmp/ccldrNAj.s:690    .debug_str:000000000000018e .LASF21
+     /tmp/ccldrNAj.s:708    .debug_str:000000000000026d .LASF22
+     /tmp/ccldrNAj.s:728    .debug_str:00000000000002f9 .LASF23
+     /tmp/ccldrNAj.s:684    .debug_str:000000000000015b .LASF24
+     /tmp/ccldrNAj.s:676    .debug_str:0000000000000118 .LASF25
+     /tmp/ccldrNAj.s:720    .debug_str:00000000000002be .LASF26
+     /tmp/ccldrNAj.s:99     .text.dbg_periph_disable:0000000000000000 .LFB6
+     /tmp/ccldrNAj.s:117    .text.dbg_periph_disable:0000000000000010 .LFE6
+     /tmp/ccldrNAj.s:658    .debug_str:0000000000000000 .LASF28
+     /tmp/ccldrNAj.s:551    .debug_loc:0000000000000000 .LLST3
+     /tmp/ccldrNAj.s:730    .debug_str:0000000000000309 .LASF27
+     /tmp/ccldrNAj.s:78     .text.dbg_periph_enable:0000000000000000 .LFB5
+     /tmp/ccldrNAj.s:92     .text.dbg_periph_enable:000000000000000c .LFE5
+     /tmp/ccldrNAj.s:572    .debug_loc:000000000000002f .LLST2
+     /tmp/ccldrNAj.s:678    .debug_str:0000000000000128 .LASF29
+     /tmp/ccldrNAj.s:53     .text.dbg_low_power_disable:0000000000000000 .LFB4
+     /tmp/ccldrNAj.s:71     .text.dbg_low_power_disable:0000000000000010 .LFE4
+     /tmp/ccldrNAj.s:698    .debug_str:00000000000001ce .LASF30
+     /tmp/ccldrNAj.s:586    .debug_loc:0000000000000050 .LLST1
+     /tmp/ccldrNAj.s:696    .debug_str:00000000000001b9 .LASF31
+     /tmp/ccldrNAj.s:32     .text.dbg_low_power_enable:0000000000000000 .LFB3
+     /tmp/ccldrNAj.s:46     .text.dbg_low_power_enable:000000000000000c .LFE3
+     /tmp/ccldrNAj.s:607    .debug_loc:000000000000007f .LLST0
+     /tmp/ccldrNAj.s:664    .debug_str:0000000000000095 .LASF36
+     /tmp/ccldrNAj.s:14     .text.dbg_id_get:0000000000000000 .LFB2
+     /tmp/ccldrNAj.s:25     .text.dbg_id_get:0000000000000008 .LFE2
+     /tmp/ccldrNAj.s:102    .text.dbg_periph_disable:0000000000000000 .LVL7
+     /tmp/ccldrNAj.s:109    .text.dbg_periph_disable:000000000000000a .LVL8
+     /tmp/ccldrNAj.s:112    .text.dbg_periph_disable:000000000000000c .LVL9
+     /tmp/ccldrNAj.s:81     .text.dbg_periph_enable:0000000000000000 .LVL5
+     /tmp/ccldrNAj.s:87     .text.dbg_periph_enable:0000000000000008 .LVL6
+     /tmp/ccldrNAj.s:56     .text.dbg_low_power_disable:0000000000000000 .LVL2
+     /tmp/ccldrNAj.s:63     .text.dbg_low_power_disable:000000000000000a .LVL3
+     /tmp/ccldrNAj.s:66     .text.dbg_low_power_disable:000000000000000c .LVL4
+     /tmp/ccldrNAj.s:35     .text.dbg_low_power_enable:0000000000000000 .LVL0
+     /tmp/ccldrNAj.s:41     .text.dbg_low_power_enable:0000000000000008 .LVL1
+     /tmp/ccldrNAj.s:126    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS
-GAS LISTING /tmp/cc7FuzDx.s 			page 7
+GAS LISTING /tmp/ccldrNAj.s 			page 7
 
 

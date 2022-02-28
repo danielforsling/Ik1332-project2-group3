@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccMw4oIE.s 			page 1
+GAS LISTING /tmp/ccoQMLbc.s 			page 1
 
 
    1              		.file	"gd32vf103_wwdgt.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c **** #define CFG_WIN(regval)             (BITS(0,6) & ((uint32_t)(regval) << 0))
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c **** 
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c **** /*!
-GAS LISTING /tmp/ccMw4oIE.s 			page 2
+GAS LISTING /tmp/ccoQMLbc.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     \brief      reset the window watchdog timer configuration
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
   57:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     \param[in]  none
   58:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     \param[out] none
   59:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     \retval     none
-GAS LISTING /tmp/ccMw4oIE.s 			page 3
+GAS LISTING /tmp/ccoQMLbc.s 			page 3
 
 
   60:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c **** */
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
   78:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     
   79:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     WWDGT_CTL = reg;
   90              		.loc 1 79 5 is_stmt 1
-GAS LISTING /tmp/ccMw4oIE.s 			page 4
+GAS LISTING /tmp/ccoQMLbc.s 			page 4
 
 
   91              		.loc 1 79 15 is_stmt 0
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
  119              		.loc 1 100 13
  120 0010 93F707E0 		andi	a5,a5,-512
  121              	.LVL9:
-GAS LISTING /tmp/ccMw4oIE.s 			page 5
+GAS LISTING /tmp/ccoQMLbc.s 			page 5
 
 
  101:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_wwdgt.c ****     reg_ctl = (WWDGT_CTL &(~WWDGT_CTL_CNT));
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
  159 0000 37370040 		li	a4,1073754112
  160 0004 832747C0 		lw	a5,-1020(a4)
  161 0008 93E70720 		ori	a5,a5,512
-GAS LISTING /tmp/ccMw4oIE.s 			page 6
+GAS LISTING /tmp/ccoQMLbc.s 			page 6
 
 
  162 000c 2322F7C0 		sw	a5,-1020(a4)
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
  194              		.loc 1 146 5
  195              		.loc 1 146 16 is_stmt 0
  196 0000 37370040 		li	a4,1073754112
-GAS LISTING /tmp/ccMw4oIE.s 			page 7
+GAS LISTING /tmp/ccoQMLbc.s 			page 7
 
 
  197 0004 832787C0 		lw	a5,-1016(a4)
@@ -371,224 +371,224 @@ GAS LISTING /tmp/ccMw4oIE.s 			page 1
  203              	.LFE8:
  205              		.text
  206              	.Letext0:
- 207              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 208              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 207              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 208              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  209              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  210              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  211              		.file 6 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/ccMw4oIE.s 			page 8
+GAS LISTING /tmp/ccoQMLbc.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_wwdgt.c
-     /tmp/ccMw4oIE.s:13     .text.wwdgt_deinit:0000000000000000 wwdgt_deinit
-     /tmp/ccMw4oIE.s:17     .text.wwdgt_deinit:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:18     .text.wwdgt_deinit:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:19     .text.wwdgt_deinit:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:20     .text.wwdgt_deinit:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:22     .text.wwdgt_deinit:0000000000000002 .L0 
-     /tmp/ccMw4oIE.s:24     .text.wwdgt_deinit:0000000000000002 .L0 
-     /tmp/ccMw4oIE.s:26     .text.wwdgt_deinit:0000000000000006 .L0 
-     /tmp/ccMw4oIE.s:27     .text.wwdgt_deinit:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:29     .text.wwdgt_deinit:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:32     .text.wwdgt_deinit:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:33     .text.wwdgt_deinit:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:34     .text.wwdgt_deinit:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:36     .text.wwdgt_deinit:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:38     .text.wwdgt_deinit:0000000000000016 .L0 
-     /tmp/ccMw4oIE.s:40     .text.wwdgt_deinit:0000000000000018 .L0 
-     /tmp/ccMw4oIE.s:42     .text.wwdgt_deinit:0000000000000018 .L0 
-     /tmp/ccMw4oIE.s:44     .text.wwdgt_deinit:0000000000000020 .L0 
-     /tmp/ccMw4oIE.s:51     .text.wwdgt_enable:0000000000000000 wwdgt_enable
-     /tmp/ccMw4oIE.s:54     .text.wwdgt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:55     .text.wwdgt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:56     .text.wwdgt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:57     .text.wwdgt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:62     .text.wwdgt_enable:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:63     .text.wwdgt_enable:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:70     .text.wwdgt_counter_update:0000000000000000 wwdgt_counter_update
-     /tmp/ccMw4oIE.s:73     .text.wwdgt_counter_update:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:75     .text.wwdgt_counter_update:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:76     .text.wwdgt_counter_update:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:77     .text.wwdgt_counter_update:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:78     .text.wwdgt_counter_update:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:81     .text.wwdgt_counter_update:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:84     .text.wwdgt_counter_update:000000000000000c .L0 
-     /tmp/ccMw4oIE.s:87     .text.wwdgt_counter_update:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:88     .text.wwdgt_counter_update:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:91     .text.wwdgt_counter_update:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:92     .text.wwdgt_counter_update:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:94     .text.wwdgt_counter_update:0000000000000016 .L0 
-     /tmp/ccMw4oIE.s:95     .text.wwdgt_counter_update:0000000000000018 .L0 
-     /tmp/ccMw4oIE.s:102    .text.wwdgt_config:0000000000000000 wwdgt_config
-     /tmp/ccMw4oIE.s:105    .text.wwdgt_config:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:107    .text.wwdgt_config:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:108    .text.wwdgt_config:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:109    .text.wwdgt_config:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:110    .text.wwdgt_config:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:114    .text.wwdgt_config:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:115    .text.wwdgt_config:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:117    .text.wwdgt_config:000000000000000c .L0 
-     /tmp/ccMw4oIE.s:120    .text.wwdgt_config:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:123    .text.wwdgt_config:0000000000000014 .L0 
-     /tmp/ccMw4oIE.s:126    .text.wwdgt_config:0000000000000018 .L0 
-     /tmp/ccMw4oIE.s:129    .text.wwdgt_config:000000000000001a .L0 
-     /tmp/ccMw4oIE.s:130    .text.wwdgt_config:000000000000001a .L0 
-     /tmp/ccMw4oIE.s:133    .text.wwdgt_config:000000000000001e .L0 
-     /tmp/ccMw4oIE.s:135    .text.wwdgt_config:0000000000000020 .L0 
-GAS LISTING /tmp/ccMw4oIE.s 			page 9
+     /tmp/ccoQMLbc.s:13     .text.wwdgt_deinit:0000000000000000 wwdgt_deinit
+     /tmp/ccoQMLbc.s:17     .text.wwdgt_deinit:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:18     .text.wwdgt_deinit:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:19     .text.wwdgt_deinit:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:20     .text.wwdgt_deinit:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:22     .text.wwdgt_deinit:0000000000000002 .L0 
+     /tmp/ccoQMLbc.s:24     .text.wwdgt_deinit:0000000000000002 .L0 
+     /tmp/ccoQMLbc.s:26     .text.wwdgt_deinit:0000000000000006 .L0 
+     /tmp/ccoQMLbc.s:27     .text.wwdgt_deinit:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:29     .text.wwdgt_deinit:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:32     .text.wwdgt_deinit:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:33     .text.wwdgt_deinit:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:34     .text.wwdgt_deinit:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:36     .text.wwdgt_deinit:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:38     .text.wwdgt_deinit:0000000000000016 .L0 
+     /tmp/ccoQMLbc.s:40     .text.wwdgt_deinit:0000000000000018 .L0 
+     /tmp/ccoQMLbc.s:42     .text.wwdgt_deinit:0000000000000018 .L0 
+     /tmp/ccoQMLbc.s:44     .text.wwdgt_deinit:0000000000000020 .L0 
+     /tmp/ccoQMLbc.s:51     .text.wwdgt_enable:0000000000000000 wwdgt_enable
+     /tmp/ccoQMLbc.s:54     .text.wwdgt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:55     .text.wwdgt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:56     .text.wwdgt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:57     .text.wwdgt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:62     .text.wwdgt_enable:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:63     .text.wwdgt_enable:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:70     .text.wwdgt_counter_update:0000000000000000 wwdgt_counter_update
+     /tmp/ccoQMLbc.s:73     .text.wwdgt_counter_update:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:75     .text.wwdgt_counter_update:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:76     .text.wwdgt_counter_update:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:77     .text.wwdgt_counter_update:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:78     .text.wwdgt_counter_update:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:81     .text.wwdgt_counter_update:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:84     .text.wwdgt_counter_update:000000000000000c .L0 
+     /tmp/ccoQMLbc.s:87     .text.wwdgt_counter_update:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:88     .text.wwdgt_counter_update:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:91     .text.wwdgt_counter_update:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:92     .text.wwdgt_counter_update:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:94     .text.wwdgt_counter_update:0000000000000016 .L0 
+     /tmp/ccoQMLbc.s:95     .text.wwdgt_counter_update:0000000000000018 .L0 
+     /tmp/ccoQMLbc.s:102    .text.wwdgt_config:0000000000000000 wwdgt_config
+     /tmp/ccoQMLbc.s:105    .text.wwdgt_config:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:107    .text.wwdgt_config:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:108    .text.wwdgt_config:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:109    .text.wwdgt_config:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:110    .text.wwdgt_config:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:114    .text.wwdgt_config:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:115    .text.wwdgt_config:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:117    .text.wwdgt_config:000000000000000c .L0 
+     /tmp/ccoQMLbc.s:120    .text.wwdgt_config:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:123    .text.wwdgt_config:0000000000000014 .L0 
+     /tmp/ccoQMLbc.s:126    .text.wwdgt_config:0000000000000018 .L0 
+     /tmp/ccoQMLbc.s:129    .text.wwdgt_config:000000000000001a .L0 
+     /tmp/ccoQMLbc.s:130    .text.wwdgt_config:000000000000001a .L0 
+     /tmp/ccoQMLbc.s:133    .text.wwdgt_config:000000000000001e .L0 
+     /tmp/ccoQMLbc.s:135    .text.wwdgt_config:0000000000000020 .L0 
+GAS LISTING /tmp/ccoQMLbc.s 			page 9
 
 
-     /tmp/ccMw4oIE.s:138    .text.wwdgt_config:0000000000000022 .L0 
-     /tmp/ccMw4oIE.s:139    .text.wwdgt_config:0000000000000022 .L0 
-     /tmp/ccMw4oIE.s:140    .text.wwdgt_config:0000000000000022 .L0 
-     /tmp/ccMw4oIE.s:142    .text.wwdgt_config:0000000000000026 .L0 
-     /tmp/ccMw4oIE.s:143    .text.wwdgt_config:0000000000000026 .L0 
-     /tmp/ccMw4oIE.s:145    .text.wwdgt_config:000000000000002a .L0 
-     /tmp/ccMw4oIE.s:146    .text.wwdgt_config:000000000000002c .L0 
-     /tmp/ccMw4oIE.s:153    .text.wwdgt_interrupt_enable:0000000000000000 wwdgt_interrupt_enable
-     /tmp/ccMw4oIE.s:156    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:157    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:158    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:159    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:164    .text.wwdgt_interrupt_enable:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:165    .text.wwdgt_interrupt_enable:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:172    .text.wwdgt_flag_get:0000000000000000 wwdgt_flag_get
-     /tmp/ccMw4oIE.s:175    .text.wwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:176    .text.wwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:177    .text.wwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:178    .text.wwdgt_flag_get:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:181    .text.wwdgt_flag_get:0000000000000008 .L0 
-     /tmp/ccMw4oIE.s:183    .text.wwdgt_flag_get:000000000000000c .L0 
-     /tmp/ccMw4oIE.s:190    .text.wwdgt_flag_clear:0000000000000000 wwdgt_flag_clear
-     /tmp/ccMw4oIE.s:193    .text.wwdgt_flag_clear:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:194    .text.wwdgt_flag_clear:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:195    .text.wwdgt_flag_clear:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:196    .text.wwdgt_flag_clear:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:201    .text.wwdgt_flag_clear:000000000000000e .L0 
-     /tmp/ccMw4oIE.s:202    .text.wwdgt_flag_clear:0000000000000010 .L0 
-     /tmp/ccMw4oIE.s:47     .text.wwdgt_deinit:0000000000000020 .L0 
-     /tmp/ccMw4oIE.s:66     .text.wwdgt_enable:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:98     .text.wwdgt_counter_update:0000000000000018 .L0 
-     /tmp/ccMw4oIE.s:149    .text.wwdgt_config:000000000000002c .L0 
-     /tmp/ccMw4oIE.s:168    .text.wwdgt_interrupt_enable:0000000000000012 .L0 
-     /tmp/ccMw4oIE.s:186    .text.wwdgt_flag_get:000000000000000c .L0 
-     /tmp/ccMw4oIE.s:205    .text.wwdgt_flag_clear:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:138    .text.wwdgt_config:0000000000000022 .L0 
+     /tmp/ccoQMLbc.s:139    .text.wwdgt_config:0000000000000022 .L0 
+     /tmp/ccoQMLbc.s:140    .text.wwdgt_config:0000000000000022 .L0 
+     /tmp/ccoQMLbc.s:142    .text.wwdgt_config:0000000000000026 .L0 
+     /tmp/ccoQMLbc.s:143    .text.wwdgt_config:0000000000000026 .L0 
+     /tmp/ccoQMLbc.s:145    .text.wwdgt_config:000000000000002a .L0 
+     /tmp/ccoQMLbc.s:146    .text.wwdgt_config:000000000000002c .L0 
+     /tmp/ccoQMLbc.s:153    .text.wwdgt_interrupt_enable:0000000000000000 wwdgt_interrupt_enable
+     /tmp/ccoQMLbc.s:156    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:157    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:158    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:159    .text.wwdgt_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:164    .text.wwdgt_interrupt_enable:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:165    .text.wwdgt_interrupt_enable:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:172    .text.wwdgt_flag_get:0000000000000000 wwdgt_flag_get
+     /tmp/ccoQMLbc.s:175    .text.wwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:176    .text.wwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:177    .text.wwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:178    .text.wwdgt_flag_get:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:181    .text.wwdgt_flag_get:0000000000000008 .L0 
+     /tmp/ccoQMLbc.s:183    .text.wwdgt_flag_get:000000000000000c .L0 
+     /tmp/ccoQMLbc.s:190    .text.wwdgt_flag_clear:0000000000000000 wwdgt_flag_clear
+     /tmp/ccoQMLbc.s:193    .text.wwdgt_flag_clear:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:194    .text.wwdgt_flag_clear:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:195    .text.wwdgt_flag_clear:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:196    .text.wwdgt_flag_clear:0000000000000000 .L0 
+     /tmp/ccoQMLbc.s:201    .text.wwdgt_flag_clear:000000000000000e .L0 
+     /tmp/ccoQMLbc.s:202    .text.wwdgt_flag_clear:0000000000000010 .L0 
+     /tmp/ccoQMLbc.s:47     .text.wwdgt_deinit:0000000000000020 .L0 
+     /tmp/ccoQMLbc.s:66     .text.wwdgt_enable:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:98     .text.wwdgt_counter_update:0000000000000018 .L0 
+     /tmp/ccoQMLbc.s:149    .text.wwdgt_config:000000000000002c .L0 
+     /tmp/ccoQMLbc.s:168    .text.wwdgt_interrupt_enable:0000000000000012 .L0 
+     /tmp/ccoQMLbc.s:186    .text.wwdgt_flag_get:000000000000000c .L0 
+     /tmp/ccoQMLbc.s:205    .text.wwdgt_flag_clear:0000000000000010 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccMw4oIE.s:615    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccMw4oIE.s:1205   .debug_str:00000000000001cb .LASF62
-     /tmp/ccMw4oIE.s:1233   .debug_str:00000000000002f4 .LASF63
-     /tmp/ccMw4oIE.s:1155   .debug_str:0000000000000035 .LASF64
-     /tmp/ccMw4oIE.s:1127   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccMw4oIE.s:1145   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccMw4oIE.s:1217   .debug_str:0000000000000289 .LASF0
-     /tmp/ccMw4oIE.s:1207   .debug_str:0000000000000245 .LASF1
-     /tmp/ccMw4oIE.s:1199   .debug_str:00000000000001ab .LASF2
-     /tmp/ccMw4oIE.s:1179   .debug_str:0000000000000128 .LASF3
-     /tmp/ccMw4oIE.s:1175   .debug_str:0000000000000106 .LASF6
-     /tmp/ccMw4oIE.s:1227   .debug_str:00000000000002c2 .LASF4
-     /tmp/ccMw4oIE.s:1189   .debug_str:000000000000016e .LASF5
-     /tmp/ccMw4oIE.s:1171   .debug_str:00000000000000ed .LASF7
-     /tmp/ccMw4oIE.s:1243   .debug_str:0000000000000375 .LASF8
-     /tmp/ccMw4oIE.s:1187   .debug_str:0000000000000160 .LASF9
-     /tmp/ccMw4oIE.s:1211   .debug_str:000000000000025c .LASF10
-     /tmp/ccMw4oIE.s:1219   .debug_str:0000000000000296 .LASF11
-     /tmp/ccMw4oIE.s:1215   .debug_str:0000000000000280 .LASF12
-     /tmp/ccMw4oIE.s:1237   .debug_str:0000000000000348 .LASF65
-     /tmp/ccMw4oIE.s:1253   .debug_str:00000000000003b8 .LASF13
-GAS LISTING /tmp/ccMw4oIE.s 			page 10
+     /tmp/ccoQMLbc.s:615    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccoQMLbc.s:1205   .debug_str:00000000000001d1 .LASF62
+     /tmp/ccoQMLbc.s:1233   .debug_str:00000000000002fa .LASF63
+     /tmp/ccoQMLbc.s:1187   .debug_str:0000000000000115 .LASF64
+     /tmp/ccoQMLbc.s:1127   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccoQMLbc.s:1145   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccoQMLbc.s:1217   .debug_str:000000000000028f .LASF0
+     /tmp/ccoQMLbc.s:1207   .debug_str:000000000000024b .LASF1
+     /tmp/ccoQMLbc.s:1199   .debug_str:00000000000001b1 .LASF2
+     /tmp/ccoQMLbc.s:1177   .debug_str:00000000000000cf .LASF3
+     /tmp/ccoQMLbc.s:1173   .debug_str:00000000000000ad .LASF6
+     /tmp/ccoQMLbc.s:1227   .debug_str:00000000000002c8 .LASF4
+     /tmp/ccoQMLbc.s:1189   .debug_str:0000000000000174 .LASF5
+     /tmp/ccoQMLbc.s:1169   .debug_str:0000000000000094 .LASF7
+     /tmp/ccoQMLbc.s:1243   .debug_str:000000000000037b .LASF8
+     /tmp/ccoQMLbc.s:1185   .debug_str:0000000000000107 .LASF9
+     /tmp/ccoQMLbc.s:1211   .debug_str:0000000000000262 .LASF10
+     /tmp/ccoQMLbc.s:1219   .debug_str:000000000000029c .LASF11
+     /tmp/ccoQMLbc.s:1215   .debug_str:0000000000000286 .LASF12
+     /tmp/ccoQMLbc.s:1237   .debug_str:000000000000034e .LASF65
+     /tmp/ccoQMLbc.s:1253   .debug_str:00000000000003be .LASF13
+GAS LISTING /tmp/ccoQMLbc.s 			page 10
 
 
-     /tmp/ccMw4oIE.s:1273   .debug_str:0000000000000434 .LASF14
-     /tmp/ccMw4oIE.s:1151   .debug_str:000000000000001b .LASF15
-     /tmp/ccMw4oIE.s:1231   .debug_str:00000000000002e6 .LASF16
-     /tmp/ccMw4oIE.s:1265   .debug_str:00000000000003f2 .LASF17
-     /tmp/ccMw4oIE.s:1173   .debug_str:00000000000000f8 .LASF18
-     /tmp/ccMw4oIE.s:1193   .debug_str:0000000000000183 .LASF19
-     /tmp/ccMw4oIE.s:1235   .debug_str:000000000000033a .LASF20
-     /tmp/ccMw4oIE.s:1269   .debug_str:0000000000000418 .LASF21
-     /tmp/ccMw4oIE.s:1279   .debug_str:0000000000000459 .LASF22
-     /tmp/ccMw4oIE.s:1167   .debug_str:00000000000000c8 .LASF23
-     /tmp/ccMw4oIE.s:1191   .debug_str:0000000000000177 .LASF24
-     /tmp/ccMw4oIE.s:1241   .debug_str:0000000000000367 .LASF25
-     /tmp/ccMw4oIE.s:1277   .debug_str:000000000000044b .LASF26
-     /tmp/ccMw4oIE.s:1245   .debug_str:0000000000000387 .LASF27
-     /tmp/ccMw4oIE.s:1153   .debug_str:0000000000000028 .LASF28
-     /tmp/ccMw4oIE.s:1275   .debug_str:000000000000043f .LASF29
-     /tmp/ccMw4oIE.s:1249   .debug_str:00000000000003a1 .LASF30
-     /tmp/ccMw4oIE.s:1161   .debug_str:00000000000000a8 .LASF31
-     /tmp/ccMw4oIE.s:1185   .debug_str:0000000000000154 .LASF32
-     /tmp/ccMw4oIE.s:1165   .debug_str:00000000000000bc .LASF33
-     /tmp/ccMw4oIE.s:1251   .debug_str:00000000000003ad .LASF34
-     /tmp/ccMw4oIE.s:1209   .debug_str:0000000000000251 .LASF35
-     /tmp/ccMw4oIE.s:1201   .debug_str:00000000000001b9 .LASF36
-     /tmp/ccMw4oIE.s:1213   .debug_str:0000000000000273 .LASF37
-     /tmp/ccMw4oIE.s:1247   .debug_str:0000000000000394 .LASF38
-     /tmp/ccMw4oIE.s:1159   .debug_str:000000000000009b .LASF39
-     /tmp/ccMw4oIE.s:1183   .debug_str:0000000000000147 .LASF40
-     /tmp/ccMw4oIE.s:1221   .debug_str:000000000000029f .LASF41
-     /tmp/ccMw4oIE.s:1223   .debug_str:00000000000002ac .LASF42
-     /tmp/ccMw4oIE.s:1257   .debug_str:00000000000003cb .LASF43
-     /tmp/ccMw4oIE.s:1147   .debug_str:0000000000000000 .LASF44
-     /tmp/ccMw4oIE.s:1263   .debug_str:00000000000003e6 .LASF45
-     /tmp/ccMw4oIE.s:1195   .debug_str:0000000000000191 .LASF46
-     /tmp/ccMw4oIE.s:1197   .debug_str:000000000000019f .LASF47
-     /tmp/ccMw4oIE.s:1229   .debug_str:00000000000002d5 .LASF48
-     /tmp/ccMw4oIE.s:191    .text.wwdgt_flag_clear:0000000000000000 .LFB8
-     /tmp/ccMw4oIE.s:203    .text.wwdgt_flag_clear:0000000000000010 .LFE8
-     /tmp/ccMw4oIE.s:1239   .debug_str:0000000000000358 .LASF66
-     /tmp/ccMw4oIE.s:173    .text.wwdgt_flag_get:0000000000000000 .LFB7
-     /tmp/ccMw4oIE.s:184    .text.wwdgt_flag_get:000000000000000c .LFE7
-     /tmp/ccMw4oIE.s:1177   .debug_str:0000000000000111 .LASF49
-     /tmp/ccMw4oIE.s:154    .text.wwdgt_interrupt_enable:0000000000000000 .LFB6
-     /tmp/ccMw4oIE.s:166    .text.wwdgt_interrupt_enable:0000000000000012 .LFE6
-     /tmp/ccMw4oIE.s:1149   .debug_str:000000000000000e .LASF55
-     /tmp/ccMw4oIE.s:103    .text.wwdgt_config:0000000000000000 .LFB5
-     /tmp/ccMw4oIE.s:147    .text.wwdgt_config:000000000000002c .LFE5
-     /tmp/ccMw4oIE.s:1203   .debug_str:00000000000001c3 .LASF50
-     /tmp/ccMw4oIE.s:985    .debug_loc:0000000000000000 .LLST3
-     /tmp/ccMw4oIE.s:1261   .debug_str:00000000000003df .LASF51
-     /tmp/ccMw4oIE.s:999    .debug_loc:0000000000000021 .LLST4
-     /tmp/ccMw4oIE.s:1225   .debug_str:00000000000002b8 .LASF52
-     /tmp/ccMw4oIE.s:1163   .debug_str:00000000000000b4 .LASF53
-     /tmp/ccMw4oIE.s:1013   .debug_loc:0000000000000042 .LLST5
-     /tmp/ccMw4oIE.s:1259   .debug_str:00000000000003d7 .LASF54
-     /tmp/ccMw4oIE.s:1038   .debug_loc:000000000000007d .LLST6
-     /tmp/ccMw4oIE.s:1181   .debug_str:0000000000000132 .LASF56
-     /tmp/ccMw4oIE.s:71     .text.wwdgt_counter_update:0000000000000000 .LFB4
-GAS LISTING /tmp/ccMw4oIE.s 			page 11
+     /tmp/ccoQMLbc.s:1273   .debug_str:000000000000043a .LASF14
+     /tmp/ccoQMLbc.s:1151   .debug_str:000000000000001b .LASF15
+     /tmp/ccoQMLbc.s:1231   .debug_str:00000000000002ec .LASF16
+     /tmp/ccoQMLbc.s:1265   .debug_str:00000000000003f8 .LASF17
+     /tmp/ccoQMLbc.s:1171   .debug_str:000000000000009f .LASF18
+     /tmp/ccoQMLbc.s:1193   .debug_str:0000000000000189 .LASF19
+     /tmp/ccoQMLbc.s:1235   .debug_str:0000000000000340 .LASF20
+     /tmp/ccoQMLbc.s:1269   .debug_str:000000000000041e .LASF21
+     /tmp/ccoQMLbc.s:1279   .debug_str:000000000000045f .LASF22
+     /tmp/ccoQMLbc.s:1165   .debug_str:000000000000006f .LASF23
+     /tmp/ccoQMLbc.s:1191   .debug_str:000000000000017d .LASF24
+     /tmp/ccoQMLbc.s:1241   .debug_str:000000000000036d .LASF25
+     /tmp/ccoQMLbc.s:1277   .debug_str:0000000000000451 .LASF26
+     /tmp/ccoQMLbc.s:1245   .debug_str:000000000000038d .LASF27
+     /tmp/ccoQMLbc.s:1153   .debug_str:0000000000000028 .LASF28
+     /tmp/ccoQMLbc.s:1275   .debug_str:0000000000000445 .LASF29
+     /tmp/ccoQMLbc.s:1249   .debug_str:00000000000003a7 .LASF30
+     /tmp/ccoQMLbc.s:1159   .debug_str:000000000000004f .LASF31
+     /tmp/ccoQMLbc.s:1183   .debug_str:00000000000000fb .LASF32
+     /tmp/ccoQMLbc.s:1163   .debug_str:0000000000000063 .LASF33
+     /tmp/ccoQMLbc.s:1251   .debug_str:00000000000003b3 .LASF34
+     /tmp/ccoQMLbc.s:1209   .debug_str:0000000000000257 .LASF35
+     /tmp/ccoQMLbc.s:1201   .debug_str:00000000000001bf .LASF36
+     /tmp/ccoQMLbc.s:1213   .debug_str:0000000000000279 .LASF37
+     /tmp/ccoQMLbc.s:1247   .debug_str:000000000000039a .LASF38
+     /tmp/ccoQMLbc.s:1157   .debug_str:0000000000000042 .LASF39
+     /tmp/ccoQMLbc.s:1181   .debug_str:00000000000000ee .LASF40
+     /tmp/ccoQMLbc.s:1221   .debug_str:00000000000002a5 .LASF41
+     /tmp/ccoQMLbc.s:1223   .debug_str:00000000000002b2 .LASF42
+     /tmp/ccoQMLbc.s:1257   .debug_str:00000000000003d1 .LASF43
+     /tmp/ccoQMLbc.s:1147   .debug_str:0000000000000000 .LASF44
+     /tmp/ccoQMLbc.s:1263   .debug_str:00000000000003ec .LASF45
+     /tmp/ccoQMLbc.s:1195   .debug_str:0000000000000197 .LASF46
+     /tmp/ccoQMLbc.s:1197   .debug_str:00000000000001a5 .LASF47
+     /tmp/ccoQMLbc.s:1229   .debug_str:00000000000002db .LASF48
+     /tmp/ccoQMLbc.s:191    .text.wwdgt_flag_clear:0000000000000000 .LFB8
+     /tmp/ccoQMLbc.s:203    .text.wwdgt_flag_clear:0000000000000010 .LFE8
+     /tmp/ccoQMLbc.s:1239   .debug_str:000000000000035e .LASF66
+     /tmp/ccoQMLbc.s:173    .text.wwdgt_flag_get:0000000000000000 .LFB7
+     /tmp/ccoQMLbc.s:184    .text.wwdgt_flag_get:000000000000000c .LFE7
+     /tmp/ccoQMLbc.s:1175   .debug_str:00000000000000b8 .LASF49
+     /tmp/ccoQMLbc.s:154    .text.wwdgt_interrupt_enable:0000000000000000 .LFB6
+     /tmp/ccoQMLbc.s:166    .text.wwdgt_interrupt_enable:0000000000000012 .LFE6
+     /tmp/ccoQMLbc.s:1149   .debug_str:000000000000000e .LASF55
+     /tmp/ccoQMLbc.s:103    .text.wwdgt_config:0000000000000000 .LFB5
+     /tmp/ccoQMLbc.s:147    .text.wwdgt_config:000000000000002c .LFE5
+     /tmp/ccoQMLbc.s:1203   .debug_str:00000000000001c9 .LASF50
+     /tmp/ccoQMLbc.s:985    .debug_loc:0000000000000000 .LLST3
+     /tmp/ccoQMLbc.s:1261   .debug_str:00000000000003e5 .LASF51
+     /tmp/ccoQMLbc.s:999    .debug_loc:0000000000000021 .LLST4
+     /tmp/ccoQMLbc.s:1225   .debug_str:00000000000002be .LASF52
+     /tmp/ccoQMLbc.s:1161   .debug_str:000000000000005b .LASF53
+     /tmp/ccoQMLbc.s:1013   .debug_loc:0000000000000042 .LLST5
+     /tmp/ccoQMLbc.s:1259   .debug_str:00000000000003dd .LASF54
+     /tmp/ccoQMLbc.s:1038   .debug_loc:000000000000007d .LLST6
+     /tmp/ccoQMLbc.s:1179   .debug_str:00000000000000d9 .LASF56
+     /tmp/ccoQMLbc.s:71     .text.wwdgt_counter_update:0000000000000000 .LFB4
+GAS LISTING /tmp/ccoQMLbc.s 			page 11
 
 
-     /tmp/ccMw4oIE.s:96     .text.wwdgt_counter_update:0000000000000018 .LFE4
-     /tmp/ccMw4oIE.s:1271   .debug_str:0000000000000426 .LASF57
-     /tmp/ccMw4oIE.s:1054   .debug_loc:00000000000000a7 .LLST1
-     /tmp/ccMw4oIE.s:1068   .debug_loc:00000000000000c8 .LLST2
-     /tmp/ccMw4oIE.s:1157   .debug_str:000000000000008e .LASF58
-     /tmp/ccMw4oIE.s:52     .text.wwdgt_enable:0000000000000000 .LFB3
-     /tmp/ccMw4oIE.s:64     .text.wwdgt_enable:0000000000000012 .LFE3
-     /tmp/ccMw4oIE.s:1255   .debug_str:00000000000003be .LASF59
-     /tmp/ccMw4oIE.s:14     .text.wwdgt_deinit:0000000000000000 .LFB2
-     /tmp/ccMw4oIE.s:45     .text.wwdgt_deinit:0000000000000020 .LFE2
-     /tmp/ccMw4oIE.s:1084   .debug_loc:00000000000000f2 .LLST0
-     /tmp/ccMw4oIE.s:30     .text.wwdgt_deinit:0000000000000010 .LVL0
-     /tmp/ccMw4oIE.s:43     .text.wwdgt_deinit:0000000000000020 .LVL1
-     /tmp/ccMw4oIE.s:1267   .debug_str:0000000000000400 .LASF60
-     /tmp/ccMw4oIE.s:1169   .debug_str:00000000000000d4 .LASF61
-     /tmp/ccMw4oIE.s:106    .text.wwdgt_config:0000000000000000 .LVL6
-     /tmp/ccMw4oIE.s:118    .text.wwdgt_config:0000000000000010 .LVL8
-     /tmp/ccMw4oIE.s:131    .text.wwdgt_config:000000000000001e .LVL12
-     /tmp/ccMw4oIE.s:112    .text.wwdgt_config:0000000000000008 .LVL7
-     /tmp/ccMw4oIE.s:121    .text.wwdgt_config:0000000000000014 .LVL9
-     /tmp/ccMw4oIE.s:127    .text.wwdgt_config:000000000000001a .LVL11
-     /tmp/ccMw4oIE.s:136    .text.wwdgt_config:0000000000000022 .LVL13
-     /tmp/ccMw4oIE.s:124    .text.wwdgt_config:0000000000000018 .LVL10
-     /tmp/ccMw4oIE.s:74     .text.wwdgt_counter_update:0000000000000000 .LVL2
-     /tmp/ccMw4oIE.s:82     .text.wwdgt_counter_update:000000000000000c .LVL3
-     /tmp/ccMw4oIE.s:85     .text.wwdgt_counter_update:0000000000000010 .LVL4
-     /tmp/ccMw4oIE.s:89     .text.wwdgt_counter_update:0000000000000012 .LVL5
-     /tmp/ccMw4oIE.s:21     .text.wwdgt_deinit:0000000000000002 .LCFI0
-     /tmp/ccMw4oIE.s:39     .text.wwdgt_deinit:0000000000000018 .LCFI1
-     /tmp/ccMw4oIE.s:213    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccoQMLbc.s:96     .text.wwdgt_counter_update:0000000000000018 .LFE4
+     /tmp/ccoQMLbc.s:1271   .debug_str:000000000000042c .LASF57
+     /tmp/ccoQMLbc.s:1054   .debug_loc:00000000000000a7 .LLST1
+     /tmp/ccoQMLbc.s:1068   .debug_loc:00000000000000c8 .LLST2
+     /tmp/ccoQMLbc.s:1155   .debug_str:0000000000000035 .LASF58
+     /tmp/ccoQMLbc.s:52     .text.wwdgt_enable:0000000000000000 .LFB3
+     /tmp/ccoQMLbc.s:64     .text.wwdgt_enable:0000000000000012 .LFE3
+     /tmp/ccoQMLbc.s:1255   .debug_str:00000000000003c4 .LASF59
+     /tmp/ccoQMLbc.s:14     .text.wwdgt_deinit:0000000000000000 .LFB2
+     /tmp/ccoQMLbc.s:45     .text.wwdgt_deinit:0000000000000020 .LFE2
+     /tmp/ccoQMLbc.s:1084   .debug_loc:00000000000000f2 .LLST0
+     /tmp/ccoQMLbc.s:30     .text.wwdgt_deinit:0000000000000010 .LVL0
+     /tmp/ccoQMLbc.s:43     .text.wwdgt_deinit:0000000000000020 .LVL1
+     /tmp/ccoQMLbc.s:1267   .debug_str:0000000000000406 .LASF60
+     /tmp/ccoQMLbc.s:1167   .debug_str:000000000000007b .LASF61
+     /tmp/ccoQMLbc.s:106    .text.wwdgt_config:0000000000000000 .LVL6
+     /tmp/ccoQMLbc.s:118    .text.wwdgt_config:0000000000000010 .LVL8
+     /tmp/ccoQMLbc.s:131    .text.wwdgt_config:000000000000001e .LVL12
+     /tmp/ccoQMLbc.s:112    .text.wwdgt_config:0000000000000008 .LVL7
+     /tmp/ccoQMLbc.s:121    .text.wwdgt_config:0000000000000014 .LVL9
+     /tmp/ccoQMLbc.s:127    .text.wwdgt_config:000000000000001a .LVL11
+     /tmp/ccoQMLbc.s:136    .text.wwdgt_config:0000000000000022 .LVL13
+     /tmp/ccoQMLbc.s:124    .text.wwdgt_config:0000000000000018 .LVL10
+     /tmp/ccoQMLbc.s:74     .text.wwdgt_counter_update:0000000000000000 .LVL2
+     /tmp/ccoQMLbc.s:82     .text.wwdgt_counter_update:000000000000000c .LVL3
+     /tmp/ccoQMLbc.s:85     .text.wwdgt_counter_update:0000000000000010 .LVL4
+     /tmp/ccoQMLbc.s:89     .text.wwdgt_counter_update:0000000000000012 .LVL5
+     /tmp/ccoQMLbc.s:21     .text.wwdgt_deinit:0000000000000002 .LCFI0
+     /tmp/ccoQMLbc.s:39     .text.wwdgt_deinit:0000000000000018 .LCFI1
+     /tmp/ccoQMLbc.s:213    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_reset_enable

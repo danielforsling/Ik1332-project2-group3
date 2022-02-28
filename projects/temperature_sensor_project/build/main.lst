@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccdFt18F.s 			page 1
+GAS LISTING /tmp/ccbUs1Eu.s 			page 1
 
 
    1              		.file	"main.c"
@@ -9,10 +9,10 @@ GAS LISTING /tmp/ccdFt18F.s 			page 1
    6              		.text
    7              	.Ltext0:
    8              		.cfi_sections	.debug_frame
-   9              		.section	.text.startup.main,"ax",@progbits
+   9              		.section	.text.ds18B20callBack,"ax",@progbits
   10              		.align	1
-  11              		.globl	main
-  13              	main:
+  11              		.globl	ds18B20callBack
+  13              	ds18B20callBack:
   14              	.LFB2:
   15              		.file 1 "main.c"
    1:main.c        **** /* 
@@ -21,424 +21,556 @@ GAS LISTING /tmp/ccdFt18F.s 			page 1
    4:main.c        **** 
    5:main.c        **** Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[library name]/inclu
    6:main.c        **** */
-   7:main.c        **** #include "gd32vf103.h"
-   8:main.c        **** #include "drivers.h"
-   9:main.c        **** #include "eclicw.h"
-  10:main.c        **** #include "lcd.h"
-  11:main.c        **** #include "ds18b20.h"
-  12:main.c        **** #include "usart.h"
-  13:main.c        **** #include "esp_communication.h"
-  14:main.c        **** 
-  15:main.c        **** 
-  16:main.c        **** #define EI 1
-  17:main.c        **** #define DI 0
-  18:main.c        **** 
-  19:main.c        **** 
-  20:main.c        **** #define AT "AT+CWMODE=2\r\n"
-  21:main.c        **** 
-  22:main.c        **** /*
-  23:main.c        **** void ds18B20callBack(unsigned int temp){
-  24:main.c        ****     //LCD_ShowNum(8, 10, temp>>4, 2, WHITE);
-  25:main.c        ****     //LCD_ShowNum(8, 30, temp%16, 2, WHITE);
-  26:main.c        **** }
-  27:main.c        **** */
-  28:main.c        **** 
-  29:main.c        **** int main(void)
-  30:main.c        **** {
-  16              		.loc 1 30 1
+   7:main.c        **** 
+   8:main.c        **** #include "gd32vf103.h"
+   9:main.c        **** #include "drivers.h"
+  10:main.c        **** #include "eclicw.h"
+  11:main.c        **** #include "lcd.h"
+  12:main.c        **** #include "ds18b20.h"
+  13:main.c        **** #include "temp_sensor.h"
+  14:main.c        **** #include "usart.h"
+  15:main.c        **** #define EI 1
+  16:main.c        **** #define DI 0
+  17:main.c        **** 
+  18:main.c        **** void ds18B20callBack(unsigned int temp){
+  16              		.loc 1 18 40
   17              		.cfi_startproc
-  31:main.c        ****     /*
-  32:main.c        ****     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
-  33:main.c        **** 
-  34:main.c        ****     int lookUpTbl[16]={1,4,7,14,2,5,8,0,3,6,9,15,10,11,12,13};
-  35:main.c        **** 
-  36:main.c        ****     uint8_t msg[]= "AT\r\n";
-  37:main.c        ****     char rec_print[]="*******************";
-  38:main.c        ****     uint16_t rec_buffer[19];
-  39:main.c        **** 
-  40:main.c        ****     for (int i = 0; i < 19; i++)
-  41:main.c        ****     {
-GAS LISTING /tmp/ccdFt18F.s 			page 2
+  18              	.LVL0:
+  19:main.c        **** }
+  19              		.loc 1 19 1
+  20 0000 8280     		ret
+  21              		.cfi_endproc
+  22              	.LFE2:
+  24              		.section	.text.startup.main,"ax",@progbits
+  25              		.align	1
+  26              		.globl	main
+  28              	main:
+  29              	.LFB3:
+  20:main.c        **** 
+  21:main.c        **** int main(void){  
+  30              		.loc 1 21 15
+  31              		.cfi_startproc
+  22:main.c        ****     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
+  32              		.loc 1 22 5
+  33              	.LVL1:
+  23:main.c        ****     int lookUpTbl[16]={1,4,7,14,2,5,8,0,3,6,9,15,10,11,12,13};
+  34              		.loc 1 23 5
+  24:main.c        ****     char msg[]="*";
+  35              		.loc 1 24 5
+  21:main.c        ****     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
+GAS LISTING /tmp/ccbUs1Eu.s 			page 2
 
 
-  42:main.c        ****         rec_buffer[i] = 0;
-  43:main.c        ****     }
-  44:main.c        **** 
-  45:main.c        **** 
-  46:main.c        ****     int send_offset = 0;
-  47:main.c        ****     int rec_offset = 0;
-  48:main.c        ****     int rec_ver_offset = 0;
-  49:main.c        ****     */
-  50:main.c        **** 
-  51:main.c        ****     int ms = 0;
-  18              		.loc 1 51 5
-  19              	.LVL0:
-  52:main.c        **** 
-  53:main.c        ****     t5omsi();                               // Initialize timer5 1kHz
-  20              		.loc 1 53 5
-  30:main.c        ****     /*
-  21              		.loc 1 30 1 is_stmt 0
-  22 0000 4111     		addi	sp,sp,-16
-  23              	.LCFI0:
-  24              		.cfi_def_cfa_offset 16
-  25 0002 06C6     		sw	ra,12(sp)
-  26 0004 22C4     		sw	s0,8(sp)
-  27 0006 26C2     		sw	s1,4(sp)
-  28 0008 4AC0     		sw	s2,0(sp)
-  29              		.cfi_offset 1, -4
-  30              		.cfi_offset 8, -8
-  31              		.cfi_offset 9, -12
-  32              		.cfi_offset 18, -16
-  33              		.loc 1 53 5
-  34 000a 97000000 		call	t5omsi
-  34      E7800000 
-  35              	.LVL1:
-  54:main.c        ****     Lcd_SetType(LCD_INVERTED);              // LCD_INVERTED/LCD_NORMAL!
-  36              		.loc 1 54 5 is_stmt 1
-  37 0012 0545     		li	a0,1
-  38 0014 97000000 		call	Lcd_SetType
-  38      E7800000 
-  39              	.LVL2:
-  55:main.c        ****     Lcd_Init();
-  40              		.loc 1 55 5
-  41 001c 97000000 		call	Lcd_Init
-  41      E7800000 
-  42              	.LVL3:
-  56:main.c        ****     LCD_Clear(RED);
-  43              		.loc 1 56 5
-  44 0024 4165     		li	a0,65536
-  45 0026 13050580 		addi	a0,a0,-2048
-  46 002a 97000000 		call	LCD_Clear
-  46      E7800000 
-  47              	.LVL4:
-  57:main.c        ****     u0init(DI);                             // Initialize USART0 toolbox
-  48              		.loc 1 57 5
-  49 0032 0145     		li	a0,0
-  58:main.c        ****     //ds18B20init(&ds18B20callBack);          // Initialize ds18B20 temp sensor
-  59:main.c        **** 
-  60:main.c        ****     eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
-  61:main.c        **** 
-GAS LISTING /tmp/ccdFt18F.s 			page 3
-
-
-  62:main.c        ****     while (1)
-  63:main.c        ****     {
-  64:main.c        ****         LCD_WR_Queue();                     // Manage LCD com queue!
-  65:main.c        ****         u0_TX_Queue();                      // Manage U(S)ART TX Queue!
-  66:main.c        ****         
-  67:main.c        ****         if (t5expq())
-  68:main.c        ****         {
-  69:main.c        ****             ms++;
-  70:main.c        **** 
-  71:main.c        ****             if (ms == 5000)
-  50              		.loc 1 71 16 is_stmt 0
-  51 0034 8564     		li	s1,4096
-  57:main.c        ****     u0init(DI);                             // Initialize USART0 toolbox
-  52              		.loc 1 57 5
-  53 0036 97000000 		call	u0init
-  53      E7800000 
-  54              	.LVL5:
-  60:main.c        **** 
-  55              		.loc 1 60 5 is_stmt 1
-  51:main.c        **** 
-  56              		.loc 1 51 9 is_stmt 0
-  57 003e 0144     		li	s0,0
-  60:main.c        **** 
-  58              		.loc 1 60 5
-  59 0040 97000000 		call	eclic_global_interrupt_enable
-  59      E7800000 
-  60              	.LVL6:
-  61 0048 37090000 		lui	s2,%hi(.LC0)
-  62              		.loc 1 71 16
-  63 004c 93848438 		addi	s1,s1,904
-  64              	.LVL7:
-  65              	.L2:
-  62:main.c        ****     {
-  66              		.loc 1 62 5 is_stmt 1
-  64:main.c        ****         u0_TX_Queue();                      // Manage U(S)ART TX Queue!
-  67              		.loc 1 64 9
-  68 0050 97000000 		call	LCD_WR_Queue
-  68      E7800000 
-  69              	.LVL8:
-  65:main.c        ****         
-  70              		.loc 1 65 9
-  71 0058 97000000 		call	u0_TX_Queue
+  36              		.loc 1 21 15 is_stmt 0
+  37 0000 7971     		addi	sp,sp,-48
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 48
+  40              		.loc 1 24 10
+  41 0002 9307A002 		li	a5,42
+  21:main.c        ****     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
+  42              		.loc 1 21 15
+  43 0006 06D6     		sw	ra,44(sp)
+  44              		.loc 1 24 10
+  45 0008 2316F100 		sh	a5,12(sp)
+  25:main.c        **** 
+  26:main.c        ****     t5omsi();                               // Initialize timer5 1kHz
+  46              		.loc 1 26 5 is_stmt 1
+  21:main.c        ****     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
+  47              		.loc 1 21 15 is_stmt 0
+  48 000c 22D4     		sw	s0,40(sp)
+  49 000e 26D2     		sw	s1,36(sp)
+  50 0010 4AD0     		sw	s2,32(sp)
+  51 0012 4ECE     		sw	s3,28(sp)
+  52 0014 52CC     		sw	s4,24(sp)
+  53              		.cfi_offset 1, -4
+  54              		.cfi_offset 8, -8
+  55              		.cfi_offset 9, -12
+  56              		.cfi_offset 18, -16
+  57              		.cfi_offset 19, -20
+  58              		.cfi_offset 20, -24
+  59              		.loc 1 26 5
+  60 0016 97000000 		call	t5omsi
+  60      E7800000 
+  61              	.LVL2:
+  27:main.c        ****     //colinit();                              // Initialize column toolbox
+  28:main.c        ****     //l88init();                              // Initialize 8*8 led toolbox
+  29:main.c        ****     //keyinit();                              // Initialize keyboard toolbox
+  30:main.c        ****     Lcd_SetType(LCD_INVERTED);              // LCD_INVERTED/LCD_NORMAL!
+  62              		.loc 1 30 5 is_stmt 1
+  63 001e 0545     		li	a0,1
+  64 0020 97000000 		call	Lcd_SetType
+  64      E7800000 
+  65              	.LVL3:
+  31:main.c        ****     Lcd_Init();
+  66              		.loc 1 31 5
+  67 0028 97000000 		call	Lcd_Init
+  67      E7800000 
+  68              	.LVL4:
+  32:main.c        ****     LCD_Clear(BLACK);
+  69              		.loc 1 32 5
+  70 0030 0145     		li	a0,0
+  71 0032 97000000 		call	LCD_Clear
   71      E7800000 
-  72              	.LVL9:
-  67:main.c        ****         {
-  73              		.loc 1 67 9
-  67:main.c        ****         {
-  74              		.loc 1 67 13 is_stmt 0
-  75 0060 97000000 		call	t5expq
-  75      E7800000 
-  76              	.LVL10:
-  67:main.c        ****         {
-  77              		.loc 1 67 12
-  78 0068 65D5     		beq	a0,zero,.L2
-  79 006a 0504     		addi	s0,s0,1
-  80              	.LVL11:
-  69:main.c        **** 
-GAS LISTING /tmp/ccdFt18F.s 			page 4
+  72              	.LVL5:
+  33:main.c        ****     u0init(DI);                             // Initialize USART0 toolbox
+  73              		.loc 1 33 5
+  74 003a 0145     		li	a0,0
+  34:main.c        ****     temp_sensor_init();
+  35:main.c        **** 
+  36:main.c        ****     eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
+GAS LISTING /tmp/ccbUs1Eu.s 			page 3
 
 
-  81              		.loc 1 69 13 is_stmt 1
-  82              		.loc 1 71 13
-  83              		.loc 1 71 16 is_stmt 0
-  84 006c E31294FE 		bne	s0,s1,.L2
-  72:main.c        ****             {
-  73:main.c        ****                 ms = 0;
-  85              		.loc 1 73 17 is_stmt 1
-  86              	.LVL12:
-  74:main.c        ****                 esp_at_send(AT);
-  87              		.loc 1 74 17
-  88 0070 13050900 		addi	a0,s2,%lo(.LC0)
-  89 0074 97000000 		call	esp_at_send
-  89      E7800000 
-  90              	.LVL13:
-  73:main.c        ****                 esp_at_send(AT);
-  91              		.loc 1 73 20 is_stmt 0
-  92 007c 0144     		li	s0,0
-  93 007e C9BF     		j	.L2
-  94              		.cfi_endproc
-  95              	.LFE2:
-  97              		.section	.rodata.main.str1.4,"aMS",@progbits,1
-  98              		.align	2
-  99              	.LC0:
- 100 0000 41542B43 		.string	"AT+CWMODE=2\r\n"
- 100      574D4F44 
- 100      453D320D 
- 100      0A00
- 101              		.text
- 102              	.Letext0:
- 103              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 104              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 105              		.file 4 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/lib/gcc/riscv64-unknown-elf
- 106              		.file 5 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 107              		.file 6 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 108              		.file 7 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 109              		.file 8 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
- 110              		.file 9 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 111              		.file 10 "lcd.h"
- 112              		.file 11 "drivers.h"
- 113              		.file 12 "usart.h"
- 114              		.file 13 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_eclic.h"
- 115              		.file 14 "esp_communication.h"
-GAS LISTING /tmp/ccdFt18F.s 			page 5
+  37:main.c        **** 
+  38:main.c        ****     while (1) {
+  39:main.c        ****         idle++;                             // Manage Async events
+  40:main.c        ****         LCD_WR_Queue();                     // Manage LCD com queue!
+  41:main.c        ****         u0_TX_Queue();                      // Manage U(S)ART TX Queue!
+  42:main.c        ****         if (usart_flag_get(USART0,USART_FLAG_RBNE)){ // USART0 RX?
+  75              		.loc 1 42 13 is_stmt 0
+  76 003c B7440140 		li	s1,1073823744
+  43:main.c        ****             LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+  77              		.loc 1 43 13
+  78 0040 C169     		li	s3,65536
+  33:main.c        ****     u0init(DI);                             // Initialize USART0 toolbox
+  79              		.loc 1 33 5
+  80 0042 97000000 		call	u0init
+  80      E7800000 
+  81              	.LVL6:
+  34:main.c        ****     temp_sensor_init();
+  82              		.loc 1 34 5 is_stmt 1
+  22:main.c        ****     int lookUpTbl[16]={1,4,7,14,2,5,8,0,3,6,9,15,10,11,12,13};
+  83              		.loc 1 22 9 is_stmt 0
+  84 004a 0144     		li	s0,0
+  34:main.c        ****     temp_sensor_init();
+  85              		.loc 1 34 5
+  86 004c 97000000 		call	temp_sensor_init
+  86      E7800000 
+  87              	.LVL7:
+  36:main.c        **** 
+  88              		.loc 1 36 5 is_stmt 1
+  42:main.c        ****             LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+  89              		.loc 1 42 13 is_stmt 0
+  90 0054 93840480 		addi	s1,s1,-2048
+  36:main.c        **** 
+  91              		.loc 1 36 5
+  92 0058 97000000 		call	eclic_global_interrupt_enable
+  92      E7800000 
+  93              	.LVL8:
+  94              		.loc 1 43 13
+  95 0060 FD19     		addi	s3,s3,-1
+  44:main.c        ****         }
+  45:main.c        **** 
+  46:main.c        ****         if (t5expq()) {                     // Manage periodic tasks
+  47:main.c        ****             //l88row(colset());               // ...8*8LED and Keyboard
+  48:main.c        ****             ms++;                           // ...One second heart beat
+  49:main.c        ****             if (ms==1000){
+  96              		.loc 1 49 16
+  97 0062 1309803E 		li	s2,1000
+  50:main.c        ****                 ms=0;
+  51:main.c        ****                 //l88mem(0,s++);
+  52:main.c        ****                 msg[0]=(s%10)+'0'; putstr(msg);   // TX LSD time
+  98              		.loc 1 52 23
+  99 0066 130A0003 		li	s4,48
+ 100              	.LVL9:
+ 101              	.L4:
+  38:main.c        ****         idle++;                             // Manage Async events
+ 102              		.loc 1 38 5 is_stmt 1
+  39:main.c        ****         LCD_WR_Queue();                     // Manage LCD com queue!
+ 103              		.loc 1 39 9
+GAS LISTING /tmp/ccbUs1Eu.s 			page 4
+
+
+  40:main.c        ****         u0_TX_Queue();                      // Manage U(S)ART TX Queue!
+ 104              		.loc 1 40 9
+ 105 006a 97000000 		call	LCD_WR_Queue
+ 105      E7800000 
+ 106              	.LVL10:
+  41:main.c        ****         if (usart_flag_get(USART0,USART_FLAG_RBNE)){ // USART0 RX?
+ 107              		.loc 1 41 9
+ 108 0072 97000000 		call	u0_TX_Queue
+ 108      E7800000 
+ 109              	.LVL11:
+  42:main.c        ****             LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+ 110              		.loc 1 42 9
+  42:main.c        ****             LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+ 111              		.loc 1 42 13 is_stmt 0
+ 112 007a 9545     		li	a1,5
+ 113 007c 2685     		mv	a0,s1
+ 114 007e 97000000 		call	usart_flag_get
+ 114      E7800000 
+ 115              	.LVL12:
+  42:main.c        ****             LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+ 116              		.loc 1 42 12
+ 117 0086 05ED     		bne	a0,zero,.L14
+ 118              	.L5:
+  46:main.c        ****             //l88row(colset());               // ...8*8LED and Keyboard
+ 119              		.loc 1 46 9 is_stmt 1
+  46:main.c        ****             //l88row(colset());               // ...8*8LED and Keyboard
+ 120              		.loc 1 46 13 is_stmt 0
+ 121 0088 97000000 		call	t5expq
+ 121      E7800000 
+ 122              	.LVL13:
+  46:main.c        ****             //l88row(colset());               // ...8*8LED and Keyboard
+ 123              		.loc 1 46 12
+ 124 0090 69DD     		beq	a0,zero,.L4
+ 125 0092 0504     		addi	s0,s0,1
+ 126              	.LVL14:
+  48:main.c        ****             if (ms==1000){
+ 127              		.loc 1 48 13 is_stmt 1
+  49:main.c        ****                 ms=0;
+ 128              		.loc 1 49 13
+  49:main.c        ****                 ms=0;
+ 129              		.loc 1 49 16 is_stmt 0
+ 130 0094 E31B24FD 		bne	s0,s2,.L4
+  50:main.c        ****                 //l88mem(0,s++);
+ 131              		.loc 1 50 17 is_stmt 1
+ 132              	.LVL15:
+ 133              		.loc 1 52 17
+ 134              		.loc 1 52 36 is_stmt 0
+ 135 0098 6800     		addi	a0,sp,12
+ 136              		.loc 1 52 23
+ 137 009a 23064101 		sb	s4,12(sp)
+ 138              		.loc 1 52 36 is_stmt 1
+ 139 009e 97000000 		call	putstr
+ 139      E7800000 
+ 140              	.LVL16:
+  53:main.c        ****                 LCD_ShowNum(8, 50, 0, 1, WHITE);  // LCD Clear key pressed
+ 141              		.loc 1 53 17
+ 142 00a6 4E87     		mv	a4,s3
+GAS LISTING /tmp/ccbUs1Eu.s 			page 5
+
+
+ 143 00a8 8546     		li	a3,1
+ 144 00aa 0146     		li	a2,0
+ 145 00ac 93052003 		li	a1,50
+ 146 00b0 2145     		li	a0,8
+ 147 00b2 97000000 		call	LCD_ShowNum
+ 147      E7800000 
+ 148              	.LVL17:
+  50:main.c        ****                 //l88mem(0,s++);
+ 149              		.loc 1 50 19 is_stmt 0
+ 150 00ba 0144     		li	s0,0
+ 151 00bc 7DB7     		j	.L4
+ 152              	.LVL18:
+ 153              	.L14:
+  43:main.c        ****         }
+ 154              		.loc 1 43 13 is_stmt 1
+  43:main.c        ****         }
+ 155              		.loc 1 43 32 is_stmt 0
+ 156 00be 2685     		mv	a0,s1
+ 157 00c0 97000000 		call	usart_data_receive
+ 157      E7800000 
+ 158              	.LVL19:
+  43:main.c        ****         }
+ 159              		.loc 1 43 13
+ 160 00c8 1376F50F 		andi	a2,a0,0xff
+ 161 00cc 4E87     		mv	a4,s3
+ 162 00ce 8146     		li	a3,0
+ 163 00d0 93052003 		li	a1,50
+ 164 00d4 7945     		li	a0,30
+ 165 00d6 97000000 		call	LCD_ShowChar
+ 165      E7800000 
+ 166              	.LVL20:
+ 167 00de 6DB7     		j	.L5
+ 168              		.cfi_endproc
+ 169              	.LFE3:
+ 171              		.text
+ 172              	.Letext0:
+ 173              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 174              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 175              		.file 4 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/lib/gcc/riscv64-unkno
+ 176              		.file 5 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 177              		.file 6 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 178              		.file 7 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 179              		.file 8 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 180              		.file 9 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 181              		.file 10 "lcd.h"
+ 182              		.file 11 "drivers.h"
+ 183              		.file 12 "usart.h"
+ 184              		.file 13 "temp_sensor.h"
+ 185              		.file 14 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_eclic.h"
+ 186              		.file 15 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_usart.h"
+GAS LISTING /tmp/ccbUs1Eu.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/ccdFt18F.s:13     .text.startup.main:0000000000000000 main
-     /tmp/ccdFt18F.s:17     .text.startup.main:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:18     .text.startup.main:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:20     .text.startup.main:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:21     .text.startup.main:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:22     .text.startup.main:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:24     .text.startup.main:0000000000000002 .L0 
-     /tmp/ccdFt18F.s:29     .text.startup.main:000000000000000a .L0 
-     /tmp/ccdFt18F.s:30     .text.startup.main:000000000000000a .L0 
-     /tmp/ccdFt18F.s:31     .text.startup.main:000000000000000a .L0 
-     /tmp/ccdFt18F.s:32     .text.startup.main:000000000000000a .L0 
-     /tmp/ccdFt18F.s:34     .text.startup.main:000000000000000a .L0 
-     /tmp/ccdFt18F.s:37     .text.startup.main:0000000000000012 .L0 
-     /tmp/ccdFt18F.s:41     .text.startup.main:000000000000001c .L0 
-     /tmp/ccdFt18F.s:44     .text.startup.main:0000000000000024 .L0 
-     /tmp/ccdFt18F.s:49     .text.startup.main:0000000000000032 .L0 
-     /tmp/ccdFt18F.s:51     .text.startup.main:0000000000000034 .L0 
-     /tmp/ccdFt18F.s:53     .text.startup.main:0000000000000036 .L0 
-     /tmp/ccdFt18F.s:56     .text.startup.main:000000000000003e .L0 
-     /tmp/ccdFt18F.s:57     .text.startup.main:000000000000003e .L0 
-     /tmp/ccdFt18F.s:59     .text.startup.main:0000000000000040 .L0 
-     /tmp/ccdFt18F.s:63     .text.startup.main:000000000000004c .L0 
-     /tmp/ccdFt18F.s:67     .text.startup.main:0000000000000050 .L0 
-     /tmp/ccdFt18F.s:68     .text.startup.main:0000000000000050 .L0 
-     /tmp/ccdFt18F.s:71     .text.startup.main:0000000000000058 .L0 
-     /tmp/ccdFt18F.s:74     .text.startup.main:0000000000000060 .L0 
-     /tmp/ccdFt18F.s:75     .text.startup.main:0000000000000060 .L0 
-     /tmp/ccdFt18F.s:78     .text.startup.main:0000000000000068 .L0 
-     /tmp/ccdFt18F.s:82     .text.startup.main:000000000000006c .L0 
-     /tmp/ccdFt18F.s:83     .text.startup.main:000000000000006c .L0 
-     /tmp/ccdFt18F.s:84     .text.startup.main:000000000000006c .L0 
-     /tmp/ccdFt18F.s:87     .text.startup.main:0000000000000070 .L0 
-     /tmp/ccdFt18F.s:88     .text.startup.main:0000000000000070 .L0 
-     /tmp/ccdFt18F.s:92     .text.startup.main:000000000000007c .L0 
-     /tmp/ccdFt18F.s:94     .text.startup.main:0000000000000080 .L0 
-     /tmp/ccdFt18F.s:97     .text.startup.main:0000000000000080 .L0 
+     /tmp/ccbUs1Eu.s:13     .text.ds18B20callBack:0000000000000000 ds18B20callBack
+     /tmp/ccbUs1Eu.s:17     .text.ds18B20callBack:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:19     .text.ds18B20callBack:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:20     .text.ds18B20callBack:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:21     .text.ds18B20callBack:0000000000000002 .L0 
+     /tmp/ccbUs1Eu.s:28     .text.startup.main:0000000000000000 main
+     /tmp/ccbUs1Eu.s:31     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:32     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:34     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:35     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:36     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:37     .text.startup.main:0000000000000000 .L0 
+     /tmp/ccbUs1Eu.s:39     .text.startup.main:0000000000000002 .L0 
+     /tmp/ccbUs1Eu.s:41     .text.startup.main:0000000000000002 .L0 
+     /tmp/ccbUs1Eu.s:43     .text.startup.main:0000000000000006 .L0 
+     /tmp/ccbUs1Eu.s:45     .text.startup.main:0000000000000008 .L0 
+     /tmp/ccbUs1Eu.s:47     .text.startup.main:000000000000000c .L0 
+     /tmp/ccbUs1Eu.s:48     .text.startup.main:000000000000000c .L0 
+     /tmp/ccbUs1Eu.s:53     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:54     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:55     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:56     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:57     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:58     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:60     .text.startup.main:0000000000000016 .L0 
+     /tmp/ccbUs1Eu.s:63     .text.startup.main:000000000000001e .L0 
+     /tmp/ccbUs1Eu.s:67     .text.startup.main:0000000000000028 .L0 
+     /tmp/ccbUs1Eu.s:70     .text.startup.main:0000000000000030 .L0 
+     /tmp/ccbUs1Eu.s:74     .text.startup.main:000000000000003a .L0 
+     /tmp/ccbUs1Eu.s:76     .text.startup.main:000000000000003c .L0 
+     /tmp/ccbUs1Eu.s:78     .text.startup.main:0000000000000040 .L0 
+     /tmp/ccbUs1Eu.s:80     .text.startup.main:0000000000000042 .L0 
+     /tmp/ccbUs1Eu.s:83     .text.startup.main:000000000000004a .L0 
+     /tmp/ccbUs1Eu.s:84     .text.startup.main:000000000000004a .L0 
+     /tmp/ccbUs1Eu.s:86     .text.startup.main:000000000000004c .L0 
+     /tmp/ccbUs1Eu.s:89     .text.startup.main:0000000000000054 .L0 
+     /tmp/ccbUs1Eu.s:90     .text.startup.main:0000000000000054 .L0 
+     /tmp/ccbUs1Eu.s:92     .text.startup.main:0000000000000058 .L0 
+     /tmp/ccbUs1Eu.s:95     .text.startup.main:0000000000000060 .L0 
+     /tmp/ccbUs1Eu.s:97     .text.startup.main:0000000000000062 .L0 
+     /tmp/ccbUs1Eu.s:99     .text.startup.main:0000000000000066 .L0 
+     /tmp/ccbUs1Eu.s:103    .text.startup.main:000000000000006a .L0 
+     /tmp/ccbUs1Eu.s:104    .text.startup.main:000000000000006a .L0 
+     /tmp/ccbUs1Eu.s:105    .text.startup.main:000000000000006a .L0 
+     /tmp/ccbUs1Eu.s:108    .text.startup.main:0000000000000072 .L0 
+     /tmp/ccbUs1Eu.s:111    .text.startup.main:000000000000007a .L0 
+     /tmp/ccbUs1Eu.s:112    .text.startup.main:000000000000007a .L0 
+     /tmp/ccbUs1Eu.s:117    .text.startup.main:0000000000000086 .L0 
+     /tmp/ccbUs1Eu.s:120    .text.startup.main:0000000000000088 .L0 
+     /tmp/ccbUs1Eu.s:121    .text.startup.main:0000000000000088 .L0 
+     /tmp/ccbUs1Eu.s:124    .text.startup.main:0000000000000090 .L0 
+     /tmp/ccbUs1Eu.s:128    .text.startup.main:0000000000000094 .L0 
+     /tmp/ccbUs1Eu.s:129    .text.startup.main:0000000000000094 .L0 
+     /tmp/ccbUs1Eu.s:130    .text.startup.main:0000000000000094 .L0 
+     /tmp/ccbUs1Eu.s:133    .text.startup.main:0000000000000098 .L0 
+GAS LISTING /tmp/ccbUs1Eu.s 			page 7
+
+
+     /tmp/ccbUs1Eu.s:134    .text.startup.main:0000000000000098 .L0 
+     /tmp/ccbUs1Eu.s:135    .text.startup.main:0000000000000098 .L0 
+     /tmp/ccbUs1Eu.s:137    .text.startup.main:000000000000009a .L0 
+     /tmp/ccbUs1Eu.s:139    .text.startup.main:000000000000009e .L0 
+     /tmp/ccbUs1Eu.s:142    .text.startup.main:00000000000000a6 .L0 
+     /tmp/ccbUs1Eu.s:150    .text.startup.main:00000000000000ba .L0 
+     /tmp/ccbUs1Eu.s:155    .text.startup.main:00000000000000be .L0 
+     /tmp/ccbUs1Eu.s:156    .text.startup.main:00000000000000be .L0 
+     /tmp/ccbUs1Eu.s:160    .text.startup.main:00000000000000c8 .L0 
+     /tmp/ccbUs1Eu.s:168    .text.startup.main:00000000000000e0 .L0 
+     /tmp/ccbUs1Eu.s:24     .text.ds18B20callBack:0000000000000002 .L0 
+     /tmp/ccbUs1Eu.s:171    .text.startup.main:00000000000000e0 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccdFt18F.s:99     .rodata.main.str1.4:0000000000000000 .LC0
-     /tmp/ccdFt18F.s:65     .text.startup.main:0000000000000050 .L2
-     /tmp/ccdFt18F.s:1707   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccdFt18F.s:2426   .debug_str:00000000000002a3 .LASF135
-     /tmp/ccdFt18F.s:2410   .debug_str:000000000000026a .LASF136
-     /tmp/ccdFt18F.s:2528   .debug_str:00000000000004fa .LASF137
-     /tmp/ccdFt18F.s:2282   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccdFt18F.s:2288   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccdFt18F.s:2510   .debug_str:000000000000049d .LASF0
-     /tmp/ccdFt18F.s:2326   .debug_str:00000000000000cd .LASF1
-     /tmp/ccdFt18F.s:2448   .debug_str:000000000000038f .LASF2
-     /tmp/ccdFt18F.s:2292   .debug_str:000000000000000c .LASF3
-     /tmp/ccdFt18F.s:2518   .debug_str:00000000000004c6 .LASF4
-     /tmp/ccdFt18F.s:2302   .debug_str:000000000000003a .LASF5
-     /tmp/ccdFt18F.s:2366   .debug_str:000000000000018a .LASF9
-     /tmp/ccdFt18F.s:2388   .debug_str:00000000000001e9 .LASF6
-     /tmp/ccdFt18F.s:2354   .debug_str:0000000000000148 .LASF7
-     /tmp/ccdFt18F.s:2310   .debug_str:000000000000006e .LASF8
-GAS LISTING /tmp/ccdFt18F.s 			page 6
+     /tmp/ccbUs1Eu.s:153    .text.startup.main:00000000000000be .L14
+     /tmp/ccbUs1Eu.s:101    .text.startup.main:000000000000006a .L4
+     /tmp/ccbUs1Eu.s:118    .text.startup.main:0000000000000088 .L5
+     /tmp/ccbUs1Eu.s:2031   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccbUs1Eu.s:2971   .debug_str:0000000000000314 .LASF153
+     /tmp/ccbUs1Eu.s:2949   .debug_str:00000000000002ae .LASF154
+     /tmp/ccbUs1Eu.s:2999   .debug_str:000000000000041c .LASF155
+     /tmp/ccbUs1Eu.s:2809   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccbUs1Eu.s:2817   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccbUs1Eu.s:3067   .debug_str:00000000000005b1 .LASF0
+     /tmp/ccbUs1Eu.s:2859   .debug_str:00000000000000e0 .LASF1
+     /tmp/ccbUs1Eu.s:3001   .debug_str:000000000000047b .LASF2
+     /tmp/ccbUs1Eu.s:3071   .debug_str:00000000000005ce .LASF3
+     /tmp/ccbUs1Eu.s:3085   .debug_str:0000000000000618 .LASF4
+     /tmp/ccbUs1Eu.s:2831   .debug_str:0000000000000040 .LASF5
+     /tmp/ccbUs1Eu.s:2897   .debug_str:000000000000019d .LASF9
+     /tmp/ccbUs1Eu.s:2925   .debug_str:000000000000021e .LASF6
+     /tmp/ccbUs1Eu.s:2885   .debug_str:000000000000015b .LASF7
+     /tmp/ccbUs1Eu.s:2863   .debug_str:00000000000000f2 .LASF8
+     /tmp/ccbUs1Eu.s:3097   .debug_str:000000000000065f .LASF10
+     /tmp/ccbUs1Eu.s:2919   .debug_str:00000000000001fe .LASF130
+     /tmp/ccbUs1Eu.s:2845   .debug_str:0000000000000098 .LASF11
+     /tmp/ccbUs1Eu.s:3101   .debug_str:0000000000000675 .LASF12
+     /tmp/ccbUs1Eu.s:2953   .debug_str:00000000000002ba .LASF13
+     /tmp/ccbUs1Eu.s:3063   .debug_str:000000000000059d .LASF14
+     /tmp/ccbUs1Eu.s:3069   .debug_str:00000000000005be .LASF15
+     /tmp/ccbUs1Eu.s:2821   .debug_str:000000000000000c .LASF16
+     /tmp/ccbUs1Eu.s:2967   .debug_str:00000000000002fc .LASF17
+     /tmp/ccbUs1Eu.s:2839   .debug_str:0000000000000074 .LASF18
+     /tmp/ccbUs1Eu.s:2981   .debug_str:00000000000003b4 .LASF19
+     /tmp/ccbUs1Eu.s:3017   .debug_str:00000000000004c1 .LASF20
+     /tmp/ccbUs1Eu.s:3055   .debug_str:0000000000000572 .LASF21
+     /tmp/ccbUs1Eu.s:2983   .debug_str:00000000000003c4 .LASF22
+     /tmp/ccbUs1Eu.s:2855   .debug_str:00000000000000d2 .LASF23
+     /tmp/ccbUs1Eu.s:3053   .debug_str:000000000000056a .LASF24
+     /tmp/ccbUs1Eu.s:3107   .debug_str:000000000000068f .LASF25
+     /tmp/ccbUs1Eu.s:2947   .debug_str:00000000000002a8 .LASF26
+     /tmp/ccbUs1Eu.s:2917   .debug_str:00000000000001f7 .LASF27
+     /tmp/ccbUs1Eu.s:3045   .debug_str:000000000000054a .LASF28
+     /tmp/ccbUs1Eu.s:3047   .debug_str:0000000000000552 .LASF29
+     /tmp/ccbUs1Eu.s:3021   .debug_str:00000000000004d8 .LASF30
+     /tmp/ccbUs1Eu.s:3091   .debug_str:0000000000000637 .LASF31
+     /tmp/ccbUs1Eu.s:2991   .debug_str:00000000000003e7 .LASF32
+     /tmp/ccbUs1Eu.s:3007   .debug_str:0000000000000498 .LASF33
+GAS LISTING /tmp/ccbUs1Eu.s 			page 8
 
 
-     /tmp/ccdFt18F.s:2532   .debug_str:0000000000000566 .LASF10
-     /tmp/ccdFt18F.s:2382   .debug_str:00000000000001c9 .LASF120
-     /tmp/ccdFt18F.s:2500   .debug_str:0000000000000476 .LASF11
-     /tmp/ccdFt18F.s:2438   .debug_str:0000000000000352 .LASF12
-     /tmp/ccdFt18F.s:2322   .debug_str:00000000000000bf .LASF13
-     /tmp/ccdFt18F.s:2498   .debug_str:000000000000046e .LASF14
-     /tmp/ccdFt18F.s:2540   .debug_str:0000000000000587 .LASF15
-     /tmp/ccdFt18F.s:2408   .debug_str:0000000000000264 .LASF16
-     /tmp/ccdFt18F.s:2380   .debug_str:00000000000001c2 .LASF17
-     /tmp/ccdFt18F.s:2490   .debug_str:000000000000044e .LASF18
-     /tmp/ccdFt18F.s:2492   .debug_str:0000000000000456 .LASF19
-     /tmp/ccdFt18F.s:2466   .debug_str:00000000000003dc .LASF20
-     /tmp/ccdFt18F.s:2524   .debug_str:00000000000004e5 .LASF21
-     /tmp/ccdFt18F.s:2444   .debug_str:0000000000000370 .LASF22
-     /tmp/ccdFt18F.s:2454   .debug_str:00000000000003ac .LASF23
-     /tmp/ccdFt18F.s:2374   .debug_str:00000000000001af .LASF28
-     /tmp/ccdFt18F.s:2512   .debug_str:00000000000004aa .LASF24
-     /tmp/ccdFt18F.s:2484   .debug_str:0000000000000439 .LASF25
-     /tmp/ccdFt18F.s:2368   .debug_str:0000000000000195 .LASF26
-     /tmp/ccdFt18F.s:2536   .debug_str:000000000000057c .LASF27
-     /tmp/ccdFt18F.s:2378   .debug_str:00000000000001bd .LASF29
-     /tmp/ccdFt18F.s:2320   .debug_str:00000000000000b6 .LASF30
-     /tmp/ccdFt18F.s:2554   .debug_str:00000000000005cc .LASF31
-     /tmp/ccdFt18F.s:2334   .debug_str:00000000000000f1 .LASF32
-     /tmp/ccdFt18F.s:2566   .debug_str:00000000000005fb .LASF33
-     /tmp/ccdFt18F.s:2428   .debug_str:000000000000031d .LASF34
-     /tmp/ccdFt18F.s:2420   .debug_str:0000000000000289 .LASF35
-     /tmp/ccdFt18F.s:2496   .debug_str:0000000000000464 .LASF36
-     /tmp/ccdFt18F.s:2456   .debug_str:00000000000003b5 .LASF37
-     /tmp/ccdFt18F.s:2550   .debug_str:00000000000005b2 .LASF38
-     /tmp/ccdFt18F.s:2338   .debug_str:0000000000000100 .LASF39
-     /tmp/ccdFt18F.s:2294   .debug_str:0000000000000016 .LASF40
-     /tmp/ccdFt18F.s:2290   .debug_str:0000000000000000 .LASF41
-     /tmp/ccdFt18F.s:2516   .debug_str:00000000000004bd .LASF42
-     /tmp/ccdFt18F.s:2348   .debug_str:000000000000012f .LASF43
-     /tmp/ccdFt18F.s:2430   .debug_str:0000000000000326 .LASF44
-     /tmp/ccdFt18F.s:2476   .debug_str:0000000000000409 .LASF45
-     /tmp/ccdFt18F.s:2364   .debug_str:0000000000000185 .LASF46
-     /tmp/ccdFt18F.s:2458   .debug_str:00000000000003bf .LASF47
-     /tmp/ccdFt18F.s:2332   .debug_str:00000000000000eb .LASF48
-     /tmp/ccdFt18F.s:2508   .debug_str:0000000000000497 .LASF49
-     /tmp/ccdFt18F.s:2468   .debug_str:00000000000003e7 .LASF50
-     /tmp/ccdFt18F.s:2346   .debug_str:0000000000000128 .LASF51
-     /tmp/ccdFt18F.s:2390   .debug_str:00000000000001fb .LASF52
-     /tmp/ccdFt18F.s:2312   .debug_str:0000000000000085 .LASF53
-     /tmp/ccdFt18F.s:2340   .debug_str:000000000000010e .LASF54
-     /tmp/ccdFt18F.s:2376   .debug_str:00000000000001b7 .LASF55
-     /tmp/ccdFt18F.s:2418   .debug_str:0000000000000282 .LASF56
-     /tmp/ccdFt18F.s:2494   .debug_str:000000000000045e .LASF57
-     /tmp/ccdFt18F.s:2324   .debug_str:00000000000000c6 .LASF58
-     /tmp/ccdFt18F.s:2330   .debug_str:00000000000000e5 .LASF59
-     /tmp/ccdFt18F.s:2546   .debug_str:00000000000005a4 .LASF60
-     /tmp/ccdFt18F.s:2506   .debug_str:000000000000048e .LASF61
-     /tmp/ccdFt18F.s:2358   .debug_str:000000000000015e .LASF62
-     /tmp/ccdFt18F.s:2394   .debug_str:000000000000020d .LASF63
-     /tmp/ccdFt18F.s:2414   .debug_str:0000000000000276 .LASF64
-     /tmp/ccdFt18F.s:2470   .debug_str:00000000000003ef .LASF65
-GAS LISTING /tmp/ccdFt18F.s 			page 7
+     /tmp/ccbUs1Eu.s:2905   .debug_str:00000000000001c2 .LASF38
+     /tmp/ccbUs1Eu.s:3077   .debug_str:00000000000005f0 .LASF34
+     /tmp/ccbUs1Eu.s:3039   .debug_str:0000000000000535 .LASF35
+     /tmp/ccbUs1Eu.s:2899   .debug_str:00000000000001a8 .LASF36
+     /tmp/ccbUs1Eu.s:3103   .debug_str:0000000000000684 .LASF37
+     /tmp/ccbUs1Eu.s:2915   .debug_str:00000000000001f2 .LASF39
+     /tmp/ccbUs1Eu.s:2853   .debug_str:00000000000000c9 .LASF40
+     /tmp/ccbUs1Eu.s:3121   .debug_str:00000000000006d4 .LASF41
+     /tmp/ccbUs1Eu.s:2865   .debug_str:0000000000000109 .LASF42
+     /tmp/ccbUs1Eu.s:3135   .debug_str:000000000000070d .LASF43
+     /tmp/ccbUs1Eu.s:2973   .debug_str:000000000000038e .LASF44
+     /tmp/ccbUs1Eu.s:2961   .debug_str:00000000000002dc .LASF45
+     /tmp/ccbUs1Eu.s:3051   .debug_str:0000000000000560 .LASF46
+     /tmp/ccbUs1Eu.s:3009   .debug_str:00000000000004a1 .LASF47
+     /tmp/ccbUs1Eu.s:3117   .debug_str:00000000000006ba .LASF48
+     /tmp/ccbUs1Eu.s:2869   .debug_str:0000000000000118 .LASF49
+     /tmp/ccbUs1Eu.s:2823   .debug_str:000000000000001c .LASF50
+     /tmp/ccbUs1Eu.s:2819   .debug_str:0000000000000000 .LASF51
+     /tmp/ccbUs1Eu.s:3081   .debug_str:0000000000000603 .LASF52
+     /tmp/ccbUs1Eu.s:2881   .debug_str:000000000000014c .LASF53
+     /tmp/ccbUs1Eu.s:2975   .debug_str:0000000000000397 .LASF54
+     /tmp/ccbUs1Eu.s:3031   .debug_str:0000000000000505 .LASF55
+     /tmp/ccbUs1Eu.s:2895   .debug_str:0000000000000198 .LASF56
+     /tmp/ccbUs1Eu.s:3011   .debug_str:00000000000004ab .LASF57
+     /tmp/ccbUs1Eu.s:2997   .debug_str:0000000000000416 .LASF58
+     /tmp/ccbUs1Eu.s:3065   .debug_str:00000000000005ab .LASF59
+     /tmp/ccbUs1Eu.s:3023   .debug_str:00000000000004e3 .LASF60
+     /tmp/ccbUs1Eu.s:2879   .debug_str:0000000000000145 .LASF61
+     /tmp/ccbUs1Eu.s:2927   .debug_str:0000000000000230 .LASF62
+     /tmp/ccbUs1Eu.s:2841   .debug_str:0000000000000084 .LASF63
+     /tmp/ccbUs1Eu.s:2871   .debug_str:0000000000000126 .LASF64
+     /tmp/ccbUs1Eu.s:2911   .debug_str:00000000000001e2 .LASF65
+     /tmp/ccbUs1Eu.s:2959   .debug_str:00000000000002d5 .LASF66
+     /tmp/ccbUs1Eu.s:3049   .debug_str:000000000000055a .LASF67
+     /tmp/ccbUs1Eu.s:2857   .debug_str:00000000000000d9 .LASF68
+     /tmp/ccbUs1Eu.s:2861   .debug_str:00000000000000ec .LASF69
+     /tmp/ccbUs1Eu.s:3113   .debug_str:00000000000006ac .LASF70
+     /tmp/ccbUs1Eu.s:2909   .debug_str:00000000000001d9 .LASF71
+     /tmp/ccbUs1Eu.s:2889   .debug_str:0000000000000171 .LASF72
+     /tmp/ccbUs1Eu.s:2931   .debug_str:0000000000000242 .LASF73
+     /tmp/ccbUs1Eu.s:2955   .debug_str:00000000000002c9 .LASF74
+     /tmp/ccbUs1Eu.s:3025   .debug_str:00000000000004eb .LASF75
+     /tmp/ccbUs1Eu.s:3013   .debug_str:00000000000004b2 .LASF76
+     /tmp/ccbUs1Eu.s:3041   .debug_str:000000000000053d .LASF77
+     /tmp/ccbUs1Eu.s:3057   .debug_str:000000000000057e .LASF78
+     /tmp/ccbUs1Eu.s:2883   .debug_str:0000000000000154 .LASF79
+     /tmp/ccbUs1Eu.s:2921   .debug_str:000000000000020e .LASF80
+     /tmp/ccbUs1Eu.s:2903   .debug_str:00000000000001ba .LASF81
+     /tmp/ccbUs1Eu.s:3029   .debug_str:0000000000000500 .LASF82
+     /tmp/ccbUs1Eu.s:2827   .debug_str:000000000000002c .LASF83
+     /tmp/ccbUs1Eu.s:3037   .debug_str:000000000000051c .LASF84
+     /tmp/ccbUs1Eu.s:3033   .debug_str:000000000000050a .LASF85
+     /tmp/ccbUs1Eu.s:2979   .debug_str:00000000000003a9 .LASF86
+     /tmp/ccbUs1Eu.s:3035   .debug_str:0000000000000512 .LASF87
+     /tmp/ccbUs1Eu.s:2945   .debug_str:00000000000002a0 .LASF88
+     /tmp/ccbUs1Eu.s:2913   .debug_str:00000000000001e8 .LASF89
+     /tmp/ccbUs1Eu.s:3131   .debug_str:0000000000000703 .LASF90
+GAS LISTING /tmp/ccbUs1Eu.s 			page 9
 
 
-     /tmp/ccdFt18F.s:2460   .debug_str:00000000000003c6 .LASF66
-     /tmp/ccdFt18F.s:2486   .debug_str:0000000000000441 .LASF67
-     /tmp/ccdFt18F.s:2502   .debug_str:0000000000000482 .LASF68
-     /tmp/ccdFt18F.s:2350   .debug_str:0000000000000137 .LASF69
-     /tmp/ccdFt18F.s:2384   .debug_str:00000000000001d9 .LASF70
-     /tmp/ccdFt18F.s:2372   .debug_str:00000000000001a7 .LASF71
-     /tmp/ccdFt18F.s:2474   .debug_str:0000000000000404 .LASF72
-     /tmp/ccdFt18F.s:2298   .debug_str:0000000000000026 .LASF73
-     /tmp/ccdFt18F.s:2482   .debug_str:0000000000000420 .LASF74
-     /tmp/ccdFt18F.s:2478   .debug_str:000000000000040e .LASF75
-     /tmp/ccdFt18F.s:2434   .debug_str:0000000000000338 .LASF76
-     /tmp/ccdFt18F.s:2480   .debug_str:0000000000000416 .LASF77
-     /tmp/ccdFt18F.s:2406   .debug_str:000000000000025c .LASF78
-     /tmp/ccdFt18F.s:2352   .debug_str:000000000000013e .LASF79
-     /tmp/ccdFt18F.s:2562   .debug_str:00000000000005f1 .LASF80
-     /tmp/ccdFt18F.s:2440   .debug_str:0000000000000359 .LASF81
-     /tmp/ccdFt18F.s:2386   .debug_str:00000000000001e1 .LASF82
-     /tmp/ccdFt18F.s:2356   .debug_str:0000000000000156 .LASF83
-     /tmp/ccdFt18F.s:2412   .debug_str:0000000000000271 .LASF84
-     /tmp/ccdFt18F.s:2300   .debug_str:0000000000000031 .LASF85
-     /tmp/ccdFt18F.s:2544   .debug_str:000000000000059a .LASF86
-     /tmp/ccdFt18F.s:2342   .debug_str:0000000000000116 .LASF87
-     /tmp/ccdFt18F.s:2336   .debug_str:00000000000000fb .LASF88
-     /tmp/ccdFt18F.s:2504   .debug_str:0000000000000489 .LASF89
-     /tmp/ccdFt18F.s:2464   .debug_str:00000000000003d5 .LASF90
-     /tmp/ccdFt18F.s:2538   .debug_str:0000000000000581 .LASF91
-     /tmp/ccdFt18F.s:2396   .debug_str:0000000000000213 .LASF92
-     /tmp/ccdFt18F.s:2450   .debug_str:000000000000039d .LASF93
-     /tmp/ccdFt18F.s:2296   .debug_str:000000000000001e .LASF94
-     /tmp/ccdFt18F.s:2488   .debug_str:0000000000000448 .LASF95
-     /tmp/ccdFt18F.s:2416   .debug_str:000000000000027c .LASF96
-     /tmp/ccdFt18F.s:2520   .debug_str:00000000000004d9 .LASF97
-     /tmp/ccdFt18F.s:2534   .debug_str:000000000000056f .LASF98
-     /tmp/ccdFt18F.s:2514   .debug_str:00000000000004b0 .LASF99
-     /tmp/ccdFt18F.s:2404   .debug_str:000000000000024f .LASF100
-     /tmp/ccdFt18F.s:2552   .debug_str:00000000000005bd .LASF101
-     /tmp/ccdFt18F.s:2436   .debug_str:0000000000000343 .LASF102
-     /tmp/ccdFt18F.s:2400   .debug_str:0000000000000238 .LASF103
-     /tmp/ccdFt18F.s:2556   .debug_str:00000000000005d5 .LASF104
-     /tmp/ccdFt18F.s:2446   .debug_str:0000000000000382 .LASF105
-     /tmp/ccdFt18F.s:2560   .debug_str:00000000000005e3 .LASF106
-     /tmp/ccdFt18F.s:2318   .debug_str:00000000000000a8 .LASF107
-     /tmp/ccdFt18F.s:2542   .debug_str:0000000000000590 .LASF108
-     /tmp/ccdFt18F.s:2402   .debug_str:0000000000000243 .LASF109
-     /tmp/ccdFt18F.s:2526   .debug_str:00000000000004ed .LASF110
-     /tmp/ccdFt18F.s:2362   .debug_str:0000000000000177 .LASF111
-     /tmp/ccdFt18F.s:2316   .debug_str:0000000000000099 .LASF112
-     /tmp/ccdFt18F.s:2360   .debug_str:0000000000000166 .LASF113
-     /tmp/ccdFt18F.s:2304   .debug_str:0000000000000043 .LASF114
-     /tmp/ccdFt18F.s:2306   .debug_str:0000000000000052 .LASF115
-     /tmp/ccdFt18F.s:2452   .debug_str:00000000000003a3 .LASF116
-     /tmp/ccdFt18F.s:2424   .debug_str:000000000000029c .LASF117
-     /tmp/ccdFt18F.s:2422   .debug_str:0000000000000293 .LASF118
-     /tmp/ccdFt18F.s:2548   .debug_str:00000000000005aa .LASF119
-     /tmp/ccdFt18F.s:2314   .debug_str:000000000000008e .LASF138
-     /tmp/ccdFt18F.s:2370   .debug_str:000000000000019b .LASF121
-     /tmp/ccdFt18F.s:2530   .debug_str:0000000000000553 .LASF122
-GAS LISTING /tmp/ccdFt18F.s 			page 8
+     /tmp/ccbUs1Eu.s:2987   .debug_str:00000000000003d0 .LASF91
+     /tmp/ccbUs1Eu.s:2923   .debug_str:0000000000000216 .LASF92
+     /tmp/ccbUs1Eu.s:2887   .debug_str:0000000000000169 .LASF93
+     /tmp/ccbUs1Eu.s:2951   .debug_str:00000000000002b5 .LASF94
+     /tmp/ccbUs1Eu.s:2829   .debug_str:0000000000000037 .LASF95
+     /tmp/ccbUs1Eu.s:3111   .debug_str:00000000000006a2 .LASF96
+     /tmp/ccbUs1Eu.s:2873   .debug_str:000000000000012e .LASF97
+     /tmp/ccbUs1Eu.s:2867   .debug_str:0000000000000113 .LASF98
+     /tmp/ccbUs1Eu.s:3059   .debug_str:0000000000000585 .LASF99
+     /tmp/ccbUs1Eu.s:3019   .debug_str:00000000000004d1 .LASF100
+     /tmp/ccbUs1Eu.s:3105   .debug_str:0000000000000689 .LASF101
+     /tmp/ccbUs1Eu.s:2933   .debug_str:0000000000000248 .LASF102
+     /tmp/ccbUs1Eu.s:3003   .debug_str:0000000000000489 .LASF103
+     /tmp/ccbUs1Eu.s:2825   .debug_str:0000000000000024 .LASF104
+     /tmp/ccbUs1Eu.s:3043   .debug_str:0000000000000544 .LASF105
+     /tmp/ccbUs1Eu.s:2957   .debug_str:00000000000002cf .LASF106
+     /tmp/ccbUs1Eu.s:3087   .debug_str:000000000000062b .LASF107
+     /tmp/ccbUs1Eu.s:3099   .debug_str:0000000000000668 .LASF108
+     /tmp/ccbUs1Eu.s:3079   .debug_str:00000000000005f6 .LASF109
+     /tmp/ccbUs1Eu.s:2941   .debug_str:0000000000000284 .LASF110
+     /tmp/ccbUs1Eu.s:3119   .debug_str:00000000000006c5 .LASF111
+     /tmp/ccbUs1Eu.s:2907   .debug_str:00000000000001ca .LASF112
+     /tmp/ccbUs1Eu.s:2937   .debug_str:000000000000026d .LASF113
+     /tmp/ccbUs1Eu.s:3123   .debug_str:00000000000006dd .LASF114
+     /tmp/ccbUs1Eu.s:2995   .debug_str:0000000000000409 .LASF115
+     /tmp/ccbUs1Eu.s:3129   .debug_str:00000000000006f5 .LASF116
+     /tmp/ccbUs1Eu.s:2851   .debug_str:00000000000000bb .LASF117
+     /tmp/ccbUs1Eu.s:3109   .debug_str:0000000000000698 .LASF118
+     /tmp/ccbUs1Eu.s:2939   .debug_str:0000000000000278 .LASF119
+     /tmp/ccbUs1Eu.s:3093   .debug_str:000000000000063f .LASF120
+     /tmp/ccbUs1Eu.s:2893   .debug_str:000000000000018a .LASF121
+     /tmp/ccbUs1Eu.s:2849   .debug_str:00000000000000ac .LASF122
+     /tmp/ccbUs1Eu.s:2891   .debug_str:0000000000000179 .LASF123
+     /tmp/ccbUs1Eu.s:2833   .debug_str:0000000000000049 .LASF124
+     /tmp/ccbUs1Eu.s:2835   .debug_str:0000000000000058 .LASF125
+     /tmp/ccbUs1Eu.s:3005   .debug_str:000000000000048f .LASF126
+     /tmp/ccbUs1Eu.s:2969   .debug_str:000000000000030d .LASF127
+     /tmp/ccbUs1Eu.s:2965   .debug_str:00000000000002f3 .LASF128
+     /tmp/ccbUs1Eu.s:3115   .debug_str:00000000000006b2 .LASF129
+     /tmp/ccbUs1Eu.s:2843   .debug_str:000000000000008d .LASF156
+     /tmp/ccbUs1Eu.s:2901   .debug_str:00000000000001ae .LASF131
+     /tmp/ccbUs1Eu.s:3095   .debug_str:000000000000064c .LASF132
+     /tmp/ccbUs1Eu.s:2977   .debug_str:000000000000039f .LASF133
+     /tmp/ccbUs1Eu.s:2837   .debug_str:0000000000000069 .LASF134
+     /tmp/ccbUs1Eu.s:3133   .debug_str:0000000000000708 .LASF157
+     /tmp/ccbUs1Eu.s:29     .text.startup.main:0000000000000000 .LFB3
+     /tmp/ccbUs1Eu.s:169    .text.startup.main:00000000000000e0 .LFE3
+     /tmp/ccbUs1Eu.s:2746   .debug_loc:0000000000000000 .LLST0
+     /tmp/ccbUs1Eu.s:2759   .debug_loc:0000000000000020 .LLST1
+     /tmp/ccbUs1Eu.s:2847   .debug_str:00000000000000a7 .LASF135
+     /tmp/ccbUs1Eu.s:2985   .debug_str:00000000000003cb .LASF136
+     /tmp/ccbUs1Eu.s:2786   .debug_loc:0000000000000063 .LLST2
+     /tmp/ccbUs1Eu.s:3125   .debug_str:00000000000006e2 .LASF137
+     /tmp/ccbUs1Eu.s:61     .text.startup.main:000000000000001e .LVL2
+     /tmp/ccbUs1Eu.s:65     .text.startup.main:0000000000000028 .LVL3
+     /tmp/ccbUs1Eu.s:68     .text.startup.main:0000000000000030 .LVL4
+     /tmp/ccbUs1Eu.s:72     .text.startup.main:000000000000003a .LVL5
+GAS LISTING /tmp/ccbUs1Eu.s 			page 10
 
 
-     /tmp/ccdFt18F.s:2432   .debug_str:000000000000032e .LASF123
-     /tmp/ccdFt18F.s:2308   .debug_str:0000000000000063 .LASF124
-     /tmp/ccdFt18F.s:2564   .debug_str:00000000000005f6 .LASF139
-     /tmp/ccdFt18F.s:14     .text.startup.main:0000000000000000 .LFB2
-     /tmp/ccdFt18F.s:95     .text.startup.main:0000000000000080 .LFE2
-     /tmp/ccdFt18F.s:2233   .debug_loc:0000000000000000 .LLST0
-     /tmp/ccdFt18F.s:2246   .debug_loc:0000000000000020 .LLST1
-     /tmp/ccdFt18F.s:35     .text.startup.main:0000000000000012 .LVL1
-     /tmp/ccdFt18F.s:39     .text.startup.main:000000000000001c .LVL2
-     /tmp/ccdFt18F.s:42     .text.startup.main:0000000000000024 .LVL3
-     /tmp/ccdFt18F.s:47     .text.startup.main:0000000000000032 .LVL4
-     /tmp/ccdFt18F.s:54     .text.startup.main:000000000000003e .LVL5
-     /tmp/ccdFt18F.s:60     .text.startup.main:0000000000000048 .LVL6
-     /tmp/ccdFt18F.s:69     .text.startup.main:0000000000000058 .LVL8
-     /tmp/ccdFt18F.s:72     .text.startup.main:0000000000000060 .LVL9
-     /tmp/ccdFt18F.s:76     .text.startup.main:0000000000000068 .LVL10
-     /tmp/ccdFt18F.s:90     .text.startup.main:000000000000007c .LVL13
-     /tmp/ccdFt18F.s:2522   .debug_str:00000000000004de .LASF125
-     /tmp/ccdFt18F.s:2472   .debug_str:00000000000003f8 .LASF126
-     /tmp/ccdFt18F.s:2558   .debug_str:00000000000005da .LASF127
-     /tmp/ccdFt18F.s:2344   .debug_str:000000000000011e .LASF128
-     /tmp/ccdFt18F.s:2568   .debug_str:0000000000000605 .LASF129
-     /tmp/ccdFt18F.s:2398   .debug_str:000000000000021a .LASF130
-     /tmp/ccdFt18F.s:2442   .debug_str:0000000000000363 .LASF131
-     /tmp/ccdFt18F.s:2392   .debug_str:0000000000000201 .LASF132
-     /tmp/ccdFt18F.s:2462   .debug_str:00000000000003ce .LASF133
-     /tmp/ccdFt18F.s:2328   .debug_str:00000000000000d9 .LASF134
-     /tmp/ccdFt18F.s:23     .text.startup.main:0000000000000002 .LCFI0
-     /tmp/ccdFt18F.s:19     .text.startup.main:0000000000000000 .LVL0
-     /tmp/ccdFt18F.s:64     .text.startup.main:0000000000000050 .LVL7
-     /tmp/ccdFt18F.s:80     .text.startup.main:000000000000006c .LVL11
-     /tmp/ccdFt18F.s:86     .text.startup.main:0000000000000070 .LVL12
-     /tmp/ccdFt18F.s:117    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccbUs1Eu.s:81     .text.startup.main:000000000000004a .LVL6
+     /tmp/ccbUs1Eu.s:87     .text.startup.main:0000000000000054 .LVL7
+     /tmp/ccbUs1Eu.s:93     .text.startup.main:0000000000000060 .LVL8
+     /tmp/ccbUs1Eu.s:106    .text.startup.main:0000000000000072 .LVL10
+     /tmp/ccbUs1Eu.s:109    .text.startup.main:000000000000007a .LVL11
+     /tmp/ccbUs1Eu.s:115    .text.startup.main:0000000000000086 .LVL12
+     /tmp/ccbUs1Eu.s:122    .text.startup.main:0000000000000090 .LVL13
+     /tmp/ccbUs1Eu.s:140    .text.startup.main:00000000000000a6 .LVL16
+     /tmp/ccbUs1Eu.s:148    .text.startup.main:00000000000000ba .LVL17
+     /tmp/ccbUs1Eu.s:158    .text.startup.main:00000000000000c8 .LVL19
+     /tmp/ccbUs1Eu.s:166    .text.startup.main:00000000000000de .LVL20
+     /tmp/ccbUs1Eu.s:2993   .debug_str:00000000000003f9 .LASF158
+     /tmp/ccbUs1Eu.s:14     .text.ds18B20callBack:0000000000000000 .LFB2
+     /tmp/ccbUs1Eu.s:22     .text.ds18B20callBack:0000000000000002 .LFE2
+     /tmp/ccbUs1Eu.s:2875   .debug_str:0000000000000136 .LASF159
+     /tmp/ccbUs1Eu.s:3089   .debug_str:0000000000000630 .LASF138
+     /tmp/ccbUs1Eu.s:3027   .debug_str:00000000000004f4 .LASF139
+     /tmp/ccbUs1Eu.s:3127   .debug_str:00000000000006ec .LASF140
+     /tmp/ccbUs1Eu.s:2877   .debug_str:000000000000013b .LASF141
+     /tmp/ccbUs1Eu.s:3137   .debug_str:0000000000000717 .LASF142
+     /tmp/ccbUs1Eu.s:3073   .debug_str:00000000000005d8 .LASF143
+     /tmp/ccbUs1Eu.s:2935   .debug_str:000000000000024f .LASF144
+     /tmp/ccbUs1Eu.s:2989   .debug_str:00000000000003da .LASF145
+     /tmp/ccbUs1Eu.s:2929   .debug_str:0000000000000236 .LASF146
+     /tmp/ccbUs1Eu.s:2943   .debug_str:0000000000000291 .LASF147
+     /tmp/ccbUs1Eu.s:3015   .debug_str:00000000000004ba .LASF148
+     /tmp/ccbUs1Eu.s:3075   .debug_str:00000000000005e9 .LASF149
+     /tmp/ccbUs1Eu.s:3083   .debug_str:000000000000060c .LASF150
+     /tmp/ccbUs1Eu.s:3061   .debug_str:000000000000058a .LASF151
+     /tmp/ccbUs1Eu.s:2963   .debug_str:00000000000002e6 .LASF152
+     /tmp/ccbUs1Eu.s:38     .text.startup.main:0000000000000002 .LCFI0
+     /tmp/ccbUs1Eu.s:33     .text.startup.main:0000000000000000 .LVL1
+     /tmp/ccbUs1Eu.s:100    .text.startup.main:000000000000006a .LVL9
+     /tmp/ccbUs1Eu.s:126    .text.startup.main:0000000000000094 .LVL14
+     /tmp/ccbUs1Eu.s:132    .text.startup.main:0000000000000098 .LVL15
+     /tmp/ccbUs1Eu.s:152    .text.startup.main:00000000000000be .LVL18
+     /tmp/ccbUs1Eu.s:188    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 t5omsi
@@ -446,8 +578,13 @@ Lcd_SetType
 Lcd_Init
 LCD_Clear
 u0init
+temp_sensor_init
 eclic_global_interrupt_enable
 LCD_WR_Queue
 u0_TX_Queue
+usart_flag_get
 t5expq
-esp_at_send
+putstr
+LCD_ShowNum
+usart_data_receive
+LCD_ShowChar

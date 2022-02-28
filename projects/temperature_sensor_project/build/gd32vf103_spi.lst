@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccfn6hy1.s 			page 1
+GAS LISTING /tmp/ccuOprvN.s 			page 1
 
 
    1              		.file	"gd32vf103_spi.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** /* I2S clock source selection, multiplication and division mask */
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** #define I2S1_CLOCK_SEL                  ((uint32_t)0x00020000U)  /* I2S1 clock source selection */
-GAS LISTING /tmp/ccfn6hy1.s 			page 2
+GAS LISTING /tmp/ccuOprvN.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** #define I2S2_CLOCK_SEL                  ((uint32_t)0x00040000U)  /* I2S2 clock source selection */
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
   76:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         break;
   77:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     default :
   78:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         break;
-GAS LISTING /tmp/ccfn6hy1.s 			page 3
+GAS LISTING /tmp/ccuOprvN.s 			page 3
 
 
   79:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
   70:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         break;
   79              		.loc 1 70 9
   80 0050 1305E040 		li	a0,1038
-GAS LISTING /tmp/ccfn6hy1.s 			page 4
+GAS LISTING /tmp/ccuOprvN.s 			page 4
 
 
   81              		.loc 1 80 1
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  120              	.LVL10:
   90:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     /* set the SPI struct with the default values */
   91:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     spi_struct->device_mode = SPI_SLAVE;
-GAS LISTING /tmp/ccfn6hy1.s 			page 5
+GAS LISTING /tmp/ccuOprvN.s 			page 5
 
 
  121              		.loc 1 91 5
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  151              		.cfi_startproc
  152              	.LVL11:
  118:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     uint32_t reg = 0U;
-GAS LISTING /tmp/ccfn6hy1.s 			page 6
+GAS LISTING /tmp/ccuOprvN.s 			page 6
 
 
  153              		.loc 1 118 5
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  182              		.loc 1 131 5
  133:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     /* select SPI prescale to adjust transmit speed */
  183              		.loc 1 133 5
-GAS LISTING /tmp/ccfn6hy1.s 			page 7
+GAS LISTING /tmp/ccuOprvN.s 			page 7
 
 
  184              		.loc 1 135 5
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  223              	.LFE5:
  225              		.section	.text.spi_disable,"ax",@progbits
  226              		.align	1
-GAS LISTING /tmp/ccfn6hy1.s 			page 8
+GAS LISTING /tmp/ccuOprvN.s 			page 8
 
 
  227              		.globl	spi_disable
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  187:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** */
  188:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** void i2s_init(uint32_t spi_periph, uint32_t mode, uint32_t standard, uint32_t ckpl)
  189:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** {
-GAS LISTING /tmp/ccfn6hy1.s 			page 9
+GAS LISTING /tmp/ccuOprvN.s 			page 9
 
 
  250              		.loc 1 189 1 is_stmt 1
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  288              		.globl	i2s_psc_config
  290              	i2s_psc_config:
  291              	.LFB8:
-GAS LISTING /tmp/ccfn6hy1.s 			page 10
+GAS LISTING /tmp/ccuOprvN.s 			page 10
 
 
  206:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  242:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
  243:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     /* get the I2S clock source */
  244:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     if(SPI1 == ((uint32_t)spi_periph)){
-GAS LISTING /tmp/ccfn6hy1.s 			page 11
+GAS LISTING /tmp/ccuOprvN.s 			page 11
 
 
  309              		.loc 1 244 7
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  346              		.loc 1 256 24 is_stmt 0
  347 0034 1385A7FF 		addi	a0,a5,-6
  348              		.loc 1 256 11
-GAS LISTING /tmp/ccfn6hy1.s 			page 12
+GAS LISTING /tmp/ccuOprvN.s 			page 12
 
 
  349 0038 636CA706 		bgtu	a0,a4,.L18
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  277:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         clks = (uint32_t)(((i2sclock / 256U) * 10U) / audiosample);
  278:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }else{
  279:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         if(I2S_FRAMEFORMAT_DT16B_CH16B == frameformat){
-GAS LISTING /tmp/ccfn6hy1.s 			page 13
+GAS LISTING /tmp/ccuOprvN.s 			page 13
 
 
  381              		.loc 1 279 9 is_stmt 1
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  289:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     i2sof  = (i2sof << 8U);
  416              		.loc 1 289 21
  417 008c 8589     		andi	a1,a1,1
-GAS LISTING /tmp/ccfn6hy1.s 			page 14
+GAS LISTING /tmp/ccuOprvN.s 			page 14
 
 
  418              	.LVL40:
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  457              	.L18:
  458              	.LCFI10:
  459              		.cfi_restore_state
-GAS LISTING /tmp/ccfn6hy1.s 			page 15
+GAS LISTING /tmp/ccuOprvN.s 			page 15
 
 
  260:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****                 /* multiplier is 20 */
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  502 00de 32C4     		sw	a2,8(sp)
  503 00e0 2EC2     		sw	a1,4(sp)
  272:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }
-GAS LISTING /tmp/ccfn6hy1.s 			page 16
+GAS LISTING /tmp/ccuOprvN.s 			page 16
 
 
  504              		.loc 1 272 9 is_stmt 1
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  324:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** {
  541              		.loc 1 324 1 is_stmt 1
  542              		.cfi_startproc
-GAS LISTING /tmp/ccfn6hy1.s 			page 17
+GAS LISTING /tmp/ccuOprvN.s 			page 17
 
 
  543              	.LVL57:
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  579              		.loc 1 346 1 is_stmt 1
  580              		.cfi_startproc
  581              	.LVL59:
-GAS LISTING /tmp/ccfn6hy1.s 			page 18
+GAS LISTING /tmp/ccuOprvN.s 			page 18
 
 
  347:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     SPI_CTL1(spi_periph) &= (uint32_t)(~SPI_CTL1_NSSDRV);
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  618              		.cfi_startproc
  619              	.LVL61:
  369:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     SPI_CTL0(spi_periph) &= (uint32_t)(~SPI_CTL0_SWNSS);
-GAS LISTING /tmp/ccfn6hy1.s 			page 19
+GAS LISTING /tmp/ccuOprvN.s 			page 19
 
 
  620              		.loc 1 369 5
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  655 0012 8280     		ret
  656              		.cfi_endproc
  657              	.LFE15:
-GAS LISTING /tmp/ccfn6hy1.s 			page 20
+GAS LISTING /tmp/ccuOprvN.s 			page 20
 
 
  659              		.section	.text.spi_dma_disable,"ax",@progbits
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  411:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     \brief      configure SPI/I2S data frame format
  412:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     \param[in]  spi_periph: SPIx(x=0,1,2)
  413:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     \param[in]  frame_format: SPI frame size
-GAS LISTING /tmp/ccfn6hy1.s 			page 21
+GAS LISTING /tmp/ccuOprvN.s 			page 21
 
 
  414:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****                 only one parameter can be selected which is shown as below:
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  726 0000 4CC5     		sw	a1,12(a0)
  438:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** }
  727              		.loc 1 438 1
-GAS LISTING /tmp/ccfn6hy1.s 			page 22
+GAS LISTING /tmp/ccuOprvN.s 			page 22
 
 
  728 0002 8280     		ret
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  761              		.loc 1 463 5
  762              		.loc 1 463 7 is_stmt 0
  763 0000 9167     		li	a5,16384
-GAS LISTING /tmp/ccfn6hy1.s 			page 23
+GAS LISTING /tmp/ccuOprvN.s 			page 23
 
 
  764 0002 6388F500 		beq	a1,a5,.L48
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  799 0006 1CC1     		sw	a5,0(a0)
  483:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
  484:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     /* set SPI CRC polynomial */
-GAS LISTING /tmp/ccfn6hy1.s 			page 24
+GAS LISTING /tmp/ccuOprvN.s 			page 24
 
 
  485:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     SPI_CRCPOLY(spi_periph) = (uint32_t)crc_poly;
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  836              	.LVL74:
  507:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     SPI_CTL0(spi_periph) |= (uint32_t)SPI_CTL0_CRCEN;
  837              		.loc 1 507 5
-GAS LISTING /tmp/ccfn6hy1.s 			page 25
+GAS LISTING /tmp/ccuOprvN.s 			page 25
 
 
  838              		.loc 1 507 26 is_stmt 0
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  875              		.loc 1 528 1 is_stmt 1
  876              		.cfi_startproc
  877              	.LVL76:
-GAS LISTING /tmp/ccfn6hy1.s 			page 26
+GAS LISTING /tmp/ccuOprvN.s 			page 26
 
 
  529:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     SPI_CTL0(spi_periph) |= (uint32_t)SPI_CTL0_CRCNT;
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  915              		.loc 1 547 17
  916 000c 4205     		slli	a0,a0,16
  917 000e 4181     		srli	a0,a0,16
-GAS LISTING /tmp/ccfn6hy1.s 			page 27
+GAS LISTING /tmp/ccuOprvN.s 			page 27
 
 
  548:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  953 0000 5C41     		lw	a5,4(a0)
  954 0002 BD9B     		andi	a5,a5,-17
  955 0004 5CC1     		sw	a5,4(a0)
-GAS LISTING /tmp/ccfn6hy1.s 			page 28
+GAS LISTING /tmp/ccuOprvN.s 			page 28
 
 
  571:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** }
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  992 0002 DD9B     		andi	a5,a5,-9
  993 0004 5CC1     		sw	a5,4(a0)
  593:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** }
-GAS LISTING /tmp/ccfn6hy1.s 			page 29
+GAS LISTING /tmp/ccuOprvN.s 			page 29
 
 
  994              		.loc 1 593 1
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  624:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         break;
  625:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }
  626:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** }
-GAS LISTING /tmp/ccfn6hy1.s 			page 30
+GAS LISTING /tmp/ccuOprvN.s 			page 30
 
 
  1020              		.loc 1 626 1 is_stmt 0
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1054 0002 638CF500 		beq	a1,a5,.L68
  1055 0006 99CD     		beq	a1,zero,.L69
  1056 0008 8947     		li	a5,2
-GAS LISTING /tmp/ccfn6hy1.s 			page 31
+GAS LISTING /tmp/ccuOprvN.s 			page 31
 
 
  1057 000a 6397F500 		bne	a1,a5,.L72
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1091              	spi_i2s_interrupt_flag_get:
  1092              	.LFB33:
  659:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
-GAS LISTING /tmp/ccfn6hy1.s 			page 32
+GAS LISTING /tmp/ccuOprvN.s 			page 32
 
 
  660:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** /*!
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1126              	.L82:
  681:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     /* SPI/I2S transmit buffer empty interrupt */
  682:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     case SPI_I2S_INT_FLAG_TBE:
-GAS LISTING /tmp/ccfn6hy1.s 			page 33
+GAS LISTING /tmp/ccuOprvN.s 			page 33
 
 
  683:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         reg1 = reg1 & SPI_STAT_TBE;
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1143              	.L73:
  721:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         return SET;
  722:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     }else{
-GAS LISTING /tmp/ccfn6hy1.s 			page 34
+GAS LISTING /tmp/ccuOprvN.s 			page 34
 
 
  723:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         return RESET;
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1180              		.loc 1 690 9 is_stmt 1
  1181 0042 F9BF     		j	.L74
  1182              	.L80:
-GAS LISTING /tmp/ccfn6hy1.s 			page 35
+GAS LISTING /tmp/ccuOprvN.s 			page 35
 
 
  693:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****         reg2 = reg2 & SPI_CTL1_ERRIE;
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  726:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** 
  727:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** /*!
  728:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     \brief      get SPI and I2S flag status
-GAS LISTING /tmp/ccfn6hy1.s 			page 36
+GAS LISTING /tmp/ccuOprvN.s 			page 36
 
 
  729:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c ****     \param[in]  spi_periph: SPIx(x=0,1,2)
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  764:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** void spi_crc_error_clear(uint32_t spi_periph)
  765:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_spi.c **** {
  1245              		.loc 1 765 1 is_stmt 1
-GAS LISTING /tmp/ccfn6hy1.s 			page 37
+GAS LISTING /tmp/ccuOprvN.s 			page 37
 
 
  1246              		.cfi_startproc
@@ -2176,906 +2176,906 @@ GAS LISTING /tmp/ccfn6hy1.s 			page 1
  1256              	.LFE35:
  1258              		.text
  1259              	.Letext0:
- 1260              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 1261              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 1260              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 1261              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  1262              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  1263              		.file 5 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  1264              		.file 6 "../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_spi.h"
  1265              		.file 7 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/ccfn6hy1.s 			page 38
+GAS LISTING /tmp/ccuOprvN.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_spi.c
-     /tmp/ccfn6hy1.s:13     .text.spi_i2s_deinit:0000000000000000 spi_i2s_deinit
-     /tmp/ccfn6hy1.s:17     .text.spi_i2s_deinit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:19     .text.spi_i2s_deinit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:20     .text.spi_i2s_deinit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:21     .text.spi_i2s_deinit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:23     .text.spi_i2s_deinit:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:25     .text.spi_i2s_deinit:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:27     .text.spi_i2s_deinit:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:28     .text.spi_i2s_deinit:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:30     .text.spi_i2s_deinit:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:37     .text.spi_i2s_deinit:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:38     .text.spi_i2s_deinit:0000000000000022 .L0 
-     /tmp/ccfn6hy1.s:39     .text.spi_i2s_deinit:0000000000000022 .L0 
-     /tmp/ccfn6hy1.s:42     .text.spi_i2s_deinit:0000000000000024 .L0 
-     /tmp/ccfn6hy1.s:46     .text.spi_i2s_deinit:0000000000000026 .L0 
-     /tmp/ccfn6hy1.s:48     .text.spi_i2s_deinit:0000000000000026 .L0 
-     /tmp/ccfn6hy1.s:53     .text.spi_i2s_deinit:0000000000000032 .L0 
-     /tmp/ccfn6hy1.s:54     .text.spi_i2s_deinit:0000000000000032 .L0 
-     /tmp/ccfn6hy1.s:55     .text.spi_i2s_deinit:0000000000000034 .L0 
-     /tmp/ccfn6hy1.s:56     .text.spi_i2s_deinit:0000000000000034 .L0 
-     /tmp/ccfn6hy1.s:58     .text.spi_i2s_deinit:0000000000000034 .L0 
-     /tmp/ccfn6hy1.s:60     .text.spi_i2s_deinit:0000000000000038 .L0 
-     /tmp/ccfn6hy1.s:62     .text.spi_i2s_deinit:000000000000003a .L0 
-     /tmp/ccfn6hy1.s:64     .text.spi_i2s_deinit:000000000000003a .L0 
-     /tmp/ccfn6hy1.s:68     .text.spi_i2s_deinit:0000000000000042 .L0 
-     /tmp/ccfn6hy1.s:70     .text.spi_i2s_deinit:0000000000000042 .L0 
-     /tmp/ccfn6hy1.s:75     .text.spi_i2s_deinit:000000000000004e .L0 
-     /tmp/ccfn6hy1.s:76     .text.spi_i2s_deinit:000000000000004e .L0 
-     /tmp/ccfn6hy1.s:77     .text.spi_i2s_deinit:0000000000000050 .L0 
-     /tmp/ccfn6hy1.s:78     .text.spi_i2s_deinit:0000000000000050 .L0 
-     /tmp/ccfn6hy1.s:80     .text.spi_i2s_deinit:0000000000000050 .L0 
-     /tmp/ccfn6hy1.s:82     .text.spi_i2s_deinit:0000000000000054 .L0 
-     /tmp/ccfn6hy1.s:84     .text.spi_i2s_deinit:0000000000000056 .L0 
-     /tmp/ccfn6hy1.s:86     .text.spi_i2s_deinit:0000000000000056 .L0 
-     /tmp/ccfn6hy1.s:90     .text.spi_i2s_deinit:000000000000005e .L0 
-     /tmp/ccfn6hy1.s:92     .text.spi_i2s_deinit:000000000000005e .L0 
-     /tmp/ccfn6hy1.s:97     .text.spi_i2s_deinit:000000000000006a .L0 
-     /tmp/ccfn6hy1.s:98     .text.spi_i2s_deinit:000000000000006a .L0 
-     /tmp/ccfn6hy1.s:99     .text.spi_i2s_deinit:000000000000006c .L0 
-     /tmp/ccfn6hy1.s:101    .text.spi_i2s_deinit:000000000000006c .L0 
-     /tmp/ccfn6hy1.s:103    .text.spi_i2s_deinit:0000000000000070 .L0 
-     /tmp/ccfn6hy1.s:105    .text.spi_i2s_deinit:0000000000000072 .L0 
-     /tmp/ccfn6hy1.s:107    .text.spi_i2s_deinit:0000000000000072 .L0 
-     /tmp/ccfn6hy1.s:109    .text.spi_i2s_deinit:000000000000007a .L0 
-     /tmp/ccfn6hy1.s:116    .text.spi_struct_para_init:0000000000000000 spi_struct_para_init
-     /tmp/ccfn6hy1.s:119    .text.spi_struct_para_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:121    .text.spi_struct_para_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:122    .text.spi_struct_para_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:123    .text.spi_struct_para_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:125    .text.spi_struct_para_init:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:126    .text.spi_struct_para_init:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:128    .text.spi_struct_para_init:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:129    .text.spi_struct_para_init:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:131    .text.spi_struct_para_init:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:132    .text.spi_struct_para_init:000000000000000c .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 39
+     /tmp/ccuOprvN.s:13     .text.spi_i2s_deinit:0000000000000000 spi_i2s_deinit
+     /tmp/ccuOprvN.s:17     .text.spi_i2s_deinit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:19     .text.spi_i2s_deinit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:20     .text.spi_i2s_deinit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:21     .text.spi_i2s_deinit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:23     .text.spi_i2s_deinit:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:25     .text.spi_i2s_deinit:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:27     .text.spi_i2s_deinit:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:28     .text.spi_i2s_deinit:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:30     .text.spi_i2s_deinit:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:37     .text.spi_i2s_deinit:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:38     .text.spi_i2s_deinit:0000000000000022 .L0 
+     /tmp/ccuOprvN.s:39     .text.spi_i2s_deinit:0000000000000022 .L0 
+     /tmp/ccuOprvN.s:42     .text.spi_i2s_deinit:0000000000000024 .L0 
+     /tmp/ccuOprvN.s:46     .text.spi_i2s_deinit:0000000000000026 .L0 
+     /tmp/ccuOprvN.s:48     .text.spi_i2s_deinit:0000000000000026 .L0 
+     /tmp/ccuOprvN.s:53     .text.spi_i2s_deinit:0000000000000032 .L0 
+     /tmp/ccuOprvN.s:54     .text.spi_i2s_deinit:0000000000000032 .L0 
+     /tmp/ccuOprvN.s:55     .text.spi_i2s_deinit:0000000000000034 .L0 
+     /tmp/ccuOprvN.s:56     .text.spi_i2s_deinit:0000000000000034 .L0 
+     /tmp/ccuOprvN.s:58     .text.spi_i2s_deinit:0000000000000034 .L0 
+     /tmp/ccuOprvN.s:60     .text.spi_i2s_deinit:0000000000000038 .L0 
+     /tmp/ccuOprvN.s:62     .text.spi_i2s_deinit:000000000000003a .L0 
+     /tmp/ccuOprvN.s:64     .text.spi_i2s_deinit:000000000000003a .L0 
+     /tmp/ccuOprvN.s:68     .text.spi_i2s_deinit:0000000000000042 .L0 
+     /tmp/ccuOprvN.s:70     .text.spi_i2s_deinit:0000000000000042 .L0 
+     /tmp/ccuOprvN.s:75     .text.spi_i2s_deinit:000000000000004e .L0 
+     /tmp/ccuOprvN.s:76     .text.spi_i2s_deinit:000000000000004e .L0 
+     /tmp/ccuOprvN.s:77     .text.spi_i2s_deinit:0000000000000050 .L0 
+     /tmp/ccuOprvN.s:78     .text.spi_i2s_deinit:0000000000000050 .L0 
+     /tmp/ccuOprvN.s:80     .text.spi_i2s_deinit:0000000000000050 .L0 
+     /tmp/ccuOprvN.s:82     .text.spi_i2s_deinit:0000000000000054 .L0 
+     /tmp/ccuOprvN.s:84     .text.spi_i2s_deinit:0000000000000056 .L0 
+     /tmp/ccuOprvN.s:86     .text.spi_i2s_deinit:0000000000000056 .L0 
+     /tmp/ccuOprvN.s:90     .text.spi_i2s_deinit:000000000000005e .L0 
+     /tmp/ccuOprvN.s:92     .text.spi_i2s_deinit:000000000000005e .L0 
+     /tmp/ccuOprvN.s:97     .text.spi_i2s_deinit:000000000000006a .L0 
+     /tmp/ccuOprvN.s:98     .text.spi_i2s_deinit:000000000000006a .L0 
+     /tmp/ccuOprvN.s:99     .text.spi_i2s_deinit:000000000000006c .L0 
+     /tmp/ccuOprvN.s:101    .text.spi_i2s_deinit:000000000000006c .L0 
+     /tmp/ccuOprvN.s:103    .text.spi_i2s_deinit:0000000000000070 .L0 
+     /tmp/ccuOprvN.s:105    .text.spi_i2s_deinit:0000000000000072 .L0 
+     /tmp/ccuOprvN.s:107    .text.spi_i2s_deinit:0000000000000072 .L0 
+     /tmp/ccuOprvN.s:109    .text.spi_i2s_deinit:000000000000007a .L0 
+     /tmp/ccuOprvN.s:116    .text.spi_struct_para_init:0000000000000000 spi_struct_para_init
+     /tmp/ccuOprvN.s:119    .text.spi_struct_para_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:121    .text.spi_struct_para_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:122    .text.spi_struct_para_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:123    .text.spi_struct_para_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:125    .text.spi_struct_para_init:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:126    .text.spi_struct_para_init:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:128    .text.spi_struct_para_init:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:129    .text.spi_struct_para_init:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:131    .text.spi_struct_para_init:000000000000000c .L0 
+     /tmp/ccuOprvN.s:132    .text.spi_struct_para_init:000000000000000c .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 39
 
 
-     /tmp/ccfn6hy1.s:134    .text.spi_struct_para_init:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:135    .text.spi_struct_para_init:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:137    .text.spi_struct_para_init:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:138    .text.spi_struct_para_init:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:140    .text.spi_struct_para_init:0000000000000018 .L0 
-     /tmp/ccfn6hy1.s:141    .text.spi_struct_para_init:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:148    .text.spi_init:0000000000000000 spi_init
-     /tmp/ccfn6hy1.s:151    .text.spi_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:153    .text.spi_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:154    .text.spi_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:155    .text.spi_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:156    .text.spi_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:166    .text.spi_init:0000000000000018 .L0 
-     /tmp/ccfn6hy1.s:169    .text.spi_init:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:170    .text.spi_init:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:174    .text.spi_init:0000000000000022 .L0 
-     /tmp/ccfn6hy1.s:179    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:180    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:181    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:182    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:183    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:184    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:185    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:186    .text.spi_init:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:190    .text.spi_init:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:191    .text.spi_init:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:193    .text.spi_init:0000000000000030 .L0 
-     /tmp/ccfn6hy1.s:194    .text.spi_init:0000000000000030 .L0 
-     /tmp/ccfn6hy1.s:202    .text.spi_init:000000000000003c .L0 
-     /tmp/ccfn6hy1.s:203    .text.spi_init:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:210    .text.spi_enable:0000000000000000 spi_enable
-     /tmp/ccfn6hy1.s:213    .text.spi_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:215    .text.spi_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:216    .text.spi_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:217    .text.spi_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:221    .text.spi_enable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:222    .text.spi_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:229    .text.spi_disable:0000000000000000 spi_disable
-     /tmp/ccfn6hy1.s:232    .text.spi_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:234    .text.spi_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:235    .text.spi_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:236    .text.spi_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:240    .text.spi_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:241    .text.spi_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:248    .text.i2s_init:0000000000000000 i2s_init
-     /tmp/ccfn6hy1.s:251    .text.i2s_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:253    .text.i2s_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:254    .text.i2s_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:255    .text.i2s_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:256    .text.i2s_init:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:259    .text.i2s_init:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:260    .text.i2s_init:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:261    .text.i2s_init:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:262    .text.i2s_init:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:263    .text.i2s_init:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:272    .text.i2s_init:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:273    .text.i2s_init:0000000000000010 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 40
+     /tmp/ccuOprvN.s:134    .text.spi_struct_para_init:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:135    .text.spi_struct_para_init:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:137    .text.spi_struct_para_init:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:138    .text.spi_struct_para_init:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:140    .text.spi_struct_para_init:0000000000000018 .L0 
+     /tmp/ccuOprvN.s:141    .text.spi_struct_para_init:000000000000001a .L0 
+     /tmp/ccuOprvN.s:148    .text.spi_init:0000000000000000 spi_init
+     /tmp/ccuOprvN.s:151    .text.spi_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:153    .text.spi_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:154    .text.spi_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:155    .text.spi_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:156    .text.spi_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:166    .text.spi_init:0000000000000018 .L0 
+     /tmp/ccuOprvN.s:169    .text.spi_init:000000000000001a .L0 
+     /tmp/ccuOprvN.s:170    .text.spi_init:000000000000001a .L0 
+     /tmp/ccuOprvN.s:174    .text.spi_init:0000000000000022 .L0 
+     /tmp/ccuOprvN.s:179    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:180    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:181    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:182    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:183    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:184    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:185    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:186    .text.spi_init:000000000000002a .L0 
+     /tmp/ccuOprvN.s:190    .text.spi_init:000000000000002e .L0 
+     /tmp/ccuOprvN.s:191    .text.spi_init:000000000000002e .L0 
+     /tmp/ccuOprvN.s:193    .text.spi_init:0000000000000030 .L0 
+     /tmp/ccuOprvN.s:194    .text.spi_init:0000000000000030 .L0 
+     /tmp/ccuOprvN.s:202    .text.spi_init:000000000000003c .L0 
+     /tmp/ccuOprvN.s:203    .text.spi_init:000000000000003e .L0 
+     /tmp/ccuOprvN.s:210    .text.spi_enable:0000000000000000 spi_enable
+     /tmp/ccuOprvN.s:213    .text.spi_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:215    .text.spi_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:216    .text.spi_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:217    .text.spi_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:221    .text.spi_enable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:222    .text.spi_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:229    .text.spi_disable:0000000000000000 spi_disable
+     /tmp/ccuOprvN.s:232    .text.spi_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:234    .text.spi_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:235    .text.spi_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:236    .text.spi_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:240    .text.spi_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:241    .text.spi_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:248    .text.i2s_init:0000000000000000 i2s_init
+     /tmp/ccuOprvN.s:251    .text.i2s_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:253    .text.i2s_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:254    .text.i2s_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:255    .text.i2s_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:256    .text.i2s_init:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:259    .text.i2s_init:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:260    .text.i2s_init:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:261    .text.i2s_init:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:262    .text.i2s_init:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:263    .text.i2s_init:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:272    .text.i2s_init:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:273    .text.i2s_init:0000000000000010 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 40
 
 
-     /tmp/ccfn6hy1.s:279    .text.i2s_init:0000000000000018 .L0 
-     /tmp/ccfn6hy1.s:280    .text.i2s_init:0000000000000018 .L0 
-     /tmp/ccfn6hy1.s:282    .text.i2s_init:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:283    .text.i2s_init:000000000000001c .L0 
-     /tmp/ccfn6hy1.s:290    .text.i2s_psc_config:0000000000000000 i2s_psc_config
-     /tmp/ccfn6hy1.s:293    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:295    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:296    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:297    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:298    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:299    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:300    .text.i2s_psc_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:302    .text.i2s_psc_config:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:305    .text.i2s_psc_config:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:306    .text.i2s_psc_config:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:308    .text.i2s_psc_config:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:310    .text.i2s_psc_config:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:312    .text.i2s_psc_config:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:314    .text.i2s_psc_config:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:316    .text.i2s_psc_config:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:317    .text.i2s_psc_config:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:319    .text.i2s_psc_config:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:322    .text.i2s_psc_config:0000000000000018 .L0 
-     /tmp/ccfn6hy1.s:327    .text.i2s_psc_config:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:328    .text.i2s_psc_config:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:331    .text.i2s_psc_config:0000000000000026 .L0 
-     /tmp/ccfn6hy1.s:333    .text.i2s_psc_config:0000000000000028 .L0 
-     /tmp/ccfn6hy1.s:335    .text.i2s_psc_config:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:336    .text.i2s_psc_config:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:339    .text.i2s_psc_config:000000000000002c .L0 
-     /tmp/ccfn6hy1.s:341    .text.i2s_psc_config:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:343    .text.i2s_psc_config:0000000000000030 .L0 
-     /tmp/ccfn6hy1.s:346    .text.i2s_psc_config:0000000000000034 .L0 
-     /tmp/ccfn6hy1.s:347    .text.i2s_psc_config:0000000000000034 .L0 
-     /tmp/ccfn6hy1.s:349    .text.i2s_psc_config:0000000000000038 .L0 
-     /tmp/ccfn6hy1.s:351    .text.i2s_psc_config:000000000000003c .L0 
-     /tmp/ccfn6hy1.s:352    .text.i2s_psc_config:000000000000003c .L0 
-     /tmp/ccfn6hy1.s:356    .text.i2s_psc_config:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:357    .text.i2s_psc_config:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:361    .text.i2s_psc_config:0000000000000044 .L0 
-     /tmp/ccfn6hy1.s:362    .text.i2s_psc_config:0000000000000044 .L0 
-     /tmp/ccfn6hy1.s:366    .text.i2s_psc_config:0000000000000048 .L0 
-     /tmp/ccfn6hy1.s:369    .text.i2s_psc_config:000000000000004c .L0 
-     /tmp/ccfn6hy1.s:374    .text.i2s_psc_config:000000000000005c .L0 
-     /tmp/ccfn6hy1.s:378    .text.i2s_psc_config:000000000000005e .L0 
-     /tmp/ccfn6hy1.s:379    .text.i2s_psc_config:000000000000005e .L0 
-     /tmp/ccfn6hy1.s:382    .text.i2s_psc_config:0000000000000066 .L0 
-     /tmp/ccfn6hy1.s:383    .text.i2s_psc_config:0000000000000066 .L0 
-     /tmp/ccfn6hy1.s:385    .text.i2s_psc_config:0000000000000068 .L0 
-     /tmp/ccfn6hy1.s:386    .text.i2s_psc_config:0000000000000068 .L0 
-     /tmp/ccfn6hy1.s:389    .text.i2s_psc_config:000000000000006a .L0 
-     /tmp/ccfn6hy1.s:393    .text.i2s_psc_config:0000000000000072 .L0 
-     /tmp/ccfn6hy1.s:397    .text.i2s_psc_config:0000000000000076 .L0 
-     /tmp/ccfn6hy1.s:398    .text.i2s_psc_config:0000000000000076 .L0 
-     /tmp/ccfn6hy1.s:400    .text.i2s_psc_config:0000000000000078 .L0 
-     /tmp/ccfn6hy1.s:403    .text.i2s_psc_config:000000000000007a .L0 
-     /tmp/ccfn6hy1.s:406    .text.i2s_psc_config:0000000000000080 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 41
+     /tmp/ccuOprvN.s:279    .text.i2s_init:0000000000000018 .L0 
+     /tmp/ccuOprvN.s:280    .text.i2s_init:0000000000000018 .L0 
+     /tmp/ccuOprvN.s:282    .text.i2s_init:000000000000001a .L0 
+     /tmp/ccuOprvN.s:283    .text.i2s_init:000000000000001c .L0 
+     /tmp/ccuOprvN.s:290    .text.i2s_psc_config:0000000000000000 i2s_psc_config
+     /tmp/ccuOprvN.s:293    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:295    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:296    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:297    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:298    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:299    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:300    .text.i2s_psc_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:302    .text.i2s_psc_config:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:305    .text.i2s_psc_config:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:306    .text.i2s_psc_config:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:308    .text.i2s_psc_config:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:310    .text.i2s_psc_config:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:312    .text.i2s_psc_config:000000000000000c .L0 
+     /tmp/ccuOprvN.s:314    .text.i2s_psc_config:000000000000000e .L0 
+     /tmp/ccuOprvN.s:316    .text.i2s_psc_config:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:317    .text.i2s_psc_config:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:319    .text.i2s_psc_config:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:322    .text.i2s_psc_config:0000000000000018 .L0 
+     /tmp/ccuOprvN.s:327    .text.i2s_psc_config:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:328    .text.i2s_psc_config:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:331    .text.i2s_psc_config:0000000000000026 .L0 
+     /tmp/ccuOprvN.s:333    .text.i2s_psc_config:0000000000000028 .L0 
+     /tmp/ccuOprvN.s:335    .text.i2s_psc_config:000000000000002a .L0 
+     /tmp/ccuOprvN.s:336    .text.i2s_psc_config:000000000000002a .L0 
+     /tmp/ccuOprvN.s:339    .text.i2s_psc_config:000000000000002c .L0 
+     /tmp/ccuOprvN.s:341    .text.i2s_psc_config:000000000000002e .L0 
+     /tmp/ccuOprvN.s:343    .text.i2s_psc_config:0000000000000030 .L0 
+     /tmp/ccuOprvN.s:346    .text.i2s_psc_config:0000000000000034 .L0 
+     /tmp/ccuOprvN.s:347    .text.i2s_psc_config:0000000000000034 .L0 
+     /tmp/ccuOprvN.s:349    .text.i2s_psc_config:0000000000000038 .L0 
+     /tmp/ccuOprvN.s:351    .text.i2s_psc_config:000000000000003c .L0 
+     /tmp/ccuOprvN.s:352    .text.i2s_psc_config:000000000000003c .L0 
+     /tmp/ccuOprvN.s:356    .text.i2s_psc_config:000000000000003e .L0 
+     /tmp/ccuOprvN.s:357    .text.i2s_psc_config:000000000000003e .L0 
+     /tmp/ccuOprvN.s:361    .text.i2s_psc_config:0000000000000044 .L0 
+     /tmp/ccuOprvN.s:362    .text.i2s_psc_config:0000000000000044 .L0 
+     /tmp/ccuOprvN.s:366    .text.i2s_psc_config:0000000000000048 .L0 
+     /tmp/ccuOprvN.s:369    .text.i2s_psc_config:000000000000004c .L0 
+     /tmp/ccuOprvN.s:374    .text.i2s_psc_config:000000000000005c .L0 
+     /tmp/ccuOprvN.s:378    .text.i2s_psc_config:000000000000005e .L0 
+     /tmp/ccuOprvN.s:379    .text.i2s_psc_config:000000000000005e .L0 
+     /tmp/ccuOprvN.s:382    .text.i2s_psc_config:0000000000000066 .L0 
+     /tmp/ccuOprvN.s:383    .text.i2s_psc_config:0000000000000066 .L0 
+     /tmp/ccuOprvN.s:385    .text.i2s_psc_config:0000000000000068 .L0 
+     /tmp/ccuOprvN.s:386    .text.i2s_psc_config:0000000000000068 .L0 
+     /tmp/ccuOprvN.s:389    .text.i2s_psc_config:000000000000006a .L0 
+     /tmp/ccuOprvN.s:393    .text.i2s_psc_config:0000000000000072 .L0 
+     /tmp/ccuOprvN.s:397    .text.i2s_psc_config:0000000000000076 .L0 
+     /tmp/ccuOprvN.s:398    .text.i2s_psc_config:0000000000000076 .L0 
+     /tmp/ccuOprvN.s:400    .text.i2s_psc_config:0000000000000078 .L0 
+     /tmp/ccuOprvN.s:403    .text.i2s_psc_config:000000000000007a .L0 
+     /tmp/ccuOprvN.s:406    .text.i2s_psc_config:0000000000000080 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 41
 
 
-     /tmp/ccfn6hy1.s:409    .text.i2s_psc_config:0000000000000084 .L0 
-     /tmp/ccfn6hy1.s:410    .text.i2s_psc_config:0000000000000084 .L0 
-     /tmp/ccfn6hy1.s:411    .text.i2s_psc_config:0000000000000084 .L0 
-     /tmp/ccfn6hy1.s:414    .text.i2s_psc_config:0000000000000088 .L0 
-     /tmp/ccfn6hy1.s:415    .text.i2s_psc_config:0000000000000088 .L0 
-     /tmp/ccfn6hy1.s:417    .text.i2s_psc_config:000000000000008c .L0 
-     /tmp/ccfn6hy1.s:420    .text.i2s_psc_config:000000000000008e .L0 
-     /tmp/ccfn6hy1.s:421    .text.i2s_psc_config:000000000000008e .L0 
-     /tmp/ccfn6hy1.s:423    .text.i2s_psc_config:0000000000000092 .L0 
-     /tmp/ccfn6hy1.s:429    .text.i2s_psc_config:0000000000000098 .L0 
-     /tmp/ccfn6hy1.s:430    .text.i2s_psc_config:0000000000000098 .L0 
-     /tmp/ccfn6hy1.s:432    .text.i2s_psc_config:000000000000009a .L0 
-     /tmp/ccfn6hy1.s:434    .text.i2s_psc_config:000000000000009c .L0 
-     /tmp/ccfn6hy1.s:435    .text.i2s_psc_config:000000000000009c .L0 
-     /tmp/ccfn6hy1.s:437    .text.i2s_psc_config:000000000000009e .L0 
-     /tmp/ccfn6hy1.s:438    .text.i2s_psc_config:00000000000000a0 .L0 
-     /tmp/ccfn6hy1.s:439    .text.i2s_psc_config:00000000000000a0 .L0 
-     /tmp/ccfn6hy1.s:441    .text.i2s_psc_config:00000000000000a0 .L0 
-     /tmp/ccfn6hy1.s:444    .text.i2s_psc_config:00000000000000a4 .L0 
-     /tmp/ccfn6hy1.s:445    .text.i2s_psc_config:00000000000000a4 .L0 
-     /tmp/ccfn6hy1.s:449    .text.i2s_psc_config:00000000000000aa .L0 
-     /tmp/ccfn6hy1.s:450    .text.i2s_psc_config:00000000000000ac .L0 
-     /tmp/ccfn6hy1.s:454    .text.i2s_psc_config:00000000000000ae .L0 
-     /tmp/ccfn6hy1.s:459    .text.i2s_psc_config:00000000000000b0 .L0 
-     /tmp/ccfn6hy1.s:461    .text.i2s_psc_config:00000000000000b0 .L0 
-     /tmp/ccfn6hy1.s:462    .text.i2s_psc_config:00000000000000b0 .L0 
-     /tmp/ccfn6hy1.s:465    .text.i2s_psc_config:00000000000000b6 .L0 
-     /tmp/ccfn6hy1.s:471    .text.i2s_psc_config:00000000000000ba .L0 
-     /tmp/ccfn6hy1.s:472    .text.i2s_psc_config:00000000000000ba .L0 
-     /tmp/ccfn6hy1.s:475    .text.i2s_psc_config:00000000000000bc .L0 
-     /tmp/ccfn6hy1.s:479    .text.i2s_psc_config:00000000000000c4 .L0 
-     /tmp/ccfn6hy1.s:485    .text.i2s_psc_config:00000000000000ca .L0 
-     /tmp/ccfn6hy1.s:486    .text.i2s_psc_config:00000000000000ca .L0 
-     /tmp/ccfn6hy1.s:489    .text.i2s_psc_config:00000000000000cc .L0 
-     /tmp/ccfn6hy1.s:493    .text.i2s_psc_config:00000000000000d4 .L0 
-     /tmp/ccfn6hy1.s:499    .text.i2s_psc_config:00000000000000da .L0 
-     /tmp/ccfn6hy1.s:505    .text.i2s_psc_config:00000000000000e2 .L0 
-     /tmp/ccfn6hy1.s:506    .text.i2s_psc_config:00000000000000e2 .L0 
-     /tmp/ccfn6hy1.s:513    .text.i2s_psc_config:00000000000000f2 .L0 
-     /tmp/ccfn6hy1.s:520    .text.i2s_enable:0000000000000000 i2s_enable
-     /tmp/ccfn6hy1.s:523    .text.i2s_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:525    .text.i2s_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:526    .text.i2s_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:527    .text.i2s_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:531    .text.i2s_enable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:532    .text.i2s_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:539    .text.i2s_disable:0000000000000000 i2s_disable
-     /tmp/ccfn6hy1.s:542    .text.i2s_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:544    .text.i2s_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:545    .text.i2s_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:546    .text.i2s_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:550    .text.i2s_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:551    .text.i2s_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:558    .text.spi_nss_output_enable:0000000000000000 spi_nss_output_enable
-     /tmp/ccfn6hy1.s:561    .text.spi_nss_output_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:563    .text.spi_nss_output_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:564    .text.spi_nss_output_enable:0000000000000000 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 42
+     /tmp/ccuOprvN.s:409    .text.i2s_psc_config:0000000000000084 .L0 
+     /tmp/ccuOprvN.s:410    .text.i2s_psc_config:0000000000000084 .L0 
+     /tmp/ccuOprvN.s:411    .text.i2s_psc_config:0000000000000084 .L0 
+     /tmp/ccuOprvN.s:414    .text.i2s_psc_config:0000000000000088 .L0 
+     /tmp/ccuOprvN.s:415    .text.i2s_psc_config:0000000000000088 .L0 
+     /tmp/ccuOprvN.s:417    .text.i2s_psc_config:000000000000008c .L0 
+     /tmp/ccuOprvN.s:420    .text.i2s_psc_config:000000000000008e .L0 
+     /tmp/ccuOprvN.s:421    .text.i2s_psc_config:000000000000008e .L0 
+     /tmp/ccuOprvN.s:423    .text.i2s_psc_config:0000000000000092 .L0 
+     /tmp/ccuOprvN.s:429    .text.i2s_psc_config:0000000000000098 .L0 
+     /tmp/ccuOprvN.s:430    .text.i2s_psc_config:0000000000000098 .L0 
+     /tmp/ccuOprvN.s:432    .text.i2s_psc_config:000000000000009a .L0 
+     /tmp/ccuOprvN.s:434    .text.i2s_psc_config:000000000000009c .L0 
+     /tmp/ccuOprvN.s:435    .text.i2s_psc_config:000000000000009c .L0 
+     /tmp/ccuOprvN.s:437    .text.i2s_psc_config:000000000000009e .L0 
+     /tmp/ccuOprvN.s:438    .text.i2s_psc_config:00000000000000a0 .L0 
+     /tmp/ccuOprvN.s:439    .text.i2s_psc_config:00000000000000a0 .L0 
+     /tmp/ccuOprvN.s:441    .text.i2s_psc_config:00000000000000a0 .L0 
+     /tmp/ccuOprvN.s:444    .text.i2s_psc_config:00000000000000a4 .L0 
+     /tmp/ccuOprvN.s:445    .text.i2s_psc_config:00000000000000a4 .L0 
+     /tmp/ccuOprvN.s:449    .text.i2s_psc_config:00000000000000aa .L0 
+     /tmp/ccuOprvN.s:450    .text.i2s_psc_config:00000000000000ac .L0 
+     /tmp/ccuOprvN.s:454    .text.i2s_psc_config:00000000000000ae .L0 
+     /tmp/ccuOprvN.s:459    .text.i2s_psc_config:00000000000000b0 .L0 
+     /tmp/ccuOprvN.s:461    .text.i2s_psc_config:00000000000000b0 .L0 
+     /tmp/ccuOprvN.s:462    .text.i2s_psc_config:00000000000000b0 .L0 
+     /tmp/ccuOprvN.s:465    .text.i2s_psc_config:00000000000000b6 .L0 
+     /tmp/ccuOprvN.s:471    .text.i2s_psc_config:00000000000000ba .L0 
+     /tmp/ccuOprvN.s:472    .text.i2s_psc_config:00000000000000ba .L0 
+     /tmp/ccuOprvN.s:475    .text.i2s_psc_config:00000000000000bc .L0 
+     /tmp/ccuOprvN.s:479    .text.i2s_psc_config:00000000000000c4 .L0 
+     /tmp/ccuOprvN.s:485    .text.i2s_psc_config:00000000000000ca .L0 
+     /tmp/ccuOprvN.s:486    .text.i2s_psc_config:00000000000000ca .L0 
+     /tmp/ccuOprvN.s:489    .text.i2s_psc_config:00000000000000cc .L0 
+     /tmp/ccuOprvN.s:493    .text.i2s_psc_config:00000000000000d4 .L0 
+     /tmp/ccuOprvN.s:499    .text.i2s_psc_config:00000000000000da .L0 
+     /tmp/ccuOprvN.s:505    .text.i2s_psc_config:00000000000000e2 .L0 
+     /tmp/ccuOprvN.s:506    .text.i2s_psc_config:00000000000000e2 .L0 
+     /tmp/ccuOprvN.s:513    .text.i2s_psc_config:00000000000000f2 .L0 
+     /tmp/ccuOprvN.s:520    .text.i2s_enable:0000000000000000 i2s_enable
+     /tmp/ccuOprvN.s:523    .text.i2s_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:525    .text.i2s_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:526    .text.i2s_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:527    .text.i2s_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:531    .text.i2s_enable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:532    .text.i2s_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:539    .text.i2s_disable:0000000000000000 i2s_disable
+     /tmp/ccuOprvN.s:542    .text.i2s_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:544    .text.i2s_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:545    .text.i2s_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:546    .text.i2s_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:550    .text.i2s_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:551    .text.i2s_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:558    .text.spi_nss_output_enable:0000000000000000 spi_nss_output_enable
+     /tmp/ccuOprvN.s:561    .text.spi_nss_output_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:563    .text.spi_nss_output_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:564    .text.spi_nss_output_enable:0000000000000000 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 42
 
 
-     /tmp/ccfn6hy1.s:565    .text.spi_nss_output_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:569    .text.spi_nss_output_enable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:570    .text.spi_nss_output_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:577    .text.spi_nss_output_disable:0000000000000000 spi_nss_output_disable
-     /tmp/ccfn6hy1.s:580    .text.spi_nss_output_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:582    .text.spi_nss_output_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:583    .text.spi_nss_output_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:584    .text.spi_nss_output_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:588    .text.spi_nss_output_disable:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:589    .text.spi_nss_output_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:596    .text.spi_nss_internal_high:0000000000000000 spi_nss_internal_high
-     /tmp/ccfn6hy1.s:599    .text.spi_nss_internal_high:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:601    .text.spi_nss_internal_high:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:602    .text.spi_nss_internal_high:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:603    .text.spi_nss_internal_high:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:607    .text.spi_nss_internal_high:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:608    .text.spi_nss_internal_high:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:615    .text.spi_nss_internal_low:0000000000000000 spi_nss_internal_low
-     /tmp/ccfn6hy1.s:618    .text.spi_nss_internal_low:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:620    .text.spi_nss_internal_low:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:621    .text.spi_nss_internal_low:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:622    .text.spi_nss_internal_low:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:626    .text.spi_nss_internal_low:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:627    .text.spi_nss_internal_low:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:634    .text.spi_dma_enable:0000000000000000 spi_dma_enable
-     /tmp/ccfn6hy1.s:637    .text.spi_dma_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:639    .text.spi_dma_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:640    .text.spi_dma_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:641    .text.spi_dma_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:643    .text.spi_dma_enable:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:645    .text.spi_dma_enable:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:646    .text.spi_dma_enable:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:651    .text.spi_dma_enable:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:652    .text.spi_dma_enable:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:655    .text.spi_dma_enable:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:656    .text.spi_dma_enable:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:663    .text.spi_dma_disable:0000000000000000 spi_dma_disable
-     /tmp/ccfn6hy1.s:666    .text.spi_dma_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:668    .text.spi_dma_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:669    .text.spi_dma_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:670    .text.spi_dma_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:672    .text.spi_dma_disable:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:674    .text.spi_dma_disable:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:675    .text.spi_dma_disable:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:680    .text.spi_dma_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:681    .text.spi_dma_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:684    .text.spi_dma_disable:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:685    .text.spi_dma_disable:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:692    .text.spi_i2s_data_frame_format_config:0000000000000000 spi_i2s_data_frame_format_config
-     /tmp/ccfn6hy1.s:695    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:697    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:698    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:699    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:705    .text.spi_i2s_data_frame_format_config:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:706    .text.spi_i2s_data_frame_format_config:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:711    .text.spi_i2s_data_frame_format_config:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:712    .text.spi_i2s_data_frame_format_config:0000000000000014 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 43
+     /tmp/ccuOprvN.s:565    .text.spi_nss_output_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:569    .text.spi_nss_output_enable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:570    .text.spi_nss_output_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:577    .text.spi_nss_output_disable:0000000000000000 spi_nss_output_disable
+     /tmp/ccuOprvN.s:580    .text.spi_nss_output_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:582    .text.spi_nss_output_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:583    .text.spi_nss_output_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:584    .text.spi_nss_output_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:588    .text.spi_nss_output_disable:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:589    .text.spi_nss_output_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:596    .text.spi_nss_internal_high:0000000000000000 spi_nss_internal_high
+     /tmp/ccuOprvN.s:599    .text.spi_nss_internal_high:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:601    .text.spi_nss_internal_high:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:602    .text.spi_nss_internal_high:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:603    .text.spi_nss_internal_high:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:607    .text.spi_nss_internal_high:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:608    .text.spi_nss_internal_high:000000000000000a .L0 
+     /tmp/ccuOprvN.s:615    .text.spi_nss_internal_low:0000000000000000 spi_nss_internal_low
+     /tmp/ccuOprvN.s:618    .text.spi_nss_internal_low:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:620    .text.spi_nss_internal_low:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:621    .text.spi_nss_internal_low:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:622    .text.spi_nss_internal_low:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:626    .text.spi_nss_internal_low:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:627    .text.spi_nss_internal_low:000000000000000a .L0 
+     /tmp/ccuOprvN.s:634    .text.spi_dma_enable:0000000000000000 spi_dma_enable
+     /tmp/ccuOprvN.s:637    .text.spi_dma_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:639    .text.spi_dma_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:640    .text.spi_dma_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:641    .text.spi_dma_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:643    .text.spi_dma_enable:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:645    .text.spi_dma_enable:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:646    .text.spi_dma_enable:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:651    .text.spi_dma_enable:000000000000000c .L0 
+     /tmp/ccuOprvN.s:652    .text.spi_dma_enable:000000000000000c .L0 
+     /tmp/ccuOprvN.s:655    .text.spi_dma_enable:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:656    .text.spi_dma_enable:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:663    .text.spi_dma_disable:0000000000000000 spi_dma_disable
+     /tmp/ccuOprvN.s:666    .text.spi_dma_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:668    .text.spi_dma_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:669    .text.spi_dma_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:670    .text.spi_dma_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:672    .text.spi_dma_disable:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:674    .text.spi_dma_disable:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:675    .text.spi_dma_disable:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:680    .text.spi_dma_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:681    .text.spi_dma_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:684    .text.spi_dma_disable:000000000000000e .L0 
+     /tmp/ccuOprvN.s:685    .text.spi_dma_disable:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:692    .text.spi_i2s_data_frame_format_config:0000000000000000 spi_i2s_data_frame_format_config
+     /tmp/ccuOprvN.s:695    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:697    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:698    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:699    .text.spi_i2s_data_frame_format_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:705    .text.spi_i2s_data_frame_format_config:000000000000000c .L0 
+     /tmp/ccuOprvN.s:706    .text.spi_i2s_data_frame_format_config:000000000000000c .L0 
+     /tmp/ccuOprvN.s:711    .text.spi_i2s_data_frame_format_config:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:712    .text.spi_i2s_data_frame_format_config:0000000000000014 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 43
 
 
-     /tmp/ccfn6hy1.s:719    .text.spi_i2s_data_transmit:0000000000000000 spi_i2s_data_transmit
-     /tmp/ccfn6hy1.s:722    .text.spi_i2s_data_transmit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:724    .text.spi_i2s_data_transmit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:725    .text.spi_i2s_data_transmit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:726    .text.spi_i2s_data_transmit:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:728    .text.spi_i2s_data_transmit:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:729    .text.spi_i2s_data_transmit:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:736    .text.spi_i2s_data_receive:0000000000000000 spi_i2s_data_receive
-     /tmp/ccfn6hy1.s:739    .text.spi_i2s_data_receive:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:741    .text.spi_i2s_data_receive:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:742    .text.spi_i2s_data_receive:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:743    .text.spi_i2s_data_receive:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:746    .text.spi_i2s_data_receive:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:749    .text.spi_i2s_data_receive:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:756    .text.spi_bidirectional_transfer_config:0000000000000000 spi_bidirectional_transfer_config
-     /tmp/ccfn6hy1.s:759    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:761    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:762    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:763    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:766    .text.spi_bidirectional_transfer_config:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:767    .text.spi_bidirectional_transfer_config:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:773    .text.spi_bidirectional_transfer_config:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:776    .text.spi_bidirectional_transfer_config:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:777    .text.spi_bidirectional_transfer_config:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:782    .text.spi_bidirectional_transfer_config:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:789    .text.spi_crc_polynomial_set:0000000000000000 spi_crc_polynomial_set
-     /tmp/ccfn6hy1.s:792    .text.spi_crc_polynomial_set:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:794    .text.spi_crc_polynomial_set:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:795    .text.spi_crc_polynomial_set:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:796    .text.spi_crc_polynomial_set:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:801    .text.spi_crc_polynomial_set:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:802    .text.spi_crc_polynomial_set:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:804    .text.spi_crc_polynomial_set:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:805    .text.spi_crc_polynomial_set:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:812    .text.spi_crc_polynomial_get:0000000000000000 spi_crc_polynomial_get
-     /tmp/ccfn6hy1.s:815    .text.spi_crc_polynomial_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:817    .text.spi_crc_polynomial_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:818    .text.spi_crc_polynomial_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:819    .text.spi_crc_polynomial_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:822    .text.spi_crc_polynomial_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:825    .text.spi_crc_polynomial_get:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:832    .text.spi_crc_on:0000000000000000 spi_crc_on
-     /tmp/ccfn6hy1.s:835    .text.spi_crc_on:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:837    .text.spi_crc_on:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:838    .text.spi_crc_on:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:839    .text.spi_crc_on:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:844    .text.spi_crc_on:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:845    .text.spi_crc_on:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:852    .text.spi_crc_off:0000000000000000 spi_crc_off
-     /tmp/ccfn6hy1.s:855    .text.spi_crc_off:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:857    .text.spi_crc_off:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:858    .text.spi_crc_off:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:859    .text.spi_crc_off:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:865    .text.spi_crc_off:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:866    .text.spi_crc_off:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:873    .text.spi_crc_next:0000000000000000 spi_crc_next
-     /tmp/ccfn6hy1.s:876    .text.spi_crc_next:0000000000000000 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 44
+     /tmp/ccuOprvN.s:719    .text.spi_i2s_data_transmit:0000000000000000 spi_i2s_data_transmit
+     /tmp/ccuOprvN.s:722    .text.spi_i2s_data_transmit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:724    .text.spi_i2s_data_transmit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:725    .text.spi_i2s_data_transmit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:726    .text.spi_i2s_data_transmit:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:728    .text.spi_i2s_data_transmit:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:729    .text.spi_i2s_data_transmit:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:736    .text.spi_i2s_data_receive:0000000000000000 spi_i2s_data_receive
+     /tmp/ccuOprvN.s:739    .text.spi_i2s_data_receive:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:741    .text.spi_i2s_data_receive:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:742    .text.spi_i2s_data_receive:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:743    .text.spi_i2s_data_receive:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:746    .text.spi_i2s_data_receive:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:749    .text.spi_i2s_data_receive:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:756    .text.spi_bidirectional_transfer_config:0000000000000000 spi_bidirectional_transfer_config
+     /tmp/ccuOprvN.s:759    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:761    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:762    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:763    .text.spi_bidirectional_transfer_config:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:766    .text.spi_bidirectional_transfer_config:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:767    .text.spi_bidirectional_transfer_config:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:773    .text.spi_bidirectional_transfer_config:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:776    .text.spi_bidirectional_transfer_config:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:777    .text.spi_bidirectional_transfer_config:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:782    .text.spi_bidirectional_transfer_config:000000000000001a .L0 
+     /tmp/ccuOprvN.s:789    .text.spi_crc_polynomial_set:0000000000000000 spi_crc_polynomial_set
+     /tmp/ccuOprvN.s:792    .text.spi_crc_polynomial_set:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:794    .text.spi_crc_polynomial_set:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:795    .text.spi_crc_polynomial_set:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:796    .text.spi_crc_polynomial_set:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:801    .text.spi_crc_polynomial_set:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:802    .text.spi_crc_polynomial_set:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:804    .text.spi_crc_polynomial_set:000000000000000a .L0 
+     /tmp/ccuOprvN.s:805    .text.spi_crc_polynomial_set:000000000000000c .L0 
+     /tmp/ccuOprvN.s:812    .text.spi_crc_polynomial_get:0000000000000000 spi_crc_polynomial_get
+     /tmp/ccuOprvN.s:815    .text.spi_crc_polynomial_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:817    .text.spi_crc_polynomial_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:818    .text.spi_crc_polynomial_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:819    .text.spi_crc_polynomial_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:822    .text.spi_crc_polynomial_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:825    .text.spi_crc_polynomial_get:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:832    .text.spi_crc_on:0000000000000000 spi_crc_on
+     /tmp/ccuOprvN.s:835    .text.spi_crc_on:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:837    .text.spi_crc_on:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:838    .text.spi_crc_on:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:839    .text.spi_crc_on:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:844    .text.spi_crc_on:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:845    .text.spi_crc_on:000000000000000a .L0 
+     /tmp/ccuOprvN.s:852    .text.spi_crc_off:0000000000000000 spi_crc_off
+     /tmp/ccuOprvN.s:855    .text.spi_crc_off:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:857    .text.spi_crc_off:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:858    .text.spi_crc_off:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:859    .text.spi_crc_off:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:865    .text.spi_crc_off:000000000000000a .L0 
+     /tmp/ccuOprvN.s:866    .text.spi_crc_off:000000000000000c .L0 
+     /tmp/ccuOprvN.s:873    .text.spi_crc_next:0000000000000000 spi_crc_next
+     /tmp/ccuOprvN.s:876    .text.spi_crc_next:0000000000000000 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 44
 
 
-     /tmp/ccfn6hy1.s:878    .text.spi_crc_next:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:879    .text.spi_crc_next:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:880    .text.spi_crc_next:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:885    .text.spi_crc_next:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:886    .text.spi_crc_next:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:893    .text.spi_crc_get:0000000000000000 spi_crc_get
-     /tmp/ccfn6hy1.s:896    .text.spi_crc_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:898    .text.spi_crc_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:899    .text.spi_crc_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:900    .text.spi_crc_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:902    .text.spi_crc_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:903    .text.spi_crc_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:906    .text.spi_crc_get:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:912    .text.spi_crc_get:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:913    .text.spi_crc_get:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:916    .text.spi_crc_get:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:919    .text.spi_crc_get:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:920    .text.spi_crc_get:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:927    .text.spi_ti_mode_enable:0000000000000000 spi_ti_mode_enable
-     /tmp/ccfn6hy1.s:930    .text.spi_ti_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:932    .text.spi_ti_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:933    .text.spi_ti_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:934    .text.spi_ti_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:938    .text.spi_ti_mode_enable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:939    .text.spi_ti_mode_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:946    .text.spi_ti_mode_disable:0000000000000000 spi_ti_mode_disable
-     /tmp/ccfn6hy1.s:949    .text.spi_ti_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:951    .text.spi_ti_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:952    .text.spi_ti_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:953    .text.spi_ti_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:957    .text.spi_ti_mode_disable:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:958    .text.spi_ti_mode_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:965    .text.spi_nssp_mode_enable:0000000000000000 spi_nssp_mode_enable
-     /tmp/ccfn6hy1.s:968    .text.spi_nssp_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:970    .text.spi_nssp_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:971    .text.spi_nssp_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:972    .text.spi_nssp_mode_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:976    .text.spi_nssp_mode_enable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:977    .text.spi_nssp_mode_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:984    .text.spi_nssp_mode_disable:0000000000000000 spi_nssp_mode_disable
-     /tmp/ccfn6hy1.s:987    .text.spi_nssp_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:989    .text.spi_nssp_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:990    .text.spi_nssp_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:991    .text.spi_nssp_mode_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:995    .text.spi_nssp_mode_disable:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:996    .text.spi_nssp_mode_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:1003   .text.spi_i2s_interrupt_enable:0000000000000000 spi_i2s_interrupt_enable
-     /tmp/ccfn6hy1.s:1006   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1008   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1009   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1015   .text.spi_i2s_interrupt_enable:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:1016   .text.spi_i2s_interrupt_enable:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:1020   .text.spi_i2s_interrupt_enable:0000000000000016 .L0 
-     /tmp/ccfn6hy1.s:1021   .text.spi_i2s_interrupt_enable:0000000000000016 .L0 
-     /tmp/ccfn6hy1.s:1026   .text.spi_i2s_interrupt_enable:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1027   .text.spi_i2s_interrupt_enable:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1031   .text.spi_i2s_interrupt_enable:0000000000000022 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 45
+     /tmp/ccuOprvN.s:878    .text.spi_crc_next:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:879    .text.spi_crc_next:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:880    .text.spi_crc_next:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:885    .text.spi_crc_next:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:886    .text.spi_crc_next:000000000000000a .L0 
+     /tmp/ccuOprvN.s:893    .text.spi_crc_get:0000000000000000 spi_crc_get
+     /tmp/ccuOprvN.s:896    .text.spi_crc_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:898    .text.spi_crc_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:899    .text.spi_crc_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:900    .text.spi_crc_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:902    .text.spi_crc_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:903    .text.spi_crc_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:906    .text.spi_crc_get:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:912    .text.spi_crc_get:000000000000000a .L0 
+     /tmp/ccuOprvN.s:913    .text.spi_crc_get:000000000000000a .L0 
+     /tmp/ccuOprvN.s:916    .text.spi_crc_get:000000000000000c .L0 
+     /tmp/ccuOprvN.s:919    .text.spi_crc_get:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:920    .text.spi_crc_get:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:927    .text.spi_ti_mode_enable:0000000000000000 spi_ti_mode_enable
+     /tmp/ccuOprvN.s:930    .text.spi_ti_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:932    .text.spi_ti_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:933    .text.spi_ti_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:934    .text.spi_ti_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:938    .text.spi_ti_mode_enable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:939    .text.spi_ti_mode_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:946    .text.spi_ti_mode_disable:0000000000000000 spi_ti_mode_disable
+     /tmp/ccuOprvN.s:949    .text.spi_ti_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:951    .text.spi_ti_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:952    .text.spi_ti_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:953    .text.spi_ti_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:957    .text.spi_ti_mode_disable:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:958    .text.spi_ti_mode_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:965    .text.spi_nssp_mode_enable:0000000000000000 spi_nssp_mode_enable
+     /tmp/ccuOprvN.s:968    .text.spi_nssp_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:970    .text.spi_nssp_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:971    .text.spi_nssp_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:972    .text.spi_nssp_mode_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:976    .text.spi_nssp_mode_enable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:977    .text.spi_nssp_mode_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:984    .text.spi_nssp_mode_disable:0000000000000000 spi_nssp_mode_disable
+     /tmp/ccuOprvN.s:987    .text.spi_nssp_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:989    .text.spi_nssp_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:990    .text.spi_nssp_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:991    .text.spi_nssp_mode_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:995    .text.spi_nssp_mode_disable:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:996    .text.spi_nssp_mode_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:1003   .text.spi_i2s_interrupt_enable:0000000000000000 spi_i2s_interrupt_enable
+     /tmp/ccuOprvN.s:1006   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1008   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1009   .text.spi_i2s_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1015   .text.spi_i2s_interrupt_enable:000000000000000e .L0 
+     /tmp/ccuOprvN.s:1016   .text.spi_i2s_interrupt_enable:000000000000000e .L0 
+     /tmp/ccuOprvN.s:1020   .text.spi_i2s_interrupt_enable:0000000000000016 .L0 
+     /tmp/ccuOprvN.s:1021   .text.spi_i2s_interrupt_enable:0000000000000016 .L0 
+     /tmp/ccuOprvN.s:1026   .text.spi_i2s_interrupt_enable:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1027   .text.spi_i2s_interrupt_enable:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1031   .text.spi_i2s_interrupt_enable:0000000000000022 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 45
 
 
-     /tmp/ccfn6hy1.s:1034   .text.spi_i2s_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccfn6hy1.s:1035   .text.spi_i2s_interrupt_enable:0000000000000024 .L0 
-     /tmp/ccfn6hy1.s:1039   .text.spi_i2s_interrupt_enable:000000000000002c .L0 
-     /tmp/ccfn6hy1.s:1040   .text.spi_i2s_interrupt_enable:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:1047   .text.spi_i2s_interrupt_disable:0000000000000000 spi_i2s_interrupt_disable
-     /tmp/ccfn6hy1.s:1050   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1052   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1053   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1059   .text.spi_i2s_interrupt_disable:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:1060   .text.spi_i2s_interrupt_disable:000000000000000e .L0 
-     /tmp/ccfn6hy1.s:1064   .text.spi_i2s_interrupt_disable:0000000000000016 .L0 
-     /tmp/ccfn6hy1.s:1065   .text.spi_i2s_interrupt_disable:0000000000000016 .L0 
-     /tmp/ccfn6hy1.s:1070   .text.spi_i2s_interrupt_disable:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1071   .text.spi_i2s_interrupt_disable:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1075   .text.spi_i2s_interrupt_disable:0000000000000022 .L0 
-     /tmp/ccfn6hy1.s:1078   .text.spi_i2s_interrupt_disable:0000000000000024 .L0 
-     /tmp/ccfn6hy1.s:1079   .text.spi_i2s_interrupt_disable:0000000000000024 .L0 
-     /tmp/ccfn6hy1.s:1083   .text.spi_i2s_interrupt_disable:000000000000002c .L0 
-     /tmp/ccfn6hy1.s:1084   .text.spi_i2s_interrupt_disable:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:1091   .text.spi_i2s_interrupt_flag_get:0000000000000000 spi_i2s_interrupt_flag_get
-     /tmp/ccfn6hy1.s:1094   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1096   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1097   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1098   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1101   .text.spi_i2s_interrupt_flag_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:1102   .text.spi_i2s_interrupt_flag_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:1105   .text.spi_i2s_interrupt_flag_get:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:1128   .text.spi_i2s_interrupt_flag_get:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1129   .text.spi_i2s_interrupt_flag_get:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:1132   .text.spi_i2s_interrupt_flag_get:000000000000001c .L0 
-     /tmp/ccfn6hy1.s:1133   .text.spi_i2s_interrupt_flag_get:000000000000001c .L0 
-     /tmp/ccfn6hy1.s:1137   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:1138   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:1139   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
-     /tmp/ccfn6hy1.s:1141   .text.spi_i2s_interrupt_flag_get:0000000000000022 .L0 
-     /tmp/ccfn6hy1.s:1145   .text.spi_i2s_interrupt_flag_get:0000000000000026 .L0 
-     /tmp/ccfn6hy1.s:1151   .text.spi_i2s_interrupt_flag_get:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:1152   .text.spi_i2s_interrupt_flag_get:000000000000002a .L0 
-     /tmp/ccfn6hy1.s:1155   .text.spi_i2s_interrupt_flag_get:000000000000002c .L0 
-     /tmp/ccfn6hy1.s:1156   .text.spi_i2s_interrupt_flag_get:000000000000002c .L0 
-     /tmp/ccfn6hy1.s:1159   .text.spi_i2s_interrupt_flag_get:0000000000000030 .L0 
-     /tmp/ccfn6hy1.s:1162   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L0 
-     /tmp/ccfn6hy1.s:1163   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L0 
-     /tmp/ccfn6hy1.s:1166   .text.spi_i2s_interrupt_flag_get:0000000000000036 .L0 
-     /tmp/ccfn6hy1.s:1167   .text.spi_i2s_interrupt_flag_get:0000000000000036 .L0 
-     /tmp/ccfn6hy1.s:1170   .text.spi_i2s_interrupt_flag_get:000000000000003a .L0 
-     /tmp/ccfn6hy1.s:1173   .text.spi_i2s_interrupt_flag_get:000000000000003c .L0 
-     /tmp/ccfn6hy1.s:1174   .text.spi_i2s_interrupt_flag_get:000000000000003c .L0 
-     /tmp/ccfn6hy1.s:1177   .text.spi_i2s_interrupt_flag_get:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:1178   .text.spi_i2s_interrupt_flag_get:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:1181   .text.spi_i2s_interrupt_flag_get:0000000000000042 .L0 
-     /tmp/ccfn6hy1.s:1184   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L0 
-     /tmp/ccfn6hy1.s:1185   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L0 
-     /tmp/ccfn6hy1.s:1188   .text.spi_i2s_interrupt_flag_get:0000000000000048 .L0 
-     /tmp/ccfn6hy1.s:1189   .text.spi_i2s_interrupt_flag_get:0000000000000048 .L0 
-     /tmp/ccfn6hy1.s:1192   .text.spi_i2s_interrupt_flag_get:000000000000004c .L0 
-     /tmp/ccfn6hy1.s:1195   .text.spi_i2s_interrupt_flag_get:000000000000004e .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 46
+     /tmp/ccuOprvN.s:1034   .text.spi_i2s_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccuOprvN.s:1035   .text.spi_i2s_interrupt_enable:0000000000000024 .L0 
+     /tmp/ccuOprvN.s:1039   .text.spi_i2s_interrupt_enable:000000000000002c .L0 
+     /tmp/ccuOprvN.s:1040   .text.spi_i2s_interrupt_enable:000000000000002e .L0 
+     /tmp/ccuOprvN.s:1047   .text.spi_i2s_interrupt_disable:0000000000000000 spi_i2s_interrupt_disable
+     /tmp/ccuOprvN.s:1050   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1052   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1053   .text.spi_i2s_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1059   .text.spi_i2s_interrupt_disable:000000000000000e .L0 
+     /tmp/ccuOprvN.s:1060   .text.spi_i2s_interrupt_disable:000000000000000e .L0 
+     /tmp/ccuOprvN.s:1064   .text.spi_i2s_interrupt_disable:0000000000000016 .L0 
+     /tmp/ccuOprvN.s:1065   .text.spi_i2s_interrupt_disable:0000000000000016 .L0 
+     /tmp/ccuOprvN.s:1070   .text.spi_i2s_interrupt_disable:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1071   .text.spi_i2s_interrupt_disable:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1075   .text.spi_i2s_interrupt_disable:0000000000000022 .L0 
+     /tmp/ccuOprvN.s:1078   .text.spi_i2s_interrupt_disable:0000000000000024 .L0 
+     /tmp/ccuOprvN.s:1079   .text.spi_i2s_interrupt_disable:0000000000000024 .L0 
+     /tmp/ccuOprvN.s:1083   .text.spi_i2s_interrupt_disable:000000000000002c .L0 
+     /tmp/ccuOprvN.s:1084   .text.spi_i2s_interrupt_disable:000000000000002e .L0 
+     /tmp/ccuOprvN.s:1091   .text.spi_i2s_interrupt_flag_get:0000000000000000 spi_i2s_interrupt_flag_get
+     /tmp/ccuOprvN.s:1094   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1096   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1097   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1098   .text.spi_i2s_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1101   .text.spi_i2s_interrupt_flag_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:1102   .text.spi_i2s_interrupt_flag_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:1105   .text.spi_i2s_interrupt_flag_get:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:1128   .text.spi_i2s_interrupt_flag_get:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1129   .text.spi_i2s_interrupt_flag_get:000000000000001a .L0 
+     /tmp/ccuOprvN.s:1132   .text.spi_i2s_interrupt_flag_get:000000000000001c .L0 
+     /tmp/ccuOprvN.s:1133   .text.spi_i2s_interrupt_flag_get:000000000000001c .L0 
+     /tmp/ccuOprvN.s:1137   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:1138   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:1139   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L0 
+     /tmp/ccuOprvN.s:1141   .text.spi_i2s_interrupt_flag_get:0000000000000022 .L0 
+     /tmp/ccuOprvN.s:1145   .text.spi_i2s_interrupt_flag_get:0000000000000026 .L0 
+     /tmp/ccuOprvN.s:1151   .text.spi_i2s_interrupt_flag_get:000000000000002a .L0 
+     /tmp/ccuOprvN.s:1152   .text.spi_i2s_interrupt_flag_get:000000000000002a .L0 
+     /tmp/ccuOprvN.s:1155   .text.spi_i2s_interrupt_flag_get:000000000000002c .L0 
+     /tmp/ccuOprvN.s:1156   .text.spi_i2s_interrupt_flag_get:000000000000002c .L0 
+     /tmp/ccuOprvN.s:1159   .text.spi_i2s_interrupt_flag_get:0000000000000030 .L0 
+     /tmp/ccuOprvN.s:1162   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L0 
+     /tmp/ccuOprvN.s:1163   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L0 
+     /tmp/ccuOprvN.s:1166   .text.spi_i2s_interrupt_flag_get:0000000000000036 .L0 
+     /tmp/ccuOprvN.s:1167   .text.spi_i2s_interrupt_flag_get:0000000000000036 .L0 
+     /tmp/ccuOprvN.s:1170   .text.spi_i2s_interrupt_flag_get:000000000000003a .L0 
+     /tmp/ccuOprvN.s:1173   .text.spi_i2s_interrupt_flag_get:000000000000003c .L0 
+     /tmp/ccuOprvN.s:1174   .text.spi_i2s_interrupt_flag_get:000000000000003c .L0 
+     /tmp/ccuOprvN.s:1177   .text.spi_i2s_interrupt_flag_get:000000000000003e .L0 
+     /tmp/ccuOprvN.s:1178   .text.spi_i2s_interrupt_flag_get:000000000000003e .L0 
+     /tmp/ccuOprvN.s:1181   .text.spi_i2s_interrupt_flag_get:0000000000000042 .L0 
+     /tmp/ccuOprvN.s:1184   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L0 
+     /tmp/ccuOprvN.s:1185   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L0 
+     /tmp/ccuOprvN.s:1188   .text.spi_i2s_interrupt_flag_get:0000000000000048 .L0 
+     /tmp/ccuOprvN.s:1189   .text.spi_i2s_interrupt_flag_get:0000000000000048 .L0 
+     /tmp/ccuOprvN.s:1192   .text.spi_i2s_interrupt_flag_get:000000000000004c .L0 
+     /tmp/ccuOprvN.s:1195   .text.spi_i2s_interrupt_flag_get:000000000000004e .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 46
 
 
-     /tmp/ccfn6hy1.s:1196   .text.spi_i2s_interrupt_flag_get:000000000000004e .L0 
-     /tmp/ccfn6hy1.s:1199   .text.spi_i2s_interrupt_flag_get:0000000000000052 .L0 
-     /tmp/ccfn6hy1.s:1200   .text.spi_i2s_interrupt_flag_get:0000000000000052 .L0 
-     /tmp/ccfn6hy1.s:1203   .text.spi_i2s_interrupt_flag_get:0000000000000056 .L0 
-     /tmp/ccfn6hy1.s:1206   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L0 
-     /tmp/ccfn6hy1.s:1207   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L0 
-     /tmp/ccfn6hy1.s:1210   .text.spi_i2s_interrupt_flag_get:000000000000005a .L0 
-     /tmp/ccfn6hy1.s:1211   .text.spi_i2s_interrupt_flag_get:000000000000005a .L0 
-     /tmp/ccfn6hy1.s:1214   .text.spi_i2s_interrupt_flag_get:000000000000005e .L0 
-     /tmp/ccfn6hy1.s:1215   .text.spi_i2s_interrupt_flag_get:0000000000000060 .L0 
-     /tmp/ccfn6hy1.s:1222   .text.spi_i2s_flag_get:0000000000000000 spi_i2s_flag_get
-     /tmp/ccfn6hy1.s:1225   .text.spi_i2s_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1227   .text.spi_i2s_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1228   .text.spi_i2s_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1229   .text.spi_i2s_flag_get:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1232   .text.spi_i2s_flag_get:0000000000000002 .L0 
-     /tmp/ccfn6hy1.s:1234   .text.spi_i2s_flag_get:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:1236   .text.spi_i2s_flag_get:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:1243   .text.spi_crc_error_clear:0000000000000000 spi_crc_error_clear
-     /tmp/ccfn6hy1.s:1246   .text.spi_crc_error_clear:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1248   .text.spi_crc_error_clear:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1249   .text.spi_crc_error_clear:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1250   .text.spi_crc_error_clear:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:1254   .text.spi_crc_error_clear:0000000000000006 .L0 
-     /tmp/ccfn6hy1.s:1255   .text.spi_crc_error_clear:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:112    .text.spi_i2s_deinit:000000000000007a .L0 
-     /tmp/ccfn6hy1.s:144    .text.spi_struct_para_init:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:206    .text.spi_init:000000000000003e .L0 
-     /tmp/ccfn6hy1.s:225    .text.spi_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:244    .text.spi_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:286    .text.i2s_init:000000000000001c .L0 
-     /tmp/ccfn6hy1.s:516    .text.i2s_psc_config:00000000000000f2 .L0 
-     /tmp/ccfn6hy1.s:535    .text.i2s_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:554    .text.i2s_disable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:573    .text.spi_nss_output_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:592    .text.spi_nss_output_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:611    .text.spi_nss_internal_high:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:630    .text.spi_nss_internal_low:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:659    .text.spi_dma_enable:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:688    .text.spi_dma_disable:0000000000000010 .L0 
-     /tmp/ccfn6hy1.s:715    .text.spi_i2s_data_frame_format_config:0000000000000014 .L0 
-     /tmp/ccfn6hy1.s:732    .text.spi_i2s_data_transmit:0000000000000004 .L0 
-     /tmp/ccfn6hy1.s:752    .text.spi_i2s_data_receive:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:785    .text.spi_bidirectional_transfer_config:000000000000001a .L0 
-     /tmp/ccfn6hy1.s:808    .text.spi_crc_polynomial_set:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:828    .text.spi_crc_polynomial_get:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:848    .text.spi_crc_on:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:869    .text.spi_crc_off:000000000000000c .L0 
-     /tmp/ccfn6hy1.s:889    .text.spi_crc_next:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:923    .text.spi_crc_get:0000000000000012 .L0 
-     /tmp/ccfn6hy1.s:942    .text.spi_ti_mode_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:961    .text.spi_ti_mode_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:980    .text.spi_nssp_mode_enable:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:999    .text.spi_nssp_mode_disable:0000000000000008 .L0 
-     /tmp/ccfn6hy1.s:1043   .text.spi_i2s_interrupt_enable:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:1087   .text.spi_i2s_interrupt_disable:000000000000002e .L0 
-     /tmp/ccfn6hy1.s:1218   .text.spi_i2s_interrupt_flag_get:0000000000000060 .L0 
-GAS LISTING /tmp/ccfn6hy1.s 			page 47
+     /tmp/ccuOprvN.s:1196   .text.spi_i2s_interrupt_flag_get:000000000000004e .L0 
+     /tmp/ccuOprvN.s:1199   .text.spi_i2s_interrupt_flag_get:0000000000000052 .L0 
+     /tmp/ccuOprvN.s:1200   .text.spi_i2s_interrupt_flag_get:0000000000000052 .L0 
+     /tmp/ccuOprvN.s:1203   .text.spi_i2s_interrupt_flag_get:0000000000000056 .L0 
+     /tmp/ccuOprvN.s:1206   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L0 
+     /tmp/ccuOprvN.s:1207   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L0 
+     /tmp/ccuOprvN.s:1210   .text.spi_i2s_interrupt_flag_get:000000000000005a .L0 
+     /tmp/ccuOprvN.s:1211   .text.spi_i2s_interrupt_flag_get:000000000000005a .L0 
+     /tmp/ccuOprvN.s:1214   .text.spi_i2s_interrupt_flag_get:000000000000005e .L0 
+     /tmp/ccuOprvN.s:1215   .text.spi_i2s_interrupt_flag_get:0000000000000060 .L0 
+     /tmp/ccuOprvN.s:1222   .text.spi_i2s_flag_get:0000000000000000 spi_i2s_flag_get
+     /tmp/ccuOprvN.s:1225   .text.spi_i2s_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1227   .text.spi_i2s_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1228   .text.spi_i2s_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1229   .text.spi_i2s_flag_get:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1232   .text.spi_i2s_flag_get:0000000000000002 .L0 
+     /tmp/ccuOprvN.s:1234   .text.spi_i2s_flag_get:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:1236   .text.spi_i2s_flag_get:000000000000000a .L0 
+     /tmp/ccuOprvN.s:1243   .text.spi_crc_error_clear:0000000000000000 spi_crc_error_clear
+     /tmp/ccuOprvN.s:1246   .text.spi_crc_error_clear:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1248   .text.spi_crc_error_clear:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1249   .text.spi_crc_error_clear:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1250   .text.spi_crc_error_clear:0000000000000000 .L0 
+     /tmp/ccuOprvN.s:1254   .text.spi_crc_error_clear:0000000000000006 .L0 
+     /tmp/ccuOprvN.s:1255   .text.spi_crc_error_clear:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:112    .text.spi_i2s_deinit:000000000000007a .L0 
+     /tmp/ccuOprvN.s:144    .text.spi_struct_para_init:000000000000001a .L0 
+     /tmp/ccuOprvN.s:206    .text.spi_init:000000000000003e .L0 
+     /tmp/ccuOprvN.s:225    .text.spi_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:244    .text.spi_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:286    .text.i2s_init:000000000000001c .L0 
+     /tmp/ccuOprvN.s:516    .text.i2s_psc_config:00000000000000f2 .L0 
+     /tmp/ccuOprvN.s:535    .text.i2s_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:554    .text.i2s_disable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:573    .text.spi_nss_output_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:592    .text.spi_nss_output_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:611    .text.spi_nss_internal_high:000000000000000a .L0 
+     /tmp/ccuOprvN.s:630    .text.spi_nss_internal_low:000000000000000a .L0 
+     /tmp/ccuOprvN.s:659    .text.spi_dma_enable:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:688    .text.spi_dma_disable:0000000000000010 .L0 
+     /tmp/ccuOprvN.s:715    .text.spi_i2s_data_frame_format_config:0000000000000014 .L0 
+     /tmp/ccuOprvN.s:732    .text.spi_i2s_data_transmit:0000000000000004 .L0 
+     /tmp/ccuOprvN.s:752    .text.spi_i2s_data_receive:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:785    .text.spi_bidirectional_transfer_config:000000000000001a .L0 
+     /tmp/ccuOprvN.s:808    .text.spi_crc_polynomial_set:000000000000000c .L0 
+     /tmp/ccuOprvN.s:828    .text.spi_crc_polynomial_get:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:848    .text.spi_crc_on:000000000000000a .L0 
+     /tmp/ccuOprvN.s:869    .text.spi_crc_off:000000000000000c .L0 
+     /tmp/ccuOprvN.s:889    .text.spi_crc_next:000000000000000a .L0 
+     /tmp/ccuOprvN.s:923    .text.spi_crc_get:0000000000000012 .L0 
+     /tmp/ccuOprvN.s:942    .text.spi_ti_mode_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:961    .text.spi_ti_mode_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:980    .text.spi_nssp_mode_enable:000000000000000a .L0 
+     /tmp/ccuOprvN.s:999    .text.spi_nssp_mode_disable:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:1043   .text.spi_i2s_interrupt_enable:000000000000002e .L0 
+     /tmp/ccuOprvN.s:1087   .text.spi_i2s_interrupt_disable:000000000000002e .L0 
+     /tmp/ccuOprvN.s:1218   .text.spi_i2s_interrupt_flag_get:0000000000000060 .L0 
+GAS LISTING /tmp/ccuOprvN.s 			page 47
 
 
-     /tmp/ccfn6hy1.s:1239   .text.spi_i2s_flag_get:000000000000000a .L0 
-     /tmp/ccfn6hy1.s:1258   .text.spi_crc_error_clear:0000000000000008 .L0 
+     /tmp/ccuOprvN.s:1239   .text.spi_i2s_flag_get:000000000000000a .L0 
+     /tmp/ccuOprvN.s:1258   .text.spi_crc_error_clear:0000000000000008 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/ccfn6hy1.s:44     .text.spi_i2s_deinit:0000000000000026 .L2
-     /tmp/ccfn6hy1.s:88     .text.spi_i2s_deinit:000000000000005e .L3
-     /tmp/ccfn6hy1.s:66     .text.spi_i2s_deinit:0000000000000042 .L9
-     /tmp/ccfn6hy1.s:324    .text.i2s_psc_config:0000000000000020 .L16
-     /tmp/ccfn6hy1.s:497    .text.i2s_psc_config:00000000000000da .L17
-     /tmp/ccfn6hy1.s:457    .text.i2s_psc_config:00000000000000b0 .L18
-     /tmp/ccfn6hy1.s:469    .text.i2s_psc_config:00000000000000ba .L29
-     /tmp/ccfn6hy1.s:483    .text.i2s_psc_config:00000000000000ca .L23
-     /tmp/ccfn6hy1.s:427    .text.i2s_psc_config:0000000000000098 .L24
-     /tmp/ccfn6hy1.s:354    .text.i2s_psc_config:000000000000003e .L19
-     /tmp/ccfn6hy1.s:395    .text.i2s_psc_config:0000000000000076 .L22
-     /tmp/ccfn6hy1.s:376    .text.i2s_psc_config:000000000000005e .L20
-     /tmp/ccfn6hy1.s:649    .text.spi_dma_enable:000000000000000c .L37
-     /tmp/ccfn6hy1.s:678    .text.spi_dma_disable:000000000000000a .L40
-     /tmp/ccfn6hy1.s:774    .text.spi_bidirectional_transfer_config:0000000000000012 .L48
-     /tmp/ccfn6hy1.s:910    .text.spi_crc_get:000000000000000a .L55
-     /tmp/ccfn6hy1.s:1024   .text.spi_i2s_interrupt_enable:000000000000001a .L62
-     /tmp/ccfn6hy1.s:1032   .text.spi_i2s_interrupt_enable:0000000000000024 .L63
-     /tmp/ccfn6hy1.s:1022   .text.spi_i2s_interrupt_enable:0000000000000018 .L66
-     /tmp/ccfn6hy1.s:1068   .text.spi_i2s_interrupt_disable:000000000000001a .L68
-     /tmp/ccfn6hy1.s:1076   .text.spi_i2s_interrupt_disable:0000000000000024 .L69
-     /tmp/ccfn6hy1.s:1066   .text.spi_i2s_interrupt_disable:0000000000000018 .L72
-     /tmp/ccfn6hy1.s:1117   .rodata.spi_i2s_interrupt_flag_get:0000000000000000 .L76
-     /tmp/ccfn6hy1.s:1136   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L74
-     /tmp/ccfn6hy1.s:1143   .text.spi_i2s_interrupt_flag_get:0000000000000026 .L73
-     /tmp/ccfn6hy1.s:1126   .text.spi_i2s_interrupt_flag_get:000000000000001a .L82
-     /tmp/ccfn6hy1.s:1171   .text.spi_i2s_interrupt_flag_get:000000000000003c .L81
-     /tmp/ccfn6hy1.s:1182   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L80
-     /tmp/ccfn6hy1.s:1193   .text.spi_i2s_interrupt_flag_get:000000000000004e .L79
-     /tmp/ccfn6hy1.s:1204   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L78
-     /tmp/ccfn6hy1.s:1149   .text.spi_i2s_interrupt_flag_get:000000000000002a .L77
-     /tmp/ccfn6hy1.s:1160   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L75
-     /tmp/ccfn6hy1.s:2667   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/ccfn6hy1.s:4120   .debug_str:00000000000003e6 .LASF118
-     /tmp/ccfn6hy1.s:4102   .debug_str:0000000000000336 .LASF119
-     /tmp/ccfn6hy1.s:4128   .debug_str:0000000000000483 .LASF120
-     /tmp/ccfn6hy1.s:3912   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/ccfn6hy1.s:3984   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/ccfn6hy1.s:4002   .debug_str:000000000000006f .LASF0
-     /tmp/ccfn6hy1.s:4220   .debug_str:0000000000000735 .LASF1
-     /tmp/ccfn6hy1.s:4184   .debug_str:000000000000062c .LASF4
-     /tmp/ccfn6hy1.s:4202   .debug_str:00000000000006a9 .LASF2
-     /tmp/ccfn6hy1.s:4154   .debug_str:000000000000056d .LASF3
-     /tmp/ccfn6hy1.s:4052   .debug_str:00000000000001cf .LASF5
-     /tmp/ccfn6hy1.s:4222   .debug_str:0000000000000741 .LASF6
-     /tmp/ccfn6hy1.s:4160   .debug_str:0000000000000596 .LASF7
-     /tmp/ccfn6hy1.s:4204   .debug_str:00000000000006b7 .LASF8
-     /tmp/ccfn6hy1.s:4198   .debug_str:0000000000000682 .LASF9
-     /tmp/ccfn6hy1.s:4110   .debug_str:000000000000039d .LASF10
-     /tmp/ccfn6hy1.s:4046   .debug_str:000000000000019b .LASF11
-     /tmp/ccfn6hy1.s:4094   .debug_str:0000000000000308 .LASF12
-     /tmp/ccfn6hy1.s:4144   .debug_str:000000000000053e .LASF13
-     /tmp/ccfn6hy1.s:4030   .debug_str:000000000000011f .LASF14
-     /tmp/ccfn6hy1.s:3988   .debug_str:0000000000000009 .LASF121
-GAS LISTING /tmp/ccfn6hy1.s 			page 48
+     /tmp/ccuOprvN.s:44     .text.spi_i2s_deinit:0000000000000026 .L2
+     /tmp/ccuOprvN.s:88     .text.spi_i2s_deinit:000000000000005e .L3
+     /tmp/ccuOprvN.s:66     .text.spi_i2s_deinit:0000000000000042 .L9
+     /tmp/ccuOprvN.s:324    .text.i2s_psc_config:0000000000000020 .L16
+     /tmp/ccuOprvN.s:497    .text.i2s_psc_config:00000000000000da .L17
+     /tmp/ccuOprvN.s:457    .text.i2s_psc_config:00000000000000b0 .L18
+     /tmp/ccuOprvN.s:469    .text.i2s_psc_config:00000000000000ba .L29
+     /tmp/ccuOprvN.s:483    .text.i2s_psc_config:00000000000000ca .L23
+     /tmp/ccuOprvN.s:427    .text.i2s_psc_config:0000000000000098 .L24
+     /tmp/ccuOprvN.s:354    .text.i2s_psc_config:000000000000003e .L19
+     /tmp/ccuOprvN.s:395    .text.i2s_psc_config:0000000000000076 .L22
+     /tmp/ccuOprvN.s:376    .text.i2s_psc_config:000000000000005e .L20
+     /tmp/ccuOprvN.s:649    .text.spi_dma_enable:000000000000000c .L37
+     /tmp/ccuOprvN.s:678    .text.spi_dma_disable:000000000000000a .L40
+     /tmp/ccuOprvN.s:774    .text.spi_bidirectional_transfer_config:0000000000000012 .L48
+     /tmp/ccuOprvN.s:910    .text.spi_crc_get:000000000000000a .L55
+     /tmp/ccuOprvN.s:1024   .text.spi_i2s_interrupt_enable:000000000000001a .L62
+     /tmp/ccuOprvN.s:1032   .text.spi_i2s_interrupt_enable:0000000000000024 .L63
+     /tmp/ccuOprvN.s:1022   .text.spi_i2s_interrupt_enable:0000000000000018 .L66
+     /tmp/ccuOprvN.s:1068   .text.spi_i2s_interrupt_disable:000000000000001a .L68
+     /tmp/ccuOprvN.s:1076   .text.spi_i2s_interrupt_disable:0000000000000024 .L69
+     /tmp/ccuOprvN.s:1066   .text.spi_i2s_interrupt_disable:0000000000000018 .L72
+     /tmp/ccuOprvN.s:1117   .rodata.spi_i2s_interrupt_flag_get:0000000000000000 .L76
+     /tmp/ccuOprvN.s:1136   .text.spi_i2s_interrupt_flag_get:0000000000000020 .L74
+     /tmp/ccuOprvN.s:1143   .text.spi_i2s_interrupt_flag_get:0000000000000026 .L73
+     /tmp/ccuOprvN.s:1126   .text.spi_i2s_interrupt_flag_get:000000000000001a .L82
+     /tmp/ccuOprvN.s:1171   .text.spi_i2s_interrupt_flag_get:000000000000003c .L81
+     /tmp/ccuOprvN.s:1182   .text.spi_i2s_interrupt_flag_get:0000000000000044 .L80
+     /tmp/ccuOprvN.s:1193   .text.spi_i2s_interrupt_flag_get:000000000000004e .L79
+     /tmp/ccuOprvN.s:1204   .text.spi_i2s_interrupt_flag_get:0000000000000058 .L78
+     /tmp/ccuOprvN.s:1149   .text.spi_i2s_interrupt_flag_get:000000000000002a .L77
+     /tmp/ccuOprvN.s:1160   .text.spi_i2s_interrupt_flag_get:0000000000000032 .L75
+     /tmp/ccuOprvN.s:2667   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccuOprvN.s:4120   .debug_str:00000000000003e6 .LASF118
+     /tmp/ccuOprvN.s:4102   .debug_str:0000000000000336 .LASF119
+     /tmp/ccuOprvN.s:4212   .debug_str:00000000000006ab .LASF120
+     /tmp/ccuOprvN.s:3912   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccuOprvN.s:3984   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccuOprvN.s:4002   .debug_str:000000000000006f .LASF0
+     /tmp/ccuOprvN.s:4220   .debug_str:000000000000073b .LASF1
+     /tmp/ccuOprvN.s:4182   .debug_str:00000000000005d3 .LASF4
+     /tmp/ccuOprvN.s:4200   .debug_str:0000000000000650 .LASF2
+     /tmp/ccuOprvN.s:4152   .debug_str:0000000000000514 .LASF3
+     /tmp/ccuOprvN.s:4052   .debug_str:00000000000001cf .LASF5
+     /tmp/ccuOprvN.s:4222   .debug_str:0000000000000747 .LASF6
+     /tmp/ccuOprvN.s:4158   .debug_str:000000000000053d .LASF7
+     /tmp/ccuOprvN.s:4202   .debug_str:000000000000065e .LASF8
+     /tmp/ccuOprvN.s:4196   .debug_str:0000000000000629 .LASF9
+     /tmp/ccuOprvN.s:4110   .debug_str:000000000000039d .LASF10
+     /tmp/ccuOprvN.s:4046   .debug_str:000000000000019b .LASF11
+     /tmp/ccuOprvN.s:4094   .debug_str:0000000000000308 .LASF12
+     /tmp/ccuOprvN.s:4142   .debug_str:00000000000004e5 .LASF13
+     /tmp/ccuOprvN.s:4030   .debug_str:000000000000011f .LASF14
+     /tmp/ccuOprvN.s:3988   .debug_str:0000000000000009 .LASF121
+GAS LISTING /tmp/ccuOprvN.s 			page 48
 
 
-     /tmp/ccfn6hy1.s:4172   .debug_str:00000000000005eb .LASF15
-     /tmp/ccfn6hy1.s:4018   .debug_str:00000000000000c8 .LASF16
-     /tmp/ccfn6hy1.s:4096   .debug_str:0000000000000310 .LASF17
-     /tmp/ccfn6hy1.s:4070   .debug_str:0000000000000252 .LASF18
-     /tmp/ccfn6hy1.s:4218   .debug_str:0000000000000727 .LASF19
-     /tmp/ccfn6hy1.s:4104   .debug_str:000000000000037a .LASF20
-     /tmp/ccfn6hy1.s:3994   .debug_str:000000000000003c .LASF21
-     /tmp/ccfn6hy1.s:4146   .debug_str:0000000000000547 .LASF22
-     /tmp/ccfn6hy1.s:4040   .debug_str:0000000000000168 .LASF23
-     /tmp/ccfn6hy1.s:4212   .debug_str:00000000000006f7 .LASF24
-     /tmp/ccfn6hy1.s:4008   .debug_str:000000000000008c .LASF25
-     /tmp/ccfn6hy1.s:4152   .debug_str:0000000000000561 .LASF26
-     /tmp/ccfn6hy1.s:4194   .debug_str:000000000000066a .LASF27
-     /tmp/ccfn6hy1.s:4078   .debug_str:0000000000000281 .LASF28
-     /tmp/ccfn6hy1.s:4190   .debug_str:0000000000000650 .LASF29
-     /tmp/ccfn6hy1.s:4072   .debug_str:0000000000000260 .LASF30
-     /tmp/ccfn6hy1.s:4208   .debug_str:00000000000006d7 .LASF31
-     /tmp/ccfn6hy1.s:4088   .debug_str:00000000000002e4 .LASF32
-     /tmp/ccfn6hy1.s:4162   .debug_str:000000000000059f .LASF33
-     /tmp/ccfn6hy1.s:4054   .debug_str:00000000000001da .LASF34
-     /tmp/ccfn6hy1.s:4224   .debug_str:0000000000000754 .LASF35
-     /tmp/ccfn6hy1.s:4114   .debug_str:00000000000003c0 .LASF36
-     /tmp/ccfn6hy1.s:3996   .debug_str:000000000000004a .LASF37
-     /tmp/ccfn6hy1.s:4156   .debug_str:0000000000000577 .LASF38
-     /tmp/ccfn6hy1.s:4098   .debug_str:000000000000031d .LASF39
-     /tmp/ccfn6hy1.s:3990   .debug_str:0000000000000019 .LASF40
-     /tmp/ccfn6hy1.s:4140   .debug_str:0000000000000525 .LASF41
-     /tmp/ccfn6hy1.s:4028   .debug_str:0000000000000112 .LASF42
-     /tmp/ccfn6hy1.s:4192   .debug_str:000000000000065d .LASF43
-     /tmp/ccfn6hy1.s:4068   .debug_str:0000000000000246 .LASF44
-     /tmp/ccfn6hy1.s:4214   .debug_str:0000000000000704 .LASF45
-     /tmp/ccfn6hy1.s:4186   .debug_str:0000000000000636 .LASF46
-     /tmp/ccfn6hy1.s:4118   .debug_str:00000000000003da .LASF47
-     /tmp/ccfn6hy1.s:4032   .debug_str:0000000000000128 .LASF48
-     /tmp/ccfn6hy1.s:4132   .debug_str:00000000000004fe .LASF49
-     /tmp/ccfn6hy1.s:4064   .debug_str:0000000000000233 .LASF50
-     /tmp/ccfn6hy1.s:4176   .debug_str:00000000000005f6 .LASF51
-     /tmp/ccfn6hy1.s:4178   .debug_str:00000000000005fe .LASF52
-     /tmp/ccfn6hy1.s:4142   .debug_str:0000000000000532 .LASF53
-     /tmp/ccfn6hy1.s:4044   .debug_str:000000000000018f .LASF54
-     /tmp/ccfn6hy1.s:4000   .debug_str:0000000000000064 .LASF55
-     /tmp/ccfn6hy1.s:4074   .debug_str:000000000000026d .LASF56
-     /tmp/ccfn6hy1.s:4006   .debug_str:0000000000000085 .LASF57
-     /tmp/ccfn6hy1.s:4206   .debug_str:00000000000006c2 .LASF58
-     /tmp/ccfn6hy1.s:4108   .debug_str:0000000000000394 .LASF59
-     /tmp/ccfn6hy1.s:4086   .debug_str:00000000000002cf .LASF60
-     /tmp/ccfn6hy1.s:4210   .debug_str:00000000000006e3 .LASF68
-     /tmp/ccfn6hy1.s:1244   .text.spi_crc_error_clear:0000000000000000 .LFB35
-     /tmp/ccfn6hy1.s:1256   .text.spi_crc_error_clear:0000000000000008 .LFE35
-     /tmp/ccfn6hy1.s:4036   .debug_str:000000000000013c .LASF61
-     /tmp/ccfn6hy1.s:4050   .debug_str:00000000000001be .LASF63
-     /tmp/ccfn6hy1.s:1223   .text.spi_i2s_flag_get:0000000000000000 .LFB34
-     /tmp/ccfn6hy1.s:1237   .text.spi_i2s_flag_get:000000000000000a .LFE34
-     /tmp/ccfn6hy1.s:3206   .debug_loc:0000000000000000 .LLST23
-     /tmp/ccfn6hy1.s:4174   .debug_str:00000000000005f1 .LASF62
-     /tmp/ccfn6hy1.s:4010   .debug_str:0000000000000098 .LASF64
-     /tmp/ccfn6hy1.s:1092   .text.spi_i2s_interrupt_flag_get:0000000000000000 .LFB33
-GAS LISTING /tmp/ccfn6hy1.s 			page 49
+     /tmp/ccuOprvN.s:4170   .debug_str:0000000000000592 .LASF15
+     /tmp/ccuOprvN.s:4018   .debug_str:00000000000000c8 .LASF16
+     /tmp/ccuOprvN.s:4096   .debug_str:0000000000000310 .LASF17
+     /tmp/ccuOprvN.s:4070   .debug_str:0000000000000252 .LASF18
+     /tmp/ccuOprvN.s:4218   .debug_str:000000000000072d .LASF19
+     /tmp/ccuOprvN.s:4104   .debug_str:000000000000037a .LASF20
+     /tmp/ccuOprvN.s:3994   .debug_str:000000000000003c .LASF21
+     /tmp/ccuOprvN.s:4144   .debug_str:00000000000004ee .LASF22
+     /tmp/ccuOprvN.s:4040   .debug_str:0000000000000168 .LASF23
+     /tmp/ccuOprvN.s:4210   .debug_str:000000000000069e .LASF24
+     /tmp/ccuOprvN.s:4008   .debug_str:000000000000008c .LASF25
+     /tmp/ccuOprvN.s:4150   .debug_str:0000000000000508 .LASF26
+     /tmp/ccuOprvN.s:4192   .debug_str:0000000000000611 .LASF27
+     /tmp/ccuOprvN.s:4078   .debug_str:0000000000000281 .LASF28
+     /tmp/ccuOprvN.s:4188   .debug_str:00000000000005f7 .LASF29
+     /tmp/ccuOprvN.s:4072   .debug_str:0000000000000260 .LASF30
+     /tmp/ccuOprvN.s:4206   .debug_str:000000000000067e .LASF31
+     /tmp/ccuOprvN.s:4088   .debug_str:00000000000002e4 .LASF32
+     /tmp/ccuOprvN.s:4160   .debug_str:0000000000000546 .LASF33
+     /tmp/ccuOprvN.s:4054   .debug_str:00000000000001da .LASF34
+     /tmp/ccuOprvN.s:4224   .debug_str:000000000000075a .LASF35
+     /tmp/ccuOprvN.s:4114   .debug_str:00000000000003c0 .LASF36
+     /tmp/ccuOprvN.s:3996   .debug_str:000000000000004a .LASF37
+     /tmp/ccuOprvN.s:4154   .debug_str:000000000000051e .LASF38
+     /tmp/ccuOprvN.s:4098   .debug_str:000000000000031d .LASF39
+     /tmp/ccuOprvN.s:3990   .debug_str:0000000000000019 .LASF40
+     /tmp/ccuOprvN.s:4138   .debug_str:00000000000004cc .LASF41
+     /tmp/ccuOprvN.s:4028   .debug_str:0000000000000112 .LASF42
+     /tmp/ccuOprvN.s:4190   .debug_str:0000000000000604 .LASF43
+     /tmp/ccuOprvN.s:4068   .debug_str:0000000000000246 .LASF44
+     /tmp/ccuOprvN.s:4214   .debug_str:000000000000070a .LASF45
+     /tmp/ccuOprvN.s:4184   .debug_str:00000000000005dd .LASF46
+     /tmp/ccuOprvN.s:4118   .debug_str:00000000000003da .LASF47
+     /tmp/ccuOprvN.s:4032   .debug_str:0000000000000128 .LASF48
+     /tmp/ccuOprvN.s:4130   .debug_str:00000000000004a5 .LASF49
+     /tmp/ccuOprvN.s:4064   .debug_str:0000000000000233 .LASF50
+     /tmp/ccuOprvN.s:4174   .debug_str:000000000000059d .LASF51
+     /tmp/ccuOprvN.s:4176   .debug_str:00000000000005a5 .LASF52
+     /tmp/ccuOprvN.s:4140   .debug_str:00000000000004d9 .LASF53
+     /tmp/ccuOprvN.s:4044   .debug_str:000000000000018f .LASF54
+     /tmp/ccuOprvN.s:4000   .debug_str:0000000000000064 .LASF55
+     /tmp/ccuOprvN.s:4074   .debug_str:000000000000026d .LASF56
+     /tmp/ccuOprvN.s:4006   .debug_str:0000000000000085 .LASF57
+     /tmp/ccuOprvN.s:4204   .debug_str:0000000000000669 .LASF58
+     /tmp/ccuOprvN.s:4108   .debug_str:0000000000000394 .LASF59
+     /tmp/ccuOprvN.s:4086   .debug_str:00000000000002cf .LASF60
+     /tmp/ccuOprvN.s:4208   .debug_str:000000000000068a .LASF68
+     /tmp/ccuOprvN.s:1244   .text.spi_crc_error_clear:0000000000000000 .LFB35
+     /tmp/ccuOprvN.s:1256   .text.spi_crc_error_clear:0000000000000008 .LFE35
+     /tmp/ccuOprvN.s:4036   .debug_str:000000000000013c .LASF61
+     /tmp/ccuOprvN.s:4050   .debug_str:00000000000001be .LASF63
+     /tmp/ccuOprvN.s:1223   .text.spi_i2s_flag_get:0000000000000000 .LFB34
+     /tmp/ccuOprvN.s:1237   .text.spi_i2s_flag_get:000000000000000a .LFE34
+     /tmp/ccuOprvN.s:3206   .debug_loc:0000000000000000 .LLST23
+     /tmp/ccuOprvN.s:4172   .debug_str:0000000000000598 .LASF62
+     /tmp/ccuOprvN.s:4010   .debug_str:0000000000000098 .LASF64
+     /tmp/ccuOprvN.s:1092   .text.spi_i2s_interrupt_flag_get:0000000000000000 .LFB33
+GAS LISTING /tmp/ccuOprvN.s 			page 49
 
 
-     /tmp/ccfn6hy1.s:1216   .text.spi_i2s_interrupt_flag_get:0000000000000060 .LFE33
-     /tmp/ccfn6hy1.s:3220   .debug_loc:0000000000000021 .LLST20
-     /tmp/ccfn6hy1.s:4196   .debug_str:0000000000000678 .LASF65
-     /tmp/ccfn6hy1.s:3238   .debug_loc:000000000000004d .LLST21
-     /tmp/ccfn6hy1.s:4012   .debug_str:00000000000000b3 .LASF66
-     /tmp/ccfn6hy1.s:3252   .debug_loc:000000000000006e .LLST22
-     /tmp/ccfn6hy1.s:4014   .debug_str:00000000000000b8 .LASF67
-     /tmp/ccfn6hy1.s:4080   .debug_str:000000000000028f .LASF69
-     /tmp/ccfn6hy1.s:1048   .text.spi_i2s_interrupt_disable:0000000000000000 .LFB32
-     /tmp/ccfn6hy1.s:1085   .text.spi_i2s_interrupt_disable:000000000000002e .LFE32
-     /tmp/ccfn6hy1.s:4042   .debug_str:0000000000000176 .LASF70
-     /tmp/ccfn6hy1.s:1004   .text.spi_i2s_interrupt_enable:0000000000000000 .LFB31
-     /tmp/ccfn6hy1.s:1041   .text.spi_i2s_interrupt_enable:000000000000002e .LFE31
-     /tmp/ccfn6hy1.s:3992   .debug_str:0000000000000026 .LASF71
-     /tmp/ccfn6hy1.s:985    .text.spi_nssp_mode_disable:0000000000000000 .LFB30
-     /tmp/ccfn6hy1.s:997    .text.spi_nssp_mode_disable:0000000000000008 .LFE30
-     /tmp/ccfn6hy1.s:4158   .debug_str:0000000000000581 .LASF72
-     /tmp/ccfn6hy1.s:966    .text.spi_nssp_mode_enable:0000000000000000 .LFB29
-     /tmp/ccfn6hy1.s:978    .text.spi_nssp_mode_enable:000000000000000a .LFE29
-     /tmp/ccfn6hy1.s:4056   .debug_str:00000000000001e6 .LASF73
-     /tmp/ccfn6hy1.s:947    .text.spi_ti_mode_disable:0000000000000000 .LFB28
-     /tmp/ccfn6hy1.s:959    .text.spi_ti_mode_disable:0000000000000008 .LFE28
-     /tmp/ccfn6hy1.s:4122   .debug_str:0000000000000460 .LASF74
-     /tmp/ccfn6hy1.s:928    .text.spi_ti_mode_enable:0000000000000000 .LFB27
-     /tmp/ccfn6hy1.s:940    .text.spi_ti_mode_enable:000000000000000a .LFE27
-     /tmp/ccfn6hy1.s:4048   .debug_str:00000000000001b2 .LASF75
-     /tmp/ccfn6hy1.s:894    .text.spi_crc_get:0000000000000000 .LFB26
-     /tmp/ccfn6hy1.s:921    .text.spi_crc_get:0000000000000012 .LFE26
-     /tmp/ccfn6hy1.s:3263   .debug_loc:000000000000008c .LLST19
-     /tmp/ccfn6hy1.s:4024   .debug_str:00000000000000ef .LASF76
-     /tmp/ccfn6hy1.s:874    .text.spi_crc_next:0000000000000000 .LFB25
-     /tmp/ccfn6hy1.s:887    .text.spi_crc_next:000000000000000a .LFE25
-     /tmp/ccfn6hy1.s:4100   .debug_str:000000000000032a .LASF77
-     /tmp/ccfn6hy1.s:853    .text.spi_crc_off:0000000000000000 .LFB24
-     /tmp/ccfn6hy1.s:867    .text.spi_crc_off:000000000000000c .LFE24
-     /tmp/ccfn6hy1.s:4016   .debug_str:00000000000000bd .LASF78
-     /tmp/ccfn6hy1.s:833    .text.spi_crc_on:0000000000000000 .LFB23
-     /tmp/ccfn6hy1.s:846    .text.spi_crc_on:000000000000000a .LFE23
-     /tmp/ccfn6hy1.s:4084   .debug_str:00000000000002b8 .LASF79
-     /tmp/ccfn6hy1.s:813    .text.spi_crc_polynomial_get:0000000000000000 .LFB22
-     /tmp/ccfn6hy1.s:826    .text.spi_crc_polynomial_get:0000000000000008 .LFE22
-     /tmp/ccfn6hy1.s:3288   .debug_loc:00000000000000c6 .LLST18
-     /tmp/ccfn6hy1.s:4022   .debug_str:00000000000000d8 .LASF80
-     /tmp/ccfn6hy1.s:790    .text.spi_crc_polynomial_set:0000000000000000 .LFB21
-     /tmp/ccfn6hy1.s:806    .text.spi_crc_polynomial_set:000000000000000c .LFE21
-     /tmp/ccfn6hy1.s:4166   .debug_str:00000000000005c1 .LASF81
-     /tmp/ccfn6hy1.s:4130   .debug_str:00000000000004dc .LASF82
-     /tmp/ccfn6hy1.s:757    .text.spi_bidirectional_transfer_config:0000000000000000 .LFB20
-     /tmp/ccfn6hy1.s:783    .text.spi_bidirectional_transfer_config:000000000000001a .LFE20
-     /tmp/ccfn6hy1.s:4226   .debug_str:0000000000000760 .LASF83
-     /tmp/ccfn6hy1.s:3302   .debug_loc:00000000000000e7 .LLST17
-     /tmp/ccfn6hy1.s:4200   .debug_str:0000000000000694 .LASF84
-     /tmp/ccfn6hy1.s:737    .text.spi_i2s_data_receive:0000000000000000 .LFB19
-     /tmp/ccfn6hy1.s:750    .text.spi_i2s_data_receive:0000000000000008 .LFE19
-     /tmp/ccfn6hy1.s:3316   .debug_loc:0000000000000108 .LLST16
-     /tmp/ccfn6hy1.s:4026   .debug_str:00000000000000fc .LASF85
-     /tmp/ccfn6hy1.s:720    .text.spi_i2s_data_transmit:0000000000000000 .LFB18
-GAS LISTING /tmp/ccfn6hy1.s 			page 50
+     /tmp/ccuOprvN.s:1216   .text.spi_i2s_interrupt_flag_get:0000000000000060 .LFE33
+     /tmp/ccuOprvN.s:3220   .debug_loc:0000000000000021 .LLST20
+     /tmp/ccuOprvN.s:4194   .debug_str:000000000000061f .LASF65
+     /tmp/ccuOprvN.s:3238   .debug_loc:000000000000004d .LLST21
+     /tmp/ccuOprvN.s:4012   .debug_str:00000000000000b3 .LASF66
+     /tmp/ccuOprvN.s:3252   .debug_loc:000000000000006e .LLST22
+     /tmp/ccuOprvN.s:4014   .debug_str:00000000000000b8 .LASF67
+     /tmp/ccuOprvN.s:4080   .debug_str:000000000000028f .LASF69
+     /tmp/ccuOprvN.s:1048   .text.spi_i2s_interrupt_disable:0000000000000000 .LFB32
+     /tmp/ccuOprvN.s:1085   .text.spi_i2s_interrupt_disable:000000000000002e .LFE32
+     /tmp/ccuOprvN.s:4042   .debug_str:0000000000000176 .LASF70
+     /tmp/ccuOprvN.s:1004   .text.spi_i2s_interrupt_enable:0000000000000000 .LFB31
+     /tmp/ccuOprvN.s:1041   .text.spi_i2s_interrupt_enable:000000000000002e .LFE31
+     /tmp/ccuOprvN.s:3992   .debug_str:0000000000000026 .LASF71
+     /tmp/ccuOprvN.s:985    .text.spi_nssp_mode_disable:0000000000000000 .LFB30
+     /tmp/ccuOprvN.s:997    .text.spi_nssp_mode_disable:0000000000000008 .LFE30
+     /tmp/ccuOprvN.s:4156   .debug_str:0000000000000528 .LASF72
+     /tmp/ccuOprvN.s:966    .text.spi_nssp_mode_enable:0000000000000000 .LFB29
+     /tmp/ccuOprvN.s:978    .text.spi_nssp_mode_enable:000000000000000a .LFE29
+     /tmp/ccuOprvN.s:4056   .debug_str:00000000000001e6 .LASF73
+     /tmp/ccuOprvN.s:947    .text.spi_ti_mode_disable:0000000000000000 .LFB28
+     /tmp/ccuOprvN.s:959    .text.spi_ti_mode_disable:0000000000000008 .LFE28
+     /tmp/ccuOprvN.s:4122   .debug_str:0000000000000460 .LASF74
+     /tmp/ccuOprvN.s:928    .text.spi_ti_mode_enable:0000000000000000 .LFB27
+     /tmp/ccuOprvN.s:940    .text.spi_ti_mode_enable:000000000000000a .LFE27
+     /tmp/ccuOprvN.s:4048   .debug_str:00000000000001b2 .LASF75
+     /tmp/ccuOprvN.s:894    .text.spi_crc_get:0000000000000000 .LFB26
+     /tmp/ccuOprvN.s:921    .text.spi_crc_get:0000000000000012 .LFE26
+     /tmp/ccuOprvN.s:3263   .debug_loc:000000000000008c .LLST19
+     /tmp/ccuOprvN.s:4024   .debug_str:00000000000000ef .LASF76
+     /tmp/ccuOprvN.s:874    .text.spi_crc_next:0000000000000000 .LFB25
+     /tmp/ccuOprvN.s:887    .text.spi_crc_next:000000000000000a .LFE25
+     /tmp/ccuOprvN.s:4100   .debug_str:000000000000032a .LASF77
+     /tmp/ccuOprvN.s:853    .text.spi_crc_off:0000000000000000 .LFB24
+     /tmp/ccuOprvN.s:867    .text.spi_crc_off:000000000000000c .LFE24
+     /tmp/ccuOprvN.s:4016   .debug_str:00000000000000bd .LASF78
+     /tmp/ccuOprvN.s:833    .text.spi_crc_on:0000000000000000 .LFB23
+     /tmp/ccuOprvN.s:846    .text.spi_crc_on:000000000000000a .LFE23
+     /tmp/ccuOprvN.s:4084   .debug_str:00000000000002b8 .LASF79
+     /tmp/ccuOprvN.s:813    .text.spi_crc_polynomial_get:0000000000000000 .LFB22
+     /tmp/ccuOprvN.s:826    .text.spi_crc_polynomial_get:0000000000000008 .LFE22
+     /tmp/ccuOprvN.s:3288   .debug_loc:00000000000000c6 .LLST18
+     /tmp/ccuOprvN.s:4022   .debug_str:00000000000000d8 .LASF80
+     /tmp/ccuOprvN.s:790    .text.spi_crc_polynomial_set:0000000000000000 .LFB21
+     /tmp/ccuOprvN.s:806    .text.spi_crc_polynomial_set:000000000000000c .LFE21
+     /tmp/ccuOprvN.s:4164   .debug_str:0000000000000568 .LASF81
+     /tmp/ccuOprvN.s:4128   .debug_str:0000000000000483 .LASF82
+     /tmp/ccuOprvN.s:757    .text.spi_bidirectional_transfer_config:0000000000000000 .LFB20
+     /tmp/ccuOprvN.s:783    .text.spi_bidirectional_transfer_config:000000000000001a .LFE20
+     /tmp/ccuOprvN.s:4226   .debug_str:0000000000000766 .LASF83
+     /tmp/ccuOprvN.s:3302   .debug_loc:00000000000000e7 .LLST17
+     /tmp/ccuOprvN.s:4198   .debug_str:000000000000063b .LASF84
+     /tmp/ccuOprvN.s:737    .text.spi_i2s_data_receive:0000000000000000 .LFB19
+     /tmp/ccuOprvN.s:750    .text.spi_i2s_data_receive:0000000000000008 .LFE19
+     /tmp/ccuOprvN.s:3316   .debug_loc:0000000000000108 .LLST16
+     /tmp/ccuOprvN.s:4026   .debug_str:00000000000000fc .LASF85
+     /tmp/ccuOprvN.s:720    .text.spi_i2s_data_transmit:0000000000000000 .LFB18
+GAS LISTING /tmp/ccuOprvN.s 			page 50
 
 
-     /tmp/ccfn6hy1.s:730    .text.spi_i2s_data_transmit:0000000000000004 .LFE18
-     /tmp/ccfn6hy1.s:4090   .debug_str:00000000000002f0 .LASF86
-     /tmp/ccfn6hy1.s:4038   .debug_str:0000000000000147 .LASF87
-     /tmp/ccfn6hy1.s:693    .text.spi_i2s_data_frame_format_config:0000000000000000 .LFB17
-     /tmp/ccfn6hy1.s:713    .text.spi_i2s_data_frame_format_config:0000000000000014 .LFE17
-     /tmp/ccfn6hy1.s:4180   .debug_str:0000000000000606 .LASF88
-     /tmp/ccfn6hy1.s:3330   .debug_loc:0000000000000129 .LLST15
-     /tmp/ccfn6hy1.s:4138   .debug_str:0000000000000515 .LASF89
-     /tmp/ccfn6hy1.s:664    .text.spi_dma_disable:0000000000000000 .LFB16
-     /tmp/ccfn6hy1.s:686    .text.spi_dma_disable:0000000000000010 .LFE16
-     /tmp/ccfn6hy1.s:3998   .debug_str:0000000000000055 .LASF90
-     /tmp/ccfn6hy1.s:635    .text.spi_dma_enable:0000000000000000 .LFB15
-     /tmp/ccfn6hy1.s:657    .text.spi_dma_enable:0000000000000014 .LFE15
-     /tmp/ccfn6hy1.s:4112   .debug_str:00000000000003ab .LASF91
-     /tmp/ccfn6hy1.s:616    .text.spi_nss_internal_low:0000000000000000 .LFB14
-     /tmp/ccfn6hy1.s:628    .text.spi_nss_internal_low:000000000000000a .LFE14
-     /tmp/ccfn6hy1.s:4170   .debug_str:00000000000005d5 .LASF92
-     /tmp/ccfn6hy1.s:597    .text.spi_nss_internal_high:0000000000000000 .LFB13
-     /tmp/ccfn6hy1.s:609    .text.spi_nss_internal_high:000000000000000a .LFE13
-     /tmp/ccfn6hy1.s:4216   .debug_str:0000000000000710 .LASF93
-     /tmp/ccfn6hy1.s:578    .text.spi_nss_output_disable:0000000000000000 .LFB12
-     /tmp/ccfn6hy1.s:590    .text.spi_nss_output_disable:0000000000000008 .LFE12
-     /tmp/ccfn6hy1.s:4164   .debug_str:00000000000005ab .LASF94
-     /tmp/ccfn6hy1.s:559    .text.spi_nss_output_enable:0000000000000000 .LFB11
-     /tmp/ccfn6hy1.s:571    .text.spi_nss_output_enable:000000000000000a .LFE11
-     /tmp/ccfn6hy1.s:4060   .debug_str:0000000000000212 .LASF95
-     /tmp/ccfn6hy1.s:540    .text.i2s_disable:0000000000000000 .LFB10
-     /tmp/ccfn6hy1.s:552    .text.i2s_disable:000000000000000a .LFE10
-     /tmp/ccfn6hy1.s:4228   .debug_str:0000000000000773 .LASF96
-     /tmp/ccfn6hy1.s:521    .text.i2s_enable:0000000000000000 .LFB9
-     /tmp/ccfn6hy1.s:533    .text.i2s_enable:000000000000000a .LFE9
-     /tmp/ccfn6hy1.s:4082   .debug_str:00000000000002a9 .LASF97
-     /tmp/ccfn6hy1.s:291    .text.i2s_psc_config:0000000000000000 .LFB8
-     /tmp/ccfn6hy1.s:514    .text.i2s_psc_config:00000000000000f2 .LFE8
-     /tmp/ccfn6hy1.s:3344   .debug_loc:000000000000014a .LLST6
-     /tmp/ccfn6hy1.s:3367   .debug_loc:0000000000000182 .LLST7
-     /tmp/ccfn6hy1.s:4188   .debug_str:0000000000000644 .LASF98
-     /tmp/ccfn6hy1.s:3389   .debug_loc:00000000000001b9 .LLST8
-     /tmp/ccfn6hy1.s:4106   .debug_str:0000000000000388 .LASF99
-     /tmp/ccfn6hy1.s:3423   .debug_loc:000000000000020a .LLST9
-     /tmp/ccfn6hy1.s:4126   .debug_str:000000000000047c .LASF100
-     /tmp/ccfn6hy1.s:3457   .debug_loc:000000000000025b .LLST10
-     /tmp/ccfn6hy1.s:4148   .debug_str:0000000000000555 .LASF101
-     /tmp/ccfn6hy1.s:3491   .debug_loc:00000000000002ac .LLST11
-     /tmp/ccfn6hy1.s:4034   .debug_str:0000000000000136 .LASF102
-     /tmp/ccfn6hy1.s:3508   .debug_loc:00000000000002d7 .LLST12
-     /tmp/ccfn6hy1.s:4150   .debug_str:000000000000055c .LASF103
-     /tmp/ccfn6hy1.s:3541   .debug_loc:0000000000000320 .LLST13
-     /tmp/ccfn6hy1.s:4124   .debug_str:0000000000000473 .LASF104
-     /tmp/ccfn6hy1.s:3593   .debug_loc:00000000000003a6 .LLST14
-     /tmp/ccfn6hy1.s:507    .text.i2s_psc_config:00000000000000ea .LVL54
-     /tmp/ccfn6hy1.s:4004   .debug_str:000000000000007c .LASF105
-     /tmp/ccfn6hy1.s:249    .text.i2s_init:0000000000000000 .LFB7
-     /tmp/ccfn6hy1.s:284    .text.i2s_init:000000000000001c .LFE7
-     /tmp/ccfn6hy1.s:4020   .debug_str:00000000000000d3 .LASF106
-     /tmp/ccfn6hy1.s:3643   .debug_loc:000000000000041c .LLST3
-     /tmp/ccfn6hy1.s:3986   .debug_str:0000000000000000 .LASF107
-GAS LISTING /tmp/ccfn6hy1.s 			page 51
+     /tmp/ccuOprvN.s:730    .text.spi_i2s_data_transmit:0000000000000004 .LFE18
+     /tmp/ccuOprvN.s:4090   .debug_str:00000000000002f0 .LASF86
+     /tmp/ccuOprvN.s:4038   .debug_str:0000000000000147 .LASF87
+     /tmp/ccuOprvN.s:693    .text.spi_i2s_data_frame_format_config:0000000000000000 .LFB17
+     /tmp/ccuOprvN.s:713    .text.spi_i2s_data_frame_format_config:0000000000000014 .LFE17
+     /tmp/ccuOprvN.s:4178   .debug_str:00000000000005ad .LASF88
+     /tmp/ccuOprvN.s:3330   .debug_loc:0000000000000129 .LLST15
+     /tmp/ccuOprvN.s:4136   .debug_str:00000000000004bc .LASF89
+     /tmp/ccuOprvN.s:664    .text.spi_dma_disable:0000000000000000 .LFB16
+     /tmp/ccuOprvN.s:686    .text.spi_dma_disable:0000000000000010 .LFE16
+     /tmp/ccuOprvN.s:3998   .debug_str:0000000000000055 .LASF90
+     /tmp/ccuOprvN.s:635    .text.spi_dma_enable:0000000000000000 .LFB15
+     /tmp/ccuOprvN.s:657    .text.spi_dma_enable:0000000000000014 .LFE15
+     /tmp/ccuOprvN.s:4112   .debug_str:00000000000003ab .LASF91
+     /tmp/ccuOprvN.s:616    .text.spi_nss_internal_low:0000000000000000 .LFB14
+     /tmp/ccuOprvN.s:628    .text.spi_nss_internal_low:000000000000000a .LFE14
+     /tmp/ccuOprvN.s:4168   .debug_str:000000000000057c .LASF92
+     /tmp/ccuOprvN.s:597    .text.spi_nss_internal_high:0000000000000000 .LFB13
+     /tmp/ccuOprvN.s:609    .text.spi_nss_internal_high:000000000000000a .LFE13
+     /tmp/ccuOprvN.s:4216   .debug_str:0000000000000716 .LASF93
+     /tmp/ccuOprvN.s:578    .text.spi_nss_output_disable:0000000000000000 .LFB12
+     /tmp/ccuOprvN.s:590    .text.spi_nss_output_disable:0000000000000008 .LFE12
+     /tmp/ccuOprvN.s:4162   .debug_str:0000000000000552 .LASF94
+     /tmp/ccuOprvN.s:559    .text.spi_nss_output_enable:0000000000000000 .LFB11
+     /tmp/ccuOprvN.s:571    .text.spi_nss_output_enable:000000000000000a .LFE11
+     /tmp/ccuOprvN.s:4060   .debug_str:0000000000000212 .LASF95
+     /tmp/ccuOprvN.s:540    .text.i2s_disable:0000000000000000 .LFB10
+     /tmp/ccuOprvN.s:552    .text.i2s_disable:000000000000000a .LFE10
+     /tmp/ccuOprvN.s:4228   .debug_str:0000000000000779 .LASF96
+     /tmp/ccuOprvN.s:521    .text.i2s_enable:0000000000000000 .LFB9
+     /tmp/ccuOprvN.s:533    .text.i2s_enable:000000000000000a .LFE9
+     /tmp/ccuOprvN.s:4082   .debug_str:00000000000002a9 .LASF97
+     /tmp/ccuOprvN.s:291    .text.i2s_psc_config:0000000000000000 .LFB8
+     /tmp/ccuOprvN.s:514    .text.i2s_psc_config:00000000000000f2 .LFE8
+     /tmp/ccuOprvN.s:3344   .debug_loc:000000000000014a .LLST6
+     /tmp/ccuOprvN.s:3367   .debug_loc:0000000000000182 .LLST7
+     /tmp/ccuOprvN.s:4186   .debug_str:00000000000005eb .LASF98
+     /tmp/ccuOprvN.s:3389   .debug_loc:00000000000001b9 .LLST8
+     /tmp/ccuOprvN.s:4106   .debug_str:0000000000000388 .LASF99
+     /tmp/ccuOprvN.s:3423   .debug_loc:000000000000020a .LLST9
+     /tmp/ccuOprvN.s:4126   .debug_str:000000000000047c .LASF100
+     /tmp/ccuOprvN.s:3457   .debug_loc:000000000000025b .LLST10
+     /tmp/ccuOprvN.s:4146   .debug_str:00000000000004fc .LASF101
+     /tmp/ccuOprvN.s:3491   .debug_loc:00000000000002ac .LLST11
+     /tmp/ccuOprvN.s:4034   .debug_str:0000000000000136 .LASF102
+     /tmp/ccuOprvN.s:3508   .debug_loc:00000000000002d7 .LLST12
+     /tmp/ccuOprvN.s:4148   .debug_str:0000000000000503 .LASF103
+     /tmp/ccuOprvN.s:3541   .debug_loc:0000000000000320 .LLST13
+     /tmp/ccuOprvN.s:4124   .debug_str:0000000000000473 .LASF104
+     /tmp/ccuOprvN.s:3593   .debug_loc:00000000000003a6 .LLST14
+     /tmp/ccuOprvN.s:507    .text.i2s_psc_config:00000000000000ea .LVL54
+     /tmp/ccuOprvN.s:4004   .debug_str:000000000000007c .LASF105
+     /tmp/ccuOprvN.s:249    .text.i2s_init:0000000000000000 .LFB7
+     /tmp/ccuOprvN.s:284    .text.i2s_init:000000000000001c .LFE7
+     /tmp/ccuOprvN.s:4020   .debug_str:00000000000000d3 .LASF106
+     /tmp/ccuOprvN.s:3643   .debug_loc:000000000000041c .LLST3
+     /tmp/ccuOprvN.s:3986   .debug_str:0000000000000000 .LASF107
+GAS LISTING /tmp/ccuOprvN.s 			page 51
 
 
-     /tmp/ccfn6hy1.s:4134   .debug_str:0000000000000505 .LASF108
-     /tmp/ccfn6hy1.s:3657   .debug_loc:000000000000043d .LLST4
-     /tmp/ccfn6hy1.s:3671   .debug_loc:000000000000045e .LLST5
-     /tmp/ccfn6hy1.s:4066   .debug_str:000000000000023a .LASF109
-     /tmp/ccfn6hy1.s:230    .text.spi_disable:0000000000000000 .LFB6
-     /tmp/ccfn6hy1.s:242    .text.spi_disable:000000000000000a .LFE6
-     /tmp/ccfn6hy1.s:4136   .debug_str:000000000000050a .LASF110
-     /tmp/ccfn6hy1.s:211    .text.spi_enable:0000000000000000 .LFB5
-     /tmp/ccfn6hy1.s:223    .text.spi_enable:000000000000000a .LFE5
-     /tmp/ccfn6hy1.s:4076   .debug_str:0000000000000278 .LASF111
-     /tmp/ccfn6hy1.s:149    .text.spi_init:0000000000000000 .LFB4
-     /tmp/ccfn6hy1.s:204    .text.spi_init:000000000000003e .LFE4
-     /tmp/ccfn6hy1.s:4168   .debug_str:00000000000005ca .LASF112
-     /tmp/ccfn6hy1.s:3698   .debug_loc:0000000000000495 .LLST2
-     /tmp/ccfn6hy1.s:4062   .debug_str:000000000000021e .LASF113
-     /tmp/ccfn6hy1.s:117    .text.spi_struct_para_init:0000000000000000 .LFB3
-     /tmp/ccfn6hy1.s:142    .text.spi_struct_para_init:000000000000001a .LFE3
-     /tmp/ccfn6hy1.s:4116   .debug_str:00000000000003cb .LASF114
-     /tmp/ccfn6hy1.s:14     .text.spi_i2s_deinit:0000000000000000 .LFB2
-     /tmp/ccfn6hy1.s:110    .text.spi_i2s_deinit:000000000000007a .LFE2
-     /tmp/ccfn6hy1.s:3749   .debug_loc:00000000000004f0 .LLST0
-     /tmp/ccfn6hy1.s:3797   .debug_loc:0000000000000564 .LLST1
-     /tmp/ccfn6hy1.s:51     .text.spi_i2s_deinit:0000000000000032 .LVL2
-     /tmp/ccfn6hy1.s:65     .text.spi_i2s_deinit:0000000000000042 .LVL3
-     /tmp/ccfn6hy1.s:73     .text.spi_i2s_deinit:000000000000004e .LVL5
-     /tmp/ccfn6hy1.s:87     .text.spi_i2s_deinit:000000000000005e .LVL6
-     /tmp/ccfn6hy1.s:95     .text.spi_i2s_deinit:000000000000006a .LVL8
-     /tmp/ccfn6hy1.s:108    .text.spi_i2s_deinit:000000000000007a .LVL9
-     /tmp/ccfn6hy1.s:4092   .debug_str:00000000000002f5 .LASF115
-     /tmp/ccfn6hy1.s:4058   .debug_str:00000000000001fa .LASF116
-     /tmp/ccfn6hy1.s:4182   .debug_str:0000000000000613 .LASF117
-     /tmp/ccfn6hy1.s:1226   .text.spi_i2s_flag_get:0000000000000000 .LVL108
-     /tmp/ccfn6hy1.s:1230   .text.spi_i2s_flag_get:0000000000000002 .LVL109
-     /tmp/ccfn6hy1.s:1095   .text.spi_i2s_interrupt_flag_get:0000000000000000 .LVL87
-     /tmp/ccfn6hy1.s:1146   .text.spi_i2s_interrupt_flag_get:0000000000000028 .LVL94
-     /tmp/ccfn6hy1.s:1148   .text.spi_i2s_interrupt_flag_get:000000000000002a .LVL95
-     /tmp/ccfn6hy1.s:1110   .text.spi_i2s_interrupt_flag_get:0000000000000014 .LVL90
-     /tmp/ccfn6hy1.s:1099   .text.spi_i2s_interrupt_flag_get:0000000000000002 .LVL88
-     /tmp/ccfn6hy1.s:1142   .text.spi_i2s_interrupt_flag_get:0000000000000026 .LVL93
-     /tmp/ccfn6hy1.s:897    .text.spi_crc_get:0000000000000000 .LVL77
-     /tmp/ccfn6hy1.s:904    .text.spi_crc_get:0000000000000004 .LVL78
-     /tmp/ccfn6hy1.s:909    .text.spi_crc_get:000000000000000a .LVL79
-     /tmp/ccfn6hy1.s:914    .text.spi_crc_get:000000000000000c .LVL80
-     /tmp/ccfn6hy1.s:816    .text.spi_crc_polynomial_get:0000000000000000 .LVL72
-     /tmp/ccfn6hy1.s:820    .text.spi_crc_polynomial_get:0000000000000002 .LVL73
-     /tmp/ccfn6hy1.s:760    .text.spi_bidirectional_transfer_config:0000000000000000 .LVL69
-     /tmp/ccfn6hy1.s:779    .text.spi_bidirectional_transfer_config:0000000000000016 .LVL70
-     /tmp/ccfn6hy1.s:740    .text.spi_i2s_data_receive:0000000000000000 .LVL67
-     /tmp/ccfn6hy1.s:744    .text.spi_i2s_data_receive:0000000000000002 .LVL68
-     /tmp/ccfn6hy1.s:696    .text.spi_i2s_data_frame_format_config:0000000000000000 .LVL64
-     /tmp/ccfn6hy1.s:708    .text.spi_i2s_data_frame_format_config:0000000000000010 .LVL65
-     /tmp/ccfn6hy1.s:301    .text.i2s_psc_config:0000000000000002 .LCFI8
-     /tmp/ccfn6hy1.s:453    .text.i2s_psc_config:00000000000000ae .LCFI9
-     /tmp/ccfn6hy1.s:458    .text.i2s_psc_config:00000000000000b0 .LCFI10
-     /tmp/ccfn6hy1.s:294    .text.i2s_psc_config:0000000000000000 .LVL25
-     /tmp/ccfn6hy1.s:320    .text.i2s_psc_config:0000000000000018 .LVL26
-     /tmp/ccfn6hy1.s:451    .text.i2s_psc_config:00000000000000ac .LVL43
-GAS LISTING /tmp/ccfn6hy1.s 			page 52
+     /tmp/ccuOprvN.s:4132   .debug_str:00000000000004ac .LASF108
+     /tmp/ccuOprvN.s:3657   .debug_loc:000000000000043d .LLST4
+     /tmp/ccuOprvN.s:3671   .debug_loc:000000000000045e .LLST5
+     /tmp/ccuOprvN.s:4066   .debug_str:000000000000023a .LASF109
+     /tmp/ccuOprvN.s:230    .text.spi_disable:0000000000000000 .LFB6
+     /tmp/ccuOprvN.s:242    .text.spi_disable:000000000000000a .LFE6
+     /tmp/ccuOprvN.s:4134   .debug_str:00000000000004b1 .LASF110
+     /tmp/ccuOprvN.s:211    .text.spi_enable:0000000000000000 .LFB5
+     /tmp/ccuOprvN.s:223    .text.spi_enable:000000000000000a .LFE5
+     /tmp/ccuOprvN.s:4076   .debug_str:0000000000000278 .LASF111
+     /tmp/ccuOprvN.s:149    .text.spi_init:0000000000000000 .LFB4
+     /tmp/ccuOprvN.s:204    .text.spi_init:000000000000003e .LFE4
+     /tmp/ccuOprvN.s:4166   .debug_str:0000000000000571 .LASF112
+     /tmp/ccuOprvN.s:3698   .debug_loc:0000000000000495 .LLST2
+     /tmp/ccuOprvN.s:4062   .debug_str:000000000000021e .LASF113
+     /tmp/ccuOprvN.s:117    .text.spi_struct_para_init:0000000000000000 .LFB3
+     /tmp/ccuOprvN.s:142    .text.spi_struct_para_init:000000000000001a .LFE3
+     /tmp/ccuOprvN.s:4116   .debug_str:00000000000003cb .LASF114
+     /tmp/ccuOprvN.s:14     .text.spi_i2s_deinit:0000000000000000 .LFB2
+     /tmp/ccuOprvN.s:110    .text.spi_i2s_deinit:000000000000007a .LFE2
+     /tmp/ccuOprvN.s:3749   .debug_loc:00000000000004f0 .LLST0
+     /tmp/ccuOprvN.s:3797   .debug_loc:0000000000000564 .LLST1
+     /tmp/ccuOprvN.s:51     .text.spi_i2s_deinit:0000000000000032 .LVL2
+     /tmp/ccuOprvN.s:65     .text.spi_i2s_deinit:0000000000000042 .LVL3
+     /tmp/ccuOprvN.s:73     .text.spi_i2s_deinit:000000000000004e .LVL5
+     /tmp/ccuOprvN.s:87     .text.spi_i2s_deinit:000000000000005e .LVL6
+     /tmp/ccuOprvN.s:95     .text.spi_i2s_deinit:000000000000006a .LVL8
+     /tmp/ccuOprvN.s:108    .text.spi_i2s_deinit:000000000000007a .LVL9
+     /tmp/ccuOprvN.s:4092   .debug_str:00000000000002f5 .LASF115
+     /tmp/ccuOprvN.s:4058   .debug_str:00000000000001fa .LASF116
+     /tmp/ccuOprvN.s:4180   .debug_str:00000000000005ba .LASF117
+     /tmp/ccuOprvN.s:1226   .text.spi_i2s_flag_get:0000000000000000 .LVL108
+     /tmp/ccuOprvN.s:1230   .text.spi_i2s_flag_get:0000000000000002 .LVL109
+     /tmp/ccuOprvN.s:1095   .text.spi_i2s_interrupt_flag_get:0000000000000000 .LVL87
+     /tmp/ccuOprvN.s:1146   .text.spi_i2s_interrupt_flag_get:0000000000000028 .LVL94
+     /tmp/ccuOprvN.s:1148   .text.spi_i2s_interrupt_flag_get:000000000000002a .LVL95
+     /tmp/ccuOprvN.s:1110   .text.spi_i2s_interrupt_flag_get:0000000000000014 .LVL90
+     /tmp/ccuOprvN.s:1099   .text.spi_i2s_interrupt_flag_get:0000000000000002 .LVL88
+     /tmp/ccuOprvN.s:1142   .text.spi_i2s_interrupt_flag_get:0000000000000026 .LVL93
+     /tmp/ccuOprvN.s:897    .text.spi_crc_get:0000000000000000 .LVL77
+     /tmp/ccuOprvN.s:904    .text.spi_crc_get:0000000000000004 .LVL78
+     /tmp/ccuOprvN.s:909    .text.spi_crc_get:000000000000000a .LVL79
+     /tmp/ccuOprvN.s:914    .text.spi_crc_get:000000000000000c .LVL80
+     /tmp/ccuOprvN.s:816    .text.spi_crc_polynomial_get:0000000000000000 .LVL72
+     /tmp/ccuOprvN.s:820    .text.spi_crc_polynomial_get:0000000000000002 .LVL73
+     /tmp/ccuOprvN.s:760    .text.spi_bidirectional_transfer_config:0000000000000000 .LVL69
+     /tmp/ccuOprvN.s:779    .text.spi_bidirectional_transfer_config:0000000000000016 .LVL70
+     /tmp/ccuOprvN.s:740    .text.spi_i2s_data_receive:0000000000000000 .LVL67
+     /tmp/ccuOprvN.s:744    .text.spi_i2s_data_receive:0000000000000002 .LVL68
+     /tmp/ccuOprvN.s:696    .text.spi_i2s_data_frame_format_config:0000000000000000 .LVL64
+     /tmp/ccuOprvN.s:708    .text.spi_i2s_data_frame_format_config:0000000000000010 .LVL65
+     /tmp/ccuOprvN.s:301    .text.i2s_psc_config:0000000000000002 .LCFI8
+     /tmp/ccuOprvN.s:453    .text.i2s_psc_config:00000000000000ae .LCFI9
+     /tmp/ccuOprvN.s:458    .text.i2s_psc_config:00000000000000b0 .LCFI10
+     /tmp/ccuOprvN.s:294    .text.i2s_psc_config:0000000000000000 .LVL25
+     /tmp/ccuOprvN.s:320    .text.i2s_psc_config:0000000000000018 .LVL26
+     /tmp/ccuOprvN.s:451    .text.i2s_psc_config:00000000000000ac .LVL43
+GAS LISTING /tmp/ccuOprvN.s 			page 52
 
 
-     /tmp/ccfn6hy1.s:456    .text.i2s_psc_config:00000000000000b0 .LVL44
-     /tmp/ccfn6hy1.s:375    .text.i2s_psc_config:000000000000005e .LVL34
-     /tmp/ccfn6hy1.s:468    .text.i2s_psc_config:00000000000000ba .LVL46
-     /tmp/ccfn6hy1.s:496    .text.i2s_psc_config:00000000000000da .LVL52
-     /tmp/ccfn6hy1.s:412    .text.i2s_psc_config:0000000000000088 .LVL39
-     /tmp/ccfn6hy1.s:426    .text.i2s_psc_config:0000000000000098 .LVL42
-     /tmp/ccfn6hy1.s:407    .text.i2s_psc_config:0000000000000084 .LVL38
-     /tmp/ccfn6hy1.s:418    .text.i2s_psc_config:000000000000008e .LVL40
-     /tmp/ccfn6hy1.s:424    .text.i2s_psc_config:0000000000000094 .LVL41
-     /tmp/ccfn6hy1.s:325    .text.i2s_psc_config:0000000000000020 .LVL27
-     /tmp/ccfn6hy1.s:337    .text.i2s_psc_config:000000000000002c .LVL28
-     /tmp/ccfn6hy1.s:344    .text.i2s_psc_config:0000000000000034 .LVL29
-     /tmp/ccfn6hy1.s:394    .text.i2s_psc_config:0000000000000076 .LVL36
-     /tmp/ccfn6hy1.s:401    .text.i2s_psc_config:000000000000007a .LVL37
-     /tmp/ccfn6hy1.s:466    .text.i2s_psc_config:00000000000000b8 .LVL45
-     /tmp/ccfn6hy1.s:480    .text.i2s_psc_config:00000000000000c8 .LVL48
-     /tmp/ccfn6hy1.s:482    .text.i2s_psc_config:00000000000000ca .LVL49
-     /tmp/ccfn6hy1.s:494    .text.i2s_psc_config:00000000000000d8 .LVL51
-     /tmp/ccfn6hy1.s:500    .text.i2s_psc_config:00000000000000dc .LVL53
-     /tmp/ccfn6hy1.s:359    .text.i2s_psc_config:0000000000000044 .LVL31
-     /tmp/ccfn6hy1.s:363    .text.i2s_psc_config:0000000000000046 .LVL32
-     /tmp/ccfn6hy1.s:367    .text.i2s_psc_config:000000000000004c .LVL33
-     /tmp/ccfn6hy1.s:387    .text.i2s_psc_config:000000000000006a .LVL35
-     /tmp/ccfn6hy1.s:473    .text.i2s_psc_config:00000000000000bc .LVL47
-     /tmp/ccfn6hy1.s:487    .text.i2s_psc_config:00000000000000cc .LVL50
-     /tmp/ccfn6hy1.s:511    .text.i2s_psc_config:00000000000000f0 .LVL55
-     /tmp/ccfn6hy1.s:252    .text.i2s_init:0000000000000000 .LVL19
-     /tmp/ccfn6hy1.s:274    .text.i2s_init:0000000000000012 .LVL23
-     /tmp/ccfn6hy1.s:268    .text.i2s_init:000000000000000c .LVL22
-     /tmp/ccfn6hy1.s:257    .text.i2s_init:0000000000000002 .LVL20
-     /tmp/ccfn6hy1.s:266    .text.i2s_init:000000000000000a .LVL21
-     /tmp/ccfn6hy1.s:277    .text.i2s_init:0000000000000018 .LVL24
-     /tmp/ccfn6hy1.s:152    .text.spi_init:0000000000000000 .LVL11
-     /tmp/ccfn6hy1.s:167    .text.spi_init:000000000000001a .LVL12
-     /tmp/ccfn6hy1.s:177    .text.spi_init:000000000000002a .LVL13
-     /tmp/ccfn6hy1.s:188    .text.spi_init:000000000000002e .LVL14
-     /tmp/ccfn6hy1.s:195    .text.spi_init:0000000000000032 .LVL15
-     /tmp/ccfn6hy1.s:200    .text.spi_init:000000000000003c .LVL16
-     /tmp/ccfn6hy1.s:22     .text.spi_i2s_deinit:0000000000000002 .LCFI0
-     /tmp/ccfn6hy1.s:41     .text.spi_i2s_deinit:0000000000000024 .LCFI1
-     /tmp/ccfn6hy1.s:45     .text.spi_i2s_deinit:0000000000000026 .LCFI2
-     /tmp/ccfn6hy1.s:61     .text.spi_i2s_deinit:000000000000003a .LCFI3
-     /tmp/ccfn6hy1.s:67     .text.spi_i2s_deinit:0000000000000042 .LCFI4
-     /tmp/ccfn6hy1.s:83     .text.spi_i2s_deinit:0000000000000056 .LCFI5
-     /tmp/ccfn6hy1.s:89     .text.spi_i2s_deinit:000000000000005e .LCFI6
-     /tmp/ccfn6hy1.s:104    .text.spi_i2s_deinit:0000000000000072 .LCFI7
-     /tmp/ccfn6hy1.s:18     .text.spi_i2s_deinit:0000000000000000 .LVL0
-     /tmp/ccfn6hy1.s:49     .text.spi_i2s_deinit:000000000000002a .LVL1
-     /tmp/ccfn6hy1.s:71     .text.spi_i2s_deinit:0000000000000046 .LVL4
-     /tmp/ccfn6hy1.s:93     .text.spi_i2s_deinit:0000000000000062 .LVL7
-     /tmp/ccfn6hy1.s:1267   .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccuOprvN.s:456    .text.i2s_psc_config:00000000000000b0 .LVL44
+     /tmp/ccuOprvN.s:375    .text.i2s_psc_config:000000000000005e .LVL34
+     /tmp/ccuOprvN.s:468    .text.i2s_psc_config:00000000000000ba .LVL46
+     /tmp/ccuOprvN.s:496    .text.i2s_psc_config:00000000000000da .LVL52
+     /tmp/ccuOprvN.s:412    .text.i2s_psc_config:0000000000000088 .LVL39
+     /tmp/ccuOprvN.s:426    .text.i2s_psc_config:0000000000000098 .LVL42
+     /tmp/ccuOprvN.s:407    .text.i2s_psc_config:0000000000000084 .LVL38
+     /tmp/ccuOprvN.s:418    .text.i2s_psc_config:000000000000008e .LVL40
+     /tmp/ccuOprvN.s:424    .text.i2s_psc_config:0000000000000094 .LVL41
+     /tmp/ccuOprvN.s:325    .text.i2s_psc_config:0000000000000020 .LVL27
+     /tmp/ccuOprvN.s:337    .text.i2s_psc_config:000000000000002c .LVL28
+     /tmp/ccuOprvN.s:344    .text.i2s_psc_config:0000000000000034 .LVL29
+     /tmp/ccuOprvN.s:394    .text.i2s_psc_config:0000000000000076 .LVL36
+     /tmp/ccuOprvN.s:401    .text.i2s_psc_config:000000000000007a .LVL37
+     /tmp/ccuOprvN.s:466    .text.i2s_psc_config:00000000000000b8 .LVL45
+     /tmp/ccuOprvN.s:480    .text.i2s_psc_config:00000000000000c8 .LVL48
+     /tmp/ccuOprvN.s:482    .text.i2s_psc_config:00000000000000ca .LVL49
+     /tmp/ccuOprvN.s:494    .text.i2s_psc_config:00000000000000d8 .LVL51
+     /tmp/ccuOprvN.s:500    .text.i2s_psc_config:00000000000000dc .LVL53
+     /tmp/ccuOprvN.s:359    .text.i2s_psc_config:0000000000000044 .LVL31
+     /tmp/ccuOprvN.s:363    .text.i2s_psc_config:0000000000000046 .LVL32
+     /tmp/ccuOprvN.s:367    .text.i2s_psc_config:000000000000004c .LVL33
+     /tmp/ccuOprvN.s:387    .text.i2s_psc_config:000000000000006a .LVL35
+     /tmp/ccuOprvN.s:473    .text.i2s_psc_config:00000000000000bc .LVL47
+     /tmp/ccuOprvN.s:487    .text.i2s_psc_config:00000000000000cc .LVL50
+     /tmp/ccuOprvN.s:511    .text.i2s_psc_config:00000000000000f0 .LVL55
+     /tmp/ccuOprvN.s:252    .text.i2s_init:0000000000000000 .LVL19
+     /tmp/ccuOprvN.s:274    .text.i2s_init:0000000000000012 .LVL23
+     /tmp/ccuOprvN.s:268    .text.i2s_init:000000000000000c .LVL22
+     /tmp/ccuOprvN.s:257    .text.i2s_init:0000000000000002 .LVL20
+     /tmp/ccuOprvN.s:266    .text.i2s_init:000000000000000a .LVL21
+     /tmp/ccuOprvN.s:277    .text.i2s_init:0000000000000018 .LVL24
+     /tmp/ccuOprvN.s:152    .text.spi_init:0000000000000000 .LVL11
+     /tmp/ccuOprvN.s:167    .text.spi_init:000000000000001a .LVL12
+     /tmp/ccuOprvN.s:177    .text.spi_init:000000000000002a .LVL13
+     /tmp/ccuOprvN.s:188    .text.spi_init:000000000000002e .LVL14
+     /tmp/ccuOprvN.s:195    .text.spi_init:0000000000000032 .LVL15
+     /tmp/ccuOprvN.s:200    .text.spi_init:000000000000003c .LVL16
+     /tmp/ccuOprvN.s:22     .text.spi_i2s_deinit:0000000000000002 .LCFI0
+     /tmp/ccuOprvN.s:41     .text.spi_i2s_deinit:0000000000000024 .LCFI1
+     /tmp/ccuOprvN.s:45     .text.spi_i2s_deinit:0000000000000026 .LCFI2
+     /tmp/ccuOprvN.s:61     .text.spi_i2s_deinit:000000000000003a .LCFI3
+     /tmp/ccuOprvN.s:67     .text.spi_i2s_deinit:0000000000000042 .LCFI4
+     /tmp/ccuOprvN.s:83     .text.spi_i2s_deinit:0000000000000056 .LCFI5
+     /tmp/ccuOprvN.s:89     .text.spi_i2s_deinit:000000000000005e .LCFI6
+     /tmp/ccuOprvN.s:104    .text.spi_i2s_deinit:0000000000000072 .LCFI7
+     /tmp/ccuOprvN.s:18     .text.spi_i2s_deinit:0000000000000000 .LVL0
+     /tmp/ccuOprvN.s:49     .text.spi_i2s_deinit:000000000000002a .LVL1
+     /tmp/ccuOprvN.s:71     .text.spi_i2s_deinit:0000000000000046 .LVL4
+     /tmp/ccuOprvN.s:93     .text.spi_i2s_deinit:0000000000000062 .LVL7
+     /tmp/ccuOprvN.s:1267   .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_reset_enable

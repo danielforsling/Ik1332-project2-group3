@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cc0ftzJA.s 			page 1
+GAS LISTING /tmp/ccInkBCS.s 			page 1
 
 
    1              		.file	"gd32vf103_rtc.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
   41:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
   42:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** /* RTC register high bits offset */
   43:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** #define RTC_HIGH_BITS_OFFSET       ((uint32_t)16U)
-GAS LISTING /tmp/cc0ftzJA.s 			page 2
+GAS LISTING /tmp/ccInkBCS.s 			page 2
 
 
   44:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
   52              	rtc_counter_set:
   53              	.LFB4:
   66:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
-GAS LISTING /tmp/cc0ftzJA.s 			page 3
+GAS LISTING /tmp/ccInkBCS.s 			page 3
 
 
   67:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** /*!
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
   64:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** }
   89              		.loc 1 64 5
   64:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** }
-GAS LISTING /tmp/cc0ftzJA.s 			page 4
+GAS LISTING /tmp/ccInkBCS.s 			page 4
 
 
   90              		.loc 1 64 13 is_stmt 0
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
   94:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     /* set the RTC prescaler low bits */
   95:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     RTC_PSCL = (psc & RTC_LOW_BITS_MASK);
  130              		.loc 1 95 21 is_stmt 0
-GAS LISTING /tmp/cc0ftzJA.s 			page 5
+GAS LISTING /tmp/ccInkBCS.s 			page 5
 
 
  131 0016 4205     		slli	a0,a0,16
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  169 0004 83274780 		lw	a5,-2044(a4)
  108:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     }
  170              		.loc 1 108 29 discriminator 1
-GAS LISTING /tmp/cc0ftzJA.s 			page 6
+GAS LISTING /tmp/ccInkBCS.s 			page 6
 
 
  171 0008 93F70702 		andi	a5,a5,32
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  206 001a 8280     		ret
  207              		.cfi_endproc
  208              	.LFE7:
-GAS LISTING /tmp/cc0ftzJA.s 			page 7
+GAS LISTING /tmp/ccInkBCS.s 			page 7
 
 
  210              		.section	.text.rtc_alarm_config,"ax",@progbits
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  246              		.loc 1 139 15
  247 001c 23A2A782 		sw	a0,-2012(a5)
  140:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     rtc_configuration_mode_exit();
-GAS LISTING /tmp/cc0ftzJA.s 			page 8
+GAS LISTING /tmp/ccInkBCS.s 			page 8
 
 
  248              		.loc 1 140 5 is_stmt 1
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  156:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** }
  286              		.loc 1 156 1
  287 000e 5D8D     		or	a0,a5,a0
-GAS LISTING /tmp/cc0ftzJA.s 			page 9
+GAS LISTING /tmp/ccInkBCS.s 			page 9
 
 
  288              	.LVL10:
@@ -538,7 +538,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  327              		.globl	rtc_flag_get
  329              	rtc_flag_get:
  330              	.LFB11:
-GAS LISTING /tmp/cc0ftzJA.s 			page 10
+GAS LISTING /tmp/ccInkBCS.s 			page 10
 
 
  172:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
@@ -598,7 +598,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  206:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** {
  353              		.loc 1 206 1 is_stmt 1
  354              		.cfi_startproc
-GAS LISTING /tmp/cc0ftzJA.s 			page 11
+GAS LISTING /tmp/ccInkBCS.s 			page 11
 
 
  355              	.LVL16:
@@ -658,7 +658,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  220:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** */
  221:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** FlagStatus rtc_interrupt_flag_get(uint32_t flag)
  222:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** {
-GAS LISTING /tmp/cc0ftzJA.s 			page 12
+GAS LISTING /tmp/ccInkBCS.s 			page 12
 
 
  223:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     if(RESET != (RTC_CTL & flag)){
@@ -718,7 +718,7 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  419              	rtc_interrupt_disable:
  420              	.LFB16:
  260:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
-GAS LISTING /tmp/cc0ftzJA.s 			page 13
+GAS LISTING /tmp/ccInkBCS.s 			page 13
 
 
  261:../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** /*!
@@ -755,324 +755,324 @@ GAS LISTING /tmp/cc0ftzJA.s 			page 1
  438              	.LFE16:
  440              		.text
  441              	.Letext0:
- 442              		.file 2 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
- 443              		.file 3 "/home/jobe/tidab3/IoT/projekt/Ik1332-project2-group3/compiler/riscv64-unknown-elf/include
+ 442              		.file 2 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
+ 443              		.file 3 "/home/lintu/Documents/school/IK1332/Ik1332-project2-group3/compiler/riscv64-unknown-elf/i
  444              		.file 4 "../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  445              		.file 5 "../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING /tmp/cc0ftzJA.s 			page 14
+GAS LISTING /tmp/ccInkBCS.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_rtc.c
-     /tmp/cc0ftzJA.s:13     .text.rtc_configuration_mode_enter:0000000000000000 rtc_configuration_mode_enter
-     /tmp/cc0ftzJA.s:17     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:18     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:19     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:20     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:25     .text.rtc_configuration_mode_enter:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:26     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:33     .text.rtc_configuration_mode_exit:0000000000000000 rtc_configuration_mode_exit
-     /tmp/cc0ftzJA.s:36     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:37     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:38     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:39     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:44     .text.rtc_configuration_mode_exit:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:45     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:52     .text.rtc_counter_set:0000000000000000 rtc_counter_set
-     /tmp/cc0ftzJA.s:55     .text.rtc_counter_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:57     .text.rtc_counter_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:60     .text.rtc_counter_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:61     .text.rtc_counter_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:62     .text.rtc_counter_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:67     .text.rtc_counter_set:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:69     .text.rtc_counter_set:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:74     .text.rtc_counter_set:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:79     .text.rtc_counter_set:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:80     .text.rtc_counter_set:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:82     .text.rtc_counter_set:000000000000001a .L0 
-     /tmp/cc0ftzJA.s:83     .text.rtc_counter_set:000000000000001a .L0 
-     /tmp/cc0ftzJA.s:85     .text.rtc_counter_set:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:89     .text.rtc_counter_set:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:90     .text.rtc_counter_set:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:91     .text.rtc_counter_set:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:97     .text.rtc_counter_set:000000000000002a .L0 
-     /tmp/cc0ftzJA.s:98     .text.rtc_counter_set:000000000000002c .L0 
-     /tmp/cc0ftzJA.s:105    .text.rtc_prescaler_set:0000000000000000 rtc_prescaler_set
-     /tmp/cc0ftzJA.s:108    .text.rtc_prescaler_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:110    .text.rtc_prescaler_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:113    .text.rtc_prescaler_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:114    .text.rtc_prescaler_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:115    .text.rtc_prescaler_set:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:120    .text.rtc_prescaler_set:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:125    .text.rtc_prescaler_set:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:130    .text.rtc_prescaler_set:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:131    .text.rtc_prescaler_set:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:134    .text.rtc_prescaler_set:0000000000000018 .L0 
-     /tmp/cc0ftzJA.s:136    .text.rtc_prescaler_set:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:137    .text.rtc_prescaler_set:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:139    .text.rtc_prescaler_set:000000000000001e .L0 
-     /tmp/cc0ftzJA.s:143    .text.rtc_prescaler_set:0000000000000022 .L0 
-     /tmp/cc0ftzJA.s:144    .text.rtc_prescaler_set:0000000000000022 .L0 
-     /tmp/cc0ftzJA.s:145    .text.rtc_prescaler_set:0000000000000022 .L0 
-     /tmp/cc0ftzJA.s:151    .text.rtc_prescaler_set:000000000000002c .L0 
-     /tmp/cc0ftzJA.s:152    .text.rtc_prescaler_set:000000000000002e .L0 
-     /tmp/cc0ftzJA.s:159    .text.rtc_lwoff_wait:0000000000000000 rtc_lwoff_wait
-     /tmp/cc0ftzJA.s:162    .text.rtc_lwoff_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:163    .text.rtc_lwoff_wait:0000000000000000 .L0 
-GAS LISTING /tmp/cc0ftzJA.s 			page 15
+     /tmp/ccInkBCS.s:13     .text.rtc_configuration_mode_enter:0000000000000000 rtc_configuration_mode_enter
+     /tmp/ccInkBCS.s:17     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:18     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:19     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:20     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:25     .text.rtc_configuration_mode_enter:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:26     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:33     .text.rtc_configuration_mode_exit:0000000000000000 rtc_configuration_mode_exit
+     /tmp/ccInkBCS.s:36     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:37     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:38     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:39     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:44     .text.rtc_configuration_mode_exit:000000000000000e .L0 
+     /tmp/ccInkBCS.s:45     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:52     .text.rtc_counter_set:0000000000000000 rtc_counter_set
+     /tmp/ccInkBCS.s:55     .text.rtc_counter_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:57     .text.rtc_counter_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:60     .text.rtc_counter_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:61     .text.rtc_counter_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:62     .text.rtc_counter_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:67     .text.rtc_counter_set:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:69     .text.rtc_counter_set:000000000000000c .L0 
+     /tmp/ccInkBCS.s:74     .text.rtc_counter_set:000000000000000e .L0 
+     /tmp/ccInkBCS.s:79     .text.rtc_counter_set:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:80     .text.rtc_counter_set:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:82     .text.rtc_counter_set:000000000000001a .L0 
+     /tmp/ccInkBCS.s:83     .text.rtc_counter_set:000000000000001a .L0 
+     /tmp/ccInkBCS.s:85     .text.rtc_counter_set:000000000000001c .L0 
+     /tmp/ccInkBCS.s:89     .text.rtc_counter_set:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:90     .text.rtc_counter_set:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:91     .text.rtc_counter_set:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:97     .text.rtc_counter_set:000000000000002a .L0 
+     /tmp/ccInkBCS.s:98     .text.rtc_counter_set:000000000000002c .L0 
+     /tmp/ccInkBCS.s:105    .text.rtc_prescaler_set:0000000000000000 rtc_prescaler_set
+     /tmp/ccInkBCS.s:108    .text.rtc_prescaler_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:110    .text.rtc_prescaler_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:113    .text.rtc_prescaler_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:114    .text.rtc_prescaler_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:115    .text.rtc_prescaler_set:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:120    .text.rtc_prescaler_set:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:125    .text.rtc_prescaler_set:000000000000000e .L0 
+     /tmp/ccInkBCS.s:130    .text.rtc_prescaler_set:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:131    .text.rtc_prescaler_set:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:134    .text.rtc_prescaler_set:0000000000000018 .L0 
+     /tmp/ccInkBCS.s:136    .text.rtc_prescaler_set:000000000000001c .L0 
+     /tmp/ccInkBCS.s:137    .text.rtc_prescaler_set:000000000000001c .L0 
+     /tmp/ccInkBCS.s:139    .text.rtc_prescaler_set:000000000000001e .L0 
+     /tmp/ccInkBCS.s:143    .text.rtc_prescaler_set:0000000000000022 .L0 
+     /tmp/ccInkBCS.s:144    .text.rtc_prescaler_set:0000000000000022 .L0 
+     /tmp/ccInkBCS.s:145    .text.rtc_prescaler_set:0000000000000022 .L0 
+     /tmp/ccInkBCS.s:151    .text.rtc_prescaler_set:000000000000002c .L0 
+     /tmp/ccInkBCS.s:152    .text.rtc_prescaler_set:000000000000002e .L0 
+     /tmp/ccInkBCS.s:159    .text.rtc_lwoff_wait:0000000000000000 rtc_lwoff_wait
+     /tmp/ccInkBCS.s:162    .text.rtc_lwoff_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:163    .text.rtc_lwoff_wait:0000000000000000 .L0 
+GAS LISTING /tmp/ccInkBCS.s 			page 15
 
 
-     /tmp/cc0ftzJA.s:164    .text.rtc_lwoff_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:165    .text.rtc_lwoff_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:168    .text.rtc_lwoff_wait:0000000000000004 .L0 
-     /tmp/cc0ftzJA.s:169    .text.rtc_lwoff_wait:0000000000000004 .L0 
-     /tmp/cc0ftzJA.s:171    .text.rtc_lwoff_wait:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:173    .text.rtc_lwoff_wait:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:175    .text.rtc_lwoff_wait:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:176    .text.rtc_lwoff_wait:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:183    .text.rtc_register_sync_wait:0000000000000000 rtc_register_sync_wait
-     /tmp/cc0ftzJA.s:186    .text.rtc_register_sync_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:187    .text.rtc_register_sync_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:188    .text.rtc_register_sync_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:189    .text.rtc_register_sync_wait:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:192    .text.rtc_register_sync_wait:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:194    .text.rtc_register_sync_wait:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:198    .text.rtc_register_sync_wait:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:199    .text.rtc_register_sync_wait:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:200    .text.rtc_register_sync_wait:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:202    .text.rtc_register_sync_wait:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:204    .text.rtc_register_sync_wait:0000000000000018 .L0 
-     /tmp/cc0ftzJA.s:206    .text.rtc_register_sync_wait:000000000000001a .L0 
-     /tmp/cc0ftzJA.s:207    .text.rtc_register_sync_wait:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:214    .text.rtc_alarm_config:0000000000000000 rtc_alarm_config
-     /tmp/cc0ftzJA.s:217    .text.rtc_alarm_config:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:219    .text.rtc_alarm_config:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:222    .text.rtc_alarm_config:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:223    .text.rtc_alarm_config:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:224    .text.rtc_alarm_config:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:229    .text.rtc_alarm_config:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:231    .text.rtc_alarm_config:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:236    .text.rtc_alarm_config:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:241    .text.rtc_alarm_config:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:242    .text.rtc_alarm_config:0000000000000016 .L0 
-     /tmp/cc0ftzJA.s:244    .text.rtc_alarm_config:000000000000001a .L0 
-     /tmp/cc0ftzJA.s:245    .text.rtc_alarm_config:000000000000001a .L0 
-     /tmp/cc0ftzJA.s:247    .text.rtc_alarm_config:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:251    .text.rtc_alarm_config:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:252    .text.rtc_alarm_config:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:253    .text.rtc_alarm_config:0000000000000020 .L0 
-     /tmp/cc0ftzJA.s:259    .text.rtc_alarm_config:000000000000002a .L0 
-     /tmp/cc0ftzJA.s:260    .text.rtc_alarm_config:000000000000002c .L0 
-     /tmp/cc0ftzJA.s:267    .text.rtc_counter_get:0000000000000000 rtc_counter_get
-     /tmp/cc0ftzJA.s:270    .text.rtc_counter_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:271    .text.rtc_counter_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:273    .text.rtc_counter_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:274    .text.rtc_counter_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:275    .text.rtc_counter_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:279    .text.rtc_counter_get:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:280    .text.rtc_counter_get:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:283    .text.rtc_counter_get:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:284    .text.rtc_counter_get:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:287    .text.rtc_counter_get:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:290    .text.rtc_counter_get:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:297    .text.rtc_divider_get:0000000000000000 rtc_divider_get
-     /tmp/cc0ftzJA.s:300    .text.rtc_divider_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:301    .text.rtc_divider_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:303    .text.rtc_divider_get:0000000000000000 .L0 
-GAS LISTING /tmp/cc0ftzJA.s 			page 16
+     /tmp/ccInkBCS.s:164    .text.rtc_lwoff_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:165    .text.rtc_lwoff_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:168    .text.rtc_lwoff_wait:0000000000000004 .L0 
+     /tmp/ccInkBCS.s:169    .text.rtc_lwoff_wait:0000000000000004 .L0 
+     /tmp/ccInkBCS.s:171    .text.rtc_lwoff_wait:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:173    .text.rtc_lwoff_wait:000000000000000c .L0 
+     /tmp/ccInkBCS.s:175    .text.rtc_lwoff_wait:000000000000000e .L0 
+     /tmp/ccInkBCS.s:176    .text.rtc_lwoff_wait:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:183    .text.rtc_register_sync_wait:0000000000000000 rtc_register_sync_wait
+     /tmp/ccInkBCS.s:186    .text.rtc_register_sync_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:187    .text.rtc_register_sync_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:188    .text.rtc_register_sync_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:189    .text.rtc_register_sync_wait:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:192    .text.rtc_register_sync_wait:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:194    .text.rtc_register_sync_wait:000000000000000c .L0 
+     /tmp/ccInkBCS.s:198    .text.rtc_register_sync_wait:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:199    .text.rtc_register_sync_wait:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:200    .text.rtc_register_sync_wait:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:202    .text.rtc_register_sync_wait:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:204    .text.rtc_register_sync_wait:0000000000000018 .L0 
+     /tmp/ccInkBCS.s:206    .text.rtc_register_sync_wait:000000000000001a .L0 
+     /tmp/ccInkBCS.s:207    .text.rtc_register_sync_wait:000000000000001c .L0 
+     /tmp/ccInkBCS.s:214    .text.rtc_alarm_config:0000000000000000 rtc_alarm_config
+     /tmp/ccInkBCS.s:217    .text.rtc_alarm_config:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:219    .text.rtc_alarm_config:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:222    .text.rtc_alarm_config:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:223    .text.rtc_alarm_config:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:224    .text.rtc_alarm_config:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:229    .text.rtc_alarm_config:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:231    .text.rtc_alarm_config:000000000000000c .L0 
+     /tmp/ccInkBCS.s:236    .text.rtc_alarm_config:000000000000000e .L0 
+     /tmp/ccInkBCS.s:241    .text.rtc_alarm_config:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:242    .text.rtc_alarm_config:0000000000000016 .L0 
+     /tmp/ccInkBCS.s:244    .text.rtc_alarm_config:000000000000001a .L0 
+     /tmp/ccInkBCS.s:245    .text.rtc_alarm_config:000000000000001a .L0 
+     /tmp/ccInkBCS.s:247    .text.rtc_alarm_config:000000000000001c .L0 
+     /tmp/ccInkBCS.s:251    .text.rtc_alarm_config:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:252    .text.rtc_alarm_config:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:253    .text.rtc_alarm_config:0000000000000020 .L0 
+     /tmp/ccInkBCS.s:259    .text.rtc_alarm_config:000000000000002a .L0 
+     /tmp/ccInkBCS.s:260    .text.rtc_alarm_config:000000000000002c .L0 
+     /tmp/ccInkBCS.s:267    .text.rtc_counter_get:0000000000000000 rtc_counter_get
+     /tmp/ccInkBCS.s:270    .text.rtc_counter_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:271    .text.rtc_counter_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:273    .text.rtc_counter_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:274    .text.rtc_counter_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:275    .text.rtc_counter_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:279    .text.rtc_counter_get:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:280    .text.rtc_counter_get:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:283    .text.rtc_counter_get:000000000000000c .L0 
+     /tmp/ccInkBCS.s:284    .text.rtc_counter_get:000000000000000c .L0 
+     /tmp/ccInkBCS.s:287    .text.rtc_counter_get:000000000000000e .L0 
+     /tmp/ccInkBCS.s:290    .text.rtc_counter_get:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:297    .text.rtc_divider_get:0000000000000000 rtc_divider_get
+     /tmp/ccInkBCS.s:300    .text.rtc_divider_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:301    .text.rtc_divider_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:303    .text.rtc_divider_get:0000000000000000 .L0 
+GAS LISTING /tmp/ccInkBCS.s 			page 16
 
 
-     /tmp/cc0ftzJA.s:304    .text.rtc_divider_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:305    .text.rtc_divider_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:308    .text.rtc_divider_get:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:310    .text.rtc_divider_get:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:312    .text.rtc_divider_get:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:314    .text.rtc_divider_get:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:317    .text.rtc_divider_get:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:318    .text.rtc_divider_get:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:319    .text.rtc_divider_get:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:322    .text.rtc_divider_get:0000000000000018 .L0 
-     /tmp/cc0ftzJA.s:329    .text.rtc_flag_get:0000000000000000 rtc_flag_get
-     /tmp/cc0ftzJA.s:332    .text.rtc_flag_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:334    .text.rtc_flag_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:335    .text.rtc_flag_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:336    .text.rtc_flag_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:339    .text.rtc_flag_get:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:342    .text.rtc_flag_get:000000000000000a .L0 
-     /tmp/cc0ftzJA.s:344    .text.rtc_flag_get:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:351    .text.rtc_flag_clear:0000000000000000 rtc_flag_clear
-     /tmp/cc0ftzJA.s:354    .text.rtc_flag_clear:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:356    .text.rtc_flag_clear:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:357    .text.rtc_flag_clear:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:358    .text.rtc_flag_clear:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:361    .text.rtc_flag_clear:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:364    .text.rtc_flag_clear:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:368    .text.rtc_flag_clear:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:369    .text.rtc_flag_clear:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:376    .text.rtc_interrupt_flag_get:0000000000000000 rtc_interrupt_flag_get
-     /tmp/cc0ftzJA.s:378    .text.rtc_interrupt_flag_get:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:380    .text.rtc_interrupt_flag_get:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:387    .text.rtc_interrupt_flag_clear:0000000000000000 rtc_interrupt_flag_clear
-     /tmp/cc0ftzJA.s:389    .text.rtc_interrupt_flag_clear:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:391    .text.rtc_interrupt_flag_clear:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:398    .text.rtc_interrupt_enable:0000000000000000 rtc_interrupt_enable
-     /tmp/cc0ftzJA.s:401    .text.rtc_interrupt_enable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:403    .text.rtc_interrupt_enable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:404    .text.rtc_interrupt_enable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:405    .text.rtc_interrupt_enable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:411    .text.rtc_interrupt_enable:000000000000000e .L0 
-     /tmp/cc0ftzJA.s:412    .text.rtc_interrupt_enable:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:419    .text.rtc_interrupt_disable:0000000000000000 rtc_interrupt_disable
-     /tmp/cc0ftzJA.s:422    .text.rtc_interrupt_disable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:424    .text.rtc_interrupt_disable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:425    .text.rtc_interrupt_disable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:426    .text.rtc_interrupt_disable:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:429    .text.rtc_interrupt_disable:0000000000000008 .L0 
-     /tmp/cc0ftzJA.s:432    .text.rtc_interrupt_disable:000000000000000c .L0 
-     /tmp/cc0ftzJA.s:436    .text.rtc_interrupt_disable:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:437    .text.rtc_interrupt_disable:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:29     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
-     /tmp/cc0ftzJA.s:48     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:101    .text.rtc_counter_set:000000000000002c .L0 
-     /tmp/cc0ftzJA.s:155    .text.rtc_prescaler_set:000000000000002e .L0 
-     /tmp/cc0ftzJA.s:179    .text.rtc_lwoff_wait:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:210    .text.rtc_register_sync_wait:000000000000001c .L0 
-     /tmp/cc0ftzJA.s:263    .text.rtc_alarm_config:000000000000002c .L0 
-     /tmp/cc0ftzJA.s:293    .text.rtc_counter_get:0000000000000012 .L0 
-GAS LISTING /tmp/cc0ftzJA.s 			page 17
+     /tmp/ccInkBCS.s:304    .text.rtc_divider_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:305    .text.rtc_divider_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:308    .text.rtc_divider_get:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:310    .text.rtc_divider_get:000000000000000c .L0 
+     /tmp/ccInkBCS.s:312    .text.rtc_divider_get:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:314    .text.rtc_divider_get:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:317    .text.rtc_divider_get:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:318    .text.rtc_divider_get:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:319    .text.rtc_divider_get:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:322    .text.rtc_divider_get:0000000000000018 .L0 
+     /tmp/ccInkBCS.s:329    .text.rtc_flag_get:0000000000000000 rtc_flag_get
+     /tmp/ccInkBCS.s:332    .text.rtc_flag_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:334    .text.rtc_flag_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:335    .text.rtc_flag_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:336    .text.rtc_flag_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:339    .text.rtc_flag_get:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:342    .text.rtc_flag_get:000000000000000a .L0 
+     /tmp/ccInkBCS.s:344    .text.rtc_flag_get:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:351    .text.rtc_flag_clear:0000000000000000 rtc_flag_clear
+     /tmp/ccInkBCS.s:354    .text.rtc_flag_clear:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:356    .text.rtc_flag_clear:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:357    .text.rtc_flag_clear:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:358    .text.rtc_flag_clear:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:361    .text.rtc_flag_clear:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:364    .text.rtc_flag_clear:000000000000000c .L0 
+     /tmp/ccInkBCS.s:368    .text.rtc_flag_clear:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:369    .text.rtc_flag_clear:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:376    .text.rtc_interrupt_flag_get:0000000000000000 rtc_interrupt_flag_get
+     /tmp/ccInkBCS.s:378    .text.rtc_interrupt_flag_get:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:380    .text.rtc_interrupt_flag_get:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:387    .text.rtc_interrupt_flag_clear:0000000000000000 rtc_interrupt_flag_clear
+     /tmp/ccInkBCS.s:389    .text.rtc_interrupt_flag_clear:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:391    .text.rtc_interrupt_flag_clear:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:398    .text.rtc_interrupt_enable:0000000000000000 rtc_interrupt_enable
+     /tmp/ccInkBCS.s:401    .text.rtc_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:403    .text.rtc_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:404    .text.rtc_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:405    .text.rtc_interrupt_enable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:411    .text.rtc_interrupt_enable:000000000000000e .L0 
+     /tmp/ccInkBCS.s:412    .text.rtc_interrupt_enable:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:419    .text.rtc_interrupt_disable:0000000000000000 rtc_interrupt_disable
+     /tmp/ccInkBCS.s:422    .text.rtc_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:424    .text.rtc_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:425    .text.rtc_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:426    .text.rtc_interrupt_disable:0000000000000000 .L0 
+     /tmp/ccInkBCS.s:429    .text.rtc_interrupt_disable:0000000000000008 .L0 
+     /tmp/ccInkBCS.s:432    .text.rtc_interrupt_disable:000000000000000c .L0 
+     /tmp/ccInkBCS.s:436    .text.rtc_interrupt_disable:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:437    .text.rtc_interrupt_disable:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:29     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
+     /tmp/ccInkBCS.s:48     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:101    .text.rtc_counter_set:000000000000002c .L0 
+     /tmp/ccInkBCS.s:155    .text.rtc_prescaler_set:000000000000002e .L0 
+     /tmp/ccInkBCS.s:179    .text.rtc_lwoff_wait:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:210    .text.rtc_register_sync_wait:000000000000001c .L0 
+     /tmp/ccInkBCS.s:263    .text.rtc_alarm_config:000000000000002c .L0 
+     /tmp/ccInkBCS.s:293    .text.rtc_counter_get:0000000000000012 .L0 
+GAS LISTING /tmp/ccInkBCS.s 			page 17
 
 
-     /tmp/cc0ftzJA.s:325    .text.rtc_divider_get:0000000000000018 .L0 
-     /tmp/cc0ftzJA.s:347    .text.rtc_flag_get:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:372    .text.rtc_flag_clear:0000000000000014 .L0 
-     /tmp/cc0ftzJA.s:415    .text.rtc_interrupt_enable:0000000000000010 .L0 
-     /tmp/cc0ftzJA.s:440    .text.rtc_interrupt_disable:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:325    .text.rtc_divider_get:0000000000000018 .L0 
+     /tmp/ccInkBCS.s:347    .text.rtc_flag_get:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:372    .text.rtc_flag_clear:0000000000000014 .L0 
+     /tmp/ccInkBCS.s:415    .text.rtc_interrupt_enable:0000000000000010 .L0 
+     /tmp/ccInkBCS.s:440    .text.rtc_interrupt_disable:0000000000000014 .L0 
                      .debug_frame:0000000000000000 .L0 
-     /tmp/cc0ftzJA.s:166    .text.rtc_lwoff_wait:0000000000000004 .L7
-     /tmp/cc0ftzJA.s:197    .text.rtc_register_sync_wait:0000000000000012 .L11
-     /tmp/cc0ftzJA.s:880    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/cc0ftzJA.s:1546   .debug_str:0000000000000011 .LASF31
-     /tmp/cc0ftzJA.s:1566   .debug_str:000000000000011c .LASF32
-     /tmp/cc0ftzJA.s:1598   .debug_str:0000000000000242 .LASF33
-     /tmp/cc0ftzJA.s:1494   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/cc0ftzJA.s:1542   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/cc0ftzJA.s:1592   .debug_str:0000000000000202 .LASF0
-     /tmp/cc0ftzJA.s:1612   .debug_str:00000000000002ea .LASF1
-     /tmp/cc0ftzJA.s:1584   .debug_str:00000000000001d4 .LASF2
-     /tmp/cc0ftzJA.s:1604   .debug_str:00000000000002c2 .LASF3
-     /tmp/cc0ftzJA.s:1564   .debug_str:0000000000000109 .LASF4
-     /tmp/cc0ftzJA.s:1608   .debug_str:00000000000002d5 .LASF5
-     /tmp/cc0ftzJA.s:1588   .debug_str:00000000000001f2 .LASF9
-     /tmp/cc0ftzJA.s:1578   .debug_str:00000000000001b7 .LASF6
-     /tmp/cc0ftzJA.s:1568   .debug_str:0000000000000160 .LASF7
-     /tmp/cc0ftzJA.s:1594   .debug_str:000000000000020f .LASF8
-     /tmp/cc0ftzJA.s:1606   .debug_str:00000000000002cc .LASF10
-     /tmp/cc0ftzJA.s:1602   .debug_str:00000000000002b2 .LASF34
-     /tmp/cc0ftzJA.s:1582   .debug_str:00000000000001ce .LASF11
-     /tmp/cc0ftzJA.s:1572   .debug_str:0000000000000178 .LASF12
-     /tmp/cc0ftzJA.s:1610   .debug_str:00000000000002de .LASF13
-     /tmp/cc0ftzJA.s:1554   .debug_str:00000000000000bb .LASF14
-     /tmp/cc0ftzJA.s:420    .text.rtc_interrupt_disable:0000000000000000 .LFB16
-     /tmp/cc0ftzJA.s:438    .text.rtc_interrupt_disable:0000000000000014 .LFE16
-     /tmp/cc0ftzJA.s:1570   .debug_str:000000000000016e .LASF16
-     /tmp/cc0ftzJA.s:1297   .debug_loc:0000000000000000 .LLST8
-     /tmp/cc0ftzJA.s:1560   .debug_str:00000000000000e4 .LASF15
-     /tmp/cc0ftzJA.s:399    .text.rtc_interrupt_enable:0000000000000000 .LFB15
-     /tmp/cc0ftzJA.s:413    .text.rtc_interrupt_enable:0000000000000010 .LFE15
-     /tmp/cc0ftzJA.s:1318   .debug_loc:000000000000002f .LLST7
-     /tmp/cc0ftzJA.s:1614   .debug_str:00000000000002f6 .LASF35
-     /tmp/cc0ftzJA.s:1590   .debug_str:00000000000001fd .LASF17
-     /tmp/cc0ftzJA.s:1574   .debug_str:0000000000000183 .LASF36
-     /tmp/cc0ftzJA.s:1548   .debug_str:000000000000008b .LASF18
-     /tmp/cc0ftzJA.s:352    .text.rtc_flag_clear:0000000000000000 .LFB12
-     /tmp/cc0ftzJA.s:370    .text.rtc_flag_clear:0000000000000014 .LFE12
-     /tmp/cc0ftzJA.s:1332   .debug_loc:0000000000000050 .LLST6
-     /tmp/cc0ftzJA.s:1558   .debug_str:00000000000000d7 .LASF19
-     /tmp/cc0ftzJA.s:330    .text.rtc_flag_get:0000000000000000 .LFB11
-     /tmp/cc0ftzJA.s:345    .text.rtc_flag_get:0000000000000010 .LFE11
-     /tmp/cc0ftzJA.s:1353   .debug_loc:000000000000007f .LLST5
-     /tmp/cc0ftzJA.s:1586   .debug_str:00000000000001e2 .LASF20
-     /tmp/cc0ftzJA.s:298    .text.rtc_divider_get:0000000000000000 .LFB10
-     /tmp/cc0ftzJA.s:323    .text.rtc_divider_get:0000000000000018 .LFE10
-     /tmp/cc0ftzJA.s:1580   .debug_str:00000000000001c9 .LASF22
-     /tmp/cc0ftzJA.s:1367   .debug_loc:00000000000000a0 .LLST4
-     /tmp/cc0ftzJA.s:1616   .debug_str:000000000000030f .LASF21
-     /tmp/cc0ftzJA.s:268    .text.rtc_counter_get:0000000000000000 .LFB9
-     /tmp/cc0ftzJA.s:291    .text.rtc_counter_get:0000000000000012 .LFE9
-GAS LISTING /tmp/cc0ftzJA.s 			page 18
+     /tmp/ccInkBCS.s:166    .text.rtc_lwoff_wait:0000000000000004 .L7
+     /tmp/ccInkBCS.s:197    .text.rtc_register_sync_wait:0000000000000012 .L11
+     /tmp/ccInkBCS.s:880    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccInkBCS.s:1546   .debug_str:0000000000000011 .LASF31
+     /tmp/ccInkBCS.s:1566   .debug_str:000000000000011c .LASF32
+     /tmp/ccInkBCS.s:1594   .debug_str:000000000000020f .LASF33
+     /tmp/ccInkBCS.s:1494   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccInkBCS.s:1542   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccInkBCS.s:1592   .debug_str:0000000000000202 .LASF0
+     /tmp/ccInkBCS.s:1612   .debug_str:00000000000002f0 .LASF1
+     /tmp/ccInkBCS.s:1584   .debug_str:00000000000001d4 .LASF2
+     /tmp/ccInkBCS.s:1604   .debug_str:00000000000002c8 .LASF3
+     /tmp/ccInkBCS.s:1564   .debug_str:0000000000000109 .LASF4
+     /tmp/ccInkBCS.s:1608   .debug_str:00000000000002db .LASF5
+     /tmp/ccInkBCS.s:1588   .debug_str:00000000000001f2 .LASF9
+     /tmp/ccInkBCS.s:1578   .debug_str:00000000000001b7 .LASF6
+     /tmp/ccInkBCS.s:1568   .debug_str:0000000000000160 .LASF7
+     /tmp/ccInkBCS.s:1596   .debug_str:000000000000026e .LASF8
+     /tmp/ccInkBCS.s:1606   .debug_str:00000000000002d2 .LASF10
+     /tmp/ccInkBCS.s:1602   .debug_str:00000000000002b8 .LASF34
+     /tmp/ccInkBCS.s:1582   .debug_str:00000000000001ce .LASF11
+     /tmp/ccInkBCS.s:1572   .debug_str:0000000000000178 .LASF12
+     /tmp/ccInkBCS.s:1610   .debug_str:00000000000002e4 .LASF13
+     /tmp/ccInkBCS.s:1554   .debug_str:00000000000000bb .LASF14
+     /tmp/ccInkBCS.s:420    .text.rtc_interrupt_disable:0000000000000000 .LFB16
+     /tmp/ccInkBCS.s:438    .text.rtc_interrupt_disable:0000000000000014 .LFE16
+     /tmp/ccInkBCS.s:1570   .debug_str:000000000000016e .LASF16
+     /tmp/ccInkBCS.s:1297   .debug_loc:0000000000000000 .LLST8
+     /tmp/ccInkBCS.s:1560   .debug_str:00000000000000e4 .LASF15
+     /tmp/ccInkBCS.s:399    .text.rtc_interrupt_enable:0000000000000000 .LFB15
+     /tmp/ccInkBCS.s:413    .text.rtc_interrupt_enable:0000000000000010 .LFE15
+     /tmp/ccInkBCS.s:1318   .debug_loc:000000000000002f .LLST7
+     /tmp/ccInkBCS.s:1614   .debug_str:00000000000002fc .LASF35
+     /tmp/ccInkBCS.s:1590   .debug_str:00000000000001fd .LASF17
+     /tmp/ccInkBCS.s:1574   .debug_str:0000000000000183 .LASF36
+     /tmp/ccInkBCS.s:1548   .debug_str:000000000000008b .LASF18
+     /tmp/ccInkBCS.s:352    .text.rtc_flag_clear:0000000000000000 .LFB12
+     /tmp/ccInkBCS.s:370    .text.rtc_flag_clear:0000000000000014 .LFE12
+     /tmp/ccInkBCS.s:1332   .debug_loc:0000000000000050 .LLST6
+     /tmp/ccInkBCS.s:1558   .debug_str:00000000000000d7 .LASF19
+     /tmp/ccInkBCS.s:330    .text.rtc_flag_get:0000000000000000 .LFB11
+     /tmp/ccInkBCS.s:345    .text.rtc_flag_get:0000000000000010 .LFE11
+     /tmp/ccInkBCS.s:1353   .debug_loc:000000000000007f .LLST5
+     /tmp/ccInkBCS.s:1586   .debug_str:00000000000001e2 .LASF20
+     /tmp/ccInkBCS.s:298    .text.rtc_divider_get:0000000000000000 .LFB10
+     /tmp/ccInkBCS.s:323    .text.rtc_divider_get:0000000000000018 .LFE10
+     /tmp/ccInkBCS.s:1580   .debug_str:00000000000001c9 .LASF22
+     /tmp/ccInkBCS.s:1367   .debug_loc:00000000000000a0 .LLST4
+     /tmp/ccInkBCS.s:1616   .debug_str:0000000000000315 .LASF21
+     /tmp/ccInkBCS.s:268    .text.rtc_counter_get:0000000000000000 .LFB9
+     /tmp/ccInkBCS.s:291    .text.rtc_counter_get:0000000000000012 .LFE9
+GAS LISTING /tmp/ccInkBCS.s 			page 18
 
 
-     /tmp/cc0ftzJA.s:1388   .debug_loc:00000000000000cf .LLST3
-     /tmp/cc0ftzJA.s:1544   .debug_str:0000000000000000 .LASF23
-     /tmp/cc0ftzJA.s:215    .text.rtc_alarm_config:0000000000000000 .LFB8
-     /tmp/cc0ftzJA.s:261    .text.rtc_alarm_config:000000000000002c .LFE8
-     /tmp/cc0ftzJA.s:1556   .debug_str:00000000000000d1 .LASF24
-     /tmp/cc0ftzJA.s:1415   .debug_loc:000000000000010b .LLST2
-     /tmp/cc0ftzJA.s:220    .text.rtc_alarm_config:0000000000000000 .LBB26
-     /tmp/cc0ftzJA.s:249    .text.rtc_alarm_config:0000000000000020 .LBB30
-     /tmp/cc0ftzJA.s:257    .text.rtc_alarm_config:000000000000002a .LBE30
-     /tmp/cc0ftzJA.s:1600   .debug_str:000000000000029b .LASF25
-     /tmp/cc0ftzJA.s:184    .text.rtc_register_sync_wait:0000000000000000 .LFB7
-     /tmp/cc0ftzJA.s:208    .text.rtc_register_sync_wait:000000000000001c .LFE7
-     /tmp/cc0ftzJA.s:1550   .debug_str:000000000000009a .LASF26
-     /tmp/cc0ftzJA.s:160    .text.rtc_lwoff_wait:0000000000000000 .LFB6
-     /tmp/cc0ftzJA.s:177    .text.rtc_lwoff_wait:0000000000000010 .LFE6
-     /tmp/cc0ftzJA.s:1552   .debug_str:00000000000000a9 .LASF27
-     /tmp/cc0ftzJA.s:106    .text.rtc_prescaler_set:0000000000000000 .LFB5
-     /tmp/cc0ftzJA.s:153    .text.rtc_prescaler_set:000000000000002e .LFE5
-     /tmp/cc0ftzJA.s:1429   .debug_loc:000000000000012c .LLST1
-     /tmp/cc0ftzJA.s:111    .text.rtc_prescaler_set:0000000000000000 .LBB20
-     /tmp/cc0ftzJA.s:141    .text.rtc_prescaler_set:0000000000000022 .LBB24
-     /tmp/cc0ftzJA.s:149    .text.rtc_prescaler_set:000000000000002c .LBE24
-     /tmp/cc0ftzJA.s:1562   .debug_str:00000000000000f9 .LASF28
-     /tmp/cc0ftzJA.s:53     .text.rtc_counter_set:0000000000000000 .LFB4
-     /tmp/cc0ftzJA.s:99     .text.rtc_counter_set:000000000000002c .LFE4
-     /tmp/cc0ftzJA.s:1443   .debug_loc:000000000000014d .LLST0
-     /tmp/cc0ftzJA.s:58     .text.rtc_counter_set:0000000000000000 .LBB14
-     /tmp/cc0ftzJA.s:87     .text.rtc_counter_set:0000000000000020 .LBB18
-     /tmp/cc0ftzJA.s:95     .text.rtc_counter_set:000000000000002a .LBE18
-     /tmp/cc0ftzJA.s:1596   .debug_str:0000000000000226 .LASF29
-     /tmp/cc0ftzJA.s:1576   .debug_str:000000000000019a .LASF30
-     /tmp/cc0ftzJA.s:14     .text.rtc_configuration_mode_enter:0000000000000000 .LFB2
-     /tmp/cc0ftzJA.s:27     .text.rtc_configuration_mode_enter:0000000000000012 .LFE2
-     /tmp/cc0ftzJA.s:34     .text.rtc_configuration_mode_exit:0000000000000000 .LFB3
-     /tmp/cc0ftzJA.s:46     .text.rtc_configuration_mode_exit:0000000000000010 .LFE3
-     /tmp/cc0ftzJA.s:423    .text.rtc_interrupt_disable:0000000000000000 .LVL21
-     /tmp/cc0ftzJA.s:430    .text.rtc_interrupt_disable:000000000000000c .LVL22
-     /tmp/cc0ftzJA.s:433    .text.rtc_interrupt_disable:000000000000000e .LVL23
-     /tmp/cc0ftzJA.s:402    .text.rtc_interrupt_enable:0000000000000000 .LVL19
-     /tmp/cc0ftzJA.s:408    .text.rtc_interrupt_enable:000000000000000a .LVL20
-     /tmp/cc0ftzJA.s:355    .text.rtc_flag_clear:0000000000000000 .LVL16
-     /tmp/cc0ftzJA.s:362    .text.rtc_flag_clear:000000000000000c .LVL17
-     /tmp/cc0ftzJA.s:365    .text.rtc_flag_clear:000000000000000e .LVL18
-     /tmp/cc0ftzJA.s:333    .text.rtc_flag_get:0000000000000000 .LVL14
-     /tmp/cc0ftzJA.s:340    .text.rtc_flag_get:000000000000000a .LVL15
-     /tmp/cc0ftzJA.s:302    .text.rtc_divider_get:0000000000000000 .LVL11
-     /tmp/cc0ftzJA.s:315    .text.rtc_divider_get:0000000000000014 .LVL12
-     /tmp/cc0ftzJA.s:320    .text.rtc_divider_get:0000000000000016 .LVL13
-     /tmp/cc0ftzJA.s:272    .text.rtc_counter_get:0000000000000000 .LVL6
-     /tmp/cc0ftzJA.s:277    .text.rtc_counter_get:0000000000000008 .LVL7
-     /tmp/cc0ftzJA.s:281    .text.rtc_counter_get:000000000000000c .LVL8
-     /tmp/cc0ftzJA.s:285    .text.rtc_counter_get:000000000000000e .LVL9
-     /tmp/cc0ftzJA.s:288    .text.rtc_counter_get:0000000000000010 .LVL10
-     /tmp/cc0ftzJA.s:218    .text.rtc_alarm_config:0000000000000000 .LVL4
-     /tmp/cc0ftzJA.s:232    .text.rtc_alarm_config:000000000000000e .LVL5
-     /tmp/cc0ftzJA.s:109    .text.rtc_prescaler_set:0000000000000000 .LVL2
-     /tmp/cc0ftzJA.s:132    .text.rtc_prescaler_set:0000000000000018 .LVL3
-GAS LISTING /tmp/cc0ftzJA.s 			page 19
+     /tmp/ccInkBCS.s:1388   .debug_loc:00000000000000cf .LLST3
+     /tmp/ccInkBCS.s:1544   .debug_str:0000000000000000 .LASF23
+     /tmp/ccInkBCS.s:215    .text.rtc_alarm_config:0000000000000000 .LFB8
+     /tmp/ccInkBCS.s:261    .text.rtc_alarm_config:000000000000002c .LFE8
+     /tmp/ccInkBCS.s:1556   .debug_str:00000000000000d1 .LASF24
+     /tmp/ccInkBCS.s:1415   .debug_loc:000000000000010b .LLST2
+     /tmp/ccInkBCS.s:220    .text.rtc_alarm_config:0000000000000000 .LBB26
+     /tmp/ccInkBCS.s:249    .text.rtc_alarm_config:0000000000000020 .LBB30
+     /tmp/ccInkBCS.s:257    .text.rtc_alarm_config:000000000000002a .LBE30
+     /tmp/ccInkBCS.s:1600   .debug_str:00000000000002a1 .LASF25
+     /tmp/ccInkBCS.s:184    .text.rtc_register_sync_wait:0000000000000000 .LFB7
+     /tmp/ccInkBCS.s:208    .text.rtc_register_sync_wait:000000000000001c .LFE7
+     /tmp/ccInkBCS.s:1550   .debug_str:000000000000009a .LASF26
+     /tmp/ccInkBCS.s:160    .text.rtc_lwoff_wait:0000000000000000 .LFB6
+     /tmp/ccInkBCS.s:177    .text.rtc_lwoff_wait:0000000000000010 .LFE6
+     /tmp/ccInkBCS.s:1552   .debug_str:00000000000000a9 .LASF27
+     /tmp/ccInkBCS.s:106    .text.rtc_prescaler_set:0000000000000000 .LFB5
+     /tmp/ccInkBCS.s:153    .text.rtc_prescaler_set:000000000000002e .LFE5
+     /tmp/ccInkBCS.s:1429   .debug_loc:000000000000012c .LLST1
+     /tmp/ccInkBCS.s:111    .text.rtc_prescaler_set:0000000000000000 .LBB20
+     /tmp/ccInkBCS.s:141    .text.rtc_prescaler_set:0000000000000022 .LBB24
+     /tmp/ccInkBCS.s:149    .text.rtc_prescaler_set:000000000000002c .LBE24
+     /tmp/ccInkBCS.s:1562   .debug_str:00000000000000f9 .LASF28
+     /tmp/ccInkBCS.s:53     .text.rtc_counter_set:0000000000000000 .LFB4
+     /tmp/ccInkBCS.s:99     .text.rtc_counter_set:000000000000002c .LFE4
+     /tmp/ccInkBCS.s:1443   .debug_loc:000000000000014d .LLST0
+     /tmp/ccInkBCS.s:58     .text.rtc_counter_set:0000000000000000 .LBB14
+     /tmp/ccInkBCS.s:87     .text.rtc_counter_set:0000000000000020 .LBB18
+     /tmp/ccInkBCS.s:95     .text.rtc_counter_set:000000000000002a .LBE18
+     /tmp/ccInkBCS.s:1598   .debug_str:0000000000000285 .LASF29
+     /tmp/ccInkBCS.s:1576   .debug_str:000000000000019a .LASF30
+     /tmp/ccInkBCS.s:14     .text.rtc_configuration_mode_enter:0000000000000000 .LFB2
+     /tmp/ccInkBCS.s:27     .text.rtc_configuration_mode_enter:0000000000000012 .LFE2
+     /tmp/ccInkBCS.s:34     .text.rtc_configuration_mode_exit:0000000000000000 .LFB3
+     /tmp/ccInkBCS.s:46     .text.rtc_configuration_mode_exit:0000000000000010 .LFE3
+     /tmp/ccInkBCS.s:423    .text.rtc_interrupt_disable:0000000000000000 .LVL21
+     /tmp/ccInkBCS.s:430    .text.rtc_interrupt_disable:000000000000000c .LVL22
+     /tmp/ccInkBCS.s:433    .text.rtc_interrupt_disable:000000000000000e .LVL23
+     /tmp/ccInkBCS.s:402    .text.rtc_interrupt_enable:0000000000000000 .LVL19
+     /tmp/ccInkBCS.s:408    .text.rtc_interrupt_enable:000000000000000a .LVL20
+     /tmp/ccInkBCS.s:355    .text.rtc_flag_clear:0000000000000000 .LVL16
+     /tmp/ccInkBCS.s:362    .text.rtc_flag_clear:000000000000000c .LVL17
+     /tmp/ccInkBCS.s:365    .text.rtc_flag_clear:000000000000000e .LVL18
+     /tmp/ccInkBCS.s:333    .text.rtc_flag_get:0000000000000000 .LVL14
+     /tmp/ccInkBCS.s:340    .text.rtc_flag_get:000000000000000a .LVL15
+     /tmp/ccInkBCS.s:302    .text.rtc_divider_get:0000000000000000 .LVL11
+     /tmp/ccInkBCS.s:315    .text.rtc_divider_get:0000000000000014 .LVL12
+     /tmp/ccInkBCS.s:320    .text.rtc_divider_get:0000000000000016 .LVL13
+     /tmp/ccInkBCS.s:272    .text.rtc_counter_get:0000000000000000 .LVL6
+     /tmp/ccInkBCS.s:277    .text.rtc_counter_get:0000000000000008 .LVL7
+     /tmp/ccInkBCS.s:281    .text.rtc_counter_get:000000000000000c .LVL8
+     /tmp/ccInkBCS.s:285    .text.rtc_counter_get:000000000000000e .LVL9
+     /tmp/ccInkBCS.s:288    .text.rtc_counter_get:0000000000000010 .LVL10
+     /tmp/ccInkBCS.s:218    .text.rtc_alarm_config:0000000000000000 .LVL4
+     /tmp/ccInkBCS.s:232    .text.rtc_alarm_config:000000000000000e .LVL5
+     /tmp/ccInkBCS.s:109    .text.rtc_prescaler_set:0000000000000000 .LVL2
+     /tmp/ccInkBCS.s:132    .text.rtc_prescaler_set:0000000000000018 .LVL3
+GAS LISTING /tmp/ccInkBCS.s 			page 19
 
 
-     /tmp/cc0ftzJA.s:56     .text.rtc_counter_set:0000000000000000 .LVL0
-     /tmp/cc0ftzJA.s:70     .text.rtc_counter_set:000000000000000e .LVL1
-     /tmp/cc0ftzJA.s:447    .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/cc0ftzJA.s:65     .text.rtc_counter_set:0000000000000008 .LBE14
-     /tmp/cc0ftzJA.s:71     .text.rtc_counter_set:000000000000000e .LBB17
-     /tmp/cc0ftzJA.s:77     .text.rtc_counter_set:0000000000000016 .LBE17
-     /tmp/cc0ftzJA.s:118    .text.rtc_prescaler_set:0000000000000008 .LBE20
-     /tmp/cc0ftzJA.s:122    .text.rtc_prescaler_set:000000000000000e .LBB23
-     /tmp/cc0ftzJA.s:128    .text.rtc_prescaler_set:0000000000000016 .LBE23
-     /tmp/cc0ftzJA.s:227    .text.rtc_alarm_config:0000000000000008 .LBE26
-     /tmp/cc0ftzJA.s:233    .text.rtc_alarm_config:000000000000000e .LBB29
-     /tmp/cc0ftzJA.s:239    .text.rtc_alarm_config:0000000000000016 .LBE29
+     /tmp/ccInkBCS.s:56     .text.rtc_counter_set:0000000000000000 .LVL0
+     /tmp/ccInkBCS.s:70     .text.rtc_counter_set:000000000000000e .LVL1
+     /tmp/ccInkBCS.s:447    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccInkBCS.s:65     .text.rtc_counter_set:0000000000000008 .LBE14
+     /tmp/ccInkBCS.s:71     .text.rtc_counter_set:000000000000000e .LBB17
+     /tmp/ccInkBCS.s:77     .text.rtc_counter_set:0000000000000016 .LBE17
+     /tmp/ccInkBCS.s:118    .text.rtc_prescaler_set:0000000000000008 .LBE20
+     /tmp/ccInkBCS.s:122    .text.rtc_prescaler_set:000000000000000e .LBB23
+     /tmp/ccInkBCS.s:128    .text.rtc_prescaler_set:0000000000000016 .LBE23
+     /tmp/ccInkBCS.s:227    .text.rtc_alarm_config:0000000000000008 .LBE26
+     /tmp/ccInkBCS.s:233    .text.rtc_alarm_config:000000000000000e .LBB29
+     /tmp/ccInkBCS.s:239    .text.rtc_alarm_config:0000000000000016 .LBE29
 
 NO UNDEFINED SYMBOLS
