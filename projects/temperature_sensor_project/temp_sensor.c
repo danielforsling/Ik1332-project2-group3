@@ -5,8 +5,8 @@
 
 #ifdef SIMULATE_TEMP
 #include "temp_simulation.h"
-static u32 states = 2;
-static bool fridge_door_states[states] = { // For each run, if the fridge door is open (TRUE) or closed (FALSE)
+#define STATES 2
+static bool fridge_door_states[STATES] = { // For each run, if the fridge door is open (TRUE) or closed (FALSE)
     false, true 
 };
 static u32 simulation_run = 0;
@@ -68,7 +68,7 @@ void temp_sensor_callback(unsigned int temp)
         temp_index = 0;
 
 #ifdef SIMULATE_TEMP
-        simulation_run = (simulation_run + 1) % states;
+        simulation_run = (simulation_run + 1) % STATES;
 #endif
     }
 }
