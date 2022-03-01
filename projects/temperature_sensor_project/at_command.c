@@ -1,12 +1,11 @@
 /**
- * @file        esp_communication.c
+ * @file        at_command.c
  * @author      Jonathan Bergqvist 
  * @brief       Defines functions that can be use to communicate with an ESP8266 module via uart.
  * @version     1.0
  * @date        2022-02-23
  */
-#include "esp_communication.h"
-#include "AT_commands.h"
+#include "at_command.h"
 #include "usart.h"
 #include "gd32vf103.h"
 #include "lcd.h"
@@ -77,7 +76,7 @@ void _set_transmit_state_waiting()
  * @brief       Checks to see if the given at commands stays within the 256 byte limit.
  * 
  * @param[in]   at_command: the AT command representad as a string.
- * @return      0 or -1 depending on whether the command passes the test or not. 
+ * @return      1 or -1 depending on whether the command passes the test or not. 
  */
 int8_t _is_command_length_within_limits(char * at_command)
 {
@@ -92,32 +91,13 @@ int8_t _is_command_length_within_limits(char * at_command)
 }
 
 /**
- * @brief       Tries to connect to at mqtt broker.
- * 
- * @param       void: no arguemnts.
- * @return      0 or 1 depending on if the connection is successfull or not.
- */
-int connect_to_network()
-{
-    esp_at_send(AT_SET_CWMODE_ONE, WAIT_FOR_RESPONSE);
-
-    esp_at_send(AT_AP_CONNECT, WAIT_FOR_RESPONSE);
-
-    esp_at_send(AT_SET_MQTT_CONFIG, WAIT_FOR_RESPONSE);
-
-    esp_at_send(AT_MQTT_CONNECT, WAIT_FOR_RESPONSE);
-
-    return 0;
-}
-
-/**
  * @brief       Sends an AT command to the ESP8266 module through uart.
  * 
  * @param[in]   at_command: the AT command represented as a string.
  * @return      0 is returned if the command was sucessfully sent and -1 is returned if the
  *              command were larger than 256 bytes.
  */
-int esp_at_send(char *at_command, uint8_t response_falg)
+int at_send(char *at_command, uint8_t response_falg)
 {
     if(!_is_command_length_within_limits(at_command))
     {
@@ -141,7 +121,7 @@ int esp_at_send(char *at_command, uint8_t response_falg)
         }
     }
 
-    #ifdef ESP_COMMUNICATION_LCD_LOGGING
+    #ifdef AT_COMMAND_COMMUNICATION_LCD_LOGGING
     int i = 0, j = 0; 
     char current_char;
     while((current_char = getChar()) != '\0')

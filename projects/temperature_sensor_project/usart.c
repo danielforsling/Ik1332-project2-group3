@@ -9,7 +9,7 @@
 #include "usart.h" 
 #include "eclicw.h"   
 #include "lcd.h"
-#include "AT_commands.h"
+#include "at_command.h"
 
 #define TRANSMIT_BUFFER_SIZE 256
 #define RECIEVE_BUFFER_SIZE 512
