@@ -12,7 +12,7 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 #include "ds18b20.h"
 #include "temp_sensor.h"
 #include "usart.h"
-#include "esp_communication.h"
+#include "at_command.h"
 #define EI 1
 #define DI 0
 
