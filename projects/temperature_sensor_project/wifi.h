@@ -9,4 +9,9 @@
  * 
  */
 
+#ifndef WIFI_H
+#define WIFI_H
+#define WIFI_LCD_LOGGING
+
 int connect_to_ap();
+#endif

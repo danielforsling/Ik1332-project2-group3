@@ -8,7 +8,12 @@
  * 
  */
 
+#include "mqtt.h"
 #include "at_command.h"
+
+#ifdef MQTT_LCD_LOGGING
+#include "lcd.h"
+#endif
 
 /**
  * @brief       connects to a broker.
@@ -19,6 +24,13 @@ int connect_to_broker()
 {
     at_send(AT_SET_MQTT_CONFIG, WAIT_FOR_RESPONSE);
     at_send(AT_MQTT_CONNECT, WAIT_FOR_RESPONSE);
+
+    #ifdef MQTT_LCD_LOGGING
+    
+    
+
+    #endif
+
     return 1;
 }
 

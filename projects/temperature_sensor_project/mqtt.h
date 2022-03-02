@@ -8,4 +8,9 @@
  * 
  */
 
+#ifndef MQTT_H
+#define MQTT_H
+#define MQTT_LCD_LOGGING
+
 int connect_to_broker();
+#endif
