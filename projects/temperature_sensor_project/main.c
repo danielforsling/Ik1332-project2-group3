@@ -13,6 +13,8 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 #include "temp_sensor.h"
 #include "usart.h"
 #include "at_command.h"
+#include "wifi.h"
+#include "mqtt.h"
 #define EI 1
 #define DI 0
 
@@ -27,19 +29,22 @@ int main(void){
     //keyinit();                              // Initialize keyboard toolbox
     Lcd_SetType(LCD_INVERTED);              // LCD_INVERTED/LCD_NORMAL!
     Lcd_Init();
-    LCD_Clear(BLACK);
+    LCD_Clear(RED);
     u0init(DI,&wifi_uart_data_recieved_callback); // Initialize USART0 toolbox
     temp_sensor_init();
 
     eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
 
+    connect_to_ap();
+    //connect_to_broker();
+
     while (1) {
         idle++;                             // Manage Async events
         LCD_WR_Queue();                     // Manage LCD com queue!
         u0_TX_Queue();                      // Manage U(S)ART TX Queue!
-        if (usart_flag_get(USART0,USART_FLAG_RBNE)){ // USART0 RX?
-            LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
-        }
+        //if (usart_flag_get(USART0,USART_FLAG_RBNE)){ // USART0 RX?
+        //    LCD_ShowChar(30,50,usart_data_receive(USART0), OPAQUE, WHITE);
+        //}
 
         if (t5expq()) {                     // Manage periodic tasks
             //l88row(colset());               // ...8*8LED and Keyboard
@@ -47,8 +52,8 @@ int main(void){
             if (ms==1000){
                 ms=0;
                 //l88mem(0,s++);
-                msg[0]=(s%10)+'0'; putstr(msg);   // TX LSD time
-                LCD_ShowNum(8, 50, 0, 1, WHITE);  // LCD Clear key pressed
+                //msg[0]=(s%10)+'0'; putstr(msg);   // TX LSD time
+                //LCD_ShowNum(8, 50, 0, 1, WHITE);  // LCD Clear key pressed
             }
 
             /*
