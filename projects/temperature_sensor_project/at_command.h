@@ -1,15 +1,16 @@
 /**
  * @file        at_command.h
- * @author      Jonathan Bergqvist 
+ * @author      Jonathan Bergqvist, Mårten Björkman
  * @brief       Contains decloratins of functions implemented in at_commands.c that
  *              allows communication with a ESP8266 via uart.
  * @version     1.0
  * @date        2022-02-23
  */
 
-#include "gd32vf103.h"
-
 //#define AT_COMMAND_COMMUNICATION_LCD_LOGGING
+
+#define AT_EOL "\r\n"
+#define AT_CMD_MAX_LENGTH       255
 
 #define AT_RECIEVE_OK           "OK\r\n"
 #define AT_RECIEVE_ERROR        "ERROR\r\n"
@@ -29,6 +30,13 @@
 #ifndef ESP_COMMUNICATION_H
 #define ESP_COMMUNICATION_H
 
+#include <gd32vf103.h>
+#include <string.h>
+#include "at_command.h"
+#include "usart.h" /* at_send() won't run without */
+#include "lcd.h"
+#include "debug.h"
+
 typedef enum {
     READY_TO_SEND = 0,
     WAITING = 1,
@@ -38,5 +46,6 @@ typedef enum {
 
 int at_send(char *at_command, uint8_t response_falg);
 void wifi_uart_data_recieved_callback(uint8_t recieved_data);
+void get_last_return_string(char *string, int string_len);
 
 #endif

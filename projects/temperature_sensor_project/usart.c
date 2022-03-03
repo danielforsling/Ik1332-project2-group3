@@ -11,8 +11,8 @@
 #include "lcd.h"
 #include "at_command.h"
 
+
 #define TRANSMIT_BUFFER_SIZE 256
-#define RECIEVE_BUFFER_SIZE 512
 
 int last_data_added_to_transmit_buffer = 0,
     last_data_transmitted_from_transmit_buffer = 0;
