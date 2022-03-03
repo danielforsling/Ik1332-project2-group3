@@ -15,6 +15,8 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 #include "at_command.h"
 #include "wifi.h"
 #include "mqtt.h"
+#include "debug.h"
+
 #define EI 1
 #define DI 0
 
@@ -35,8 +37,12 @@ int main(void){
 
     eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
 
-    connect_to_ap();
-    //connect_to_broker();
+    // Example to connect and send a message over MQTT
+    if (connect_to_ap() && connect_to_broker()) {
+        mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_OK);
+        //mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_CHECK);
+        //mqtt_send_message_one_decimal(MQTT_SUBTOPIC_TEMP_DEBUG_REFRIGERATOR_1, 25, 2);
+    }
 
     while (1) {
         idle++;                             // Manage Async events
