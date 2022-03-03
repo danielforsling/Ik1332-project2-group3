@@ -7,6 +7,7 @@
  */
 
 #include "at_command.h"
+#include "drivers.h"
 
 uint8_t ok_end_sequence_matches = 0;
 uint8_t error_end_sequence_matches = 0;
@@ -138,6 +139,10 @@ DATA_TRANSMIT_STATE _get_transmit_state()
             ok_end_sequence_matches = 0;
             transmit_state = READY_TO_SEND;
             return  AT_ERROR;
+        case AT_TIMEOUT:
+            ok_end_sequence_matches = 0;
+            transmit_state = READY_TO_SEND;
+            return AT_TIMEOUT;
     }
 }
 
@@ -194,6 +199,7 @@ int at_send(char *at_command, uint8_t response_falg)
     
     if (response_falg == WAIT_FOR_RESPONSE)
     {
+        int ms = 0;
         while(1)
         {
             DATA_TRANSMIT_STATE current_state = _get_transmit_state();
@@ -203,6 +209,15 @@ int at_send(char *at_command, uint8_t response_falg)
                 //  never be any OK or ERROR sent. Now execution stops here on every other reboot because the device
                 //  randomly resets and during this reset, commands won't be understood.
                 u0_TX_Queue();
+                if (t5expq())
+                {
+                    ms++;
+                    if (ms == 3000)
+                    {
+                        transmit_state = AT_TIMEOUT;
+                        break;
+                    }
+                }
                 continue;
             }
             break;
