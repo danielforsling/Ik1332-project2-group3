@@ -36,13 +36,14 @@ int main(void){
     u0init(DI,&wifi_uart_data_recieved_callback); // Initialize USART0 toolbox
     temp_sensor_init();
 
-    eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
 
     // Example to connect and send a message over MQTT
     if (connect_to_ap() && connect_to_broker()) {
         //mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_OK);
         //mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_CHECK);
         //mqtt_send_message_one_decimal(MQTT_SUBTOPIC_TEMP_DEBUG_REFRIGERATOR_1, 25, 2);
+        //
+        eclic_global_interrupt_enable();        // !!!!! Enable Interrupt !!!!!
     }
 
     while (1) {

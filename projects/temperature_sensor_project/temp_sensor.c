@@ -1,18 +1,20 @@
 #include "temp_sensor.h"
 #include "stdbool.h"
+#include "mqtt.h"
 
 #define SIMULATE_TEMP // comment this out to read the real temperature from the sensor
+//#define DEBUG_MQTT_TEMP
 
 #ifdef SIMULATE_TEMP
 #include "temp_simulation.h"
-#define STATES 2
+#define STATES 3
 static bool fridge_door_states[STATES] = { // For each run, if the fridge door is open (TRUE) or closed (FALSE)
-    false, true 
+    false, false, true 
 };
 static u32 simulation_run = 0;
 #endif
 
-#define MAX_READINGS 20 
+#define MAX_READINGS 10 
 
 static u16 temp_readings[MAX_READINGS];
 static u16 temp_index = 0;
@@ -44,6 +46,7 @@ void temp_sensor_callback(unsigned int temp)
 {
     // Get the I bits (integer value)
     u16 temp_integer;
+
 #ifdef SIMULATE_TEMP
     if(fridge_door_states[simulation_run] == TRUE) {
         temp_integer = simulate_temp_reading_cold();
@@ -53,16 +56,26 @@ void temp_sensor_callback(unsigned int temp)
 #else
     temp_integer = temp >> 4;
 #endif
+
     temp_readings[temp_index++] = temp_integer;
 
+#ifdef DEBUG_MQTT_TEMP
     // Get the F bits (fraction) (right now we don't care about the fraction)
-    // u16 temp_sixteenths = temp & 0x000F;
+    u16 temp_sixteenths = temp & 0x000F;
 
     // Save one decimal
-    // u16 temp_fraction = (temp_sixteenths * 625) / 1000;
+    u16 temp_fraction = (temp_sixteenths * 625) / 1000;
+
+    mqtt_send_message_one_decimal(MQTT_SUBTOPIC_TEMP_DEBUG_REFRIGERATOR_1, temp_integer, temp_fraction);
+#endif
 
     if(temp_index >= MAX_READINGS) {
-        _check_temp();
+        
+        if(_check_temp() == TEMP_OK) {
+            mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_OK);
+        } else {
+            mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_CHECK);
+        }
 
         /* Start reading new samples */
         temp_index = 0;
@@ -97,11 +110,25 @@ TEMPERATURE_STATUS _check_temp()
         /* Just remember that were counting in hundreds */
         uint16_t temp_sample_avg_fp = temp_sample_avg * 100; 
 
+#ifdef DEBUG_MQTT_TEMP
+        char str[20] = {0};
+        sprintf(str, "sample_avg: %d", temp_sample_avg);
+        mqtt_send_message_string("home/debugging", str);
+#endif
+
         /* Calculate how much the new avg. deviates from the old avg. in percentage */
         /* A drop in temperature will result in negative deviation */
         int32_t deviation = (100 - (temp_sample_avg_fp / temp_normal_avg)) * -1; 
 
         // TODO: Alarm user if temp. deviated a certain amount (e.g. dropped 15% in temp.)
+        if(deviation < -15) {
+            return TEMP_WARNING;
+        }
+#ifdef DEBUG_MQTT_TEMP
+        sprintf(str, "deviation: %d", deviation);
+        mqtt_send_message_string("home/debugging", str);
+#endif
+
     } else {
         temp_normal_avg = temp_sample_avg;
         temp_initialized = TRUE;
