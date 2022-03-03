@@ -55,3 +55,6 @@ compiler/
 
 # ctags for vim
 tags
+
+# build files
+build/
