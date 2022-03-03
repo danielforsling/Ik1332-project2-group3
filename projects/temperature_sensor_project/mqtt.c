@@ -17,12 +17,16 @@
  */
 int connect_to_broker()
 {
-    at_send("AT+MQTTUSERCFG?\r\n", WAIT_FOR_RESPONSE);
     char string_return[RECIEVE_BUFFER_SIZE + 1] = {'\0'};
-    get_last_return_string(string_return, RECIEVE_BUFFER_SIZE);
+    do {
+        at_send("AT+MQTTUSERCFG?\r\n", WAIT_FOR_RESPONSE);
+        get_last_return_string(string_return, RECIEVE_BUFFER_SIZE);
+    } while (_get_transmit_state() == AT_TIMEOUT);
 
     if (strcmp(string_return, "AT+MQTTUSERCFG?\r\n+MQTTUSERCFG:0,0,\"\",\"\",\"\",0,0,\"\"\r\n\r\nOK\r\n") == 0)
         at_send(AT_CMD_SET_MQTT_CONFIG, WAIT_FOR_RESPONSE);
+
+    // TODO: retry on timeout. 
 
     at_send("AT+MQTTCONNCFG?\r\n", WAIT_FOR_RESPONSE);
     memset(string_return, 0, sizeof(string_return));

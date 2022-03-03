@@ -22,6 +22,7 @@ Libraries (other than vendor SDK and gcc libraries) must have .h-files in /lib/[
 
 int main(void){  
     int ms=0, s=0, key, pKey=-1, c=0, idle=0;
+    int ms2 = 0;
     int lookUpTbl[16]={1,4,7,14,2,5,8,0,3,6,9,15,10,11,12,13};
     char msg[]="*";
 
@@ -39,7 +40,7 @@ int main(void){
 
     // Example to connect and send a message over MQTT
     if (connect_to_ap() && connect_to_broker()) {
-        mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_OK);
+        //mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_OK);
         //mqtt_send_message_string(MQTT_SUBTOPIC_REFRIGERATOR_1, MQTT_MSG_CONTENT_CHECK);
         //mqtt_send_message_one_decimal(MQTT_SUBTOPIC_TEMP_DEBUG_REFRIGERATOR_1, 25, 2);
     }

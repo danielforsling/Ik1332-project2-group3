@@ -30,7 +30,7 @@
 /**
  * @brief The MQTT server address.
  */
-#define MQTT_CONF_SERVER_IP "192.168.1.33"
+#define MQTT_CONF_SERVER_IP "192.168.1.24"
 
 /**
  * @brief The MQTT server port.

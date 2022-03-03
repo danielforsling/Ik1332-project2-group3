@@ -21,7 +21,7 @@
 #define AT_SET_CWMODE_ONE   "AT+CWMODE=1\r\n"
 #define AT_AP_CONNECT       "AT+CWJAP=\"MyNetwork\",\"SuperSecretPassword\"\r\n"
 #define AT_SET_MQTT_CONFIG  "AT+MQTTUSERCFG=0,\"forgot-001\",\"\",\"\",0,0,\"\"\r\n"
-#define AT_MQTT_CONNECT     "AT+MQTTCONN=0,\"192.168.0.1\",1883,0\r\n"
+#define AT_MQTT_CONNECT     "AT+MQTTCONN=0,\"192.168.0.24\",1883,0\r\n"
 #define AT_AP_DISCONNECT    "AT+CWQAP\r\n"
 
 #define WAIT_FOR_RESPONSE 0X01
@@ -42,10 +42,12 @@ typedef enum {
     WAITING = 1,
     AT_DONE = 2,
     AT_ERROR = 3,
+    AT_TIMEOUT = 4,
 } DATA_TRANSMIT_STATE;
 
 int at_send(char *at_command, uint8_t response_falg);
 void wifi_uart_data_recieved_callback(uint8_t recieved_data);
 void get_last_return_string(char *string, int string_len);
+DATA_TRANSMIT_STATE _get_transmit_state();
 
 #endif
