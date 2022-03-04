@@ -15,6 +15,7 @@ static u32 simulation_run = 0;
 #endif
 
 #define MAX_READINGS 10 
+#define TEMP_DEVIATION_LIMIT -5
 
 static u16 temp_readings[MAX_READINGS];
 static u16 temp_index = 0;
@@ -125,8 +126,8 @@ TEMPERATURE_STATUS _check_temp()
         mqtt_send_message_string("home/debugging", str);
 #endif
 
-        // TODO: Alarm user if temp. deviated a certain amount (e.g. dropped 15% in temp.)
-        if(deviation < -5) {
+        // If the new average deviates by TEMP_DEVIATION_LIMIT, we send a warning
+        if(deviation < TEMP_DEVIATION_WARNING) {
             return TEMP_WARNING;
         }
     } else {
