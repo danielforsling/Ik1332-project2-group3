@@ -106,9 +106,9 @@ TEMPERATURE_STATUS _check_temp()
     temp_sample_avg /= MAX_READINGS;
 
 #ifdef DEBUG_MQTT_TEMP
-        char str[20] = {0};
-        sprintf(str, "sample_avg: %d", temp_sample_avg);
-        mqtt_send_message_string("home/debugging", str);
+    char str[30] = {0};
+    sprintf(str, "sample_avg: %d", temp_sample_avg);
+    mqtt_send_message_string("home/debugging", str);
 #endif
 
     if(temp_initialized == true) {
@@ -130,6 +130,10 @@ TEMPERATURE_STATUS _check_temp()
             return TEMP_WARNING;
         }
     } else {
+#ifdef DEBUG_MQTT_TEMP
+        sprintf(str, "temp. sensor intialization complete");
+        mqtt_send_message_string("home/debugging", str);
+#endif
         temp_normal_avg = temp_sample_avg;
         temp_initialized = TRUE;
     }
