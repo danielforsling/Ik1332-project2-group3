@@ -2,8 +2,8 @@
 #include "stdbool.h"
 #include "mqtt.h"
 
-#define SIMULATE_TEMP // comment this out to read the real temperature from the sensor
-//#define DEBUG_MQTT_TEMP
+//#define SIMULATE_TEMP // comment this out to read the real temperature from the sensor
+#define DEBUG_MQTT_TEMP
 
 #ifdef SIMULATE_TEMP
 #include "temp_simulation.h"
@@ -105,30 +105,30 @@ TEMPERATURE_STATUS _check_temp()
     }
     temp_sample_avg /= MAX_READINGS;
 
-    if(temp_initialized == true) {
-        /* We will multiply by 100 to get better precision when dividing */
-        /* Just remember that were counting in hundreds */
-        uint16_t temp_sample_avg_fp = temp_sample_avg * 100; 
-
 #ifdef DEBUG_MQTT_TEMP
         char str[20] = {0};
         sprintf(str, "sample_avg: %d", temp_sample_avg);
         mqtt_send_message_string("home/debugging", str);
 #endif
 
+    if(temp_initialized == true) {
+        /* We will multiply by 100 to get better precision when dividing */
+        /* Just remember that were counting in hundreds */
+        uint16_t temp_sample_avg_fp = temp_sample_avg * 100; 
+
         /* Calculate how much the new avg. deviates from the old avg. in percentage */
         /* A drop in temperature will result in negative deviation */
         int32_t deviation = (100 - (temp_sample_avg_fp / temp_normal_avg)) * -1; 
 
-        // TODO: Alarm user if temp. deviated a certain amount (e.g. dropped 15% in temp.)
-        if(deviation < -15) {
-            return TEMP_WARNING;
-        }
 #ifdef DEBUG_MQTT_TEMP
         sprintf(str, "deviation: %d", deviation);
         mqtt_send_message_string("home/debugging", str);
 #endif
 
+        // TODO: Alarm user if temp. deviated a certain amount (e.g. dropped 15% in temp.)
+        if(deviation < -5) {
+            return TEMP_WARNING;
+        }
     } else {
         temp_normal_avg = temp_sample_avg;
         temp_initialized = TRUE;
